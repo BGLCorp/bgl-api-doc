@@ -1887,7 +1887,7 @@
               ]
             },
             {
-              "name": "Reports - Contribution Summary",
+              "name": "Reports - Contribution Summary (Deprecated)",
               "_postman_id": "3157abb8-cd96-4d74-9858-9be9e0a856ab",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
