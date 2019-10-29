@@ -3729,62 +3729,6 @@
           "name": "General Company",
           "item": [
             {
-              "name": "Steps for new company ",
-              "item": [],
-              "_postman_id": "e9879f4a-3924-4bcb-9692-11a5e3e0176c",
-              "event": [
-                {
-                  "listen": "prerequest",
-                  "script": {
-                    "id": "a0cb2d80-b2c1-4428-8b48-c58ba0f1736a",
-                    "type": "text/javascript",
-                    "exec": [
-                      ""
-                    ]
-                  }
-                },
-                {
-                  "listen": "test",
-                  "script": {
-                    "id": "afdbc9e5-faad-445a-9d49-b95cd27fee00",
-                    "type": "text/javascript",
-                    "exec": [
-                      ""
-                    ]
-                  }
-                }
-              ],
-              "_postman_isSubFolder": true
-            },
-            {
-              "name": "Steps for new company  Copy",
-              "item": [],
-              "_postman_id": "23acd37b-f169-4a53-9d94-f42bc392d86e",
-              "event": [
-                {
-                  "listen": "prerequest",
-                  "script": {
-                    "id": "a0cb2d80-b2c1-4428-8b48-c58ba0f1736a",
-                    "type": "text/javascript",
-                    "exec": [
-                      ""
-                    ]
-                  }
-                },
-                {
-                  "listen": "test",
-                  "script": {
-                    "id": "afdbc9e5-faad-445a-9d49-b95cd27fee00",
-                    "type": "text/javascript",
-                    "exec": [
-                      ""
-                    ]
-                  }
-                }
-              ],
-              "_postman_isSubFolder": true
-            },
-            {
               "name": "List of Companies",
               "_postman_id": "58037d14-8aef-4f4b-a087-fa06b8081c14",
               "protocolProfileBehavior": {
