@@ -3729,7 +3729,7 @@
           "name": "General Company",
           "item": [
             {
-              "name": "Create a new company in CAS 360",
+              "name": "Steps for new company ",
               "item": [],
               "_postman_id": "e9879f4a-3924-4bcb-9692-11a5e3e0176c",
               "description": "The following Resources should be used to create a new company in CAS 360\n\n1. [Create new company](https://docs.api.bgl360.com.au/?version=latest#2c3acc97-803f-4fb8-8ebd-32296c55bf8e). This will create the basic details for the company and return a companyId which can be used for adding further details. \n2. [Create Address](https://docs.api.bgl360.com.au/?version=latest#c2a5a9b1-4f78-474a-8344-50c79a10e655). Creates an address in CAS 360 and returns an addressId. If the address already exists, the existing addressId will be returned.\n3. [Create Company Address](https://docs.api.bgl360.com.au/?version=latest#cca407dd-d840-4782-b837-7251cfd96062). Attach a new address to a CompanyId using adn AddressId. This includes Registered Office,  Address, Business Address, Postal Address or Meeting Address. \n4. [Create Contact](https://docs.api.bgl360.com.au/?version=latest#f36561e5-8286-458e-bf06-05e9411a004e). Creates a contact (officer, member, beneficial owner) in CAS 360 and returns a ContactId. If such contact already exists, the existing contactId will be returned without being modified.\n5. [Create Company Officer](https://docs.api.bgl360.com.au/?version=latest#365630b5-5da2-43f9-acb6-87280f981d7a). Create a company officer (Director or Secretary) using a ContactId. \n6. [Create new share transaction](https://docs.api.bgl360.com.au/?version=latest#6587aad4-0fe7-4bdb-9754-6afa40e6f113). Create new share transaction for a given company. ",
