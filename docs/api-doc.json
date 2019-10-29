@@ -7275,35 +7275,6 @@
           ],
           "_postman_id": "f32b53cd-3c10-46c4-8e1b-be9a79d00125",
           "_postman_isSubFolder": true
-        },
-        {
-          "name": "Create a New Company in CAS 360",
-          "item": [],
-          "_postman_id": "0c9f0488-d3d7-4c3f-9be6-fb4f0f678cba",
-          "description": "The following Resources should be used to create a new company in CAS 360\n\n1. [Create new company](https://docs.api.bgl360.com.au/?version=latest#2c3acc97-803f-4fb8-8ebd-32296c55bf8e). This will create the basic details for the company and return a companyId which can be used for adding further details. \n2. [Create Address](https://docs.api.bgl360.com.au/?version=latest#c2a5a9b1-4f78-474a-8344-50c79a10e655). Creates an address in CAS 360 and returns an addressId. If the address already exists, the existing addressId will be returned.\n3. [Create Company Address](https://docs.api.bgl360.com.au/?version=latest#cca407dd-d840-4782-b837-7251cfd96062). Attach a new address to a CompanyId using adn AddressId. This includes Registered Office,  Address, Business Address, Postal Address or Meeting Address. \n4. [Create Contact](https://docs.api.bgl360.com.au/?version=latest#f36561e5-8286-458e-bf06-05e9411a004e). Creates a contact (officer, member, beneficial owner) in CAS 360 and returns a ContactId. If such contact already exists, the existing contactId will be returned without being modified.\n5. [Create Company Officer](https://docs.api.bgl360.com.au/?version=latest#365630b5-5da2-43f9-acb6-87280f981d7a). Create a company officer (Director or Secretary) using a ContactId. \n6. [Create new share transaction](https://docs.api.bgl360.com.au/?version=latest#6587aad4-0fe7-4bdb-9754-6afa40e6f113). Create new share transaction for a given company. ",
-          "event": [
-            {
-              "listen": "prerequest",
-              "script": {
-                "id": "f81f663e-070a-4c5e-92f8-7966736ae2fa",
-                "type": "text/javascript",
-                "exec": [
-                  ""
-                ]
-              }
-            },
-            {
-              "listen": "test",
-              "script": {
-                "id": "f40f4bd9-ff78-46f4-b389-93d83e843e97",
-                "type": "text/javascript",
-                "exec": [
-                  ""
-                ]
-              }
-            }
-          ],
-          "_postman_isSubFolder": true
         }
       ],
       "_postman_id": "4b0acc02-01c4-4c93-9aa7-cde7f8d759c7"
