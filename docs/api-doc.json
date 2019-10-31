@@ -924,7 +924,7 @@
       "description": "This section will resources which are used by both CAS 360 and Simple Fund 360"
     },
     {
-      "name": "Simple Fund 360 Resources",
+      "name": "Simple Fund 360 (SMSF) Resources",
       "item": [
         {
           "name": "Fund Lists",
@@ -7341,7 +7341,7 @@
       ]
     },
     {
-      "name": "Coming Soon Copy",
+      "name": "Coming Soon - CAS 360",
       "item": [],
       "_postman_id": "4f2e7469-f3c0-4dc6-bc3f-127777197e4e",
       "description": "The Requests listed here will be available soon",
