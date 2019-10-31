@@ -7352,7 +7352,26 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "",
+            "url": {
+              "raw": "{{base_url}}/labels/?offset=0&limit=50",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "labels",
+                ""
+              ],
+              "query": [
+                {
+                  "key": "offset",
+                  "value": "0"
+                },
+                {
+                  "key": "limit",
+                  "value": "50"
+                }
+              ]
+            },
             "description": "Return all Labels in CAS360. Labels are used in CAS 360 to group companies together for quick selection and reporting purposes. "
           },
           "response": []
