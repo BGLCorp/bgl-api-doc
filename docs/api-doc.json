@@ -7463,11 +7463,13 @@
               "query": [
                 {
                   "key": "offset",
-                  "value": "{{offset}}"
+                  "value": "{{offset}}",
+                  "description": "number | Required | Example = 0 |"
                 },
                 {
                   "key": "limit",
-                  "value": "{{limit}}"
+                  "value": "{{limit}}",
+                  "description": "number | Required | Example = 500 |"
                 }
               ]
             },
