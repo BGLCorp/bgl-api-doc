@@ -7404,9 +7404,46 @@
                 }
               ]
             },
-            "description": "Return all Labels in CAS360. Labels are used in CAS 360 to group companies together for quick selection and reporting purposes. \n\n   ### Response Body\n\n| Key|  Type |Description |\n| -------- |  -------- | -------- |\n| id     |  Number | The Id of the label    |\n| name     |  String |  The name of the label     |"
+            "description": "Returns all Labels in CAS360. Labels are used in CAS 360 to group companies or trusts together for quick selection and reporting purposes. \n\n   ### Response Body\n\n| Key|  Type |Description |\n| -------- |  -------- | -------- |\n| id     |  Number | The Id of the label    |\n| name     |  String |  The name of the label     |"
           },
-          "response": []
+          "response": [
+            {
+              "id": "c1e36e35-4147-4198-b179-29519855e037",
+              "name": "Status 200",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/cas/labels/?offset=0&limit=800",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "cas",
+                    "labels",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "offset",
+                      "value": "0",
+                      "description": "number | Required | Example = 0 |"
+                    },
+                    {
+                      "key": "limit",
+                      "value": "800",
+                      "description": "number | Required | Example = 500 |"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"labels\": [\n        {\n            \"id\": 1,\n            \"name\": \"SMSF Corportae Trustees\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Peter Johnson\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Lilly Deteriore\"\n        }\n    ],\n    \"offset\": 0,\n    \"limit\": 500,\n    \"total\": 3\n}"
+            }
+          ]
         },
         {
           "name": "List of Companies by Label ID",
@@ -7451,9 +7488,53 @@
                 }
               ]
             },
-            "description": "Gets a list of all companies which the user has access to and are assigned to the label in the query. \n\n### Query Parameters\n\n| Form Parameter | type | Mandatory | Description |\n| -------- | -------- | -------- | -------- |\n| offset | number | Required | Example = 0 |\n| limit | number | Required | Example = 500 |\n\n\n\n\n### Response Body\n\nReturns a list containing object as defined below\n\n| Key               | Datatype | Mandatory | Constraints                                                 |\n| ----------------- | -------- | --------- | ----------------------------------------------------------- |\n| id | Number | Yes | |\n| name              | String   | Yes       |                                                             |\n| companyNumber            | String   | No        | Must be a valid ACN                                         |\n| incorpDate | String   | No        | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601        |\n| jurisdiction | String | Yes | Currently only 'Australia' is allowed |\n| type              | Object   | No        | See table below                                             |\n                                        |"
+            "description": "Returns a list of all companies which the user has access to and are assigned to the label in the query. \n\n### Query Parameters\n\n| Form Parameter | type | Mandatory | Description |\n| -------- | -------- | -------- | -------- |\n| offset | number | Required | Example = 0 |\n| limit | number | Required | Example = 500 |\n\n\n\n\n### Response Body\n\nReturns a list containing object as defined below\n\n| Key               | Datatype | Mandatory | Constraints                                                 |\n| ----------------- | -------- | --------- | ----------------------------------------------------------- |\n| id | Number | Yes | |\n| name              | String   | Yes       |                                                             |\n| companyNumber            | String   | No        | Must be a valid ACN                                         |\n| incorpDate | String   | No        | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601        |\n| jurisdiction | String | Yes | Currently only 'Australia' is allowed |\n| type              | Object   | No        | See table below                                             |\n                                        |"
           },
-          "response": []
+          "response": [
+            {
+              "id": "5582f985-d14d-4b39-8c6b-0bb57f6375f7",
+              "name": "Status 200",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "bearer {{token}}",
+                    "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/cas/labels/3/companies?offset=0&limit=500",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "cas",
+                    "labels",
+                    "3",
+                    "companies"
+                  ],
+                  "query": [
+                    {
+                      "key": "offset",
+                      "value": "0",
+                      "description": "number | Required | Example = 0 |"
+                    },
+                    {
+                      "key": "limit",
+                      "value": "500",
+                      "description": "number | Required | Example = 500 |"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"companies\": [\n        {\n            \"id\": \"76f84d29-e9c6-4a6f-aa39-f2e26572688a\",\n            \"name\": \"My Company Pty Ltd\",\n            \"number\": \"111111114\",\n            \"agentId\": null,\n            \"incorporationDate\": \"2018-11-29\",\n            \"annualReviewDate\": \"2019-11-29\",\n            \"type\": {\n                \"companyType\": \"Small Proprietary\",\n                \"companyClass\": \"Limited by Shares\",\n                \"companySubClass\": \"None\"\n            },\n            \"jurisdiction\": \"Australia\",\n            \"registrationState\": \"ACT\"\n        },\n        {\n            \"id\": \"022154b9-ce7c-4814-9c8b-11b7d0c1f076\",\n            \"name\": \"MSF Enterprise Pty Ltd\",\n            \"number\": \"111111114\",\n            \"agentId\": 1022,\n            \"incorporationDate\": \"2010-01-01\",\n            \"annualReviewDate\": \"2019-01-01\",\n            \"type\": {\n                \"companyType\": \"Public Company\",\n                \"companyClass\": \"Limited by Shares\",\n                \"companySubClass\": \"None\"\n            },\n            \"jurisdiction\": \"Australia\",\n            \"registrationState\": \"ACT\"\n        }\n],\n    \"offset\": 0,\n    \"limit\": 500,\n    \"total\": 2\n}"
+            }
+          ]
         },
         {
           "name": "List of Trusts by Label",
@@ -7514,22 +7595,24 @@
                   }
                 ],
                 "url": {
-                  "raw": "{{baseUrl}}/cas/trusts?offset=<number>&limit=<number>",
+                  "raw": "{{baseUrl}}/cas/labels/3/trusts?offset=0&limit=500",
                   "host": [
                     "{{baseUrl}}"
                   ],
                   "path": [
                     "cas",
+                    "labels",
+                    "3",
                     "trusts"
                   ],
                   "query": [
                     {
                       "key": "offset",
-                      "value": "<number>"
+                      "value": "0"
                     },
                     {
                       "key": "limit",
-                      "value": "<number>"
+                      "value": "500"
                     }
                   ]
                 }
@@ -7545,7 +7628,7 @@
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "{\n\"limit\": 500,\n\"offset\": 0,\n\"total\": 2,\n\"trusts\":[\n{\n\"abn\": null,\n\"formedDate\": \"2018-07-07\",\n\"id\": 16014,\n\"trustNameId\": 556920,\n\"trusteeAppointedDate\": \"2018-07-07\",\n\"trusteeCompanyId\": \"4af65008-8b44-4e56-8802-fa61ff542187\",\n\"trusteeContactId\": null,\n\"type\": \"UNIT\",\n\"appointorId\": null,\n\"settlorId\": null\n},\n{\n\"abn\": null,\n\"formedDate\": \"2018-07-07\",\n\"id\": 16015,\n\"trustNameId\": 556896,\n\"trusteeAppointedDate\": \"2018-07-07\",\n\"trusteeCompanyId\": \"4af65008-8b44-4e56-8802-fa61ff542187\",\n\"trusteeContactId\": null,\n\"type\": \"UNIT\",\n\"appointorId\": null,\n\"settlorId\": null\n}\n  ]\n}"
+              "body": "{\n    \"trusts\": [\n        {\n            \"id\": 17337,\n            \"trustNameId\": 568906,\n            \"type\": \"UNIT\",\n            \"abn\": null,\n            \"trusteeCompanyId\": \"022154b9-ce7c-4814-9c8b-11b7d0c1f076\",\n            \"trusteeContactId\": null,\n            \"appointorId\": null,\n            \"settlorId\": null,\n            \"formedDate\": \"1890-01-15\",\n            \"trusteeAppointedDate\": \"2015-05-26\"\n        },\n        {\n            \"id\": 17788,\n            \"trustNameId\": 572578,\n            \"type\": \"UNIT\",\n            \"abn\": null,\n            \"trusteeCompanyId\": \"4800af6e-14b8-4b79-9326-30faeb32ad51\",\n            \"trusteeContactId\": null,\n            \"appointorId\": null,\n            \"settlorId\": null,\n            \"formedDate\": \"2019-02-25\",\n            \"trusteeAppointedDate\": \"2019-02-25\"\n        }\n    ],\n    \"offset\": 0,\n    \"limit\": 500,\n    \"total\": 2\n}"
             }
           ]
         }
