@@ -7342,48 +7342,7 @@
     },
     {
       "name": "Coming Soon Copy",
-      "item": [
-        {
-          "name": "Webhooks",
-          "_postman_id": "0a4de598-c05d-4c22-8565-5e1d74a5ac95",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": "",
-            "description": "## Encryption\n BGL will compute a Hash-based(SHA256) message authentication code (HMAC) using a secret key to protect the integrity and the authenticity of the message. The following logic will be used to generate a token which sends as an authorization header which can be decoded from provider's end with the same private key\n\n    Authorization : \"{clientCode} {UTC Date String} {Signature}\"\n    \n           client code = this is code in lowercase unique for the client\n           UTC Date String = timestamp in UTC format yyyy-MM-dd'T'HH:mm:ss.sss'Z'\n           Signature = This will contain following data which will generate HMAC using SHA256 hash, using configured secret. \n                               \"{UTC Date String}POST{URI String}{RequestBody}\"\n    \n          Calculating Signature,\n    \n          Signature = Base64Encoded(HMAC(\"{UTC Date String}POST{URI String}{RequestBody}\"))\n\n \n    \n\n   ### Request Body\n\n| Key| Mandatory| Type |Description |\n| -------- | -------- | -------- | -------- |\n| userId     | Yes     | String | The email address of the user who has triggered the webhook     |\n| firmId     | Yes     | String |  The Short Name or Firm ID of the firm     |\n| entityId     | Yes     | String |  The ID of the resource that has changed. This could be with a companyId, trustId or fundId     |\n| eventId     | Yes     | String | The Unique Identifier of the event provided by Simple Fund 360 or CAS 360     |\n| eventType     | Yes     | String | The type of event of that occurred. This will be one of the following (constitution \\ audit \\ newsmsf)     |\n| tenants | No | Array | see below |\n\n**Tenants Array**\n\n| Key| Mandatory| Type |Description |\n| -------- | -------- | -------- | -------- |\n| tenantId     | No     | String |  If applicable , the ID of the tenant that the event happened in relation to (e.g. ContactId or MemberId, Financial Year)     |\n| tenantType     | No     | String | The type of tenant (contact \\ member \\ financialYear     |"
-          },
-          "response": [
-            {
-              "id": "1a7a00bd-1acf-4ec2-a8a2-ce1302a8f6ec",
-              "name": "Webhooks",
-              "originalRequest": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "value": "application/x-www-form-urlencoded",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n        \"entityId\": \"8ad08a066555bb32016555d9ebac0003\",\n        \"eventId\": \"039403940\",\n        \"eventType\": \"audit\",\n        \"firmId\": \"bgltest\",\n        \"tenants\": [\n          {\"tenantId\": \"ASFAUDIT4550\",\n           \"tenantType\": \"fundCode\"\n          },\n          {\"tenantId\": \"73124784265\",\n           \"tenantType\": \"abn\"\n          },\n          {\"tenantId\": \"2015/2016\",\n           \"tenantType\": \"financialYear\"\n          }\n          ],\n        \"userId\": \"info@bglcorp.com.au\"\n    }"
-                },
-                "url": "ilovebgl.com.au/bgl_listener"
-              },
-              "_postman_previewlanguage": null,
-              "header": null,
-              "cookie": [],
-              "responseTime": null,
-              "body": null
-            }
-          ]
-        }
-      ],
+      "item": [],
       "_postman_id": "4f2e7469-f3c0-4dc6-bc3f-127777197e4e",
       "description": "The Requests listed here will be available soon",
       "event": [
