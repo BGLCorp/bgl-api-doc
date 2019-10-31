@@ -7543,7 +7543,7 @@
           ]
         },
         {
-          "name": "List of Trusts by Label",
+          "name": "List of Trusts by Label ID",
           "_postman_id": "37c236ed-430b-48d7-ade0-f702144479db",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
