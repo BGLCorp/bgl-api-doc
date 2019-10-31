@@ -924,7 +924,7 @@
       "description": "This section will resources which are used by both CAS 360 and Simple Fund 360"
     },
     {
-      "name": "Simple Fund 360 (SMSF) Resources",
+      "name": "SF360 (SMSF) Resources",
       "item": [
         {
           "name": "Fund Lists",
@@ -3723,7 +3723,7 @@
       "description": "This section lists the currently available resources for Simple Fund 360  that can be used to obtain data through the BGL API."
     },
     {
-      "name": "CAS 360 Resources",
+      "name": "CAS 360 (Company) Resources",
       "item": [
         {
           "name": "General Company",
@@ -7342,7 +7342,22 @@
     },
     {
       "name": "Coming Soon - CAS 360",
-      "item": [],
+      "item": [
+        {
+          "name": "Labels",
+          "_postman_id": "3f3733bb-6b2d-4fa8-ba43-0a048e4862df",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "",
+            "description": "Return all Labels in CAS360. Labels are used in CAS 360 to group companies together for quick selection and reporting purposes. "
+          },
+          "response": []
+        }
+      ],
       "_postman_id": "4f2e7469-f3c0-4dc6-bc3f-127777197e4e",
       "description": "The Requests listed here will be available soon",
       "event": [
