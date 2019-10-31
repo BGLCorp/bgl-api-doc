@@ -7449,24 +7449,25 @@
               }
             ],
             "url": {
-              "raw": "{{baseUrl}}/cas/trusts?offset={{offset}}&limit={{limit}}",
+              "raw": "{{baseUrl}}/cas//labels/{{labelId}}/trusts?offset={{offset}}&limit={{limit}}",
               "host": [
                 "{{baseUrl}}"
               ],
               "path": [
                 "cas",
+                "",
+                "labels",
+                "{{labelId}}",
                 "trusts"
               ],
               "query": [
                 {
                   "key": "offset",
-                  "value": "{{offset}}",
-                  "description": "number | Required | Example = 0 |"
+                  "value": "{{offset}}"
                 },
                 {
                   "key": "limit",
-                  "value": "{{limit}}",
-                  "description": "number | Required | Example = 500 |"
+                  "value": "{{limit}}"
                 }
               ]
             },
