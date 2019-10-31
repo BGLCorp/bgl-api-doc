@@ -7342,6 +7342,34 @@
       ]
     },
     {
+      "name": "Error Codes",
+      "item": [],
+      "_postman_id": "832f2e5f-d2a6-4de3-836d-8e285055529f",
+      "description": "For API response, the BGL API will use conventional HTTP response codes to indicate the success or failure of an API request. The body of reponse will ususally provide more detailed information\ne.g \n\n\n`{\n    \"error\": \"unauthorized\",\n    \"error_description\": \"Full authentication is required to access this resource\"\n}\n`\n\n|HTTP Code|  Status Message |Description | \n|--|--|--|\n| 200 | OK | Indicates that the request has succeeded.\n| 201 | Created | Indicates that the POST request has been fulfilled and has resulted in one or more new resources being created |\n| 302 | Found | Indicates that the target resourceresides temporarily under a different URI. e.g Access Code |\n| 400 |Bad Request|Usually Caused by a missing or incorect Query Parameter |\n|401 | Unauthorized | You are not authorized or do not have permission to access the resource |\n| 403 | Forbidden | Indicates that the server understood the request but refuses to authorize it. Check Payload for more information |\n| 404 | not found | Indicates that the BGL API did not find the target resource or is not willing to disclose that one exists. |\n| 429 |Too Many Requests  | You\u2019ve exceeded your 10 min or daily rate limit. |\n| 500 |Internal Server Error | The request was unable to be processed due to an error with our servers.  |\n|503 | Service Unavailable | BGL API is currently unable to handle the request due to a service outage or scheduled maintenance |",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "ad2fedb0-fad3-411d-8239-2d673c132bc8",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "e8e1212e-f0a8-45fc-bf51-87b3e7533763",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Coming Soon Copy",
       "item": [
         {
@@ -7402,34 +7430,6 @@
           "listen": "test",
           "script": {
             "id": "46193531-174c-4717-8b7c-8fc6c7025208",
-            "type": "text/javascript",
-            "exec": [
-              ""
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "name": "Error Codes",
-      "item": [],
-      "_postman_id": "832f2e5f-d2a6-4de3-836d-8e285055529f",
-      "description": "For API response, the BGL API will use conventional HTTP response codes to indicate the success or failure of an API request. The body of reponse will ususally provide more detailed information\ne.g \n\n\n`{\n    \"error\": \"unauthorized\",\n    \"error_description\": \"Full authentication is required to access this resource\"\n}\n`\n\n|HTTP Code|  Status Message |Description | \n|--|--|--|\n| 200 | OK | Indicates that the request has succeeded.\n| 201 | Created | Indicates that the POST request has been fulfilled and has resulted in one or more new resources being created |\n| 302 | Found | Indicates that the target resourceresides temporarily under a different URI. e.g Access Code |\n| 400 |Bad Request|Usually Caused by a missing or incorect Query Parameter |\n|401 | Unauthorized | You are not authorized or do not have permission to access the resource |\n| 403 | Forbidden | Indicates that the server understood the request but refuses to authorize it. Check Payload for more information |\n| 404 | not found | Indicates that the BGL API did not find the target resource or is not willing to disclose that one exists. |\n| 429 |Too Many Requests  | You\u2019ve exceeded your 10 min or daily rate limit. |\n| 500 |Internal Server Error | The request was unable to be processed due to an error with our servers.  |\n|503 | Service Unavailable | BGL API is currently unable to handle the request due to a service outage or scheduled maintenance |",
-      "event": [
-        {
-          "listen": "prerequest",
-          "script": {
-            "id": "ad2fedb0-fad3-411d-8239-2d673c132bc8",
-            "type": "text/javascript",
-            "exec": [
-              ""
-            ]
-          }
-        },
-        {
-          "listen": "test",
-          "script": {
-            "id": "e8e1212e-f0a8-45fc-bf51-87b3e7533763",
             "type": "text/javascript",
             "exec": [
               ""
