@@ -2113,7 +2113,7 @@
                     }
                   ]
                 },
-                "description": "The Contribution Summary displays all contribution amounts, contributions cap limits, details of NCC Bring Forward cap if triggered) of all active members for a particular financial year. \n\n### Response\n|Key|Data Type|Description|\n| -------- | -------- | -------- |\n|fundId|String|Id of the fund|\n|financialYear|Number|Financial year of the contributions|\n|contributions|List of Contribution|List of contributions|\n\n#### Contribution\n\n|Key|Data Type|Description|\n| -------- | -------- | -------- |\n|peopleId|String|Id of the person|\n|firstName|String|First name|\n|lastName|String|Last name|\n|birthday|Date|Date of birth|\n|memberAccountId|Number|Member account ID|\n|memberAccountCode|String|Member account code|\n|memberAccountStartDate|Date|Start date of the member account|\n|memberAccountEndDate|String|End date of the member account|\n|contributionAccountId|Number|Chart Id of the member's contribution account |\n|openingDownsizer|Number|Total Downsizer Contributions made until the end of the previous financial year|\n|downsizerAmount|Number|Downsizer Contributions recorded for the financial year|\n|downsizerCap|Number|Downsizer Contributions Cap for the financial year|\n|concessionalContributions|Array|List of Concessional Contributions listed below|\n|nonConcessionalContributions|Array|List of Non-Concessional Contribution listed below|\n|totalSuperBalances|Array|List of Total Super Balances listed below|\n\n#### Concessional Contributions Array\n\n|Key|Data Type|Description|\n| -------- | -------- | -------- |\n|financialYear|Number|Financial year of this concessional contributions|\n|amount|Number|Concessional Contributions recorded for the financial year|\n|cap|Number|General Concessional Contributions cap for the financial year|\n|unusedCap|Number|Unused Amount of Concessional Contributions cap |\n|cumulativeCarryForward|Number|Total unused cap carried forward (i.e. sum of unusedCap in last 5 financial years)|\n|maxCap|Number|Maximum Concessional Contributions the member is eligible to contribute|\n|position|Number|Balance to reach/exceeded the maximum Concessional Contributions cap available (i.e. amount - maxCap)|\n|labels|String[]|\"Status of the member's Concessional Contributions made (e.g. UnderCap, OverCap, ApproachingCap, AtLimit, CFTriggered)\"|\n\n#### Non-Concessional Contribution Array\n\n|Key|Data Type|Description|\n| -------- | -------- | -------- |\n|financialYear|Number|Financial year of this Non-Concessional Contribution|\n|amount|Number|Non-Concessional Contribution recorded for the financial year|\n|cap|Number|Non-Concessional Contribution cap for the financial year|\n|position|Number|Balance to reach/exceeded the Non-Concessional Contribution cap (i.e. amount - cap)|\n|labels|String[]|\"Status of the member's Non-Concessional Contribution made (e.g. UnderCap, OverCap, ApproachingCap, AtLimit, BFTriggered)\"|\n|bringForwardTriggerYear|Number|Optional. Financial year in which the Bring Forward Rule for member's Non-Concessional Contribution is triggered|\n|bringForwardOrder|Number|Optional. Financial year order in the bring forward period|\n|bringForwardCap1|Number|Optional. Bring Forward cap|\n|bringForwardDate1|Date|Optional. Expiry date of the above Bring Forward cap 1|\n|bringForwardCap2|Number|Optional. Only available when the bring forward trigger year is FY2016 and FY2017|\n|bringForwardDate2|Date|Optional. Expiry date of the above Bring Forward cap 2|\n\n#### Total Super Balance Array\n|Key|Data Type|Description|\n| -------- | -------- | -------- |\n|financialYear|Number|Financial year of this Total Super Balance|\n|amount|Number|Total Super Balance as at end of the previous financial year. (as at 30/06/2018 if financial year field is 2019)|"
+                "description": "The Contribution Summary displays all contribution amounts, contributions cap limits, details of NCC Bring Forward cap if triggered) of all active members for a particular financial year. \n\n### Response\n|Key|Data Type|Description|\n| -------- | -------- | -------- |\n|fundId|String|Id of the fund|\n|financialYear|Number|Financial year of the contributions|\n|contributions|List of Contribution|List of contributions|\n\n#### Contribution\n\n|Key|Data Type|Description|\n| -------- | -------- | -------- |\n|peopleId|String|Id of the person|\n|firstName|String|First name|\n|lastName|String|Last name|\n|birthday|Date|Date of birth|\n|memberAccountId|Number|Member account ID|\n|memberAccountCode|String|Member account code|\n|memberAccountStartDate|Date|Start date of the member account|\n|memberAccountEndDate|String|End date of the member account. This key will only be returned if an end date is present. |\n|contributionAccountId|Number|Chart Id of the member's contribution account |\n|openingDownsizer|Number|Total Downsizer Contributions made until the end of the previous financial year|\n|downsizerAmount|Number|Downsizer Contributions recorded for the financial year|\n|downsizerCap|Number|Downsizer Contributions Cap for the financial year|\n|concessionalContributions|Array|List of Concessional Contributions listed below|\n|nonConcessionalContributions|Array|List of Non-Concessional Contribution listed below|\n|totalSuperBalances|Array|List of Total Super Balances listed below|\n\n#### Concessional Contributions Array\n\n|Key|Data Type|Description|\n| -------- | -------- | -------- |\n|financialYear|Number|Financial year of this concessional contributions|\n|amount|Number|Concessional Contributions recorded for the financial year|\n|cap|Number|General Concessional Contributions cap for the financial year|\n|unusedCap|Number|Unused Amount of Concessional Contributions cap |\n|cumulativeCarryForward|Number|Total unused cap carried forward (i.e. sum of unusedCap in last 5 financial years)|\n|maxCap|Number|Maximum Concessional Contributions the member is eligible to contribute|\n|position|Number|Balance to reach/exceeded the maximum Concessional Contributions cap available (i.e. amount - maxCap)|\n|labels|String[]|\"Status of the member's Concessional Contributions made (e.g. UnderCap, OverCap, ApproachingCap, AtLimit, CFTriggered)\"|\n\n#### Non-Concessional Contribution Array\n\n|Key|Data Type|Description|\n| -------- | -------- | -------- |\n|financialYear|Number|Financial year of this Non-Concessional Contribution|\n|amount|Number|Non-Concessional Contribution recorded for the financial year|\n|cap|Number|Non-Concessional Contribution cap for the financial year|\n|position|Number|Balance to reach/exceeded the Non-Concessional Contribution cap (i.e. amount - cap)|\n|labels|String[]|\"Status of the member's Non-Concessional Contribution made (e.g. UnderCap, OverCap, ApproachingCap, AtLimit, BFTriggered)\"|\n|bringForwardTriggerYear|Number|Optional. Financial year in which the Bring Forward Rule for member's Non-Concessional Contribution is triggered|\n|bringForwardOrder|Number|Optional. Financial year order in the bring forward period|\n|bringForwardCap1|Number|Optional. Bring Forward cap|\n|bringForwardDate1|Date|Optional. Expiry date of the above Bring Forward cap 1|\n|bringForwardCap2|Number|Optional. Only available when the bring forward trigger year is FY2016 and FY2017|\n|bringForwardDate2|Date|Optional. Expiry date of the above Bring Forward cap 2|\n\n#### Total Super Balance Array\n|Key|Data Type|Description|\n| -------- | -------- | -------- |\n|financialYear|Number|Financial year of this Total Super Balance|\n|amount|Number|Total Super Balance as at end of the previous financial year. (as at 30/06/2018 if financial year field is 2019)|"
               },
               "response": [
                 {
@@ -4694,6 +4694,7 @@
                   ],
                   "variable": [
                     {
+                      "id": "14406c22-6da8-402c-9e24-fdb79d8c8b38",
                       "key": "contactId",
                       "value": "{{contactId}}",
                       "type": "string",
@@ -5109,6 +5110,7 @@
                   ],
                   "variable": [
                     {
+                      "id": "25322f64-6bcf-4f67-9fc5-0db3c27ff34e",
                       "key": "companyId",
                       "value": "{{companyId}}",
                       "type": "string",
@@ -5118,6 +5120,7 @@
                       }
                     },
                     {
+                      "id": "b85a7e00-89f1-4bb5-84b2-3bcefcec3e14",
                       "key": "documentId",
                       "value": "{{documentId}}",
                       "type": "string",
@@ -5761,6 +5764,7 @@
                       ],
                       "variable": [
                         {
+                          "id": "a8ff9489-7a02-43eb-8e0d-494ed80eb6ee",
                           "key": "companyId",
                           "value": "{{companyId}}",
                           "type": "string",
@@ -5850,6 +5854,7 @@
                       ],
                       "variable": [
                         {
+                          "id": "0fec7650-662a-42ae-bdb5-859a9f2e2254",
                           "key": "companyId",
                           "value": "{{companyId}}",
                           "type": "string",
@@ -6093,6 +6098,7 @@
                       ],
                       "variable": [
                         {
+                          "id": "303938d6-768e-4506-9dc8-e037f4b97a22",
                           "key": "companyId",
                           "value": "{{companyId}}",
                           "type": "string",
@@ -6186,6 +6192,7 @@
                       ],
                       "variable": [
                         {
+                          "id": "2345be65-423a-496f-8d63-b71161b09f6d",
                           "key": "companyId",
                           "value": "{{companyId}}",
                           "type": "string",
@@ -6195,6 +6202,7 @@
                           }
                         },
                         {
+                          "id": "0acfc9d5-4887-40c8-acbb-bf107a4b511e",
                           "key": "officerId",
                           "value": "{{officerId}}",
                           "type": "string",
@@ -6383,6 +6391,7 @@
                       ],
                       "variable": [
                         {
+                          "id": "9d75e54e-691c-491e-8ff2-a7131bcb32d9",
                           "key": "companyId",
                           "value": "{{companyId}}",
                           "type": "string",
@@ -6926,6 +6935,7 @@
                   ],
                   "variable": [
                     {
+                      "id": "b6800e4d-5c00-48df-8b4c-085d796c6803",
                       "key": "trustId",
                       "value": "{{trustId}}",
                       "type": "string",
@@ -7697,6 +7707,232 @@
           "listen": "test",
           "script": {
             "id": "46193531-174c-4717-8b7c-8fc6c7025208",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Practice Management (Beta)",
+      "item": [
+        {
+          "name": "Add Contact",
+          "_postman_id": "c34fa793-6612-456d-ba10-91eeb38d16e3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {}
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "bearer {{token}}",
+                "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"externalIdentifier\": \"{{externalIdentifier}}\",\n  \"firstName\": \"{{firstName}}\",\n  \"lastName\": \"{{lastName}}\",\n  \"name\": \"{{name}}\",\n  \"email\": \"{{email}}\",\n  \"title\": \"{{title}}\",\n  \"skypeId\": \"{{skypeId}}\",\n  \"phone\": \"{{phone}}\",\n  \"mobile\": \"{{mobile}}\",\n  \"address\": {\n    \"postalCode\": \"{{postalCode}}\",\n    \"addressLine1\": \"{{addressLine1}}\",\n    \"addressLine2\": \"{{addressLine2}}\",\n    \"city\": \"{{city}}\",\n    \"region\": \"{{region}}\",\n    \"country\": \"{{country}}\"\n  },\n  \"status\": \"{{status}}\",\n  \"businessStructure\": \"{{businessStructure}}\",\n  \"abn\": \"{{abn}}\",\n  \"acn\": \"{{acn}}\",\n  \"dateOfBirth\": \"{{dateOfBirth}}\"\n}"
+            },
+            "url": "{{baseUrl}}/integration/firms/{{firmId}}/contacts",
+            "description": "Allows a third-party to create a new contact into BGL Products (CAS 360 and/or Simple Fund 360)\n\n### Path Variables\n| Parameter              | Mandatory        | Datatype | Maximum Size | Description/Comments  |\n|--------------------|------------------|--------|--------|-----------------------|\n| firmId  | Yes              | String | 255 | The unique identifier of a firm in the external partner application                    |\n\n### Request Body\n\n| Field              | Mandatory        | Datatype | Maximum Size | Description/Comments  |\n|--------------------|------------------|--------|--------|-----------------------|\n| externalIdentifier | Yes              | String | 45 | Unique identifier of a contact in a firm of an external partner                       |\n| firstName          | Yes/No*               | String | 255 | First name of the contact. For Individual entity type, this is mandatory field.                      |\n| lastName           | Yes/No*               | String |255 |Last name of the contact. For Individual entity type, this is mandatory field.                       |\n| name               | Yes/No*| String | 255 | For Company, Trust, Partnership and SMSF entity types, this is mandatory.                      |\n| email              | No               | String |255 |Email address of the contact                       |\n| title              | No               | String |45 |Title of the contact                       |\n| skypeId            | No               | String |45 |Skype Id of the contact                      |\n| phone              | No               | String |255 | Phone number of the contact                       |\n| mobile             | No               | String |45 | Mobile number of the contact                       |\n| address            | Yes              | Object |N/A |Address of the contact. See object details in AddressObject table below.|\n| status             | No               | String |45 |  Status of the contact.                      |\n| businessStructure  | Yes              | String |45 |Business structure of the contact.                       |\n| abn                | Yes/No*               | String |45 |Australian Business Number of the contact. For SMSF entity type, this is mandatory                       |\n| acn                | Yes/No*                | String |45 |Australian Company Number of the contact. For Company entity type, this is mandatory field.                       |\n| dateOfBirth        | No               | Date |N/A |Date of Birth of the contact. Format: yyyy-mm-dd                       |\n\n*indicates may be mandatory depending on other data\n\n\n\n###  Address Object\n| Field              | Mandatory        | Datatype | Maximum Size | Description/Comments  |\n|--------------------|------------------|--------|--------|-----------------------|\n| postalCode | Yes              | String | 45 | Postal code of the address   |\n| addressLine1 | Yes              | String | 50 | First line of the address   |\n| addressLine2 | Yes              | String | 255 | Second line of the address   |\n| city | Yes              | String | 45 | City/Town of the address   |\n| region | Yes              | String | 45 | State of the address   |\n| country | Yes              | String | 45 | Country of the address   |"
+          },
+          "response": [
+            {
+              "id": "c32e3e90-0cb8-4659-b178-660f691d9bd6",
+              "name": "Status 201",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "bearer df2f0e40-606f-4311-8066-590732fd126b"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"externalIdentifier\": \"1234567\",\n  \"firstName\": \"Anne\",\n  \"lastName\": \"Hathaway\",\n  \"name\": \"Hathaway, Anne\",\n  \"email\": \"anne@gmail.com\",\n  \"title\": \"Ms\",\n  \"skypeId\": \"\",\n  \"phone\": \"0413567863\",\n  \"mobile\": \"\",\n  \"address\": {\n    \"postalCode\": \"3163\",\n    \"addressLine1\": \"175 Oakleigh Rd\",\n    \"addressLine2\": \"\",\n    \"city\": \"Carnegie\",\n    \"region\": \"VIC\",\n    \"country\": \"Australia\"\n  },\n  \"status\": \"\",\n  \"businessStructure\": \"INDIVIDUAL\",\n  \"abn\": \"\",\n  \"acn\": \"\",\n  \"dateOfBirth\": \"1986-09-24\"\n}"
+                },
+                "url": "{{baseUrl}}/contacts"
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"externalIdentifier\": \"1234567\",\n  \"firstName\": \"Anne\",\n  \"lastName\": \"Hathaway\",\n  \"name\": \"Hathaway, Anne\",\n  \"email\": \"anne@gmail.com\",\n  \"title\": \"Ms\",\n  \"skypeId\": \"\",\n  \"phone\": \"0413567863\",\n  \"mobile\": \"\",\n  \"address\": {\n    \"postalCode\": \"3163\",\n    \"addressLine1\": \"175 Oakleigh Rd\",\n    \"addressLine2\": \"\",\n    \"city\": \"Carnegie\",\n    \"region\": \"VIC\",\n    \"country\": \"Australia\"\n  },\n  \"status\": \"\",\n  \"businessStructure\": \"INDIVIDUAL\",\n  \"abn\": \"\",\n  \"acn\": \"\",\n  \"dateOfBirth\": \"1986-09-24\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Delete Contact",
+          "_postman_id": "9a34a08a-8538-4729-8e30-da322d2d9198",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {}
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+                "key": "Authorization",
+                "value": "bearer {{token}}"
+              }
+            ],
+            "url": "{{baseUrl}}/integration/firms/{firmId}/contacts/{externalIdentifier}",
+            "description": "Deletes a contact for a given contactId\n\n\n### Path Variables\n| Parameter              | Mandatory        | Datatype | Maximum Size | Description/Comments  |\n|--------------------|------------------|--------|--------|-----------------------|\n| firmId  | Yes              | String | 255 | The unique identifier of a firm in the external partner application                    |\n| externalIdentifier  | Yes              | String | 45 | Unique identifier of a contact in a firm of an external partner                   |"
+          },
+          "response": [
+            {
+              "id": "d3b8f568-2347-42a4-9460-428e02b1dc01",
+              "name": "Status 200",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "bearer df2f0e40-606f-4311-8066-590732fd126b"
+                  }
+                ],
+                "url": "{{baseUrl}}/integration/firms/564848/contacts/5848343848438"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": ""
+            }
+          ]
+        },
+        {
+          "name": "Update Contact",
+          "_postman_id": "fabe3e2e-9c5b-4684-acfe-42c577403849",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {}
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "bearer {{token}}",
+                "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"externalIdentifier\": \"{{externalIdentifier}}\",\n  \"firstName\": \"{{firstName}}\",\n  \"lastName\": \"{{lastName}}\",\n  \"name\": \"{{name}}\",\n  \"email\": \"{{email}}\",\n  \"title\": \"{{title}}\",\n  \"skypeId\": \"{{skypeId}}\",\n  \"phone\": \"{{phone}}\",\n  \"mobile\": \"{{mobile}}\",\n  \"address\": {\n    \"postalCode\": \"{{postalCode}}\",\n    \"addressLine1\": \"{{addressLine1}}\",\n    \"addressLine2\": \"{{addressLine2}}\",\n    \"city\": \"{{city}}\",\n    \"region\": \"{{region}}\",\n    \"country\": \"{{country}}\"\n  },\n  \"status\": \"{{status}}\",\n  \"businessStructure\": \"{{businessStructure}}\",\n  \"abn\": \"{{abn}}\",\n  \"acn\": \"{{acn}}\",\n  \"dateOfBirth\": \"{{dateOfBirth}}\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/contacts/:contactId",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "contacts",
+                ":contactId"
+              ],
+              "variable": [
+                {
+                  "id": "76ef0978-4388-4033-8f7f-e91805441a7a",
+                  "key": "contactId",
+                  "value": "{{contactId}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "The API is used by an external application,to update an existing contact in BGL. It is expected to be used by external partners to update contacts during the post-sync process.\n\n### Path Variables\n| Parameter              | Mandatory        | Datatype | Maximum Size | Description/Comments  |\n|--------------------|------------------|--------|--------|-----------------------|\n| firmId  | Yes              | String | 255 | The unique identifier of a firm in the external partner application                    |\n| externalIdentifier  | Yes              | String | 45 | Unique identifier of a contact in a firm of an external partner                   |\n\n### Request Body\n\n| Field              | Mandatory        | Datatype | Maximum Size | Description/Comments  |\n|--------------------|------------------|--------|--------|-----------------------|\n| externalIdentifier | Yes              | String | 45 | Unique identifier of a contact in a firm of an external partner                       |\n| firstName          | Yes/No*               | String | 255 | First name of the contact. For Individual entity type, this is mandatory field.                      |\n| lastName           | Yes/No*               | String |255 |Last name of the contact. For Individual entity type, this is mandatory field.                       |\n| name               | Yes/No*| String | 255 | For Company, Trust, Partnership and SMSF entity types, this is mandatory.                      |\n| email              | No               | String |255 |Email address of the contact                       |\n| title              | No               | String |45 |Title of the contact                       |\n| skypeId            | No               | String |45 |Skype Id of the contact                      |\n| phone              | No               | String |255 | Phone number of the contact                       |\n| mobile             | No               | String |45 | Mobile number of the contact                       |\n| address            | Yes              | Object |N/A |Address of the contact. See object details in AddressObject table below.|\n| status             | No               | String |45 |  Status of the contact.                      |\n| businessStructure  | Yes              | String |45 |Business structure of the contact.                       |\n| abn                | Yes/No*               | String |45 |Australian Business Number of the contact. For SMSF entity type, this is mandatory                       |\n| acn                | Yes/No*                | String |45 |Australian Company Number of the contact. For Company entity type, this is mandatory field.                       |\n| dateOfBirth        | No               | Date |N/A |Date of Birth of the contact. Format: yyyy-mm-dd                       |\n\n*indicates may be mandatory depending on other data\n\n\n\n###  Address Object\n| Field              | Mandatory        | Datatype | Maximum Size | Description/Comments  |\n|--------------------|------------------|--------|--------|-----------------------|\n| postalCode | Yes              | String | 45 | Postal code of the address   |\n| addressLine1 | Yes              | String | 50 | First line of the address   |\n| addressLine2 | Yes              | String | 255 | Second line of the address   |\n| city | Yes              | String | 45 | City/Town of the address   |\n| region | Yes              | String | 45 | State of the address   |\n| country | Yes              | String | 45 | Country of the address   |"
+          },
+          "response": [
+            {
+              "id": "ebacfff8-62fb-419b-8313-f2d3626e56e5",
+              "name": "Status 200",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "bearer df2f0e40-606f-4311-8066-590732fd126b"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "\"<object>\""
+                },
+                "url": "{{baseUrl}}/contacts/<string>"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"firstName\": \"John\",\n    \"lastName\": \"Doe\",\n    \"contactType\": \"People\",\n    \"addressId\": \"172843\",\n    \"title\": \"Mr\",\n    \"sex\": \"Male\",\n    \"email\": \"johndoe@mail.com\",\n    \"mobile\": \"0498111111\",\n    \"phone1\": \"51643726\",\n    \"phone2\": \"71726354\",\n    \"taxNumber\": \"49938271\",\n    \"birthday\": \"1987-12-25\",\n    \"birthPlace\": \"Macdeon\",\n    \"birthState\": \"VIC\",\n    \"birthCountry\": \"Australia\"\n}"
+            }
+          ]
+        }
+      ],
+      "_postman_id": "5b5ec853-5277-496b-84d5-173cfe3fee58",
+      "description": "BGL has developed a three-way integration that synchronises the contacts in CAS 360, Simple Fund 360 and a Third-Party. When a change is made to a contact, these details are updated for both BGL products.",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "69e526f0-e250-47fd-bce2-b4f92829b580",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "0da67478-f111-4898-804e-98c12ced2007",
             "type": "text/javascript",
             "exec": [
               ""
