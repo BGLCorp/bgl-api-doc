@@ -7716,6 +7716,11 @@
       ]
     },
     {
+      "name": "Coming Soon - Simple Fund 360",
+      "item": [],
+      "_postman_id": "0d90c34e-8302-4fc9-a556-c67be4469347"
+    },
+    {
       "name": "Practice Management (Beta)",
       "item": [
         {
@@ -7940,11 +7945,6 @@
           }
         }
       ]
-    },
-    {
-      "name": "Coming Soon - Simple Fund 360",
-      "item": [],
-      "_postman_id": "0d90c34e-8302-4fc9-a556-c67be4469347"
     }
   ],
   "auth": {
