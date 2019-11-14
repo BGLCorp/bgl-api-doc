@@ -531,7 +531,7 @@
           "name": "API Scope",
           "item": [],
           "_postman_id": "9ef9e817-5fba-4a36-908c-eeee71c2a357",
-          "description": "The API Scope defines what end points are accessible for a given scope. The below table illustrates the available scopes and what end points are accessible by each of them.\n\nTo change your scope, please contact api@bglcorp.com.au.\n\n## Warning\n* To use the BGL_partner scope the user will need access to both SF360 and CAS360. \n* If the user only has access to one product then one of the other scopes need to be used. \n\n\n| **Resource Category** | **Resource/Scope** | **developer** | **investment** | **audit** | **SMSF Partner** | **CAS Incorporator** | **BGLpartner** |\n| -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | \n| General | User Detail, Account Detail     | **YES**     | **YES**     | **YES**     | **YES**     | **YES**     | **YES**     | **YES**     |\n| SF360 |  Fund Listing, Fund Details      | no    | **YES**     | **YES**     | **YES**     |  no    | **YES**     |\n| SF360 | , Members, Feed Providers, Fund Reports     |   no   | **YES**     | **YES**     | **YES**     | no   |   **YES**     | \n| SF360 | Documents, Tags     | no  |   no   | **YES**     | **YES**     |  no    | **YES**     |\n| CAS360 | View Company List     | no     |no    | no     | no    | **YES**     | **YES**     | \n| CAS360 | All Endpoints     |  no    |  no    |   no   |   no   |   **YES**     | **YES**     |\n\n",
+          "description": "The API Scope defines what end points are accessible for a given scope. The below table illustrates the available scopes and what end points are accessible by each of them.\n\nTo change your scope, please contact api@bglcorp.com.au.\n\n## Warning\n* To use the BGL_partner scope the user will need access to both SF360 and CAS360. \n* If the user only has access to one product then one of the other scopes need to be used. \n\n\n| **Resource Category** | **Resource/Scope** | **developer** | **investment** | **audit** | **SMSF Partner** | **CAS Incorporator** | **BGLpartner** |\n| -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | \n| General | User Detail, Account Detail     | **YES**     | **YES**     | **YES**     | **YES**     | **YES**     | **YES**     | **YES**     |\n| SF360 |  Fund Listing, Fund Details, Members, Feed Providers, Fund Reports      | no    | **YES**     | **YES**     | **YES**     |  no    | **YES**     |\n| SF360 | Documents, Tags     | no  |   no   | **YES**     | **YES**     |  no    | **YES**     |\n| CAS360 | All Endpoints     |  no    |  no    |   no   |   no   |   **YES**     | **YES**     |\n\n",
           "event": [
             {
               "listen": "prerequest",
@@ -7780,7 +7780,7 @@
                   }
                 ],
                 "url": {
-                  "raw": "{{baseUrl}}/sf/funds/53rert84fb4fdf/reports/balanceSheet?financialYear=2019",
+                  "raw": "{{baseUrl}}/sf/funds/53rert84fb4fdf/workpapers?financialYear=2019",
                   "host": [
                     "{{baseUrl}}"
                   ],
@@ -7788,8 +7788,7 @@
                     "sf",
                     "funds",
                     "53rert84fb4fdf",
-                    "reports",
-                    "balanceSheet"
+                    "workpapers"
                   ],
                   "query": [
                     {
@@ -7810,7 +7809,7 @@
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "{\n    \"financialYear\": 2019,\n    \"financialYearPrev\": 2018,\n    \"fundName\": \"The Jeevan Fund\",\n    \"investmentList\": [],\n    \"investmentTotal\": 0,\n    \"investmentTotalPrev\": 0,\n    \"liabilities\": [],\n    \"liabilitiesForAccuredBenifits\": [\n        {\n            \"amount\": 850,\n            \"amountPrev\": 850,\n            \"name\": \"Jones, John -  Accumulation \",\n            \"subEntries\": [\n                {\n                    \"amount\": -150,\n                    \"amountPrev\": -150,\n                    \"name\": \"(Contributions Tax) Jones, John - Accumulation (Accumulation)\",\n                    \"subEntries\": []\n                },\n                {\n                    \"amount\": 1000,\n                    \"amountPrev\": 1000,\n                    \"name\": \"(Contributions) Jones, John - Accumulation (Accumulation)\",\n                    \"subEntries\": []\n                }\n            ]\n        }\n    ],\n    \"netAssetLessAccuredLiability\": 150,\n    \"netAssetLessAccuredLiabilityPrev\": 150,\n    \"netAssetsAvailable\": 1000,\n    \"netAssetsAvailablePrev\": 1000,\n    \"otherAssets\": [\n        {\n            \"amount\": 1000,\n            \"amountPrev\": 1000,\n            \"name\": \"Bank Accounts\",\n            \"subEntries\": [\n                {\n                    \"amount\": 1000,\n                    \"amountPrev\": 1000,\n                    \"name\": \"uttgv\",\n                    \"subEntries\": []\n                }\n            ]\n        }\n    ],\n    \"sofpNotBalancedEntries\": [\n        {\n            \"amount\": 150,\n            \"amountPrev\": 150,\n            \"name\": \"Current year profit/loss not allocated to members \",\n            \"subEntries\": []\n        }\n    ],\n    \"totalAssets\": 1000,\n    \"totalAssetsPrev\": 1000,\n    \"totalLiabilities\": 0,\n    \"totalLiabilitiesForAccuredBenifits\": 850,\n    \"totalLiabilitiesForAccuredBenifitsPrev\": 850,\n    \"totalLiabilitiesPrev\": 0,\n    \"totalOtherAssets\": 1000,\n    \"totalOtherAssetsPrev\": 1000\n}"
+              "body": "{\n  \"workpapers\": [\n    {\n      \"code\": \"23800\",\n      \"accountCodeStart\": \"24700\",\n      \"accountCodeEnd\": \"24700\",\n      \"name\": \"Distributions Receivable\",\n      \"amount\": null,\n      \"amountPrev\": 79759.59,\n      \"units\": null,\n      \"unitsPrev\": 79759.59,\n      \"change\": 56.99,\n      \"preparer\": \"Tokhi,Jeevan\",\n      \"reviewer\": \"Smith, John\",\n      \"status\": \"Reviewed\",\n      \"documents\": [\n        {\n          \"documentId\": \"3284$8a949d475b604cf9015b60\",\n          \"documentURL\": \"https://s3.ap-southeast\"\n        },\n        {\n          \"documentId\": \"3284$8a949d666b604cf9015b60\",\n          \"documentURL\": \"https://s3.ap-southeast\"\n        }\n      ],\n      \"subEntries\": [\n        {\n          \"accountCode\": \"AOD.AX\",\n          \"description\": \"Distributions Receivable\",\n          \"amount\": null,\n          \"amountPrev\": 79759.59,\n          \"units\": null,\n          \"unitsPrev\": 79759.59,\n          \"amountChange\": 56.99,\n          \"documents\": [\n            {\n              \"documentId\": \"3284$8a949d475b604cf9015b60\",\n              \"documentURL\": \"https://s3.ap-southeast\"\n            },\n            {\n              \"documentId\": \"3284$8a949d666b604cf9015b60\",\n              \"documentURL\": \"https://s3.ap-southeast\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}"
             }
           ]
         }
