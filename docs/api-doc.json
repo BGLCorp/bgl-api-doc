@@ -7691,7 +7691,7 @@
         }
       ],
       "_postman_id": "4f2e7469-f3c0-4dc6-bc3f-127777197e4e",
-      "description": "The Requests listed here will be available soon",
+      "description": "The Requests listed here will be available soon. They are currently available on STAGING only. ",
       "event": [
         {
           "listen": "prerequest",
