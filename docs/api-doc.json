@@ -157,7 +157,7 @@
           "name": "Authorization Code Grant",
           "item": [
             {
-              "name": " Obtain or Refresh an Access Token",
+              "name": "Obtain an Access Token",
               "_postman_id": "0f01acc6-6c85-4cf6-86a1-97fc3366e316",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -169,7 +169,7 @@
                 "method": "POST",
                 "header": [],
                 "url": {
-                  "raw": "{{baseUrl}}/oauth/token?grant_type={{grant_type}}&code={{code}}&scope={{scope}}&redirect_uri={{redirect_uri}}&client_id={{client_id}}&client_secret={{client_secret}}&refresh_token={{refresh_token}}",
+                  "raw": "{{baseUrl}}/oauth/token?grant_type={{grant_type}}&code={{code}}&scope={{scope}}&redirect_uri={{redirect_uri}}&client_id={{client_id}}&client_secret={{client_secret}}",
                   "host": [
                     "{{baseUrl}}"
                   ],
@@ -186,7 +186,7 @@
                     {
                       "key": "code",
                       "value": "{{code}}",
-                      "description": "[**REQUIRED/OPTIONAL**] The Authorization Code obtained from the BGL API. This is not required to Refresh an Access Token "
+                      "description": "[**REQUIRED**] The Authorization Code obtained from the BGL API. This is not required to Refresh an Access Token "
                     },
                     {
                       "key": "scope",
@@ -211,7 +211,8 @@
                     {
                       "key": "refresh_token",
                       "value": "{{refresh_token}}",
-                      "description": "[**REQUIRED/OPTIONAL**] Refresh Token obtained previously. This field is mandatory if grant_type = refresh_token"
+                      "description": "[**REQUIRED/OPTIONAL**] Refresh Token obtained previously. This field is mandatory if grant_type = refresh_token",
+                      "disabled": true
                     }
                   ]
                 },
@@ -405,9 +406,39 @@
                   "body": "{ access_token: \"df2f0e40-606f-4311-8066-590732fd126b\" token_type: \"bearer\" refresh_token: \"c50a429f-9a6d-449d-8d82-4817798fe27b\" expires_in: 581977 scope: \u201caudit\u201d }\n"
                 }
               ]
+            }
+          ],
+          "_postman_id": "c9677878-b304-42c1-be0f-dea86196d142",
+          "description": "The authorization code is a temporary code that the client will exchange for an access token. The code itself is obtained from the authorization server where the user gets a chance to see what the information the client is requesting, and approve or deny the request. The Access Token's purpose is to inform the API that the bearer of the token has been authorized to access the API and perform a predetermined set of actions (which is specified by the scopes granted).\n\n## Step 1. Initiate request\n\nYour app/website initiates the flow by directing the user to the **Authorize URL** . The URL can put inserted into an `<a href=\"\">` tag or attached to a button.\nExample:\n```javascript\n<a href=\"https://api.bgl360.com.au/oauth/authorize?response_type=code&client_id=0ce526e5-1475-4eda-b272-2c45455171&scope=developer&redirect_uri=https://exampleapp.com/bglcallback\">\n    Connect Your BGL Account</a>\n```\n  <a href=\"https://api.bgl360.com.au/oauth/authorize?response_type=code&client_id=0ce526e5-1475-4eda-b272-2c45455171&scope=developer&redirect_uri=https://exampleapp.com/bglcallback\">\n    Connect Your BGL Account</a>\n\n## Step 2. The user approves the request\n\nUpon being directed to the BGL auth server, the user sees the authorization request shown in the illustration below. \n\n**2.1 Login page**\n\nIf the user has not logged in to any BGL system prior to requesting an Authorization Code, the user will be redirected to the BGL Login Page. The user needs to input a username and password and select Sign In.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/login.png)\n\n**2.2 Authorization Page**\nThe Authorization Page will show what access you will have to their accounts. \n\nIf the user has not previously accepted the application's permission request, the grant has expired or been manually revoked by the user, the system will be redirected to the API's authorisation screen as displayed below.\n\nTas shown below.\n\n*Switch Firm*\nIf the user has accees to multiple Firms (Businesses), this screen also allows you to switch firm if required by clicking on the Switch Firm button. You will be redirected to the Please choose a firm page where you can select a different firm from the drop-down list.\n\n**Choose Firm**\n\nIf access has already been granted to fund(s) for the selected firm, the number of funds will be displayed on-screen. If you are performing Authorisation for the first time the count displays the total number of funds avialable for the given firm. Please see Fund Selection on changing the accessible funds.\n\n\n## Step 3. API redirects the user back to your app/website.\n\nThe service sends a redirect header redirecting the user\u2019s browser back to the app that made the request. The redirect will include a \u201ccode\u201d in the URL (and the original \u201cstate\u201d if used).\n\n    https://exampleapp.com/bglcallback?code=Yzk5ZDczMzRlNDEwY&state=5ca75bd30\n\n## Step 4. You exchange the auth code for an access token\n\nThe app uses the auth code to get an access token by making a POST request to the authorization server.\n\n    curl -i -X POST \\\n       -H \"Accept:application/json\" \\\n     'https://api.staging.bgl360.com.au/oauth/token?grant_type=authorization_code&code&client_id=223b218f-7ba8-4c91-b787840-598e0c22e1ne&client_secret=xxxxxx&scope=audit&redirect_uri=https%3A%2F%2Fexampleapp.com%2Fbglcallback'\n\n The authorization server will validate the request and respond with an access token and optional refresh token if the access token will expire.\n\nResponse:\n\n    { access_token: \"df2f0e40-606f-4311-8066-590732fd126b\" token_type: \"bearer\" refresh_token: \"c50a429f-9a6d-449d-8d82-4899998fe27b\" expires_in: 581977 scope: \u201caudit\u201d }\n",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "b9e4f12c-9250-485c-b9de-a838d4bd67f9",
+                "type": "text/javascript",
+                "exec": [
+                  ""
+                ]
+              }
             },
             {
-              "name": " Obtain or Refresh an Access Token Copy",
+              "listen": "test",
+              "script": {
+                "id": "8edb623c-97c6-4b0d-9992-60a04e691358",
+                "type": "text/javascript",
+                "exec": [
+                  ""
+                ]
+              }
+            }
+          ],
+          "_postman_isSubFolder": true
+        },
+        {
+          "name": "Refresh Token",
+          "item": [
+            {
+              "name": "Refresh an Access Token",
               "_postman_id": "df2059a8-ff31-408b-ac34-be48fcf8f915",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -657,35 +688,6 @@
               ]
             }
           ],
-          "_postman_id": "c9677878-b304-42c1-be0f-dea86196d142",
-          "description": "The authorization code is a temporary code that the client will exchange for an access token. The code itself is obtained from the authorization server where the user gets a chance to see what the information the client is requesting, and approve or deny the request. The Access Token's purpose is to inform the API that the bearer of the token has been authorized to access the API and perform a predetermined set of actions (which is specified by the scopes granted).\n\n## Step 1. Initiate request\n\nYour app/website initiates the flow by directing the user to the **Authorize URL** . The URL can put inserted into an `<a href=\"\">` tag or attached to a button.\nExample:\n```javascript\n<a href=\"https://api.bgl360.com.au/oauth/authorize?response_type=code&client_id=0ce526e5-1475-4eda-b272-2c45455171&scope=developer&redirect_uri=https://exampleapp.com/bglcallback\">\n    Connect Your BGL Account</a>\n```\n  <a href=\"https://api.bgl360.com.au/oauth/authorize?response_type=code&client_id=0ce526e5-1475-4eda-b272-2c45455171&scope=developer&redirect_uri=https://exampleapp.com/bglcallback\">\n    Connect Your BGL Account</a>\n\n## Step 2. The user approves the request\n\nUpon being directed to the BGL auth server, the user sees the authorization request shown in the illustration below. \n\n**2.1 Login page**\n\nIf the user has not logged in to any BGL system prior to requesting an Authorization Code, the user will be redirected to the BGL Login Page. The user needs to input a username and password and select Sign In.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/login.png)\n\n**2.2 Authorization Page**\nThe Authorization Page will show what access you will have to their accounts. \n\nIf the user has not previously accepted the application's permission request, the grant has expired or been manually revoked by the user, the system will be redirected to the API's authorisation screen as displayed below.\n\nTas shown below.\n\n*Switch Firm*\nIf the user has accees to multiple Firms (Businesses), this screen also allows you to switch firm if required by clicking on the Switch Firm button. You will be redirected to the Please choose a firm page where you can select a different firm from the drop-down list.\n\n**Choose Firm**\n\nIf access has already been granted to fund(s) for the selected firm, the number of funds will be displayed on-screen. If you are performing Authorisation for the first time the count displays the total number of funds avialable for the given firm. Please see Fund Selection on changing the accessible funds.\n\n\n## Step 3. API redirects the user back to your app/website.\n\nThe service sends a redirect header redirecting the user\u2019s browser back to the app that made the request. The redirect will include a \u201ccode\u201d in the URL (and the original \u201cstate\u201d if used).\n\n    https://exampleapp.com/bglcallback?code=Yzk5ZDczMzRlNDEwY&state=5ca75bd30\n\n## Step 4. You exchange the auth code for an access token\n\nThe app uses the auth code to get an access token by making a POST request to the authorization server.\n\n    curl -i -X POST \\\n       -H \"Accept:application/json\" \\\n     'https://api.staging.bgl360.com.au/oauth/token?grant_type=authorization_code&code&client_id=223b218f-7ba8-4c91-b787840-598e0c22e1ne&client_secret=xxxxxx&scope=audit&redirect_uri=https%3A%2F%2Fexampleapp.com%2Fbglcallback'\n\n The authorization server will validate the request and respond with an access token and optional refresh token if the access token will expire.\n\nResponse:\n\n    { access_token: \"df2f0e40-606f-4311-8066-590732fd126b\" token_type: \"bearer\" refresh_token: \"c50a429f-9a6d-449d-8d82-4899998fe27b\" expires_in: 581977 scope: \u201caudit\u201d }\n",
-          "event": [
-            {
-              "listen": "prerequest",
-              "script": {
-                "id": "b9e4f12c-9250-485c-b9de-a838d4bd67f9",
-                "type": "text/javascript",
-                "exec": [
-                  ""
-                ]
-              }
-            },
-            {
-              "listen": "test",
-              "script": {
-                "id": "8edb623c-97c6-4b0d-9992-60a04e691358",
-                "type": "text/javascript",
-                "exec": [
-                  ""
-                ]
-              }
-            }
-          ],
-          "_postman_isSubFolder": true
-        },
-        {
-          "name": "Refresh Token",
-          "item": [],
           "_postman_id": "9d36b7ba-609d-418b-8664-d34a462d6100",
           "description": "The Refresh Token grant type is used by API clients to exchange a refresh token for an access token when the access token has expired or about to expire. This allows clients to continue to have a valid access token without further interaction with the user.\n\nThe grant_type parameter must be set to \u201crefresh_token\u201d.\n\nBGL checks whether the refresh token is valid, and has not expired.\nIf everything checks out, the service can generate an access token and issue a new refresh token in the response. ",
           "_postman_isSubFolder": true
