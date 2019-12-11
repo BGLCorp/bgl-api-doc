@@ -497,7 +497,7 @@
                     }
                   ]
                 },
-                "description": "Once the client application has the Authorization code, then the client application can obtain an Access Token. The Access Token will contain vital information that is required to access the BGL API.\n\nIn order for the client to obtain an Access Token, the client application should send a request to the BGL API as follows."
+                "description": "A refresh token allows an application to obtain a new access token without prompting the user."
               },
               "response": [
                 {
