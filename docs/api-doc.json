@@ -157,7 +157,7 @@
           "name": "Authorization Code Grant",
           "item": [
             {
-              "name": " Obtain or Refresh an Access Token",
+              "name": "Obtain an Access Token",
               "_postman_id": "0f01acc6-6c85-4cf6-86a1-97fc3366e316",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
