@@ -465,9 +465,9 @@
                       "description": "[**REQUIRED**] to refresh the token, the value of this should always be: refresh_token"
                     },
                     {
+                      "description": "[**REQUIRED/OPTIONAL**] The Authorization Code obtained from the BGL API. This is not required to Refresh an Access Token ",
                       "key": "code",
                       "value": "{{code}}",
-                      "description": "[**REQUIRED/OPTIONAL**] The Authorization Code obtained from the BGL API. This is not required to Refresh an Access Token ",
                       "disabled": true
                     },
                     {
