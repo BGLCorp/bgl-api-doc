@@ -450,7 +450,7 @@
                 "method": "POST",
                 "header": [],
                 "url": {
-                  "raw": "{{baseUrl}}/oauth/token?grant_type={{grant_type}}&code={{code}}&scope={{scope}}&redirect_uri={{redirect_uri}}&client_id={{client_id}}&client_secret={{client_secret}}&refresh_token={{refresh_token}}",
+                  "raw": "{{baseUrl}}/oauth/token?grant_type=refresh_token&scope={{scope}}&redirect_uri={{redirect_uri}}&client_id={{client_id}}&client_secret={{client_secret}}&refresh_token={{refresh_token}}",
                   "host": [
                     "{{baseUrl}}"
                   ],
@@ -461,13 +461,14 @@
                   "query": [
                     {
                       "key": "grant_type",
-                      "value": "{{grant_type}}",
-                      "description": "[**REQUIRED**] the value of this should always be: authorization_code for initial authorization\nto refresh the token, the value of this should always be: refresh_token"
+                      "value": "refresh_token",
+                      "description": "[**REQUIRED**] to refresh the token, the value of this should always be: refresh_token"
                     },
                     {
                       "key": "code",
                       "value": "{{code}}",
-                      "description": "[**REQUIRED/OPTIONAL**] The Authorization Code obtained from the BGL API. This is not required to Refresh an Access Token "
+                      "description": "[**REQUIRED/OPTIONAL**] The Authorization Code obtained from the BGL API. This is not required to Refresh an Access Token ",
+                      "disabled": true
                     },
                     {
                       "key": "scope",
@@ -492,7 +493,7 @@
                     {
                       "key": "refresh_token",
                       "value": "{{refresh_token}}",
-                      "description": "[**REQUIRED/OPTIONAL**] Refresh Token obtained previously. This field is mandatory if grant_type = refresh_token"
+                      "description": "[**REQUIRED**] Refresh Token obtained previously. This field is mandatory if grant_type = refresh_token"
                     }
                   ]
                 },
