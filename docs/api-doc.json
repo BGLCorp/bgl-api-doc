@@ -157,6 +157,13 @@
           "name": "Authorization Code Grant",
           "item": [
             {
+              "name": "Refresh Token",
+              "item": [],
+              "_postman_id": "9d36b7ba-609d-418b-8664-d34a462d6100",
+              "description": "The Refresh Token grant type is used by API clients to exchange a refresh token for an access token when the access token has expired or about to expire. This allows clients to continue to have a valid access token without further interaction with the user.\n\nThe grant_type parameter must be set to \u201crefresh_token\u201d.\n\nBGL checks whether the refresh token is valid, and has not expired.\nIf everything checks out, the service can generate an access token and issue a new refresh token in the response. ",
+              "_postman_isSubFolder": true
+            },
+            {
               "name": " Obtain or Refresh an Access Token",
               "_postman_id": "0f01acc6-6c85-4cf6-86a1-97fc3366e316",
               "protocolProfileBehavior": {
