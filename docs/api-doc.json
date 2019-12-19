@@ -8155,7 +8155,7 @@
           "response": [
             {
               "id": "c32e3e90-0cb8-4659-b178-660f691d9bd6",
-              "name": "Status 201",
+              "name": "Status 202",
               "originalRequest": {
                 "method": "POST",
                 "header": [
@@ -8174,8 +8174,8 @@
                 },
                 "url": "{{baseUrl}}/contacts"
               },
-              "status": "Created",
-              "code": 201,
+              "status": "Accepted",
+              "code": 202,
               "_postman_previewlanguage": "json",
               "header": [
                 {
@@ -8185,7 +8185,7 @@
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "{\n  \"externalIdentifier\": \"1234567\",\n  \"firstName\": \"Anne\",\n  \"lastName\": \"Hathaway\",\n  \"name\": \"Hathaway, Anne\",\n  \"email\": \"anne@gmail.com\",\n  \"title\": \"Ms\",\n  \"skypeId\": \"\",\n  \"phone\": \"0413567863\",\n  \"mobile\": \"\",\n  \"address\": {\n    \"postalCode\": \"3163\",\n    \"addressLine1\": \"175 Oakleigh Rd\",\n    \"addressLine2\": \"\",\n    \"city\": \"Carnegie\",\n    \"region\": \"VIC\",\n    \"country\": \"Australia\"\n  },\n  \"status\": \"\",\n  \"businessStructure\": \"INDIVIDUAL\",\n  \"abn\": \"\",\n  \"acn\": \"\",\n  \"dateOfBirth\": \"1986-09-24\"\n}"
+              "body": "{\n  \"requestUUID\": \"1234567\"\n}"
             }
           ]
         },
