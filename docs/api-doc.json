@@ -8150,7 +8150,7 @@
               "raw": "{\n  \"externalIdentifier\": \"{{externalIdentifier}}\",\n  \"firstName\": \"{{firstName}}\",\n  \"lastName\": \"{{lastName}}\",\n  \"name\": \"{{name}}\",\n  \"email\": \"{{email}}\",\n  \"title\": \"{{title}}\",\n  \"phone\": \"{{phone}}\",\n  \"mobile\": \"{{mobile}}\",\n  \"address\": {\n    \"postalCode\": \"{{postalCode}}\",\n    \"addressLine1\": \"{{addressLine1}}\",\n    \"addressLine2\": \"{{addressLine2}}\",\n    \"city\": \"{{city}}\",\n    \"region\": \"{{region}}\",\n    \"country\": \"{{country}}\"\n  },\n  \"businessStructure\": \"{{businessStructure}}\",\n  \"abn\": \"{{abn}}\",\n  \"acn\": \"{{acn}}\",\n  \"dateOfBirth\": \"{{dateOfBirth}}\"\n}"
             },
             "url": "{{baseUrl}}/integration/firms/{{firmId}}/contacts",
-            "description": "Allows a third-party to create a new contact into BGL Products (CAS 360 and/or Simple Fund 360)\n\n### Path Variables\n| Parameter              | Mandatory        | Datatype | Maximum Size | Description/Comments  |\n|--------------------|------------------|--------|--------|-----------------------|\n| firmId  | Yes              | String | 255 | The unique identifier of a firm in the external partner application                    |\n\n### Request Body\n\n| Field              | Mandatory        | Datatype | Maximum Size | Description/Comments  |\n|--------------------|------------------|--------|--------|-----------------------|\n| externalIdentifier | Yes              | String | 45 | Unique identifier of a contact in a firm of an external partner                       |\n| firstName          | Yes/No*               | String | 255 | First name of the contact. For Individual entity type, this is mandatory field.                      |\n| lastName           | Yes/No*               | String |255 |Last name of the contact. For Individual entity type, this is mandatory field.                       |\n| name               | Yes/No*| String | 255 | For Company, Trust, Partnership and SMSF entity types, this is mandatory.                      |\n| email              | No               | String |255 |Email address of the contact                       |\n| title              | No               | String |45 |Title of the contact                       |\n| phone              | No               | String |255 | Phone number of the contact                       |\n| mobile             | No               | String |45 | Mobile number of the contact                       |\n| address            | Yes              | Object |N/A |Address of the contact. See object details in AddressObject table below.|\n| businessStructure  | Yes              | String |45 |Business structure of the contact.                       |\n| abn                | Yes/No*               | String |45 |Australian Business Number of the contact. For SMSF entity type, this is mandatory                       |\n| acn                | Yes/No*                | String |45 |Australian Company Number of the contact. For Company entity type, this is mandatory field.                       |\n| dateOfBirth        | No               | Date |N/A |Date of Birth of the contact. Format: yyyy-mm-dd                       |\n\n*indicates may be mandatory depending on other data\n\n\n\n###  Address Object\n| Field              | Mandatory        | Datatype | Maximum Size | Description/Comments  |\n|--------------------|------------------|--------|--------|-----------------------|\n| postalCode | Yes              | String | 45 | Postal code of the address   |\n| addressLine1 | Yes              | String | 50 | First line of the address   |\n| addressLine2 | Yes              | String | 255 | Second line of the address   |\n| city | Yes              | String | 45 | City/Town of the address   |\n| region | Yes              | String | 45 | State of the address   |\n| country | Yes              | String | 45 | Country of the address   |"
+            "description": "Allows a third-party to create a new contact into BGL Products (CAS 360 and/or Simple Fund 360)\n\n### Path Variables\n| Parameter              | Mandatory        | Datatype | Maximum Size | Description/Comments  |\n|--------------------|------------------|--------|--------|-----------------------|\n| firmId  | Yes              | String | 255 | The unique identifier of a firm in the external partner application                    |\n\n### Request Body\n\n| Field              | Mandatory        | Datatype | Maximum Size | Description/Comments  |\n|--------------------|------------------|--------|--------|-----------------------|\n| externalIdentifier | Yes              | String | 45 | Unique identifier of a contact in a firm of an external partner                       |\n| firstName          | Yes/No*               | String | 255 | First name of the contact. For Individual entity type, this is mandatory field.                      |\n| lastName           | Yes/No*               | String |255 |Last name of the contact. For Individual entity type, this is mandatory field.                       |\n| name               | Yes/No*| String | 1000 | For Company, Trust, Partnership and SMSF entity types, this is mandatory.                      |\n| email              | No               | String |255 |Email address of the contact                       |\n| title              | No               | String |45 |Title of the contact                       |\n| phone              | No               | String |255 | Phone number of the contact                       |\n| mobile             | No               | String |45 | Mobile number of the contact                       |\n| address            | Yes              | Object |N/A |Address of the contact. See object details in AddressObject table below.|\n| businessStructure  | Yes              | String |45 |Business structure of the contact.                       |\n| abn                | Yes/No*               | String |45 |Australian Business Number of the contact. For SMSF entity type, this is mandatory                       |\n| acn                | Yes/No*                | String |45 |Australian Company Number of the contact. For Company entity type, this is mandatory field.                       |\n| dateOfBirth        | No               | Date |N/A |Date of Birth of the contact. Format: yyyy-mm-dd                       |\n\n*indicates may be mandatory depending on other data\n\n\n\n###  Address Object\n| Field              | Mandatory        | Datatype | Maximum Size | Description/Comments  |\n|--------------------|------------------|--------|--------|-----------------------|\n| postalCode | Yes              | String | 45 | Postal code of the address   |\n| addressLine1 | Yes              | String | 50 | First line of the address   |\n| addressLine2 | Yes              | String | 255 | Second line of the address   |\n| city | Yes              | String | 45 | City/Town of the address   |\n| region | Yes              | String | 45 | State of the address   |\n| country | Yes              | String | 45 | Country of the address   |"
           },
           "response": [
             {
@@ -8447,7 +8447,7 @@
           "response": [
             {
               "id": "ebacfff8-62fb-419b-8313-f2d3626e56e5",
-              "name": "Status 200",
+              "name": "Status 202",
               "originalRequest": {
                 "method": "PUT",
                 "header": [
@@ -8457,17 +8457,19 @@
                   },
                   {
                     "key": "Content-Type",
-                    "value": "application/json"
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
                   }
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "\"<object>\""
+                  "raw": "{\n\n  \"firstName\": \"Anne\",\n  \"lastName\": \"Hathaway\",\n  \"name\": \"Hathaway, Anne\",\n  \"email\": \"anne@gmail.com\",\n  \"title\": \"Ms\",\n  \"phone\": \"0413567863\",\n  \"mobile\": \"\",\n  \"address\": {\n    \"postalCode\": \"3163\",\n    \"addressLine1\": \"175 Oakleigh Rd\",\n    \"addressLine2\": \"\",\n    \"city\": \"Carnegie\",\n    \"region\": \"VIC\",\n    \"country\": \"Australia\"\n  },\n  \"businessStructure\": \"INDIVIDUAL\",\n  \"abn\": \"\",\n  \"acn\": \"\",\n  \"dateOfBirth\": \"1986-09-24\"\n}"
                 },
                 "url": "{{baseUrl}}/contacts/<string>"
               },
-              "status": "OK",
-              "code": 200,
+              "status": "Accepted",
+              "code": 202,
               "_postman_previewlanguage": "json",
               "header": [
                 {
@@ -8477,7 +8479,101 @@
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "{\n    \"firstName\": \"John\",\n    \"lastName\": \"Doe\",\n    \"contactType\": \"People\",\n    \"addressId\": \"172843\",\n    \"title\": \"Mr\",\n    \"sex\": \"Male\",\n    \"email\": \"johndoe@mail.com\",\n    \"mobile\": \"0498111111\",\n    \"phone1\": \"51643726\",\n    \"phone2\": \"71726354\",\n    \"taxNumber\": \"49938271\",\n    \"birthday\": \"1987-12-25\",\n    \"birthPlace\": \"Macdeon\",\n    \"birthState\": \"VIC\",\n    \"birthCountry\": \"Australia\"\n}"
+              "body": "{\n\n        \"requestUUID\": \"1234567\"\n\n}"
+            },
+            {
+              "id": "79bec02a-45a3-4621-b549-bec2ff104ae0",
+              "name": "Status 400",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "bearer {{token}}",
+                    "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"externalIdentifier\": \"{{externalIdentifier}}\",\n  \"firstName\": \"{{firstName}}\",\n  \"lastName\": \"{{lastName}}\",\n  \"name\": \"{{name}}\",\n  \"email\": \"{{email}}\",\n  \"title\": \"{{title}}\",\n  \"skypeId\": \"{{skypeId}}\",\n  \"phone\": \"{{phone}}\",\n  \"mobile\": \"{{mobile}}\",\n  \"address\": {\n    \"postalCode\": \"{{postalCode}}\",\n    \"addressLine1\": \"{{addressLine1}}\",\n    \"addressLine2\": \"{{addressLine2}}\",\n    \"city\": \"{{city}}\",\n    \"region\": \"{{region}}\",\n    \"country\": \"{{country}}\"\n  },\n  \"status\": \"{{status}}\",\n  \"businessStructure\": \"{{businessStructure}}\",\n  \"abn\": \"{{abn}}\",\n  \"acn\": \"{{acn}}\",\n  \"dateOfBirth\": \"{{dateOfBirth}}\"\n}"
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/contacts/:contactId",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "contacts",
+                    ":contactId"
+                  ],
+                  "variable": [
+                    {
+                      "id": "76ef0978-4388-4033-8f7f-e91805441a7a",
+                      "key": "contactId",
+                      "value": "{{contactId}}",
+                      "type": "string"
+                    }
+                  ]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "json",
+              "header": null,
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"message\": \"INVALID_CONTACT\",\n    \"errors\": [\n        \"...\"\n    ]\n}\n\nOR\n\n{\n    \"message\": \"FAILURE\",\n    \"errors\": [\n        \"...\"\n    ]\n}\n"
+            },
+            {
+              "id": "eaf54a7c-32f2-4dc4-94a1-6b01c0608ea0",
+              "name": "Status 429",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "bearer {{token}}",
+                    "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"externalIdentifier\": \"{{externalIdentifier}}\",\n  \"firstName\": \"{{firstName}}\",\n  \"lastName\": \"{{lastName}}\",\n  \"name\": \"{{name}}\",\n  \"email\": \"{{email}}\",\n  \"title\": \"{{title}}\",\n  \"skypeId\": \"{{skypeId}}\",\n  \"phone\": \"{{phone}}\",\n  \"mobile\": \"{{mobile}}\",\n  \"address\": {\n    \"postalCode\": \"{{postalCode}}\",\n    \"addressLine1\": \"{{addressLine1}}\",\n    \"addressLine2\": \"{{addressLine2}}\",\n    \"city\": \"{{city}}\",\n    \"region\": \"{{region}}\",\n    \"country\": \"{{country}}\"\n  },\n  \"status\": \"{{status}}\",\n  \"businessStructure\": \"{{businessStructure}}\",\n  \"abn\": \"{{abn}}\",\n  \"acn\": \"{{acn}}\",\n  \"dateOfBirth\": \"{{dateOfBirth}}\"\n}"
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/contacts/:contactId",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "contacts",
+                    ":contactId"
+                  ],
+                  "variable": [
+                    {
+                      "id": "76ef0978-4388-4033-8f7f-e91805441a7a",
+                      "key": "contactId",
+                      "value": "{{contactId}}",
+                      "type": "string"
+                    }
+                  ]
+                }
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "_postman_previewlanguage": "json",
+              "header": null,
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"message\": \"...\",\n    \"errors\": [\n        \"...\"\n    ]\n}"
             }
           ]
         }
