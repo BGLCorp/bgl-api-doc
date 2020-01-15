@@ -8174,7 +8174,7 @@
           ]
         },
         {
-          "name": "List of Status Types Copy",
+          "name": "Assign a new Status for a Document",
           "_postman_id": "270ae27d-d5ed-4757-af05-787f39c2583e",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -8193,7 +8193,7 @@
               }
             ],
             "url": "{{baseUrl}}/documents/statuses/types",
-            "description": "Allows you to retrieve the Status types for documents in CAS360\n\n\n### Response Body \n\n| Key | Type | Comments |\n| -------- | -------- | -------- |\n| id     | number     | Unique identifier   |\n| name     | String     | Name of the Status   |\n"
+            "description": "Allows you to alter the Status of a document in CAS360\n\n\n### Response Body \n\n| Key | Type | Comments |\n| -------- | -------- | -------- |\n| typeId     | number     | Unique identifier   |\n| effectiveDate     | String     | Effective Date of the new Status   |\n"
           },
           "response": [
             {
