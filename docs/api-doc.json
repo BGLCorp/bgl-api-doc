@@ -3711,6 +3711,29 @@
             }
           ],
           "_postman_id": "08fb5238-e13d-46db-8d13-1229b901515e",
+          "description": "To create a new fund in Simple Fund 360, the following is the path is what an API consumer will need to follow:\n\n-   Use [INSERT Fund](https://docs.api.bgl360.com.au/?version=latest#5a1896dc-7bd5-4ddc-8de5-c230672447e7) to create the Fund. This will return a FundId which can be used to insert or update any other necessary details\n-   Use [UPDATE Fund Details](https://docs.api.bgl360.com.au/?version=latest#78544ec2-7bd4-42b5-aa8d-a11d4d50fae9) (using the FundId created at Step 1) to check or update Fund Details.\n-   Use [CREATE Fund Contacts](https://docs.api.bgl360.com.au/?version=latest#0ecda1a1-f883-4cea-ac1d-a63c63c46bf6) (using the FundId created at Step 1) to create the Corporate Trustee, Corporate Trustee Directors or Individual Trustees.\n-   Use [CREATE Member](https://docs.api.bgl360.com.au/?version=latest#a79062c6-6ea1-4778-96f0-e541e2557e19)  using FundId created at Step 1) to add members to the fund using the contacts added at Step 3.\n\nFor an  API  Consumer to check what they have created:\n\n-   [GET Fund Details](https://docs.api.bgl360.com.au/?version=latest#ecad8545-e4bb-4722-9c64-ab6a619b0165)\n-   [GET Fund Trustees](https://docs.api.bgl360.com.au/?version=latest#df029f2a-580f-4f53-8897-1ec108b2abab)\n-   [GET Fund Members](https://docs.api.bgl360.com.au/?version=latest#d409fb0d-00ed-4317-b55e-27b392899de4)\n-   [GET Fund Contacts](https://docs.api.bgl360.com.au/?version=latest#896c5876-11d3-4c36-b2cc-206bacb549ea)",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "583ae932-c28c-48a6-84a0-f24027ccd0f4",
+                "type": "text/javascript",
+                "exec": [
+                  ""
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "id": "b5f0fcc5-a3c0-4180-8522-0f0de8f00315",
+                "type": "text/javascript",
+                "exec": [
+                  ""
+                ]
+              }
+            }
+          ],
           "_postman_isSubFolder": true
         },
         {
