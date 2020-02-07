@@ -167,9 +167,15 @@
                   "type": "noauth"
                 },
                 "method": "POST",
-                "header": [],
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Basic {{base64(client_id:client_secret)}}",
+                    "type": "text"
+                  }
+                ],
                 "url": {
-                  "raw": "{{baseUrl}}/oauth/token?grant_type={{grant_type}}&code={{code}}&scope={{scope}}&redirect_uri={{redirect_uri}}&client_id={{client_id}}&client_secret={{client_secret}}",
+                  "raw": "{{baseUrl}}/oauth/token?grant_type={{grant_type}}&code={{code}}&scope={{scope}}&redirect_uri={{redirect_uri}}",
                   "host": [
                     "{{baseUrl}}"
                   ],
@@ -197,16 +203,6 @@
                       "key": "redirect_uri",
                       "value": "{{redirect_uri}}",
                       "description": "[**REQUIRED**] The URI that will be used to redirect after authorisation. This value must match one of the defined OAuth 2.0 Redirect URLs in your application configuration, as described in the Oauth2 Documentation. See Obtaining BGL API Credentials on how to set redirect uri."
-                    },
-                    {
-                      "key": "client_id",
-                      "value": "{{client_id}}",
-                      "description": "[**REQUIRED/OPTIONAL**] This field is mandatory if a Base64 encoded Basic Authentication Header is not provided.\nA unique identifier to identify a client that will be using the BGL API"
-                    },
-                    {
-                      "key": "client_secret",
-                      "value": "{{client_secret}}",
-                      "description": "[**REQUIRED/OPTIONAL**] This field is mandatory if a Base64 encoded Basic Authentication Header is not provided.\nThe client secret provided by BGL. See section Obtaining BGL API Credentials on how to obtain Client Secret."
                     },
                     {
                       "key": "refresh_token",
