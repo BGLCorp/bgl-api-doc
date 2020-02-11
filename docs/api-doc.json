@@ -6082,7 +6082,7 @@
               ]
             },
             {
-              "name": "List Document Details",
+              "name": "Document Details",
               "_postman_id": "d74c3a1e-4d32-48cc-9201-64511a144dd8",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -6124,7 +6124,7 @@
                     }
                   ]
                 },
-                "description": "Returns Document Details Including All Attachments for a Company. \n\n\n### Response Body\n\n| Key           | Datatype        | Mandatory | Constraints                                          |\n| ------------- | --------------- | --------- | ---------------------------------------------------- |\n| traceNumber   | String          | Yes       |                                                      |\n| name          | String          | Yes       |                                                      |\n| documentDate  | String          | Yes       | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601 |\n| asicDocNumber | String          | No        |                                                      |\n| attachments   | List of Objects | Yes       | Can be empty                                         |\n\n\n**attachments objects**\n\n| Key          | Datatype | Mandatory | Constraints                                          |\n| ------------ | -------- | --------- | ---------------------------------------------------- |\n| id           | Number   | Yes       |                                                      |\n| name         | String   | Yes       |                                                      |\n| creationDate | String   | Yes       | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601 |"
+                "description": "Returns Document Details Including All Attachments for a Company. \n\n\n### Response Body\n\n| Key           | Datatype        | Mandatory | Constraints                                          |\n| ------------- | --------------- | --------- | ---------------------------------------------------- |\n| traceNumber   | String          | Yes       |                                                      |\n| name          | String          | Yes       |                                                      |\n| documentDate  | String          | Yes       | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601 |\n| asicDocNumber | String          | No        |                                                      |\n| attachments   | List of Objects | Yes       | Can be empty                                         |\n\n\n**attachments objects**\n\n| Key          | Datatype | Mandatory | Constraints                                          |\n| ------------ | -------- | --------- | ---------------------------------------------------- |\n| id           | Number   | Yes       |                                                      |\n| name         | String   | Yes       |                                                      |\n| creationDate | String   | Yes       | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601 |\n\n**status objects**\n\n| Key          | Datatype | Mandatory | Constraints                                          |\n| ------------ | -------- | --------- | ---------------------------------------------------- |\n| id           | Number   | Yes       |                                                      |\n| createdBy | String   | Yes       |  |\n| type         | String   | Yes       | Descriptive name of Status                                                      |\n| typeId         | Number   | Yes       |                                                      |\n| effectiveDate | String   | Yes       | Created Date of status |\n"
               },
               "response": [
                 {
@@ -6151,7 +6151,7 @@
                   ],
                   "cookie": [],
                   "responseTime": null,
-                  "body": "\"<object>\""
+                  "body": "{\r\n    \"id\": 1007308,\r\n    \"traceNumber\": \"384995\",\r\n    \"asicDocNumber\": null,\r\n    \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n    \"documentDate\": \"2019-06-27\",\r\n    \"attachments\": [\r\n        {\r\n            \"id\": \"F871915\",\r\n            \"name\": \"Register of Officers.pdf\",\r\n            \"creationDate\": \"2019-06-27\"\r\n        },\r\n        {\r\n            \"id\": \"UA17516\",\r\n            \"name\": \"User Uploaded Document.pdf\",\r\n            \"creationDate\": \"2020-01-15\"\r\n        }\r\n    ],\r\n    \"status\": {\r\n        \"id\": 925386,\r\n        \"createdBy\": \"Jeremiah Noah\",\r\n        \"type\": \"DOCUMENT PREPARED\",\r\n        \"typeId\": 2,\r\n        \"effectiveDate\": \"2019-06-27\"\r\n    }\r\n}\r\n"
                 }
               ]
             },
