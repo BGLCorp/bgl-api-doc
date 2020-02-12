@@ -5549,7 +5549,7 @@
                     }
                   ]
                 },
-                "description": "This resources will return a URL link which can be used to download a Document Attachment. Both User and System attachments can be downloaded"
+                "description": "This resource will return a URL link which can be used to download a Document Attachment. Both User and System attachments can be downloaded"
               },
               "response": [
                 {
