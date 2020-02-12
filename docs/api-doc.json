@@ -1421,7 +1421,7 @@
                     }
                   ]
                 },
-                "description": "Allows you to retrieve a list of funds owned by the resource owner (BGL User), which also returns the fund id, which can be used for subsequent API requests. \n\n\n### Response\n\n| Key | Data Type | Comments |\n| -------- | -------- | -------- |\n| FundID     | String     | Unique ID for fund across all of SF360     |\n| fundCode     | String     | Code issued to the fund by the account owner    |\n| code     | String     | Code issued to the fund by the account owner in SF360     |\n| sfcode     | String     | Code issued to the fund by the account owner in SF Desktop     |\n| ABN     | number     | ABN of the fund if entered in SF360    |\n| firmName     | String     | The name of the SF360 Account owner (Business Name)   |\n| firm     | String     | Short Code issued to identify the SF360 Account Owner    |\n| fundEmail     | String     | Email address for the fund   |\n|Members | Object | Object of Member Details |"
+                "description": "Allows you to retrieve a list of funds owned by the resource owner (BGL User), which also returns the fund id, which can be used for subsequent API requests. \n\n\n### Response\n\n| Key | Data Type | Comments |\n| -------- | -------- | -------- |\n| fundID     | String     | Unique ID for fund across all of SF360     |\n| fundCode     | String     | Code issued to the fund by the account owner    |\n| code     | String     | Code issued to the fund by the account owner in SF360     |\n| sfcode     | String     | Code issued to the fund by the account owner in SF Desktop     |\n| ABN     | number     | ABN of the fund if entered in SF360    |\n| firmName     | String     | The name of the SF360 Account owner (Business Name)   |\n| firm     | String     | Short Code issued to identify the SF360 Account Owner    |\n| fundEmail     | String     | Email address for the fund   |\n|members | Object | Object of Member Details |"
               },
               "response": [
                 {
@@ -6418,7 +6418,7 @@
                       ],
                       "cookie": [],
                       "responseTime": null,
-                      "body": "{\n\"annualReviewDate\": \"2018-10-03\",\n\"details\":{\n\"annualReviewStatus\": \"PROCESSED\",\n\"annualReviewStatusDate\": null,\n\"asicAgentNumber\": null,\n\"labels\":[]\n},\n\"id\": \"1f2ccd6c-7c24-42ca-8cf2-496d7b112cea\",\n\"incorporationDate\": \"2017-10-02\",\n\"jurisdiction\": \"Australia\",\n\"name\": \"Jasmine's Sour Ale Proprietary Limited\",\n\"number\": \"000000113\",\n\"registrationState\": \"VIC\",\n\"type\":{\n\"companyClass\": \"Limited by Shares\",\n\"companySubClass\": \"None\",\n\"companyType\": \"Small Proprietary\"\n}\n}"
+                      "body": "{ \n   \"annualReviewDate\":\"2018-10-03\",\n   \"details\":{ \n      \"annualReviewStatus\":\"PROCESSED\",\n      \"annualReviewStatusDate\":null,\n      \"asicAgentNumber\":null,\n      \"labels\":[ ]\n   },\n   \"id\":\"1f2ccd6c-7c24-42ca-8cf2-496d7b112cea\",\n   \"incorporationDate\":\"2017-10-02\",\n   \"jurisdiction\":\"Australia\",\n   \"name\":\"Jasmine's Sour Ale Proprietary Limited\",\n   \"number\":\"000000113\",\n   \"registrationState\":\"VIC\",\n   \"registered\":true,\n   \"type\":{ \n      \"companyClass\":\"Limited by Shares\",\n      \"companySubClass\":\"None\",\n      \"companyType\":\"Small Proprietary\"\n   }\n}"
                     }
                   ]
                 },
