@@ -5631,7 +5631,7 @@
                     }
                   ]
                 },
-                "description": "Delete a Document Attachment\n\nThis resources can only be used to delete user attachments. System generated attachments/forms cannot be deleted"
+                "description": "Delete a Document Attachment\n\nThis resource can only be used to delete user attachments. System generated attachments/forms cannot be deleted"
               },
               "response": [
                 {
