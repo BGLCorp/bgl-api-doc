@@ -6368,7 +6368,7 @@
               ]
             },
             {
-              "name": "Create New Document Record Copy",
+              "name": "Assign New Document Status",
               "_postman_id": "6fda1de0-a6a4-411f-bf18-cf24554fbed0",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -6422,7 +6422,7 @@
                     }
                   ]
                 },
-                "description": "Create New Document Record for a Company\n\n### Request Body\n\n\n| Key           | Datatype | Mandatory | Constraints                                          |\n| ------------- | -------- | --------- | ---------------------------------------------------- |\n| name          | String   | Yes       |                                                      |\n| documentDate  | String   | Yes       | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601 |\n| asicDocNumber | String   | No        |\n\n**status object**\n\nNote: Within Australia, only certain combinations of companyType, companyClass and companySubClass are valid\n\n| Key             | Datatype | Mandatory | Constraints                                                                                                                                                    |\n| --------------- | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| typeId     | Long   | No       | Must be a valid status Id, if not specified will default to 'RECEIVED'        |"
+                "description": "Assign New Status for a Document Record in a Company\n\n### Request Body\n\n\n| Key           | Datatype | Mandatory | Constraints                                          |\n| ------------- | -------- | --------- | ---------------------------------------------------- |\n| typeId        | Number   | Yes       |statusType unique idendifier|\n| effectiveDate  | String   | Yes       | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601 |\n\n**status object**\n\nNote: Within Australia, only certain combinations of companyType, companyClass and companySubClass are valid\n\n| Key             | Datatype | Mandatory | Constraints                                                                                                                                                    |\n| --------------- | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| typeId     | Long   | No       | Must be a valid status Id, if not specified will default to 'RECEIVED'        |"
               },
               "response": [
                 {
