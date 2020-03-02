@@ -688,7 +688,7 @@
         }
       ],
       "_postman_id": "f7221efd-d6bf-4475-a5c5-e68cd905eacf",
-      "description": "**What is Oauth 2.0?**\n\nOAuth 2.0 is the industry standard developed by IETF for providing client applications with \u201csecure delegated access\u201d. \n\nIf you are new to using OAuth 2.0 please see [BGL's OAuth2 Guide/](https://blog.api.bgl360.com.au/oauth2-guide/). This includes a step by step process of how to test using Postman. \n",
+      "description": "**What is Oauth 2.0?**\n\nOAuth 2.0 is the industry standard developed by IETF for providing client applications with \u201csecure delegated access\u201d. \n\nIf you are new to using OAuth 2.0 please see [BGL's OAuth2 Guide](https://blog.api.bgl360.com.au/oauth2-guide/). This includes a step by step process of how to test using Postman. \n",
       "event": [
         {
           "listen": "prerequest",
