@@ -42,7 +42,7 @@
           "name": "Production Environment",
           "item": [],
           "_postman_id": "8f830d5d-fefb-4461-9603-40d24534abe8",
-          "description": "Our production environment (https://api.bgl360.com.au) is used to access BGL's client's data for Simple Fund 360 and CAS 360. To get access to our Production Enviroment you must have done the following: \n\n1. Developed and tested your integration on our staging environment\n2. Email api@bglcorp.com.au to get access to receive Production environment credentials.  \n2. You must agree to [BGL's Terms and Conditions](https://api.bgl360.com.au/home/termAndCondition) and sign an agreement to get access to our Production Environment\n3. To upgrade your scope on BGL's production environment \n* must demonstrate your integration to BGL to get access to BGL's Production Environment.\n* you must complete [BGL's security questionnaire ](https://docs.google.com/forms/d/e/1FAIpQLSe71BiO--InSTLWsNRfu2sTWq6hSlXU8zyKTl4si-0JQp_uBw/viewform)\n* \n\n\nOnce all these steps have been completed you will receive the following:\n\n1. Authentication details for BGL's Production API\n2. For commercial products, an opportunity for your integration details, to be placed on our Help website. \n3. For commercial products an pportunity to speak to our Marketing department about Joint Marketing,Emails, podcasts, webinars etc\n",
+          "description": "Our production environment (https://api.bgl360.com.au) is used to access BGL's client's data for Simple Fund 360 and CAS 360. To get access to our Production Environment you must have done the following: \n\n1. Developed and tested your integration on our staging environment\n2. Email api@bglcorp.com.au to get access to receive Production environment credentials.  \n2. You must agree to [BGL's Terms and Conditions](https://api.bgl360.com.au/home/termAndCondition) and sign an agreement to get access to our Production Environment\n3. To upgrade your scope on BGL's production environment \n* must demonstrate your integration to BGL to get access to BGL's Production Environment.\n* you must complete [BGL's security questionnaire ](https://docs.google.com/forms/d/e/1FAIpQLSe71BiO--InSTLWsNRfu2sTWq6hSlXU8zyKTl4si-0JQp_uBw/viewform)\n* \n\n\nOnce all these steps have been completed you will receive the following:\n\n1. Authentication details for BGL's Production API\n2. For commercial products, an opportunity for your integration details, to be placed on our Help website. \n3. For commercial products an opportunity to speak to our Marketing department about Joint Marketing,Emails, podcasts, webinars etc\n",
           "event": [
             {
               "listen": "prerequest",
@@ -8222,7 +8222,12 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n\t\"typeId\": 10,\n\t\"effectiveDate\": \"2018-01-15\"\n}"
+                  "raw": "{\n\t\"typeId\": 10,\n\t\"effectiveDate\": \"2018-01-15\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
                 },
                 "url": "{{baseUrl}}/companies/{{companyId}}/documents/{{documentId}}/statuses"
               },
@@ -8319,7 +8324,12 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"externalIdentifier\": \"1234567\",\n  \"firstName\": \"Anne\",\n  \"lastName\": \"Hathaway\",\n  \"name\": \"Hathaway, Anne\",\n  \"email\": \"anne@gmail.com\",\n  \"title\": \"Ms\",\n  \"phone\": \"0413567863\",\n  \"mobile\": \"\",\n  \"address\": {\n    \"postalCode\": \"3163\",\n    \"addressLine1\": \"175 Oakleigh Rd\",\n    \"addressLine2\": \"\",\n    \"city\": \"Carnegie\",\n    \"region\": \"VIC\",\n    \"country\": \"Australia\"\n  },\n  \"businessStructure\": \"INDIVIDUAL\",\n  \"abn\": \"\",\n  \"acn\": \"\",\n  \"dateOfBirth\": \"1986-09-24\"\n}"
+                  "raw": "{\n  \"externalIdentifier\": \"1234567\",\n  \"firstName\": \"Anne\",\n  \"lastName\": \"Hathaway\",\n  \"name\": \"Hathaway, Anne\",\n  \"email\": \"anne@gmail.com\",\n  \"title\": \"Ms\",\n  \"phone\": \"0413567863\",\n  \"mobile\": \"\",\n  \"address\": {\n    \"postalCode\": \"3163\",\n    \"addressLine1\": \"175 Oakleigh Rd\",\n    \"addressLine2\": \"\",\n    \"city\": \"Carnegie\",\n    \"region\": \"VIC\",\n    \"country\": \"Australia\"\n  },\n  \"businessStructure\": \"INDIVIDUAL\",\n  \"abn\": \"\",\n  \"acn\": \"\",\n  \"dateOfBirth\": \"1986-09-24\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
                 },
                 "url": "{{baseUrl}}/integration/firms/{{firmId}}/contacts"
               },
@@ -8356,7 +8366,12 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"externalIdentifier\": \"{{externalIdentifier}}\",\n  \"firstName\": \"{{firstName}}\",\n  \"lastName\": \"{{lastName}}\",\n  \"name\": \"{{name}}\",\n  \"email\": \"{{email}}\",\n  \"title\": \"{{title}}\",\n  \"phone\": \"{{phone}}\",\n  \"mobile\": \"{{mobile}}\",\n  \"address\": {\n    \"postalCode\": \"{{postalCode}}\",\n    \"addressLine1\": \"{{addressLine1}}\",\n    \"addressLine2\": \"{{addressLine2}}\",\n    \"city\": \"{{city}}\",\n    \"region\": \"{{region}}\",\n    \"country\": \"{{country}}\"\n  },\n  \"businessStructure\": \"{{businessStructure}}\",\n  \"abn\": \"{{abn}}\",\n  \"acn\": \"{{acn}}\",\n  \"dateOfBirth\": \"{{dateOfBirth}}\"\n}"
+                  "raw": "{\n  \"externalIdentifier\": \"{{externalIdentifier}}\",\n  \"firstName\": \"{{firstName}}\",\n  \"lastName\": \"{{lastName}}\",\n  \"name\": \"{{name}}\",\n  \"email\": \"{{email}}\",\n  \"title\": \"{{title}}\",\n  \"phone\": \"{{phone}}\",\n  \"mobile\": \"{{mobile}}\",\n  \"address\": {\n    \"postalCode\": \"{{postalCode}}\",\n    \"addressLine1\": \"{{addressLine1}}\",\n    \"addressLine2\": \"{{addressLine2}}\",\n    \"city\": \"{{city}}\",\n    \"region\": \"{{region}}\",\n    \"country\": \"{{country}}\"\n  },\n  \"businessStructure\": \"{{businessStructure}}\",\n  \"abn\": \"{{abn}}\",\n  \"acn\": \"{{acn}}\",\n  \"dateOfBirth\": \"{{dateOfBirth}}\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
                 },
                 "url": "{{baseUrl}}/integration/firms/{{firmId}}/contacts"
               },
@@ -8388,7 +8403,12 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"externalIdentifier\": \"{{externalIdentifier}}\",\n  \"firstName\": \"{{firstName}}\",\n  \"lastName\": \"{{lastName}}\",\n  \"name\": \"{{name}}\",\n  \"email\": \"{{email}}\",\n  \"title\": \"{{title}}\",\n  \"phone\": \"{{phone}}\",\n  \"mobile\": \"{{mobile}}\",\n  \"address\": {\n    \"postalCode\": \"{{postalCode}}\",\n    \"addressLine1\": \"{{addressLine1}}\",\n    \"addressLine2\": \"{{addressLine2}}\",\n    \"city\": \"{{city}}\",\n    \"region\": \"{{region}}\",\n    \"country\": \"{{country}}\"\n  },\n  \"businessStructure\": \"{{businessStructure}}\",\n  \"abn\": \"{{abn}}\",\n  \"acn\": \"{{acn}}\",\n  \"dateOfBirth\": \"{{dateOfBirth}}\"\n}"
+                  "raw": "{\n  \"externalIdentifier\": \"{{externalIdentifier}}\",\n  \"firstName\": \"{{firstName}}\",\n  \"lastName\": \"{{lastName}}\",\n  \"name\": \"{{name}}\",\n  \"email\": \"{{email}}\",\n  \"title\": \"{{title}}\",\n  \"phone\": \"{{phone}}\",\n  \"mobile\": \"{{mobile}}\",\n  \"address\": {\n    \"postalCode\": \"{{postalCode}}\",\n    \"addressLine1\": \"{{addressLine1}}\",\n    \"addressLine2\": \"{{addressLine2}}\",\n    \"city\": \"{{city}}\",\n    \"region\": \"{{region}}\",\n    \"country\": \"{{country}}\"\n  },\n  \"businessStructure\": \"{{businessStructure}}\",\n  \"abn\": \"{{abn}}\",\n  \"acn\": \"{{acn}}\",\n  \"dateOfBirth\": \"{{dateOfBirth}}\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
                 },
                 "url": "{{baseUrl}}/integration/firms/{{firmId}}/contacts"
               },
@@ -8420,7 +8440,12 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"externalIdentifier\": \"{{externalIdentifier}}\",\n  \"firstName\": \"{{firstName}}\",\n  \"lastName\": \"{{lastName}}\",\n  \"name\": \"{{name}}\",\n  \"email\": \"{{email}}\",\n  \"title\": \"{{title}}\",\n  \"phone\": \"{{phone}}\",\n  \"mobile\": \"{{mobile}}\",\n  \"address\": {\n    \"postalCode\": \"{{postalCode}}\",\n    \"addressLine1\": \"{{addressLine1}}\",\n    \"addressLine2\": \"{{addressLine2}}\",\n    \"city\": \"{{city}}\",\n    \"region\": \"{{region}}\",\n    \"country\": \"{{country}}\"\n  },\n  \"businessStructure\": \"{{businessStructure}}\",\n  \"abn\": \"{{abn}}\",\n  \"acn\": \"{{acn}}\",\n  \"dateOfBirth\": \"{{dateOfBirth}}\"\n}"
+                  "raw": "{\n  \"externalIdentifier\": \"{{externalIdentifier}}\",\n  \"firstName\": \"{{firstName}}\",\n  \"lastName\": \"{{lastName}}\",\n  \"name\": \"{{name}}\",\n  \"email\": \"{{email}}\",\n  \"title\": \"{{title}}\",\n  \"phone\": \"{{phone}}\",\n  \"mobile\": \"{{mobile}}\",\n  \"address\": {\n    \"postalCode\": \"{{postalCode}}\",\n    \"addressLine1\": \"{{addressLine1}}\",\n    \"addressLine2\": \"{{addressLine2}}\",\n    \"city\": \"{{city}}\",\n    \"region\": \"{{region}}\",\n    \"country\": \"{{country}}\"\n  },\n  \"businessStructure\": \"{{businessStructure}}\",\n  \"abn\": \"{{abn}}\",\n  \"acn\": \"{{acn}}\",\n  \"dateOfBirth\": \"{{dateOfBirth}}\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
                 },
                 "url": "{{baseUrl}}/integration/firms/{{firmId}}/contacts"
               },
@@ -8613,7 +8638,12 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n\n  \"firstName\": \"Anne\",\n  \"lastName\": \"Hathaway\",\n  \"name\": \"Hathaway, Anne\",\n  \"email\": \"anne@gmail.com\",\n  \"title\": \"Ms\",\n  \"phone\": \"0413567863\",\n  \"mobile\": \"\",\n  \"address\": {\n    \"postalCode\": \"3163\",\n    \"addressLine1\": \"175 Oakleigh Rd\",\n    \"addressLine2\": \"\",\n    \"city\": \"Carnegie\",\n    \"region\": \"VIC\",\n    \"country\": \"Australia\"\n  },\n  \"businessStructure\": \"INDIVIDUAL\",\n  \"abn\": \"\",\n  \"acn\": \"\",\n  \"dateOfBirth\": \"1986-09-24\"\n}"
+                  "raw": "{\n\n  \"firstName\": \"Anne\",\n  \"lastName\": \"Hathaway\",\n  \"name\": \"Hathaway, Anne\",\n  \"email\": \"anne@gmail.com\",\n  \"title\": \"Ms\",\n  \"phone\": \"0413567863\",\n  \"mobile\": \"\",\n  \"address\": {\n    \"postalCode\": \"3163\",\n    \"addressLine1\": \"175 Oakleigh Rd\",\n    \"addressLine2\": \"\",\n    \"city\": \"Carnegie\",\n    \"region\": \"VIC\",\n    \"country\": \"Australia\"\n  },\n  \"businessStructure\": \"INDIVIDUAL\",\n  \"abn\": \"\",\n  \"acn\": \"\",\n  \"dateOfBirth\": \"1986-09-24\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
                 },
                 "url": "{{baseUrl}}/contacts/<string>"
               },
