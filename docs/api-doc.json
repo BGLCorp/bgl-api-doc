@@ -6337,7 +6337,7 @@
                   }
                 ],
                 "url": "{{baseUrl}}/cas/documents/statuses/types",
-                "description": "Allows you to retrieve the Status types for documents in CAS360\n\n\n### Response Body \n\n| Key | Type | Comments |\n| -------- | -------- | -------- |\n| id     | number     | Unique identifier   |\n| name     | String     | Name of the Status   |\n"
+                "description": "Allows you to retrieve the Status types for documents in CAS360. The status helps users manage documents by indicating what stage the document is at.\n\nWhen documents are generated, the status will automatically be set to Document Prepared. Once a document is lodged, the status will automatically change to Lodged. When an Annual Company Statement is received, the status of Form 480 will automatically be set to Document Received and once the Annual Review is processed, the status will change to Document Processed.\n\n\n### Response Body \n\n| Key | Type | Comments |\n| -------- | -------- | -------- |\n| id     | number     | Unique identifier   |\n| name     | String     | Name of the Status   |"
               },
               "response": [
                 {
@@ -6395,9 +6395,12 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n\t\"typeId\": 10,\n\t\"effectiveDate\": \"2018-01-15\"\n}"
+                  "raw": "{\n\t\"typeId\": 10,\n\t\"effectiveDate\": \"2018-01-15\"\n}",
+                  "options": {
+                    "raw": {}
+                  }
                 },
-                "url": "{{baseUrl}}/companies/{{companyId}}/documents/{{documentId}}/statuses",
+                "url": "{{baseUrl}}/cas/companies/{{companyId}}/documents/{{documentId}}/statuses",
                 "description": "Allows you to alter the Status of a document in CAS360\n\n\n### Response Body \n\n| Key | Type | Comments |\n| -------- | -------- | -------- |\n| typeId     | number     | Unique identifier   |\n| effectiveDate     | String     | Effective Date of the new Status   |\n"
               },
               "response": [
