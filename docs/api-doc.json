@@ -5903,14 +5903,14 @@
                   }
                 ],
                 "url": {
-                  "raw": "{{baseUrl}}/cas/companies/companyId/documents/unlodged?offset={{offset}}&limit={{limit}}",
+                  "raw": "{{baseUrl}}/cas/companies/:companyId/documents/unlodged?offset={{offset}}&limit={{limit}}",
                   "host": [
                     "{{baseUrl}}"
                   ],
                   "path": [
                     "cas",
                     "companies",
-                    "companyId",
+                    ":companyId",
                     "documents",
                     "unlodged"
                   ],
@@ -5924,6 +5924,13 @@
                       "key": "limit",
                       "value": "{{limit}}",
                       "description": "number | Required | Example = 500 |"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "key": "companyId",
+                      "value": "",
+                      "type": "string"
                     }
                   ]
                 },
