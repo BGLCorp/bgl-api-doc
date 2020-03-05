@@ -5805,7 +5805,7 @@
                   }
                 ],
                 "url": {
-                  "raw": "{{baseUrl}}/cas/companies/documents/unlodged ?offset={{offset}}&limit={{limit}}",
+                  "raw": "{{baseUrl}}/cas/companies/documents/unlodged?offset={{offset}}&limit={{limit}}",
                   "host": [
                     "{{baseUrl}}"
                   ],
@@ -5813,7 +5813,7 @@
                     "cas",
                     "companies",
                     "documents",
-                    "unlodged "
+                    "unlodged"
                   ],
                   "query": [
                     {
@@ -5824,8 +5824,7 @@
                     {
                       "key": "limit",
                       "value": "{{limit}}",
-                      "description": "number | Required | Example = 500",
-                      "type": "text"
+                      "description": "number | Required | Example = 500"
                     }
                   ]
                 },
