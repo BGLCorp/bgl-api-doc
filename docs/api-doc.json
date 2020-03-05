@@ -5929,7 +5929,7 @@
                   "variable": [
                     {
                       "key": "companyId",
-                      "value": "",
+                      "value": "{{companyId}}",
                       "type": "string"
                     }
                   ]
