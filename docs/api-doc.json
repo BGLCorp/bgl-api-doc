@@ -8220,12 +8220,12 @@
             "method": "POST",
             "header": [],
             "url": "bgl-will-send-to-your-registered-url",
-            "description": "## Encryption\n BGL will compute a Hash-based(SHA256) message authentication code (HMAC) using a secret key to protect the integrity and the authenticity of the message. The following logic will be used to generate a token which sends as an authorization header which can be decoded from provider's end with the same private key\n\n    Authorization : \"{clientCode} {UTC Date String} {Signature}\"\n    \n           client code = this is code in lowercase unique for the client\n           UTC Date String = timestamp in UTC format yyyy-MM-dd'T'HH:mm:ss.sss'Z'\n           Signature = This will contain following data which will generate HMAC using SHA256 hash, using configured secret. \n                               \"{UTC Date String}POST{URI String}{RequestBody}\"\n    \n          Calculating Signature,\n    \n          Signature = Base64Encoded(HMAC(\"{UTC Date String}POST{URI String}{RequestBody}\"))\n\n \n    \n\n   ### Request Body\n\n| Key| Mandatory| Type |Description |\n| -------- | -------- | -------- | -------- |\n| userId     | Yes     | String | The email address of the user who has triggered the webhook     |\n| firmId     | Yes     | String |  The Short Name or Firm ID of the firm     |\n| entityId     | Yes     | String |  The ID of the resource that has changed. This could be with a companyId, trustId or fundId     |\n| eventId     | Yes     | String | The Unique Identifier of the event provided by Simple Fund 360 or CAS 360     |\n| eventType     | Yes     | String | The type of event of that occurred. This will be one of the following (constitution \\ audit \\ newsmsf)     |\n| tenants | No | Array | see below |\n\n**Tenants Array**\n\n| Key| Mandatory| Type |Description |\n| -------- | -------- | -------- | -------- |\n| tenantId     | No     | String |  If applicable , the ID of the tenant that the event happened in relation to (e.g. ContactId or MemberId, Financial Year)     |\n| tenantType     | No     | String | The type of tenant (contact \\ member \\ financialYear     |"
+            "description": "## Encryption\n BGL will compute a Hash-based(SHA256) message authentication code (HMAC) using a secret key to protect the integrity and the authenticity of the message. The following logic will be used to generate a token which sends as an authorization header which can be decoded from provider's end with the same private key\n\n    Authorization : \"{clientCode} {UTC Date String} {Signature}\"\n    \n           client code = this is code in lowercase unique for the client\n           UTC Date String = timestamp in UTC format yyyy-MM-dd'T'HH:mm:ss.sss'Z'\n           Signature = This will contain following data which will generate HMAC using SHA256 hash, using configured secret. \n                               \"{UTC Date String}POST{URI String}{RequestBody}\"\n    \n          Calculating Signature,\n    \n          Signature = Base64Encoded(HMAC(\"{UTC Date String}POST{URI String}{RequestBody}\"))\n\n \n    \n\n   ### Request Body\n\n| Key| Mandatory| Type |Description |\n| -------- | -------- | -------- | -------- |\n| userId     | Yes     | String | The email address of the user who has triggered the webhook     |\n| firmId     | Yes     | String |  The Short Name or Firm ID of the firm     |\n| entityId     | Yes     | String |  The ID of the resource that has changed. This could be with a companyId, trustId or fundId     |\n| eventId     | Yes     | String | The Unique Identifier of the event provided by Simple Fund 360 or CAS 360     |\n| eventType     | Yes     | String | The type of event of that occurred. This will be one of the following (constitution \\ audit \\ newsmsf)     |\n| tenants | No | Array | see below |\n\n**Tenants Array**\n\n| Key| Mandatory| Type |Description |\n| -------- | -------- | -------- | -------- |\n| tenantId     | No     | String |  If applicable , the ID of the tenant that the event happened in relation to (e.g. ContactId or MemberId, Financial Year)     |\n| tenantType     | No     | String | The type of tenant (contact \\ member \\ financialYear     |\n\n   ### Responses \n\nOutlined below and in the examples are what BGL expects for webhook responses. \n\n-   Success\n    \n    -   response code: 200\n        \n    -   response type: application/json\n        \n    -   response body\n        `{ message: \"reqeust accepted.\" }`\n\n-  Validation Error\n    \n    -   response code: 400\n        \n    -   response type: application/json\n        \n    -   response body\n        `{ message: \"missing required parameters\", errors: [ \"fundId is missing\", \"financialYear is missing\" ] }`\n\n-   Other Runtime Errors\n    \n    -   response code: 500\n        \n    -   response type: application/json\n        \n    -   response body\n        `{ message: \"System maintenance.\" }`"
           },
           "response": [
             {
               "id": "f2ca0a84-1b06-4a1d-a865-9ef03855bb3f",
-              "name": "Send to Audit",
+              "name": "Send to Audit ",
               "originalRequest": {
                 "method": "POST",
                 "header": [
@@ -8242,11 +8242,45 @@
                 },
                 "url": "ilovebgl.com.au/bgl_listener"
               },
+              "status": "OK",
+              "code": 200,
               "_postman_previewlanguage": null,
               "header": null,
               "cookie": [],
               "responseTime": null,
-              "body": null
+              "body": "{\n  message: \"reqeust accepted.\"\n}"
+            },
+            {
+              "id": "1b61de7b-6394-46ce-bcd9-1fb607f3d46d",
+              "name": "Error - Other Runtime Errors: 500",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "url": "bgl-will-send-to-your-registered-url"
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  message: \"System maintenance.\"\n}"
+            },
+            {
+              "id": "d184360b-c292-4e15-b3c9-012b15b05469",
+              "name": "Webhooks - Error Reponse code 400",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "url": "bgl-will-send-to-your-registered-url"
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  message: \"missing required parameters\",\n  errors: [\n    \"fundId is missing\",\n    \"financialYear is missing\"\n  ]\n}"
             }
           ]
         }
