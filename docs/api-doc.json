@@ -8309,7 +8309,7 @@
       "name": "Coming Soon - CAS360",
       "item": [
         {
-          "name": "List of Unit Transactions Copy",
+          "name": "List of Unit Transactions",
           "_postman_id": "7c8479e8-666a-4c27-b00c-98fdfdb4ec7f",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
