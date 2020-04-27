@@ -8411,7 +8411,7 @@
           ]
         },
         {
-          "name": "Create new share transaction Copy",
+          "name": "Create new unit transaction",
           "_postman_id": "68027220-facd-41ec-8d7e-3349cac8ed5d",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -8441,22 +8441,22 @@
               }
             },
             "url": {
-              "raw": "{{baseUrl}}/companies/:companyId/shareTransactions",
+              "raw": "{{baseUrl}}/cas/trusts/:trustId/unitTransactions",
               "host": [
                 "{{baseUrl}}"
               ],
               "path": [
-                "companies",
-                ":companyId",
-                "shareTransactions"
+                "cas",
+                "trusts",
+                ":trustId",
+                "unitTransactions"
               ],
               "variable": [
                 {
-                  "id": "51be74b1-1d9e-4bdf-ac22-ea1ce76101a7",
-                  "key": "companyId",
-                  "value": "{{companyId}}",
+                  "key": "trustId",
+                  "value": "{{trustId}}",
                   "type": "string",
-                  "description": "[Required]"
+                  "description": "id of trust"
                 }
               ]
             },
