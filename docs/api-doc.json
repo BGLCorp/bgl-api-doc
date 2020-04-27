@@ -8518,30 +8518,29 @@
               }
             ],
             "url": {
-              "raw": "{{baseUrl}}/companies/:companyId/shareTransactions/:shareTransactionId ",
+              "raw": "{{baseUrl}}/cas/trusts/:trustId/unitTransactions/:unitTransactionId ",
               "host": [
                 "{{baseUrl}}"
               ],
               "path": [
-                "companies",
-                ":companyId",
-                "shareTransactions",
-                ":shareTransactionId "
+                "cas",
+                "trusts",
+                ":trustId",
+                "unitTransactions",
+                ":unitTransactionId "
               ],
               "variable": [
                 {
-                  "id": "d5c1eeb1-e202-438e-8153-73c6adb9ae50",
-                  "key": "companyId",
-                  "value": "{{companyId}}",
+                  "key": "trustId",
+                  "value": "{{trustId}}",
                   "type": "string",
-                  "description": "[Required] Unique ID of Company"
+                  "description": "ID of trust"
                 },
                 {
-                  "id": "0d972946-648a-4457-9f02-8f6cfc92b076",
-                  "key": "shareTransactionId ",
-                  "value": "{{shareTransactionId}}",
+                  "key": "unitTransactionId ",
+                  "value": "{{unitTransactionId}}",
                   "type": "string",
-                  "description": "[Required] ID of Share Transaction to be deleted."
+                  "description": "ID of unit transactions"
                 }
               ]
             },
