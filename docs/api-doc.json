@@ -8298,7 +8298,7 @@
         }
       ],
       "_postman_id": "50356a43-6a90-4aba-af41-523d7efeff98",
-      "description": "Webhooks are automated messages sent from BGL when an event happens. Webhooks are configured on a per-app basis and you need to have a HTTP callback registered with BGL. \n\n| Event Category | Product | Description |\n|--|----------------------------|------------------------------|\n| Ready for Audit  | Simple Fund 360 |User (e.g. Accountant) can notify your app that the fund is ready for audit. FundId, ABN and Financial Year are sent.   |\n\n",
+      "description": "Webhooks are automated messages sent from BGL when an event happens. Webhooks are configured on a per-app basis and you need to have a HTTP callback registered and client seceret with BGL. \n\n| Event Category | Product | Description |\n|--|----------------------------|------------------------------|\n| Ready for Audit  | Simple Fund 360 |User (e.g. Accountant) can notify your app that the fund is ready for audit. FundId, ABN and Financial Year are sent.   |\n\n",
       "event": [
         {
           "listen": "prerequest",
