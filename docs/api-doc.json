@@ -8583,7 +8583,7 @@
       "name": "Coming Soon - CAS360",
       "item": [
         {
-          "name": "List of Trust Beneficiaries Copy",
+          "name": "List of Trust Relstionships",
           "_postman_id": "4dcadc83-f0fa-4966-9055-93bea2a051d4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -8622,7 +8622,7 @@
                 }
               ]
             },
-            "description": "A beneficiary is a person(s) who are entitled to the benefits of a Trust. In CAS 360, beneficiaries can be added to **Discretionary** Trusts.\n\n### Response Body\n\n\n| Key | Date Type | Description |\n| -------- | -------- | -------- |\n| ceaseDate     | Date     | Date the Contact ceased being a Beneficiary for the trust     |\n| commenceDate     | Date     | Date the Contact began being a Beneficiary for the trust     |\n| contactId     | String     | Must be an existing ContactId. Obtain via [List of Contacts](https://bglapi.restlet.io/#operation_list_of_contacts)     |\n| id     | String     | Unique Id of the beneficary     |"
+            "description": "A list of relationships for a Trus. By default the call only current relationships will be returned. \n\nParameter - \"includeHistory\" will include both current and historical relationships linked to the trust.\n\n### Response Body\n\n\n| Key | Date Type | Description |\n| -------- | -------- | -------- |\n| contactId     | String     | the contact id of the contact that has the relationship [List of Contacts](https://bglapi.restlet.io/#operation_list_of_contacts)     |\n|companyId | String | the company id of the company that has the relationship |\n|appointDate | Date | he appointment date of the relationship | \n| relationshipType | String | This is the relationship type of the contact. Will be one of SETTLOR, APPOINTOR, TRUSTEE, ACCOUNTANT, AUDITOR, BANK, BUSINESS_NAME, INVESTMENT_ADVISOR, LAWYER, LIQUIDATOR |"
           },
           "response": [
             {
