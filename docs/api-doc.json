@@ -8669,7 +8669,7 @@
           ]
         },
         {
-          "name": "List of Trust Relationships Copy",
+          "name": "Delete Trust Relationship",
           "_postman_id": "13c306f7-8c3a-4f0e-8abc-a56cb83775ed",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -8716,34 +8716,7 @@
             },
             "description": "A list of relationships for a Trust. By default the call only current relationships will be returned. \n\nParameter - \"includeHistory\" will include both current and historical relationships linked to the trust.\n\n### Response Body\n\n\n| Key | Date Type | Description |\n| -------- | -------- | -------- |\n| contactId     | String     | the contact id of the contact that has the relationship [List of Contacts](https://bglapi.restlet.io/#operation_list_of_contacts)     |\n|companyId | String | the company id of the company that has the relationship |\n|appointDate | Date | he appointment date of the relationship | \n| relationshipType | String | This is the relationship type of the contact. Will be one of SETTLOR, APPOINTOR, TRUSTEE, ACCOUNTANT, AUDITOR, BANK, BUSINESS_NAME, INVESTMENT_ADVISOR, LAWYER, LIQUIDATOR |\n| prepareForm | boolean | |"
           },
-          "response": [
-            {
-              "id": "546cfbc2-3ec2-4381-82f5-1d48548a68bc",
-              "name": "Status 200",
-              "originalRequest": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "value": "bearer df2f0e40-606f-4311-8066-590732fd126b"
-                  }
-                ],
-                "url": "{{baseUrl}}/cas/trusts/464864855/relationships"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\r\n    \"trustRelationships\": [\r\n        {\r\n            \"id\": 675963,\r\n            \"contactId\": \"null\",\r\n            \"companyId\": \"abcd-efg-hijk-lmnop\",\r\n            \"appointDate\": \"2020-03-18\",\r\n            \"relationshipType\": \"TRUSTEE\",\r\n            \"prepareForm\": false\r\n        },\r\n        {\r\n            \"id\": 675960,\r\n            \"contactId\": 569106,\r\n            \"appointDate\": \"2020-03-18\",\r\n            \"relationshipType\": \"APPOINTOR\",\r\n            \"prepareForm\": false\r\n        },\r\n        {\r\n            \"id\": 450332,\r\n            \"contactId\": 667336,\r\n            \"appointDate\": \"2019-12-09\",\r\n            \"relationshipType\": \"SETTLOR\",\r\n            \"prepareForm\": false\r\n        },\r\n        {\r\n            \"id\": 675964,\r\n            \"contactId\": 567874,\r\n            \"companyId\": \"null\",\r\n            \"appointDate\": \"2020-03-18\",\r\n            \"relationshipType\": \"TRUSTEE\",\r\n            \"prepareForm\": false\r\n        }\r\n    ],\r\n    \"offset\": 1,\r\n    \"limit\": 500,\r\n    \"total\": 4\r\n}"
-            }
-          ]
+          "response": []
         }
       ],
       "_postman_id": "a2a374ee-4904-4f95-9922-cedcb9d10217",
