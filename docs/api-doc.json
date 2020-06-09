@@ -9091,7 +9091,7 @@
           ]
         },
         {
-          "name": "Assign a new Status for a Document Copy",
+          "name": "Assign a new Status for a Document (Trust)",
           "_postman_id": "1f8176ba-e140-441a-85b8-fe8910146872",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -9122,7 +9122,32 @@
                 "raw": {}
               }
             },
-            "url": "{{baseUrl}}/cas/companies/{{companyId}}/documents/{{documentId}}/statuses",
+            "url": {
+              "raw": "{{baseUrl}}/cas/trusts/:trustId/documents/:documentId/statuses",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "cas",
+                "trusts",
+                ":trustId",
+                "documents",
+                ":documentId",
+                "statuses"
+              ],
+              "variable": [
+                {
+                  "key": "trustId",
+                  "value": "{{trustId}}",
+                  "type": "string"
+                },
+                {
+                  "key": "documentId",
+                  "value": "{{documentId}}",
+                  "type": "string"
+                }
+              ]
+            },
             "description": "Allows you to alter the Status of a document in CAS360. The status helps users manage documents by indicating what stage the document is at.\n\nWhen documents are generated, the status will automatically be set to Document Prepared. Once a document is lodged, the status will automatically change to Lodged. When an Annual Company Statement is received, the status of Form 480 will automatically be set to Document Received and once the Annual Review is processed, the status will change to Document Processed.\n\n\n### Response Body \n\n| Key | Type | Comments |\n| -------- | -------- | -------- |\n| typeId     | number     | Unique identifier   |\n| effectiveDate     | String     | Effective Date of the new Status   |"
           },
           "response": [
