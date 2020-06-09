@@ -9090,13 +9090,13 @@
               }
             ],
             "url": {
-              "raw": "{{baseUrl}}/trusts/:trustsId/documents?offset={{offset}}&limit={{limit}}",
+              "raw": "{{baseUrl}}/trusts/:trustId/documents?offset={{offset}}&limit={{limit}}",
               "host": [
                 "{{baseUrl}}"
               ],
               "path": [
                 "trusts",
-                ":trustsId",
+                ":trustId",
                 "documents"
               ],
               "query": [
@@ -9113,7 +9113,7 @@
               ],
               "variable": [
                 {
-                  "key": "trustsId",
+                  "key": "trustId",
                   "value": "",
                   "type": "string"
                 }
