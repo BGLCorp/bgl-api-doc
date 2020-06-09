@@ -5698,7 +5698,7 @@
           "_postman_isSubFolder": true
         },
         {
-          "name": "Company Documents",
+          "name": "Documents",
           "item": [
             {
               "name": "List of Unlodged Documents (Firm)",
@@ -6371,28 +6371,6 @@
             }
           ],
           "_postman_id": "3cea06c0-c348-43d9-b6d3-e415c61b75a4",
-          "event": [
-            {
-              "listen": "prerequest",
-              "script": {
-                "id": "1973def2-98b2-4ff5-aca3-93879dbf0d1b",
-                "type": "text/javascript",
-                "exec": [
-                  ""
-                ]
-              }
-            },
-            {
-              "listen": "test",
-              "script": {
-                "id": "581e1172-25e5-4e9e-9015-9b7ecacfbac8",
-                "type": "text/javascript",
-                "exec": [
-                  ""
-                ]
-              }
-            }
-          ],
           "_postman_isSubFolder": true
         },
         {
@@ -8830,7 +8808,7 @@
           "response": []
         },
         {
-          "name": "Document Details (Trust)",
+          "name": "Document Details Copy",
           "_postman_id": "39b070b1-0002-470c-9cad-18f965f0b5c2",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -8874,7 +8852,7 @@
                 }
               ]
             },
-            "description": "Returns Document Details Including All Attachments for a Trust. \n\n\n### Response Body\n\n| Key           | Datatype        | Mandatory | Constraints                                          |\n| ------------- | --------------- | --------- | ---------------------------------------------------- |\n| traceNumber   | String          | Yes       |                                                      |\n| name          | String          | Yes       |                                                      |\n| documentDate  | String          | Yes       | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601 |\n| asicDocNumber | String          | No        |                                                      |\n| attachments   | List of Objects | Yes       | Can be empty                                         |\n\n\n**attachments objects**\n\n| Key          | Datatype | Mandatory | Constraints                                          |\n| ------------ | -------- | --------- | ---------------------------------------------------- |\n| id           | Number   | Yes       |                                                      |\n| name         | String   | Yes       |                                                      |\n| creationDate | String   | Yes       | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601 |\n\n**status objects**\n\n| Key          | Datatype | Mandatory | Constraints                                          |\n| ------------ | -------- | --------- | ---------------------------------------------------- |\n| id           | Number   | Yes       |                                                      |\n| createdBy | String   | Yes       |  |\n| type         | String   | Yes       | Descriptive name of Status                                                      |\n| typeId         | Number   | Yes       |                                                      |\n| effectiveDate | String   | Yes       | Created Date of status |"
+            "description": "Returns Document Details Including All Attachments for a Company. \n\n\n### Response Body\n\n| Key           | Datatype        | Mandatory | Constraints                                          |\n| ------------- | --------------- | --------- | ---------------------------------------------------- |\n| traceNumber   | String          | Yes       |                                                      |\n| name          | String          | Yes       |                                                      |\n| documentDate  | String          | Yes       | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601 |\n| asicDocNumber | String          | No        |                                                      |\n| attachments   | List of Objects | Yes       | Can be empty                                         |\n\n\n**attachments objects**\n\n| Key          | Datatype | Mandatory | Constraints                                          |\n| ------------ | -------- | --------- | ---------------------------------------------------- |\n| id           | Number   | Yes       |                                                      |\n| name         | String   | Yes       |                                                      |\n| creationDate | String   | Yes       | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601 |\n\n**status objects**\n\n| Key          | Datatype | Mandatory | Constraints                                          |\n| ------------ | -------- | --------- | ---------------------------------------------------- |\n| id           | Number   | Yes       |                                                      |\n| createdBy | String   | Yes       |  |\n| type         | String   | Yes       | Descriptive name of Status                                                      |\n| typeId         | Number   | Yes       |                                                      |\n| effectiveDate | String   | Yes       | Created Date of status |\n"
           },
           "response": [
             {
@@ -8906,7 +8884,7 @@
           ]
         },
         {
-          "name": "Create New Document Record (Trust)",
+          "name": "Create New Document Record Copy",
           "_postman_id": "35f2e919-aa26-49ac-ae18-d5de86b8f17d",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -8919,9 +8897,9 @@
             "method": "POST",
             "header": [
               {
+                "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
                 "key": "Authorization",
-                "value": "bearer {{token}}",
-                "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
+                "value": "bearer {{token}}"
               },
               {
                 "key": "Content-Type",
@@ -8936,24 +8914,26 @@
               }
             },
             "url": {
-              "raw": "{{baseUrl}}/trusts/:trustId/documents",
+              "raw": "{{baseUrl}}/companies/:companyId/documents",
               "host": [
                 "{{baseUrl}}"
               ],
               "path": [
-                "trusts",
-                ":trustId",
+                "companies",
+                ":companyId",
                 "documents"
               ],
               "variable": [
                 {
-                  "key": "trustId",
-                  "value": "",
-                  "type": "string"
+                  "id": "36cfd9eb-d246-48bf-b4b9-53eb845f9201",
+                  "key": "companyId",
+                  "value": "{{companyId}}",
+                  "type": "string",
+                  "description": "[REQUIRED]"
                 }
               ]
             },
-            "description": "Create New Document Record for a Trust\n\n### Request Body\n\n\n| Key           | Datatype | Mandatory | Constraints                                          |\n| ------------- | -------- | --------- | ---------------------------------------------------- |\n| name          | String   | Yes       |                                                      |\n| documentDate  | String   | Yes       | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601 |\n| asicDocNumber | String   | No        |\n\n**status object**\n\nNote: Within Australia, only certain combinations of companyType, companyClass and companySubClass are valid\n\n| Key             | Datatype | Mandatory | Constraints                                                                                                                                                    |\n| --------------- | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| typeId     | Long   | No       | Must be a valid status Id, if not specified will default to 'RECEIVED'        |"
+            "description": "Create New Document Record for a Company\n\n### Request Body\n\n\n| Key           | Datatype | Mandatory | Constraints                                          |\n| ------------- | -------- | --------- | ---------------------------------------------------- |\n| name          | String   | Yes       |                                                      |\n| documentDate  | String   | Yes       | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601 |\n| asicDocNumber | String   | No        |\n\n**status object**\n\nNote: Within Australia, only certain combinations of companyType, companyClass and companySubClass are valid\n\n| Key             | Datatype | Mandatory | Constraints                                                                                                                                                    |\n| --------------- | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| typeId     | Long   | No       | Must be a valid status Id, if not specified will default to 'RECEIVED'        |"
           },
           "response": [
             {
@@ -9071,7 +9051,7 @@
           ]
         },
         {
-          "name": "List Documents (Trust)",
+          "name": "List Documents Copy",
           "_postman_id": "8a51e7e3-48e6-47c0-a2b6-5cf4425a8a50",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -9121,7 +9101,7 @@
                 }
               ]
             },
-            "description": "Return a list of documents for a Trust. Document  IDs returned can be used for subsequent calls.\n\n### Query Parameters\n\n| Form Parameter | type | Mandatory | Description |\n| -------- | -------- | -------- | -------- |\n| offset | number | Required | Example = 0 |\n| limit | number | Required | Example = 500 |\n\n\n### Response Body\n\nReturns a list of objects as described below\n\n| Key           | Datatype | Mandatory | Constraints                                          |\n| ------------- | -------- | --------- | ---------------------------------------------------- |\n| id            | Number   | Yes       |                                                      |\n| traceNumber   | Number   | Yes       |                                                      |\n| name          | String   | Yes       |                                                      |\n| documentDate  | String   | Yes       | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601 |\n| asicDocNumber | String   | No        |                                                      |\n\n**status objects**\n\n| Key          | Datatype | Mandatory | Constraints                                          |\n| ------------ | -------- | --------- | ---------------------------------------------------- |\n| id           | Number   | Yes       |                                                      |\n| createdBy     | String     | Yes     | The name of user who created the document |\n| type         | String   | Yes       | Descriptive name of Status                           |\n| typeId         | Number   | Yes       | Status Unique Identifier   |\n| effectiveDate     | String     | Yes     | Format will be ISO 8601 date. Equal to status change date  |\n\n\n**Additional keys**\n\n| Key    | Datatype | Mandatory | Constraints |\n| ------ | -------- | --------- | ----------- |\n| offset | Number   | Yes       |             |\n| limit  | Number   | Yes       |             |\n| total  | Number   | Yes       |             |"
+            "description": "Return a list of company documents for a company. Document  IDs returned can be used for subsequent calls.\n\n### Query Parameters\n\n| Form Parameter | type | Mandatory | Description |\n| -------- | -------- | -------- | -------- |\n| offset | number | Required | Example = 0 |\n| limit | number | Required | Example = 500 |\n\n\n### Response Body\n\nReturns a list of objects as described below\n\n| Key           | Datatype | Mandatory | Constraints                                          |\n| ------------- | -------- | --------- | ---------------------------------------------------- |\n| id            | Number   | Yes       |                                                      |\n| traceNumber   | Number   | Yes       |                                                      |\n| name          | String   | Yes       |                                                      |\n| documentDate  | String   | Yes       | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601 |\n| asicDocNumber | String   | No        |                                                      |\n\n**status objects**\n\n| Key          | Datatype | Mandatory | Constraints                                          |\n| ------------ | -------- | --------- | ---------------------------------------------------- |\n| id           | Number   | Yes       |                                                      |\n| createdBy     | String     | Yes     | The name of user who created the document |\n| type         | String   | Yes       | Descriptive name of Status                           |\n| typeId         | Number   | Yes       | Status Unique Identifier   |\n| effectiveDate     | String     | Yes     | Format will be ISO 8601 date. Equal to status change date  |\n\n\n**Additional keys**\n\n| Key    | Datatype | Mandatory | Constraints |\n| ------ | -------- | --------- | ----------- |\n| offset | Number   | Yes       |             |\n| limit  | Number   | Yes       |             |\n| total  | Number   | Yes       |             |"
           },
           "response": [
             {
