@@ -719,7 +719,29 @@
           "name": "Security",
           "item": [],
           "_postman_id": "1f8b5874-b89d-418b-ba18-107ea1b45ef2",
-          "description": "Please include the Amazon Root CA to your CA Certificate bundle for your application/OS.\nCertificates provided by Amazon Certificate Manager are verified by Amazon\u2019s certificate authority (CA). Any browser, application, or OS that includes the Amazon Root CA 1, Starfield Services Root Certificate Authority - G2, or Starfield Class 2 Certification Authority trusts certificates provided by ACM.\n\nTo access CA Certs issued by Amazon, refer to the following webpage:\nhttps://www.amazontrust.com/repository/",
+          "description": "Apps connecting to BGL's API must meet these requirements: \n\n## Encryption key management\nPlease ensure that your app meets these requirements for OAuth token management: \n\n - OAuth tokens or customer-identifying information must not be exposed within your app or shared with other parties. \n - Encrypt and store the refresh token in persistent memory. \n - Encrypt the refresh token with a symmetric algorithm (3DES or AES). AES-128 or greater is preferred. \n - Store your AES key in your app, in a separate configuration file.\n\n## Encryption in transit\nSSL must be configured to support only TLS version 1.2 or higher. BGL does not support 1.1 or lower. TLS version 1.2 using AES 256 or higher with SHA-256 is recommended.\n\n\n## SSO Certificates\nPlease include the Amazon Root CA to your CA Certificate bundle for your application/OS.\nCertificates provided by Amazon Certificate Manager are verified by Amazon\u2019s certificate authority (CA). Any browser, application, or OS that includes the Amazon Root CA 1, Starfield Services Root Certificate Authority - G2, or Starfield Class 2 Certification Authority trusts certificates provided by ACM.\nTo access CA Certs issued by Amazon, refer to the following webpage:\nhttps://www.amazontrust.com/repository/\n\n",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "752373c6-dcab-4c05-89f6-2c203637e4b4",
+                "type": "text/javascript",
+                "exec": [
+                  ""
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "id": "046c41a9-c752-4f61-87c9-8234c1123734",
+                "type": "text/javascript",
+                "exec": [
+                  ""
+                ]
+              }
+            }
+          ],
           "_postman_isSubFolder": true
         },
         {
