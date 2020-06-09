@@ -716,6 +716,13 @@
       "name": "Developer - API Management",
       "item": [
         {
+          "name": "Security",
+          "item": [],
+          "_postman_id": "1f8b5874-b89d-418b-ba18-107ea1b45ef2",
+          "description": "Please include the Amazon Root CA to your CA Certificate bundle for your application/OS.\nCertificates provided by Amazon Certificate Manager are verified by Amazon\u2019s certificate authority (CA). Any browser, application, or OS that includes the Amazon Root CA 1, Starfield Services Root Certificate Authority - G2, or Starfield Class 2 Certification Authority trusts certificates provided by ACM.\n\nTo access CA Certs issued by Amazon, refer to the following webpage:\nhttps://www.amazontrust.com/repository/",
+          "_postman_isSubFolder": true
+        },
+        {
           "name": "Add My Application",
           "item": [],
           "_postman_id": "9776acf7-4623-436a-b3c8-feb5cdcd825f",
@@ -914,12 +921,6 @@
           }
         }
       ]
-    },
-    {
-      "name": "SSO Certificate",
-      "item": [],
-      "_postman_id": "1f8b5874-b89d-418b-ba18-107ea1b45ef2",
-      "description": "Please include the Amazon Root CA to your CA Certificate bundle for your application/OS.\nCertificates provided by Amazon Certificate Manager are verified by Amazon\u2019s certificate authority (CA). Any browser, application, or OS that includes the Amazon Root CA 1, Starfield Services Root Certificate Authority - G2, or Starfield Class 2 Certification Authority trusts certificates provided by ACM.\n\nTo access CA Certs issued by Amazon, refer to the following webpage:\nhttps://www.amazontrust.com/repository/"
     },
     {
       "name": "BGL User - Manage API Access",
