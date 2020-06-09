@@ -886,13 +886,6 @@
           "_postman_id": "017b2456-3f0f-4eca-b1d1-29e63b7396f3",
           "description": "The status of the BGL API and all of BGL's online services can be found at [https://status.bgl360.com.au](https://status.bgl360.com.au)",
           "_postman_isSubFolder": true
-        },
-        {
-          "name": "SSO Certificate",
-          "item": [],
-          "_postman_id": "1f8b5874-b89d-418b-ba18-107ea1b45ef2",
-          "description": "Please include the Amazon Root CA to your CA Certificate bundle for your application/OS.\nCertificates provided by Amazon Certificate Manager are verified by Amazon\u2019s certificate authority (CA). Any browser, application, or OS that includes the Amazon Root CA 1, Starfield Services Root Certificate Authority - G2, or Starfield Class 2 Certification Authority trusts certificates provided by ACM.\n\nTo access CA Certs issued by Amazon, refer to the following webpage:\nhttps://www.amazontrust.com/repository/",
-          "_postman_isSubFolder": true
         }
       ],
       "_postman_id": "d733d478-ed34-4c59-ad76-49cef7ea168b",
@@ -9790,6 +9783,12 @@
           }
         }
       ]
+    },
+    {
+      "name": "SSO Certificate",
+      "item": [],
+      "_postman_id": "1f8b5874-b89d-418b-ba18-107ea1b45ef2",
+      "description": "Please include the Amazon Root CA to your CA Certificate bundle for your application/OS.\nCertificates provided by Amazon Certificate Manager are verified by Amazon\u2019s certificate authority (CA). Any browser, application, or OS that includes the Amazon Root CA 1, Starfield Services Root Certificate Authority - G2, or Starfield Class 2 Certification Authority trusts certificates provided by ACM.\n\nTo access CA Certs issued by Amazon, refer to the following webpage:\nhttps://www.amazontrust.com/repository/"
     }
   ],
   "auth": {
