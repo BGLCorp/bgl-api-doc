@@ -8031,7 +8031,7 @@
                     }
                   ]
                 },
-                "description": "Delete a trust from a Corporate Trustee in CAS 360. "
+                "description": "This function marks a trust as deactivated in CAS 360. It is not removed from the database."
               },
               "response": [
                 {
