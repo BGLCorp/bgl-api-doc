@@ -7994,7 +7994,7 @@
               ]
             },
             {
-              "name": "Delete Trust",
+              "name": "Delete (Deactivate) Trust",
               "_postman_id": "37799298-ee13-4c78-896e-fda2bfae6116",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
