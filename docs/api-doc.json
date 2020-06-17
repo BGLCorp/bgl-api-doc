@@ -3068,36 +3068,45 @@
                     }
                   ]
                 },
-                "description": "Allows you to retrieve a Pension Sumary for  fund based on a Financial Year.\n\n### Response\n\n\n**Fund Data**\n\n| Field | Data Type | Comments |\n| -------- | -------- | -------- |\n| financialYear     | date     | YYYY - The financial year of the report     |\n| fundName     | string     | The name of the fund     |\n| fundId     | Text     | The Fund Identificaion Number. This is unique across all of Simple Fund 360.    |\n| fundAmountToReachMinimum     | number     | The total amount required for the fund to reach the minimum for all pensions.   |\n| fundGrossPensionPayments     | number     | The total pension payments recorded for all pension members of the fund     |\n| fundMinimum     | number     | The combined minimum amount for all pension members of the fund      |\n| fundPensionPayments     | number     | The total pension payments recorded for all pension members of the fund less PAYG.    |\n| fundPayg     | number     | The total PAYG withheld which has been recorded for all pension members    |\n| pensions     | array     | see below     |\n\n**Pensions Array**\n\n | Field | Data Type | Comments |\n| -------- | -------- | -------- |\n| peopleId     | string     | Unique Identifier of person in Simle Fund 360     |\n| accounts     | array     | see below     |\n\n**Accounts Array**\n\n | Field | Data Type | Comments |\n| -------- | -------- | -------- |\n| accountDescription     | string     | Description entered by the user for the Pension Account     |\n| accountPhase     | string     | will return either \"Retirement Phase\" or \"Accumulation\"     |\n| pensionType     | string     | Type of Pension     |\n| amountToReachMinimum     | number     | number of dollars required for this pension to reach the minimum     |\n| endDate     | date     | yyyy-MM-dd : The end date of the pension if the account ceased during the Financial Year of the report.      |\n| grossPensionPayments     | number     | The total pension payments recorded for this pension account for the Financial Year   |\n| memberCode     | string     | The member code assigned to this Pension Account. This will also be equal to the sub-account code on other APIs     |\n| minimum     | number     | The Minimum Pension amount required for this Pension Account for the Financial Year.      |\n| maximum     | number     | The Maximum Pension amount (if applicable) required for this Pension Account for the Financial Year.      |\n| netPensionPayments     | number     | The total pension payments recorded for this pension account for the Financial Year  less PAYG payments     |\n| openingBalance     | number     | The Balanace of the account as at July 1st of the Financial Year or the Penson startDate if the income stream commenced during the Financial Year.      |\n| payg     | number     | The total PAYG amount withheld which has been recorded this Pension Account for the Financial Year.      |\n| startDate     | date     | The Start Date of this Pension     |\n| taxFreeProportion     | number     | The Tax Free proportion recorded for this Pension Account     |"
+                "description": "Allows you to retrieve a Pension Sumary for  fund based on a Financial Year.\n\n### Response\n\n\n**Fund Data**\n\n| Field | Data Type | Comments |\n| -------- | -------- | -------- |\n| financialYear     | date     | YYYY - The financial year of the report     |\n| fundName     | string     | The name of the fund     |\n| fundId     | Text     | The Fund Identificaion Number. This is unique across all of Simple Fund 360.    |\n| fundAmountToReachMinimum     | number     | The total amount required for the fund to reach the minimum for all pensions.   |\n| fundGrossPensionPayments     | number     | The total pension payments recorded for all pension members of the fund     |\n| fundMinimum     | number     | The combined minimum amount for all pension members of the fund      |\n| fundPensionPayments     | number     | The total pension payments recorded for all pension members of the fund less PAYG.    |\n| fundPayg     | number     | The total PAYG withheld which has been recorded for all pension members    |\n| pensions     | array     | see below     |\n\n**Pensions Array**\n\n | Field | Data Type | Comments |\n| -------- | -------- | -------- |\n| peopleId     | string     | Unique Identifier of person in Simple Fund 360     |\n| contactId     | string     | Unique Identifier of person in Simple Fund 360     |\n| accounts     | array     | see below     |\n\n**Accounts Array**\n\n | Field | Data Type | Comments |\n| -------- | -------- | -------- |\n| accountDescription     | string     | Description entered by the user for the Pension Account     |\n| accountPhase     | string     | will return either \"Retirement Phase\" or \"Accumulation\"     |\n| amountToReachMinimum     | number     | number of dollars required for this pension to reach the minimum     |\n| endDate     | date     | yyyy-MM-dd : The end date of the pension if the account ceased during the Financial Year of the report.      |\n| grossPensionPayments     | number     | The total pension payments recorded for this pension account for the Financial Year   |\n| memberCode     | string     | The member code assigned to this Pension Account. This will also be equal to the sub-account code on other APIs     |\n| minimum     | number     | The Minimum Pension amount required for this Pension Account for the Financial Year.      |\n| maximum     | number     | The Maximum Pension amount (if applicable) required for this Pension Account for the Financial Year.      |\n| netPensionPayments     | number     | The total pension payments recorded for this pension account for the Financial Year  less PAYG payments     |\n| note   | string     | Addtional details were pensionhas reverted   |\n| openingBalance     | number     | The Balanace of the account as at July 1st of the Financial Year or the Penson startDate if the income stream commenced during the Financial Year.      |\n| payg     | number     | The total PAYG amount withheld which has been recorded this Pension Account for the Financial Year.      |\n| pensionType     | string     | Type of Pension     |\n| reversionAccountCode     | string     | The Account Code, the Pension reverted from.      |\n| reversionDate     | date     | Date original Pension reverted to Beneficiary    |\n| reversionaryPensionDateOfDeath     | Date     | Date of death for orignal pension member    |\n| startDate     | date     | The Start Date of this Pension     |\n| taxFreeProportion     | number     | The Tax Free proportion recorded for this Pension Account     |"
               },
               "response": [
                 {
-                  "id": "1c4c1cbe-274a-45de-acdf-3fa061794830",
-                  "name": "Status 200",
+                  "id": "51b7717e-b942-47f5-9fd5-8f8eff5be1e2",
+                  "name": "200 Response - 2018 FY",
                   "originalRequest": {
                     "method": "GET",
                     "header": [
                       {
+                        "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
                         "key": "Authorization",
-                        "value": "bearer df2f0e40-606f-4311-8066-590732fd126b"
+                        "value": "bearer {{token}}"
                       }
                     ],
                     "url": {
-                      "raw": "{{baseUrl}}/sf/funds/<string>/reports/pensionSummary?financialYear=2019",
+                      "raw": "{{baseUrl}}/sf/funds/:fundId/reports/pensionSummary?financialYear={{financialYear}}",
                       "host": [
                         "{{baseUrl}}"
                       ],
                       "path": [
                         "sf",
                         "funds",
-                        "<string>",
+                        ":fundId",
                         "reports",
                         "pensionSummary"
                       ],
                       "query": [
                         {
                           "key": "financialYear",
-                          "value": "2019"
+                          "value": "{{financialYear}}",
+                          "description": "[REQUIRED] The Financial Year of the  report. Expected format : yyyy"
+                        }
+                      ],
+                      "variable": [
+                        {
+                          "key": "fundId",
+                          "value": "{{fundId}}",
+                          "description": "[REQUIRED] Unique ID for the fund"
                         }
                       ]
                     }
@@ -3107,13 +3116,53 @@
                   "_postman_previewlanguage": "json",
                   "header": [
                     {
+                      "key": "Date",
+                      "value": "Wed, 17 Jun 2020 02:20:25 GMT"
+                    },
+                    {
                       "key": "Content-Type",
-                      "value": "application/json"
+                      "value": "application/json;charset=UTF-8"
+                    },
+                    {
+                      "key": "Transfer-Encoding",
+                      "value": "chunked"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "nginx"
+                    },
+                    {
+                      "key": "X-Rate-Daily-Limit-Remaining",
+                      "value": "-1"
+                    },
+                    {
+                      "key": "vary",
+                      "value": "accept-encoding"
+                    },
+                    {
+                      "key": "Content-Encoding",
+                      "value": "gzip"
+                    },
+                    {
+                      "key": "X-Content-Type-Options",
+                      "value": "nosniff"
+                    },
+                    {
+                      "key": "Content-Security-Policy",
+                      "value": "frame-ancestors 'self' uat.sf360.com.au"
+                    },
+                    {
+                      "key": "X-Frame-Options",
+                      "value": "ALLOW-FROM https://uat.sf360.com.au"
                     }
                   ],
                   "cookie": [],
                   "responseTime": null,
-                  "body": "{\n  \"financialYear\": 2019,\n  \"fundName\": \"The Jones Super Fund\",\n  \"fundId\": \"8ad08bf35f7b8296015fb8492dca00e9\",\n  \"fundAmountToReachMinimum\": 0,\n  \"fundGrossPensionPayments\": 0,\n  \"fundMinimum\": 14800,\n  \"fundPensionPayments\": 0,\n  \"fundPayg\": 0,\n  \"pensions\": [\n    {\n      \"peopleId\": \"8ad08aec5eb73bcf015eb777cf160004\",\n      \"accounts\": [\n        {\n          \"accountDescription\": \"Account Based Pension 33\",\n          \"accountPhase\": \"Retirement Phase\",\n          \"pensionType\": \"Account Based Pension\",\n          \"amountToReachMinimum\": 0,\n          \"endDate\": null,\n          \"grossPensionPayments\": 0,\n          \"memberCode\": \"JONJOH00003P\",\n          \"minimum\": 14800,\n          \"maximum\": \"null\",\n          \"netPensionPayments\": 0,\n          \"openingBalance\": 0,\n          \"payg\": 0,\n          \"startDate\": \"2015-07-01\",\n          \"taxFreeProportion\": null\n        },\n        {\n          \"accountDescription\": \"Account Based Pension 55\",\n          \"accountPhase\": \"Retirement Phase\",\n          \"pensionType\": \"Account Based Pension\",\n          \"amountToReachMinimum\": 0,\n          \"endDate\": null,\n          \"grossPensionPayments\": 0,\n          \"memberCode\": \"JONJOH00004P\",\n          \"minimum\": 15800,\n          \"maximum\": \"null\",\n          \"netPensionPayments\": 0,\n          \"openingBalance\": 1542.22,\n          \"payg\": 0,\n          \"startDate\": \"2015-07-01\",\n          \"taxFreeProportion\": null\n        }\n      ]\n    }\n  ]\n}"
+                  "body": "{\n    \"financialYear\": \"2018\",\n    \"fundAmountToReachMinimum\": 8320,\n    \"fundGrossPensionPayments\": 16500,\n    \"fundId\": \"8ad08af2632421da0163247db6d10005\",\n    \"fundMinimum\": 24820,\n    \"fundName\": \"Jones Retirement Fund\",\n    \"fundPayg\": 0,\n    \"fundPensionPayments\": 16500,\n    \"pensions\": [\n        {\n            \"accounts\": [\n                {\n                    \"accountDescription\": \"Account Based Pension\",\n                    \"accountPhase\": \"Retirement Phase\",\n                    \"amountToReachMinimum\": 30,\n                    \"endDate\": null,\n                    \"grossPensionPayments\": 0,\n                    \"maximum\": 0,\n                    \"memberCode\": \"JONJOH30020P\",\n                    \"minimum\": 30,\n                    \"netPensionPayments\": 0,\n                    \"note\": \"\",\n                    \"openingBalance\": 7962.53,\n                    \"payg\": 0,\n                    \"pensionType\": \"Account Based Pension\",\n                    \"reversionAccountCode\": null,\n                    \"reversionDate\": null,\n                    \"reversionaryPensionDateOfDeath\": null,\n                    \"startDate\": \"30/05/2018\",\n                    \"taxFreeProportion\": 0\n                }\n            ],\n            \"contactId\": \"8a009e3b4cf98131014cf98b58750000\",\n            \"peopleId\": \"8a009e3b4cf98131014cf98b587e0001\"\n        },\n        {\n            \"accounts\": [\n                {\n                    \"accountDescription\": \"Account Based Pension\",\n                    \"accountPhase\": \"Retirement Phase\",\n                    \"amountToReachMinimum\": 8290,\n                    \"endDate\": null,\n                    \"grossPensionPayments\": 16500,\n                    \"maximum\": 0,\n                    \"memberCode\": \"JONMAR30021P\",\n                    \"minimum\": 24790,\n                    \"netPensionPayments\": 16500,\n                    \"note\": \"\",\n                    \"openingBalance\": 500000,\n                    \"payg\": 0,\n                    \"pensionType\": \"Account Based Pension\",\n                    \"reversionAccountCode\": null,\n                    \"reversionDate\": null,\n                    \"reversionaryPensionDateOfDeath\": null,\n                    \"startDate\": \"04/07/2017\",\n                    \"taxFreeProportion\": 60\n                }\n            ],\n            \"contactId\": \"8a009ec44d0e83ba014d1c144e0a0002\",\n            \"peopleId\": \"8a009ec44d0e83ba014d1c144e0d0003\"\n        }\n    ]\n}"
                 }
               ]
             },
@@ -9817,12 +9866,6 @@
       ]
     }
   ],
-  "auth": {
-    "type": "oauth2",
-    "oauth2": {
-      "addTokenTo": "header"
-    }
-  },
   "event": [
     {
       "listen": "prerequest",
