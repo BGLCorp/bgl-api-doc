@@ -8238,6 +8238,89 @@
                   "cookie": [],
                   "responseTime": null,
                   "body": ""
+                },
+                {
+                  "id": "8d7b11c1-a78b-4710-b490-42e99908a7bc",
+                  "name": "200 - Delete Trust",
+                  "originalRequest": {
+                    "method": "DELETE",
+                    "header": [
+                      {
+                        "key": "Authorization",
+                        "value": "bearer {{token}}"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/cas/trusts/:trustId",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "cas",
+                        "trusts",
+                        ":trustId"
+                      ],
+                      "variable": [
+                        {
+                          "key": "trustId",
+                          "value": "{{trustId}}",
+                          "description": "[Required]"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Date",
+                      "value": "Mon, 29 Jun 2020 05:28:57 GMT"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json;charset=UTF-8"
+                    },
+                    {
+                      "key": "Transfer-Encoding",
+                      "value": "chunked"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "nginx"
+                    },
+                    {
+                      "key": "X-Rate-Daily-Limit-Remaining",
+                      "value": "-1"
+                    },
+                    {
+                      "key": "vary",
+                      "value": "accept-encoding"
+                    },
+                    {
+                      "key": "Content-Encoding",
+                      "value": "gzip"
+                    },
+                    {
+                      "key": "X-Content-Type-Options",
+                      "value": "nosniff"
+                    },
+                    {
+                      "key": "Content-Security-Policy",
+                      "value": "frame-ancestors 'self' uat.sf360.com.au"
+                    },
+                    {
+                      "key": "X-Frame-Options",
+                      "value": "ALLOW-FROM https://uat.sf360.com.au"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n    \"status\": \"DELETED\"\n}"
                 }
               ]
             },
