@@ -8000,7 +8000,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n    \"jurisdiction\": \"{{jurisdiction}}\"\n    \"trustNameId\": {{trustNameI}},\n    \"type\": \"{{type}}\",\n    \"abn\": {{abn}},\n    \"formedDate\": \"{{formedDate}}\",\n    \"trusteeCompanyId\": \"{{trusteeCompanyId}},\n    \"trusteeContactId\": {{trusteeContactId}},\n    \"trusteeAppointedDate\": \"{{trusteeAppointedDate}}\",\n    \"meetingAddressId\": {{meetingAddressId}},\n}\n",
+                  "raw": "{\n    \"jurisdiction\": \"{{jurisdiction}}\",\n    \"trustNameId\": {{trustNameId}},\n    \"type\": \"{{type}}\",\n    \"abn\": {{abn}},\n    \"formedDate\": \"{{formedDate}}\",\n    \"trusteeCompanyId\": {{trusteeCompanyId}},\n    \"trusteeContactId\": {{trusteeContactId}},\n    \"trusteeAppointedDate\": \"{{trusteeAppointedDate}}\",\n    \"meetingAddressId\": {{meetingAddressId}}\n}\n",
                   "options": {
                     "raw": {}
                   }
