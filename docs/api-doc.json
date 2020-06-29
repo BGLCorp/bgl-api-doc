@@ -6524,7 +6524,7 @@
                         }
                       ]
                     },
-                    "description": "Get details for a single company. \n\n### Response Body\n\n\n| Key               | Datatype | Mandatory | Constraints                                                 |\n| ----------------- | -------- | --------- | ----------------------------------------------------------- |\n| id | String | Yes | |\n| name              | String   | Yes       |                                                             |\n| number            | String   | No        | Must be a valid ACN                                         |\n| agentId            | Number   | No        |    |\n| incorporationDate | String   | No        | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601        |\n| annualReviewDate  | String   | No        | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601        |\n| registrationState | String   | No        | Must be one of 'ACT'/'NSW'/'VIC'/'QLD'/'SA'/'WA'/'TAS'/'NT' |\n| jurisdiction | String | Yes | Currently only 'Australia' is allowed |\n| type              | Object   | No        | See table below                                             |\n| registered            | boolean   | Yes        | false companies will show up in company registrations                                            |\n\n---\n\n**type object**\n\nNote: Within Australia, only certain combinations of companyType, companyClass and companySubClass are valid\n\n| Key             | Datatype | Mandatory | Constraints                                                                                                                                                    |\n| --------------- | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| companyType     | String   | Yes       | Must be one of 'Small Proprietary'/'Large Proprietary'/'Public Company'                                                                                        |\n| companyClass    | String   | Yes       | Must be one of 'Limited by Shares'/'Limited by Guarantee'/'Limited by Shares and Guarantee'/'Unlimited'/'No Liability'                                         |\n| companySubClass | String   | Yes       | Must be one of 'None'/'Superannuation Trustee Company'/'Non Profit Company'/'Home Unit Company'/'Listed'/'Unlisted'/'Section 150 License'/'Unlisted Non Profit |\n\n---\n\n**details object** (Optional Paramter)\n\n\n| Key             | Datatype | Mandatory | Constraints                                                                                                                                                    |\n| --------------- | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| asicAgentNumber            | String   | No        | |\n| annualReviewStatus    | String   | Yes       |                                         |\n| annualReviewStatusDate | String   | No        | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601 |\n| labels    | String[]   | No       | Name of labels associated with the company                              |"
+                    "description": "Get details for a single company. \n\n### Response Body\n\n\n| Key               | Datatype | Mandatory | Constraints                                                 |\n| ----------------- | -------- | --------- | ----------------------------------------------------------- |\n| id | String | Yes | |\n| name              | String   | Yes       |                                                             |\n| number            | String   | No        | Must be a valid ACN                                         |\n| agentId            | Number   | No        |    |\n| incorporationDate | String   | No        | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601        |\n| annualReviewDate  | String   | No        | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601        |\n| registrationState | String   | No        | Must be one of 'ACT'/'NSW'/'VIC'/'QLD'/'SA'/'WA'/'TAS'/'NT' |\n| jurisdiction | String | Yes | Currently only 'Australia' is allowed |\n| type              | Object   | No        | See table below                                             |\n| registered            | boolean   | Yes        | false companies will show up in company registrations                                            |\n\n---\n\n**type object**\n\nNote: Within Australia, only certain combinations of companyType, companyClass and companySubClass are valid\n\n| Key             | Datatype | Mandatory | Constraints                                                                                                                                                    |\n| --------------- | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| companyType     | String   | Yes       | Must be one of 'Small Proprietary'/'Large Proprietary'/'Public Company'                                                                                        |\n| companyClass    | String   | Yes       | Must be one of 'Limited by Shares'/'Limited by Guarantee'/'Limited by Shares and Guarantee'/'Unlimited'/'No Liability'                                         |\n| companySubClass | String   | Yes       | Must be one of 'None'/'Superannuation Trustee Company'/'Non Profit Company'/'Home Unit Company'/'Listed'/'Unlisted'/'Section 150 License'/'Unlisted Non Profit |\n\n---\n\n**details object** (Optional Paramter)\n\n\n| Key             | Datatype | Mandatory | Constraints                                                                                                                                                    |\n| --------------- | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| asicAgentNumber            | String   | No        | |\n| annualReviewStatus    | String   | Yes       |                                         |\n| annualReviewStatusDate | String   | No        | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601 |\n| labels    | String[]   | No       | Name of labels associated with the company                              |\n| superFundContactIds | No| If comapny is linked as Corporate Trustee of an SMSF, the ContactId will be returned |"
                   },
                   "response": [
                     {
@@ -8008,7 +8008,83 @@
                 "url": "{{baseUrl}}/cas/trusts",
                 "description": "* This service will create a new trust. A trust is a fiduciary relationship in which one person (the trustee) holds assets for the benefit of another (the beneficiary).\n* In order to insert a Trust a Valid Contact with contact type \"Other Entity\" must be created first via Create Contact\n* Only one of 'trusteeContactId' or 'trusteeCompanyId' must be present in the body.    \nE.g. If you're adding a Trust to a Company, 'trusteeCompanyId' should have a valid Company Id and 'trusteeContactId' should be null. The \u2018trusteeCompanyId\u2019 and \u2018trusteeContactId\u2019 this is essentially the trustee of the trust, and if the trustee appears as a Company on the Company list in CAS360.  If the trustee is already on a Company on the CAS360 Company list - then the trustee can be attached  by using the CompanyID in the \u2018trusteeCompanyId\u2019 field.  If the trustee is not a company on the CAS360 Company list (this can be a Company or a individual FYI) - then you will need to create a contact on the contact list first and then attach the 'trusteeContactId'. \n\n### Request Body\n\n| Key               | Datatype | Mandatory | Constraints                                                 |\n| ----------------- | -------- | --------- | ----------------------------------------------------------- |\n| ABN            | String   | No        | Must be a valid ABN. Only for Australian Trusts                        |\n| formedDate | String   | Yes        | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601        |\n| id              | String   | Yes       |  Trust Id |       \n| jurisdiction | String | Yes | Jurisdiction company was formed in | \n|meetingAddressId              | String   | Yes       | existing Address Id |  \n| trustNameId              | String   | Yes       | existing Contact Id | \n| trusteeAppointedDate  | String   | No        | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601. Cannot be before the formedDate of the trrust        |\n| trusteeContactId              | String   | Yes       |  Must be an existing Contact Id.      \n| type              | Object   | Yes        | see table below   |\n| trusteeCompanyId              | String   | Yes (if corporate trustee)       |  Must be an existing Company Id.  |\n\n\n| Jurisdiction | Supported types |                                            \n| ----------------- | -------- |\n| Australia & All other Jurisdicstions | UNIT, DISCRETIONARY, HYBRID, BARE|\n|New Zealand | FAMILY, ESTATE ,CHARITABLE, INVESTMENT, TRADING, FARMING, UNIT, OTHER|\n\n\n\n\n\n\n\n---"
               },
-              "response": []
+              "response": [
+                {
+                  "id": "92eff9c8-f332-42f3-b81c-c6c61391f87d",
+                  "name": "201 Create new trust",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+                        "key": "Authorization",
+                        "value": "bearer {{token}}"
+                      },
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n    \"jurisdiction\": \"Australia\",\n    \"trustNameId\": 1062014,\n    \"type\": \"UNIT\",\n    \"abn\": null,\n    \"formedDate\": \"2013-07-02\",\n    \"trusteeCompanyId\": null,\n    \"trusteeContactId\": 963075,\n    \"trusteeAppointedDate\": \"2013-07-02\",\n    \"meetingAddressId\": 929212\n}\n\n\n"
+                    },
+                    "url": "{{baseUrl}}/cas/trusts"
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Date",
+                      "value": "Mon, 29 Jun 2020 05:31:05 GMT"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json;charset=UTF-8"
+                    },
+                    {
+                      "key": "Transfer-Encoding",
+                      "value": "chunked"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "nginx"
+                    },
+                    {
+                      "key": "X-Rate-Daily-Limit-Remaining",
+                      "value": "-1"
+                    },
+                    {
+                      "key": "vary",
+                      "value": "accept-encoding"
+                    },
+                    {
+                      "key": "Content-Encoding",
+                      "value": "gzip"
+                    },
+                    {
+                      "key": "X-Content-Type-Options",
+                      "value": "nosniff"
+                    },
+                    {
+                      "key": "Content-Security-Policy",
+                      "value": "frame-ancestors 'self' uat.sf360.com.au"
+                    },
+                    {
+                      "key": "X-Frame-Options",
+                      "value": "ALLOW-FROM https://uat.sf360.com.au"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n    \"formedDate\": \"2013-07-02\",\n    \"id\": 20320,\n    \"jurisdiction\": \"Australia\",\n    \"meetingAddressId\": 929212,\n    \"trustNameId\": 1062014,\n    \"trusteeAppointedDate\": \"2013-07-02\",\n    \"trusteeContactId\": 963075,\n    \"type\": \"UNIT\"\n}"
+                }
+              ]
             },
             {
               "name": "Create New Trust Beneficiaries",
@@ -8213,32 +8289,6 @@
                 "description": "This function marks a trust as deactivated in CAS 360. It is not removed from the database."
               },
               "response": [
-                {
-                  "id": "99caed7b-d1fc-4868-95af-8a2be296674c",
-                  "name": "Status 200",
-                  "originalRequest": {
-                    "method": "DELETE",
-                    "header": [
-                      {
-                        "key": "Authorization",
-                        "value": "bearer df2f0e40-606f-4311-8066-590732fd126b"
-                      }
-                    ],
-                    "url": "{{baseUrl}}/cas/trusts/543545834"
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "text",
-                  "header": [
-                    {
-                      "key": "Content-Type",
-                      "value": "text/plain"
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": ""
-                },
                 {
                   "id": "8d7b11c1-a78b-4710-b490-42e99908a7bc",
                   "name": "200 - Delete Trust",
