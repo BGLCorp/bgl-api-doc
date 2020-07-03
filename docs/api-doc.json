@@ -9417,11 +9417,12 @@
               }
             ],
             "url": {
-              "raw": "{{baseUrl}}/trusts/:trustId/documents/:documentId ",
+              "raw": "{{baseUrl}}/cas/trusts/:trustId/documents/:documentId ",
               "host": [
                 "{{baseUrl}}"
               ],
               "path": [
+                "cas",
                 "trusts",
                 ":trustId",
                 "documents",
@@ -9502,11 +9503,12 @@
               }
             },
             "url": {
-              "raw": "{{baseUrl}}/trusts/:trustId/documents",
+              "raw": "{{baseUrl}}/cas/trusts/:trustId/documents",
               "host": [
                 "{{baseUrl}}"
               ],
               "path": [
+                "cas",
                 "trusts",
                 ":trustId",
                 "documents"
