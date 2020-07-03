@@ -7617,12 +7617,6 @@
           "name": "Trusts",
           "item": [
             {
-              "name": "Trust - General",
-              "item": [],
-              "_postman_id": "24041396-f0c0-4f9c-9045-609e19a51709",
-              "_postman_isSubFolder": true
-            },
-            {
               "name": "Trust Beneficiaries",
               "item": [
                 {
@@ -8305,6 +8299,12 @@
               "name": "Trust Documents",
               "item": [],
               "_postman_id": "5d29cf47-4101-492e-adf1-2c1b9a25fde0",
+              "_postman_isSubFolder": true
+            },
+            {
+              "name": "Trust - General",
+              "item": [],
+              "_postman_id": "24041396-f0c0-4f9c-9045-609e19a51709",
               "_postman_isSubFolder": true
             },
             {
