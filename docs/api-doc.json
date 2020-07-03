@@ -9566,8 +9566,7 @@
           },
           "request": {
             "auth": {
-              "type": "oauth2",
-              "oauth2": {}
+              "type": "noauth"
             },
             "method": "GET",
             "header": [
@@ -9578,11 +9577,12 @@
               }
             ],
             "url": {
-              "raw": "{{baseUrl}}/trusts/:trustId/documents?offset={{offset}}&limit={{limit}}",
+              "raw": "{{baseUrl}}/cas/trusts/:trustId/documents?offset={{offset}}&limit={{limit}}",
               "host": [
                 "{{baseUrl}}"
               ],
               "path": [
+                "cas",
                 "trusts",
                 ":trustId",
                 "documents"
@@ -9602,7 +9602,7 @@
               "variable": [
                 {
                   "key": "trustId",
-                  "value": "",
+                  "value": "{{trustId}}",
                   "type": "string"
                 }
               ]
