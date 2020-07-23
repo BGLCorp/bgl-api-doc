@@ -221,9 +221,9 @@
               "response": [
                 {
                   "id": "efcd2ef8-6eb2-4da9-bd80-88e5545a69eb",
-                  "name": " Obtain an Access Token",
+                  "name": "200 - Obtain an Access Token",
                   "originalRequest": {
-                    "method": "GET",
+                    "method": "PUT",
                     "header": [
                       {
                         "key": "Authorization",
@@ -258,28 +258,12 @@
                           "value": "authorization_code"
                         },
                         {
-                          "key": "client_id",
-                          "value": "de3b218f-7ba8-4c91-b240-598e0c18e1ne",
-                          "disabled": true
-                        },
-                        {
-                          "key": "client_secret",
-                          "value": "720a648e-8a57-4b71-acfc-247c31d39aa2",
-                          "disabled": true
-                        },
-                        {
                           "key": "scope",
                           "value": "auditor"
                         },
                         {
                           "key": "redirect_uri",
                           "value": "www.yourwebsite.com.au/bgl"
-                        },
-                        {
-                          "key": "refresh_token",
-                          "value": "",
-                          "type": "text",
-                          "disabled": true
                         },
                         {
                           "key": "code",
@@ -292,115 +276,6 @@
                   "code": 200,
                   "_postman_previewlanguage": null,
                   "header": null,
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{ access_token: \"df2f0e40-606f-4311-8066-590732fd126b\" token_type: \"bearer\" refresh_token: \"c50a429f-9a6d-449d-8d82-4817798fe27b\" expires_in: 581977 scope: \u201caudit\u201d }\n"
-                },
-                {
-                  "id": "2ca338e9-2001-4e10-b121-f06d3f59812c",
-                  "name": "Refresh an Access Token",
-                  "originalRequest": {
-                    "method": "POST",
-                    "header": [],
-                    "url": {
-                      "raw": "https://api.staging.bgl360.com.au/oauth/token?grant_type=refresh_token&client_id=de3b218f-7ba8-4c91-b240-598e0c18e1ne&client_secret=720a648e-8a57-4b71-acfc-247c31d39aa2&scope=auditor&redirect_uri=www.yourwebsite.com.au/bgl&refresh_token=f62aed08-8ef8-429f-b0f5-b418c238de4f",
-                      "protocol": "https",
-                      "host": [
-                        "api",
-                        "staging",
-                        "bgl360",
-                        "com",
-                        "au"
-                      ],
-                      "path": [
-                        "oauth",
-                        "token"
-                      ],
-                      "query": [
-                        {
-                          "key": "grant_type",
-                          "value": "refresh_token",
-                          "description": "the value of this should always be: authorization_code for initial authorization\nto refresh the token, the value of this should always be: refresh_token"
-                        },
-                        {
-                          "key": "code",
-                          "value": "25fhh62jhj6",
-                          "description": "The Authorization Code obtained from the BGL API. This is not required to Refresh an Access Token ",
-                          "disabled": true
-                        },
-                        {
-                          "key": "client_id",
-                          "value": "de3b218f-7ba8-4c91-b240-598e0c18e1ne",
-                          "description": "This field is mandatory if a Base64 encoded Basic Authentication Header is not provided.\nA unique identifier to identify a client that will be using the BGL API"
-                        },
-                        {
-                          "key": "client_secret",
-                          "value": "720a648e-8a57-4b71-acfc-247c31d39aa2",
-                          "description": "This field is mandatory if a Base64 encoded Basic Authentication Header is not provided.\nThe client secret provided by BGL. See section Obtaining BGL API Credentials on how to obtain Client Secret."
-                        },
-                        {
-                          "key": "scope",
-                          "value": "auditor",
-                          "description": "The URI that will be used to redirect after authorisation. This value must match one of the defined OAuth 2.0 Redirect URLs in your application configuration, as described in the Oauth2 Documentation. See Obtaining BGL API Credentials on how to set redirect uri."
-                        },
-                        {
-                          "key": "redirect_uri",
-                          "value": "www.yourwebsite.com.au/bgl",
-                          "description": "Refresh Token obtained previously. This field is mandatory if grant_type = refresh_token"
-                        },
-                        {
-                          "key": "refresh_token",
-                          "value": "f62aed08-8ef8-429f-b0f5-b418c238de4f",
-                          "type": "text"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "Unauthorized",
-                  "code": 401,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "key": "Cache-Control",
-                      "value": "no-store"
-                    },
-                    {
-                      "key": "Content-Encoding",
-                      "value": "gzip"
-                    },
-                    {
-                      "key": "Content-Type",
-                      "value": "application/json;charset=UTF-8"
-                    },
-                    {
-                      "key": "Date",
-                      "value": "Fri, 26 Jul 2019 04:45:42 GMT"
-                    },
-                    {
-                      "key": "Pragma",
-                      "value": "no-cache"
-                    },
-                    {
-                      "key": "Server",
-                      "value": "nginx"
-                    },
-                    {
-                      "key": "Vary",
-                      "value": "Accept-Encoding"
-                    },
-                    {
-                      "key": "WWW-Authenticate",
-                      "value": "Bearer realm=\"oauth\", error=\"invalid_token\", error_description=\"Invalid access token: f62aed08-8ef8-429f-b0f5-b418c238de4f\""
-                    },
-                    {
-                      "key": "Content-Length",
-                      "value": "116"
-                    },
-                    {
-                      "key": "Connection",
-                      "value": "keep-alive"
-                    }
-                  ],
                   "cookie": [],
                   "responseTime": null,
                   "body": "{ access_token: \"df2f0e40-606f-4311-8066-590732fd126b\" token_type: \"bearer\" refresh_token: \"c50a429f-9a6d-449d-8d82-4817798fe27b\" expires_in: 581977 scope: \u201caudit\u201d }\n"
@@ -451,8 +326,8 @@
                 "header": [
                   {
                     "key": "Authorization",
-                    "value": "Basic {{base64(client_id:client_secret)}}",
-                    "type": "text"
+                    "type": "text",
+                    "value": "Basic {{base64(client_id:client_secret)}}"
                   }
                 ],
                 "url": {
@@ -469,12 +344,6 @@
                       "key": "grant_type",
                       "value": "refresh_token",
                       "description": "[**REQUIRED**] to refresh the token, the value of this should always be: refresh_token"
-                    },
-                    {
-                      "description": "[**REQUIRED/OPTIONAL**] The Authorization Code obtained from the BGL API. This is not required to Refresh an Access Token ",
-                      "key": "code",
-                      "value": "{{code}}",
-                      "disabled": true
                     },
                     {
                       "key": "scope",
@@ -601,83 +470,6 @@
                       "value": "keep-alive"
                     }
                   ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{ access_token: \"df2f0e40-606f-4311-8066-590732fd126b\" token_type: \"bearer\" refresh_token: \"c50a429f-9a6d-449d-8d82-4817798fe27b\" expires_in: 581977 scope: \u201caudit\u201d }\n"
-                },
-                {
-                  "id": "54892b87-1fff-410a-83f4-445cb3e62668",
-                  "name": " Obtain an Access Token",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [
-                      {
-                        "key": "Authorization",
-                        "value": "Basic YzhkYWQ5MzYtMDU3Ny00N2FmLThhZTMtZjIyNWQzMDhlNDNhOmFkN2Y3OGEyLTllNDAtNGViNy1hMzRkLWU4OTNiZDlkYjA4MQ==",
-                        "description": "Base64 encoded Basic Authentication Header",
-                        "type": "text"
-                      },
-                      {
-                        "key": "",
-                        "value": "",
-                        "type": "text",
-                        "disabled": true
-                      }
-                    ],
-                    "url": {
-                      "raw": "https://api.staging.bgl360.com.au/oauth/token?grant_type=authorization_code&scope=auditor&redirect_uri=www.yourwebsite.com.au/bgl&code=25fhh6j6",
-                      "protocol": "https",
-                      "host": [
-                        "api",
-                        "staging",
-                        "bgl360",
-                        "com",
-                        "au"
-                      ],
-                      "path": [
-                        "oauth",
-                        "token"
-                      ],
-                      "query": [
-                        {
-                          "key": "grant_type",
-                          "value": "authorization_code"
-                        },
-                        {
-                          "key": "client_id",
-                          "value": "de3b218f-7ba8-4c91-b240-598e0c18e1ne",
-                          "disabled": true
-                        },
-                        {
-                          "key": "client_secret",
-                          "value": "720a648e-8a57-4b71-acfc-247c31d39aa2",
-                          "disabled": true
-                        },
-                        {
-                          "key": "scope",
-                          "value": "auditor"
-                        },
-                        {
-                          "key": "redirect_uri",
-                          "value": "www.yourwebsite.com.au/bgl"
-                        },
-                        {
-                          "key": "refresh_token",
-                          "value": "",
-                          "type": "text",
-                          "disabled": true
-                        },
-                        {
-                          "key": "code",
-                          "value": "25fhh6j6"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": null,
-                  "header": null,
                   "cookie": [],
                   "responseTime": null,
                   "body": "{ access_token: \"df2f0e40-606f-4311-8066-590732fd126b\" token_type: \"bearer\" refresh_token: \"c50a429f-9a6d-449d-8d82-4817798fe27b\" expires_in: 581977 scope: \u201caudit\u201d }\n"
