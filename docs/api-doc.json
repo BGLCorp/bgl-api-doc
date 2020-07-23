@@ -179,7 +179,7 @@
                   }
                 ],
                 "url": {
-                  "raw": "{{baseUrl}}/oauth/token?grant_type={{grant_type}}&code={{code}}&scope={{scope}}&redirect_uri={{redirect_uri}}",
+                  "raw": "{{baseUrl}}/oauth/token?grant_type=authorization_code&code={{code}}&scope={{scope}}&redirect_uri={{redirect_uri}}",
                   "host": [
                     "{{baseUrl}}"
                   ],
@@ -190,7 +190,7 @@
                   "query": [
                     {
                       "key": "grant_type",
-                      "value": "{{grant_type}}",
+                      "value": "authorization_code",
                       "description": "[**REQUIRED**] the value of this should always be: authorization_code for initial authorization\nto refresh the token, the value of this should always be: refresh_token"
                     },
                     {
@@ -207,12 +207,6 @@
                       "key": "redirect_uri",
                       "value": "{{redirect_uri}}",
                       "description": "[**REQUIRED**] The URI that will be used to redirect after authorisation. This value must match one of the defined OAuth 2.0 Redirect URLs in your application configuration, as described in the Oauth2 Documentation. See Obtaining BGL API Credentials on how to set redirect uri."
-                    },
-                    {
-                      "key": "refresh_token",
-                      "value": "{{refresh_token}}",
-                      "description": "[**REQUIRED/OPTIONAL**] Refresh Token obtained previously. This field is mandatory if grant_type = refresh_token",
-                      "disabled": true
                     }
                   ]
                 },
