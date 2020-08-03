@@ -9915,7 +9915,7 @@
               }
             ],
             "url": {
-              "raw": "{{baseUrl}}/sf/funds/:fundId/reports/detailedOperatingStatement?startDate={{startDate}}&endDate={{endDate}}",
+              "raw": "{{baseUrl}}/sf/funds/:fundId/reports/membersStatement?startDate={{startDate}}&endDate={{endDate}}",
               "host": [
                 "{{baseUrl}}"
               ],
@@ -9924,7 +9924,7 @@
                 "funds",
                 ":fundId",
                 "reports",
-                "detailedOperatingStatement"
+                "membersStatement"
               ],
               "query": [
                 {
@@ -9935,8 +9935,7 @@
                 {
                   "key": "endDate",
                   "value": "{{endDate}}",
-                  "description": "[REQUIRED] End Date of Report. Expected format : dd/MM/yyyy",
-                  "type": "text"
+                  "description": "[REQUIRED] End Date of Report. Expected format : dd/MM/yyyy"
                 }
               ],
               "variable": [
