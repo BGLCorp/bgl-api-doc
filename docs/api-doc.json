@@ -3046,6 +3046,103 @@
                   "body": "{\n    \"trialBalance\": {\n        \"fundId\": \"8a9c9e744ebc893a014ebd429dea000c\",\n        \"start\": \"2017-06-30T14:00:00Z\",\n        \"end\": \"2018-06-30T13:59:59Z\",\n        \"data\": [\n            {\n                \"accountClass\": \"N\",\n                \"accountCode\": \"24700\",\n                \"accountType\": {\n                    \"label\": \"Income\",\n                    \"minCode\": 20000,\n                    \"maxCode\": 29999,\n                    \"name\": \"Income\"\n                },\n                \"name\": \"Changes in Market Values of Investments\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 79759.59,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 79759.59\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"28000\",\n                \"accountType\": {\n                    \"label\": \"Income\",\n                    \"minCode\": 20000,\n                    \"maxCode\": 29999,\n                    \"name\": \"Income\"\n                },\n                \"name\": \"Property Income\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"28000/5smithst\",\n                \"accountType\": {\n                    \"label\": \"Income\",\n                    \"minCode\": 20000,\n                    \"maxCode\": 29999,\n                    \"name\": \"Income\"\n                },\n                \"name\": \"5 Smith Street, Collingwood\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 7765.75,\n                \"balancePrev\": -7765.75\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"33400\",\n                \"accountType\": {\n                    \"label\": \"Expense\",\n                    \"minCode\": 30000,\n                    \"maxCode\": 47999,\n                    \"name\": \"Expense\"\n                },\n                \"name\": \"Depreciation\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"33400/5smithst\",\n                \"accountType\": {\n                    \"label\": \"Expense\",\n                    \"minCode\": 30000,\n                    \"maxCode\": 47999,\n                    \"name\": \"Expense\"\n                },\n                \"name\": \"5 Smith Street, Collingwood\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 37500,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 37500\n            },\n            {\n                \"accountClass\": \"N\",\n                \"accountCode\": \"48500\",\n                \"accountType\": {\n                    \"label\": \"Allocation\",\n                    \"minCode\": 48000,\n                    \"maxCode\": 49999,\n                    \"name\": \"Allocation\"\n                },\n                \"name\": \"Income Tax Expense\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 7338.91,\n                \"balancePrev\": -7338.91\n            },\n            {\n                \"accountClass\": \"N\",\n                \"accountCode\": \"49000\",\n                \"accountType\": {\n                    \"label\": \"Allocation\",\n                    \"minCode\": 48000,\n                    \"maxCode\": 49999,\n                    \"name\": \"Allocation\"\n                },\n                \"name\": \"Profit/Loss Allocation Account\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 82527.32,\n                \"balancePrev\": -82527.32\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"50010\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"Opening Balance\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"50010/SIMHOM00003A\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Opening Balance) Simpson, Homer - Accumulation (Accumulation)\",\n                \"units\": null,\n                \"debits\": 0,\n                \"credits\": 717158.55,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 717158.55,\n                \"balancePrev\": -717158.55\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"50010/SIMMAR00002A\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Opening Balance) Simpson, Marge - Accumulation (Accumulation)\",\n                \"units\": null,\n                \"debits\": 0,\n                \"credits\": 478105.7,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 478105.7,\n                \"balancePrev\": -478105.7\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"52420\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"Contributions\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"52420/SIMHOM00003A\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Contributions) Simpson, Homer - Accumulation (Accumulation)\",\n                \"units\": null,\n                \"debits\": 0,\n                \"credits\": 501000,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 501000,\n                \"balancePrev\": -501000\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"53100\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"Share of Profit/(Loss)\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"53100/SIMHOM00003A\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Share of Profit/(Loss)) Simpson, Homer - Accumulation (Accumulation)\",\n                \"units\": null,\n                \"debits\": 28073.8,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 28073.8,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 28073.8\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"53100/SIMHOM00010P\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Share of Profit/(Loss)) Simpson, Homer - Pension (Market Linked)\",\n                \"units\": null,\n                \"debits\": 13652.52,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 13652.52,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 13652.52\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"53100/SIMHOM00013P\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Share of Profit/(Loss)) Simpson, Homer - Pension (Account Based Pension)\",\n                \"units\": null,\n                \"debits\": 55982.85,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 55982.85,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 55982.85\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"53100/SIMMAR00002A\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Share of Profit/(Loss)) Simpson, Marge - Accumulation (Accumulation)\",\n                \"units\": null,\n                \"debits\": 8758.73,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 8758.73,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 8758.73\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"53100/SIMMAR00010P\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Share of Profit/(Loss)) Simpson, Marge - Pension (Transition to Retirement Pension)\",\n                \"units\": null,\n                \"debits\": 15168.5,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 15168.5,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 15168.5\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"53330\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"Income Tax\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"53330/SIMHOM00003A\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Income Tax) Simpson, Homer - Accumulation (Accumulation)\",\n                \"units\": null,\n                \"debits\": 0,\n                \"credits\": 3863.14,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 3863.14,\n                \"balancePrev\": -3863.14\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"53330/SIMMAR00002A\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Income Tax) Simpson, Marge - Accumulation (Accumulation)\",\n                \"units\": null,\n                \"debits\": 0,\n                \"credits\": 1907.03,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 1907.03,\n                \"balancePrev\": -1907.03\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"53920\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"Life Insurance Premiums\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"53920/SIMHOM00003A\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Life Insurance Premiums) Simpson, Homer - Accumulation (Accumulation)\",\n                \"units\": null,\n                \"debits\": 750,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 750,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 750\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"54160\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"Pensions Paid\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"54160/SIMHOM00010P\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Pensions Paid) Simpson, Homer - Pension (Market Linked)\",\n                \"units\": null,\n                \"debits\": 7000,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 7000,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 7000\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"54500\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"Benefits Paid/Transfers Out\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"54500/SIMHOM00003A\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Benefits Paid/Transfers Out) Simpson, Homer - Accumulation (Accumulation)\",\n                \"units\": null,\n                \"debits\": 1500,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 1500,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 1500\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"54500/SIMMAR00002A\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Benefits Paid/Transfers Out) Simpson, Marge - Accumulation (Accumulation)\",\n                \"units\": null,\n                \"debits\": 2500,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 2500,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 2500\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"56100\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"Internal Transfers In\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"56100/SIMHOM00010P\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Internal Transfers In) Simpson, Homer - Pension (Market Linked)\",\n                \"units\": null,\n                \"debits\": 0,\n                \"credits\": 120000,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 120000,\n                \"balancePrev\": -120000\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"56100/SIMHOM00013P\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Internal Transfers In) Simpson, Homer - Pension (Account Based Pension)\",\n                \"units\": null,\n                \"debits\": 0,\n                \"credits\": 1145076.07,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 1145076.07,\n                \"balancePrev\": -1145076.07\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"56100/SIMMAR00010P\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Internal Transfers In) Simpson, Marge - Pension (Transition to Retirement Pension)\",\n                \"units\": null,\n                \"debits\": 0,\n                \"credits\": 300000,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 300000,\n                \"balancePrev\": -300000\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"57100\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"Internal Transfers Out\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"57100/SIMHOM00003A\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Internal Transfers Out) Simpson, Homer - Accumulation (Accumulation)\",\n                \"units\": null,\n                \"debits\": 1265076.07,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 1265076.07,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 1265076.07\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"57100/SIMMAR00002A\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Internal Transfers Out) Simpson, Marge - Accumulation (Accumulation)\",\n                \"units\": null,\n                \"debits\": 300000,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 300000,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 300000\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"60400\",\n                \"accountType\": {\n                    \"label\": \"Asset - Bank\",\n                    \"minCode\": 60400,\n                    \"maxCode\": 60800,\n                    \"name\": \"AssetBank\"\n                },\n                \"name\": \"Bank Accounts\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"60400/bank\",\n                \"accountType\": {\n                    \"label\": \"Asset - Bank\",\n                    \"minCode\": 60400,\n                    \"maxCode\": 60800,\n                    \"name\": \"AssetBank\"\n                },\n                \"name\": \"CBA BANK\",\n                \"units\": null,\n                \"debits\": 271108.47,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 271108.47,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 271108.47\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"60800\",\n                \"accountType\": {\n                    \"label\": \"Asset - Bank\",\n                    \"minCode\": 60400,\n                    \"maxCode\": 60800,\n                    \"name\": \"AssetBank\"\n                },\n                \"name\": \"Term Deposits\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"60800/TD001\",\n                \"accountType\": {\n                    \"label\": \"Asset - Bank\",\n                    \"minCode\": 60400,\n                    \"maxCode\": 60800,\n                    \"name\": \"AssetBank\"\n                },\n                \"name\": \"TD Macquarie\",\n                \"units\": null,\n                \"debits\": 116000,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 116000,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 116000\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"77200\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"Real Estate Properties ( Australian - Residential)\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"77200/5smithst\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"5 Smith Street, Collingwood\",\n                \"units\": 1,\n                \"debits\": 600000,\n                \"credits\": 0,\n                \"unitsPrev\": 1,\n                \"debitsPrev\": 600000,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 600000\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"77600\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"Shares in Listed Companies (Australian)\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"77600/01OO.L\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"NORDIC INVESTMENT BANK 5.25% BDS 26/11/2019 GBP(VAR)\",\n                \"units\": 1000,\n                \"debits\": 10000,\n                \"credits\": 0,\n                \"unitsPrev\": 1000,\n                \"debitsPrev\": 10000,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 10000\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"77600/A2M.AX\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"The A2 Milk Company Limited\",\n                \"units\": 100000,\n                \"debits\": 175000,\n                \"credits\": 0,\n                \"unitsPrev\": 100000,\n                \"debitsPrev\": 175000,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 175000\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"77600/CBA.AX\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"Commonwealth Bank Of Australia.\",\n                \"units\": 3159,\n                \"debits\": 234934.83,\n                \"credits\": 0,\n                \"unitsPrev\": 3159,\n                \"debitsPrev\": 234934.83,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 234934.83\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"77600/CLH.AX\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"Collection House Limited\",\n                \"units\": 20818,\n                \"debits\": 22899.8,\n                \"credits\": 0,\n                \"unitsPrev\": 20818,\n                \"debitsPrev\": 22899.8,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 22899.8\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"77600/MQG.AX\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"Macquarie Group Limited\",\n                \"units\": 1589,\n                \"debits\": 109482.1,\n                \"credits\": 0,\n                \"unitsPrev\": 1589,\n                \"debitsPrev\": 109482.1,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 109482.1\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"77600/NAB.AX\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"National Australia Bank Limited\",\n                \"units\": 970,\n                \"debits\": 24667.1,\n                \"credits\": 0,\n                \"unitsPrev\": 970,\n                \"debitsPrev\": 24667.1,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 24667.1\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"77600/RRL.AX\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"Regis Resources Limited\",\n                \"units\": 40000,\n                \"debits\": 136800,\n                \"credits\": 0,\n                \"unitsPrev\": 40000,\n                \"debitsPrev\": 136800,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 136800\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"77600/TLS.AX\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"Telstra Corporation Limited.\",\n                \"units\": 10000,\n                \"debits\": 55600,\n                \"credits\": 0,\n                \"unitsPrev\": 10000,\n                \"debitsPrev\": 55600,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 55600\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"77600/TSE.AX\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"Transfield Services Limited\",\n                \"units\": 20000,\n                \"debits\": 21100,\n                \"credits\": 0,\n                \"unitsPrev\": 20000,\n                \"debitsPrev\": 21100,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 21100\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"77600/VOC.AX\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"Vocus Communications Limited\",\n                \"units\": 6667,\n                \"debits\": 56802.84,\n                \"credits\": 0,\n                \"unitsPrev\": 6667,\n                \"debitsPrev\": 56802.84,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 56802.84\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"77700\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"Shares in Listed Companies (Overseas)\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"77700/AAPL.NDQ2\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"Apple Inc.\",\n                \"units\": 100,\n                \"debits\": 12873.69,\n                \"credits\": 0,\n                \"unitsPrev\": 100,\n                \"debitsPrev\": 12873.69,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 12873.69\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"78200\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"Units in Listed Unit Trusts (Australian)\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"78200/CFM0404AU\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"CFS WS Aust Share Fund Core\",\n                \"units\": 10000,\n                \"debits\": 13679,\n                \"credits\": 0,\n                \"unitsPrev\": 10000,\n                \"debitsPrev\": 13679,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 13679\n            },\n            {\n                \"accountClass\": \"N\",\n                \"accountCode\": \"84000\",\n                \"accountType\": {\n                    \"label\": \"Liability\",\n                    \"minCode\": 80000,\n                    \"maxCode\": 89999,\n                    \"name\": \"Liability\"\n                },\n                \"name\": \"GST Payable/Refundable\",\n                \"units\": null,\n                \"debits\": 0,\n                \"credits\": 617.85,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 617.85,\n                \"balancePrev\": -617.85\n            },\n            {\n                \"accountClass\": \"N\",\n                \"accountCode\": \"85000\",\n                \"accountType\": {\n                    \"label\": \"Liability\",\n                    \"minCode\": 80000,\n                    \"maxCode\": 89999,\n                    \"name\": \"Liability\"\n                },\n                \"name\": \"Income Tax Payable/Refundable\",\n                \"units\": null,\n                \"debits\": 0,\n                \"credits\": 3916.55,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 3916.55,\n                \"balancePrev\": -3916.55\n            },\n            {\n                \"accountClass\": \"N\",\n                \"accountCode\": \"89000\",\n                \"accountType\": {\n                    \"label\": \"Liability\",\n                    \"minCode\": 80000,\n                    \"maxCode\": 89999,\n                    \"name\": \"Liability\"\n                },\n                \"name\": \"Deferred Tax Liability/Asset\",\n                \"units\": null,\n                \"debits\": 8274.47,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 8274.47,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 8274.47\n            },\n            {\n                \"accountClass\": \"N\",\n                \"accountCode\": \"91000\",\n                \"accountType\": {\n                    \"label\": \"Unallocated\",\n                    \"minCode\": 90000,\n                    \"maxCode\": 99999,\n                    \"name\": \"Unallocated\"\n                },\n                \"name\": \"Bank Data Clearing Account\",\n                \"units\": null,\n                \"debits\": 0,\n                \"credits\": 25039.88,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 25039.88,\n                \"balancePrev\": -25039.88\n            },\n            {\n                \"accountClass\": \"N\",\n                \"accountCode\": \"94910\",\n                \"accountType\": {\n                    \"label\": \"Unallocated\",\n                    \"minCode\": 90000,\n                    \"maxCode\": 99999,\n                    \"name\": \"Unallocated\"\n                },\n                \"name\": \"Investment Movement Data Clearing Account\",\n                \"units\": null,\n                \"debits\": 61884,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 61884,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 61884\n            },\n            {\n                \"accountClass\": \"N\",\n                \"accountCode\": \"99800\",\n                \"accountType\": {\n                    \"label\": \"Unallocated\",\n                    \"minCode\": 90000,\n                    \"maxCode\": 99999,\n                    \"name\": \"Unallocated\"\n                },\n                \"name\": \"Unspecified Data Clearing Account\",\n                \"units\": null,\n                \"debits\": 0,\n                \"credits\": 332884,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 332884,\n                \"balancePrev\": -332884\n            }\n        ]\n    }\n}\n \n"
                 }
               ]
+            },
+            {
+              "name": "Report - Detailed Operating Statement Copy",
+              "_postman_id": "ba5c5118-fa08-42ce-afa4-56506a61fdcc",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "oauth2",
+                  "oauth2": {}
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+                    "key": "Authorization",
+                    "value": "bearer {{token}}"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/sf/funds/:fundId/reports/detailedOperatingStatement?financialYear={{financialYear}}",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "sf",
+                    "funds",
+                    ":fundId",
+                    "reports",
+                    "detailedOperatingStatement"
+                  ],
+                  "query": [
+                    {
+                      "key": "financialYear",
+                      "value": "{{financialYear}}",
+                      "description": "[REQUIRED] Financial Year of Report. Expected format : YYYY"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "id": "a7be43bd-f942-4ca6-9f87-a453c99975bd",
+                      "key": "fundId",
+                      "value": "{{fundId}}",
+                      "type": "string",
+                      "description": "[REQUIRED] Unique ID for the fund."
+                    }
+                  ]
+                },
+                "description": "The Detailed Operating Statement is a statement of Investment Income, Contribution Income, Investment Gains, Expenses and Member Payments showing the results of an SMSF's  operations for a period. \n\n* If you require a Summarised Operating Statement all entries under each  **subEntries**  or **items**  element can be ignored.\n* If you require a Detailed Operating Statement all entries under each **subEntries**  or **items** element are required.\n\n| Key | Type | Comments |\n| -------- | -------- | -------- |\n| fundName     | string     |  the name of the fund   |\n| fundDate     | string     |  description of the Financial Period     |\n| financialYear     | Date     | Current Financial Year of Report     |\n| financialYearPrev     | Date     | Financial Year of Comparatives     |\n| income     | Accounts array     | see Accounts array below     |\n| expenses     | Accounts array     | see Accounts array below     |\n| taxExpense     | Accounts array     | see Accounts array below     |\n| totalMarketMovement     | number     | The total Change in Market Movement in the financialYear     |\n| totalMarketPrev     | number     | The total Change in Market Movement in the financialYearPrev      |\n| incomeTotal     | number     | The total Income for the the financialYear     |\n| IncomeTotalPrev     | number     | The total income for the financialYearPrev      |\n| expenseTotal     | number     | The total Expenses for the the financialYear     |\n| expenseTotalPrev     | number     | The total Expenses for the financialYearPrev      |\n| accruedBenefitsBeforeIncTax     | number     | The total Benefits accrued as a result of operations before income tax for the the financialYear     |\n| accruedBenefitsBeforeIncTaxPrev     | number     | The total Benefits accrued as a result of operations before income tax for the financialYearPrev      |\n| incomeTaxTotal     | number     | The total income tax for the the financialYear     |\n| incomeTaxTotalPrev     | number     | The income tax for the financialYearPrev      |\n| benefitsAccuredResultOp     | number     | The total Benefits accrued as a result of operations for the the financialYear       |\n| benefitsAccuredResultOpPrev     | number     |The total Benefits accrued as a result of operations for the financialYearPrev       |\n\n**Accounts array**\n\n| Key | Type | Comments |\n| -------- | -------- | -------- |\n| mainName     | string     | Investment Category from the [Chart of Accounts](https://bglapi.restlet.io/#operation_chart_of_accounts)     |\n| title     | string     | The name of the control or normal account from the [Chart of Accounts](https://bglapi.restlet.io/#operation_chart_of_accounts)    |\n| mainTitle     | string     | name of Operating Statement Section    |\n| totalAmount     | number     | Total of the Chart Category (Control Account) in the financialYear    |\n| totalAmountPrev     | number     | Total of the Chart Category (Control Account) in the financialYearPrev     |\n| items     | array     | Refer to Items Array below | \n\n**items array**\n\n| Key | Type | Comments |\n| -------- | -------- | -------- |\n| amount     | number     | Total of the account in the financialYear    |\n| amountPrev     | number     | Total of the account in the financialYearPrev     |\n| name     | string     | the name of the account from the [Chart of Accounts](https://bglapi.restlet.io/#operation_chart_of_accounts)     |\n| subEntries     | string     | Follows the same format as the the above three fields.  |"
+              },
+              "response": [
+                {
+                  "id": "dbf6b449-4540-40e6-b93d-75c12c871630",
+                  "name": "Status 200",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Authorization",
+                        "value": "bearer df2f0e40-606f-4311-8066-590732fd126b"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/sf/funds/SMITH001/reports/detailedOperatingStatement?financialYear=2019",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "sf",
+                        "funds",
+                        "SMITH001",
+                        "reports",
+                        "detailedOperatingStatement"
+                      ],
+                      "query": [
+                        {
+                          "key": "financialYear",
+                          "value": "2019"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n    \"accruedBenefitsBeforeIncTax\": 0,\n    \"accruedBenefitsBeforeIncTaxPrev\": -46857.14,\n    \"benefitsAccuredResultOp\": 0,\n    \"benefitsAccuredResultOpPrev\": -68193.37,\n    \"currency\": \"$\",\n    \"expenseTotal\": 0,\n    \"expenseTotalPrev\": 64400,\n    \"expenses\": [\n        {\n            \"items\": [\n                {\n                    \"amount\": 0,\n                    \"amountPrev\": 2000,\n                    \"name\": \"Accountancy Fees\",\n                    \"subEntries\": []\n                },\n                {\n                    \"amount\": 0,\n                    \"amountPrev\": 700,\n                    \"name\": \"Auditor's Remuneration\",\n                    \"subEntries\": []\n                }\n            ],\n            \"mainName\": \"\",\n            \"mainTitle\": \"\",\n            \"title\": \"\",\n            \"totalAmount\": 0,\n            \"totalAmountPrev\": 2700\n        },\n        {\n            \"items\": [\n                {\n                    \"amount\": 0,\n                    \"amountPrev\": 700,\n                    \"name\": \" Jones, Mary - Accumulation (Accumulation)\",\n                    \"subEntries\": []\n                },\n                {\n                    \"amount\": 0,\n                    \"amountPrev\": 1000,\n                    \"name\": \" Jones, John - Pension (Pension)\",\n                    \"subEntries\": []\n                }\n            ],\n            \"mainName\": \"\",\n            \"mainTitle\": \"Member Payments\",\n            \"title\": \"Life Insurance Premiums\",\n            \"totalAmount\": 0,\n            \"totalAmountPrev\": 1700\n        },\n        {\n            \"items\": [\n                {\n                    \"amount\": 0,\n                    \"amountPrev\": 60000,\n                    \"name\": \" Jones, John - Pension (Pension)\",\n                    \"subEntries\": []\n                }\n            ],\n            \"mainName\": \"\",\n            \"mainTitle\": \"\",\n            \"title\": \"Pensions Paid\",\n            \"totalAmount\": 0,\n            \"totalAmountPrev\": 60000\n        }\n    ],\n    \"financialYear\": \"2015\",\n    \"financialYearPrev\": \"2014\",\n    \"fundDate\": \"For the year ended 30 June 2015\",\n    \"fundName\": \"BGL Training Fund\",\n    \"income\": [\n        {\n            \"items\": [\n                {\n                    \"amount\": 0,\n                    \"amountPrev\": 600,\n                    \"name\": \"Gpt Group - Stapled Securities Fully Paid\",\n                    \"subEntries\": []\n                }\n            ],\n            \"mainName\": \"\",\n            \"mainTitle\": \"Investment Income\",\n            \"title\": \"Trust Distributions\",\n            \"totalAmount\": 0,\n            \"totalAmountPrev\": 600\n        },\n        {\n            \"items\": [\n                {\n                    \"amount\": 0,\n                    \"amountPrev\": 1714.29,\n                    \"name\": \"Bhp Billiton Limited - Ordinary Fully Paid\",\n                    \"subEntries\": []\n                },\n                {\n                    \"amount\": 0,\n                    \"amountPrev\": 1428.57,\n                    \"name\": \"Commonwealth Bank of Australia. - Ordinary Fully Paid\",\n                    \"subEntries\": []\n                }\n            ],\n            \"mainName\": \"\",\n            \"mainTitle\": \"\",\n            \"title\": \"Dividends Received\",\n            \"totalAmount\": 0,\n            \"totalAmountPrev\": 3142.86\n        },\n        {\n            \"items\": [\n                {\n                    \"amount\": 0,\n                    \"amountPrev\": -1200,\n                    \"name\": \"Westpac Term Deposit\",\n                    \"subEntries\": []\n                }\n            ],\n            \"mainName\": \"\",\n            \"mainTitle\": \"\",\n            \"title\": \"Interest Received\",\n            \"totalAmount\": 0,\n            \"totalAmountPrev\": -1200\n        },\n        {\n            \"items\": [\n                {\n                    \"amount\": 0,\n                    \"amountPrev\": 15000,\n                    \"name\": \"Mary Jones\",\n                    \"subEntries\": []\n                }\n            ],\n            \"mainName\": \"\",\n            \"mainTitle\": \"Contribution Income\",\n            \"title\": \"Employer Contributions - Concessional\",\n            \"totalAmount\": 0,\n            \"totalAmountPrev\": 15000\n        }\n    ],\n    \"incomeTaxTotal\": 0,\n    \"incomeTaxTotalPrev\": 21336.23,\n    \"incomeTotal\": 0,\n    \"incomeTotalPrev\": 17542.86,\n    \"taxExpense\": [\n        {\n            \"items\": [\n                {\n                    \"amount\": 0,\n                    \"amountPrev\": 21336.23,\n                    \"name\": \"Income Tax Expense\",\n                    \"subEntries\": []\n                }\n            ],\n            \"mainName\": \"\",\n            \"mainTitle\": \"\",\n            \"title\": \"\",\n            \"totalAmount\": 0,\n            \"totalAmountPrev\": 21336.23\n        }\n    ],\n    \"totalMarketMovement\": 0,\n    \"totalMarketMovementPrev\": 0\n}"
+                }
+              ]
             }
           ],
           "_postman_id": "275f9cc9-3bf8-403d-b7ed-7b3e098726d5",
@@ -9121,6 +9218,146 @@
                       "body": "{\n    \"documentDate\": \"2020-07-03\",\n    \"id\": 1075469,\n    \"lastUpdatedTimestamp\": \"2020-07-03T04:39:45.356366\",\n    \"name\": \"Trust Deed Update\",\n    \"status\": {\n        \"createdBy\": \"CAS360 API\",\n        \"effectiveDate\": \"2020-07-03\",\n        \"id\": 969220,\n        \"type\": \"ADDED FROM MIGRATION\",\n        \"typeId\": 1\n    },\n    \"traceNumber\": \"104\"\n}"
                     }
                   ]
+                },
+                {
+                  "name": "Delete a document (Trust)",
+                  "_postman_id": "3e703f6c-8155-4b6e-9a46-34dca494a8e2",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "auth": {
+                      "type": "oauth2",
+                      "oauth2": {}
+                    },
+                    "method": "DELETE",
+                    "header": [
+                      {
+                        "key": "Authorization",
+                        "value": "bearer {{token}}",
+                        "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/cas/trusts/:trustId/documents/:documentId ",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "cas",
+                        "trusts",
+                        ":trustId",
+                        "documents",
+                        ":documentId "
+                      ],
+                      "variable": [
+                        {
+                          "key": "trustId",
+                          "value": "{{trustId}}",
+                          "type": "string"
+                        },
+                        {
+                          "key": "documentId ",
+                          "value": "{{documentId}}",
+                          "type": "string",
+                          "description": "[Required]\n"
+                        }
+                      ]
+                    },
+                    "description": "Delete a document for a given trust\n"
+                  },
+                  "response": [
+                    {
+                      "id": "66ef9be9-8754-4546-af46-47367c4d718b",
+                      "name": "200 - Delete a document (Trust)",
+                      "originalRequest": {
+                        "method": "DELETE",
+                        "header": [
+                          {
+                            "key": "Authorization",
+                            "value": "bearer {{token}}",
+                            "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/cas/trusts/:trustId/documents/:documentId ",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "cas",
+                            "trusts",
+                            ":trustId",
+                            "documents",
+                            ":documentId "
+                          ],
+                          "variable": [
+                            {
+                              "key": "trustId",
+                              "value": "{{trustId}}"
+                            },
+                            {
+                              "description": "[Required]\n",
+                              "key": "documentId ",
+                              "value": "{{documentId}}"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Date",
+                          "value": "Fri, 03 Jul 2020 04:43:34 GMT"
+                        },
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json;charset=UTF-8"
+                        },
+                        {
+                          "key": "Transfer-Encoding",
+                          "value": "chunked"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Server",
+                          "value": "nginx"
+                        },
+                        {
+                          "key": "X-Rate-Daily-Limit-Remaining",
+                          "value": "-1"
+                        },
+                        {
+                          "key": "vary",
+                          "value": "accept-encoding"
+                        },
+                        {
+                          "key": "Content-Encoding",
+                          "value": "gzip"
+                        },
+                        {
+                          "key": "X-Content-Type-Options",
+                          "value": "nosniff"
+                        },
+                        {
+                          "key": "Content-Security-Policy",
+                          "value": "frame-ancestors 'self' uat.sf360.com.au"
+                        },
+                        {
+                          "key": "X-Frame-Options",
+                          "value": "ALLOW-FROM https://uat.sf360.com.au"
+                        }
+                      ],
+                      "cookie": [],
+                      "responseTime": null,
+                      "body": "{\n    \"status\": \"DELETED\"\n}"
+                    }
+                  ]
                 }
               ],
               "_postman_id": "5d29cf47-4101-492e-adf1-2c1b9a25fde0",
@@ -9701,149 +9938,8 @@
       ]
     },
     {
-      "name": "Coming Soon - CAS360",
-      "item": [
-        {
-          "name": "Delete a document (Trust)",
-          "_postman_id": "3e703f6c-8155-4b6e-9a46-34dca494a8e2",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "oauth2",
-              "oauth2": {}
-            },
-            "method": "DELETE",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "bearer {{token}}",
-                "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
-              }
-            ],
-            "url": {
-              "raw": "{{baseUrl}}/cas/trusts/:trustId/documents/:documentId ",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "cas",
-                "trusts",
-                ":trustId",
-                "documents",
-                ":documentId "
-              ],
-              "variable": [
-                {
-                  "key": "trustId",
-                  "value": "{{trustId}}",
-                  "type": "string"
-                },
-                {
-                  "key": "documentId ",
-                  "value": "{{documentId}}",
-                  "type": "string",
-                  "description": "[Required]\n"
-                }
-              ]
-            },
-            "description": "Delete a document for a given trust\n"
-          },
-          "response": [
-            {
-              "id": "66ef9be9-8754-4546-af46-47367c4d718b",
-              "name": "200 - Delete a document (Trust)",
-              "originalRequest": {
-                "method": "DELETE",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "value": "bearer {{token}}",
-                    "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
-                  }
-                ],
-                "url": {
-                  "raw": "{{baseUrl}}/cas/trusts/:trustId/documents/:documentId ",
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "path": [
-                    "cas",
-                    "trusts",
-                    ":trustId",
-                    "documents",
-                    ":documentId "
-                  ],
-                  "variable": [
-                    {
-                      "key": "trustId",
-                      "value": "{{trustId}}"
-                    },
-                    {
-                      "description": "[Required]\n",
-                      "key": "documentId ",
-                      "value": "{{documentId}}"
-                    }
-                  ]
-                }
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Date",
-                  "value": "Fri, 03 Jul 2020 04:43:34 GMT"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json;charset=UTF-8"
-                },
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked"
-                },
-                {
-                  "key": "Connection",
-                  "value": "keep-alive"
-                },
-                {
-                  "key": "Server",
-                  "value": "nginx"
-                },
-                {
-                  "key": "X-Rate-Daily-Limit-Remaining",
-                  "value": "-1"
-                },
-                {
-                  "key": "vary",
-                  "value": "accept-encoding"
-                },
-                {
-                  "key": "Content-Encoding",
-                  "value": "gzip"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "Content-Security-Policy",
-                  "value": "frame-ancestors 'self' uat.sf360.com.au"
-                },
-                {
-                  "key": "X-Frame-Options",
-                  "value": "ALLOW-FROM https://uat.sf360.com.au"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"status\": \"DELETED\"\n}"
-            }
-          ]
-        }
-      ],
+      "name": "Coming Soon - SF360",
+      "item": [],
       "_postman_id": "a2a374ee-4904-4f95-9922-cedcb9d10217",
       "event": [
         {
