@@ -9863,7 +9863,7 @@
               }
             ],
             "url": {
-              "raw": "{{baseUrl}}/sf/funds/:fundId/reports/detailedOperatingStatement?financialYear={{financialYear}}",
+              "raw": "{{baseUrl}}/sf/funds/:fundId/reports/investmentIncomeComparison?financialYear={{financialYear}}",
               "host": [
                 "{{baseUrl}}"
               ],
@@ -9872,7 +9872,7 @@
                 "funds",
                 ":fundId",
                 "reports",
-                "detailedOperatingStatement"
+                "investmentIncomeComparison"
               ],
               "query": [
                 {
@@ -9883,7 +9883,6 @@
               ],
               "variable": [
                 {
-                  "id": "a7be43bd-f942-4ca6-9f87-a453c99975bd",
                   "key": "fundId",
                   "value": "{{fundId}}",
                   "type": "string",
