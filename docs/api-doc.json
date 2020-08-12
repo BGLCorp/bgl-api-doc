@@ -275,6 +275,122 @@
                   "body": "{ access_token: \"df2f0e40-606f-4311-8066-590732fd126b\" token_type: \"bearer\" refresh_token: \"c50a429f-9a6d-449d-8d82-4817798fe27b\" expires_in: 581977 scope: \u201caudit\u201d }\n"
                 }
               ]
+            },
+            {
+              "name": "Obtain an Access Token Copy",
+              "_postman_id": "e880a300-1dca-44d3-8369-e450113774cc",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Basic {{base64(client_id:client_secret)}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/oauth/token?grant_type=authorization_code&code={{code}}&scope={{scope}}&redirect_uri={{redirect_uri}}",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "oauth",
+                    "token"
+                  ],
+                  "query": [
+                    {
+                      "key": "grant_type",
+                      "value": "authorization_code",
+                      "description": "[**REQUIRED**] the value of this should always be: authorization_code for initial authorization\nto refresh the token, the value of this should always be: refresh_token"
+                    },
+                    {
+                      "key": "code",
+                      "value": "{{code}}",
+                      "description": "[**REQUIRED**] The Authorization Code obtained from the BGL API. This is not required to Refresh an Access Token "
+                    },
+                    {
+                      "key": "scope",
+                      "value": "{{scope}}",
+                      "description": " [**REQUIRED**] A URL-encoded, space-delimited list of member permissions your application is requesting on behalf of the user. Currently available scopes are listed in the API Scopes."
+                    },
+                    {
+                      "key": "redirect_uri",
+                      "value": "{{redirect_uri}}",
+                      "description": "[**REQUIRED**] The URI that will be used to redirect after authorisation. This value must match one of the defined OAuth 2.0 Redirect URLs in your application configuration, as described in the Oauth2 Documentation. See Obtaining BGL API Credentials on how to set redirect uri."
+                    }
+                  ]
+                },
+                "description": "Once the client application has the Authorization code, then the client application can obtain an Access Token. The Access Token will contain vital information that is required to access the BGL API.\n\nIn order for the client to obtain an Access Token, the client application should send a request to the BGL API as follows."
+              },
+              "response": [
+                {
+                  "id": "6a3c8eb2-4074-477a-a85a-3573f82a7c92",
+                  "name": "200 - Obtain an Access Token",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Authorization",
+                        "value": "Basic YzhkYWQ5MzYtMDU3Ny00N2FmLThhZTMtZjIyNWQzMDhlNDNhOmFkN2Y3OGEyLTllNDAtNGViNy1hMzRkLWU4OTNiZDlkYjA4MQ==",
+                        "description": "Base64 encoded Basic Authentication Header",
+                        "type": "text"
+                      },
+                      {
+                        "key": "",
+                        "value": "",
+                        "type": "text",
+                        "disabled": true
+                      }
+                    ],
+                    "url": {
+                      "raw": "https://api.staging.bgl360.com.au/oauth/token?grant_type=authorization_code&scope=auditor&redirect_uri=www.yourwebsite.com.au/bgl&code=25fhh6j6",
+                      "protocol": "https",
+                      "host": [
+                        "api",
+                        "staging",
+                        "bgl360",
+                        "com",
+                        "au"
+                      ],
+                      "path": [
+                        "oauth",
+                        "token"
+                      ],
+                      "query": [
+                        {
+                          "key": "grant_type",
+                          "value": "authorization_code"
+                        },
+                        {
+                          "key": "scope",
+                          "value": "auditor"
+                        },
+                        {
+                          "key": "redirect_uri",
+                          "value": "www.yourwebsite.com.au/bgl"
+                        },
+                        {
+                          "key": "code",
+                          "value": "25fhh6j6"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": null,
+                  "header": null,
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{ access_token: \"df2f0e40-606f-4311-8066-590732fd126b\" token_type: \"bearer\" refresh_token: \"c50a429f-9a6d-449d-8d82-4817798fe27b\" expires_in: 581977 scope: \u201caudit\u201d }\n"
+                }
+              ]
             }
           ],
           "_postman_id": "c9677878-b304-42c1-be0f-dea86196d142",
