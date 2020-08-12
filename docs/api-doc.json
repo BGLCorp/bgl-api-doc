@@ -161,8 +161,8 @@
           "name": "Authorization Code Grant",
           "item": [
             {
-              "name": "Obtain an Access Token",
-              "_postman_id": "0f01acc6-6c85-4cf6-86a1-97fc3366e316",
+              "name": "Obtain an Authorization Code",
+              "_postman_id": "e880a300-1dca-44d3-8369-e450113774cc",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -214,7 +214,7 @@
               },
               "response": [
                 {
-                  "id": "efcd2ef8-6eb2-4da9-bd80-88e5545a69eb",
+                  "id": "6a3c8eb2-4074-477a-a85a-3573f82a7c92",
                   "name": "200 - Obtain an Access Token",
                   "originalRequest": {
                     "method": "POST",
@@ -277,8 +277,8 @@
               ]
             },
             {
-              "name": "Obtain an Authorization Code",
-              "_postman_id": "e880a300-1dca-44d3-8369-e450113774cc",
+              "name": "Obtain an Access Token",
+              "_postman_id": "0f01acc6-6c85-4cf6-86a1-97fc3366e316",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -330,7 +330,7 @@
               },
               "response": [
                 {
-                  "id": "6a3c8eb2-4074-477a-a85a-3573f82a7c92",
+                  "id": "efcd2ef8-6eb2-4da9-bd80-88e5545a69eb",
                   "name": "200 - Obtain an Access Token",
                   "originalRequest": {
                     "method": "POST",
