@@ -210,7 +210,7 @@
                     }
                   ]
                 },
-                "description": "Once the client application has the Authorization code, then the client application can obtain an Access Token. The Access Token will contain vital information that is required to access the BGL API.\n\nIn order for the client to obtain an Access Token, the client application should send a request to the BGL API as follows."
+                "description": "The authorization code is a temporary code that the client will exchange for an access token. The code itself is obtained from the authorization server where the user gets a chance to see what the information the client is requesting, and approve or deny the request."
               },
               "response": [
                 {
@@ -317,12 +317,12 @@
                     {
                       "key": "scope",
                       "value": "{{scope}}",
-                      "description": " [**REQUIRED**] A URL-encoded, space-delimited list of member permissions your application is requesting on behalf of the user. Currently available scopes are listed in the API Scopes."
+                      "description": "[**REQUIRED**] Must be a scope registred to your application. Currently available scopes are listed in the API Scopes."
                     },
                     {
                       "key": "redirect_uri",
                       "value": "{{redirect_uri}}",
-                      "description": "[**REQUIRED**] The URI that will be used to redirect after authorisation. This value must match one of the defined OAuth 2.0 Redirect URLs in your application configuration, as described in the Oauth2 Documentation. See Obtaining BGL API Credentials on how to set redirect uri."
+                      "description": "[**REQUIRED**] The URI that will be used to redirect after authorisation. This value must match one of the defined OAuth 2.0 Redirect URLs in your application configuration. See Obtaining BGL API Credentials on how to set redirect uri."
                     }
                   ]
                 },
