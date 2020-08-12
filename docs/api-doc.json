@@ -342,12 +342,12 @@
                     {
                       "key": "scope",
                       "value": "{{scope}}",
-                      "description": " [**REQUIRED**] A URL-encoded, space-delimited list of member permissions your application is requesting on behalf of the user. Currently available scopes are listed in the API Scopes."
+                      "description": "[**REQUIRED**] A URL-encoded, space-delimited list of member permissions your application is requesting on behalf of the user. Currently available scopes are listed in the API Scopes."
                     },
                     {
                       "key": "redirect_uri",
                       "value": "{{redirect_uri}}",
-                      "description": "[**REQUIRED**] The URI that will be used to redirect after authorisation. This value must match one of the defined OAuth 2.0 Redirect URLs in your application configuration, as described in the Oauth2 Documentation. See Obtaining BGL API Credentials on how to set redirect uri."
+                      "description": "[**REQUIRED**] The URI that will be used to redirect after authorisation. This value must match one of the defined OAuth 2.0 Redirect URLs in your application configuration. See Obtaining BGL API Credentials on how to set redirect uri."
                     },
                     {
                       "key": "refresh_token",
