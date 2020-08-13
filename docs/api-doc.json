@@ -179,34 +179,39 @@
                   }
                 ],
                 "url": {
-                  "raw": "{{baseUrl}}/oauth/token?grant_type=authorization_code&code={{code}}&scope={{scope}}&redirect_uri={{redirect_uri}}",
+                  "raw": "{{baseUrl}}/oauth/authorize?response_type=code&state={{state}}&client_id={{clientId}}&scope={{scope}}&redirect_uri={{redirect_uri}}",
                   "host": [
                     "{{baseUrl}}"
                   ],
                   "path": [
                     "oauth",
-                    "token"
+                    "authorize"
                   ],
                   "query": [
                     {
-                      "key": "grant_type",
-                      "value": "authorization_code",
-                      "description": "[**REQUIRED**] the value of this should always be: authorization_code for initial authorization\nto refresh the token, the value of this should always be: refresh_token"
+                      "key": "response_type",
+                      "value": "code",
+                      "description": "[**REQUIRED**] the value of this should always be: authorization_code"
                     },
                     {
-                      "key": "code",
-                      "value": "{{code}}",
-                      "description": "[**REQUIRED**] The Authorization Code obtained from the BGL API. This is not required to Refresh an Access Token "
+                      "key": "state",
+                      "value": "{{state}}",
+                      "description": "[*Optional*] An opaque value, used for security purposes. If this request parameter is set in the request, then it is returned to the application as part of the redirect_uri."
+                    },
+                    {
+                      "key": "client_id",
+                      "value": "{{clientId}}",
+                      "description": "[**REQUIRED**]"
                     },
                     {
                       "key": "scope",
                       "value": "{{scope}}",
-                      "description": " [**REQUIRED**] A URL-encoded, space-delimited list of member permissions your application is requesting on behalf of the user. Currently available scopes are listed in the API Scopes."
+                      "description": "[**REQUIRED**] Must be scope registered to your application. "
                     },
                     {
                       "key": "redirect_uri",
                       "value": "{{redirect_uri}}",
-                      "description": "[**REQUIRED**] The URI that will be used to redirect after authorisation. This value must match one of the defined OAuth 2.0 Redirect URLs in your application configuration, as described in the Oauth2 Documentation. See Obtaining BGL API Credentials on how to set redirect uri."
+                      "description": "[**REQUIRED**] Must be a URL registred to you application. A successful response from this endpoint results in a redirect to this URL."
                     }
                   ]
                 },
