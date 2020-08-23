@@ -8761,7 +8761,7 @@
               "name": "Trust Documents",
               "item": [
                 {
-                  "name": "Attachments Copy",
+                  "name": "Attachment",
                   "item": [
                     {
                       "name": "Download a Document Attachment",
@@ -9054,6 +9054,28 @@
                     }
                   ],
                   "_postman_id": "147dcf1e-1297-4f67-b7d9-b52b42e9c169",
+                  "event": [
+                    {
+                      "listen": "prerequest",
+                      "script": {
+                        "id": "d766dc6b-5f2f-441d-84b8-cbfad5857617",
+                        "type": "text/javascript",
+                        "exec": [
+                          ""
+                        ]
+                      }
+                    },
+                    {
+                      "listen": "test",
+                      "script": {
+                        "id": "259bde3f-7612-46d7-9a17-bc5358f83d37",
+                        "type": "text/javascript",
+                        "exec": [
+                          ""
+                        ]
+                      }
+                    }
+                  ],
                   "_postman_isSubFolder": true
                 },
                 {
