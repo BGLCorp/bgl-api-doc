@@ -10313,14 +10313,13 @@
       ]
     },
     {
+      "name": "Coming Soon - CAS 360",
+      "item": [],
+      "_postman_id": "710b8443-e797-448d-8494-f2b12107b992"
+    },
+    {
       "name": "Coming Soon - SF360",
       "item": [
-        {
-          "name": "Coming Soon - CAS 360",
-          "item": [],
-          "_postman_id": "710b8443-e797-448d-8494-f2b12107b992",
-          "_postman_isSubFolder": true
-        },
         {
           "name": "Report - Investment Income Comparison",
           "_postman_id": "ba5c5118-fa08-42ce-afa4-56506a61fdcc",
