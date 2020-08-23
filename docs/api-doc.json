@@ -9998,7 +9998,7 @@
       "name": "Coming Soon - CAS 360",
       "item": [
         {
-          "name": "Attachment",
+          "name": "Trust Attachments",
           "item": [
             {
               "name": "Download a Document Attachment",
@@ -10020,13 +10020,13 @@
                   }
                 ],
                 "url": {
-                  "raw": "{{baseUrl}}/companies/:companyId/documents/:documentId/attachments/:attachmentId",
+                  "raw": "{{baseUrl}}/trusts/:trustId/documents/:documentId/attachments/:attachmentId",
                   "host": [
                     "{{baseUrl}}"
                   ],
                   "path": [
-                    "companies",
-                    ":companyId",
+                    "trusts",
+                    ":trustId",
                     "documents",
                     ":documentId",
                     "attachments",
@@ -10034,21 +10034,17 @@
                   ],
                   "variable": [
                     {
-                      "id": "0f306d70-e7a3-4105-887c-89627516b6ee",
-                      "key": "companyId",
-                      "value": "{{companyId}}",
-                      "type": "string",
-                      "description": "[Required]"
+                      "key": "trustId",
+                      "value": "",
+                      "type": "string"
                     },
                     {
-                      "id": "03703808-9042-4a2f-90d8-b08da059a2b1",
                       "key": "documentId",
                       "value": "{{documentId}}",
                       "type": "string",
                       "description": "[Required]"
                     },
                     {
-                      "id": "9f4343df-9e79-4367-8b59-0e0a210ce92e",
                       "key": "attachmentId",
                       "value": "{{attachmentId}}",
                       "type": "string",
@@ -10107,14 +10103,13 @@
                   }
                 ],
                 "url": {
-                  "raw": "{{baseUrl}}/companies/:companies/{{companyId}}/:documents/{{documentId}}/:attachments/{{attachmentId}}",
+                  "raw": "{{baseUrl}}/trusts/:trustId/:documents/{{documentId}}/:attachments/{{attachmentId}}",
                   "host": [
                     "{{baseUrl}}"
                   ],
                   "path": [
-                    "companies",
-                    ":companies",
-                    "{{companyId}}",
+                    "trusts",
+                    ":trustId",
                     ":documents",
                     "{{documentId}}",
                     ":attachments",
@@ -10122,19 +10117,16 @@
                   ],
                   "variable": [
                     {
-                      "id": "81dbd7a9-4613-4684-bb3a-380d3edf2795",
-                      "key": "companies",
-                      "value": "{{companyId}}",
+                      "key": "trustId",
+                      "value": "",
                       "type": "string"
                     },
                     {
-                      "id": "555bf124-138c-42fb-ac8f-3c9e86af1ea4",
                       "key": "documents",
                       "value": "{{documentId}}",
                       "type": "string"
                     },
                     {
-                      "id": "4a1cd836-c78d-4448-9e00-a29bf2df00c1",
                       "key": "attachments",
                       "value": "{{attachmentId}}",
                       "type": "string"
@@ -10210,27 +10202,22 @@
                   }
                 },
                 "url": {
-                  "raw": "{{baseUrl}}/companies/:companyId/documents/:documentId/attachments",
+                  "raw": "{{baseUrl}}/trusts/:trustId/documents/:documentId/attachments",
                   "host": [
                     "{{baseUrl}}"
                   ],
                   "path": [
-                    "companies",
-                    ":companyId",
+                    "trusts",
+                    ":trustId",
                     "documents",
                     ":documentId",
                     "attachments"
                   ],
                   "variable": [
                     {
-                      "id": "25322f64-6bcf-4f67-9fc5-0db3c27ff34e",
-                      "key": "companyId",
-                      "value": "{{companyId}}",
-                      "type": "string",
-                      "description": {
-                        "content": "",
-                        "type": "text/plain"
-                      }
+                      "key": "trustId",
+                      "value": "",
+                      "type": "string"
                     },
                     {
                       "id": "b85a7e00-89f1-4bb5-84b2-3bcefcec3e14",
