@@ -8761,7 +8761,7 @@
               "name": "Trust Documents",
               "item": [
                 {
-                  "name": "Attachment",
+                  "name": "Attachments Copy",
                   "item": [
                     {
                       "name": "Download a Document Attachment",
@@ -9054,28 +9054,6 @@
                     }
                   ],
                   "_postman_id": "147dcf1e-1297-4f67-b7d9-b52b42e9c169",
-                  "event": [
-                    {
-                      "listen": "prerequest",
-                      "script": {
-                        "id": "d766dc6b-5f2f-441d-84b8-cbfad5857617",
-                        "type": "text/javascript",
-                        "exec": [
-                          ""
-                        ]
-                      }
-                    },
-                    {
-                      "listen": "test",
-                      "script": {
-                        "id": "259bde3f-7612-46d7-9a17-bc5358f83d37",
-                        "type": "text/javascript",
-                        "exec": [
-                          ""
-                        ]
-                      }
-                    }
-                  ],
                   "_postman_isSubFolder": true
                 },
                 {
@@ -10315,12 +10293,6 @@
     {
       "name": "Coming Soon - SF360",
       "item": [
-        {
-          "name": "Coming Soon - CAS 360",
-          "item": [],
-          "_postman_id": "710b8443-e797-448d-8494-f2b12107b992",
-          "_postman_isSubFolder": true
-        },
         {
           "name": "Report - Investment Income Comparison",
           "_postman_id": "ba5c5118-fa08-42ce-afa4-56506a61fdcc",
