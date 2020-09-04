@@ -3431,6 +3431,18 @@
             },
             {
               "name": "List of Fund Contacts",
+              "event": [
+                {
+                  "listen": "prerequest",
+                  "script": {
+                    "id": "71fb99bf-0288-409b-83f8-a6d02be0c41c",
+                    "exec": [
+                      "console.log(\"fundId that will be sent: \" + data.fundId);"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ],
               "_postman_id": "896c5876-11d3-4c36-b2cc-206bacb549ea",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
