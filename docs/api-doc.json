@@ -7092,7 +7092,7 @@
                       }
                     ],
                     "url": {
-                      "raw": "{{baseUrl}}/companies/:companyId/documents?offset={{offset}}&limit={{limit}}",
+                      "raw": "{{baseUrl}}/companies/:companyId/documents?offset={{offset}}&limit={{limit}}&updatedAfter={{updatedAfter}}",
                       "host": [
                         "{{baseUrl}}"
                       ],
@@ -7111,6 +7111,12 @@
                           "key": "limit",
                           "value": "{{limit}}",
                           "description": "number | Required | Example = 500 |"
+                        },
+                        {
+                          "key": "updatedAfter",
+                          "value": "{{updatedAfter}}",
+                          "description": "date | Optional | UTC date in ISO format: yyyy-MM-dd\u2019T\u2019HH:mm:ss. Example: 2000-10-31T01:30:00Z or 2000-10-31T01:30:00",
+                          "type": "text"
                         }
                       ],
                       "variable": [
