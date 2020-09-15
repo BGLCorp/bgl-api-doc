@@ -4097,7 +4097,7 @@
                     }
                   ]
                 },
-                "description": "Returns a list of tags for a fund. \n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- audit\n- smsf_partner"
+                "description": "Returns a list of tags for a fund"
               },
               "response": [
                 {
@@ -4172,7 +4172,7 @@
                     }
                   ]
                 },
-                "description": "This will generate an S3 download URL for the document. The link will have a default expiration time of three minutes. \n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- audit\n- smsf_partner"
+                "description": "This will generate an S3 download URL for the document. The link will have a default expiration time of three minutes. "
               },
               "response": [
                 {
