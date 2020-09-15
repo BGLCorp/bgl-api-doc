@@ -739,13 +739,6 @@
           "_postman_isSubFolder": true
         },
         {
-          "name": "API Application Type",
-          "item": [],
-          "_postman_id": "83c3e9a8-32a7-4c90-8566-dfc01ef7ff5b",
-          "description": "he Application Type, defines;\n\n1. What an Application can access.\n2. What is the Daily Rate Limit.\n3. What is the 10mins Rate Limit.\n\nTo change your application/client type, please email api@bglcorp.com.au\n\nThe following table illustrates the Application/Client types that are currently supported and their role in the System.\n\n\n\n| Application/Client Type| Daily Rate Limit | 10mins Rate Limit | Allowed Scopes |\n| -------- | -------- | -------- | -------- |\n| Developer     | 1000     | 100     | developer     |\n| Partner     | Unlimited     | 500     | developer, audit, investment     |\n| Premium Partner     | Unlimited     | 1000     | all scopes     |",
-          "_postman_isSubFolder": true
-        },
-        {
           "name": "Grant Types and Expiry",
           "item": [],
           "_postman_id": "1567e41a-4683-4f69-84d4-c389b1955fd9",
