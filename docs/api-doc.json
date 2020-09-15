@@ -2918,7 +2918,7 @@
                     }
                   ]
                 },
-                "description": "Allows you to retrieve List of Individual Summaries with data source, charts of account ( name and code ), security code and security type"
+                "description": "Allows you to retrieve List of Individual Summaries with data source, charts of account ( name and code ), security code and security type.\n \n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- investment\n- audit\n- smsf_partner"
               },
               "response": [
                 {
