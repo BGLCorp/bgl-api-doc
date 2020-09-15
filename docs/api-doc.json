@@ -735,7 +735,7 @@
           "name": "API Rate Limits",
           "item": [
             {
-              "name": "Rate Limit Status",
+              "name": "Rate Limit Status Copy",
               "_postman_id": "0fd9709a-f8b6-4844-8938-e0ec5f55b1ae",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
