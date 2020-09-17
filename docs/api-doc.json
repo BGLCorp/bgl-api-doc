@@ -8001,12 +8001,6 @@
           "name": "Trusts",
           "item": [
             {
-              "name": "Trust - Management",
-              "item": [],
-              "_postman_id": "d1db51f3-a16d-48e3-b19a-41d59d8270b2",
-              "_postman_isSubFolder": true
-            },
-            {
               "name": "Trust - General",
               "item": [
                 {
@@ -10118,6 +10112,12 @@
                 }
               ],
               "_postman_id": "fa2120c3-f783-44cc-94cb-b0ce285c8cf7",
+              "_postman_isSubFolder": true
+            },
+            {
+              "name": "Trust - Management",
+              "item": [],
+              "_postman_id": "d1db51f3-a16d-48e3-b19a-41d59d8270b2",
               "_postman_isSubFolder": true
             },
             {
