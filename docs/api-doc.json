@@ -9832,6 +9832,12 @@
               "_postman_isSubFolder": true
             },
             {
+              "name": "Trust Attachments",
+              "item": [],
+              "_postman_id": "fa2120c3-f783-44cc-94cb-b0ce285c8cf7",
+              "_postman_isSubFolder": true
+            },
+            {
               "name": "List of Trusts",
               "_postman_id": "f4ad7b3f-1e5f-4c08-bc32-503306ff801b",
               "protocolProfileBehavior": {
