@@ -10763,7 +10763,21 @@
       "item": [
         {
           "name": "Contacts",
-          "item": [],
+          "item": [
+            {
+              "name": "List of Contacts",
+              "_postman_id": "00edb6e2-9507-4f40-82a7-af8208d4adde",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": ""
+              },
+              "response": []
+            }
+          ],
           "_postman_id": "70d0d580-5502-409c-8e50-d4feadc0a195",
           "_postman_isSubFolder": true
         }
