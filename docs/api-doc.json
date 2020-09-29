@@ -10760,7 +10760,14 @@
     },
     {
       "name": "Coming Soon - SF360",
-      "item": [],
+      "item": [
+        {
+          "name": "Contacts",
+          "item": [],
+          "_postman_id": "70d0d580-5502-409c-8e50-d4feadc0a195",
+          "_postman_isSubFolder": true
+        }
+      ],
       "_postman_id": "a2a374ee-4904-4f95-9922-cedcb9d10217",
       "event": [
         {
