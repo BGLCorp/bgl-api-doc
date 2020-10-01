@@ -10775,7 +10775,7 @@
               "response": []
             },
             {
-              "name": "List of Contacts by IDs",
+              "name": "List of Contacts by IDs (Firm)",
               "_postman_id": "b49327d9-84e3-4b57-bfe3-a010da9ad721",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
