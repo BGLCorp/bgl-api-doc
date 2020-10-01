@@ -10744,7 +10744,28 @@
               "request": {
                 "method": "GET",
                 "header": [],
-                "url": ""
+                "url": {
+                  "raw": "{{baseUrl}}/sf/contacts?offset={{offset}}&limit={{limit}}",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "sf",
+                    "contacts"
+                  ],
+                  "query": [
+                    {
+                      "key": "offset",
+                      "value": "{{offset}}",
+                      "description": "Example = 0"
+                    },
+                    {
+                      "key": "limit",
+                      "value": "{{limit}}",
+                      "description": "Example = 500. Maximum amount between offset and limit must be 500"
+                    }
+                  ]
+                }
               },
               "response": []
             }
