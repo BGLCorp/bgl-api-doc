@@ -10742,8 +10742,17 @@
                 "disableBodyPruning": true
               },
               "request": {
+                "auth": {
+                  "type": "noauth"
+                },
                 "method": "GET",
-                "header": [],
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "bearer {{token}}",
+                    "type": "text"
+                  }
+                ],
                 "url": {
                   "raw": "{{baseUrl}}/sf/contacts?offset={{offset}}&limit={{limit}}",
                   "host": [
