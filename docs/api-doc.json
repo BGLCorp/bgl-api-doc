@@ -10736,7 +10736,7 @@
           "name": "Contacts",
           "item": [
             {
-              "name": "List of Contacts",
+              "name": "List of Contacts (Firm)",
               "_postman_id": "00edb6e2-9507-4f40-82a7-af8208d4adde",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -10749,8 +10749,8 @@
                 "header": [
                   {
                     "key": "Authorization",
-                    "value": "bearer {{token}}",
-                    "type": "text"
+                    "type": "text",
+                    "value": "bearer {{token}}"
                   }
                 ],
                 "url": {
