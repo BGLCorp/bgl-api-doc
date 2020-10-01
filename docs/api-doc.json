@@ -10782,9 +10782,15 @@
               },
               "request": {
                 "method": "GET",
-                "header": [],
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "bearer {{token}}",
+                    "type": "text"
+                  }
+                ],
                 "url": {
-                  "raw": "https://api.staging.bgl360.com.au/sf/contactsByIds?ids=:contactIds",
+                  "raw": "https://api.staging.bgl360.com.au/sf/contactsByIds?ids=:contactId",
                   "protocol": "https",
                   "host": [
                     "api",
@@ -10800,7 +10806,7 @@
                   "query": [
                     {
                       "key": "ids",
-                      "value": ":contactIds"
+                      "value": ":contactId"
                     }
                   ]
                 },
