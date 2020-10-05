@@ -11042,7 +11042,14 @@
                 "description": "Delete a single Entity Relationship for a contact. \n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
               },
               "response": []
-            },
+            }
+          ],
+          "_postman_id": "70d0d580-5502-409c-8e50-d4feadc0a195",
+          "_postman_isSubFolder": true
+        },
+        {
+          "name": "Labels",
+          "item": [
             {
               "name": "List of Entity Relationships Copy",
               "_postman_id": "6db2faa0-dd03-4a85-9643-d76e9fdb6ef7",
@@ -11064,12 +11071,6 @@
               "response": []
             }
           ],
-          "_postman_id": "70d0d580-5502-409c-8e50-d4feadc0a195",
-          "_postman_isSubFolder": true
-        },
-        {
-          "name": "Labels",
-          "item": [],
           "_postman_id": "d65a18aa-0aec-4a96-84ea-857c54104241",
           "_postman_isSubFolder": true
         }
