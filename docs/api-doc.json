@@ -11051,7 +11051,7 @@
           "name": "Labels",
           "item": [
             {
-              "name": "List of Fund Labels",
+              "name": "List of Entity Labels",
               "_postman_id": "6db2faa0-dd03-4a85-9643-d76e9fdb6ef7",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -11077,7 +11077,7 @@
                 "disableBodyPruning": true
               },
               "request": {
-                "method": "GET",
+                "method": "POST",
                 "header": [
                   {
                     "key": "Authorization",
