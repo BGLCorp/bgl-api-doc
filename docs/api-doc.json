@@ -11051,7 +11051,7 @@
           "name": "Labels",
           "item": [
             {
-              "name": "List of Entity Relationships Copy",
+              "name": "List of Fund Labels",
               "_postman_id": "6db2faa0-dd03-4a85-9643-d76e9fdb6ef7",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -11066,7 +11066,27 @@
                   }
                 ],
                 "url": "{{baseUrl}}/sf/contacts/{{contactId}}/entityRelationships",
-                "description": "Returns a list of Entity Relationships for a contact. \n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner\n\n\n\n### Response Body\n\n| Key | Datatype | Comments/Constraints |\n|--|--|--|\n| entityRelationshipId |string |ID of EntityRelationship |\n|entityContactParentId| string |ID of ContactParent. This is contactId where entityToType=\u201dPersonProxy\u201d or \u201cOtherEntity\u201d or \u201cCompany\u201d or \u201cTrust\u201d. This is entityId where entityToType=\u201dSMSF\u201d or \u201cBillableTrust\u201d or \u201cBillableCompany\u201d.|\n|entityContactParentType| string |From List [Trust, SMSF, PersonProxy, OtherEntity, Company, BillableTrust, BillableCompany]|\n|entityContactPosition| string |Position ContactChild has with ContactParent|\n|entityContactChildId| string |ID* of ContactChild. This is contactId where entityToType=\u201dPersonProxy\u201d or \u201cOtherEntity\u201d or \u201cCompany\u201d or \u201cTrust\u201d. This is entityId where entityToType=\u201dSMSF\u201d or \u201cBillableTrust\u201d or \u201cBillableCompany\u201d.|\n|entityContactChildType| string |From List [Trust, SMSF, PersonProxy, OtherEntity, Company, BillableTrust, BillableCompany]|\n\n## entityRelationships List\n\n- Actuary\n- Accountant\n- Account Manager\n- Administrator\n- Adviser\n- Auditor\n- Authorised Representative\n- Bookkeeper\n- Custodian\n- Director\n- External Administrator\n- Financial Planner\n- SMSF Expert\n- Firm Manager\n- Fund Contact\n- Investment Adviser\n- Lawyer\n- Partner\n- Personal Representative\n- Representative\n- Secretary\n- Tax Agent\n- Trustee"
+                "description": "Returns a labels for the firm.  \n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
+              },
+              "response": []
+            },
+            {
+              "name": "List of Fund Labels Copy",
+              "_postman_id": "0f00bba5-6b57-45b8-b014-47db7818f32d",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "bearer {{token}}",
+                    "type": "text"
+                  }
+                ],
+                "url": "{{baseUrl}}/sf/contacts/{{contactId}}/entityRelationships",
+                "description": "Returns a labels for the firm.  \n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
               },
               "response": []
             }
