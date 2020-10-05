@@ -10994,7 +10994,7 @@
                 "header": [
                   {
                     "key": "Authorization",
-                    "value": "{{token}}",
+                    "value": "bearer {{token}}",
                     "type": "text"
                   }
                 ],
