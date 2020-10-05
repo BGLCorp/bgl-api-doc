@@ -11004,7 +11004,7 @@
               "response": []
             },
             {
-              "name": "List of Entity Relationships Copy",
+              "name": "Delete Entity Relationship",
               "_postman_id": "5546b2cc-90e4-4a52-b70e-652270c76148",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
