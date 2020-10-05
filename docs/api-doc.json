@@ -11004,26 +11004,6 @@
               "response": []
             },
             {
-              "name": "Create Entity Relationships",
-              "_postman_id": "aa94013c-6839-4086-a0b8-b15c0afab93b",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "bearer {{token}}"
-                  }
-                ],
-                "url": "{{baseUrl}}/sf/contacts/{{contactId}}/entityRelationships",
-                "description": "Create an Entity Relationships for a contact. \n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner\n\n\n\n### Response Body\n\n| Key | Datatype | Comments/Constraints |\n|--|--|--|\n| entityRelationshipId |string |ID of EntityRelationship |\n|entityContactParentId| string |ID of ContactParent. This is contactId where entityToType=\u201dPersonProxy\u201d or \u201cOtherEntity\u201d or \u201cCompany\u201d or \u201cTrust\u201d. This is entityId where entityToType=\u201dSMSF\u201d or \u201cBillableTrust\u201d or \u201cBillableCompany\u201d.|\n|entityContactParentType| string |From List [Trust, SMSF, PersonProxy, OtherEntity, Company, BillableTrust, BillableCompany]|\n|entityContactPosition| string |Position ContactChild has with ContactParent|\n|entityContactChildId| string |ID* of ContactChild. This is contactId where entityToType=\u201dPersonProxy\u201d or \u201cOtherEntity\u201d or \u201cCompany\u201d or \u201cTrust\u201d. This is entityId where entityToType=\u201dSMSF\u201d or \u201cBillableTrust\u201d or \u201cBillableCompany\u201d.|\n|entityContactChildType| string |From List [Trust, SMSF, PersonProxy, OtherEntity, Company, BillableTrust, BillableCompany]|\n\n## entityRelationships List\n\n- Actuary\n- Accountant\n- Account Manager\n- Administrator\n- Adviser\n- Auditor\n- Authorised Representative\n- Bookkeeper\n- Custodian\n- Director\n- External Administrator\n- Financial Planner\n- SMSF Expert\n- Firm Manager\n- Fund Contact\n- Investment Adviser\n- Lawyer\n- Partner\n- Personal Representative\n- Representative\n- Secretary\n- Tax Agent\n- Trustee"
-              },
-              "response": []
-            },
-            {
               "name": "Delete Entity Relationship",
               "_postman_id": "5546b2cc-90e4-4a52-b70e-652270c76148",
               "protocolProfileBehavior": {
