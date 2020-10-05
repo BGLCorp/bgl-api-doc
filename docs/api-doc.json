@@ -10983,6 +10983,20 @@
                   "body": "{\n    \"abn\": null,\n    \"acn\": null,\n    \"address\": {\n        \"addressId\": 2154828,\n        \"city\": null,\n        \"country\": \"AU\",\n        \"postCode\": \"3000\",\n        \"state\": \"VIC\",\n        \"streetLine1\": \"78 Test Road\",\n        \"streetLine2\": null\n    },\n    \"birthCountry\": \"AU\",\n    \"birthPlace\": \"Macdeon\",\n    \"birthState\": \"VIC\",\n    \"birthday\": \"1977-12-25\",\n    \"contactId\": \"8ad08a3e6c829e03016c82ff6728000c\",\n    \"dateOfDeath\": null,\n    \"email\": \"johndoe@mail.com\",\n    \"entityRelationships\": [\n        \"Trustee\"\n    ],\n    \"establishmentDate\": null,\n    \"firstName\": \"John\",\n    \"lastName\": \"Doe\",\n    \"memberAccountNumber\": null,\n    \"mobile\": \"61417000999\",\n    \"name\": null,\n    \"otherName\": null,\n    \"phone\": \"98581111\",\n    \"preferredName\": null,\n    \"professionalBody\": null,\n    \"professionalBodyNumber\": null,\n    \"representativeIds\": [],\n    \"sex\": \"Male\",\n    \"smsfAuditorNumber\": null,\n    \"spin\": null,\n    \"tfn\": null,\n    \"title\": \"Mr\",\n    \"usi\": null\n}"
                 }
               ]
+            },
+            {
+              "name": "List of Entity Relationships",
+              "_postman_id": "6b8c59b4-7e04-426c-8adc-a82275261905",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": "",
+                "description": "Returns a list of Entity Relationships for a contact. \n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner\n\n\n\n### Response Body\n\n| Key | Datatype | Comments/Constraints |\n|--|--|--|\n| entityRelationshipId |string |ID of EntityRelationship |\n|entityContactParentId| string |ID of ContactParent. This is contactId where entityToType=\u201dPersonProxy\u201d or \u201cOtherEntity\u201d or \u201cCompany\u201d or \u201cTrust\u201d. This is entityId where entityToType=\u201dSMSF\u201d or \u201cBillableTrust\u201d or \u201cBillableCompany\u201d.|\n|entityContactParentType| string |From List [Trust, SMSF, PersonProxy, OtherEntity, Company, BillableTrust, BillableCompany]|\n|entityContactPosition| string |Position ContactChild has with ContactParent|\n|entityContactChildId| string |ID* of ContactChild. This is contactId where entityToType=\u201dPersonProxy\u201d or \u201cOtherEntity\u201d or \u201cCompany\u201d or \u201cTrust\u201d. This is entityId where entityToType=\u201dSMSF\u201d or \u201cBillableTrust\u201d or \u201cBillableCompany\u201d.|\n|entityContactChildType| string |From List [Trust, SMSF, PersonProxy, OtherEntity, Company, BillableTrust, BillableCompany]|"
+              },
+              "response": []
             }
           ],
           "_postman_id": "70d0d580-5502-409c-8e50-d4feadc0a195",
