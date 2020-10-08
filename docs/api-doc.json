@@ -10565,11 +10565,12 @@
                       }
                     },
                     "url": {
-                      "raw": "{{baseUrl}}/trusts/:trustId/documents/:documentId/attachments",
+                      "raw": "{{baseUrl}}/cas/trusts/:trustId/documents/:documentId/attachments",
                       "host": [
                         "{{baseUrl}}"
                       ],
                       "path": [
+                        "cas",
                         "trusts",
                         ":trustId",
                         "documents",
