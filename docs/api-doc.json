@@ -185,7 +185,7 @@
                     {
                       "key": "response_type",
                       "value": "code",
-                      "description": "[**REQUIRED**] the value of this should always be: authorization_code"
+                      "description": "[**REQUIRED**] the value of this should always be: code"
                     },
                     {
                       "key": "state",
