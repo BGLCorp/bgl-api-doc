@@ -179,7 +179,7 @@
                   }
                 ],
                 "url": {
-                  "raw": "{{baseUrl}}/oauth/authorize?response_type=code&state={{state}}&client_id={{clientId}}&scope={{scope}}&redirect_uri={{redirect_uri}}",
+                  "raw": "{{baseUrl}}/oauth/authorize?response_type=code&state={{state}}&client_id={{client_Id}}&scope={{scope}}&redirect_uri={{redirect_uri}}",
                   "host": [
                     "{{baseUrl}}"
                   ],
@@ -200,7 +200,7 @@
                     },
                     {
                       "key": "client_id",
-                      "value": "{{clientId}}",
+                      "value": "{{client_Id}}",
                       "description": "[**REQUIRED**]"
                     },
                     {
