@@ -171,15 +171,9 @@
                   "type": "noauth"
                 },
                 "method": "POST",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "value": "Basic {{base64(client_id:client_secret)}}",
-                    "type": "text"
-                  }
-                ],
+                "header": [],
                 "url": {
-                  "raw": "{{baseUrl}}/oauth/authorize?response_type=code&client_id={{client_Id}}&scope={{scope}}&redirect_uri={{redirect_uri}}",
+                  "raw": "{{baseUrl}}/oauth/authorize?response_type=code&client_id={{client_id}}&scope={{scope}}&redirect_uri={{redirect_uri}}",
                   "host": [
                     "{{baseUrl}}"
                   ],
@@ -201,7 +195,7 @@
                     },
                     {
                       "key": "client_id",
-                      "value": "{{client_Id}}",
+                      "value": "{{client_id}}",
                       "description": "[**REQUIRED**]"
                     },
                     {
@@ -220,65 +214,123 @@
               },
               "response": [
                 {
-                  "id": "6a3c8eb2-4074-477a-a85a-3573f82a7c92",
-                  "name": "200 - Obtain an Access Token",
+                  "id": "c2d98770-d1a0-4606-98fa-65374bab60eb",
+                  "name": "Obtain an Authorization Code",
                   "originalRequest": {
                     "method": "POST",
-                    "header": [
-                      {
-                        "key": "Authorization",
-                        "value": "Basic YzhkYWQ5MzYtMDU3Ny00N2FmLThhZTMtZjIyNWQzMDhlNDNhOmFkN2Y3OGEyLTllNDAtNGViNy1hMzRkLWU4OTNiZDlkYjA4MQ==",
-                        "description": "Base64 encoded Basic Authentication Header",
-                        "type": "text"
-                      },
-                      {
-                        "key": "",
-                        "value": "",
-                        "type": "text",
-                        "disabled": true
-                      }
-                    ],
+                    "header": [],
                     "url": {
-                      "raw": "https://api.staging.bgl360.com.au/oauth/token?grant_type=authorization_code&scope=auditor&redirect_uri=www.yourwebsite.com.au/bgl&code=25fhh6j6",
-                      "protocol": "https",
+                      "raw": "{{baseUrl}}/oauth/authorize?response_type=code&client_id=0ce526e5-1475-4eda-b272-2c9f76f25171&scope=developer&redirect_uri=https://app.getpostman.com/oauth2/callback",
                       "host": [
-                        "api",
-                        "staging",
-                        "bgl360",
-                        "com",
-                        "au"
+                        "{{baseUrl}}"
                       ],
                       "path": [
                         "oauth",
-                        "token"
+                        "authorize"
                       ],
                       "query": [
                         {
-                          "key": "grant_type",
-                          "value": "authorization_code"
+                          "key": "response_type",
+                          "value": "code",
+                          "description": "[**REQUIRED**] the value of this should always be: authorization_code"
+                        },
+                        {
+                          "key": "state",
+                          "value": "{{state}}",
+                          "description": "[*Optional*] An opaque value, used for security purposes. If this request parameter is set in the request, then it is returned to the application as part of the redirect_uri.",
+                          "disabled": true
+                        },
+                        {
+                          "key": "client_id",
+                          "value": "0ce526e5-1475-4eda-b272-2c9f76f25171"
                         },
                         {
                           "key": "scope",
-                          "value": "auditor"
+                          "value": "developer"
                         },
                         {
                           "key": "redirect_uri",
-                          "value": "www.yourwebsite.com.au/bgl"
-                        },
-                        {
-                          "key": "code",
-                          "value": "25fhh6j6"
+                          "value": "https://app.getpostman.com/oauth2/callback"
                         }
                       ]
                     }
                   },
                   "status": "OK",
                   "code": 200,
-                  "_postman_previewlanguage": null,
-                  "header": null,
+                  "_postman_previewlanguage": "html",
+                  "header": [
+                    {
+                      "key": "Date",
+                      "value": "Thu, 08 Oct 2020 05:02:31 GMT"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "text/html;charset=UTF-8"
+                    },
+                    {
+                      "key": "Transfer-Encoding",
+                      "value": "chunked"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "nginx"
+                    },
+                    {
+                      "key": "X-Application-Context",
+                      "value": "application:staging:8000"
+                    },
+                    {
+                      "key": "vary",
+                      "value": "accept-encoding"
+                    },
+                    {
+                      "key": "Content-Encoding",
+                      "value": "gzip"
+                    },
+                    {
+                      "key": "X-Content-Type-Options",
+                      "value": "nosniff"
+                    },
+                    {
+                      "key": "Content-Security-Policy",
+                      "value": "frame-ancestors 'self' staging.sf360.com.au staging.mybgl.com.au"
+                    },
+                    {
+                      "key": "Strict-Transport-Security",
+                      "value": "max-age=2628000; includeSubDomains"
+                    },
+                    {
+                      "key": "X-Frame-Options",
+                      "value": "ALLOW-FROM https://staging.sf360.com.au"
+                    },
+                    {
+                      "key": "P3P",
+                      "value": "CP=\"NON DSP LAW CUR ADM DEV TAI PSA PSD HIS OUR DEL IND UNI PUR COM NAV INT DEM CNT STA POL HEA PRE LOC IVD SAM IVA OTC\""
+                    },
+                    {
+                      "key": "Pragma",
+                      "value": "no-cache"
+                    },
+                    {
+                      "key": "X-XSS-Protection",
+                      "value": "1; mode=block"
+                    },
+                    {
+                      "key": "Referrer-Policy",
+                      "value": "no-referrer-when-downgrade"
+                    },
+                    {
+                      "key": "Access-Control-Allow-Origin",
+                      "value": "https://sso.staging.bgl360.com.au"
+                    }
+                  ],
                   "cookie": [],
                   "responseTime": null,
-                  "body": "{ access_token: \"df2f0e40-606f-4311-8066-590732fd126b\" token_type: \"bearer\" refresh_token: \"c50a429f-9a6d-449d-8d82-4817798fe27b\" expires_in: 581977 scope: \u201caudit\u201d }\n"
+                  "body": "<!doctype html><html class=\"js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths\" lang=\"en\">\n<!--\n<![endif]-->\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n    <meta http-equiv=\"cache-control\" content=\"max-age=0\">\n    <meta http-equiv=\"cache-control\" content=\"no-cache\">\n    <meta http-equiv=\"expires\" content=\"0\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <meta name=\"msapplication-TileColor\" content=\"#ffffff \">\n    <meta name=\"msapplication-TileImage\" content=\"/assets/icos/ms-icon-144x144.png\">\n    <meta name=\"theme-color\" content=\"#ffffff \">\n    <link rel=\"manifest\" href=\"/static/manifest.json\">\n    <link rel=\"shortcut icon\" href=\"/static/favicon-32x32.png\">\n    <link rel=\"stylesheet\" href=\"/static/static/vendor/css/hint.min.css\"/>\n    <link href=\"/static/static/css/main.b43d9724.css\" rel=\"stylesheet\">\n</head>\n<body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"app\"></div>\n    <script type=\"text/javascript\" src=\"/static/static/vendor/js/fontawesome-cdn-fix.js\"></script>\n    <script type=\"text/javascript\" src=\"/static/static/js/main.bdb9153c.js\"></script>\n</body>\n</html>"
                 }
               ]
             },
