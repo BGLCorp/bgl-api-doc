@@ -255,82 +255,19 @@
                       ]
                     }
                   },
-                  "status": "OK",
-                  "code": 200,
+                  "code": 302,
                   "_postman_previewlanguage": "html",
                   "header": [
                     {
-                      "key": "Date",
-                      "value": "Thu, 08 Oct 2020 05:02:31 GMT"
-                    },
-                    {
-                      "key": "Content-Type",
-                      "value": "text/html;charset=UTF-8"
-                    },
-                    {
-                      "key": "Transfer-Encoding",
-                      "value": "chunked"
-                    },
-                    {
-                      "key": "Connection",
-                      "value": "keep-alive"
-                    },
-                    {
-                      "key": "Server",
-                      "value": "nginx"
-                    },
-                    {
-                      "key": "X-Application-Context",
-                      "value": "application:staging:8000"
-                    },
-                    {
-                      "key": "vary",
-                      "value": "accept-encoding"
-                    },
-                    {
-                      "key": "Content-Encoding",
-                      "value": "gzip"
-                    },
-                    {
-                      "key": "X-Content-Type-Options",
-                      "value": "nosniff"
-                    },
-                    {
-                      "key": "Content-Security-Policy",
-                      "value": "frame-ancestors 'self' staging.sf360.com.au staging.mybgl.com.au"
-                    },
-                    {
-                      "key": "Strict-Transport-Security",
-                      "value": "max-age=2628000; includeSubDomains"
-                    },
-                    {
-                      "key": "X-Frame-Options",
-                      "value": "ALLOW-FROM https://staging.sf360.com.au"
-                    },
-                    {
-                      "key": "P3P",
-                      "value": "CP=\"NON DSP LAW CUR ADM DEV TAI PSA PSD HIS OUR DEL IND UNI PUR COM NAV INT DEM CNT STA POL HEA PRE LOC IVD SAM IVA OTC\""
-                    },
-                    {
-                      "key": "Pragma",
-                      "value": "no-cache"
-                    },
-                    {
-                      "key": "X-XSS-Protection",
-                      "value": "1; mode=block"
-                    },
-                    {
-                      "key": "Referrer-Policy",
-                      "value": "no-referrer-when-downgrade"
-                    },
-                    {
-                      "key": "Access-Control-Allow-Origin",
-                      "value": "https://sso.staging.bgl360.com.au"
+                      "key": "location",
+                      "value": "https://api.staging.bgl360.com.au/login/auth",
+                      "description": "",
+                      "type": "text"
                     }
                   ],
                   "cookie": [],
                   "responseTime": null,
-                  "body": "<!doctype html><html class=\"js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths\" lang=\"en\">\n<!--\n<![endif]-->\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n    <meta http-equiv=\"cache-control\" content=\"max-age=0\">\n    <meta http-equiv=\"cache-control\" content=\"no-cache\">\n    <meta http-equiv=\"expires\" content=\"0\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <meta name=\"msapplication-TileColor\" content=\"#ffffff \">\n    <meta name=\"msapplication-TileImage\" content=\"/assets/icos/ms-icon-144x144.png\">\n    <meta name=\"theme-color\" content=\"#ffffff \">\n    <link rel=\"manifest\" href=\"/static/manifest.json\">\n    <link rel=\"shortcut icon\" href=\"/static/favicon-32x32.png\">\n    <link rel=\"stylesheet\" href=\"/static/static/vendor/css/hint.min.css\"/>\n    <link href=\"/static/static/css/main.b43d9724.css\" rel=\"stylesheet\">\n</head>\n<body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"app\"></div>\n    <script type=\"text/javascript\" src=\"/static/static/vendor/js/fontawesome-cdn-fix.js\"></script>\n    <script type=\"text/javascript\" src=\"/static/static/js/main.bdb9153c.js\"></script>\n</body>\n</html>"
+                  "body": ""
                 }
               ]
             },
@@ -11178,6 +11115,26 @@
                   ]
                 },
                 "description": "Create a labels for the firm.  \n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
+              },
+              "response": []
+            },
+            {
+              "name": "List of Entity Labels Copy",
+              "_postman_id": "8b6e2250-04fb-49c3-8354-910bd67c53be",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "type": "text",
+                    "value": "bearer {{token}}"
+                  }
+                ],
+                "url": "{{baseUrl}}/sf/labels",
+                "description": "Returns a labels for the firm. Labels are used in SF360 to group funds or other entities together for quick selection and reporting purposes.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner\n\n### Response Body\n\n| Key | Datatype | Comments/Constraints |\n|--|--|--|\n| id |string |ID of label |\n|name| string |name of label |"
               },
               "response": []
             }
