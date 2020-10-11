@@ -11104,7 +11104,7 @@
               "response": []
             },
             {
-              "name": "Delete Entity Labels Copy",
+              "name": "Remove a Label from an Entity",
               "_postman_id": "c0cb9612-bbba-4254-9da8-fda484d1d3ec",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
