@@ -11104,6 +11104,26 @@
               "response": []
             },
             {
+              "name": "Delete Entity Labels Copy",
+              "_postman_id": "c0cb9612-bbba-4254-9da8-fda484d1d3ec",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "type": "text",
+                    "value": "bearer {{token}}"
+                  }
+                ],
+                "url": "{{baseUrl}}/sf/labels/{{labelId}}",
+                "description": "Deletes a label for the firm.  \n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
+              },
+              "response": []
+            },
+            {
               "name": "Create Entity Label",
               "_postman_id": "4fe4c81a-4eb8-40cb-b0ed-e0031132edbc",
               "protocolProfileBehavior": {
@@ -11139,7 +11159,7 @@
               "response": []
             },
             {
-              "name": "Create Entity Label Copy",
+              "name": "Add a Label to an Entity",
               "_postman_id": "d1f29cb2-cb04-41eb-b671-a1e2a33436c6",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -11169,7 +11189,7 @@
                     }
                   ]
                 },
-                "description": "Create a labels for the firm.  \n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
+                "description": "### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
               },
               "response": []
             }
