@@ -11064,7 +11064,7 @@
               "response": []
             },
             {
-              "name": "List of Entity Labels Copy",
+              "name": "List of Entities by Label",
               "_postman_id": "8b6e2250-04fb-49c3-8354-910bd67c53be",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
