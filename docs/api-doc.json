@@ -812,6 +812,29 @@
           "name": "API Paginataion",
           "item": [],
           "_postman_id": "aa2c3853-08e5-4380-a51a-4d270172c960",
+          "description": "For performance reasons, some of our APIs  use offset-based paging use the `offset` and `limit` query parameters to paginate through items in a collection.\n\n\n## Paging\n\nTo fetch the first page of entries in a collection the API needs to be called with the  `offset`  set to  `0` and `limit`  field equal to the maximum value e.g 500. \n\n    GET https://api.staging.bgl360.com.au/contacts?offset=0&limit=500\n\nTo fetch the next page of entries the API needs to be called with an `offset` parameter that equals the sum of the previous `offset` value and limit returned in the previous result, `previous_offset + previous_limit`.\n\n    GET https://api.staging.bgl360.com.au/contacts?offset=501&limit=1000\n\nThe final page of items has been requested when the next `offset` value exceeds the `total_count` value in the response object or no entries are returned. At this point there are no more items to fetch.\n\n```javascript\n\"limit\": 500,\n\"offset\": 0,\n\"total\": 398\n```\n\n",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "b511d0ab-ec84-4bfa-a567-3fefc60e909f",
+                "type": "text/javascript",
+                "exec": [
+                  ""
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "id": "377159ac-6716-4845-9ce5-13caae4e1d72",
+                "type": "text/javascript",
+                "exec": [
+                  ""
+                ]
+              }
+            }
+          ],
           "_postman_isSubFolder": true
         },
         {
