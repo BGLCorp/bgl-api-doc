@@ -809,6 +809,12 @@
           "_postman_isSubFolder": true
         },
         {
+          "name": "API Paginataion",
+          "item": [],
+          "_postman_id": "aa2c3853-08e5-4380-a51a-4d270172c960",
+          "_postman_isSubFolder": true
+        },
+        {
           "name": "Error Codes",
           "item": [],
           "_postman_id": "786384a4-9a10-483d-b5ee-5583db7786cd",
@@ -863,12 +869,6 @@
           "item": [],
           "_postman_id": "017b2456-3f0f-4eca-b1d1-29e63b7396f3",
           "description": "The status of the BGL API and all of BGL's online services can be found at [https://status.bgl360.com.au](https://status.bgl360.com.au)",
-          "_postman_isSubFolder": true
-        },
-        {
-          "name": "API Paginataion",
-          "item": [],
-          "_postman_id": "aa2c3853-08e5-4380-a51a-4d270172c960",
           "_postman_isSubFolder": true
         }
       ],
