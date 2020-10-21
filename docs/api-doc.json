@@ -11016,8 +11016,8 @@
                 "header": [
                   {
                     "key": "Authorization",
-                    "value": "bearer {{token}}",
-                    "type": "text"
+                    "type": "text",
+                    "value": "bearer {{token}}"
                   }
                 ],
                 "url": "{{baseUrl}}/sf/contacts/{{contactId}}/entityRelationships",
