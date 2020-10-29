@@ -1206,7 +1206,7 @@
       "description": "This section will resources which are used by both CAS 360 and Simple Fund 360"
     },
     {
-      "name": "SF360 Resources",
+      "name": "SF360 (SMSF) Resources",
       "item": [
         {
           "name": "Fund Lists",
@@ -4913,29 +4913,7 @@
         }
       ],
       "_postman_id": "c356baac-2307-4f3d-8e83-c9d8b236e0b0",
-      "description": "This section lists the currently available resources for Simple Fund 360  that can be used to obtain data through the BGL API.",
-      "event": [
-        {
-          "listen": "prerequest",
-          "script": {
-            "id": "3fea36c5-026c-4d0a-ae50-ab3ad13f1abf",
-            "type": "text/javascript",
-            "exec": [
-              ""
-            ]
-          }
-        },
-        {
-          "listen": "test",
-          "script": {
-            "id": "9045e1e2-09c7-45a4-9cef-8cf3ec4e1d35",
-            "type": "text/javascript",
-            "exec": [
-              ""
-            ]
-          }
-        }
-      ]
+      "description": "This section lists the currently available resources for Simple Fund 360  that can be used to obtain data through the BGL API."
     },
     {
       "name": "CAS 360 (Company) Resources",
