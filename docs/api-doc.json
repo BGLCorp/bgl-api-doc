@@ -1510,7 +1510,7 @@
                   }
                 ],
                 "url": "{{baseUrl}}/sf/funds/{{fundId}}",
-                "description": "Allows you to retrieve the fund details based on a FundId\n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- investment\n- audit\n- smsf_partner\n\n### Response\n\n|Key | Type | Mandatory | Description/Constraints |\n| -------- | -------- | -------- | -------- |\n| badgeId     | Number     | No     |  Must be a valid badge id for the firm  |\n| name     | String     | No     |  The Name of the SMSF  |\n| fundCode     | String     | No     | If not supplied the field will be auto-created by Simple Fund 360   |\n| abn     | number     | No     | If supplied, the number must be valid ABN   |\n| tfn     | number     | No     |  If supplied must be valid TFN |\n| esa     | String     | No     |  Electronic Service Address  |\n| dateFormed     | date     | No     | Must in format yyyy-MM-dd   |\n| windUpDate     | date     | No     | Must in format yyyy-MM-dd   |\n| financialYearFrom     | date     | No     | If not supplied, system will default to dateFormed. Cannot be before dateFormed. Must in format yyyy-MM-dd   |\n| financialYearEnd     | date     | No     |  If not supplied, system will default to next 30 June date after dateFormed. Cannot be before dateFormed. Must in format yyyy-MM-dd   |\n| systemStartDate     | date     | No     |  Must be present if enteringOpeningBalance = Yes. Cannot be before dateFormed. Must in format yyyy-MM-dd   |\n| enteringOpeningBalance     | Boolean     | No     |  True or False |\n| postalAddress     | Object     | No     | see Address Array below  |\n| physicalAddress     | Object     | No     | see Address Array below  |\n| trustDeedSource    | String     | No     |   |\n| trustDeedLastModifiedDate    | date     | No     |  Must in format yyyy-MM-dd  |\n| trustDeedRuleClauseDeathBenefit    | String     | No     |    |\n\n**Address Object**\n\n| Key | Type | Mandatory | Constraints/Comments |\n|--|--|--|--|\n| streetLine1     | String     | Yes     | Mandatory if any other address fields are not empty\t  |\n| streetLine2     | String     | No     | \t  |\n| city     | String     | Yes     | Mandatory if any other address fields are not empty\t  |\n| state     | String     | Yes     | Mandatory if any other address fields are not empty. Must be one of (ACT\u2019/\u2018NSW\u2019/\u2018VIC\u2019/\u2018QLD\u2019/\u2018SA\u2019/\u2018WA\u2019/\u2018TAS\u2019/\u2018NT)\t  |\n|  postCode    | String     | Yes     | Mandatory if any other address fields are not empty\t  |\n| country     | String     | Yes     | Mandatory if any other address fields are not empty. Must be a country code as defined in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2\t  |"
+                "description": "Allows you to retrieve the fund details based on a FundId\n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- investment\n- audit\n- smsf_partner\n\n### Response\n\n|Key | Type | Mandatory | Description/Constraints |\n| -------- | -------- | -------- | -------- |\n| badgeId     | Number     | No     |  Must be a valid badge id for the firm  |\n| name     | String     | No     |  The Name of the SMSF  |\n| fundCode     | String     | No     | If not supplied the field will be auto-created by Simple Fund 360   |\n| abn     | number     | No     | If supplied, the number must be valid ABN   |\n| tfn     | number     | No     |  If supplied must be valid TFN |\n| esa     | String     | No     |  Electronic Service Address  |\n| entityType     | String     | No     |  SMSF / Company/ Trust   |\n| dateFormed     | date     | No     | Must in format yyyy-MM-dd   |\n| windUpDate     | date     | No     | Must in format yyyy-MM-dd   |\n| financialYearFrom     | date     | No     | If not supplied, system will default to dateFormed. Cannot be before dateFormed. Must in format yyyy-MM-dd   |\n| financialYearEnd     | date     | No     |  If not supplied, system will default to next 30 June date after dateFormed. Cannot be before dateFormed. Must in format yyyy-MM-dd   |\n| systemStartDate     | date     | No     |  Must be present if enteringOpeningBalance = Yes. Cannot be before dateFormed. Must in format yyyy-MM-dd   |\n| enteringOpeningBalance     | Boolean     | No     |  True or False |\n| postalAddress     | Object     | No     | see Address Array below  |\n| physicalAddress     | Object     | No     | see Address Array below  |\n| trustDeedSource    | String     | No     |   |\n| trustDeedLastModifiedDate    | date     | No     |  Must in format yyyy-MM-dd  |\n| trustDeedRuleClauseDeathBenefit    | String     | No     |    |\n\n**Address Object**\n\n| Key | Type | Mandatory | Constraints/Comments |\n|--|--|--|--|\n| streetLine1     | String     | Yes     | Mandatory if any other address fields are not empty\t  |\n| streetLine2     | String     | No     | \t  |\n| city     | String     | Yes     | Mandatory if any other address fields are not empty\t  |\n| state     | String     | Yes     | Mandatory if any other address fields are not empty. Must be one of (ACT\u2019/\u2018NSW\u2019/\u2018VIC\u2019/\u2018QLD\u2019/\u2018SA\u2019/\u2018WA\u2019/\u2018TAS\u2019/\u2018NT)\t  |\n|  postCode    | String     | Yes     | Mandatory if any other address fields are not empty\t  |\n| country     | String     | Yes     | Mandatory if any other address fields are not empty. Must be a country code as defined in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2\t  |"
               },
               "response": [
                 {
@@ -1537,7 +1537,7 @@
                   ],
                   "cookie": [],
                   "responseTime": null,
-                  "body": "{\n    \"abn\": \"12004045553\",\n    \"badgeId\": 4448,\n    \"dateFormed\": \"2018-12-18\",\n    \"enteringOpeningBalance\": false,\n    \"esa\": \"AUSTPOSTSMSF\",\n    \"financialYearEnd\": \"2019-06-30\",\n    \"financialYearFrom\": \"2018-12-18\",\n    \"fundCode\": \"SAM001\",\n    \"id\": \"8ad08a3e6c829e03016c82ef9ab00008\",\n    \"name\": \"The Sample Super Fund\",\n    \"physicalAddress\": {\n        \"city\": \"Brighton East\",\n        \"country\": \"AU\",\n        \"postCode\": \"3187\",\n        \"state\": \"VIC\",\n        \"streetLine1\": \"606 Hawthorn Rd\",\n        \"streetLine2\": \"\"\n    },\n    \"postalAddress\": {\n        \"city\": \"Brighton East\",\n        \"country\": \"AU\",\n        \"postCode\": \"3187\",\n        \"state\": \"VIC\",\n        \"streetLine1\": \"606 Hawthorn Rd\",\n        \"streetLine2\": \"\"\n    },\n    \"systemStartDate\": \"2018-12-18\",\n    \"tfn\": \"195144237\",\n    \"trustDeedLastModifiedDate\": \"2006-07-01\",\n    \"trustDeedRuleClauseDeathBenefit\": \"48D\",\n    \"trustDeedSource\": \"Top Docs \",\n    \"windUpDate\": \"2019-07-30\"\n}"
+                  "body": "{\n    \"abn\": \"12004045553\",\n    \"badgeId\": 4448,\n    \"dateFormed\": \"2018-12-18\",\n    \"enteringOpeningBalance\": false,\n    \"entityType\": \"SMSF\",\n    \"esa\": \"AUSTPOSTSMSF\",\n    \"financialYearEnd\": \"2019-06-30\",\n    \"financialYearFrom\": \"2018-12-18\",\n    \"fundCode\": \"SAM001\",\n    \"id\": \"8ad08a3e6c829e03016c82ef9ab00008\",\n    \"name\": \"The Sample Super Fund\",\n    \"physicalAddress\": {\n        \"city\": \"Brighton East\",\n        \"country\": \"AU\",\n        \"postCode\": \"3187\",\n        \"state\": \"VIC\",\n        \"streetLine1\": \"606 Hawthorn Rd\",\n        \"streetLine2\": \"\"\n    },\n    \"postalAddress\": {\n        \"city\": \"Brighton East\",\n        \"country\": \"AU\",\n        \"postCode\": \"3187\",\n        \"state\": \"VIC\",\n        \"streetLine1\": \"606 Hawthorn Rd\",\n        \"streetLine2\": \"\"\n    },\n    \"systemStartDate\": \"2018-12-18\",\n    \"tfn\": \"195144237\",\n    \"trustDeedLastModifiedDate\": \"2006-07-01\",\n    \"trustDeedRuleClauseDeathBenefit\": \"48D\",\n    \"trustDeedSource\": \"Top Docs \",\n    \"windUpDate\": \"2019-07-30\"\n}"
                 }
               ]
             },
@@ -11377,537 +11377,73 @@
       "name": "Coming Soon - CAS 360",
       "item": [
         {
-          "name": "Contacts",
-          "item": [
-            {
-              "name": "List of Contacts (Firm)",
-              "_postman_id": "839bd05f-a042-4dfe-92bf-fab758b458b9",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "auth": {
-                  "type": "noauth"
-                },
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "bearer {{token}}"
-                  }
-                ],
-                "url": {
-                  "raw": "{{baseUrl}}/sf/contacts?offset={{offset}}&limit={{limit}}",
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "path": [
-                    "sf",
-                    "contacts"
-                  ],
-                  "query": [
-                    {
-                      "key": "offset",
-                      "value": "{{offset}}",
-                      "description": "Example = 0"
-                    },
-                    {
-                      "key": "limit",
-                      "value": "{{limit}}",
-                      "description": "Example = 500. Maximum amount between offset and limit must be 500"
-                    }
-                  ]
-                },
-                "description": "Returns the list of all contacts for a firm\n\n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- smsf_partner\n\n\n### Query Parameters\n\n| Form Parameter | type | Mandatory | Description |\n| -------- | -------- | -------- | -------- |\n| offset | number | Required | Example = 0 |\n| limit | number | Required | Example = 500 |\n\n\n### Response Body\n\n| Key | Datatype | Comments/Constraints |\n|--|--|--|\n| abn |string  | |\n|acn  |number  | Only returned if contactType='Company'|\n| address |object  | Address object will be received with the address details|\n|birthCountry  |string  | Only returned if contactType is \u2018People\u2019. ISO 3166 country code/name [https://en.wikipedia.org/wiki/ISO_3166](https://en.wikipedia.org/wiki/ISO_3166 \"https://en.wikipedia.org/wiki/ISO_3166\")\n|birthPlace  |string  | Only returned if contactType is \u2018People\u2019. One of \u2018ACT\u2019/\u2018NSW\u2019/\u2018VIC\u2019/\u2018QLD\u2019/\u2018SA\u2019/\u2018WA\u2019/\u2018TAS\u2019/\u2018NT\u2019/\u2018Foreign\u2019|\n|birthday  |date  |  format yyyy/MM/dd. Only allowed if contactType is \u2018People\u2019|\n|contactId  |string  | Contact Identifier |\n|contactType  |string  | one of \u2018People\u2019/\u2018Company\u2019/OtherEntity\u2019/\u2019Trust\u2019|\n| dateOfDeath |date  | |\n| email |string  | |\n| entityRelationships |array  | See below |\n| establishmentDate  |date  | -    format is yyyy/MM/dd. Only returned if the contactType is \u2018Trust\u2019 |\n| firstName |string  | Returned if the contactType is \u2018People\u2019|\n| lastName |string  | Returned if the contactType is \u2018People\u2019|\n| memberAccountNumber  |string  | |\n| mobile |string  | |\n| name |string  | Returned if the contactType is \u2018Company\u2019/\u2018Other Entity\u2019/'Trust' |\n|otherName| string | Returned where contactType is \u2018People\u2019|\n| professionalBody |string  | |\n| professionalBodyNumber |string  | |\n| sex |string  | List from \u2018Male\u2019/\u2018Female\u2019|\n| smsfAuditorNumber |string  | |\n| solePurposeSMSFCorpTrustee |boolean  |Only returned if contactType='Company'. |\n|spin  |string  |Returned if the contactType is \u2018Other Entity\u2019 |\n| telephone |string  | |\n|tfn  |string  | will return 'Provided' or 'Not Provided' |\n| title |string  | |\n| usi |string  | |\n\n**Address Array**\n\n| Key | Type | Mandatory | Constraints/Comments |\n| -------- | -------- | -------- | -------- |\n| streetLine1     | String     | Yes     | Mandatory if any other address fields are not empty\t  |\n| streetLine2     | String     | No     | \t  |\n| city     | String     | Yes     | Mandatory if any other address fields are not empty\t  |\n| state     | String     | Yes     | Mandatory if any other address fields are not empty. Must be one of (ACT\u2019/\u2018NSW\u2019/\u2018VIC\u2019/\u2018QLD\u2019/\u2018SA\u2019/\u2018WA\u2019/\u2018TAS\u2019/\u2018NT)\t  |\n|  postCode    | String     | Yes     | Mandatory if any other address fields are not empty\t  |\n| country     | String     | Yes     | Mandatory if any other address fields are not empty. Must be a country code as defined in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2\t  |\n\n ## EntityRelationships object\n\n| Key | Datatype | Comments/Constraints |\n|--|--|--|\n| entityRelationshipId |string  |ID of EntityRelationship |\n|entityContactParentId| string |ID of ContactParent. This is contactId where entityToType=\u201dPersonProxy\u201d or \u201cOtherEntity\u201d or \u201cCompany\u201d or \u201cTrust\u201d. This is entityId where entityToType=\u201dSMSF\u201d or \u201cBillableTrust\u201d or \u201cBillableCompany\u201d.|\n|entityContactParentType| string |From List [Trust, SMSF, PersonProxy, OtherEntity, Company, BillableTrust, BillableCompany]|\n|entityContactPosition| string |Position ContactChild has with ContactParent|\n|entityContactChildId| string |ID* of ContactChild. This is contactId where entityToType=\u201dPersonProxy\u201d or \u201cOtherEntity\u201d or \u201cCompany\u201d or \u201cTrust\u201d. This is entityId where entityToType=\u201dSMSF\u201d or \u201cBillableTrust\u201d or \u201cBillableCompany\u201d.|\n|entityContactChildType| string |From List [Trust, SMSF, PersonProxy, OtherEntity, Company, BillableTrust, BillableCompany]|\n\n## entityContactPosition List\n\n| Key                                           | Description                    |\n|-----------------------------------------------|--------------------------------|\n| AccountManager                                | Account Manager                |\n| Appointer_Trustee                            | Appointer                      |\n| Bare_Trust                                   | Bare Trust                     |\n| Beneficiary                                   | Beneficiary                    |\n| Director                                      | Director                       |\n| EX_ComOther                                  | Other                          |\n| EX_ComOther_Agent                           | Agent                          |\n| EX_ComOther\\_Agents\\_Representative          | Agent's Representative         |\n| EX\\_ComOther\\_Alternate                       | Alternate                      |\n| EX\\_ComOther\\_Foreign\\_Agent                  | Foreign Agent                  |\n| EX\\_ComOther\\_Foreign\\_Agents\\_Representative | Foreign Agent\u2019s Representative |\n| EX\\_ComOther\\_Liquidator                      | Liquidator                     |\n| EX\\_ComOther\\_Members\\_Representative         | Member' Representative         |\n| EX\\_ComOther\\_Natural\\_Person                 | Natural Person                 |\n| EX\\_ComOther\\_Persons\\_Representative         | Person's Representative        |\n| EX\\_ComOther\\_Public\\_Officer                 | Public Officer                 |\n| EX\\_ComOther\\_Unitholders\\_Representative     | Unitholder's Representative    |\n| EX\\_SMSF\\_Accountant                          | Accountant                     |\n| EX\\_SMSF\\_Actuary                             | Actuary                        |\n| EX\\_SMSF\\_Administrator                       | Administrator                  |\n| EX\\_SMSF\\_Advisor                             | Adviser                        |\n| EX\\_SMSF\\_Auditor                             | Auditor                        |\n| EX\\_SMSF\\_Authorised\\_Representative          | Authorised Representative      |\n| EX\\_SMSF\\_Bookkeeper                          | Bookkeeper                     |\n| EX\\_SMSF\\_Custodian                           | Custodian                      |\n| EX\\_SMSF\\_Employer\\_Sponsor                   | Employer Sponsor               |\n| EX\\_SMSF\\_Expert                              | SMSF Expert                    |\n| EX\\_SMSF\\_External\\_Administrator             | External Administrator         |\n| EX\\_SMSF\\_Firm\\_Contact                       | Firm Contact                   |\n| EX\\_SMSF\\_Firm\\_Manager                       | Firm Manager                   |\n| EX\\_SMSF\\_Fund\\_Contact                       | Fund Contact                   |\n| EX\\_SMSF\\_Investment\\_Advisor                 | Investment Advisor             |\n| EX\\_SMSF\\_Lawyer                              | Lawyer                         |\n| EX\\_SMSF\\_Personal\\_Representative            | Personal Representative        |\n| EX\\_SMSF\\_Representative                      | Representative                 |\n| EX\\_SMSF\\_Tax\\_Agent                          | Tax Agent                      |\n| Financial\\_Planner                            | Financial Planner              |\n| Officer                                       | Officer                        |\n| Partner                                       | Partner                        |\n| Secretary                                     | Secretary                      |\n| Settlor                                       | Settlor                        |\n| Shareholder                                   | Shareholder                    |\n| Trustee                                       | Trustee                        |\n| Trustee                                       | Trustee                        |\n| UnitHolder                                    | Unit Holder                    |"
-              },
-              "response": [
-                {
-                  "id": "17c10a53-6cff-4b82-a832-0bd29413b8e7",
-                  "name": "Status 200",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [
-                      {
-                        "key": "Authorization",
-                        "type": "text",
-                        "value": "bearer {{token}}"
-                      }
-                    ],
-                    "url": {
-                      "raw": "{{baseUrl}}/sf/contacts?offset=0&limit=2",
-                      "host": [
-                        "{{baseUrl}}"
-                      ],
-                      "path": [
-                        "sf",
-                        "contacts"
-                      ],
-                      "query": [
-                        {
-                          "key": "offset",
-                          "value": "0",
-                          "description": "Example = 0"
-                        },
-                        {
-                          "key": "limit",
-                          "value": "2",
-                          "description": "Example = 500. Maximum amount between offset and limit must be 500"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": null,
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{\n    \"contacts\": [\n        {\n            \"abn\": \"99159300464\",\n            \"acn\": null,\n            \"address\": {\n                \"addressId\": 2260063,\n                \"city\": \"Brighton East\",\n                \"country\": \"AU\",\n                \"postCode\": \"3178\",\n                \"state\": \"VICTORIA\",\n                \"streetLine1\": \"Suite 2, 606 Hawthorn Rd\",\n                \"streetLine2\": null\n            },\n            \"birthCountry\": \"AU\",\n            \"birthPlace\": null,\n            \"birthState\": null,\n            \"birthday\": \"1947-08-02\",\n            \"contactId\": \"2c918082685ea3b801686d82e99b0107\",\n            \"contactType\": \"People\",\n            \"dateOfDeath\": null,\n            \"email\": \"test@test.com.au\",\n            \"entityRelationships\": [\n                {\n                    \"entityContactChildId\": \"2c918082685ea3b801686d82e99b0107\",\n                    \"entityContactChildType\": \"People\",\n                    \"entityContactParentId\": \"8ad08a29686d750701686d8182ef0002\",\n                    \"entityContactParentType\": \"SMSF\",\n                    \"entityContactPosition\": \"Trustee\",\n                    \"entityRelationshipId\": 161826\n                },\n                {\n                    \"entityContactChildId\": \"2c918082685ea3b801686d82e99b0107\",\n                    \"entityContactChildType\": \"People\",\n                    \"entityContactParentId\": \"8ad08a29686d750701686d8182ef0002\",\n                    \"entityContactParentType\": \"SMSF\",\n                    \"entityContactPosition\": \"Member\",\n                    \"entityRelationshipId\": 161828\n                },\n                {\n                    \"entityContactChildId\": \"2c918082685ea3b801686d82e99b0107\",\n                    \"entityContactChildType\": \"People\",\n                    \"entityContactParentId\": \"8ad08ad568742d950168744aa0380022\",\n                    \"entityContactParentType\": \"SMSF\",\n                    \"entityContactPosition\": \"Member\",\n                    \"entityRelationshipId\": 169054\n                }\n            ],\n            \"establishmentDate\": null,\n            \"firstName\": \"John\",\n            \"lastName\": \"Jones\",\n            \"memberAccountNumber\": null,\n            \"mobile\": \"61426277777\",\n            \"name\": null,\n            \"otherName\": null,\n            \"preferredName\": null,\n            \"professionalBody\": null,\n            \"professionalBodyNumber\": null,\n            \"sex\": \"MALE\",\n            \"smsfAuditorNumber\": null,\n            \"solePurposeSMSFCorpTrustee\": null,\n            \"spin\": null,\n            \"telephone\": \"1300111111\",\n            \"tfn\": \"Not Provided\",\n            \"title\": \"Mr\",\n            \"usi\": null\n        },\n        {\n            \"abn\": null,\n            \"acn\": null,\n            \"address\": {\n                \"addressId\": 2103348,\n                \"city\": \"Brighton East\",\n                \"country\": \"AU\",\n                \"postCode\": \"5475\",\n                \"state\": \"VICTORIA\",\n                \"streetLine1\": \"Suite 2, 606-608 Hawthorn Rd\",\n                \"streetLine2\": \"\"\n            },\n            \"birthCountry\": \"AU\",\n            \"birthPlace\": null,\n            \"birthState\": null,\n            \"birthday\": \"1947-08-02\",\n            \"contactId\": \"2c918082685ea3b801686d82e9bb0109\",\n            \"contactType\": \"People\",\n            \"dateOfDeath\": null,\n            \"email\": \"sandy4812@hand.com\",\n            \"entityRelationships\": [\n                {\n                    \"entityContactChildId\": \"2c918082685ea3b801686d82e9bb0109\",\n                    \"entityContactChildType\": \"People\",\n                    \"entityContactParentId\": \"8ad08a29686d750701686d8182ef0002\",\n                    \"entityContactParentType\": \"SMSF\",\n                    \"entityContactPosition\": \"Member\",\n                    \"entityRelationshipId\": 161827\n                }\n            ],\n            \"establishmentDate\": null,\n            \"firstName\": \"Mary\",\n            \"lastName\": \"Jones\",\n            \"memberAccountNumber\": null,\n            \"mobile\": null,\n            \"name\": null,\n            \"otherName\": null,\n            \"preferredName\": null,\n            \"professionalBody\": null,\n            \"professionalBodyNumber\": null,\n            \"sex\": \"FEMALE\",\n            \"smsfAuditorNumber\": null,\n            \"solePurposeSMSFCorpTrustee\": null,\n            \"spin\": null,\n            \"telephone\": \"01-76970987\",\n            \"tfn\": \"Provided\",\n            \"title\": null,\n            \"usi\": null\n        }\n    ],\n    \"limit\": 2,\n    \"offset\": 0,\n    \"total\": 83\n}"
-                }
-              ]
+          "name": "Update Company Details",
+          "_postman_id": "e6522cb9-97d7-4175-b150-e58e175a9ad1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
             },
-            {
-              "name": "List of Contacts by IDs",
-              "_postman_id": "0bc05058-c1c0-4442-810a-d845882ec5e7",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "bearer {{token}}",
+                "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
               },
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "bearer {{token}}"
-                  }
-                ],
-                "url": {
-                  "raw": "https://api.staging.bgl360.com.au/sf/contactsByIds?ids={{contactIds}}",
-                  "protocol": "https",
-                  "host": [
-                    "api",
-                    "staging",
-                    "bgl360",
-                    "com",
-                    "au"
-                  ],
-                  "path": [
-                    "sf",
-                    "contactsByIds"
-                  ],
-                  "query": [
-                    {
-                      "key": "ids",
-                      "value": "{{contactIds}}"
-                    }
-                  ]
-                },
-                "description": "Returns one or more contacts by given contact IDs\n\n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- smsf_partner\n\n\n### Query Parameters\n\n| Form Parameter | type | Mandatory | Description |\n| -------- | -------- | -------- | -------- |\n| ids | string | Required |comma seperated list of ids |\n\n\n### Response Body\n\n| Key | Datatype | Comments/Constraints |\n|--|--|--|\n| abn |string  | |\n|acn  |number  | Only returned if contactType='Company'|\n| address |object  | Address object will be received with the address details|\n|birthCountry  |string  | Only returned if contactType is \u2018People\u2019. ISO 3166 country code/name [https://en.wikipedia.org/wiki/ISO_3166](https://en.wikipedia.org/wiki/ISO_3166 \"https://en.wikipedia.org/wiki/ISO_3166\")\n|birthPlace  |string  | Only returned if contactType is \u2018People\u2019. One of \u2018ACT\u2019/\u2018NSW\u2019/\u2018VIC\u2019/\u2018QLD\u2019/\u2018SA\u2019/\u2018WA\u2019/\u2018TAS\u2019/\u2018NT\u2019/\u2018Foreign\u2019|\n|birthday  |date  |  format yyyy/MM/dd. Only allowed if contactType is \u2018People\u2019|\n|contactId  |string  | Contact Identifier |\n|contactType  |string  | one of \u2018People\u2019/\u2018Company\u2019/OtherEntity\u2019/\u2019Trust\u2019|\n| dateOfDeath |date  | |\n| email |string  | |\n| entityRelationships |array  | See below |\n| establishmentDate  |date  | -    format is yyyy/MM/dd. Only returned if the contactType is \u2018Trust\u2019 |\n| firstName |string  | Returned if the contactType is \u2018People\u2019|\n| lastName |string  | Returned if the contactType is \u2018People\u2019|\n| memberAccountNumber  |string  | |\n| mobile |string  | |\n| name |string  | Returned if the contactType is \u2018Company\u2019/\u2018Other Entity\u2019/'Trust' |\n|otherName| string | Returned where contactType is \u2018People\u2019|\n| professionalBody |string  | |\n| professionalBodyNumber |string  | |\n| sex |string  | List from \u2018Male\u2019/\u2018Female\u2019|\n| smsfAuditorNumber |string  | |\n| solePurposeSMSFCorpTrustee |boolean  |Only returned if contactType='Company'. |\n|spin  |string  |Returned if the contactType is \u2018Other Entity\u2019 |\n| telephone |string  | |\n|tfn  |string  | will return 'Provided' or 'Not Provided' |\n| title |string  | |\n| usi |string  | |\n\n**Address Array**\n\n| Key | Type | Mandatory | Constraints/Comments |\n| -------- | -------- | -------- | -------- |\n| streetLine1     | String     | Yes     | Mandatory if any other address fields are not empty\t  |\n| streetLine2     | String     | No     | \t  |\n| city     | String     | Yes     | Mandatory if any other address fields are not empty\t  |\n| state     | String     | Yes     | Mandatory if any other address fields are not empty. Must be one of (ACT\u2019/\u2018NSW\u2019/\u2018VIC\u2019/\u2018QLD\u2019/\u2018SA\u2019/\u2018WA\u2019/\u2018TAS\u2019/\u2018NT)\t  |\n|  postCode    | String     | Yes     | Mandatory if any other address fields are not empty\t  |\n| country     | String     | Yes     | Mandatory if any other address fields are not empty. Must be a country code as defined in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2\t  |\n\n ### EntityRelationships object\n\n| Key | Datatype | Comments/Constraints |\n|--|--|--|\n| entityRelationshipId |string  |ID of EntityRelationship |\n|entityContactParentId| string |ID of ContactParent. This is contactId where entityToType=\u201dPersonProxy\u201d or \u201cOtherEntity\u201d or \u201cCompany\u201d or \u201cTrust\u201d. This is entityId where entityToType=\u201dSMSF\u201d or \u201cBillableTrust\u201d or \u201cBillableCompany\u201d.|\n|entityContactParentType| string |From List [Trust, SMSF, PersonProxy, OtherEntity, Company, BillableTrust, BillableCompany]|\n|entityContactPosition| string |Position ContactChild has with ContactParent|\n|entityContactChildId| string |ID* of ContactChild. This is contactId where entityToType=\u201dPersonProxy\u201d or \u201cOtherEntity\u201d or \u201cCompany\u201d or \u201cTrust\u201d. This is entityId where entityToType=\u201dSMSF\u201d or \u201cBillableTrust\u201d or \u201cBillableCompany\u201d.|\n|entityContactChildType| string |From List [Trust, SMSF, PersonProxy, OtherEntity, Company, BillableTrust, BillableCompany]|"
-              },
-              "response": [
-                {
-                  "id": "29119e58-aca1-43d1-a1eb-362f8fe65545",
-                  "name": "List of Contacts by IDs (Firm)",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [
-                      {
-                        "key": "Authorization",
-                        "value": "bearer {{token}}",
-                        "type": "text"
-                      }
-                    ],
-                    "url": {
-                      "raw": "https://api.staging.bgl360.com.au/sf/contactsByIds?ids=id001,id002,id003",
-                      "protocol": "https",
-                      "host": [
-                        "api",
-                        "staging",
-                        "bgl360",
-                        "com",
-                        "au"
-                      ],
-                      "path": [
-                        "sf",
-                        "contactsByIds"
-                      ],
-                      "query": [
-                        {
-                          "key": "ids",
-                          "value": "id001,id002,id003"
-                        }
-                      ]
-                    }
-                  },
-                  "_postman_previewlanguage": null,
-                  "header": null,
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": null
-                }
-              ]
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"{{name}}\",\n  \"number\": \"{{number}}\",\n  \"incorporationDate\": \"{{incorporationDate}}\",\n  \"annualReviewDate\": \"{{annualReviewDate}}\",\n  \"registrationState\": \"{{registrationState}}\",\n  \"jurisdiction\": \"{{jurisdiction}}\",\n  \"registered\": true,\n   \"type\": {\n    \"companyClass\": \"{{companyClass}}\",\n    \"companySubClass\": \"{{companySubClass}}\",\n    \"companyType\": \"{{companyType}}\"\n  }\n}",
+              "options": {
+                "raw": {}
+              }
             },
+            "url": "{{baseUrl}}/companies/{{companyId}}",
+            "description": "Update details for an Individual Company. \n\nOnly keys which are being updated need to be supplied. \n\n### Request Body\n\n| Key               | Datatype | Mandatory | Constraints                                                 |\n| ----------------- | -------- | --------- | ----------------------------------------------------------- |\n| name              | String   | No       |                                                             |\n| number            | String   | No        | Must be a valid ACN if jurisdiction is 'Australia'                         |\n| incorporationDate | String   | No        | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601        |\n| annualReviewDate  | String   | No        | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601        |\n| registrationState | String   | No        | Must be one of 'ACT'/'NSW'/'VIC'/'QLD'/'SA'/'WA'/'TAS'/'NT' |\n| jurisdiction | String | Yes | Currently only 'Australia' is allowed |\n| type              | Object   | No        | See table below                                             |\n| registered              | boolean   | No        | False will be an unregistered company, if not specified will default to true                                             |\n\n\n**type object**\n\nNote: Within Australia, only certain combinations of companyType, companyClass and companySubClass are valid\n\n| Key             | Datatype | Mandatory | Constraints                                                                                                                                                    |\n| --------------- | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| companyType     | String   | No       | Must be one of 'Small Proprietary'/'Large Proprietary'/'Public Company'                                                                                        |\n| companyClass    | String   | No       | Must be one of 'Limited by Shares'/'Limited by Guarantee'/'Limited by Shares and Guarantee'/'Unlimited'/'No Liability'                                         |\n| companySubClass | String   | No       | Must be one of 'None'/'Superannuation Trustee Company'/'Non Profit Company'/'Home Unit Company'/'Listed'/'Unlisted'/'Section 150 License'/'Unlisted Non Profit |"
+          },
+          "response": [
             {
-              "name": "Update Contacts",
-              "_postman_id": "65947a50-6afc-4a7d-a863-fdd3b26913c3",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "auth": {
-                  "type": "noauth"
-                },
+              "id": "22f3ba2c-f665-49ad-aa50-12814386ee42",
+              "name": "Status 200",
+              "originalRequest": {
                 "method": "PUT",
                 "header": [
                   {
                     "key": "Authorization",
-                    "value": "bearer {{token}}",
-                    "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
+                    "value": "bearer 3be8e818-b468-4c4e-99b9-b3551556c6f2"
                   },
                   {
                     "key": "Content-Type",
-                    "name": "Content-Type",
-                    "type": "text",
                     "value": "application/json"
                   }
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n    \"firstName\": \"{{firstName}}\",\n    \"lastName\": \"{{lastName}}\",\n    \"address\": {\n        \"streetLine1\": \"{{streetLine1}}\",\n        \"suburb\": \"{{suburb}}\",\n        \"state\": \"{{state}}\",\n        \"postCode\": \"{{postCode}}\",\n        \"country\": \"{{country}}\"\n    },\n    \"title\": \"{{title}}\",\n    \"sex\": \"{{sex}}\",\n    \"email\": \"{{email}}\",\n    \"mobile\": \"{{mobile}}\",\n    \"phone1\": \"{{phone1}}\",\n    \"birthday\": \"{{birthday}}\",\n    \"birthPlace\": \"{{birthPlace}}\",\n    \"birthState\": \"{{birthState}}\",\n    \"birthCountry\": \"birthCountry\",\n    \"entityRelationships\": [\n        \"{{entityRelationships}}\"\n    ]\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\n    \"name\": \"Test company ABC Pty Ltd\",\n    \"number\": \"550593336\",\n    \"incorporationDate\": \"2016-12-18\",\n    \"annualReviewDate\": \"2017-12-03\",\n    \"registrationState\": \"VIC\",\n    \"jurisdiction\": \"Australia\",\n    \"registered\": true,\n    \"type\": {\n        \"companyClass\": \"Limited by Shares\",\n        \"companySubClass\": \"None\",\n        \"companyType\": \"Small Proprietary\"\n    }\n}"
                 },
-                "url": "{{baseUrl}}/sf/contacts/{{contactId}}",
-                "description": "Allows you to update details for a single contact. \n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- smsf_partner\n\n### Request Body\n\n| Key | Type | Mandatory | Constraints/Comments | \n| -------- | -------- | -------- | -------- |\n| title     | String     | No     | Only allowed if contactType is \u2018People\u2019. must be one of (Mr, Ms, Mrs, Mstr, Dr, Miss)|\n| firstName     | String     | No*     | Only allowed if the contactType is \u2018People\u2019 |\n| lastName     | String     | No*     | Only allowed if the contactType is \u2018People\u2019 |\n| otherName     | String     | No     | Only allowed if contactType is \u2018People\u2019 |\n| preferredName     | String     | No     | Only allowed if contactType is \u2018People\u2019. |\n| name     | String     | Yes*     | Only allowed if the contactType is \u2018Company\u2019/\u2018Other Entity\u2019/'Trust' |\n| sex     | String     | No     | Only allowed if contactType is \u2018People\u2019. Must be one of \u2018Male\u2019/\u2018Female\u2019|\n| birthday     | date     | No*     | Only allowed if contactType is \u2018People\u2019. Must be informat yyyy-MM-dd. Must be added if person is Member or Trustee ( |\n| birthPlace     | String     | No     | Only allowed if contactType is \u2018People\u2019 |\n| birthState     | String     | No     | Only allowed if contactType is \u2018People\u2019.. Must be one of (\u2018ACT\u2019/\u2018NSW\u2019/\u2018VIC\u2019/\u2018QLD\u2019/\u2018SA\u2019/\u2018WA\u2019/\u2018TAS\u2019/\u2018NT\u2019/\u2018Foreign\u2019) |\n| birthCountry     | String     | No     | Only allowed if contactType is \u2018People\u2019. Must be ISO 3166 country code/name https://en.wikipedia.org/wiki/ISO_3166 |\n| dateOfDeath     | date     | No     | Only allowed if contactType is \u2018People\u2019. Must in format yyyy-MM-dd |\n| tfn     | Number     | No     | No | Only allowed if the contactType is 'People'/\u2018Other Entity\u2019/'Trust' |\n| abn     | Number     | No     | Allowed for all ContactTypes |\n| acn     | Number     | No     | Only allowed if contactType is \u2018Company'. |\n| email     | String     | No     | No | Only allowed if contactType is \u2018People\u2019. |\n| telephone     | String     | No     | Only allowed if contactType is \u2018People\u2019/'Company'.|\n| mobile     | String     | No     | Only allowed if contactType is \u2018People\u2019. |\n| smsfAuditorNumber     | String     | No     | Only allowed if contactType is \u2018People\u2019 |\n| professionalBody     | String     | No     | Only allowed if contactType is \u2018People\u2019 |\n| professionalBodyNumber     | String     | No     | Only allowed if contactType is \u2018People\u2019 |\n| usi     | String     |  No | Only allowed if the contactType is \u2018Other Entity\u2019|\n| memberAccountNumber     | String     | No     | Only allowed if the contactType is \u2018Other Entity\u2019. Used for RBS forms when transfeering from SMSF to another fund. |\n| spin     | String     | No     | Only allowed if the contactType is \u2018Other Entity\u2019 |\n| establishmentDate     | Date     | No     | must be format yyyy/MM/dd. Only allowed if the contactType is \u2018Trust\u2019 |\n| address     | Object     | No     | (see Address Object below)  |\n\n\n**Address Object**\n\n| Key | Type | Mandatory | Constraints/Comments |\n| -------- | -------- | -------- | -------- |\n| streetLine1     | String     | No     | \t  |\n| streetLine2     | String     | No     | \t  |\n| city     | String     | No     | \t  |\n| state     | String     | No     |  Must be one of (ACT\u2019/\u2018NSW\u2019/\u2018VIC\u2019/\u2018QLD\u2019/\u2018SA\u2019/\u2018WA\u2019/\u2018TAS\u2019/\u2018NT)\t  |\n| postCode    | String     | No     | \t  |\n| country     | String     | No     | Must be a country code as defined in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2\t  |"
+                "url": "{{baseUrl}}/companies/{{companyId}}"
               },
-              "response": [
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
                 {
-                  "id": "1dd8e1b8-bbb8-405a-a133-e7a176dbe5b0",
-                  "name": "Status 201",
-                  "originalRequest": {
-                    "method": "POST",
-                    "header": [
-                      {
-                        "key": "Authorization",
-                        "value": "bearer df2f0e40-606f-4311-8066-590732fd126b"
-                      },
-                      {
-                        "key": "Content-Type",
-                        "value": "application/json"
-                      }
-                    ],
-                    "body": {
-                      "mode": "raw",
-                      "raw": "{\n    \"contactType\": \"People\",\n    \"fundId\": \"8ad08a3e6c829e03016c82ef9ab00008\",\n    \"firstName\": \"John\",\n    \"lastName\": \"Doe\",\n    \"address\": {\n        \"streetLine1\": \"78 Test Road\",\n        \"suburb\": \"MELBOURNE\",\n        \"state\": \"VIC\",\n        \"postCode\": \"3000\",\n        \"country\": \"AU\"\n    },\n    \"title\": \"Mr\",\n    \"sex\": \"Male\",\n    \"email\": \"johndoe@mail.com\",\n    \"mobile\": \"61417000999\",\n    \"phone\": \"98581111\",\n    \"birthday\": \"1977-12-25\",\n    \"birthPlace\": \"Macdeon\",\n    \"birthState\": \"VIC\",\n    \"birthCountry\": \"AU\",\n    \"entityRelationships\": [\n        \"Trustee\"\n    ]\n}"
-                    },
-                    "url": "{{baseUrl}}/sf/funds/contacts"
-                  },
-                  "status": "Created",
-                  "code": 201,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "key": "Content-Type",
-                      "value": "application/json"
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{\n    \"abn\": null,\n    \"acn\": null,\n    \"address\": {\n        \"addressId\": 2154828,\n        \"city\": null,\n        \"country\": \"AU\",\n        \"postCode\": \"3000\",\n        \"state\": \"VIC\",\n        \"streetLine1\": \"78 Test Road\",\n        \"streetLine2\": null\n    },\n    \"birthCountry\": \"AU\",\n    \"birthPlace\": \"Macdeon\",\n    \"birthState\": \"VIC\",\n    \"birthday\": \"1977-12-25\",\n    \"contactId\": \"8ad08a3e6c829e03016c82ff6728000c\",\n    \"dateOfDeath\": null,\n    \"email\": \"johndoe@mail.com\",\n    \"entityRelationships\": [\n        \"Trustee\"\n    ],\n    \"establishmentDate\": null,\n    \"firstName\": \"John\",\n    \"lastName\": \"Doe\",\n    \"memberAccountNumber\": null,\n    \"mobile\": \"61417000999\",\n    \"name\": null,\n    \"otherName\": null,\n    \"phone\": \"98581111\",\n    \"preferredName\": null,\n    \"professionalBody\": null,\n    \"professionalBodyNumber\": null,\n    \"representativeIds\": [],\n    \"sex\": \"Male\",\n    \"smsfAuditorNumber\": null,\n    \"spin\": null,\n    \"tfn\": null,\n    \"title\": \"Mr\",\n    \"usi\": null\n}"
+                  "key": "Content-Type",
+                  "value": "application/json"
                 }
-              ]
-            },
-            {
-              "name": "List of Entity Relationships",
-              "_postman_id": "42329731-427e-45bf-80f2-2817cbde469d",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "bearer {{token}}"
-                  }
-                ],
-                "url": "{{baseUrl}}/sf/contacts/{{contactId}}/entityRelationships",
-                "description": "Returns a list of Entity Relationships for a contact. \n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner\n\n\n\n### Response Body\n\n| Key | Datatype | Comments/Constraints |\n|--|--|--|\n| entityRelationshipId |string |ID of EntityRelationship |\n|entityContactParentId| string |ID of ContactParent. This is contactId where entityToType=\u201dPersonProxy\u201d or \u201cOtherEntity\u201d or \u201cCompany\u201d or \u201cTrust\u201d. This is entityId where entityToType=\u201dSMSF\u201d or \u201cBillableTrust\u201d or \u201cBillableCompany\u201d.|\n|entityContactParentType| string |From List [Trust, SMSF, PersonProxy, OtherEntity, Company, BillableTrust, BillableCompany]|\n|entityContactPosition| string |Position ContactChild has with ContactParent|\n|entityContactChildId| string |ID* of ContactChild. This is contactId where entityToType=\u201dPersonProxy\u201d or \u201cOtherEntity\u201d or \u201cCompany\u201d or \u201cTrust\u201d. This is entityId where entityToType=\u201dSMSF\u201d or \u201cBillableTrust\u201d or \u201cBillableCompany\u201d.|\n|entityContactChildType| string |From List [Trust, SMSF, PersonProxy, OtherEntity, Company, BillableTrust, BillableCompany]|\n\n## entityContactPosition List\n\n| Key                                           | Description                    |\n|-----------------------------------------------|--------------------------------|\n| AccountManager                                | Account Manager                |\n| Appointer_Trustee                            | Appointer                      |\n| Bare_Trust                                   | Bare Trust                     |\n| Beneficiary                                   | Beneficiary                    |\n| Director                                      | Director                       |\n| EX_ComOther                                  | Other                          |\n| EX_ComOther_Agent                           | Agent                          |\n| EX_ComOther\\_Agents\\_Representative          | Agent's Representative         |\n| EX\\_ComOther\\_Alternate                       | Alternate                      |\n| EX\\_ComOther\\_Foreign\\_Agent                  | Foreign Agent                  |\n| EX\\_ComOther\\_Foreign\\_Agents\\_Representative | Foreign Agent\u2019s Representative |\n| EX\\_ComOther\\_Liquidator                      | Liquidator                     |\n| EX\\_ComOther\\_Members\\_Representative         | Member' Representative         |\n| EX\\_ComOther\\_Natural\\_Person                 | Natural Person                 |\n| EX\\_ComOther\\_Persons\\_Representative         | Person's Representative        |\n| EX\\_ComOther\\_Public\\_Officer                 | Public Officer                 |\n| EX\\_ComOther\\_Unitholders\\_Representative     | Unitholder's Representative    |\n| EX\\_SMSF\\_Accountant                          | Accountant                     |\n| EX\\_SMSF\\_Actuary                             | Actuary                        |\n| EX\\_SMSF\\_Administrator                       | Administrator                  |\n| EX\\_SMSF\\_Advisor                             | Adviser                        |\n| EX\\_SMSF\\_Auditor                             | Auditor                        |\n| EX\\_SMSF\\_Authorised\\_Representative          | Authorised Representative      |\n| EX\\_SMSF\\_Bookkeeper                          | Bookkeeper                     |\n| EX\\_SMSF\\_Custodian                           | Custodian                      |\n| EX\\_SMSF\\_Employer\\_Sponsor                   | Employer Sponsor               |\n| EX\\_SMSF\\_Expert                              | SMSF Expert                    |\n| EX\\_SMSF\\_External\\_Administrator             | External Administrator         |\n| EX\\_SMSF\\_Firm\\_Contact                       | Firm Contact                   |\n| EX\\_SMSF\\_Firm\\_Manager                       | Firm Manager                   |\n| EX\\_SMSF\\_Fund\\_Contact                       | Fund Contact                   |\n| EX\\_SMSF\\_Investment\\_Advisor                 | Investment Advisor             |\n| EX\\_SMSF\\_Lawyer                              | Lawyer                         |\n| EX\\_SMSF\\_Personal\\_Representative            | Personal Representative        |\n| EX\\_SMSF\\_Representative                      | Representative                 |\n| EX\\_SMSF\\_Tax\\_Agent                          | Tax Agent                      |\n| Financial\\_Planner                            | Financial Planner              |\n| Officer                                       | Officer                        |\n| Partner                                       | Partner                        |\n| Secretary                                     | Secretary                      |\n| Settlor                                       | Settlor                        |\n| Shareholder                                   | Shareholder                    |\n| Trustee                                       | Trustee                        |\n| Trustee                                       | Trustee                        |\n| UnitHolder                                    | Unit Holder                    |"
-              },
-              "response": [
-                {
-                  "id": "e7624f69-1623-440f-8628-9259e0b9c63e",
-                  "name": "Status 200",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [
-                      {
-                        "key": "Authorization",
-                        "type": "text",
-                        "value": "bearer {{token}}"
-                      }
-                    ],
-                    "url": "{{baseUrl}}/sf/contacts/8ad08a2c74e222f30174e26862330023/entityRelationships"
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": null,
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{\n    \"contactId\": \"8ad08a2c74e222f30174e26862330023\",\n    \"entityRelationships\": [\n        {\n            \"entityContactChildId\": \"2c91808661d09ca00161e4dcf9d90008\",\n            \"entityContactChildType\": \"People\",\n            \"entityContactParentId\": \"8ad08a2c74e222f30174e26862330023\",\n            \"entityContactParentType\": \"Trust\",\n            \"entityContactPosition\": \"Trustee\",\n            \"entityRelationshipId\": 260436\n        },\n        {\n            \"entityContactChildId\": \"8ad08a8b74fb078a0174fb0bf5e30000\",\n            \"entityContactChildType\": \"People\",\n            \"entityContactParentId\": \"8ad08a2c74e222f30174e26862330023\",\n            \"entityContactParentType\": \"Trust\",\n            \"entityContactPosition\": \"Beneficiary\",\n            \"entityRelationshipId\": 277447\n        }\n    ]\n}"
-                }
-              ]
-            },
-            {
-              "name": "Create Entity Relationships",
-              "_postman_id": "215d8ceb-360e-4a29-857d-6402fc541629",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "bearer {{token}}"
-                  }
-                ],
-                "url": "{{baseUrl}}/sf/contacts/entityRelationships",
-                "description": "Create an Entity Relationships for a contact. \n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner\n\n\n\n### Request Body\n\n| Key | Datatype | Mandatory | Comments/Constraints |\n|--|--|--|-- |\n|entityContactParentId| string |Yes | ID of ContactParent. This is contactId where entityToType=\u201dPersonProxy\u201d or \u201cOtherEntity\u201d or \u201cCompany\u201d or \u201cTrust\u201d. This is entityId where entityToType=\u201dSMSF\u201d or \u201cBillableTrust\u201d or \u201cBillableCompany\u201d.|\n|entityContactParentType| string |Yes | From List [Trust, SMSF, PersonProxy, OtherEntity, Company, BillableTrust, BillableCompany]|\n|entityContactPosition| string |Yes | Position ContactChild has with ContactParent|\n|entityContactChildId| string |Yes | ID* of ContactChild. This is contactId where entityToType=\u201dPersonProxy\u201d or \u201cOtherEntity\u201d or \u201cCompany\u201d or \u201cTrust\u201d. This is entityId where entityToType=\u201dSMSF\u201d or \u201cBillableTrust\u201d or \u201cBillableCompany\u201d.|\n|entityContactChildType| string |Yes | From List [Trust, SMSF, PersonProxy, OtherEntity, Company, BillableTrust, BillableCompany]|\n\n# entityContactPosition List\n\n| entityContactPosition                                           | Description                    | Child \\- Contact Type Supported     | Child \\- Entity Type Supported                           | Parent \\- Contact Type Supported | Parent \\- Entity Type Supported                           |\n|-----------------------------------------------|--------------------------------|-------------------------------------|----------------------------------------------------------|----------------------------------|----------------------------------------------------------|\n| AccountManager                                | Account Manager                | People, Company, Trust, OtherEntity |                                                          |                                  | SMSF, BillableIndividual, BillableCompany, BillableTrust |\n| Appointer\\_Trustee                            | Appointer                      | People, Company, Trust, OtherEntity |                                                          | Trust                            | BillableTrust                                            |\n| Bare\\_Trust                                   | Bare Trust                     | People, Company, Trust, OtherEntity |                                                          |                                  | SMSF, BillableTrust, BillableCompany                     |\n| Beneficiary                                   | Beneficiary                    | People, Company, Trust, OtherEntity | SMSF, BillableIndividual, BillableCompany, BillableTrust | Trust                            | BillableTrust                                            |\n| Director                                      | Director                       | People, Company, Trust, OtherEntity |                                                          | Company, OtherEntity             | SMSF, BillableCompany                                    |\n| EX\\_ComOther                                  | Other                          | People, Company, Trust, OtherEntity |                                                          | Company, Trust, OtherEntity      | SMSF, BillableIndividual, BillableCompany, BillableTrust |\n| EX\\_ComOther\\_Agent                           | Agent                          | People, Company, Trust, OtherEntity |                                                          | Company                          | BillableCompany                                          |\n| EX\\_ComOther\\_Agents\\_Representative          | Agent's Representative         | People, Company, Trust, OtherEntity |                                                          | Company                          | BillableCompany                                          |\n| EX\\_ComOther\\_Alternate                       | Alternate                      | People, Company, Trust, OtherEntity |                                                          | Company                          | BillableCompany                                          |\n| EX\\_ComOther\\_Foreign\\_Agent                  | Foreign Agent                  | People, Company, Trust, OtherEntity |                                                          | Company                          | BillableCompany                                          |\n| EX\\_ComOther\\_Foreign\\_Agents\\_Representative | Foreign Agent\u2019s Representative | People, Company, Trust, OtherEntity |                                                          | Company                          | BillableCompany                                          |\n| EX\\_ComOther\\_Liquidator                      | Liquidator                     | People, Company, Trust, OtherEntity |                                                          | Company                          | BillableCompany                                          |\n| EX\\_ComOther\\_Members\\_Representative         | Member' Representative         | People, Company, Trust, OtherEntity |                                                          | Company                          | BillableCompany                                          |\n| EX\\_ComOther\\_Natural\\_Person                 | Natural Person                 | People, Company, Trust, OtherEntity |                                                          | Company                          | BillableCompany                                          |\n| EX\\_ComOther\\_Persons\\_Representative         | Person's Representative        | People, Company, Trust, OtherEntity |                                                          | Company                          | BillableCompany                                          |\n| EX\\_ComOther\\_Public\\_Officer                 | Public Officer                 | People, Company, Trust, OtherEntity |                                                          | Company                          | BillableCompany                                          |\n| EX\\_ComOther\\_Unitholders\\_Representative     | Unitholder's Representative    | People, Company, Trust, OtherEntity |                                                          | Company                          | BillableCompany                                          |\n| EX\\_SMSF\\_Accountant                          | Accountant                     | People, Company, Trust, OtherEntity |                                                          | Company, Trust, OtherEntity      | SMSF, BillableIndividual, BillableCompany, BillableTrust |\n| EX\\_SMSF\\_Actuary                             | Actuary                        | People, Company, Trust, OtherEntity |                                                          | OtherEntity                      | SMSF                                                     |\n| EX\\_SMSF\\_Administrator                       | Administrator                  | People, Company, Trust, OtherEntity |                                                          | Company, Trust, OtherEntity      | SMSF, BillableIndividual, BillableCompany, BillableTrust |\n| EX\\_SMSF\\_Advisor                             | Adviser                        | People, Company, Trust, OtherEntity |                                                          | Company, Trust, OtherEntity      | SMSF, BillableIndividual, BillableCompany, BillableTrust |\n| EX\\_SMSF\\_Auditor                             | Auditor                        | People, Company, Trust, OtherEntity |                                                          | Company, Trust, OtherEntity      | SMSF, BillableIndividual, BillableCompany, BillableTrust |\n| EX\\_SMSF\\_Authorised\\_Representative          | Authorised Representative      | People, Company, Trust, OtherEntity |                                                          | Company, Trust, OtherEntity      | SMSF, BillableIndividual, BillableCompany, BillableTrust |\n| EX\\_SMSF\\_Bookkeeper                          | Bookkeeper                     | People, Company, Trust, OtherEntity |                                                          | Company, Trust, OtherEntity      | SMSF, BillableIndividual, BillableCompany, BillableTrust |\n| EX\\_SMSF\\_Custodian                           | Custodian                      | People, Company, Trust, OtherEntity |                                                          | Company, Trust, OtherEntity      | SMSF, BillableIndividual, BillableCompany, BillableTrust |\n| EX\\_SMSF\\_Employer\\_Sponsor                   | Employer Sponsor               | People, Company, Trust, OtherEntity |                                                          | Company, Trust, OtherEntity      | SMSF, BillableIndividual, BillableCompany, BillableTrust |\n| EX\\_SMSF\\_Expert                              | SMSF Expert                    | People, Company, Trust, OtherEntity |                                                          | OtherEntity                      | SMSF                                                     |\n| EX\\_SMSF\\_External\\_Administrator             | External Administrator         | People, Company, Trust, OtherEntity |                                                          | Company, Trust, OtherEntity      | SMSF, BillableIndividual, BillableCompany, BillableTrust |\n| EX\\_SMSF\\_Firm\\_Contact                       | Firm Contact                   | People, Company, Trust, OtherEntity |                                                          | Company, Trust, OtherEntity      | SMSF, BillableCompany, BillableTrust                     |\n| EX\\_SMSF\\_Firm\\_Manager                       | Firm Manager                   | People, Company, Trust, OtherEntity |                                                          | Company, Trust, OtherEntity      | SMSF, BillableCompany, BillableTrust                     |\n| EX\\_SMSF\\_Fund\\_Contact                       | Fund Contact                   | People, Company, Trust, OtherEntity |                                                          | Company, Trust, OtherEntity      | SMSF, BillableIndividual, BillableCompany, BillableTrust |\n| EX\\_SMSF\\_Investment\\_Advisor                 | Investment Advisor             | People, Company, Trust, OtherEntity |                                                          | Company, Trust, OtherEntity      | SMSF, BillableIndividual, BillableCompany, BillableTrust |\n| EX\\_SMSF\\_Lawyer                              | Lawyer                         | People, Company, Trust, OtherEntity |                                                          | Company, Trust, OtherEntity      | SMSF, BillableIndividual, BillableCompany, BillableTrust |\n| EX\\_SMSF\\_Personal\\_Representative            | Personal Representative        | People, Company, Trust, OtherEntity |                                                          | Company, Trust, OtherEntity      | SMSF, BillableIndividual, BillableCompany, BillableTrust |\n| EX\\_SMSF\\_Representative                      | Representative                 | People, Company, Trust, OtherEntity |                                                          | Company, Trust, OtherEntity      | SMSF, BillableIndividual, BillableCompany, BillableTrust |\n| EX\\_SMSF\\_Tax\\_Agent                          | Tax Agent                      | People, Company, Trust, OtherEntity |                                                          | Company, Trust, OtherEntity      | SMSF, BillableIndividual, BillableCompany, BillableTrust |\n| Financial\\_Planner                            | Financial Planner              | People, Company, Trust, OtherEntity |                                                          | Company, Trust, OtherEntity      | SMSF, BillableIndividual, BillableCompany, BillableTrust |\n| Officer                                       | Officer                        | People, Company, Trust, OtherEntity |                                                          | Company                          | BillableCompany                                          |\n| Partner                                       | Partner                        | People, Company, Trust, OtherEntity |                                                          | Company, Trust, OtherEntity      | SMSF, BillableIndividual, BillableCompany, BillableTrust |\n| Secretary                                     | Secretary                      | People, Company, Trust, OtherEntity |                                                          | Company, OtherEntity             | SMSF, BillableCompany                                    |\n| Settlor                                       | Settlor                        | People, Company, Trust, OtherEntity |                                                          | Trust                            | BillableTrust                                            |\n| Shareholder                                   | Shareholder                    | People, Company, Trust, OtherEntity |                                                          | Company                          | BillableCompany                                          |\n| Trustee                                       | Trustee                        | People, Company                     | BillableCompany                                          | Trust                            | BillableTrust                                            |\n| Trustee                                       | Trustee                        | People, Company, Trust, OtherEntity |                                                          | Company, OtherEntity             | SMSF, BillableCompany                                    |\n| UnitHolder                                    | Unit Holder                    | People, Company, Trust, OtherEntity |                                                          | Trust                            | BillableTrust                                            |"
-              },
-              "response": [
-                {
-                  "id": "f6b81f32-d9f5-458e-b628-bb2d38384ee8",
-                  "name": "Create Entity Relationships",
-                  "originalRequest": {
-                    "method": "POST",
-                    "header": [
-                      {
-                        "key": "Authorization",
-                        "type": "text",
-                        "value": "bearer {{token}}"
-                      },
-                      {
-                        "key": "Content-Type",
-                        "name": "Content-Type",
-                        "value": "application/json",
-                        "type": "text"
-                      }
-                    ],
-                    "body": {
-                      "mode": "raw",
-                      "raw": "{\n    \"entityContactChildId\": \"8ad08a8b74fb078a0174fb0bf5e30000\",\n     \"entityContactChildType\": \"People\",\n    \"entityContactParentId\": \"8ad08a2c74e222f30174e26862330023\",\n    \"entityContactParentType\": \"Trust\",\n    \"entityContactPosition\": \"Beneficiary\"\n}",
-                      "options": {
-                        "raw": {
-                          "language": "json"
-                        }
-                      }
-                    },
-                    "url": "{{baseUrl}}/sf/contacts/entityRelationships"
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": null,
-                  "header": null,
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": null
-                }
-              ]
-            },
-            {
-              "name": "Delete Entity Relationship",
-              "_postman_id": "78f810d7-dfe5-4aaa-a256-a5b6971028b8",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "DELETE",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "value": "bearer {{token}}",
-                    "type": "text"
-                  }
-                ],
-                "url": "{{baseUrl}}/sf/contacts/entityRelationship/{{entityRelationshipId}}",
-                "description": "Delete a single Entity Relationship for a contact. \n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
-              },
-              "response": [
-                {
-                  "id": "03190e1f-eb5f-4b66-91d2-29aea4c39b3c",
-                  "name": "Status 200",
-                  "originalRequest": {
-                    "method": "DELETE",
-                    "header": [
-                      {
-                        "key": "Authorization",
-                        "value": "bearer {{token}}",
-                        "type": "text"
-                      }
-                    ],
-                    "url": "{{baseUrl}}/sf/contacts/entityRelationship/277447"
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": null,
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{\n    \"success\": 1\n}"
-                }
-              ]
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"agentId\": null,\n    \"annualReviewDate\": \"2017-12-03\",\n    \"id\": \"ef921aa4-b0f8-4ddd-a5b2-fb97fc9255f8\",\n    \"incorporationDate\": \"2016-12-18\",\n    \"jurisdiction\": \"Australia\",\n    \"name\": \"Test company ABC Pty Ltd\",\n    \"number\": \"550593336\",\n    \"registrationState\": \"VIC\",\n    \"registered\": true,\n    \"type\": {\n        \"companyClass\": \"Limited by Shares\",\n        \"companySubClass\": \"None\",\n        \"companyType\": \"Small Proprietary\"\n    }\n}"
             }
-          ],
-          "_postman_id": "2ec5668d-17fc-49ef-9673-202522e0ba35",
-          "_postman_isSubFolder": true
-        },
-        {
-          "name": "Labels",
-          "item": [
-            {
-              "name": "List of Entity Labels",
-              "_postman_id": "83e3057d-3f7d-402d-9333-2563d7f221b9",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "bearer {{token}}"
-                  }
-                ],
-                "url": "{{baseUrl}}/sf/labels",
-                "description": "Returns a labels for the firm. Labels are used in SF360 to group funds or other entities together for quick selection and reporting purposes.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner\n\n### Response Body\n\n| Key | Datatype | Comments/Constraints |\n|--|--|--|\n| id |string |ID of label |\n|name| string |name of label |"
-              },
-              "response": []
-            },
-            {
-              "name": "List of Entities by Label",
-              "_postman_id": "b8202809-1dec-4763-b694-405e5f9d683e",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "bearer {{token}}"
-                  }
-                ],
-                "url": "{{baseUrl}}/sf/labels/{{labelId}}/entities",
-                "description": "Returns a Entities  for a label for the firm. Labels are used in SF360 to group funds or other entities together for quick selection and reporting purposes.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner\n\n### Response Body\n\n| Key | Datatype | Comments/Constraints |\n|--|--|--|\n| id |string |ID of label |\n|name| string |name of label |\n|entityType| string | Type of Entity |"
-              },
-              "response": []
-            },
-            {
-              "name": "Delete Entity Labels",
-              "_postman_id": "91c55501-b2db-4631-8f62-c39907144130",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "DELETE",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "bearer {{token}}"
-                  }
-                ],
-                "url": "{{baseUrl}}/sf/labels/{{labelId}}",
-                "description": "Deletes a label for the firm.  \n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
-              },
-              "response": []
-            },
-            {
-              "name": "Remove a Label from an Entity",
-              "_postman_id": "8493e762-426a-4a33-a889-001262d0e634",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "DELETE",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "bearer {{token}}"
-                  }
-                ],
-                "url": "{{baseUrl}}/sf/labels/{{labelId}}/entities/{{entityId}}",
-                "description": "Deletes a label from an entity\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
-              },
-              "response": []
-            },
-            {
-              "name": "Create Entity Label",
-              "_postman_id": "9ba38f17-12c5-43c7-976d-2e3149657d5e",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "bearer {{token}}"
-                  }
-                ],
-                "url": {
-                  "raw": "{{baseUrl}}/sf/labels?name={{name}} ",
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "path": [
-                    "sf",
-                    "labels"
-                  ],
-                  "query": [
-                    {
-                      "key": "name",
-                      "value": "{{name}} "
-                    }
-                  ]
-                },
-                "description": "Create a labels for the firm.  \n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
-              },
-              "response": []
-            },
-            {
-              "name": "Add a Label to an Entity",
-              "_postman_id": "14dc4e7c-b4a8-4fc9-9e1c-b03b18df56ce",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "bearer {{token}}"
-                  }
-                ],
-                "url": "{{baseUrl}}/sf/labels/{{labelId}}/entities/{{entityId}}",
-                "description": "### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
-              },
-              "response": []
-            }
-          ],
-          "_postman_id": "df7999a9-2919-41f4-b63b-d643b8d12e17",
-          "_postman_isSubFolder": true
+          ]
         }
       ],
       "_postman_id": "41a8851e-44d3-45be-9f25-d6dcdd453fc0",
