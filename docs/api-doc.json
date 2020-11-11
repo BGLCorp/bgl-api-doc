@@ -1206,7 +1206,7 @@
       "description": "This section will resources which are used by both CAS 360 and Simple Fund 360"
     },
     {
-      "name": "SF360 (SMSF) Resources",
+      "name": "SF360 Resources",
       "item": [
         {
           "name": "Fund Lists",
@@ -1510,7 +1510,7 @@
                   }
                 ],
                 "url": "{{baseUrl}}/sf/funds/{{fundId}}",
-                "description": "Allows you to retrieve the fund details based on a FundId\n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- investment\n- audit\n- smsf_partner\n\n### Response\n\n|Key | Type | Mandatory | Description/Constraints |\n| -------- | -------- | -------- | -------- |\n| badgeId     | Number     | No     |  Must be a valid badge id for the firm  |\n| name     | String     | No     |  The Name of the SMSF  |\n| fundCode     | String     | No     | If not supplied the field will be auto-created by Simple Fund 360   |\n| abn     | number     | No     | If supplied, the number must be valid ABN   |\n| tfn     | number     | No     |  If supplied must be valid TFN |\n| esa     | String     | No     |  Electronic Service Address  |\n| entityType     | String     | No     |  SMSF / Company/ Trust   |\n| dateFormed     | date     | No     | Must in format yyyy-MM-dd   |\n| windUpDate     | date     | No     | Must in format yyyy-MM-dd   |\n| financialYearFrom     | date     | No     | If not supplied, system will default to dateFormed. Cannot be before dateFormed. Must in format yyyy-MM-dd   |\n| financialYearEnd     | date     | No     |  If not supplied, system will default to next 30 June date after dateFormed. Cannot be before dateFormed. Must in format yyyy-MM-dd   |\n| systemStartDate     | date     | No     |  Must be present if enteringOpeningBalance = Yes. Cannot be before dateFormed. Must in format yyyy-MM-dd   |\n| enteringOpeningBalance     | Boolean     | No     |  True or False |\n| postalAddress     | Object     | No     | see Address Array below  |\n| physicalAddress     | Object     | No     | see Address Array below  |\n| trustDeedSource    | String     | No     |   |\n| trustDeedLastModifiedDate    | date     | No     |  Must in format yyyy-MM-dd  |\n| trustDeedRuleClauseDeathBenefit    | String     | No     |    |\n\n**Address Object**\n\n| Key | Type | Mandatory | Constraints/Comments |\n|--|--|--|--|\n| streetLine1     | String     | Yes     | Mandatory if any other address fields are not empty\t  |\n| streetLine2     | String     | No     | \t  |\n| city     | String     | Yes     | Mandatory if any other address fields are not empty\t  |\n| state     | String     | Yes     | Mandatory if any other address fields are not empty. Must be one of (ACT\u2019/\u2018NSW\u2019/\u2018VIC\u2019/\u2018QLD\u2019/\u2018SA\u2019/\u2018WA\u2019/\u2018TAS\u2019/\u2018NT)\t  |\n|  postCode    | String     | Yes     | Mandatory if any other address fields are not empty\t  |\n| country     | String     | Yes     | Mandatory if any other address fields are not empty. Must be a country code as defined in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2\t  |"
+                "description": "Allows you to retrieve the fund details based on a FundId\n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- investment\n- audit\n- smsf_partner\n\n### Response\n\n|Key | Type | Mandatory | Description/Constraints |\n| -------- | -------- | -------- | -------- |\n| badgeId     | Number     | No     |  Must be a valid badge id for the firm  |\n| name     | String     | No     |  The Name of the SMSF  |\n| fundCode     | String     | No     | If not supplied the field will be auto-created by Simple Fund 360   |\n| abn     | number     | No     | If supplied, the number must be valid ABN   |\n| tfn     | number     | No     |  If supplied must be valid TFN |\n| esa     | String     | No     |  Electronic Service Address  |\n| entityType     | String     | No     | From list () SMSF / Company/ Trust / Individual )  |\n| dateFormed     | date     | No     | Must in format yyyy-MM-dd   |\n| windUpDate     | date     | No     | Must in format yyyy-MM-dd   |\n| financialYearFrom     | date     | No     | If not supplied, system will default to dateFormed. Cannot be before dateFormed. Must in format yyyy-MM-dd   |\n| financialYearEnd     | date     | No     |  If not supplied, system will default to next 30 June date after dateFormed. Cannot be before dateFormed. Must in format yyyy-MM-dd   |\n| systemStartDate     | date     | No     |  Must be present if enteringOpeningBalance = Yes. Cannot be before dateFormed. Must in format yyyy-MM-dd   |\n| enteringOpeningBalance     | Boolean     | No     |  True or False |\n| postalAddress     | Object     | No     | see Address Array below  |\n| physicalAddress     | Object     | No     | see Address Array below  |\n| trustDeedSource    | String     | No     |   |\n| trustDeedLastModifiedDate    | date     | No     |  Must in format yyyy-MM-dd  |\n| trustDeedRuleClauseDeathBenefit    | String     | No     |    |\n\n**Address Object**\n\n| Key | Type | Mandatory | Constraints/Comments |\n|--|--|--|--|\n| streetLine1     | String     | Yes     | Mandatory if any other address fields are not empty\t  |\n| streetLine2     | String     | No     | \t  |\n| city     | String     | Yes     | Mandatory if any other address fields are not empty\t  |\n| state     | String     | Yes     | Mandatory if any other address fields are not empty. Must be one of (ACT\u2019/\u2018NSW\u2019/\u2018VIC\u2019/\u2018QLD\u2019/\u2018SA\u2019/\u2018WA\u2019/\u2018TAS\u2019/\u2018NT)\t  |\n|  postCode    | String     | Yes     | Mandatory if any other address fields are not empty\t  |\n| country     | String     | Yes     | Mandatory if any other address fields are not empty. Must be a country code as defined in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2\t  |"
               },
               "response": [
                 {
@@ -4913,7 +4913,29 @@
         }
       ],
       "_postman_id": "c356baac-2307-4f3d-8e83-c9d8b236e0b0",
-      "description": "This section lists the currently available resources for Simple Fund 360  that can be used to obtain data through the BGL API."
+      "description": "This section lists the currently available resources for Simple Fund 360  that can be used to obtain data through the BGL API.\n\nThe Simple Fund 360 API also includes support for Simple Invest 360. The Entity Types available are:\n- SMSF, \n- BillableCompany, \n- BillableTrust\n- Individual",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "3fea36c5-026c-4d0a-ae50-ab3ad13f1abf",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "9045e1e2-09c7-45a4-9cef-8cf3ec4e1d35",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
     },
     {
       "name": "CAS 360 (Company) Resources",
@@ -11943,7 +11965,7 @@
         }
       ],
       "_postman_id": "5b5ec853-5277-496b-84d5-173cfe3fee58",
-      "description": "BGL has developed a three-way integration that synchronises the contacts in CAS 360, Simple Fund 360 and a Third-Party. When a change is made to a contact, these details are updated for both BGL products.",
+      "description": "BGL has developed a three-way integration that synchronises the contacts in CAS 360, Simple Fund 360 and a Third-Party. When a change is made to a contact, these details are updated for both BGL products.\n\nPlease see our [Practice Management Integration Guide](https://blog.api.bgl360.com.au/practice_management_guide/) for full details. ",
       "event": [
         {
           "listen": "prerequest",
