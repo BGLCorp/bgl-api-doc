@@ -4913,7 +4913,7 @@
         }
       ],
       "_postman_id": "c356baac-2307-4f3d-8e83-c9d8b236e0b0",
-      "description": "This section lists the currently available resources for Simple Fund 360  that can be used to obtain data through the BGL API.\n\nThe Simple Fund 360 API also includes support for Simple Invest 360. The Entity Types available are:\n- SMSF, \n- BillableCompany, \n- BillableTrust\n- Individual",
+      "description": "This section lists the currently available resources for Simple Fund 360  that can be used to obtain data through the BGL API.\n\nThe Simple Fund 360 API also includes support for Simple Invest 360. The Entity Types available are:\n- SMSF, \n- Company, \n- Trust\n- Individual",
       "event": [
         {
           "listen": "prerequest",
