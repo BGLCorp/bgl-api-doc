@@ -8001,8 +8001,7 @@
                   },
                   "request": {
                     "auth": {
-                      "type": "oauth2",
-                      "oauth2": {}
+                      "type": "noauth"
                     },
                     "method": "GET",
                     "header": [
