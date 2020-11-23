@@ -11527,7 +11527,7 @@
           "response": []
         },
         {
-          "name": "Create new company Copy",
+          "name": "Create a New Company For Registration",
           "_postman_id": "4aa41e10-fb85-47bd-882e-1b0e3d837945",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -11559,42 +11559,7 @@
             "url": "{{baseUrl}}/companies",
             "description": "Steps to create a new company in CAS 360. \n\n1. [Create new company](https://docs.api.bgl360.com.au/?version=latest#2c3acc97-803f-4fb8-8ebd-32296c55bf8e). This will create the basic details for the company and return a companyId which can be used for adding further details. \n2. [Create Address](https://docs.api.bgl360.com.au/?version=latest#c2a5a9b1-4f78-474a-8344-50c79a10e655). Creates an address in CAS 360 and returns an addressId. If the address already exists, the existing addressId will be returned.\n3. [Create Company Address](https://docs.api.bgl360.com.au/?version=latest#cca407dd-d840-4782-b837-7251cfd96062). Attach a new address to a CompanyId using adn AddressId. This includes Registered Office,  Address, Business Address, Postal Address or Meeting Address. \n4. [Create Contact](https://docs.api.bgl360.com.au/?version=latest#f36561e5-8286-458e-bf06-05e9411a004e). Creates a contact (officer, member, beneficial owner) in CAS 360 and returns a ContactId. If such contact already exists, the existing contactId will be returned without being modified.\n5. [Create Company Officer](https://docs.api.bgl360.com.au/?version=latest#365630b5-5da2-43f9-acb6-87280f981d7a). Create a company officer (Director or Secretary) using a ContactId. \n6. [Create new share transaction](https://docs.api.bgl360.com.au/?version=latest#6587aad4-0fe7-4bdb-9754-6afa40e6f113). Create new share transaction for a given company. \n\n### Request Body\n\n| Key               | Datatype | Mandatory | Constraints                                                 |\n| ----------------- | -------- | --------- | ----------------------------------------------------------- |\n| name              | String   | Yes       |                                                             |\n| number            | String   | No        | Must be a valid ACN if jurisdiction is 'Australia'                         |\n| incorporationDate | String   | No        | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601        |\n| annualReviewDate  | String   | No        | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601        |\n| registrationState | String   | No        | Must be one of 'ACT'/'NSW'/'VIC'/'QLD'/'SA'/'WA'/'TAS'/'NT' |\n| jurisdiction | String | Yes | Currently only 'Australia' is allowed |\n| type              | Object   | No        | See table below                                             |\n| agentId              | String   | No        |                                              |\n| registered              | boolean   | No        | False will be an unregistered company, if not specified will default to true                                             |\n\n\n**type object**\n\nNote: Within Australia, only certain combinations of companyType, companyClass and companySubClass are valid\n\n| Key             | Datatype | Mandatory | Constraints                                                                                                                                                    |\n| --------------- | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| companyType     | String   | Yes       | Must be one of 'Small Proprietary'/'Large Proprietary'/'Public Company'                                                                                        |\n| companyClass    | String   | Yes       | Must be one of 'Limited by Shares'/'Limited by Guarantee'/'Limited by Shares and Guarantee'/'Unlimited'/'No Liability'                                         |\n| companySubClass | String   | Yes       | Must be one of 'None'/'Superannuation Trustee Company'/'Non Profit Company'/'Home Unit Company'/'Listed'/'Unlisted'/'Section 150 License'/'Unlisted Non Profit |"
           },
-          "response": [
-            {
-              "id": "cea008a7-01ee-4d2c-8722-d39fd2d5b24b",
-              "name": "Status 201",
-              "originalRequest": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "value": "bearer 3be8e818-b468-4c4e-99b9-b3551556c6f2"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n    \"name\": \"Test company ABC Pty Ltd\",\n    \"number\": \"550593336\",\n    \"incorporationDate\": \"2016-12-18\",\n    \"annualReviewDate\": \"2017-12-03\",\n    \"registrationState\": \"VIC\",\n    \"jurisdiction\": \"Australia\",\n    \"registered\": true,\n    \"type\": {\n        \"companyClass\": \"Limited by Shares\",\n        \"companySubClass\": \"None\",\n        \"companyType\": \"Small Proprietary\"\n    }\n}"
-                },
-                "url": "{{baseUrl}}/companies"
-              },
-              "status": "Created",
-              "code": 201,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"agentId\": null,\n    \"annualReviewDate\": \"2017-12-03\",\n    \"id\": \"ef921aa4-b0f8-4ddd-a5b2-fb97fc9255f8\",\n    \"incorporationDate\": \"2016-12-18\",\n    \"jurisdiction\": \"Australia\",\n    \"name\": \"Test company ABC Pty Ltd\",\n    \"number\": \"550593336\",\n    \"registrationState\": \"VIC\",\n    \"registered\": true,\n    \"type\": {\n        \"companyClass\": \"Limited by Shares\",\n        \"companySubClass\": \"None\",\n        \"companyType\": \"Small Proprietary\"\n    }\n}"
-            }
-          ]
+          "response": []
         }
       ],
       "_postman_id": "41a8851e-44d3-45be-9f25-d6dcdd453fc0",
