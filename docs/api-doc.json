@@ -11524,42 +11524,7 @@
             },
             "description": "Updates a company officer.\n\n\n### Request Body\n\n|**Key**|**DataType** |**Mandatory** |**Contraints** |**Notes**|\n|--|--|--|--|--|\n|companyID |Number|Yes |Must be an id of an existing company.|  |\n|officerID|Number|Yes|Must be ID of an existing Officer transaction|  |\n|contactID|Number |Yes |Must be ID of an existing contact|  |\n|position |String |Yes |Must be one of 'Director','Secretary', 'Alternate', Managing Director, Manager, Nominee Director, | Managing Director, Manager, Nominee Director only supported for SG companies|\n|positionStatus |String |Yes |Must be one of 'Appointed, Resigned, Removed, Deceased' |  |\n|positionStatusDate|Date|Yes |ISO 8601 date <https://en.wikipedia.org/wiki/ISO_8601>. Can not be before the company's incorporation date |  |\n|meetingStatus|String |Yes|Must be one of 'Attendee, Signatory, Chairperson, Form Signatory, Apology, Non Attendee' |  |\n|alternateFor |Number |No |This is the contactID of the existing director\\Mandatory if the position is 'Alternate'|  |\n|alternateTerms|String |No |Terms of Alternate appointmentMandatory if the position is 'Alternate'|  |\n|nominator |Number |No|This is the contactID of the existing director\\Mandatory if the position is 'Nominee Director' |  |\n|notes |String |No |Text |  |\n|prepareDocuments |boolean |Yes|Y or N|  |\n\n### Response Body\n\n| Key         | Datatype | Mandatory | Constraints                                          |\n| ----------- | -------- | --------- | ---------------------------------------------------- |\n| id | Number | Yes | |\n| contactId   | Number  | Yes       | Must be an id of an existing contact. Contact cannot already be an officer for both this company and position                |\n| appointDate | String   | Yes       | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601. Can not be before the company's incorporation date |\n| position    | String   | Yes       | Must be one of 'Director'/'Secretary'                |"
           },
-          "response": [
-            {
-              "id": "33ffd0d7-b00a-4ead-8dbf-3dce31f4f9c7",
-              "name": "Status 200",
-              "originalRequest": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "value": "bearer df2f0e40-606f-4311-8066-590732fd126b"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "\"<object>\""
-                },
-                "url": "{{baseUrl}}/companies/68465168168/officers"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n  \"contactId\": \"68482290001\",\n  \"appointDate\": \"2018-12-18\",\n  \"position\": \"Director\"\n}"
-            }
-          ]
+          "response": []
         }
       ],
       "_postman_id": "41a8851e-44d3-45be-9f25-d6dcdd453fc0",
