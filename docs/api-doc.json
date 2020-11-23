@@ -10378,7 +10378,7 @@
                       }
                     ],
                     "url": {
-                      "raw": "{{baseUrl}}/cas/trusts/:trustId/documents?offset={{offset}}&limit={{limit}}",
+                      "raw": "{{baseUrl}}/cas/trusts/:trustId/documents?offset={{offset}}&limit={{limit}}&updatedAfter={{updatedAfter}}",
                       "host": [
                         "{{baseUrl}}"
                       ],
@@ -10398,6 +10398,15 @@
                           "key": "limit",
                           "value": "{{limit}}",
                           "description": "number | Required | Example = 500 |"
+                        },
+                        {
+                          "key": "updatedAfter",
+                          "value": "{{updatedAfter}}"
+                        },
+                        {
+                          "key": "",
+                          "value": null,
+                          "disabled": true
                         }
                       ],
                       "variable": [
@@ -10408,7 +10417,7 @@
                         }
                       ]
                     },
-                    "description": "Return a list of documents for a Trust. Document  IDs returned can be used for subsequent calls.\n\n### Query Parameters\n\n| Form Parameter | type | Mandatory | Description |\n| -------- | -------- | -------- | -------- |\n| offset | number | Required | Example = 0 |\n| limit | number | Required | Example = 500 |\n\n\n### Response Body\n\nReturns a list of objects as described below\n\n| Key           | Datatype | Mandatory | Constraints                                          |\n| ------------- | -------- | --------- | ---------------------------------------------------- |\n| id            | Number   | Yes       |                                                      |\n| traceNumber   | Number   | Yes       |                                                      |\n| name          | String   | Yes       |                                                      |\n| documentDate  | String   | Yes       | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601 |\n| asicDocNumber | String   | No        |                                                      |\n\n**status objects**\n\n| Key          | Datatype | Mandatory | Constraints                                          |\n| ------------ | -------- | --------- | ---------------------------------------------------- |\n| id           | Number   | Yes       |                                                      |\n| createdBy     | String     | Yes     | The name of user who created the document |\n| type         | String   | Yes       | Descriptive name of Status                           |\n| typeId         | Number   | Yes       | Status Unique Identifier   |\n| effectiveDate     | String     | Yes     | Format will be ISO 8601 date. Equal to status change date  |\n\n\n**Additional keys**\n\n| Key    | Datatype | Mandatory | Constraints |\n| ------ | -------- | --------- | ----------- |\n| offset | Number   | Yes       |             |\n| limit  | Number   | Yes       |             |\n| total  | Number   | Yes       |             |"
+                    "description": "Return a list of documents for a Trust. Document  IDs returned can be used for subsequent calls.\n\n### Query Parameters\n\n| Form Parameter | type | Mandatory | Description |\n| -------- | -------- | -------- | -------- |\n| offset | number | Required | Example = 0 |\n| limit | number | Required | Example = 500 |\n| updatedAfter | Optional | UTC date in ISO format: yyyy-MM-dd\u2019T\u2019HH:mm:ss. Example: 2000-10-31T01:30:00Z or 2000-10-31T01:30:00 |\n\n*updatedAfter* parameter -  using this new parameter, the documents list will return just the documents that were updated after the date and time specified. The date must be a UTC date in ISO format: yyyy-MM-dd\u2019T\u2019HH:mm:ss. Example: 2000-10-31T01:30:00Z or 2000-10-31T01:30:00\n\n\n### Response Body\n\nReturns a list of objects as described below\n\n| Key           | Datatype | Mandatory | Constraints                                          |\n| ------------- | -------- | --------- | ---------------------------------------------------- |\n| id            | Number   | Yes       |                                                      |\n| traceNumber   | Number   | Yes       |                                                      |\n| name          | String   | Yes       |                                                      |\n| documentDate  | String   | Yes       | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601 |\n| asicDocNumber | String   | No        |                                                      |\n\n**status objects**\n\n| Key          | Datatype | Mandatory | Constraints                                          |\n| ------------ | -------- | --------- | ---------------------------------------------------- |\n| id           | Number   | Yes       |                                                      |\n| createdBy     | String     | Yes     | The name of user who created the document |\n| type         | String   | Yes       | Descriptive name of Status                           |\n| typeId         | Number   | Yes       | Status Unique Identifier   |\n| effectiveDate     | String     | Yes     | Format will be ISO 8601 date. Equal to status change date  |\n\n\n**Additional keys**\n\n| Key    | Datatype | Mandatory | Constraints |\n| ------ | -------- | --------- | ----------- |\n| offset | Number   | Yes       |             |\n| limit  | Number   | Yes       |             |\n| total  | Number   | Yes       |             |"
                   },
                   "response": [
                     {
