@@ -1423,7 +1423,7 @@
                     }
                   ]
                 },
-                "description": "Allows you to retrieve a list of funds owned by the resource owner (BGL User), which also returns the fund id, which can be used for subsequent API requests. \n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- investment\n- audit\n- smsf_partner\n\n</br>\n\n[Refer to API Pagination](https://docs.api.bgl360.com.au/?version=latest#aa2c3853-08e5-4380-a51a-4d270172c960) for an explanation on using offset and limit parameters. \n\n### Response\n\n| Key | Data Type | Comments |\n| -------- | -------- | -------- |\n| fundID     | String     | Unique ID for fund across all of SF360     |\n| fundCode     | String     | Code issued to the fund by the account owner    |\n| code     | String     | Code issued to the fund by the account owner in SF360     |\n| sfcode     | String     | Code issued to the fund by the account owner in SF Desktop     |\n| ABN     | number     | ABN of the fund if entered in SF360    |\n| firmName     | String     | The name of the SF360 Account owner (Business Name)   |\n| firm     | String     | Short Code issued to identify the SF360 Account Owner    |\n| fundEmail     | String     | Email address for the fund   |\n|members | Object | Object of Member Details |"
+                "description": "Allows you to retrieve a list of funds owned by the resource owner (BGL User), which also returns the fund id, which can be used for subsequent API requests. \n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- investment\n- audit\n- smsf_partner\n\n</br>\n\n[Refer to API Pagination](https://docs.api.bgl360.com.au/?version=latest#aa2c3853-08e5-4380-a51a-4d270172c960) for an explanation on using offset and limit parameters. \n\n### Response\n\n| Key | Data Type | Comments |\n| -------- | -------- | -------- |\n| fundID     | String     | Unique ID for fund across all of SF360     |\n| fundCode     | String     | Code issued to the fund by the account owner    |\n| fundName     | String     | The name of the fund   |\n| entityType     | String     | The type of entity. This will be one of the following. (SMSF/ BillableTrust/ BillableCompany/ BillableIndividual)    |\n| code     | String     | Code issued to the fund by the account owner in SF360     |\n| sfcode     | String     | Code issued to the fund by the account owner in SF Desktop     |\n| ABN     | number     | ABN of the fund if entered in SF360    |\n| firmName     | String     | The name of the SF360 Account owner (Business Name)   |\n| firm     | String     | Short Code issued to identify the SF360 Account Owner    |\n| fundEmail     | String     | Email address for the fund   |\n|members | Object | Object of Member Details |"
               },
               "response": [
                 {
@@ -4909,6 +4909,148 @@
               }
             }
           ],
+          "_postman_isSubFolder": true
+        },
+        {
+          "name": "Labels",
+          "item": [
+            {
+              "name": "List of Entity Labels",
+              "_postman_id": "6db2faa0-dd03-4a85-9643-d76e9fdb6ef7",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "type": "text",
+                    "value": "bearer {{token}}"
+                  }
+                ],
+                "url": "{{baseUrl}}/sf/labels",
+                "description": "Returns a labels for the firm. Labels are used in SF360 to group funds or other entities together for quick selection and reporting purposes.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner\n\n### Response Body\n\n| Key | Datatype | Comments/Constraints |\n|--|--|--|\n| id |string |ID of label |\n|name| string |name of label |"
+              },
+              "response": []
+            },
+            {
+              "name": "List of Entities by Label",
+              "_postman_id": "8b6e2250-04fb-49c3-8354-910bd67c53be",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "type": "text",
+                    "value": "bearer {{token}}"
+                  }
+                ],
+                "url": "{{baseUrl}}/sf/labels/{{labelId}}/entities",
+                "description": "Returns a Entities  for a label for the firm. Labels are used in SF360 to group funds or other entities together for quick selection and reporting purposes.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner\n\n### Response Body\n\n| Key | Datatype | Comments/Constraints |\n|--|--|--|\n| id |string |ID of label |\n|name| string |name of label |\n|entityType| string | Type of Entity |"
+              },
+              "response": []
+            },
+            {
+              "name": "Delete Entity Labels",
+              "_postman_id": "2af0f96f-bf8f-4665-aba5-071d3b82e755",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "type": "text",
+                    "value": "bearer {{token}}"
+                  }
+                ],
+                "url": "{{baseUrl}}/sf/labels/{{labelId}}",
+                "description": "Deletes a label for the firm.  \n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
+              },
+              "response": []
+            },
+            {
+              "name": "Remove a Label from an Entity",
+              "_postman_id": "c0cb9612-bbba-4254-9da8-fda484d1d3ec",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "type": "text",
+                    "value": "bearer {{token}}"
+                  }
+                ],
+                "url": "{{baseUrl}}/sf/labels/{{labelId}}/entities/{{entityId}}",
+                "description": "Deletes a label from an entity\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
+              },
+              "response": []
+            },
+            {
+              "name": "Create Entity Label",
+              "_postman_id": "4fe4c81a-4eb8-40cb-b0ed-e0031132edbc",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "type": "text",
+                    "value": "bearer {{token}}"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/sf/labels?name={{name}} ",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "sf",
+                    "labels"
+                  ],
+                  "query": [
+                    {
+                      "key": "name",
+                      "value": "{{name}} "
+                    }
+                  ]
+                },
+                "description": "Create a labels for the firm.  \n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
+              },
+              "response": []
+            },
+            {
+              "name": "Add a Label to an Entity",
+              "_postman_id": "d1f29cb2-cb04-41eb-b671-a1e2a33436c6",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "type": "text",
+                    "value": "bearer {{token}}"
+                  }
+                ],
+                "url": "{{baseUrl}}/sf/labels/{{labelId}}/entities/{{entityId}}",
+                "description": "### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
+              },
+              "response": []
+            }
+          ],
+          "_postman_id": "d65a18aa-0aec-4a96-84ea-857c54104241",
           "_postman_isSubFolder": true
         }
       ],
@@ -11235,150 +11377,7 @@
     },
     {
       "name": "Coming Soon - SF360",
-      "item": [
-        {
-          "name": "Labels",
-          "item": [
-            {
-              "name": "List of Entity Labels",
-              "_postman_id": "6db2faa0-dd03-4a85-9643-d76e9fdb6ef7",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "bearer {{token}}"
-                  }
-                ],
-                "url": "{{baseUrl}}/sf/labels",
-                "description": "Returns a labels for the firm. Labels are used in SF360 to group funds or other entities together for quick selection and reporting purposes.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner\n\n### Response Body\n\n| Key | Datatype | Comments/Constraints |\n|--|--|--|\n| id |string |ID of label |\n|name| string |name of label |"
-              },
-              "response": []
-            },
-            {
-              "name": "List of Entities by Label",
-              "_postman_id": "8b6e2250-04fb-49c3-8354-910bd67c53be",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "bearer {{token}}"
-                  }
-                ],
-                "url": "{{baseUrl}}/sf/labels/{{labelId}}/entities",
-                "description": "Returns a Entities  for a label for the firm. Labels are used in SF360 to group funds or other entities together for quick selection and reporting purposes.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner\n\n### Response Body\n\n| Key | Datatype | Comments/Constraints |\n|--|--|--|\n| id |string |ID of label |\n|name| string |name of label |\n|entityType| string | Type of Entity |"
-              },
-              "response": []
-            },
-            {
-              "name": "Delete Entity Labels",
-              "_postman_id": "2af0f96f-bf8f-4665-aba5-071d3b82e755",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "DELETE",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "bearer {{token}}"
-                  }
-                ],
-                "url": "{{baseUrl}}/sf/labels/{{labelId}}",
-                "description": "Deletes a label for the firm.  \n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
-              },
-              "response": []
-            },
-            {
-              "name": "Remove a Label from an Entity",
-              "_postman_id": "c0cb9612-bbba-4254-9da8-fda484d1d3ec",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "DELETE",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "bearer {{token}}"
-                  }
-                ],
-                "url": "{{baseUrl}}/sf/labels/{{labelId}}/entities/{{entityId}}",
-                "description": "Deletes a label from an entity\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
-              },
-              "response": []
-            },
-            {
-              "name": "Create Entity Label",
-              "_postman_id": "4fe4c81a-4eb8-40cb-b0ed-e0031132edbc",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "bearer {{token}}"
-                  }
-                ],
-                "url": {
-                  "raw": "{{baseUrl}}/sf/labels?name={{name}} ",
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "path": [
-                    "sf",
-                    "labels"
-                  ],
-                  "query": [
-                    {
-                      "key": "name",
-                      "value": "{{name}} "
-                    }
-                  ]
-                },
-                "description": "Create a labels for the firm.  \n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
-              },
-              "response": []
-            },
-            {
-              "name": "Add a Label to an Entity",
-              "_postman_id": "d1f29cb2-cb04-41eb-b671-a1e2a33436c6",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "bearer {{token}}"
-                  }
-                ],
-                "url": "{{baseUrl}}/sf/labels/{{labelId}}/entities/{{entityId}}",
-                "description": "### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
-              },
-              "response": []
-            }
-          ],
-          "_postman_id": "d65a18aa-0aec-4a96-84ea-857c54104241",
-          "_postman_isSubFolder": true
-        }
-      ],
+      "item": [],
       "_postman_id": "a2a374ee-4904-4f95-9922-cedcb9d10217",
       "event": [
         {
