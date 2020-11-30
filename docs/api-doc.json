@@ -4544,148 +4544,6 @@
           "_postman_isSubFolder": true
         },
         {
-          "name": "Labels",
-          "item": [
-            {
-              "name": "List of Entity Labels",
-              "_postman_id": "6db2faa0-dd03-4a85-9643-d76e9fdb6ef7",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "bearer {{token}}"
-                  }
-                ],
-                "url": "{{baseUrl}}/sf/labels",
-                "description": "Returns a labels for the firm. Labels are used in SF360 to group funds or other entities together for quick selection and reporting purposes.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner\n\n### Response Body\n\n| Key | Datatype | Comments/Constraints |\n|--|--|--|\n| id |string |ID of label |\n|name| string |name of label |"
-              },
-              "response": []
-            },
-            {
-              "name": "List of Entities by Label",
-              "_postman_id": "8b6e2250-04fb-49c3-8354-910bd67c53be",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "bearer {{token}}"
-                  }
-                ],
-                "url": "{{baseUrl}}/sf/labels/{{labelId}}/entities",
-                "description": "Returns a Entities  for a label for the firm. Labels are used in SF360 to group funds or other entities together for quick selection and reporting purposes.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner\n\n### Response Body\n\n| Key | Datatype | Comments/Constraints |\n|--|--|--|\n| id |string |ID of label |\n|name| string |name of label |\n|entityType| string | Type of Entity |"
-              },
-              "response": []
-            },
-            {
-              "name": "Delete Entity Labels",
-              "_postman_id": "2af0f96f-bf8f-4665-aba5-071d3b82e755",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "DELETE",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "bearer {{token}}"
-                  }
-                ],
-                "url": "{{baseUrl}}/sf/labels/{{labelId}}",
-                "description": "Deletes a label for the firm.  \n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
-              },
-              "response": []
-            },
-            {
-              "name": "Remove a Label from an Entity",
-              "_postman_id": "c0cb9612-bbba-4254-9da8-fda484d1d3ec",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "DELETE",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "bearer {{token}}"
-                  }
-                ],
-                "url": "{{baseUrl}}/sf/labels/{{labelId}}/entities/{{entityId}}",
-                "description": "Deletes a label from an entity\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
-              },
-              "response": []
-            },
-            {
-              "name": "Create Entity Label",
-              "_postman_id": "4fe4c81a-4eb8-40cb-b0ed-e0031132edbc",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "bearer {{token}}"
-                  }
-                ],
-                "url": {
-                  "raw": "{{baseUrl}}/sf/labels?name={{name}} ",
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "path": [
-                    "sf",
-                    "labels"
-                  ],
-                  "query": [
-                    {
-                      "key": "name",
-                      "value": "{{name}} "
-                    }
-                  ]
-                },
-                "description": "Create a labels for the firm.  \n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
-              },
-              "response": []
-            },
-            {
-              "name": "Add a Label to an Entity",
-              "_postman_id": "d1f29cb2-cb04-41eb-b671-a1e2a33436c6",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "bearer {{token}}"
-                  }
-                ],
-                "url": "{{baseUrl}}/sf/labels/{{labelId}}/entities/{{entityId}}",
-                "description": "### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
-              },
-              "response": []
-            }
-          ],
-          "_postman_id": "d65a18aa-0aec-4a96-84ea-857c54104241",
-          "_postman_isSubFolder": true
-        },
-        {
           "name": "Fund Documents",
           "item": [
             {
@@ -5051,6 +4909,148 @@
               }
             }
           ],
+          "_postman_isSubFolder": true
+        },
+        {
+          "name": "Labels",
+          "item": [
+            {
+              "name": "List of Entity Labels",
+              "_postman_id": "6db2faa0-dd03-4a85-9643-d76e9fdb6ef7",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "type": "text",
+                    "value": "bearer {{token}}"
+                  }
+                ],
+                "url": "{{baseUrl}}/sf/labels",
+                "description": "Returns a labels for the firm. Labels are used in SF360 to group funds or other entities together for quick selection and reporting purposes.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner\n\n### Response Body\n\n| Key | Datatype | Comments/Constraints |\n|--|--|--|\n| id |string |ID of label |\n|name| string |name of label |"
+              },
+              "response": []
+            },
+            {
+              "name": "List of Entities by Label",
+              "_postman_id": "8b6e2250-04fb-49c3-8354-910bd67c53be",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "type": "text",
+                    "value": "bearer {{token}}"
+                  }
+                ],
+                "url": "{{baseUrl}}/sf/labels/{{labelId}}/entities",
+                "description": "Returns a Entities  for a label for the firm. Labels are used in SF360 to group funds or other entities together for quick selection and reporting purposes.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner\n\n### Response Body\n\n| Key | Datatype | Comments/Constraints |\n|--|--|--|\n| id |string |ID of label |\n|name| string |name of label |\n|entityType| string | Type of Entity |"
+              },
+              "response": []
+            },
+            {
+              "name": "Delete Entity Labels",
+              "_postman_id": "2af0f96f-bf8f-4665-aba5-071d3b82e755",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "type": "text",
+                    "value": "bearer {{token}}"
+                  }
+                ],
+                "url": "{{baseUrl}}/sf/labels/{{labelId}}",
+                "description": "Deletes a label for the firm.  \n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
+              },
+              "response": []
+            },
+            {
+              "name": "Remove a Label from an Entity",
+              "_postman_id": "c0cb9612-bbba-4254-9da8-fda484d1d3ec",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "type": "text",
+                    "value": "bearer {{token}}"
+                  }
+                ],
+                "url": "{{baseUrl}}/sf/labels/{{labelId}}/entities/{{entityId}}",
+                "description": "Deletes a label from an entity\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
+              },
+              "response": []
+            },
+            {
+              "name": "Create Entity Label",
+              "_postman_id": "4fe4c81a-4eb8-40cb-b0ed-e0031132edbc",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "type": "text",
+                    "value": "bearer {{token}}"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/sf/labels?name={{name}} ",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "sf",
+                    "labels"
+                  ],
+                  "query": [
+                    {
+                      "key": "name",
+                      "value": "{{name}} "
+                    }
+                  ]
+                },
+                "description": "Create a labels for the firm.  \n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
+              },
+              "response": []
+            },
+            {
+              "name": "Add a Label to an Entity",
+              "_postman_id": "d1f29cb2-cb04-41eb-b671-a1e2a33436c6",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "type": "text",
+                    "value": "bearer {{token}}"
+                  }
+                ],
+                "url": "{{baseUrl}}/sf/labels/{{labelId}}/entities/{{entityId}}",
+                "description": "### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
+              },
+              "response": []
+            }
+          ],
+          "_postman_id": "d65a18aa-0aec-4a96-84ea-857c54104241",
           "_postman_isSubFolder": true
         }
       ],
@@ -6702,7 +6702,7 @@
                         }
                       ]
                     },
-                    "description": "Creates a company officer.\n\nConstraints: \n* Cannot create an officer if one exists with the same contactId & position. \n* Contact must have birth details attached\n\n### Request Body\n\n| Key         | Datatype | Mandatory | Constraints                                          |\n| ----------- | -------- | --------- | ---------------------------------------------------- |\n| contactId   | Number  | Yes       | Must be an id of an existing contact. Contact cannot already be an officer for both this company and position. Contact must be 18 or older on appointDate                |\n| appointDate | String   | Yes       | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601. Can not be before the company's incorporation date |\n| position    | String   | Yes       | Must be one of 'Director'/'Secretary'                |\n\n### Response Body\n\n| Key         | Datatype | Mandatory | Constraints                                          |\n| ----------- | -------- | --------- | ---------------------------------------------------- |\n| id | Number | Yes | |\n| contactId   | Number  | Yes       | Must be an id of an existing contact. Contact cannot already be an officer for both this company and position                |\n| appointDate | String   | Yes       | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601. Can not be before the company's incorporation date |\n| position    | String   | Yes       | Must be one of 'Director'/'Secretary'                |"
+                    "description": "Creates a company officer.\n\nConstraints: \n* Cannot create an officer if one exists with the same contactId & position. \n* Contact must have birth details attached\n\n### Request Body\n\n|**Key**|**DataType** |**Mandatory** |**Contraints** |**Notes**|\n|--|--|--|--|--|\n|companyId |Number|Yes |Must be an ID of an existing company.|  |\n|officerId|Number|Yes|Must be ID of an existing Officer transaction|  |\n|contactId|Number |Yes |Must be ID of an existing contact|  |\n|position |String |Yes |Must be one of 'Director','Secretary', 'Alternate', Managing Director, Manager, Nominee Director, | Managing Director, Manager, Nominee Director only supported for SG companies|\n|positionStatus |String |No |Must be one of 'Appointed, Resigned, Removed, Deceased' |  |\n| ceaseDate | Date | No | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601. Only if positionStatus is present and is not \u2018Appointed\u2019. Cannot be before \u2018appointedDate\u2019| | |\n|signatoryStatus|String |No|Must be one of 'Attendee, Signatory, Chairperson, Form Signatory, Apology, Non Attendee' |  |\n|alternateContactId |Number |No |This is the contactID of the existing director\\Mandatory if the position is 'Alternate'|  |\n|alternateTerms|String |No |Terms of Alternate appointmentMandatory if the position is 'Alternate'|  |\n|nominatorContactId |Number |No|This is the contactID of the existing director\\Mandatory if the position is 'Nominee Director' |  |\n|notes |String |No |Text |  |\n|prepareDocuments |String |No|Y or N|  |\n\n### Response Body\n\n| Key         | Datatype | Mandatory | Constraints                                          |\n| ----------- | -------- | --------- | ---------------------------------------------------- |\n|companyId |Number|Yes |Must be an ID of an existing company.|  |\n|officerId|Number|Yes|Must be ID of an existing Officer transaction|  |\n|contactId|Number |Yes |Must be ID of an existing contact|  |\n|position |String |Yes |Must be one of 'Director','Secretary', 'Alternate', Managing Director, Manager, Nominee Director, | Managing Director, Manager, Nominee Director only supported for SG companies|\n|positionStatus |String |No |Must be one of 'Appointed, Resigned, Removed, Deceased' |  |\n| ceaseDate | Date | No | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601. Only if positionStatus is present and is not \u2018Appointed\u2019. Cannot be before \u2018appointedDate\u2019| | |\n|signatoryStatus|String |No|Must be one of 'Attendee, Signatory, Chairperson, Form Signatory, Apology, Non Attendee' |  |\n|alternateContactId |Number |No |This is the contactID of the existing director\\Mandatory if the position is 'Alternate'|  |\n|alternateTerms|String |No |Terms of Alternate appointmentMandatory if the position is 'Alternate'|  |\n|nominatorContactId |Number |No|This is the contactID of the existing director\\Mandatory if the position is 'Nominee Director' |  |\n|notes |String |No |Text |  |\n|prepareDocuments |String |No|Y or N|  |\n"
                   },
                   "response": [
                     {
@@ -11504,24 +11504,30 @@
               }
             },
             "url": {
-              "raw": "{{baseUrl}}/companies/:companyId/officersChange",
+              "raw": "{{baseUrl}}/companies/:companyId/officers/:officerId",
               "host": [
                 "{{baseUrl}}"
               ],
               "path": [
                 "companies",
                 ":companyId",
-                "officersChange"
+                "officers",
+                ":officerId"
               ],
               "variable": [
                 {
                   "key": "companyId",
                   "value": "{{companyId}}",
                   "type": "string"
+                },
+                {
+                  "key": "officerId",
+                  "value": "{{officerId}}",
+                  "type": "string"
                 }
               ]
             },
-            "description": "Update an existing Officer Transaction in order to complete the change in CAS360\n\n\n### Request Body\n\n|**Key**|**DataType** |**Mandatory** |**Contraints** |**Notes**|\n|--|--|--|--|--|\n|companyID |Number|Yes |Must be an id of an existing company.|  |\n|officerID|Number|Yes|Must be ID of an existing Officer transaction|  |\n|contactID|Number |Yes |Must be ID of an existing contact|  |\n|position |String |Yes |Must be one of 'Director','Secretary', 'Alternate', Managing Director, Manager, Nominee Director, | Managing Director, Manager, Nominee Director only supported for SG companies|\n|positionStatus |String |No |Must be one of 'Appointed, Resigned, Removed, Deceased' |  |\n| ceaseDate | Date | No | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601. Only if positionStatus is present and is not \u2018Appointed\u2019.| Cannot be before \u2018appointedDate\u2019| |\n|signatoryStatus|String |Yes|Must be one of 'Attendee, Signatory, Chairperson, Form Signatory, Apology, Non Attendee' |  |\n|alternateContactId |Number |No |This is the contactID of the existing director\\Mandatory if the position is 'Alternate'|  |\n|alternateTerms|String |No |Terms of Alternate appointmentMandatory if the position is 'Alternate'|  |\n|nominatorContactId |Number |No|This is the contactID of the existing director\\Mandatory if the position is 'Nominee Director' |  |\n|notes |String |No |Text |  |\n|prepareDocuments |String |No|Y or N|  |\n\n### Response Body\n\n| Key         | Datatype | Mandatory | Constraints                                          |\n| ----------- | -------- | --------- | ---------------------------------------------------- |\n| id | Number | Yes | |\n| contactId   | Number  | Yes       | Must be an id of an existing contact. Contact cannot already be an officer for both this company and position                |\n| appointDate | String   | Yes       | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601. Can not be before the company's incorporation date |\n| position    | String   | Yes       | Must be one of 'Director'/'Secretary'                |"
+            "description": "Update an existing Officer Transaction in order to complete the change in CAS360\n\n\n### Request Body\n\n|**Key**|**DataType** |**Mandatory** |**Contraints** |**Notes**|\n|--|--|--|--|--|\n|companyId |Number|Yes |Must be an ID of an existing company.|  |\n|officerId|Number|Yes|Must be ID of an existing Officer transaction|  |\n|contactId|Number |Yes |Must be ID of an existing contact|  |\n|position |String |Yes |Must be one of 'Director','Secretary', 'Alternate', Managing Director, Manager, Nominee Director, | Managing Director, Manager, Nominee Director only supported for SG companies|\n|positionStatus |String |No |Must be one of 'Appointed, Resigned, Removed, Deceased' |  |\n| ceaseDate | Date | No | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601. Only if positionStatus is present and is not \u2018Appointed\u2019. Cannot be before \u2018appointedDate\u2019| | |\n|signatoryStatus|String |No|Must be one of 'Attendee, Signatory, Chairperson, Form Signatory, Apology, Non Attendee' |  |\n|alternateContactId |Number |No |This is the contactID of the existing director\\Mandatory if the position is 'Alternate'|  |\n|alternateTerms|String |No |Terms of Alternate appointmentMandatory if the position is 'Alternate'|  |\n|nominatorContactId |Number |No|This is the contactID of the existing director\\Mandatory if the position is 'Nominee Director' |  |\n|notes |String |No |Text |  |\n|prepareDocuments |String |No|Y or N|  |\n\n### Response Body\n\n| Key         | Datatype | Mandatory | Constraints                                          |\n| ----------- | -------- | --------- | ---------------------------------------------------- |\n|companyId |Number|Yes |Must be an ID of an existing company.|  |\n|officerId|Number|Yes|Must be ID of an existing Officer transaction|  |\n|contactId|Number |Yes |Must be ID of an existing contact|  |\n|position |String |Yes |Must be one of 'Director','Secretary', 'Alternate', Managing Director, Manager, Nominee Director, | Managing Director, Manager, Nominee Director only supported for SG companies|\n|positionStatus |String |No |Must be one of 'Appointed, Resigned, Removed, Deceased' |  |\n| ceaseDate | Date | No | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601. Only if positionStatus is present and is not \u2018Appointed\u2019. Cannot be before \u2018appointedDate\u2019| | |\n|signatoryStatus|String |No|Must be one of 'Attendee, Signatory, Chairperson, Form Signatory, Apology, Non Attendee' |  |\n|alternateContactId |Number |No |This is the contactID of the existing director\\Mandatory if the position is 'Alternate'|  |\n|alternateTerms|String |No |Terms of Alternate appointmentMandatory if the position is 'Alternate'|  |\n|nominatorContactId |Number |No|This is the contactID of the existing director\\Mandatory if the position is 'Nominee Director' |  |\n|notes |String |No |Text |  |\n|prepareDocuments |String |No|Y or N|  |\n"
           },
           "response": []
         },
