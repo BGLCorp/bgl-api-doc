@@ -11501,7 +11501,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"contactID\": \"{{contactID}}\",\n    \"position\": \"{{position}}\"\n}",
+              "raw": "{\n    \"contactID\": 123456,\n    \"position\": \"Director\",\n    \"positionStatus\": \"Appointed\",\n    \"signatoryStatus\": \"Chairperson\",\n    \"notes\": \"\",\n    \"prepareDocuments\": \"N\"\n}",
               "options": {
                 "raw": {}
               }
