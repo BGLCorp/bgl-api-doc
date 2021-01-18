@@ -2164,8 +2164,14 @@
           "_postman_isSubFolder": true
         },
         {
-          "name": "Reports",
+          "name": "Reports - All Entities",
           "item": [
+            {
+              "name": "Reports - SMSF Only",
+              "item": [],
+              "_postman_id": "321f36db-5a8c-4eee-b3d3-7d6bb9d4361c",
+              "_postman_isSubFolder": true
+            },
             {
               "name": "Report - Contribution Breakdown",
               "_postman_id": "327c3bd1-05c6-4261-8385-a9d5d3332c68",
