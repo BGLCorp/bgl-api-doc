@@ -867,20 +867,6 @@
           "_postman_isSubFolder": true
         },
         {
-          "name": "Request History - Search",
-          "item": [],
-          "_postman_id": "8e4f2c4c-ba5c-4bae-b3c1-1b5ced450a2f",
-          "description": "Type what you are looking for the in the search box, as shown below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/requestHistorymoredetails.png)\n\nYou can narrow your search by using the following search operators and symbols as shown in the Assisted Search panel:\n\nAND\nOR\nNOT\n*\nThe search operators need to input in uppercase.\n\n\n\n|Operator | Example |\n| -------- | -------- | \n| AND     | Search for requests that contains both input terms. For example, to search all requests made for the bglAPITokenTest with End Point /fund/trustees, you can type in 'bglAPITokenTest AND trustees' in the search box     | \n| OR     | Search for requests that contains one of the input terms. For example, to search all requests with either http code 400 or 500, you can type in '400 OR 500' in the search box.      | \n| NOT     | For example, to search for all requests with the Http Code '200' excluding requests from IP 218.219.218.219, you can type in '200 NOT 218.219.218.219' in the search box.      | \n| *     | This can be used as a wildcard. For example, to search all applications containing the word BGL, you can type in '*BGL*' in the search box.     | ",
-          "_postman_isSubFolder": true
-        },
-        {
-          "name": "Request History - Filters",
-          "item": [],
-          "_postman_id": "179fcfc3-d6a1-4cdb-b49d-97de0f1c655a",
-          "description": "You can filter the list of requests using:\n\n## Time Frame\n\nClick on the drop-down list to select from one of the options as shown below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/requestHistoryfilters.png)\n\nFor example, selecting '''Last 7 days''' will list all the requests made during the past week.\n\n## Quick Filters\n\nThe Quick Filters provide you with a list of pre-set filters that you can select to further narrow down the list.\n\nClick on the **Quick Filters** icon.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/requestHistoryQuickFilters.png)\n\nThis will display a list of the filter options, as shown and explained below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/requestHistorydetailshttpcode.png)\n\n\n\n| Filter | Description | \n| -------- | -------- | \n|Unsuccessful Request(s)    | This will display all requests that returned an error.     | \n|Successfull Request(s))    | This will display all requests that have been completed successully.     | \n|Fund Endpoints    | \tThis will display only fund end points.     | \n|User Endpoints    | This will display only user end points.     | \n|Duration    | Selecting this filter will list all the requests that match the selected duration.     | \n\nYou can select multiple filters. For example, selecting Unsuccessful Request(s) and Less than 1 second will list all requests that returned an error and took less than 1 second. You can further narrow the list by selecting Last 7 days as shown below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/requestHistorymultiplefilters.png)\n\n",
-          "_postman_isSubFolder": true
-        },
-        {
           "name": "API Status",
           "item": [],
           "_postman_id": "017b2456-3f0f-4eca-b1d1-29e63b7396f3",
