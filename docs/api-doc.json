@@ -867,13 +867,6 @@
           "_postman_isSubFolder": true
         },
         {
-          "name": "Request History",
-          "item": [],
-          "_postman_id": "44293442-0314-42dd-9cdc-d316e15d6ba3",
-          "description": "\nThis section provides you with a list of all the requests made by all the applications created by the logged in user.\n\nClick on DEVELOPER from the main menu and then select the Request History tab, as shown below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/requestHistory.png)\n\nThe following information will be displayed on-screen:\n\n| Column Name | Description | \n| -------- | -------- |\n| Application/Client Name     | Name of the API Application or Client     | \n| Http Code     | \tThe HTTP Response Code returned by the BGL API     | \n| Duration(ms)     | Number of milliseconds taken to complete the request     | \n| IP     | IP Address from which the request was made     | \n| End Point     | The requested Resource     | \n| Date Requested     | Date and Time the request was made     | \n\nYou can click on the arrow icon for further information on that request, as shown below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/requestHistoryarrow.png)\n\nA panel will display with more details on that request, as shown and explained below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/requesthistorydetail.png)\n\n| Field | Description | \n| -------- | -------- | \n| Application/Client Id     | ID of the API Application or Client     | \n| Http Params     | The parameters passed for that request     | \n| Data Format     | The format of the data received from the request     | \n| Http Method     | The method used to make the request     | \n| Token Owner     | The owner of the token     | \n\n\n**Load More**\n\nIn order to view more requests, the user needs to click on the LOAD MORE button at the bottom of the list. ",
-          "_postman_isSubFolder": true
-        },
-        {
           "name": "Request History - Search",
           "item": [],
           "_postman_id": "8e4f2c4c-ba5c-4bae-b3c1-1b5ced450a2f",
