@@ -867,6 +867,13 @@
           "_postman_isSubFolder": true
         },
         {
+          "name": "Request History - Filters",
+          "item": [],
+          "_postman_id": "179fcfc3-d6a1-4cdb-b49d-97de0f1c655a",
+          "description": "You can filter the list of requests using:\n\n## Time Frame\n\nClick on the drop-down list to select from one of the options as shown below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/requestHistoryfilters.png)\n\nFor example, selecting '''Last 7 days''' will list all the requests made during the past week.\n\n## Quick Filters\n\nThe Quick Filters provide you with a list of pre-set filters that you can select to further narrow down the list.\n\nClick on the **Quick Filters** icon.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/requestHistoryQuickFilters.png)\n\nThis will display a list of the filter options, as shown and explained below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/requestHistorydetailshttpcode.png)\n\n\n\n| Filter | Description | \n| -------- | -------- | \n|Unsuccessful Request(s)    | This will display all requests that returned an error.     | \n|Successfull Request(s))    | This will display all requests that have been completed successully.     | \n|Fund Endpoints    | \tThis will display only fund end points.     | \n|User Endpoints    | This will display only user end points.     | \n|Duration    | Selecting this filter will list all the requests that match the selected duration.     | \n\nYou can select multiple filters. For example, selecting Unsuccessful Request(s) and Less than 1 second will list all requests that returned an error and took less than 1 second. You can further narrow the list by selecting Last 7 days as shown below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/requestHistorymultiplefilters.png)\n\n",
+          "_postman_isSubFolder": true
+        },
+        {
           "name": "API Status",
           "item": [],
           "_postman_id": "017b2456-3f0f-4eca-b1d1-29e63b7396f3",
