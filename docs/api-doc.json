@@ -1212,7 +1212,7 @@
           "name": "Entity/Fund Lists",
           "item": [
             {
-              "name": "Fund List",
+              "name": "Enity List",
               "event": [
                 {
                   "listen": "test",
