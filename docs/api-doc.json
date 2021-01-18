@@ -944,7 +944,29 @@
           "name": "Enable and Disable Funds Accessible by a Token (Simple Fund 360)",
           "item": [],
           "_postman_id": "35dcceda-9074-4fc0-aff4-6fd95bbcb204",
-          "description": "This section goes through how you can enable and disable fund(s) accessible by a token.\n\nFrom the Select Application menu, select My Tokens from the drop-down list. This will list all the tokens that are owned by the logged in user, as displayed in the image below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/myTokensDropDown.png)\n\nNote: You cannot enable/disable funds from the View Application Token(s) page.\n\nClick on the token for which to enable/disable funds.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/myTokensDropDowndetail.png)\n\nThis will list all the funds accessible by the token.\n\n**Enable/Disable Fund by Fund**\n\nTo disable access to one fund, click on the green tick icon, as shown below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/disableFund.png)\n\nTo enable access to one fund, click on the green circle icon, as illustrated below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/selectFund.png)\n\nAn Unsaved label will also appear next to those funds. To confirm the changes, click on the counter. The icon will change to a SAVE CHANGES icon, as illustrated below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/tokenSaveChanges.png)\n\nThe Change Confirmation screen will display all the changes made by the user. Select **Confirm** to process all the changes made.\n\nAlternatively, Select the Reverse icon to undo a change, as shown below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/tokenReverse.png)\n\nYou can then select Close to exit out of that box.\n**\nEnable/Disable All Funds\n**\nYou can enable/disable all funds by selecting on the ... icon, as shown below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/tokenSelectAll.png)\n\nYou can then select Enable All or Disable All to enable or disable access to all funds previously authorised for that token.\n\nA confirmation message will display depending on which option the user has selected.\n\nSelect Enable All/Disable All to process the changes.\n",
+          "description": "This section goes through how you can enable and disable entities(s) accessible by a token.\n\nFrom the Select Application menu, select My Tokens from the drop-down list. This will list all the tokens that are owned by the logged in user, as displayed in the image below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/myTokensDropDown.png)\n\nNote: You cannot enable/disable entities from the View Application Token(s) page.\n\nClick on the token for which to enable/disable entities.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/myTokensDropDowndetail.png)\n\nThis will list all the entities accessible by the token.\n\n**Enable/Disable entity by entity**\n\nTo disable access to entities fund, click on the green tick icon, as shown below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/disableFund.png)\n\nTo enable access to one entity, click on the green circle icon, as illustrated below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/selectFund.png)\n\nAn Unsaved label will also appear next to those entities. To confirm the changes, click on the counter. The icon will change to a SAVE CHANGES icon, as illustrated below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/tokenSaveChanges.png)\n\nThe Change Confirmation screen will display all the changes made by the user. Select **Confirm** to process all the changes made.\n\nAlternatively, Select the Reverse icon to undo a change, as shown below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/tokenReverse.png)\n\nYou can then select Close to exit out of that box.\n**\nEnable/Disable All entities\n**\nYou can enable/disable all entities by selecting on the ... icon, as shown below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/tokenSelectAll.png)\n\nYou can then select Enable All or Disable All to enable or disable access to all entities previously authorised for that token.\n\nA confirmation message will display depending on which option the user has selected.\n\nSelect Enable All/Disable All to process the changes.\n",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "e57b7adf-9b10-434f-8dcd-bedb761030e7",
+                "type": "text/javascript",
+                "exec": [
+                  ""
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "id": "aaa39a4b-3608-4332-a87d-62f10edb49b1",
+                "type": "text/javascript",
+                "exec": [
+                  ""
+                ]
+              }
+            }
+          ],
           "_postman_isSubFolder": true
         },
         {
