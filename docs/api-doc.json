@@ -2421,306 +2421,6 @@
                   "body": "{\n    \"contributions\": [\n        {\n            \"birthday\": \"1970-07-01\",\n            \"concessionalContributions\": [\n                {\n                    \"amount\": 0,\n                    \"cap\": 30000,\n                    \"carryForwardOrigins\": [],\n                    \"financialYear\": 2016,\n                    \"labels\": [\n                        \"UnderCap\"\n                    ],\n                    \"maxCap\": 30000,\n                    \"position\": -30000,\n                    \"unusedCap\": 0\n                },\n                {\n                    \"amount\": 0,\n                    \"cap\": 30000,\n                    \"carryForwardOrigins\": [],\n                    \"financialYear\": 2017,\n                    \"labels\": [\n                        \"UnderCap\"\n                    ],\n                    \"maxCap\": 30000,\n                    \"position\": -30000,\n                    \"unusedCap\": 0\n                },\n                {\n                    \"amount\": 0,\n                    \"cap\": 25000,\n                    \"carryForwardOrigins\": [],\n                    \"financialYear\": 2018,\n                    \"labels\": [\n                        \"UnderCap\"\n                    ],\n                    \"maxCap\": 25000,\n                    \"position\": -25000,\n                    \"unusedCap\": 0\n                },\n                {\n                    \"amount\": 0,\n                    \"cap\": 25000,\n                    \"carryForwardOrigins\": [],\n                    \"cumulativeCarryForward\": 0,\n                    \"financialYear\": 2019,\n                    \"labels\": [\n                        \"UnderCap\",\n                        \"TSBOver500K\"\n                    ],\n                    \"maxCap\": 25000,\n                    \"position\": -25000,\n                    \"unusedCap\": 25000\n                },\n                {\n                    \"amount\": 0,\n                    \"cap\": 25000,\n                    \"carryForwardOrigins\": [\n                        {\n                            \"amount\": 25000,\n                            \"financialYear\": 2019\n                        }\n                    ],\n                    \"cumulativeCarryForward\": 0,\n                    \"financialYear\": 2020,\n                    \"labels\": [\n                        \"UnderCap\",\n                        \"TSBOver500K\"\n                    ],\n                    \"maxCap\": 25000,\n                    \"position\": -25000,\n                    \"unusedCap\": 25000\n                },\n                {\n                    \"amount\": 0,\n                    \"cap\": 25000,\n                    \"carryForwardOrigins\": [\n                        {\n                            \"amount\": 25000,\n                            \"financialYear\": 2019\n                        },\n                        {\n                            \"amount\": 25000,\n                            \"financialYear\": 2020\n                        }\n                    ],\n                    \"cumulativeCarryForward\": 0,\n                    \"financialYear\": 2021,\n                    \"labels\": [\n                        \"UnderCap\",\n                        \"TSBOver500K\"\n                    ],\n                    \"maxCap\": 25000,\n                    \"position\": -25000,\n                    \"unusedCap\": 25000\n                }\n            ],\n            \"contributionAccountId\": 222222386230,\n            \"downsizerAmount\": 0,\n            \"downsizerCap\": 300000,\n            \"firstName\": \"John\",\n            \"lastName\": \"Jones\",\n            \"memberAccountCode\": \"JONMAR00016A\",\n            \"memberAccountId\": 35579,\n            \"memberAccountStartDate\": \"2013-07-01\",\n            \"nonConcessionalContributions\": [\n                {\n                    \"amount\": 0,\n                    \"cap\": 0,\n                    \"financialYear\": 2018,\n                    \"labels\": [\n                        \"AtLimit\",\n                        \"TSBOverTBC\"\n                    ],\n                    \"position\": 0\n                },\n                {\n                    \"amount\": 0,\n                    \"cap\": 0,\n                    \"financialYear\": 2019,\n                    \"labels\": [\n                        \"AtLimit\",\n                        \"TSBOverTBC\"\n                    ],\n                    \"position\": 0\n                },\n                {\n                    \"amount\": 0,\n                    \"cap\": 0,\n                    \"financialYear\": 2020,\n                    \"labels\": [\n                        \"AtLimit\",\n                        \"TSBOverTBC\"\n                    ],\n                    \"position\": 0\n                },\n                {\n                    \"amount\": 0,\n                    \"cap\": 0,\n                    \"financialYear\": 2021,\n                    \"labels\": [\n                        \"AtLimit\",\n                        \"TSBOverTBC\"\n                    ],\n                    \"position\": 0\n                }\n            ],\n            \"openingDownsizer\": 0,\n            \"peopleId\": \"8a009e3b4cf98131014cf98be85f0003\",\n            \"totalSuperBalances\": [\n                {\n                    \"amount\": 2173530.08,\n                    \"financialYear\": 2018\n                },\n                {\n                    \"amount\": 2180867.32,\n                    \"financialYear\": 2019\n                },\n                {\n                    \"amount\": 2155750.28,\n                    \"financialYear\": 2020\n                },\n                {\n                    \"amount\": 2149937.72,\n                    \"financialYear\": 2021\n                }\n            ]\n        },\n        {\n            \"birthday\": \"1970-07-01\",\n            \"concessionalContributions\": [\n                {\n                    \"amount\": 0,\n                    \"cap\": 30000,\n                    \"carryForwardOrigins\": [],\n                    \"financialYear\": 2016,\n                    \"labels\": [\n                        \"UnderCap\"\n                    ],\n                    \"maxCap\": 30000,\n                    \"position\": -30000,\n                    \"unusedCap\": 0\n                },\n                {\n                    \"amount\": 0,\n                    \"cap\": 30000,\n                    \"carryForwardOrigins\": [],\n                    \"financialYear\": 2017,\n                    \"labels\": [\n                        \"UnderCap\"\n                    ],\n                    \"maxCap\": 30000,\n                    \"position\": -30000,\n                    \"unusedCap\": 0\n                },\n                {\n                    \"amount\": 0,\n                    \"cap\": 25000,\n                    \"carryForwardOrigins\": [],\n                    \"financialYear\": 2018,\n                    \"labels\": [\n                        \"UnderCap\"\n                    ],\n                    \"maxCap\": 25000,\n                    \"position\": -25000,\n                    \"unusedCap\": 0\n                },\n                {\n                    \"amount\": 0,\n                    \"cap\": 25000,\n                    \"carryForwardOrigins\": [],\n                    \"cumulativeCarryForward\": 0,\n                    \"financialYear\": 2019,\n                    \"labels\": [\n                        \"UnderCap\",\n                        \"TSBOver500K\"\n                    ],\n                    \"maxCap\": 25000,\n                    \"position\": -25000,\n                    \"unusedCap\": 25000\n                },\n                {\n                    \"amount\": 0,\n                    \"cap\": 25000,\n                    \"carryForwardOrigins\": [\n                        {\n                            \"amount\": 25000,\n                            \"financialYear\": 2019\n                        }\n                    ],\n                    \"cumulativeCarryForward\": 0,\n                    \"financialYear\": 2020,\n                    \"labels\": [\n                        \"UnderCap\",\n                        \"TSBOver500K\"\n                    ],\n                    \"maxCap\": 25000,\n                    \"position\": -25000,\n                    \"unusedCap\": 25000\n                },\n                {\n                    \"amount\": 0,\n                    \"cap\": 25000,\n                    \"carryForwardOrigins\": [\n                        {\n                            \"amount\": 25000,\n                            \"financialYear\": 2019\n                        },\n                        {\n                            \"amount\": 25000,\n                            \"financialYear\": 2020\n                        }\n                    ],\n                    \"cumulativeCarryForward\": 0,\n                    \"financialYear\": 2021,\n                    \"labels\": [\n                        \"UnderCap\",\n                        \"TSBOver500K\"\n                    ],\n                    \"maxCap\": 25000,\n                    \"position\": -25000,\n                    \"unusedCap\": 25000\n                }\n            ],\n            \"contributionAccountId\": 222222636677,\n            \"downsizerAmount\": 0,\n            \"downsizerCap\": 300000,\n            \"firstName\": \"John\",\n            \"lastName\": \"Jones\",\n            \"memberAccountCode\": \"KINSAM00004A\",\n            \"memberAccountId\": 38744,\n            \"memberAccountStartDate\": \"2013-07-01\",\n            \"nonConcessionalContributions\": [\n                {\n                    \"amount\": 0,\n                    \"cap\": 0,\n                    \"financialYear\": 2018,\n                    \"labels\": [\n                        \"AtLimit\",\n                        \"TSBOverTBC\"\n                    ],\n                    \"position\": 0\n                },\n                {\n                    \"amount\": 0,\n                    \"cap\": 0,\n                    \"financialYear\": 2019,\n                    \"labels\": [\n                        \"AtLimit\",\n                        \"TSBOverTBC\"\n                    ],\n                    \"position\": 0\n                },\n                {\n                    \"amount\": 0,\n                    \"cap\": 0,\n                    \"financialYear\": 2020,\n                    \"labels\": [\n                        \"AtLimit\",\n                        \"TSBOverTBC\"\n                    ],\n                    \"position\": 0\n                },\n                {\n                    \"amount\": 0,\n                    \"cap\": 0,\n                    \"financialYear\": 2021,\n                    \"labels\": [\n                        \"AtLimit\",\n                        \"TSBOverTBC\"\n                    ],\n                    \"position\": 0\n                }\n            ],\n            \"openingDownsizer\": 0,\n            \"peopleId\": \"8a009fa04d0e810e014d1c11f6610001\",\n            \"totalSuperBalances\": [\n                {\n                    \"amount\": 2198407.8,\n                    \"financialYear\": 2018\n                },\n                {\n                    \"amount\": 2378777.45,\n                    \"financialYear\": 2019\n                },\n                {\n                    \"amount\": 2585856.52,\n                    \"financialYear\": 2020\n                },\n                {\n                    \"amount\": 2556059.19,\n                    \"financialYear\": 2021\n                }\n            ]\n        },\n        {\n            \"birthday\": \"1947-08-02\",\n            \"concessionalContributions\": [\n                {\n                    \"amount\": 0,\n                    \"cap\": 25000,\n                    \"carryForwardOrigins\": [\n                        {\n                            \"amount\": 0,\n                            \"financialYear\": 2019\n                        }\n                    ],\n                    \"cumulativeCarryForward\": 0,\n                    \"financialYear\": 2020,\n                    \"labels\": [\n                        \"UnderCap\",\n                        \"TSBOver500K\"\n                    ],\n                    \"maxCap\": 25000,\n                    \"position\": -25000,\n                    \"unusedCap\": 25000\n                },\n                {\n                    \"amount\": 0,\n                    \"cap\": 25000,\n                    \"carryForwardOrigins\": [\n                        {\n                            \"amount\": 0,\n                            \"financialYear\": 2019\n                        },\n                        {\n                            \"amount\": 25000,\n                            \"financialYear\": 2020\n                        }\n                    ],\n                    \"cumulativeCarryForward\": 0,\n                    \"financialYear\": 2021,\n                    \"labels\": [\n                        \"UnderCap\",\n                        \"TSBOver500K\"\n                    ],\n                    \"maxCap\": 25000,\n                    \"position\": -25000,\n                    \"unusedCap\": 25000\n                }\n            ],\n            \"contributionAccountId\": 222241748024,\n            \"downsizerAmount\": 0,\n            \"downsizerCap\": 300000,\n            \"firstName\": \"Mary\",\n            \"lastName\": \"Jones\",\n            \"memberAccountCode\": \"JONMAR30022A\",\n            \"memberAccountId\": 173757,\n            \"memberAccountStartDate\": \"2019-07-01\",\n            \"nonConcessionalContributions\": [\n                {\n                    \"amount\": 0,\n                    \"cap\": 0,\n                    \"financialYear\": 2020,\n                    \"labels\": [\n                        \"AtLimit\",\n                        \"TSBOverTBC\"\n                    ],\n                    \"position\": 0\n                },\n                {\n                    \"amount\": 0,\n                    \"cap\": 0,\n                    \"financialYear\": 2021,\n                    \"labels\": [\n                        \"AtLimit\",\n                        \"TSBOverTBC\"\n                    ],\n                    \"position\": 0\n                }\n            ],\n            \"openingDownsizer\": 0,\n            \"peopleId\": \"8a009ec44d0e83ba014d1c144e0d0003\",\n            \"totalSuperBalances\": [\n                {\n                    \"amount\": 1881474.32,\n                    \"financialYear\": 2020\n                },\n                {\n                    \"amount\": 1843837.5,\n                    \"financialYear\": 2021\n                }\n            ]\n        }\n    ],\n    \"financialYear\": 2021,\n    \"fundId\": \"8a009eba4dae37f3014db1c695380002\",\n    \"fundName\": \"The BGL Training Fund\"\n}"
                 }
               ]
-            },
-            {
-              "name": "Report - Member's Statement",
-              "_postman_id": "7ab143a3-98a2-4073-b7c2-01725d0f9284",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "auth": {
-                  "type": "oauth2",
-                  "oauth2": {}
-                },
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "value": "bearer {{token}}",
-                    "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
-                  }
-                ],
-                "url": {
-                  "raw": "{{baseUrl}}/sf/funds/:fundId/reports/membersStatement?start={{start}}&end={{end}}",
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "path": [
-                    "sf",
-                    "funds",
-                    ":fundId",
-                    "reports",
-                    "membersStatement"
-                  ],
-                  "query": [
-                    {
-                      "key": "start",
-                      "value": "{{start}}",
-                      "description": "[REQUIRED] Start Date of Report. Expected format : dd/MM/yyyy"
-                    },
-                    {
-                      "key": "end",
-                      "value": "{{end}}",
-                      "description": "[REQUIRED] End Date of Report. Expected format : dd/MM/yyyy"
-                    }
-                  ],
-                  "variable": [
-                    {
-                      "key": "fundId",
-                      "value": "{{fundId}}",
-                      "type": "string",
-                      "description": "[REQUIRED] Unique ID for the fund."
-                    }
-                  ]
-                },
-                "description": "The Member's Statement will report each Member Account's balances, movement, Preservation components and Taxation components for a period. \n</br>\n</br>\n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- investment\n- audit\n- smsf_partner\n\n### Response Body\n\n| Key | Type | Comments |\n|---- | ----| ----|\n| accounts | array | see accounts array | \n| addressId | String |UniqueID of address for a firm. If the address is used for multiple people or companies the id will be the same. |\n| country | String |Address - Country |\n| dob | Date | Person's Date of birth. ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601 |\n| email | string | Person's email address if known | \n| firstName | string | Perosn's first name | \n| lastName | string | Person's last name | \n| otherName | string | Person's other/middle names |\n| peopleId | string | UniqueID of the person for a firm. If a person is used for multiple companies or funds the id will be the same.|\n| phone | phone | person's phone number if known |\n| postcode | string | Address - Postcode |\n| state\t| string |\tList in ( VIC, NSW, QLD, WA, NSW, ACT, TAS, FOR) |\n|streetLine1 |\tString |\tAddress - Street Line 1 |\n|streetLine2 |\tString |\tAddress - Street Line 2 |\n| suburb |\tString |\tAddress - Suburb |\n| tfn |\tString |\twill return 'Provided' or 'Not Provided' |\n| title |\tString |\tTitle if known |\n\n**Accounts Array**\n\n| Key | Type | Comments |\n|---- | ----| ----|\n|accountDescription\t|String\t|Freeform description of account entered by the user|\n|accountPhase|\tObject\t|\"Accumulation\" or \"RetirementPhase\"|\n|accountType\t|Object\t|\"Accumulation\" or \"Pension\". A TRIS will always be regarded as a Pension for this field.|\n|balanceClosing |number |\tAccount Balance as at End Date requested |\n|balanceOpening\t| Number|\tAccount Balance as at Start Date requested |\n|balancePreserved |\tnumber |\tPreserved balance as at end date. |\n|balanceRestrictedNonPreserved|\tnumber\t|Restricted Non Preserved as at end date. |\n|balanceTaxable\t|number|\tMember's Taxable balance as at the end date. |\n|balanceTaxFree\t|number|\tMember's Tax-Free balance as at the end date. |\n|balanceUnrestrictedNonPreserved\t|number\t|Unrestricted Non Preserved balance as at end date. |\n|beneficiaries|\tArray|\tSee below|\n|decreaseBenefitsPaidTransfersOut|\tnumber|\tTotal Benefits Paid/Transfers Out recorded for the period|\n|decreaseContributionsTax|\tnumber|\tTotal Contributions Tax recorded for the period|\n|decreaseDivision293Tax\t|number|\tTotal Division 293 Tax recorded for the period|\n|decreaseExcessContributionsTax\t|number\t|Total Excess Contributions Tax recorded for the period|\n|decreaseIncomeTax|\tnumber\t|Total Income Tax recorded for the period|\n|decreaseInsurancePolicyPremiums|\tnumber\t|Total Insurance Policy Premiums Paid recorded for the period|\n|decreaseInternalTransferOut |\tnumber|\tTotal Internal Transfer Out  recorded for the period|\n|decreaseManagementFees|\tnumber|\tTotal Management Fees recorded for the period|\n|decreaseMemberExpenses\t|number\t|Total Member Expenses recorded for the period|\n|decreaseNoTFN ExcessTax\t|number|\tTotal No TFN Excess Contributions Tax recorded for the period|\n|decreasePensionsPaid|\tnumber|\tTotal Pensions Paid recorded for the period|\n|decreaseRefundExcessContributions|\tnumber|\tTotal Refund Excess Contributions recorded for the period|\n|decreaseSuperannuationSurchargeTax\t|number|\tTotal Superannuation Surcharge Tax recorded for the period|\n|endDate|\tDate|\tIf the account has been closed then the date is returned|\n|increaseEmployerContributions|\tnumber|\tTotal Employer Contributions recorded for the period|\n|increaseGovernmentCoContributions\t|number\t|Total Government Co-Contributions recorded for the period|\n|increaseInternalTransferIn\t|number|\tTotal Internal Transfer In  recorded for the period|\n|increaseNetEarnings\t|number|\tTotal Net Earnings  recorded for the period|\n|increasePersonalContributionsConcessional\t|number|\tTotal Personal Concessional Contributions recorded for the period|\n|increasePersonalContributionsNonConcessional\t|number|\tTotal Personal NCC Contributions recorded for the period|\n|increaseProceedsOfInsurancePolicies\t|number|\tTotal Proceeds of Insurance Policies  recorded for the period|\n|increaseTransfersIn\t|number|\tTotal Transfers In  recorded for the period|\n|memberCode\t|String\t|Member Code of Member Account  recorded for the period|\n|nominationBinding \t|boolean|\tFor Death Benefit Nominations, has been created as binding or non-binding|\n|nominationTimeframe\t|String|\t\"3 year Lapsing\" or \"Non Lapsing\". Used for Death Benefit Nominations|\n|nominationEndDate\t|Date|\tUsed for Death Benefit Nominations|\n|pensionSetupWithReversionaryBeneficiary\t|boolean|\t\"True\" or \"False: Has Pension been setup with a Reversionary Beneficiary|\n|pensionType\t|Object\t|List in (Accumulation = \"null\", Account-Based Pension = \"AccountBasedPension\", Market Linked Pension = \"MarketLinkedPension\", TRIS (Retirement Phase) = \"TRISRetirementPhase\", Transition to Retirement Pension = \"TransitionToRetirement\", Allocated Pension = \"AllocatedPension\", Complying Pension = \"ComplyingPension\")|\n|startDate|\tDate\t|The date the member account commenced in the fund|\n|taxFreeProportion|\tNumber|\tThe tax-free percentage of the member's account balance will display. This amount is automatically calculated based on the taxable and tax-free components of the member's balances upon pension commencement.|\n|totalDeathBenefit\t|Number|\tAccount Entitlement in the event of death. |\n|totalDisbabilityBenefit|\tNumber|\tAccount Entitlement in the event of a Permanent Disability. |\n|vestedBenefits|\tNumber|\tSuperannuation is said to vest in a member when the member becomes legally entitled to it|\n\n**Beneficiaries Array**\n\n| Key | Type | Comments |\n|---- | ----| ----|\n|firstName\t|String|\tPerson's first name|\n|lastName\t|String|\t|Person's last name|\n|nominationLastModified\t|Date|\tDate and time Beneficiary details were last modified. |\n|otherName\t|String|\tPerson's other/middle names|\n|peopleId\t|String|\tUniqueID of the person for a firm. If a person is used for multiple companies or funds the id will be the same.|\n|relationship\t|String|\tUser Entered e.g \"Spouse\"|\n|proportion\t|Number|\t1-100%|"
-              },
-              "response": [
-                {
-                  "id": "9a7b0d65-2b4f-4ebc-8713-c0ddae150952",
-                  "name": "200 - Report - Member's Statement",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [
-                      {
-                        "key": "Authorization",
-                        "value": "bearer {{token}}",
-                        "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
-                      }
-                    ],
-                    "url": {
-                      "raw": "{{baseUrl}}/sf/funds/:fundId/reports/membersStatement?start={{start}}&end={{end}}",
-                      "host": [
-                        "{{baseUrl}}"
-                      ],
-                      "path": [
-                        "sf",
-                        "funds",
-                        ":fundId",
-                        "reports",
-                        "membersStatement"
-                      ],
-                      "query": [
-                        {
-                          "key": "start",
-                          "value": "{{start}}",
-                          "description": "[REQUIRED] Start Date of Report. Expected format : dd/MM/yyyy"
-                        },
-                        {
-                          "key": "end",
-                          "value": "{{end}}",
-                          "description": "[REQUIRED] End Date of Report. Expected format : dd/MM/yyyy"
-                        }
-                      ],
-                      "variable": [
-                        {
-                          "description": "[REQUIRED] Unique ID for the fund.",
-                          "key": "fundId",
-                          "value": "{{fundId}}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "key": "Date",
-                      "value": "Mon, 14 Sep 2020 01:40:11 GMT"
-                    },
-                    {
-                      "key": "Content-Type",
-                      "value": "application/json;charset=UTF-8"
-                    },
-                    {
-                      "key": "Transfer-Encoding",
-                      "value": "chunked"
-                    },
-                    {
-                      "key": "Connection",
-                      "value": "keep-alive"
-                    },
-                    {
-                      "key": "Server",
-                      "value": "nginx"
-                    },
-                    {
-                      "key": "X-Rate-Daily-Limit-Remaining",
-                      "value": "-1"
-                    },
-                    {
-                      "key": "vary",
-                      "value": "accept-encoding"
-                    },
-                    {
-                      "key": "Content-Encoding",
-                      "value": "gzip"
-                    },
-                    {
-                      "key": "X-Content-Type-Options",
-                      "value": "nosniff"
-                    },
-                    {
-                      "key": "Content-Security-Policy",
-                      "value": "frame-ancestors 'self' staging.sf360.com.au"
-                    },
-                    {
-                      "key": "X-Frame-Options",
-                      "value": "ALLOW-FROM https://staging.sf360.com.au"
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{\n    \"members\": [\n        {\n            \"accounts\": [\n                {\n                    \"accountDescription\": \"Pension\",\n                    \"accountPhase\": \"Retirement Phase\",\n                    \"accountType\": \"Pension\",\n                    \"balanceClosing\": 542290,\n                    \"balanceOpening\": 535467,\n                    \"balancePreserved\": 0,\n                    \"balanceRestrictedNonPreserved\": 0,\n                    \"balanceTaxFree\": 62779,\n                    \"balanceTaxable\": 479511,\n                    \"balanceUnrestrictedNonPreserved\": 542290,\n                    \"beneficiaries\": [\n                        {\n                            \"firstName\": \"Mary\",\n                            \"lastName\": \"Jones\",\n                            \"nominationLastModified\": \"2020-09-14\",\n                            \"otherName\": null,\n                            \"peopleId\": \"8ad08b356cf44a92016cf597be3a003a\",\n                            \"proportion\": 100,\n                            \"relationship\": \"Wife\"\n                        }\n                    ],\n                    \"decreaseBenefitsPaidTransfersOut\": 0,\n                    \"decreaseContributionsTax\": 0,\n                    \"decreaseDivision293Tax\": 0,\n                    \"decreaseExcessContributionsTax\": 0,\n                    \"decreaseIncomeTax\": 0,\n                    \"decreaseInsurancePolicyPremiums\": 0,\n                    \"decreaseInternalTransferOut\": 0,\n                    \"decreaseManagementFees\": 0,\n                    \"decreaseMemberExpenses\": 0,\n                    \"decreaseNoTFNExcessTax\": 0,\n                    \"decreasePensionsPaid\": 0,\n                    \"decreaseRefundExcessContributions\": 0,\n                    \"decreaseSuperannuationSurchargeTax\": 0,\n                    \"endDate\": \"\",\n                    \"increaseEmployerContributions\": 0,\n                    \"increaseGovernmentCoContributions\": 0,\n                    \"increaseInternalTransferIn\": 0,\n                    \"increaseNetEarnings\": 6823,\n                    \"increaseOtherContributions\": 0,\n                    \"increasePersonalContributionsConcessional\": 0,\n                    \"increasePersonalContributionsNonConcessional\": 0,\n                    \"increaseProceedsOfInsurancePolicies\": 0,\n                    \"increaseTransfersIn\": 0,\n                    \"memberCode\": \"JONJOH00001P\",\n                    \"nominationBinding\": true,\n                    \"nominationEndDate\": null,\n                    \"nominationTimeframe\": \"NonLapsing\",\n                    \"pensionSetupWithReversionaryBeneficiary\": false,\n                    \"pensionType\": \"AccountBasedPension\",\n                    \"startDate\": \"1994-06-14\",\n                    \"taxFreeProportion\": 11.58,\n                    \"totalDeathBenefit\": 1542290,\n                    \"totalDisbabilityBenefit\": 0,\n                    \"vestedBenefits\": 542290\n                },\n                {\n                    \"accountDescription\": \"Accumulation\",\n                    \"accountPhase\": \"Accumulation Phase\",\n                    \"accountType\": \"Accumulation\",\n                    \"balanceClosing\": 546206,\n                    \"balanceOpening\": 519362,\n                    \"balancePreserved\": 0,\n                    \"balanceRestrictedNonPreserved\": 0,\n                    \"balanceTaxFree\": 520000,\n                    \"balanceTaxable\": 26206,\n                    \"balanceUnrestrictedNonPreserved\": 546206,\n                    \"beneficiaries\": [],\n                    \"decreaseBenefitsPaidTransfersOut\": 0,\n                    \"decreaseContributionsTax\": 3750,\n                    \"decreaseDivision293Tax\": 0,\n                    \"decreaseExcessContributionsTax\": 0,\n                    \"decreaseIncomeTax\": 1035,\n                    \"decreaseInsurancePolicyPremiums\": 0,\n                    \"decreaseInternalTransferOut\": 0,\n                    \"decreaseManagementFees\": 0,\n                    \"decreaseMemberExpenses\": 0,\n                    \"decreaseNoTFNExcessTax\": 0,\n                    \"decreasePensionsPaid\": 0,\n                    \"decreaseRefundExcessContributions\": 0,\n                    \"decreaseSuperannuationSurchargeTax\": 0,\n                    \"endDate\": \"\",\n                    \"increaseEmployerContributions\": 0,\n                    \"increaseGovernmentCoContributions\": 0,\n                    \"increaseInternalTransferIn\": 0,\n                    \"increaseNetEarnings\": 6629,\n                    \"increaseOtherContributions\": 0,\n                    \"increasePersonalContributionsConcessional\": 25000,\n                    \"increasePersonalContributionsNonConcessional\": 0,\n                    \"increaseProceedsOfInsurancePolicies\": 0,\n                    \"increaseTransfersIn\": 0,\n                    \"memberCode\": \"JONJOH00002A\",\n                    \"nominationBinding\": false,\n                    \"nominationEndDate\": null,\n                    \"nominationTimeframe\": null,\n                    \"pensionSetupWithReversionaryBeneficiary\": false,\n                    \"pensionType\": null,\n                    \"startDate\": \"1994-06-14\",\n                    \"taxFreeProportion\": null,\n                    \"totalDeathBenefit\": null,\n                    \"totalDisbabilityBenefit\": null,\n                    \"vestedBenefits\": 546206\n                }\n            ],\n            \"addressId\": \"18435\",\n            \"country\": \"AUSTRALIA\",\n            \"dob\": \"1947-09-05\",\n            \"email\": null,\n            \"firstName\": \"John\",\n            \"lastName\": \"Jones\",\n            \"otherName\": null,\n            \"peopleId\": \"8ad08bf35f7b8296015fb8492c2200dd\",\n            \"phone\": \"0396960000\",\n            \"postcode\": \"3205\",\n            \"state\": \"VICTORIA\",\n            \"streetLine1\": \"12 Market Street\",\n            \"streetLine2\": null,\n            \"suburb\": \"South Melbourne\",\n            \"tfn\": \"Provided\",\n            \"title\": null\n        },\n        {\n            \"accounts\": [\n                {\n                    \"accountDescription\": \"Accumulation\",\n                    \"accountPhase\": \"Accumulation Phase\",\n                    \"accountType\": \"Accumulation\",\n                    \"balanceClosing\": 977776,\n                    \"balanceOpening\": 843027,\n                    \"balancePreserved\": 968652,\n                    \"balanceRestrictedNonPreserved\": 0,\n                    \"balanceTaxFree\": 414235,\n                    \"balanceTaxable\": 563541,\n                    \"balanceUnrestrictedNonPreserved\": 9124,\n                    \"beneficiaries\": [],\n                    \"decreaseBenefitsPaidTransfersOut\": 0,\n                    \"decreaseContributionsTax\": 2010,\n                    \"decreaseDivision293Tax\": 0,\n                    \"decreaseExcessContributionsTax\": 0,\n                    \"decreaseIncomeTax\": 1688,\n                    \"decreaseInsurancePolicyPremiums\": 0,\n                    \"decreaseInternalTransferOut\": 0,\n                    \"decreaseManagementFees\": 0,\n                    \"decreaseMemberExpenses\": 0,\n                    \"decreaseNoTFNExcessTax\": 0,\n                    \"decreasePensionsPaid\": 0,\n                    \"decreaseRefundExcessContributions\": 0,\n                    \"decreaseSuperannuationSurchargeTax\": 0,\n                    \"endDate\": \"\",\n                    \"increaseEmployerContributions\": 0,\n                    \"increaseGovernmentCoContributions\": 0,\n                    \"increaseInternalTransferIn\": 0,\n                    \"increaseNetEarnings\": 10812,\n                    \"increaseOtherContributions\": 0,\n                    \"increasePersonalContributionsConcessional\": 13400,\n                    \"increasePersonalContributionsNonConcessional\": 114235,\n                    \"increaseProceedsOfInsurancePolicies\": 0,\n                    \"increaseTransfersIn\": 0,\n                    \"memberCode\": \"JONMAR00001A\",\n                    \"nominationBinding\": false,\n                    \"nominationEndDate\": null,\n                    \"nominationTimeframe\": null,\n                    \"pensionSetupWithReversionaryBeneficiary\": false,\n                    \"pensionType\": null,\n                    \"startDate\": \"1994-06-14\",\n                    \"taxFreeProportion\": null,\n                    \"totalDeathBenefit\": 1977776,\n                    \"totalDisbabilityBenefit\": 0,\n                    \"vestedBenefits\": 977776\n                }\n            ],\n            \"addressId\": \"18435\",\n            \"country\": \"AUSTRALIA\",\n            \"dob\": \"1948-08-17\",\n            \"email\": null,\n            \"firstName\": \"Mary\",\n            \"lastName\": \"Jones\",\n            \"otherName\": null,\n            \"peopleId\": \"8ad08bf35f7b8296015fb8492c2900df\",\n            \"phone\": \"0396960000\",\n            \"postcode\": \"3205\",\n            \"state\": \"VICTORIA\",\n            \"streetLine1\": \"12 Market Street\",\n            \"streetLine2\": null,\n            \"suburb\": \"South Melbourne\",\n            \"tfn\": \"Provided\",\n            \"title\": null\n        }\n    ]\n}"
-                }
-              ]
-            },
-            {
-              "name": "Report - Pension Summary",
-              "_postman_id": "d5bf5916-9325-4e99-b338-a2304443717d",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "auth": {
-                  "type": "oauth2",
-                  "oauth2": {}
-                },
-                "method": "GET",
-                "header": [
-                  {
-                    "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
-                    "key": "Authorization",
-                    "value": "bearer {{token}}"
-                  }
-                ],
-                "url": {
-                  "raw": "{{baseUrl}}/sf/funds/:fundId/reports/pensionSummary?financialYear={{financialYear}}",
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "path": [
-                    "sf",
-                    "funds",
-                    ":fundId",
-                    "reports",
-                    "pensionSummary"
-                  ],
-                  "query": [
-                    {
-                      "key": "financialYear",
-                      "value": "{{financialYear}}",
-                      "description": "[REQUIRED] The Financial Year of the  report. Expected format : yyyy"
-                    }
-                  ],
-                  "variable": [
-                    {
-                      "key": "fundId",
-                      "value": "{{fundId}}",
-                      "type": "string",
-                      "description": "[REQUIRED] Unique ID for the fund"
-                    }
-                  ]
-                },
-                "description": "Allows you to retrieve a Pension Sumary for  fund based on a Financial Year.\n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- investment\n- audit\n- smsf_partner\n\n### Response\n\n\n**Fund Data**\n\n| Field | Data Type | Comments |\n| -------- | -------- | -------- |\n| financialYear     | date     | YYYY - The financial year of the report     |\n| fundName     | string     | The name of the fund     |\n| fundId     | Text     | The Fund Identificaion Number. This is unique across all of Simple Fund 360.    |\n| fundAmountToReachMinimum     | number     | The total amount required for the fund to reach the minimum for all pensions.   |\n| fundGrossPensionPayments     | number     | The total pension payments recorded for all pension members of the fund     |\n| fundMinimum     | number     | The combined minimum amount for all pension members of the fund      |\n| fundPensionPayments     | number     | The total pension payments recorded for all pension members of the fund less PAYG.    |\n| fundPayg     | number     | The total PAYG withheld which has been recorded for all pension members    |\n| pensions     | array     | see below     |\n\n**Pensions Array**\n\n | Field | Data Type | Comments |\n| -------- | -------- | -------- |\n| peopleId     | string     | Unique Identifier of person in Simple Fund 360     |\n| contactId     | string     | Unique Identifier of person in Simple Fund 360     |\n| accounts     | array     | see below     |\n\n**Accounts Array**\n\n | Field | Data Type | Comments |\n| -------- | -------- | -------- |\n| accountDescription     | string     | Description entered by the user for the Pension Account     |\n| accountPhase     | string     | will return either \"Retirement Phase\" or \"Accumulation\"     |\n| amountToReachMinimum     | number     | number of dollars required for this pension to reach the minimum     |\n| endDate     | date     | yyyy-MM-dd : The end date of the pension if the account ceased during the Financial Year of the report.      |\n| grossPensionPayments     | number     | The total pension payments recorded for this pension account for the Financial Year   |\n| memberCode     | string     | The member code assigned to this Pension Account. This will also be equal to the sub-account code on other APIs     |\n| minimum     | number     | The Minimum Pension amount required for this Pension Account for the Financial Year.      |\n| maximum     | number     | The Maximum Pension amount (if applicable) required for this Pension Account for the Financial Year.      |\n| netPensionPayments     | number     | The total pension payments recorded for this pension account for the Financial Year  less PAYG payments     |\n| note   | string     | Addtional details were pensionhas reverted   |\n| openingBalance     | number     | The Balanace of the account as at July 1st of the Financial Year or the Penson startDate if the income stream commenced during the Financial Year.      |\n| payg     | number     | The total PAYG amount withheld which has been recorded this Pension Account for the Financial Year.      |\n| pensionType     | string     | Type of Pension     |\n| reversionAccountCode     | string     | The Account Code, the Pension reverted from.      |\n| reversionDate     | date     | Date original Pension reverted to Beneficiary    |\n| reversionaryPensionDateOfDeath     | Date     | Date of death for orignal pension member    |\n| startDate     | date     | The Start Date of this Pension     |\n| taxFreeProportion     | number     | The Tax Free proportion recorded for this Pension Account     |"
-              },
-              "response": [
-                {
-                  "id": "51b7717e-b942-47f5-9fd5-8f8eff5be1e2",
-                  "name": "200 Response - 2018 FY",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [
-                      {
-                        "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
-                        "key": "Authorization",
-                        "value": "bearer {{token}}"
-                      }
-                    ],
-                    "url": {
-                      "raw": "{{baseUrl}}/sf/funds/:fundId/reports/pensionSummary?financialYear={{financialYear}}",
-                      "host": [
-                        "{{baseUrl}}"
-                      ],
-                      "path": [
-                        "sf",
-                        "funds",
-                        ":fundId",
-                        "reports",
-                        "pensionSummary"
-                      ],
-                      "query": [
-                        {
-                          "key": "financialYear",
-                          "value": "{{financialYear}}",
-                          "description": "[REQUIRED] The Financial Year of the  report. Expected format : yyyy"
-                        }
-                      ],
-                      "variable": [
-                        {
-                          "key": "fundId",
-                          "value": "{{fundId}}",
-                          "description": "[REQUIRED] Unique ID for the fund"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "key": "Date",
-                      "value": "Wed, 17 Jun 2020 02:20:25 GMT"
-                    },
-                    {
-                      "key": "Content-Type",
-                      "value": "application/json;charset=UTF-8"
-                    },
-                    {
-                      "key": "Transfer-Encoding",
-                      "value": "chunked"
-                    },
-                    {
-                      "key": "Connection",
-                      "value": "keep-alive"
-                    },
-                    {
-                      "key": "Server",
-                      "value": "nginx"
-                    },
-                    {
-                      "key": "X-Rate-Daily-Limit-Remaining",
-                      "value": "-1"
-                    },
-                    {
-                      "key": "vary",
-                      "value": "accept-encoding"
-                    },
-                    {
-                      "key": "Content-Encoding",
-                      "value": "gzip"
-                    },
-                    {
-                      "key": "X-Content-Type-Options",
-                      "value": "nosniff"
-                    },
-                    {
-                      "key": "Content-Security-Policy",
-                      "value": "frame-ancestors 'self' uat.sf360.com.au"
-                    },
-                    {
-                      "key": "X-Frame-Options",
-                      "value": "ALLOW-FROM https://uat.sf360.com.au"
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{\n    \"financialYear\": \"2018\",\n    \"fundAmountToReachMinimum\": 8320,\n    \"fundGrossPensionPayments\": 16500,\n    \"fundId\": \"8ad08af2632421da0163247db6d10005\",\n    \"fundMinimum\": 24820,\n    \"fundName\": \"Jones Retirement Fund\",\n    \"fundPayg\": 0,\n    \"fundPensionPayments\": 16500,\n    \"pensions\": [\n        {\n            \"accounts\": [\n                {\n                    \"accountDescription\": \"Account Based Pension\",\n                    \"accountPhase\": \"Retirement Phase\",\n                    \"amountToReachMinimum\": 30,\n                    \"endDate\": null,\n                    \"grossPensionPayments\": 0,\n                    \"maximum\": 0,\n                    \"memberCode\": \"JONJOH30020P\",\n                    \"minimum\": 30,\n                    \"netPensionPayments\": 0,\n                    \"note\": \"\",\n                    \"openingBalance\": 7962.53,\n                    \"payg\": 0,\n                    \"pensionType\": \"Account Based Pension\",\n                    \"reversionAccountCode\": null,\n                    \"reversionDate\": null,\n                    \"reversionaryPensionDateOfDeath\": null,\n                    \"startDate\": \"30/05/2018\",\n                    \"taxFreeProportion\": 0\n                }\n            ],\n            \"contactId\": \"8a009e3b4cf98131014cf98b58750000\",\n            \"peopleId\": \"8a009e3b4cf98131014cf98b587e0001\"\n        },\n        {\n            \"accounts\": [\n                {\n                    \"accountDescription\": \"Account Based Pension\",\n                    \"accountPhase\": \"Retirement Phase\",\n                    \"amountToReachMinimum\": 8290,\n                    \"endDate\": null,\n                    \"grossPensionPayments\": 16500,\n                    \"maximum\": 0,\n                    \"memberCode\": \"JONMAR30021P\",\n                    \"minimum\": 24790,\n                    \"netPensionPayments\": 16500,\n                    \"note\": \"\",\n                    \"openingBalance\": 500000,\n                    \"payg\": 0,\n                    \"pensionType\": \"Account Based Pension\",\n                    \"reversionAccountCode\": null,\n                    \"reversionDate\": null,\n                    \"reversionaryPensionDateOfDeath\": null,\n                    \"startDate\": \"04/07/2017\",\n                    \"taxFreeProportion\": 60\n                }\n            ],\n            \"contactId\": \"8a009ec44d0e83ba014d1c144e0a0002\",\n            \"peopleId\": \"8a009ec44d0e83ba014d1c144e0d0003\"\n        }\n    ]\n}"
-                }
-              ]
             }
           ],
           "_postman_id": "321f36db-5a8c-4eee-b3d3-7d6bb9d4361c",
@@ -3462,6 +3162,306 @@
                   "cookie": [],
                   "responseTime": null,
                   "body": "{\n    \"investmentSummaryWithSource\": {\n        \"fundId\": \"8a9c9e744ebc893a014ebd429dea000c\",\n        \"start\": \"2017-06-30T14:00:00Z\",\n        \"end\": \"2018-06-30T13:59:59Z\",\n        \"data\": [\n            {\n                \"securityCode\": null,\n                \"securityType\": null,\n                \"investType\": null,\n                \"marketPriceDate\": null,\n                \"units\": null,\n                \"marketPrice\": 188096.5,\n                \"averageCost\": 188096.5,\n                \"accountingCost\": 188096.5,\n                \"currentYearUnRealisedMovement\": null,\n                \"portfolioWeight\": 0,\n                \"unRealisedMovement\": null,\n                \"dataSource\": \"SF360\",\n                \"controlChartAccountCode\": \"60400\",\n                \"controlChartAccountName\": \"Cash/Bank Accounts\",\n                \"subChartAccountName\": \"CBA BANK\",\n                \"subChartAccountCode\": \"bank\",\n                \"marketValueAsPerLedger\": 188096.5,\n                \"marketValue\": 188096.5\n            },\n            {\n                \"securityCode\": null,\n                \"securityType\": null,\n                \"investType\": null,\n                \"marketPriceDate\": null,\n                \"units\": null,\n                \"marketPrice\": 116000,\n                \"averageCost\": 116000,\n                \"accountingCost\": 116000,\n                \"currentYearUnRealisedMovement\": null,\n                \"portfolioWeight\": 0,\n                \"unRealisedMovement\": null,\n                \"dataSource\": \"SF360\",\n                \"controlChartAccountCode\": \"60800\",\n                \"controlChartAccountName\": \"Cash/Bank Accounts\",\n                \"subChartAccountName\": \"TD Macquarie\",\n                \"subChartAccountCode\": \"TD001\",\n                \"marketValueAsPerLedger\": 116000,\n                \"marketValue\": 116000\n            },\n            {\n                \"securityCode\": \"CFM0404AU\",\n                \"securityType\": null,\n                \"investType\": \"UUT\",\n                \"marketPriceDate\": \"2017-08-28\",\n                \"units\": 10000,\n                \"marketPrice\": 1.3789,\n                \"averageCost\": 10,\n                \"accountingCost\": 100000,\n                \"currentYearUnRealisedMovement\": -0.86,\n                \"portfolioWeight\": 0,\n                \"unRealisedMovement\": -86211,\n                \"dataSource\": \"SF360\",\n                \"controlChartAccountCode\": \"78200\",\n                \"controlChartAccountName\": \"Units in Listed Unit Trusts (Australian)\",\n                \"subChartAccountName\": \"CFS WS Aust Share Fund Core\",\n                \"subChartAccountCode\": \"CFM0404AU\",\n                \"marketValueAsPerLedger\": 100000,\n                \"marketValue\": 13789\n            },\n            {\n                \"securityCode\": \"AAPL.NDQ\",\n                \"securityType\": \"Ordinary_Shares\",\n                \"investType\": \"NASDAQ\",\n                \"marketPriceDate\": \"2017-08-29\",\n                \"units\": 100,\n                \"marketPrice\": 205.5387,\n                \"averageCost\": 100,\n                \"accountingCost\": 10000,\n                \"currentYearUnRealisedMovement\": 1.06,\n                \"portfolioWeight\": 0,\n                \"unRealisedMovement\": 10553.87,\n                \"dataSource\": \"SF360\",\n                \"controlChartAccountCode\": \"77700\",\n                \"controlChartAccountName\": \"Shares in Listed Companies (Overseas)\",\n                \"subChartAccountName\": \"Apple Inc.\",\n                \"subChartAccountCode\": \"AAPL.NDQ2\",\n                \"marketValueAsPerLedger\": 10000,\n                \"marketValue\": 20553.87\n            },\n            {\n                \"securityCode\": \"5smithst\",\n                \"securityType\": \"Ordinary_Shares\",\n                \"investType\": \"MANUAL\",\n                \"marketPriceDate\": \"2016-06-30\",\n                \"units\": 1,\n                \"marketPrice\": 600000,\n                \"averageCost\": 750000,\n                \"accountingCost\": 750000,\n                \"currentYearUnRealisedMovement\": -0.2,\n                \"portfolioWeight\": 0,\n                \"unRealisedMovement\": -150000,\n                \"dataSource\": \"SF360\",\n                \"controlChartAccountCode\": \"77200\",\n                \"controlChartAccountName\": \"Real Estate Properties ( Australian - Residential)\",\n                \"subChartAccountName\": \"5 Smith Street, Collingwood\",\n                \"subChartAccountCode\": \"5smithst\",\n                \"marketValueAsPerLedger\": 750000,\n                \"marketValue\": 600000\n            },\n            {\n                \"securityCode\": null,\n                \"securityType\": null,\n                \"investType\": null,\n                \"marketPriceDate\": null,\n                \"units\": null,\n                \"marketPrice\": 83011.97,\n                \"averageCost\": 83011.97,\n                \"accountingCost\": 83011.97,\n                \"currentYearUnRealisedMovement\": null,\n                \"portfolioWeight\": 0,\n                \"unRealisedMovement\": null,\n                \"dataSource\": \"CSVBank\",\n                \"controlChartAccountCode\": \"60400\",\n                \"controlChartAccountName\": \"Cash/Bank Accounts\",\n                \"subChartAccountName\": \"CBA BANK\",\n                \"subChartAccountCode\": \"bank\",\n                \"marketValueAsPerLedger\": 83011.97,\n                \"marketValue\": 83011.97\n            },\n            {\n                \"securityCode\": \"01OO.L\",\n                \"securityType\": \"Ordinary_Shares\",\n                \"investType\": \"LSE\",\n                \"marketPriceDate\": null,\n                \"units\": 1000,\n                \"marketPrice\": 0,\n                \"averageCost\": 10,\n                \"accountingCost\": 10000,\n                \"currentYearUnRealisedMovement\": -1,\n                \"portfolioWeight\": 0,\n                \"unRealisedMovement\": -10000,\n                \"dataSource\": \"SF360\",\n                \"controlChartAccountCode\": \"77600\",\n                \"controlChartAccountName\": \"Shares in Listed Companies (Australian)\",\n                \"subChartAccountName\": \"NORDIC INVESTMENT BANK 5.25% BDS 26/11/2019 GBP(VAR)\",\n                \"subChartAccountCode\": \"01OO.L\",\n                \"marketValueAsPerLedger\": 10000,\n                \"marketValue\": 0\n            },\n            {\n                \"securityCode\": \"A2M.AX\",\n                \"securityType\": \"Ordinary_Shares\",\n                \"investType\": \"ASX\",\n                \"marketPriceDate\": \"2017-08-29\",\n                \"units\": 100000,\n                \"marketPrice\": 5.02,\n                \"averageCost\": 0.8,\n                \"accountingCost\": 80000,\n                \"currentYearUnRealisedMovement\": 5.28,\n                \"portfolioWeight\": 0,\n                \"unRealisedMovement\": 422000,\n                \"dataSource\": \"CSVBroker\",\n                \"controlChartAccountCode\": \"77600\",\n                \"controlChartAccountName\": \"Shares in Listed Companies (Australian)\",\n                \"subChartAccountName\": \"The A2 Milk Company Limited\",\n                \"subChartAccountCode\": \"A2M.AX\",\n                \"marketValueAsPerLedger\": 80000,\n                \"marketValue\": 502000\n            },\n            {\n                \"securityCode\": \"CBA.AX\",\n                \"securityType\": \"Ordinary_Shares\",\n                \"investType\": \"ASX\",\n                \"marketPriceDate\": \"2017-08-29\",\n                \"units\": 3159,\n                \"marketPrice\": 75.73,\n                \"averageCost\": 65.24,\n                \"accountingCost\": 206090.48,\n                \"currentYearUnRealisedMovement\": 0.16,\n                \"portfolioWeight\": 0,\n                \"unRealisedMovement\": 33140.59,\n                \"dataSource\": \"SF360\",\n                \"controlChartAccountCode\": \"77600\",\n                \"controlChartAccountName\": \"Shares in Listed Companies (Australian)\",\n                \"subChartAccountName\": \"Commonwealth Bank Of Australia.\",\n                \"subChartAccountCode\": \"CBA.AX\",\n                \"marketValueAsPerLedger\": 206090.48,\n                \"marketValue\": 239231.07\n            },\n            {\n                \"securityCode\": \"CLH.AX\",\n                \"securityType\": \"Ordinary_Shares\",\n                \"investType\": \"ASX\",\n                \"marketPriceDate\": \"2017-08-29\",\n                \"units\": 818,\n                \"marketPrice\": 1.32,\n                \"averageCost\": 0.95,\n                \"accountingCost\": 780,\n                \"currentYearUnRealisedMovement\": 0.38,\n                \"portfolioWeight\": 0,\n                \"unRealisedMovement\": 299.76,\n                \"dataSource\": \"SF360\",\n                \"controlChartAccountCode\": \"77600\",\n                \"controlChartAccountName\": \"Shares in Listed Companies (Australian)\",\n                \"subChartAccountName\": \"Collection House Limited\",\n                \"subChartAccountCode\": \"CLH.AX\",\n                \"marketValueAsPerLedger\": 780,\n                \"marketValue\": 1079.76\n            },\n            {\n                \"securityCode\": \"MQG.AX\",\n                \"securityType\": \"Ordinary_Shares\",\n                \"investType\": \"ASX\",\n                \"marketPriceDate\": \"2017-08-29\",\n                \"units\": 1589,\n                \"marketPrice\": 86.13,\n                \"averageCost\": 60.43,\n                \"accountingCost\": 96015.7,\n                \"currentYearUnRealisedMovement\": 0.43,\n                \"portfolioWeight\": 0,\n                \"unRealisedMovement\": 40844.87,\n                \"dataSource\": \"SF360\",\n                \"controlChartAccountCode\": \"77600\",\n                \"controlChartAccountName\": \"Shares in Listed Companies (Australian)\",\n                \"subChartAccountName\": \"Macquarie Group Limited\",\n                \"subChartAccountCode\": \"MQG.AX\",\n                \"marketValueAsPerLedger\": 96015.7,\n                \"marketValue\": 136860.57\n            },\n            {\n                \"securityCode\": \"CLH.AX\",\n                \"securityType\": \"Ordinary_Shares\",\n                \"investType\": \"ASX\",\n                \"marketPriceDate\": \"2017-08-29\",\n                \"units\": 20000,\n                \"marketPrice\": 1.32,\n                \"averageCost\": 1.05,\n                \"accountingCost\": 21000,\n                \"currentYearUnRealisedMovement\": 0.26,\n                \"portfolioWeight\": 0,\n                \"unRealisedMovement\": 5400,\n                \"dataSource\": \"CSVBroker\",\n                \"controlChartAccountCode\": \"77600\",\n                \"controlChartAccountName\": \"Shares in Listed Companies (Australian)\",\n                \"subChartAccountName\": \"Collection House Limited\",\n                \"subChartAccountCode\": \"CLH.AX\",\n                \"marketValueAsPerLedger\": 21000,\n                \"marketValue\": 26400\n            },\n            {\n                \"securityCode\": \"NAB.AX\",\n                \"securityType\": \"Ordinary_Shares\",\n                \"investType\": \"ASX\",\n                \"marketPriceDate\": \"2017-08-29\",\n                \"units\": 970,\n                \"marketPrice\": 30.08,\n                \"averageCost\": 44.54,\n                \"accountingCost\": 43200.77,\n                \"currentYearUnRealisedMovement\": -0.32,\n                \"portfolioWeight\": 0,\n                \"unRealisedMovement\": -14023.17,\n                \"dataSource\": \"SF360\",\n                \"controlChartAccountCode\": \"77600\",\n                \"controlChartAccountName\": \"Shares in Listed Companies (Australian)\",\n                \"subChartAccountName\": \"National Australia Bank Limited\",\n                \"subChartAccountCode\": \"NAB.AX\",\n                \"marketValueAsPerLedger\": 43200.77,\n                \"marketValue\": 29177.6\n            },\n            {\n                \"securityCode\": \"TLS.AX\",\n                \"securityType\": \"Ordinary_Shares\",\n                \"investType\": \"ASX\",\n                \"marketPriceDate\": \"2017-08-29\",\n                \"units\": 10000,\n                \"marketPrice\": 3.84,\n                \"averageCost\": 5,\n                \"accountingCost\": 50000,\n                \"currentYearUnRealisedMovement\": -0.23,\n                \"portfolioWeight\": 0,\n                \"unRealisedMovement\": -11600,\n                \"dataSource\": \"SF360\",\n                \"controlChartAccountCode\": \"77600\",\n                \"controlChartAccountName\": \"Shares in Listed Companies (Australian)\",\n                \"subChartAccountName\": \"Telstra Corporation Limited.\",\n                \"subChartAccountCode\": \"TLS.AX\",\n                \"marketValueAsPerLedger\": 50000,\n                \"marketValue\": 38400\n            },\n            {\n                \"securityCode\": \"RRL.AX\",\n                \"securityType\": \"Ordinary_Shares\",\n                \"investType\": \"ASX\",\n                \"marketPriceDate\": \"2017-08-29\",\n                \"units\": 40000,\n                \"marketPrice\": 4.05,\n                \"averageCost\": 2.5,\n                \"accountingCost\": 100000,\n                \"currentYearUnRealisedMovement\": 0.62,\n                \"portfolioWeight\": 0,\n                \"unRealisedMovement\": 62000,\n                \"dataSource\": \"CSVBroker\",\n                \"controlChartAccountCode\": \"77600\",\n                \"controlChartAccountName\": \"Shares in Listed Companies (Australian)\",\n                \"subChartAccountName\": \"Regis Resources Limited\",\n                \"subChartAccountCode\": \"RRL.AX\",\n                \"marketValueAsPerLedger\": 100000,\n                \"marketValue\": 162000\n            },\n            {\n                \"securityCode\": \"TSE.AX\",\n                \"securityType\": \"Ordinary_Shares\",\n                \"investType\": \"ASX\",\n                \"marketPriceDate\": \"2015-11-03\",\n                \"units\": 20000,\n                \"marketPrice\": 1.055,\n                \"averageCost\": 1,\n                \"accountingCost\": 20000,\n                \"currentYearUnRealisedMovement\": 0.06,\n                \"portfolioWeight\": 0,\n                \"unRealisedMovement\": 1100,\n                \"dataSource\": \"CSVBroker\",\n                \"controlChartAccountCode\": \"77600\",\n                \"controlChartAccountName\": \"Shares in Listed Companies (Australian)\",\n                \"subChartAccountName\": \"Transfield Services Limited\",\n                \"subChartAccountCode\": \"TSE.AX\",\n                \"marketValueAsPerLedger\": 20000,\n                \"marketValue\": 21100\n            },\n            {\n                \"securityCode\": \"VOC.AX\",\n                \"securityType\": \"Ordinary_Shares\",\n                \"investType\": \"ASX\",\n                \"marketPriceDate\": \"2017-08-29\",\n                \"units\": 6667,\n                \"marketPrice\": 2.39,\n                \"averageCost\": 7.5,\n                \"accountingCost\": 50000,\n                \"currentYearUnRealisedMovement\": -0.68,\n                \"portfolioWeight\": 0,\n                \"unRealisedMovement\": -34065.87,\n                \"dataSource\": \"CSVBroker\",\n                \"controlChartAccountCode\": \"77600\",\n                \"controlChartAccountName\": \"Shares in Listed Companies (Australian)\",\n                \"subChartAccountName\": \"Vocus Communications Limited\",\n                \"subChartAccountCode\": \"VOC.AX\",\n                \"marketValueAsPerLedger\": 50000,\n                \"marketValue\": 15934.13\n            }\n        ]\n    }\n}"
+                }
+              ]
+            },
+            {
+              "name": "Report - Member's Statement",
+              "_postman_id": "7ab143a3-98a2-4073-b7c2-01725d0f9284",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "oauth2",
+                  "oauth2": {}
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "bearer {{token}}",
+                    "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/sf/funds/:fundId/reports/membersStatement?start={{start}}&end={{end}}",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "sf",
+                    "funds",
+                    ":fundId",
+                    "reports",
+                    "membersStatement"
+                  ],
+                  "query": [
+                    {
+                      "key": "start",
+                      "value": "{{start}}",
+                      "description": "[REQUIRED] Start Date of Report. Expected format : dd/MM/yyyy"
+                    },
+                    {
+                      "key": "end",
+                      "value": "{{end}}",
+                      "description": "[REQUIRED] End Date of Report. Expected format : dd/MM/yyyy"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "key": "fundId",
+                      "value": "{{fundId}}",
+                      "type": "string",
+                      "description": "[REQUIRED] Unique ID for the fund."
+                    }
+                  ]
+                },
+                "description": "The Member's Statement will report each Member Account's balances, movement, Preservation components and Taxation components for a period. \n</br>\n</br>\n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- investment\n- audit\n- smsf_partner\n\n### Response Body\n\n| Key | Type | Comments |\n|---- | ----| ----|\n| accounts | array | see accounts array | \n| addressId | String |UniqueID of address for a firm. If the address is used for multiple people or companies the id will be the same. |\n| country | String |Address - Country |\n| dob | Date | Person's Date of birth. ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601 |\n| email | string | Person's email address if known | \n| firstName | string | Perosn's first name | \n| lastName | string | Person's last name | \n| otherName | string | Person's other/middle names |\n| peopleId | string | UniqueID of the person for a firm. If a person is used for multiple companies or funds the id will be the same.|\n| phone | phone | person's phone number if known |\n| postcode | string | Address - Postcode |\n| state\t| string |\tList in ( VIC, NSW, QLD, WA, NSW, ACT, TAS, FOR) |\n|streetLine1 |\tString |\tAddress - Street Line 1 |\n|streetLine2 |\tString |\tAddress - Street Line 2 |\n| suburb |\tString |\tAddress - Suburb |\n| tfn |\tString |\twill return 'Provided' or 'Not Provided' |\n| title |\tString |\tTitle if known |\n\n**Accounts Array**\n\n| Key | Type | Comments |\n|---- | ----| ----|\n|accountDescription\t|String\t|Freeform description of account entered by the user|\n|accountPhase|\tObject\t|\"Accumulation\" or \"RetirementPhase\"|\n|accountType\t|Object\t|\"Accumulation\" or \"Pension\". A TRIS will always be regarded as a Pension for this field.|\n|balanceClosing |number |\tAccount Balance as at End Date requested |\n|balanceOpening\t| Number|\tAccount Balance as at Start Date requested |\n|balancePreserved |\tnumber |\tPreserved balance as at end date. |\n|balanceRestrictedNonPreserved|\tnumber\t|Restricted Non Preserved as at end date. |\n|balanceTaxable\t|number|\tMember's Taxable balance as at the end date. |\n|balanceTaxFree\t|number|\tMember's Tax-Free balance as at the end date. |\n|balanceUnrestrictedNonPreserved\t|number\t|Unrestricted Non Preserved balance as at end date. |\n|beneficiaries|\tArray|\tSee below|\n|decreaseBenefitsPaidTransfersOut|\tnumber|\tTotal Benefits Paid/Transfers Out recorded for the period|\n|decreaseContributionsTax|\tnumber|\tTotal Contributions Tax recorded for the period|\n|decreaseDivision293Tax\t|number|\tTotal Division 293 Tax recorded for the period|\n|decreaseExcessContributionsTax\t|number\t|Total Excess Contributions Tax recorded for the period|\n|decreaseIncomeTax|\tnumber\t|Total Income Tax recorded for the period|\n|decreaseInsurancePolicyPremiums|\tnumber\t|Total Insurance Policy Premiums Paid recorded for the period|\n|decreaseInternalTransferOut |\tnumber|\tTotal Internal Transfer Out  recorded for the period|\n|decreaseManagementFees|\tnumber|\tTotal Management Fees recorded for the period|\n|decreaseMemberExpenses\t|number\t|Total Member Expenses recorded for the period|\n|decreaseNoTFN ExcessTax\t|number|\tTotal No TFN Excess Contributions Tax recorded for the period|\n|decreasePensionsPaid|\tnumber|\tTotal Pensions Paid recorded for the period|\n|decreaseRefundExcessContributions|\tnumber|\tTotal Refund Excess Contributions recorded for the period|\n|decreaseSuperannuationSurchargeTax\t|number|\tTotal Superannuation Surcharge Tax recorded for the period|\n|endDate|\tDate|\tIf the account has been closed then the date is returned|\n|increaseEmployerContributions|\tnumber|\tTotal Employer Contributions recorded for the period|\n|increaseGovernmentCoContributions\t|number\t|Total Government Co-Contributions recorded for the period|\n|increaseInternalTransferIn\t|number|\tTotal Internal Transfer In  recorded for the period|\n|increaseNetEarnings\t|number|\tTotal Net Earnings  recorded for the period|\n|increasePersonalContributionsConcessional\t|number|\tTotal Personal Concessional Contributions recorded for the period|\n|increasePersonalContributionsNonConcessional\t|number|\tTotal Personal NCC Contributions recorded for the period|\n|increaseProceedsOfInsurancePolicies\t|number|\tTotal Proceeds of Insurance Policies  recorded for the period|\n|increaseTransfersIn\t|number|\tTotal Transfers In  recorded for the period|\n|memberCode\t|String\t|Member Code of Member Account  recorded for the period|\n|nominationBinding \t|boolean|\tFor Death Benefit Nominations, has been created as binding or non-binding|\n|nominationTimeframe\t|String|\t\"3 year Lapsing\" or \"Non Lapsing\". Used for Death Benefit Nominations|\n|nominationEndDate\t|Date|\tUsed for Death Benefit Nominations|\n|pensionSetupWithReversionaryBeneficiary\t|boolean|\t\"True\" or \"False: Has Pension been setup with a Reversionary Beneficiary|\n|pensionType\t|Object\t|List in (Accumulation = \"null\", Account-Based Pension = \"AccountBasedPension\", Market Linked Pension = \"MarketLinkedPension\", TRIS (Retirement Phase) = \"TRISRetirementPhase\", Transition to Retirement Pension = \"TransitionToRetirement\", Allocated Pension = \"AllocatedPension\", Complying Pension = \"ComplyingPension\")|\n|startDate|\tDate\t|The date the member account commenced in the fund|\n|taxFreeProportion|\tNumber|\tThe tax-free percentage of the member's account balance will display. This amount is automatically calculated based on the taxable and tax-free components of the member's balances upon pension commencement.|\n|totalDeathBenefit\t|Number|\tAccount Entitlement in the event of death. |\n|totalDisbabilityBenefit|\tNumber|\tAccount Entitlement in the event of a Permanent Disability. |\n|vestedBenefits|\tNumber|\tSuperannuation is said to vest in a member when the member becomes legally entitled to it|\n\n**Beneficiaries Array**\n\n| Key | Type | Comments |\n|---- | ----| ----|\n|firstName\t|String|\tPerson's first name|\n|lastName\t|String|\t|Person's last name|\n|nominationLastModified\t|Date|\tDate and time Beneficiary details were last modified. |\n|otherName\t|String|\tPerson's other/middle names|\n|peopleId\t|String|\tUniqueID of the person for a firm. If a person is used for multiple companies or funds the id will be the same.|\n|relationship\t|String|\tUser Entered e.g \"Spouse\"|\n|proportion\t|Number|\t1-100%|"
+              },
+              "response": [
+                {
+                  "id": "9a7b0d65-2b4f-4ebc-8713-c0ddae150952",
+                  "name": "200 - Report - Member's Statement",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Authorization",
+                        "value": "bearer {{token}}",
+                        "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/sf/funds/:fundId/reports/membersStatement?start={{start}}&end={{end}}",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "sf",
+                        "funds",
+                        ":fundId",
+                        "reports",
+                        "membersStatement"
+                      ],
+                      "query": [
+                        {
+                          "key": "start",
+                          "value": "{{start}}",
+                          "description": "[REQUIRED] Start Date of Report. Expected format : dd/MM/yyyy"
+                        },
+                        {
+                          "key": "end",
+                          "value": "{{end}}",
+                          "description": "[REQUIRED] End Date of Report. Expected format : dd/MM/yyyy"
+                        }
+                      ],
+                      "variable": [
+                        {
+                          "description": "[REQUIRED] Unique ID for the fund.",
+                          "key": "fundId",
+                          "value": "{{fundId}}"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Date",
+                      "value": "Mon, 14 Sep 2020 01:40:11 GMT"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json;charset=UTF-8"
+                    },
+                    {
+                      "key": "Transfer-Encoding",
+                      "value": "chunked"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "nginx"
+                    },
+                    {
+                      "key": "X-Rate-Daily-Limit-Remaining",
+                      "value": "-1"
+                    },
+                    {
+                      "key": "vary",
+                      "value": "accept-encoding"
+                    },
+                    {
+                      "key": "Content-Encoding",
+                      "value": "gzip"
+                    },
+                    {
+                      "key": "X-Content-Type-Options",
+                      "value": "nosniff"
+                    },
+                    {
+                      "key": "Content-Security-Policy",
+                      "value": "frame-ancestors 'self' staging.sf360.com.au"
+                    },
+                    {
+                      "key": "X-Frame-Options",
+                      "value": "ALLOW-FROM https://staging.sf360.com.au"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n    \"members\": [\n        {\n            \"accounts\": [\n                {\n                    \"accountDescription\": \"Pension\",\n                    \"accountPhase\": \"Retirement Phase\",\n                    \"accountType\": \"Pension\",\n                    \"balanceClosing\": 542290,\n                    \"balanceOpening\": 535467,\n                    \"balancePreserved\": 0,\n                    \"balanceRestrictedNonPreserved\": 0,\n                    \"balanceTaxFree\": 62779,\n                    \"balanceTaxable\": 479511,\n                    \"balanceUnrestrictedNonPreserved\": 542290,\n                    \"beneficiaries\": [\n                        {\n                            \"firstName\": \"Mary\",\n                            \"lastName\": \"Jones\",\n                            \"nominationLastModified\": \"2020-09-14\",\n                            \"otherName\": null,\n                            \"peopleId\": \"8ad08b356cf44a92016cf597be3a003a\",\n                            \"proportion\": 100,\n                            \"relationship\": \"Wife\"\n                        }\n                    ],\n                    \"decreaseBenefitsPaidTransfersOut\": 0,\n                    \"decreaseContributionsTax\": 0,\n                    \"decreaseDivision293Tax\": 0,\n                    \"decreaseExcessContributionsTax\": 0,\n                    \"decreaseIncomeTax\": 0,\n                    \"decreaseInsurancePolicyPremiums\": 0,\n                    \"decreaseInternalTransferOut\": 0,\n                    \"decreaseManagementFees\": 0,\n                    \"decreaseMemberExpenses\": 0,\n                    \"decreaseNoTFNExcessTax\": 0,\n                    \"decreasePensionsPaid\": 0,\n                    \"decreaseRefundExcessContributions\": 0,\n                    \"decreaseSuperannuationSurchargeTax\": 0,\n                    \"endDate\": \"\",\n                    \"increaseEmployerContributions\": 0,\n                    \"increaseGovernmentCoContributions\": 0,\n                    \"increaseInternalTransferIn\": 0,\n                    \"increaseNetEarnings\": 6823,\n                    \"increaseOtherContributions\": 0,\n                    \"increasePersonalContributionsConcessional\": 0,\n                    \"increasePersonalContributionsNonConcessional\": 0,\n                    \"increaseProceedsOfInsurancePolicies\": 0,\n                    \"increaseTransfersIn\": 0,\n                    \"memberCode\": \"JONJOH00001P\",\n                    \"nominationBinding\": true,\n                    \"nominationEndDate\": null,\n                    \"nominationTimeframe\": \"NonLapsing\",\n                    \"pensionSetupWithReversionaryBeneficiary\": false,\n                    \"pensionType\": \"AccountBasedPension\",\n                    \"startDate\": \"1994-06-14\",\n                    \"taxFreeProportion\": 11.58,\n                    \"totalDeathBenefit\": 1542290,\n                    \"totalDisbabilityBenefit\": 0,\n                    \"vestedBenefits\": 542290\n                },\n                {\n                    \"accountDescription\": \"Accumulation\",\n                    \"accountPhase\": \"Accumulation Phase\",\n                    \"accountType\": \"Accumulation\",\n                    \"balanceClosing\": 546206,\n                    \"balanceOpening\": 519362,\n                    \"balancePreserved\": 0,\n                    \"balanceRestrictedNonPreserved\": 0,\n                    \"balanceTaxFree\": 520000,\n                    \"balanceTaxable\": 26206,\n                    \"balanceUnrestrictedNonPreserved\": 546206,\n                    \"beneficiaries\": [],\n                    \"decreaseBenefitsPaidTransfersOut\": 0,\n                    \"decreaseContributionsTax\": 3750,\n                    \"decreaseDivision293Tax\": 0,\n                    \"decreaseExcessContributionsTax\": 0,\n                    \"decreaseIncomeTax\": 1035,\n                    \"decreaseInsurancePolicyPremiums\": 0,\n                    \"decreaseInternalTransferOut\": 0,\n                    \"decreaseManagementFees\": 0,\n                    \"decreaseMemberExpenses\": 0,\n                    \"decreaseNoTFNExcessTax\": 0,\n                    \"decreasePensionsPaid\": 0,\n                    \"decreaseRefundExcessContributions\": 0,\n                    \"decreaseSuperannuationSurchargeTax\": 0,\n                    \"endDate\": \"\",\n                    \"increaseEmployerContributions\": 0,\n                    \"increaseGovernmentCoContributions\": 0,\n                    \"increaseInternalTransferIn\": 0,\n                    \"increaseNetEarnings\": 6629,\n                    \"increaseOtherContributions\": 0,\n                    \"increasePersonalContributionsConcessional\": 25000,\n                    \"increasePersonalContributionsNonConcessional\": 0,\n                    \"increaseProceedsOfInsurancePolicies\": 0,\n                    \"increaseTransfersIn\": 0,\n                    \"memberCode\": \"JONJOH00002A\",\n                    \"nominationBinding\": false,\n                    \"nominationEndDate\": null,\n                    \"nominationTimeframe\": null,\n                    \"pensionSetupWithReversionaryBeneficiary\": false,\n                    \"pensionType\": null,\n                    \"startDate\": \"1994-06-14\",\n                    \"taxFreeProportion\": null,\n                    \"totalDeathBenefit\": null,\n                    \"totalDisbabilityBenefit\": null,\n                    \"vestedBenefits\": 546206\n                }\n            ],\n            \"addressId\": \"18435\",\n            \"country\": \"AUSTRALIA\",\n            \"dob\": \"1947-09-05\",\n            \"email\": null,\n            \"firstName\": \"John\",\n            \"lastName\": \"Jones\",\n            \"otherName\": null,\n            \"peopleId\": \"8ad08bf35f7b8296015fb8492c2200dd\",\n            \"phone\": \"0396960000\",\n            \"postcode\": \"3205\",\n            \"state\": \"VICTORIA\",\n            \"streetLine1\": \"12 Market Street\",\n            \"streetLine2\": null,\n            \"suburb\": \"South Melbourne\",\n            \"tfn\": \"Provided\",\n            \"title\": null\n        },\n        {\n            \"accounts\": [\n                {\n                    \"accountDescription\": \"Accumulation\",\n                    \"accountPhase\": \"Accumulation Phase\",\n                    \"accountType\": \"Accumulation\",\n                    \"balanceClosing\": 977776,\n                    \"balanceOpening\": 843027,\n                    \"balancePreserved\": 968652,\n                    \"balanceRestrictedNonPreserved\": 0,\n                    \"balanceTaxFree\": 414235,\n                    \"balanceTaxable\": 563541,\n                    \"balanceUnrestrictedNonPreserved\": 9124,\n                    \"beneficiaries\": [],\n                    \"decreaseBenefitsPaidTransfersOut\": 0,\n                    \"decreaseContributionsTax\": 2010,\n                    \"decreaseDivision293Tax\": 0,\n                    \"decreaseExcessContributionsTax\": 0,\n                    \"decreaseIncomeTax\": 1688,\n                    \"decreaseInsurancePolicyPremiums\": 0,\n                    \"decreaseInternalTransferOut\": 0,\n                    \"decreaseManagementFees\": 0,\n                    \"decreaseMemberExpenses\": 0,\n                    \"decreaseNoTFNExcessTax\": 0,\n                    \"decreasePensionsPaid\": 0,\n                    \"decreaseRefundExcessContributions\": 0,\n                    \"decreaseSuperannuationSurchargeTax\": 0,\n                    \"endDate\": \"\",\n                    \"increaseEmployerContributions\": 0,\n                    \"increaseGovernmentCoContributions\": 0,\n                    \"increaseInternalTransferIn\": 0,\n                    \"increaseNetEarnings\": 10812,\n                    \"increaseOtherContributions\": 0,\n                    \"increasePersonalContributionsConcessional\": 13400,\n                    \"increasePersonalContributionsNonConcessional\": 114235,\n                    \"increaseProceedsOfInsurancePolicies\": 0,\n                    \"increaseTransfersIn\": 0,\n                    \"memberCode\": \"JONMAR00001A\",\n                    \"nominationBinding\": false,\n                    \"nominationEndDate\": null,\n                    \"nominationTimeframe\": null,\n                    \"pensionSetupWithReversionaryBeneficiary\": false,\n                    \"pensionType\": null,\n                    \"startDate\": \"1994-06-14\",\n                    \"taxFreeProportion\": null,\n                    \"totalDeathBenefit\": 1977776,\n                    \"totalDisbabilityBenefit\": 0,\n                    \"vestedBenefits\": 977776\n                }\n            ],\n            \"addressId\": \"18435\",\n            \"country\": \"AUSTRALIA\",\n            \"dob\": \"1948-08-17\",\n            \"email\": null,\n            \"firstName\": \"Mary\",\n            \"lastName\": \"Jones\",\n            \"otherName\": null,\n            \"peopleId\": \"8ad08bf35f7b8296015fb8492c2900df\",\n            \"phone\": \"0396960000\",\n            \"postcode\": \"3205\",\n            \"state\": \"VICTORIA\",\n            \"streetLine1\": \"12 Market Street\",\n            \"streetLine2\": null,\n            \"suburb\": \"South Melbourne\",\n            \"tfn\": \"Provided\",\n            \"title\": null\n        }\n    ]\n}"
+                }
+              ]
+            },
+            {
+              "name": "Report - Pension Summary",
+              "_postman_id": "d5bf5916-9325-4e99-b338-a2304443717d",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "oauth2",
+                  "oauth2": {}
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+                    "key": "Authorization",
+                    "value": "bearer {{token}}"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/sf/funds/:fundId/reports/pensionSummary?financialYear={{financialYear}}",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "sf",
+                    "funds",
+                    ":fundId",
+                    "reports",
+                    "pensionSummary"
+                  ],
+                  "query": [
+                    {
+                      "key": "financialYear",
+                      "value": "{{financialYear}}",
+                      "description": "[REQUIRED] The Financial Year of the  report. Expected format : yyyy"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "key": "fundId",
+                      "value": "{{fundId}}",
+                      "type": "string",
+                      "description": "[REQUIRED] Unique ID for the fund"
+                    }
+                  ]
+                },
+                "description": "Allows you to retrieve a Pension Sumary for  fund based on a Financial Year.\n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- investment\n- audit\n- smsf_partner\n\n### Response\n\n\n**Fund Data**\n\n| Field | Data Type | Comments |\n| -------- | -------- | -------- |\n| financialYear     | date     | YYYY - The financial year of the report     |\n| fundName     | string     | The name of the fund     |\n| fundId     | Text     | The Fund Identificaion Number. This is unique across all of Simple Fund 360.    |\n| fundAmountToReachMinimum     | number     | The total amount required for the fund to reach the minimum for all pensions.   |\n| fundGrossPensionPayments     | number     | The total pension payments recorded for all pension members of the fund     |\n| fundMinimum     | number     | The combined minimum amount for all pension members of the fund      |\n| fundPensionPayments     | number     | The total pension payments recorded for all pension members of the fund less PAYG.    |\n| fundPayg     | number     | The total PAYG withheld which has been recorded for all pension members    |\n| pensions     | array     | see below     |\n\n**Pensions Array**\n\n | Field | Data Type | Comments |\n| -------- | -------- | -------- |\n| peopleId     | string     | Unique Identifier of person in Simple Fund 360     |\n| contactId     | string     | Unique Identifier of person in Simple Fund 360     |\n| accounts     | array     | see below     |\n\n**Accounts Array**\n\n | Field | Data Type | Comments |\n| -------- | -------- | -------- |\n| accountDescription     | string     | Description entered by the user for the Pension Account     |\n| accountPhase     | string     | will return either \"Retirement Phase\" or \"Accumulation\"     |\n| amountToReachMinimum     | number     | number of dollars required for this pension to reach the minimum     |\n| endDate     | date     | yyyy-MM-dd : The end date of the pension if the account ceased during the Financial Year of the report.      |\n| grossPensionPayments     | number     | The total pension payments recorded for this pension account for the Financial Year   |\n| memberCode     | string     | The member code assigned to this Pension Account. This will also be equal to the sub-account code on other APIs     |\n| minimum     | number     | The Minimum Pension amount required for this Pension Account for the Financial Year.      |\n| maximum     | number     | The Maximum Pension amount (if applicable) required for this Pension Account for the Financial Year.      |\n| netPensionPayments     | number     | The total pension payments recorded for this pension account for the Financial Year  less PAYG payments     |\n| note   | string     | Addtional details were pensionhas reverted   |\n| openingBalance     | number     | The Balanace of the account as at July 1st of the Financial Year or the Penson startDate if the income stream commenced during the Financial Year.      |\n| payg     | number     | The total PAYG amount withheld which has been recorded this Pension Account for the Financial Year.      |\n| pensionType     | string     | Type of Pension     |\n| reversionAccountCode     | string     | The Account Code, the Pension reverted from.      |\n| reversionDate     | date     | Date original Pension reverted to Beneficiary    |\n| reversionaryPensionDateOfDeath     | Date     | Date of death for orignal pension member    |\n| startDate     | date     | The Start Date of this Pension     |\n| taxFreeProportion     | number     | The Tax Free proportion recorded for this Pension Account     |"
+              },
+              "response": [
+                {
+                  "id": "51b7717e-b942-47f5-9fd5-8f8eff5be1e2",
+                  "name": "200 Response - 2018 FY",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+                        "key": "Authorization",
+                        "value": "bearer {{token}}"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/sf/funds/:fundId/reports/pensionSummary?financialYear={{financialYear}}",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "sf",
+                        "funds",
+                        ":fundId",
+                        "reports",
+                        "pensionSummary"
+                      ],
+                      "query": [
+                        {
+                          "key": "financialYear",
+                          "value": "{{financialYear}}",
+                          "description": "[REQUIRED] The Financial Year of the  report. Expected format : yyyy"
+                        }
+                      ],
+                      "variable": [
+                        {
+                          "key": "fundId",
+                          "value": "{{fundId}}",
+                          "description": "[REQUIRED] Unique ID for the fund"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Date",
+                      "value": "Wed, 17 Jun 2020 02:20:25 GMT"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json;charset=UTF-8"
+                    },
+                    {
+                      "key": "Transfer-Encoding",
+                      "value": "chunked"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "nginx"
+                    },
+                    {
+                      "key": "X-Rate-Daily-Limit-Remaining",
+                      "value": "-1"
+                    },
+                    {
+                      "key": "vary",
+                      "value": "accept-encoding"
+                    },
+                    {
+                      "key": "Content-Encoding",
+                      "value": "gzip"
+                    },
+                    {
+                      "key": "X-Content-Type-Options",
+                      "value": "nosniff"
+                    },
+                    {
+                      "key": "Content-Security-Policy",
+                      "value": "frame-ancestors 'self' uat.sf360.com.au"
+                    },
+                    {
+                      "key": "X-Frame-Options",
+                      "value": "ALLOW-FROM https://uat.sf360.com.au"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n    \"financialYear\": \"2018\",\n    \"fundAmountToReachMinimum\": 8320,\n    \"fundGrossPensionPayments\": 16500,\n    \"fundId\": \"8ad08af2632421da0163247db6d10005\",\n    \"fundMinimum\": 24820,\n    \"fundName\": \"Jones Retirement Fund\",\n    \"fundPayg\": 0,\n    \"fundPensionPayments\": 16500,\n    \"pensions\": [\n        {\n            \"accounts\": [\n                {\n                    \"accountDescription\": \"Account Based Pension\",\n                    \"accountPhase\": \"Retirement Phase\",\n                    \"amountToReachMinimum\": 30,\n                    \"endDate\": null,\n                    \"grossPensionPayments\": 0,\n                    \"maximum\": 0,\n                    \"memberCode\": \"JONJOH30020P\",\n                    \"minimum\": 30,\n                    \"netPensionPayments\": 0,\n                    \"note\": \"\",\n                    \"openingBalance\": 7962.53,\n                    \"payg\": 0,\n                    \"pensionType\": \"Account Based Pension\",\n                    \"reversionAccountCode\": null,\n                    \"reversionDate\": null,\n                    \"reversionaryPensionDateOfDeath\": null,\n                    \"startDate\": \"30/05/2018\",\n                    \"taxFreeProportion\": 0\n                }\n            ],\n            \"contactId\": \"8a009e3b4cf98131014cf98b58750000\",\n            \"peopleId\": \"8a009e3b4cf98131014cf98b587e0001\"\n        },\n        {\n            \"accounts\": [\n                {\n                    \"accountDescription\": \"Account Based Pension\",\n                    \"accountPhase\": \"Retirement Phase\",\n                    \"amountToReachMinimum\": 8290,\n                    \"endDate\": null,\n                    \"grossPensionPayments\": 16500,\n                    \"maximum\": 0,\n                    \"memberCode\": \"JONMAR30021P\",\n                    \"minimum\": 24790,\n                    \"netPensionPayments\": 16500,\n                    \"note\": \"\",\n                    \"openingBalance\": 500000,\n                    \"payg\": 0,\n                    \"pensionType\": \"Account Based Pension\",\n                    \"reversionAccountCode\": null,\n                    \"reversionDate\": null,\n                    \"reversionaryPensionDateOfDeath\": null,\n                    \"startDate\": \"04/07/2017\",\n                    \"taxFreeProportion\": 60\n                }\n            ],\n            \"contactId\": \"8a009ec44d0e83ba014d1c144e0a0002\",\n            \"peopleId\": \"8a009ec44d0e83ba014d1c144e0d0003\"\n        }\n    ]\n}"
                 }
               ]
             },
@@ -4481,7 +4481,7 @@
                     }
                   ]
                 },
-                "description": "Allows you to retrieve the Workpapers for a specific fund. \n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- audit\n- smsf_partner\n\n## Entities Supported\nThe following entityTypes are supported\n- SMSF\n- BillableTrust \n- BillableCompany\n- BillableIndividual\n\nThe Workpapers screen in Simple Fund 360 allows a user to store documents and record all evidence obtained during the preparation of the financial statements whilst ensuring the SMSF complies with all relevant laws during the Financial Year. \n\nFor full details on what users can do on this screen in Simple Fund 360 please consult our [Help Guide](https://sf360.zendesk.com/hc/en-au/articles/360033852392-Workpapers)\n\n\n### Response Body \n\n| Key | Type | Comments |\n| -------- | -------- | -------- |\n| code     | Date     | Code of Workpaper. This will usually be the Control Account from the Chart of Accounts   |\n| description     | String     | Name of the account from the Chart of Accounts   |\n| amount     | Number     | Balance of the account as at the end of the Financial Year   |\n| amountPrev     | Number     |Balance of the account as at the end of the Previous Financial Year    |\n| units     | Number     | Balance of the number of units for the account as at the end of the Financial Year    |\n| unitsPrev     | Number     | Balance of the number of units for the account as at the end of the Previous Financial Year  |\n| change     | Number     | Difference between amount and amountPrev as a percentage  |\n| status     | String     | Status of the Workpapers  |\n| preparer     | String     | Name of  person who prepared Workpaper  |\n| reviewer     | String     | Name of person who prepared Workpaper   |\n| documents     | Array     | Documents assigned to Workpapers. Documents which have been assigned to a Sub-Account will be listed under the subEntries or memberSubEntries Array   |\n| subEntries     | Array     |Details for Sub-Accounts where they exist    |\n| memberSubEntries     | Array     | For member accounts (Chart Codes 50000 - 58000) |\n\n**documents array**\n\n| Field | Data Type | Comments |\n| -------- | -------- | -------- |\n|name | string | name of the file/document from Simple Fund 360 |\n| key | string | Unique Identifier of the document. Documents can be downloaded using the [Download Documents Endpoint](https://docs.api.bgl360.com.au/?version=latest#cf51ff1e-8b5d-48cc-be66-cbf275996e1f)|\n| creationDate | Date | Date and Time date the file was added to Simple Fund 360 |\n| updatedDate | Date | Date and Time date the file was last modified |\n\n**subEntries array**\n\n| Key | Type | Comments |\n| -------- | -------- | -------- |\n| code     | Date     | Code of Workpaper. This will usually be the sub-account from the Chart of Accounts   |\n| description     | String     | Name of the sub-account from the Chart of Accounts   |\n| amount     | Number     | Balance of the sub-account as at the end of the Financial Year   |\n| amountPrev     | Number     |Balance of the sub-account as at the end of the Previous Financial Year    |\n| units     | Number     | Balance of the number of units for the sub-account as at the end of the Financial Year    |\n| unitsPrev     | Number     | Balance of the number of units for the sub-account as at the end of the Previous Financial Year  |\n| change     | Number     | Difference between amount and amountPrev as a percentage  |\n| documents     | Array     | Documents which have been assigned to a Sub-Account  |\n\n**memberSubEntries array**\n\n| Key | Type | Comments |\n| -------- | -------- | -------- |\n| code     | Date     | Code of Workpaper. This will  be the member code  |\n| description     | String     | Name of the Member Account, Member Mode and Description from the Chart of Accounts   |\n| amountOpeningBalance     | Number     | Balance of account 50010 for the Financial Year   |\n| amountContributionIncome     | Number     | Balance  of accounts 52420,52850,53900 & 56100 for the Financial Year   |\n| amountEarnings     | Number     | Balance of account 53100  for the Financial Year     |\n| amountMemberPayments     | Number     | Balance accounts 53920, 53940, 53960, 53980, 54050, 54160, 54500, 57100 & 58000 for the Financial Year    |\n| amountTaxFees     | Number     | Balance of accounts 51900, 53330, 53500, 53800, 54000, 55100 & 55700  for the Financial Year    |\n| amountClosingBalance     | Number     | Sum of all accounts for the Financial Year    |\n| change     | Number     | Difference between Opening Balance and Closing Balance as a percentage  |\n| documents     | Array     | Documents which have been assigned to a Member Sub-Account  |"
+                "description": "Allows you to retrieve the Workpapers for a specific fund. \n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- audit\n- smsf_partner\n\nThe Workpapers screen in Simple Fund 360 allows a user to store documents and record all evidence obtained during the preparation of the financial statements whilst ensuring the SMSF complies with all relevant laws during the Financial Year. \n\nFor full details on what users can do on this screen in Simple Fund 360 please consult our [Help Guide](https://sf360.zendesk.com/hc/en-au/articles/360033852392-Workpapers)\n\n\n### Response Body \n\n| Key | Type | Comments |\n| -------- | -------- | -------- |\n| code     | Date     | Code of Workpaper. This will usually be the Control Account from the Chart of Accounts   |\n| description     | String     | Name of the account from the Chart of Accounts   |\n| amount     | Number     | Balance of the account as at the end of the Financial Year   |\n| amountPrev     | Number     |Balance of the account as at the end of the Previous Financial Year    |\n| units     | Number     | Balance of the number of units for the account as at the end of the Financial Year    |\n| unitsPrev     | Number     | Balance of the number of units for the account as at the end of the Previous Financial Year  |\n| change     | Number     | Difference between amount and amountPrev as a percentage  |\n| status     | String     | Status of the Workpapers  |\n| preparer     | String     | Name of  person who prepared Workpaper  |\n| reviewer     | String     | Name of person who prepared Workpaper   |\n| documents     | Array     | Documents assigned to Workpapers. Documents which have been assigned to a Sub-Account will be listed under the subEntries or memberSubEntries Array   |\n| subEntries     | Array     |Details for Sub-Accounts where they exist    |\n| memberSubEntries     | Array     | For member accounts (Chart Codes 50000 - 58000) |\n\n**documents array**\n\n| Field | Data Type | Comments |\n| -------- | -------- | -------- |\n|name | string | name of the file/document from Simple Fund 360 |\n| key | string | Unique Identifier of the document. Documents can be downloaded using the [Download Documents Endpoint](https://docs.api.bgl360.com.au/?version=latest#cf51ff1e-8b5d-48cc-be66-cbf275996e1f)|\n| creationDate | Date | Date and Time date the file was added to Simple Fund 360 |\n| updatedDate | Date | Date and Time date the file was last modified |\n\n**subEntries array**\n\n| Key | Type | Comments |\n| -------- | -------- | -------- |\n| code     | Date     | Code of Workpaper. This will usually be the sub-account from the Chart of Accounts   |\n| description     | String     | Name of the sub-account from the Chart of Accounts   |\n| amount     | Number     | Balance of the sub-account as at the end of the Financial Year   |\n| amountPrev     | Number     |Balance of the sub-account as at the end of the Previous Financial Year    |\n| units     | Number     | Balance of the number of units for the sub-account as at the end of the Financial Year    |\n| unitsPrev     | Number     | Balance of the number of units for the sub-account as at the end of the Previous Financial Year  |\n| change     | Number     | Difference between amount and amountPrev as a percentage  |\n| documents     | Array     | Documents which have been assigned to a Sub-Account  |\n\n**memberSubEntries array**\n\n| Key | Type | Comments |\n| -------- | -------- | -------- |\n| code     | Date     | Code of Workpaper. This will  be the member code  |\n| description     | String     | Name of the Member Account, Member Mode and Description from the Chart of Accounts   |\n| amountOpeningBalance     | Number     | Balance of account 50010 for the Financial Year   |\n| amountContributionIncome     | Number     | Balance  of accounts 52420,52850,53900 & 56100 for the Financial Year   |\n| amountEarnings     | Number     | Balance of account 53100  for the Financial Year     |\n| amountMemberPayments     | Number     | Balance accounts 53920, 53940, 53960, 53980, 54050, 54160, 54500, 57100 & 58000 for the Financial Year    |\n| amountTaxFees     | Number     | Balance of accounts 51900, 53330, 53500, 53800, 54000, 55100 & 55700  for the Financial Year    |\n| amountClosingBalance     | Number     | Sum of all accounts for the Financial Year    |\n| change     | Number     | Difference between Opening Balance and Closing Balance as a percentage  |\n| documents     | Array     | Documents which have been assigned to a Member Sub-Account  |"
               },
               "response": [
                 {
@@ -4653,7 +4653,7 @@
                     }
                   ]
                 },
-                "description": "This resource will return a list of Documents saved to the Documents screen in SF360. It can be filtered using tags.\n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- audit\n- smsf_partner\n\n## Entities Supported\nThe following entityTypes are supported\n- SMSF\n- BillableTrust \n- BillableCompany\n- BillableIndividual\n\n### Response\n\n| Field | Data Type | Comments |\n| -------- | -------- | -------- |\n|name | string | name of the file/document from Simple Fund 360 |\n| key | string | Unique Identifier of the document |\n| creationDate | Date | Date and Time date the file was added to Simple Fund 360 |\n| updatedDate | Date | Date and Time date the file was last modified |\n|tags | Object | List of tags applied to the document |"
+                "description": "This resource will return a list of Documents saved to the Documents screen in SF360. It can be filtered using tags.\n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- audit\n- smsf_partner\n\n### Response\n\n| Field | Data Type | Comments |\n| -------- | -------- | -------- |\n|name | string | name of the file/document from Simple Fund 360 |\n| key | string | Unique Identifier of the document |\n| creationDate | Date | Date and Time date the file was added to Simple Fund 360 |\n| updatedDate | Date | Date and Time date the file was last modified |\n|tags | Object | List of tags applied to the document |"
               },
               "response": [
                 {
@@ -4756,7 +4756,7 @@
                     }
                   ]
                 },
-                "description": "This endpoint allows a user of a particular fund to upload a new document into the fund, along with the list of tags (optional) to be associated to the newly uploaded document.\nAt the time of development, the following file tyle extensions are not supported for documents upload to SF360 system: exe, app, bat, dmg, and cmd.\n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- audit\n- smsf_partner\n\n## Entities Supported\nThe following entityTypes are supported\n- SMSF\n- BillableTrust \n- BillableCompany\n- BillableIndividual\n\n### Request \n\nThe multi-part request body has two form parameters\n\n\n| Form Parameter | type | Mandatory | Example |\n| -------- | -------- | -------- | -------- |\n| document     | File     | Yes     | document.pdf\n| tags     | Text     | No     | [\"audit\"]"
+                "description": "This endpoint allows a user of a particular fund to upload a new document into the fund, along with the list of tags (optional) to be associated to the newly uploaded document.\nAt the time of development, the following file tyle extensions are not supported for documents upload to SF360 system: exe, app, bat, dmg, and cmd.\n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- audit\n- smsf_partner\n\n### Request \n\nThe multi-part request body has two form parameters\n\n\n| Form Parameter | type | Mandatory | Example |\n| -------- | -------- | -------- | -------- |\n| document     | File     | Yes     | document.pdf\n| tags     | Text     | No     | [\"audit\"]"
               },
               "response": [
                 {
@@ -4840,7 +4840,7 @@
                     }
                   ]
                 },
-                "description": "Returns a list of tags for a fund. \n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- audit\n- smsf_partner\n\n## Entities Supported\nThe following entityTypes are supported\n- SMSF\n- BillableTrust \n- BillableCompany\n- BillableIndividual"
+                "description": "Returns a list of tags for a fund. \n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- audit\n- smsf_partner"
               },
               "response": [
                 {
@@ -4915,7 +4915,7 @@
                     }
                   ]
                 },
-                "description": "This will generate an S3 download URL for the document. The link will have a default expiration time of three minutes. \n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- audit\n- smsf_partner\n\n## Entities Supported\nThe following entityTypes are supported\n- SMSF\n- BillableTrust \n- BillableCompany\n- BillableIndividual"
+                "description": "This will generate an S3 download URL for the document. The link will have a default expiration time of three minutes. \n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- audit\n- smsf_partner"
               },
               "response": [
                 {
