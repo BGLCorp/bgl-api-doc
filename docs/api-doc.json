@@ -2131,7 +2131,7 @@
           "_postman_isSubFolder": true
         },
         {
-          "name": "Entity - General Copy",
+          "name": "SMSF Only - General",
           "item": [
             {
               "name": "Member Details",
@@ -2408,6 +2408,7 @@
             }
           ],
           "_postman_id": "f2da8441-5e07-4833-a8c2-f6a7e551e9dd",
+          "description": "The following entityTypes are supported:\n- SMSF\n",
           "event": [
             {
               "listen": "prerequest",
