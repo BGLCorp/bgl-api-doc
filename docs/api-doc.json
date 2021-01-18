@@ -4125,7 +4125,7 @@
               ]
             },
             {
-              "name": "List of Fund Contacts",
+              "name": "List of Entity Contacts",
               "event": [
                 {
                   "listen": "prerequest",
@@ -4606,7 +4606,7 @@
           "_postman_isSubFolder": true
         },
         {
-          "name": "Fund Documents",
+          "name": "Entity Documents",
           "item": [
             {
               "name": "Entity Documents List",
@@ -4948,7 +4948,7 @@
             }
           ],
           "_postman_id": "8600d850-798b-46b3-b26c-01f762bbd557",
-          "description": " 1. Fund Documents List - Use to obtain a list of documents for the\n    fund.     \n 2. Download Document - Use to download a document using the\n    document ID obtained from the Document List. \n 3. Fund Tags List - Use to\n    obatin a list of tags for the Fund. \n 4. Upload Document - Use to upload a document to the fund. Optionally you can attached a tag or  multiple tags from the Fund Tags List",
+          "description": " 1. Entity Documents List - Use to obtain a list of documents for the\n    entity.     \n 2. Download Document - Use to download a document using the\n    document ID obtained from the Document List. \n 3. Document Tags List - Use to\n    obtain a list of tags for the Entity. \n 4. Upload Document - Use to upload a document to the Entity. Optionally you can attached a tag or  multiple tags from the Tags List",
           "event": [
             {
               "listen": "prerequest",
