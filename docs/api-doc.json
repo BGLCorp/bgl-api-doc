@@ -912,10 +912,10 @@
           "_postman_isSubFolder": true
         },
         {
-          "name": "View Accessible Entits by Token (Simple Fund 360)",
+          "name": "View Accessible Entities by Token (Simple Fund 360)",
           "item": [],
           "_postman_id": "78ae3462-fec4-4bdd-9d99-af56fc56f3a8",
-          "description": "**Fund Listing**\n\nIn order to view entities related to a token, the tokens should be loaded in the Token Manager first. Please see View Tokens on how to load the tokens.\n\nOnce the tokens are loaded, click on a Token, that has entities attached to it, as displayed in the image below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/tokenManagerfunds.png)\n\nOnce the user clicks on the token, the Token listing will slide to the left. The entities will be loaded and displayed for the highlighted or selected token\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/tokenManager3.png)\n\n**Back to Token View**\n\nIn order to go back to the Tokens View, click the Arrow located in the right boundary of the token box as displayed in the image below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/tokenManagerArrow.png)",
+          "description": "**Entity Listing**\n\nIn order to view entities related to a token, the tokens should be loaded in the Token Manager first. Please see View Tokens on how to load the tokens.\n\nOnce the tokens are loaded, click on a Token, that has entities attached to it, as displayed in the image below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/tokenManagerfunds.png)\n\nOnce the user clicks on the token, the Token listing will slide to the left. The entities will be loaded and displayed for the highlighted or selected token\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/tokenManager3.png)\n\n**Back to Token View**\n\nIn order to go back to the Tokens View, click the Arrow located in the right boundary of the token box as displayed in the image below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/tokenManagerArrow.png)",
           "event": [
             {
               "listen": "prerequest",
