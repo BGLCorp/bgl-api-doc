@@ -4803,7 +4803,7 @@
               ]
             },
             {
-              "name": "Fund Tags List",
+              "name": "Document Tags List",
               "_postman_id": "35d19aa4-1ecb-4bf7-8ad3-8cf33c37b625",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -4840,7 +4840,7 @@
                     }
                   ]
                 },
-                "description": "Returns a list of tags for a fund. \n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- audit\n- smsf_partner\n\n## Entities Supported\nThe following entityTypes are supported\n- SMSF\n- BillableTrust \n- BillableCompany\n- BillableIndividual"
+                "description": "Returns a list of tags for a entity. \n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- audit\n- smsf_partner\n\n## Entities Supported\nThe following entityTypes are supported\n- SMSF\n- BillableTrust \n- BillableCompany\n- BillableIndividual"
               },
               "response": [
                 {
@@ -5118,7 +5118,7 @@
                   }
                 ],
                 "url": "{{baseUrl}}/sf/labels/{{labelId}}/entities/{{entityId}}",
-                "description": "### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner"
+                "description": "### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- smsf_partner\n\n## Entities Supported\nThe following entityTypes are supported\n- SMSF\n- BillableTrust \n- BillableCompany\n- BillableIndividual"
               },
               "response": []
             }
