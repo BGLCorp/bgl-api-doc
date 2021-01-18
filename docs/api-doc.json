@@ -1209,7 +1209,7 @@
       "name": "SF360 Resources",
       "item": [
         {
-          "name": "Fund Lists",
+          "name": "Entity/Fund Lists",
           "item": [
             {
               "name": "Fund List",
@@ -1485,6 +1485,28 @@
             }
           ],
           "_postman_id": "ac84353f-b900-4413-a0db-c7588faf211c",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "46299ab6-7f2e-4e34-846a-c9667a43797c",
+                "type": "text/javascript",
+                "exec": [
+                  ""
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "id": "34c7609c-d986-418e-b5fa-b4325651eb21",
+                "type": "text/javascript",
+                "exec": [
+                  ""
+                ]
+              }
+            }
+          ],
           "_postman_isSubFolder": true
         },
         {
