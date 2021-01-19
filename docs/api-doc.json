@@ -3311,7 +3311,7 @@
                     }
                   ]
                 },
-                "description": "Allows you to retrieve an Investment Summary for one or multiple entity(s). \n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- investment\n- audit\n- smsf_partner"
+                "description": "Allows you to retrieve an Investment Summary for one or multiple entity(s). \n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- investment\n- audit\n- smsf_partner\n\n### Entities Supported\nThe following entityTypes are supported\n- SMSF\n- BillableTrust \n- BillableCompany\n- BillableIndividual"
               },
               "response": [
                 {
