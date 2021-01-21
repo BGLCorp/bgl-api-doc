@@ -1041,7 +1041,7 @@
                 }
               ]
             },
-            "description": "Allows you to retrieve the Account Details for the BGL Licence Holder"
+            "description": "Allows you to retrieve the Account Details for the BGL Licence Owner (generally business or firm)\n\n| Key |Type  | Desacription |\n|--|--|--|\n|address1  | String | Address Line 1 BGL Licence Owner | \n|address2  | String | Address Line 2 BGL Licence Owner | \n|address3  | String | Town/ Suburb for BGL Licence Owner | \n|contact  | String | Main Contact for BGL Licence Owner | |\n|country  |String | Country for BGL Licence Owner\n|currency  | String | String | Currency for BGL Licence Owner\n|email  | String | Main email for BGL Licence Owner. This could be different for Token Owner  |\n|name  |  String |Name of the Business/Firm which owns the BGL Licence  |\n| postCode |String | Post Code for BGL Licence Owner | \n| state |String | Address State for BGL Licence Owner | \n| telephone |String | Town/ Suburb for BGL Licence Owner | \n| bglAccountId |String | UUID for BGL Licence Owner |"
           },
           "response": [
             {
@@ -1084,7 +1084,7 @@
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "{\n\"Account\":{\n\"address1\": \"606 - 608 Hawthorn Road\",\n\"address2\": null,\n\"address3\": \"East Brighton\",\n\"contact\": null,\n\"country\": \"Australia\",\n\"currency\": \"AU\",\n\"email\": null,\n\"mobile\": \"\",\n\"name\": \"ABC Accountants Pty Ltd\",\n\"postCode\": \"3187\",\n\"state\": \"VIC\",\n\"telephone\": \"\"\n}\n}"
+              "body": "{\n    \"Account\": {\n        \"address1\": \"606 Hawthorn Road\",\n        \"address2\": null,\n        \"address3\": \"Brighton East\",\n        \"contact\": \"Jeevan Tokhi \",\n        \"country\": \"Australia\",\n        \"currency\": \"AU\",\n        \"email\": \"api@bglcorp.com.au\",\n        \"mobile\": \"\",\n        \"name\": \"ABC Accountants Pty Ltd \",\n        \"postCode\": \"3187\",\n        \"state\": \"Vic\",\n        \"telephone\": \"\",\n        \"bglAccountId\": \"d2a4592e-aa01-11ea-9265-005056a00492\"\n    }\n}"
             }
           ]
         },
