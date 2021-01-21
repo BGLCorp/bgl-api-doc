@@ -1126,7 +1126,7 @@
                 }
               ]
             },
-            "description": "Allows you to retrieve the details of a user"
+            "description": "Allows you to retrieve the details of a user who has authorized the token. \n\n### Response\n\n| Key |Type  | Desacription |\n|--|--|--|\n|username | String | Email Address of User | \n|firstName  | String | First Name of User | \n|lastName | String | First Name of User | \n| firm | String | BGL Short Code for Firm/BGL Licence |"
           },
           "response": [
             {
