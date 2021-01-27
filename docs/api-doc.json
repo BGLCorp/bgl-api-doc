@@ -415,6 +415,13 @@
           "_postman_isSubFolder": true
         },
         {
+          "name": "Access Token",
+          "item": [],
+          "_postman_id": "fcf6f95d-158e-42b2-a913-2f69f31aba8a",
+          "description": "Your application receives an access token after a user successfully authenticates and authorizes access.\nThe access token will contain the following data: \n\n| Key |Type  | Description |\n|--|--|--|\n|Access Token | String | Your application passes the access token as a credential when it calls the target endpoint. | \n|Token Type  | String | usually equal to \"bearer\" | \n|refresh_token | String | A refresh token is a special kind of token used to obtain a renewed access token. Applications must store refresh tokens securely because they essentially allow a user to remain authenticated forever. | \n| expires_in | Number | Number of seconds until Access Token expires.  |\n| scope | String | The scope determines the endpoints the access  to. |\n| access_token_expires_at | number | UNIX time when access token will expire |\n| refresh_token_expires_at | number |UNIX time when refresh token will expire |\n| bgl_firm_id | String |UUID for BGL Licence Owner (firm) |\n| username | String | email address of user who autorized the token | ",
+          "_postman_isSubFolder": true
+        },
+        {
           "name": "Refresh Token",
           "item": [
             {
@@ -567,13 +574,6 @@
           ],
           "_postman_id": "9d36b7ba-609d-418b-8664-d34a462d6100",
           "description": "The Refresh Token grant type is used by API clients to exchange a refresh token for an access token when the access token has expired or about to expire. This allows clients to continue to have a valid access token without further interaction with the user.\n\nThe grant_type parameter must be set to “refresh_token”.\n\nBGL checks whether the refresh token is valid, and has not expired.\nIf everything checks out, the service can generate an access token and issue a new refresh token in the response. ",
-          "_postman_isSubFolder": true
-        },
-        {
-          "name": "Access Token",
-          "item": [],
-          "_postman_id": "fcf6f95d-158e-42b2-a913-2f69f31aba8a",
-          "description": "Your application receives an access token after a user successfully authenticates and authorizes access.\nThe access token will contain the following data: \n\n| Key |Type  | Description |\n|--|--|--|\n|Access Token | String | Your application passes the access token as a credential when it calls the target endpoint. | \n|Token Type  | String | usually equal to \"bearer\" | \n|refresh_token | String | A refresh token is a special kind of token used to obtain a renewed access token. Applications must store refresh tokens securely because they essentially allow a user to remain authenticated forever. | \n| expires_in | Number | Number of seconds until Access Token expires.  |\n| scope | String | The scope determines the endpoints the access  to. |\n| access_token_expires_at | number | UNIX time when access token will expire |\n| refresh_token_expires_at | number |UNIX time when refresh token will expire |\n| bgl_firm_id | String |UUID for BGL Licence Owner (firm) |\n| username | String | email address of user who autorized the token | ",
           "_postman_isSubFolder": true
         }
       ],
