@@ -11412,7 +11412,7 @@
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{clientCode}} {{UTCDateString}}  {{hmac}}",
+                "value": "{{clientCode}} {{UTCDateString}} {{hmac}}",
                 "type": "text"
               }
             ],
