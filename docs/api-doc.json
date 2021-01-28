@@ -11385,7 +11385,6 @@
                   "",
                   "var time = new Date().toISOString(); ",
                   "pm.environment.set(\"UTCDateString\", time); ",
-                  "",
                   "var path = pm.environment.get(\"messageUrl\"); ",
                   "var body = pm.request.body.toString();",
                   "var method = \"POST\";",
