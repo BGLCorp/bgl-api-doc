@@ -2164,113 +2164,6 @@
                   "body": "{\n  \"lodgements\": [\n    {\n      \"form\": \"SMSF_ANNUAL_RETURN\",\n      \"lodgementDateTime\": \"2018-12-14T05:45:00.000+0000\",\n      \"lodgementStatus\": \"LODGED_ELE\",\n      \"lodgingPartyFirm\": \"ABC Accountants Pty Ltd\",\n      \"lodgingPartyIndividual\": \"Tokhi, Jeevan\",\n      \"validateDateTime\": \"2017-10-01T22:19:56.000+0000\",\n      \"year\": 2017\n    },\n    {\n      \"form\": \"SMSF_ANNUAL_RETURN\",\n      \"lodgementDateTime\": \"2018-10-24T05:39:10.000+0000\",\n      \"lodgementStatus\": \"LODGED_ELE\",\n      \"lodgingPartyFirm\": \"ABC Accountants Pty Ltd\",\n      \"lodgingPartyIndividual\": \"Tokhi, Jeevan\",\n      \"validateDateTime\": \"2018-09-17T00:16:42.000+0000\",\n      \"year\": 2018\n    },\n    {\n      \"form\": \"SMSF_ANNUAL_RETURN\",\n      \"lodgementDateTime\": null,\n      \"lodgementStatus\": \"VALIDATED\",\n      \"lodgingPartyFirm\": \"ABC Accountants Pty Ltd\",\n      \"lodgingPartyIndividual\": \"Crofts, Matt\",\n      \"validateDateTime\": \"2019-08-20T02:12:14.000+0000\",\n      \"year\": 2019\n    }\n  ]\n}"
                 }
               ]
-            },
-            {
-              "name": "ATO Lodgements (Fund) Copy",
-              "id": "503d0939-d03f-4916-8abe-afa30d5dacd5",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "bearer {{token}}"
-                  }
-                ],
-                "url": {
-                  "raw": "{{baseUrl}}/sf/funds/:fundId/lodgements",
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "path": [
-                    "sf",
-                    "funds",
-                    ":fundId",
-                    "lodgements"
-                  ],
-                  "variable": [
-                    {
-                      "id": "fcd10920-50e5-455e-a578-8bce0af3333c",
-                      "key": "fundId",
-                      "value": "{{fundId}}",
-                      "type": "string"
-                    }
-                  ]
-                },
-                "description": "Will retrieve form lodgement history with the ATO for a fund. \n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- investment\n- audit\n- smsf_partner\n\n### Response Body\n\n| Key| Mandatory|Description |\n| -------- | -------- | -------- | \n | form | String | Name of the form. returns either \"SMSF_ANNUAL_RETURN\" or\"ACTIVITY_STATEMENT\" |\n|lodgementDateTime |Date |Date and time the form was lodged (UTC) |\n|lodgementStatus | String | Status of the form | \n|lodgingPartyFirm | String | Name of lodging party who is responsible for the form |\n|lodgingPartyIndividual | String | Individuals name of lodging party who is responsible for the form |\n| validatedDateTime | Date | Date and time the form was validated (UTC)|\n| year | Date | Year of the form. format = YYYY | \n\n**Lodgement Statuses**\n\n| Status | Description |\n| -------- | -------- |\n| LODGED_ELE | Lodged electronically/manually |\n| LODGED_REJ | Lodgment Rejected | \n| VALIDATED | Form Validated | \n| null | When the form is only prepared it will send status as null |"
-              },
-              "response": [
-                {
-                  "id": "d5d86ca0-a803-45a4-a4b3-a95d193d46d0",
-                  "name": "ATO Lodgements",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [
-                      {
-                        "key": "Authorization",
-                        "type": "text",
-                        "value": "bearer df2f0e40-606f-4311-8066-590732fd126b\""
-                      }
-                    ],
-                    "url": "https://api.staging.bgl360.com.au/sf/funds/8a9c9e744ebc893a014ebd429dea790c/lodgements"
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "key": "Content-Encoding",
-                      "value": "gzip"
-                    },
-                    {
-                      "key": "Content-Security-Policy",
-                      "value": "frame-ancestors 'self' www.sf360.com.au"
-                    },
-                    {
-                      "key": "Content-Type",
-                      "value": "application/json;charset=UTF-8"
-                    },
-                    {
-                      "key": "Date",
-                      "value": "Thu, 22 Aug 2019 23:40:06 GMT"
-                    },
-                    {
-                      "key": "Server",
-                      "value": "nginx"
-                    },
-                    {
-                      "key": "Vary",
-                      "value": "Accept-Encoding"
-                    },
-                    {
-                      "key": "X-Content-Type-Options",
-                      "value": "nosniff"
-                    },
-                    {
-                      "key": "X-Frame-Options",
-                      "value": "ALLOW-FROM https://www.sf360.com.au"
-                    },
-                    {
-                      "key": "X-Rate-Daily-Limit-Remaining",
-                      "value": "-1"
-                    },
-                    {
-                      "key": "Content-Length",
-                      "value": "303"
-                    },
-                    {
-                      "key": "Connection",
-                      "value": "keep-alive"
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{\n  \"lodgements\": [\n    {\n      \"form\": \"SMSF_ANNUAL_RETURN\",\n      \"lodgementDateTime\": \"2018-12-14T05:45:00.000+0000\",\n      \"lodgementStatus\": \"LODGED_ELE\",\n      \"lodgingPartyFirm\": \"ABC Accountants Pty Ltd\",\n      \"lodgingPartyIndividual\": \"Tokhi, Jeevan\",\n      \"validateDateTime\": \"2017-10-01T22:19:56.000+0000\",\n      \"year\": 2017\n    },\n    {\n      \"form\": \"SMSF_ANNUAL_RETURN\",\n      \"lodgementDateTime\": \"2018-10-24T05:39:10.000+0000\",\n      \"lodgementStatus\": \"LODGED_ELE\",\n      \"lodgingPartyFirm\": \"ABC Accountants Pty Ltd\",\n      \"lodgingPartyIndividual\": \"Tokhi, Jeevan\",\n      \"validateDateTime\": \"2018-09-17T00:16:42.000+0000\",\n      \"year\": 2018\n    },\n    {\n      \"form\": \"SMSF_ANNUAL_RETURN\",\n      \"lodgementDateTime\": null,\n      \"lodgementStatus\": \"VALIDATED\",\n      \"lodgingPartyFirm\": \"ABC Accountants Pty Ltd\",\n      \"lodgingPartyIndividual\": \"Crofts, Matt\",\n      \"validateDateTime\": \"2019-08-20T02:12:14.000+0000\",\n      \"year\": 2019\n    }\n  ]\n}"
-                }
-              ]
             }
           ],
           "id": "f2da8441-5e07-4833-a8c2-f6a7e551e9dd",
@@ -12192,8 +12085,116 @@
       ]
     },
     {
-      "name": "New Folder",
-      "item": [],
+      "name": "Coming Soon",
+      "item": [
+        {
+          "name": "ATO Lodgements (Fund) Copy",
+          "id": "503d0939-d03f-4916-8abe-afa30d5dacd5",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "bearer {{token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/sf/funds/:fundId/lodgements",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "sf",
+                "funds",
+                ":fundId",
+                "lodgements"
+              ],
+              "variable": [
+                {
+                  "id": "fcd10920-50e5-455e-a578-8bce0af3333c",
+                  "key": "fundId",
+                  "value": "{{fundId}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Will retrieve form lodgement history with the ATO for a fund. \n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- investment\n- audit\n- smsf_partner\n\n### Response Body\n\n| Key| Mandatory|Description |\n| -------- | -------- | -------- | \n | form | String | Name of the form. returns either \"SMSF_ANNUAL_RETURN\" or\"ACTIVITY_STATEMENT\" |\n|lodgementDateTime |Date |Date and time the form was lodged (UTC) |\n|lodgementStatus | String | Status of the form | \n|lodgingPartyFirm | String | Name of lodging party who is responsible for the form |\n|lodgingPartyIndividual | String | Individuals name of lodging party who is responsible for the form |\n| validatedDateTime | Date | Date and time the form was validated (UTC)|\n| year | Date | Year of the form. format = YYYY | \n\n**Lodgement Statuses**\n\n| Status | Description |\n| -------- | -------- |\n| LODGED_ELE | Lodged electronically/manually |\n| LODGED_REJ | Lodgment Rejected | \n| VALIDATED | Form Validated | \n| null | When the form is only prepared it will send status as null |"
+          },
+          "response": [
+            {
+              "id": "d5d86ca0-a803-45a4-a4b3-a95d193d46d0",
+              "name": "ATO Lodgements",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "type": "text",
+                    "value": "bearer df2f0e40-606f-4311-8066-590732fd126b\""
+                  }
+                ],
+                "url": "https://api.staging.bgl360.com.au/sf/funds/8a9c9e744ebc893a014ebd429dea790c/lodgements"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "frame-ancestors 'self' www.sf360.com.au"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json;charset=UTF-8"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 22 Aug 2019 23:40:06 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "nginx"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "ALLOW-FROM https://www.sf360.com.au"
+                },
+                {
+                  "key": "X-Rate-Daily-Limit-Remaining",
+                  "value": "-1"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "303"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"lodgements\": [\n    {\n      \"form\": \"SMSF_ANNUAL_RETURN\",\n      \"lodgementDateTime\": \"2018-12-14T05:45:00.000+0000\",\n      \"lodgementStatus\": \"LODGED_ELE\",\n      \"lodgingPartyFirm\": \"ABC Accountants Pty Ltd\",\n      \"lodgingPartyIndividual\": \"Tokhi, Jeevan\",\n      \"validateDateTime\": \"2017-10-01T22:19:56.000+0000\",\n      \"year\": 2017\n    },\n    {\n      \"form\": \"SMSF_ANNUAL_RETURN\",\n      \"lodgementDateTime\": \"2018-10-24T05:39:10.000+0000\",\n      \"lodgementStatus\": \"LODGED_ELE\",\n      \"lodgingPartyFirm\": \"ABC Accountants Pty Ltd\",\n      \"lodgingPartyIndividual\": \"Tokhi, Jeevan\",\n      \"validateDateTime\": \"2018-09-17T00:16:42.000+0000\",\n      \"year\": 2018\n    },\n    {\n      \"form\": \"SMSF_ANNUAL_RETURN\",\n      \"lodgementDateTime\": null,\n      \"lodgementStatus\": \"VALIDATED\",\n      \"lodgingPartyFirm\": \"ABC Accountants Pty Ltd\",\n      \"lodgingPartyIndividual\": \"Crofts, Matt\",\n      \"validateDateTime\": \"2019-08-20T02:12:14.000+0000\",\n      \"year\": 2019\n    }\n  ]\n}"
+            }
+          ]
+        }
+      ],
       "id": "1c0f82ef-420a-4ccb-8b5a-48a59ea41fdb"
     }
   ],
