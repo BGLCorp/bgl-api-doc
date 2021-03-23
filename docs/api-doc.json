@@ -12088,7 +12088,7 @@
       "name": "Coming Soon",
       "item": [
         {
-          "name": "ATO Lodgements (Fund) Copy",
+          "name": "ATO Lodgements (Firm)",
           "id": "503d0939-d03f-4916-8abe-afa30d5dacd5",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -12102,26 +12102,7 @@
                 "value": "bearer {{token}}"
               }
             ],
-            "url": {
-              "raw": "{{baseUrl}}/sf/funds/:fundId/lodgements",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "sf",
-                "funds",
-                ":fundId",
-                "lodgements"
-              ],
-              "variable": [
-                {
-                  "id": "fcd10920-50e5-455e-a578-8bce0af3333c",
-                  "key": "fundId",
-                  "value": "{{fundId}}",
-                  "type": "string"
-                }
-              ]
-            },
+            "url": "{{baseUrl}}/sf/firm/lodgements",
             "description": "Will retrieve form lodgement history with the ATO for a fund. \n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- investment\n- audit\n- smsf_partner\n\n### Response Body\n\n| Key| Mandatory|Description |\n| -------- | -------- | -------- | \n | form | String | Name of the form. returns either \"SMSF_ANNUAL_RETURN\" or\"ACTIVITY_STATEMENT\" |\n|lodgementDateTime |Date |Date and time the form was lodged (UTC) |\n|lodgementStatus | String | Status of the form | \n|lodgingPartyFirm | String | Name of lodging party who is responsible for the form |\n|lodgingPartyIndividual | String | Individuals name of lodging party who is responsible for the form |\n| validatedDateTime | Date | Date and time the form was validated (UTC)|\n| year | Date | Year of the form. format = YYYY | \n\n**Lodgement Statuses**\n\n| Status | Description |\n| -------- | -------- |\n| LODGED_ELE | Lodged electronically/manually |\n| LODGED_REJ | Lodgment Rejected | \n| VALIDATED | Form Validated | \n| null | When the form is only prepared it will send status as null |"
           },
           "response": [
