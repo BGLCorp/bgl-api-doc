@@ -3512,7 +3512,7 @@
                   }
                 ],
                 "url": {
-                  "raw": "{{baseUrl}}/fund/trialBalance?fundId={{fundId}}&start={{start}}&end={{end}}",
+                  "raw": "{{baseUrl}}/fund/trialBalance?start={{start}}&end={{end}}",
                   "host": [
                     "{{baseUrl}}"
                   ],
@@ -3524,7 +3524,8 @@
                     {
                       "key": "fundId",
                       "value": "{{fundId}}",
-                      "description": "[REQUIRED] The unique fund id"
+                      "description": "[REQUIRED] The unique fund id",
+                      "disabled": true
                     },
                     {
                       "description": "[OPTIONAL] Will return data in json or xml. Is optional and if not supplied data will be returned in json.",
