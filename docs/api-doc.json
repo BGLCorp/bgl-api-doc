@@ -12114,11 +12114,6 @@
               ],
               "query": [
                 {
-                  "key": "fundId",
-                  "value": null,
-                  "disabled": true
-                },
-                {
                   "key": "modifiedAfter",
                   "value": null,
                   "description": "[optional] - UTC Time\nWill only return results where lodgementDateTime or validatedDateTime is after this date "
