@@ -12116,7 +12116,6 @@
                 {
                   "key": "fundId",
                   "value": null,
-                  "description": "[optional] - will only return results for that fund",
                   "disabled": true
                 },
                 {
