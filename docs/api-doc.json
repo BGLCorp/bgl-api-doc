@@ -7365,7 +7365,7 @@
                     ],
                     "body": {
                       "mode": "raw",
-                      "raw": "{\n    \"addressId\": \"{{addressId}}\",\n    \"effectiveDate\": \"{{effectiveDate}}\",\n    \"officeOccupier\": \"{{officeOccupier}}\",\n    \"prepareForm\": {{prepareForm}},\n    \"type\": \"{{type}}}}\"\n}\n\n\n"
+                      "raw": "{\n    \"addressId\": \"{{addressId}}\",\n    \"effectiveDate\": \"{{effectiveDate}}\",\n    \"officeOccupier\": \"{{officeOccupier}}\",\n    \"prepareForm\": {{prepareForm}},\n    \"type\": \"{{type}}\"\n}\n\n\n"
                     },
                     "url": {
                       "raw": "{{baseUrl}}/companies/:companyId/addresses",
