@@ -7388,42 +7388,7 @@
                     },
                     "description": "Creates a company address.\n\nConstraint: If an address already exists for this company with the same type & effective date, the request will be rejected\n\n### Request Body\n\n\n| Key         | Datatype | Mandatory | Constraints                                                                                                      |\n| ----------- | -------- | --------- | ---------------------------------------------------------------------------------------------------------------- |\n| addressId     | Number   | Yes       |                                        |\n| effectiveDate      | String   | Yes       | \tISO 8601 date https://en.wikipedia.org/wiki/ISO_8601.                                                                                                                 |\n| officeOccupier      | String   | No       | Only valid for Registered Office Address\t                                                                                                          |\n| type | String   | Yes        | Must be one of 'Registered Office Address'/'Business Address'/'Postal Address'’/’Meeting Address’    |\n\n\n**Response Body**\n\n\n| Key         | Datatype | Mandatory | Constraints                                                                                                      |\n| ----------- | -------- | --------- | ---------------------------------------------------------------------------------------------------------------- |\n| id | Number | Yes | |\n| type     | String   | Yes       | Must be one of 'Registered Office Address'/'Business Address'/'Postal Address'’/’Meeting Address’    |                                            |\n| addressId     | Number   | Yes       |                                        |\n| effectiveDate      | String   | Yes       | \tISO 8601 date https://en.wikipedia.org/wiki/ISO_8601.                                                                                                                 |\n| officeOccupier      | String   | No       | Only valid for Registered Office Address                      |"
                   },
-                  "response": [
-                    {
-                      "id": "98ab3e70-9e23-4b7a-a5e4-936d94954257",
-                      "name": "Status 200",
-                      "originalRequest": {
-                        "method": "POST",
-                        "header": [
-                          {
-                            "key": "Authorization",
-                            "value": "bearer df2f0e40-606f-4311-8066-590732fd126b"
-                          },
-                          {
-                            "key": "Content-Type",
-                            "value": "application/json"
-                          }
-                        ],
-                        "body": {
-                          "mode": "raw",
-                          "raw": "{\n    \"addressId\": \"1\",\n    \"type\": \"Registered Office Address\",\n    \"effectiveDate\": \"2012-11-27\",\n    \"officeOccupier\": null\n}"
-                        },
-                        "url": "{{baseUrl}}/companies/5454545/addresses"
-                      },
-                      "status": "OK",
-                      "code": 200,
-                      "_postman_previewlanguage": "json",
-                      "header": [
-                        {
-                          "key": "Content-Type",
-                          "value": "application/json"
-                        }
-                      ],
-                      "cookie": [],
-                      "responseTime": null,
-                      "body": "\"<object>\""
-                    }
-                  ]
+                  "response": []
                 },
                 {
                   "name": "Delete a company address",
