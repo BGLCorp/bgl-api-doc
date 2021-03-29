@@ -7238,7 +7238,7 @@
                         }
                       ]
                     },
-                    "description": "Returns a list of company share transactions for a given company\n\n### Query Parameters\n\n| Form Parameter | type | Mandatory | Description |\n| -------- | -------- | -------- | -------- |\n| offset | number | Required | Example = 0 |\n| limit | number | Required | Example = 500 |\n\n### Response Body\n\n| Key               | Datatype | Mandatory | Constraints/Comments                                                                                              |\n| ----------------- | -------- | --------- | -------------------------------------------------------------------------------------------------------- |\n| beneficialOwnerId | Number   | No        | Must be an id of an existing contact|                                                                   | certificateNumber | String   | Yes       | Only mandatory if certificateType is no 'None'|                                                           \n| certificateType   | String   | Yes       | Must be one of 'Transaction'/'Balance'/'None'|\n| id | Number | Yes |Id of transaction |\n| numberOfShares    | Float    | Yes       | Can be an integer or floating point number. Example: 10, 255, 3.14159|\n| prepareForm | No | true or fals. True will reslt in change form (484) being prepared for ASIC|\n| shareType         | Object   | Yes       | See table below        |\n| shareholderId     | Number   | Yes       | Must be an id of an existing contact. Contact can only be of type 'People'/'Company'/'Joint Member'      |\n| transactionDate   | String   | Yes       | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601. Can not be before the company's incorporation Datatype |\n| type              | String   | Yes       | Must be one of 'Allotment'/'Balance'|                                                                     |\n\n\n**shareType object**\n\n| Key         | Datatype | Mandatory | Constraints                                                           |\n| ----------- | -------- | --------- | --------------------------------------------------------------------- |\n| paid        | Float    | Yes       | Can be an integer or floating point number. Example: 10, 255, 3.14159 |\n| unpaid      | Float    | Yes       | Can be an integer or floating point number. Example: 10, 255, 3.14159 |\n| currency    | String   | Yes       | an ISO currency code https://en.wikipedia.org/wiki/ISO_4217           |\n| description | String   | No        |                                                                       |\n| shareClass  | Object   | Yes       | See table below                                                       |\n\n**shareClass object**\n\n| Key          | Datatype | Mandatory | Constraints |\n| ------------ | -------- | --------- | ----------- |\n| descriptions | String   | Yes       |             |\n| cCode        | String   | Yes       |             |\n\n\n**Additional keys**\n\n| Key    | Datatype | Mandatory | Constraints |\n| ------ | -------- | --------- | ----------- |\n| offset | Number   | Yes       |             |\n| limit  | Number   | Yes       |             |\n| total  | Number   | Yes       |             |"
+                    "description": "Returns a list of company addresses for a given firm\n \n ### Query Parameters\n\n| Form Parameter | type | Mandatory | Description |\n| -------- | -------- | -------- | -------- |\n| offset | number | Required | Example = 0 |\n| limit | number | Required | Example = 500 |\n\n### Response Body\n\n Returns a list containing objects as described below\n\n| Key         | Datatype | Constraints                                                                                                     |\n| ----------- | -------- | ---------------------------------------------------------------------------------------------------------------- |\n| addressId     | Number   |                                     |\n| effectiveDate      | String   |ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601.                                                                                                                 |\n| id | Number | Yes | |\n| officeOccupier      | String   | Only valid for Registered Office Address                      |\n| type     | String   | Must be one of 'Registered Office Address'/'Business Address'/'Postal Address'’/’Meeting Address’    |                                            |\n| prepareForm | Boolean |Change to be notified to ASIC within 28 days on a Form 484 Change to Company Details. |\n\n**Additional keys**\n\n| Key    | Datatype | Mandatory | Constraints |\n| ------ | -------- | --------- | ----------- |\n| offset | Number   | Yes       |             |\n| limit  | Number   | Yes       |             |\n| total  | Number   | Yes       |             |"
                   },
                   "response": [
                     {
@@ -7624,8 +7624,104 @@
                   },
                   "response": [
                     {
+                      "id": "8f17f210-faea-490d-9640-f8b2d07af2ba",
+                      "name": "200 - List of Share Transactions",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+                            "key": "Authorization",
+                            "value": "bearer {{token}}"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/companies/:companyId/shareTransactions?offset={{offset}}&limit={{limit}}",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "companies",
+                            ":companyId",
+                            "shareTransactions"
+                          ],
+                          "query": [
+                            {
+                              "key": "offset",
+                              "value": "{{offset}}",
+                              "description": "number | Required | Example = 0 |"
+                            },
+                            {
+                              "key": "limit",
+                              "value": "{{limit}}",
+                              "description": "number | Required | Example = 500 |"
+                            }
+                          ],
+                          "variable": [
+                            {
+                              "description": "[REQUIRED] - Unique Id of company",
+                              "key": "companyId",
+                              "value": "{{companyId}}"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Date",
+                          "value": "Wed, 09 Sep 2020 05:46:25 GMT"
+                        },
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json;charset=UTF-8"
+                        },
+                        {
+                          "key": "Transfer-Encoding",
+                          "value": "chunked"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Server",
+                          "value": "nginx"
+                        },
+                        {
+                          "key": "X-Rate-Daily-Limit-Remaining",
+                          "value": "-1"
+                        },
+                        {
+                          "key": "vary",
+                          "value": "accept-encoding"
+                        },
+                        {
+                          "key": "Content-Encoding",
+                          "value": "gzip"
+                        },
+                        {
+                          "key": "X-Content-Type-Options",
+                          "value": "nosniff"
+                        },
+                        {
+                          "key": "Content-Security-Policy",
+                          "value": "frame-ancestors 'self' staging.sf360.com.au"
+                        },
+                        {
+                          "key": "X-Frame-Options",
+                          "value": "ALLOW-FROM https://staging.sf360.com.au"
+                        }
+                      ],
+                      "cookie": [],
+                      "responseTime": null,
+                      "body": "{\n    \"companyId\": \"39d9f511-6adf-45d2-844f-35e1e286fd44\",\n    \"limit\": 500,\n    \"offset\": 0,\n    \"shareTransactions\": [\n        {\n            \"beneficialOwnerId\": null,\n            \"certificateNumber\": \"1\",\n            \"certificateType\": \"Transaction\",\n            \"id\": 6409,\n            \"numberOfShares\": 1,\n            \"prepareForm\": false,\n            \"shareType\": {\n                \"currency\": \"AUD\",\n                \"description\": \"ORDINARY SHARES\",\n                \"paid\": 1,\n                \"shareClass\": {\n                    \"cCode\": \"ORD\",\n                    \"description\": \"ORDINARY SHARES\"\n                },\n                \"unpaid\": 0\n            },\n            \"shareholderId\": 2584,\n            \"transactionDate\": \"2019-03-19\",\n            \"type\": \"Subscription\"\n        }\n    ],\n    \"total\": 1\n}"
+                    },
+                    {
                       "id": "337145f8-e6f5-41bb-8d55-4ab4599d94fb",
-                      "name": "200 List of Share Transactions",
+                      "name": "List of Share Transactions",
                       "originalRequest": {
                         "method": "GET",
                         "header": [
