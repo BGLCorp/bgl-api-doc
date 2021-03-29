@@ -7624,8 +7624,8 @@
                   },
                   "response": [
                     {
-                      "id": "8f17f210-faea-490d-9640-f8b2d07af2ba",
-                      "name": "200 - List of Share Transactions",
+                      "id": "337145f8-e6f5-41bb-8d55-4ab4599d94fb",
+                      "name": "200 List of Share Transactions",
                       "originalRequest": {
                         "method": "GET",
                         "header": [
@@ -7659,9 +7659,10 @@
                           ],
                           "variable": [
                             {
-                              "description": "[REQUIRED] - Unique Id of company",
                               "key": "companyId",
-                              "value": "{{companyId}}"
+                              "value": "{{companyId}}",
+                              "type": "string",
+                              "description": "[REQUIRED] - Unique Id of company"
                             }
                           ]
                         }
@@ -7672,7 +7673,7 @@
                       "header": [
                         {
                           "key": "Date",
-                          "value": "Wed, 09 Sep 2020 05:46:25 GMT"
+                          "value": "Mon, 29 Mar 2021 02:27:49 GMT"
                         },
                         {
                           "key": "Content-Type",
@@ -7717,7 +7718,7 @@
                       ],
                       "cookie": [],
                       "responseTime": null,
-                      "body": "{\n    \"companyId\": \"39d9f511-6adf-45d2-844f-35e1e286fd44\",\n    \"limit\": 500,\n    \"offset\": 0,\n    \"shareTransactions\": [\n        {\n            \"beneficialOwnerId\": null,\n            \"certificateNumber\": \"1\",\n            \"certificateType\": \"Transaction\",\n            \"id\": 6409,\n            \"numberOfShares\": 1,\n            \"prepareForm\": false,\n            \"shareType\": {\n                \"currency\": \"AUD\",\n                \"description\": \"ORDINARY SHARES\",\n                \"paid\": 1,\n                \"shareClass\": {\n                    \"cCode\": \"ORD\",\n                    \"description\": \"ORDINARY SHARES\"\n                },\n                \"unpaid\": 0\n            },\n            \"shareholderId\": 2584,\n            \"transactionDate\": \"2019-03-19\",\n            \"type\": \"Subscription\"\n        }\n    ],\n    \"total\": 1\n}"
+                      "body": "{\n    \"companyId\": \"7d9f84cc-4801-40ce-aeb5-42e29e91b807\",\n    \"limit\": 500,\n    \"offset\": 0,\n    \"shareTransactions\": [\n        {\n            \"beneficialOwnerId\": null,\n            \"certificateNumber\": \"1\",\n            \"certificateType\": \"Transaction\",\n            \"id\": 12710,\n            \"numberOfShares\": 100,\n            \"prepareForm\": true,\n            \"shareType\": {\n                \"currency\": \"AUD\",\n                \"description\": \"ORDINARY SHARES\",\n                \"paid\": 1,\n                \"shareClass\": {\n                    \"cCode\": \"ORD\",\n                    \"description\": \"ORDINARY SHARES\"\n                },\n                \"unpaid\": 0\n            },\n            \"shareholderId\": 11038,\n            \"transactionDate\": \"2021-01-29\",\n            \"type\": \"Allotment\"\n        },\n        {\n            \"beneficialOwnerId\": null,\n            \"certificateNumber\": \"2\",\n            \"certificateType\": \"Balance\",\n            \"id\": 12711,\n            \"numberOfShares\": 1,\n            \"prepareForm\": true,\n            \"shareType\": {\n                \"currency\": \"AUD\",\n                \"description\": \"ORDINARY SHARES\",\n                \"paid\": 1,\n                \"shareClass\": {\n                    \"cCode\": \"ORD\",\n                    \"description\": \"ORDINARY SHARES\"\n                },\n                \"unpaid\": 0\n            },\n            \"shareholderId\": 11038,\n            \"transactionDate\": \"2021-03-29\",\n            \"type\": \"Return of capital Transfer out\"\n        },\n        {\n            \"beneficialOwnerId\": null,\n            \"certificateNumber\": \"3\",\n            \"certificateType\": \"Transaction\",\n            \"id\": 12712,\n            \"numberOfShares\": 1,\n            \"prepareForm\": true,\n            \"shareType\": {\n                \"currency\": \"AUD\",\n                \"description\": \"ORDINARY SHARES\",\n                \"paid\": 0.99,\n                \"shareClass\": {\n                    \"cCode\": \"ORD\",\n                    \"description\": \"ORDINARY SHARES\"\n                },\n                \"unpaid\": 0\n            },\n            \"shareholderId\": 11038,\n            \"transactionDate\": \"2021-03-29\",\n            \"type\": \"Return of capital Transfer in\"\n        }\n    ],\n    \"total\": 3\n}"
                     }
                   ]
                 },
