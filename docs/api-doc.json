@@ -6861,7 +6861,7 @@
                   "response": [
                     {
                       "id": "bdcf04c3-e7c6-4b18-ba9d-4cfad4ba68ce",
-                      "name": "List of officers",
+                      "name": "200 - List of officers",
                       "originalRequest": {
                         "method": "GET",
                         "header": [
@@ -6985,7 +6985,7 @@
                     ],
                     "body": {
                       "mode": "raw",
-                      "raw": "{\n  \"contactId\": \"{{contactId}}\",\n  \"appointDate\": \"{{appointDate}}\",\n  \"position\": \"{{position}}\"\n}\n"
+                      "raw": "{\n            \"alternateContactId\": null,\n            \"alternateTerms\": null,\n            \"appointDate\": \"2020-04-01\",\n            \"ceaseDate\": null,\n            \"contactId\": 11038,\n            \"nominatorContactId\": null,\n            \"notes\": null,\n            \"position\": \"Director\",\n            \"positionStatus\": \"Appointed\",\n            \"prepareForm\": true,\n            \"signatoryStatus\": \"Attendee\"\n        }"
                     },
                     "url": {
                       "raw": "{{baseUrl}}/companies/:companyId/officers",
