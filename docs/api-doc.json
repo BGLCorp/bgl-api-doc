@@ -12,7 +12,7 @@
         {
           "name": "Staging (Sandbox)",
           "item": [],
-          "id": "c438671f-d887-420f-b0dd-a2af9ea234ec",
+          "_postman_id": "c438671f-d887-420f-b0dd-a2af9ea234ec",
           "description": "Our staging environment (https://api.staging.bgl360.com.au) is used to test your application and integration with BGL's products\n\n 1. Please email api@bglcorp.com.au to get access to our Staging environment.  \n 2. Explore our documentation below to see what each endpoint does\n 3. If you get stuck or require your API scope to upgraded please contact api@bglcorp.com.au",
           "event": [
             {
@@ -35,12 +35,13 @@
                 ]
               }
             }
-          ]
+          ],
+          "_postman_isSubFolder": true
         },
         {
           "name": "Production Environment",
           "item": [],
-          "id": "8f830d5d-fefb-4461-9603-40d24534abe8",
+          "_postman_id": "8f830d5d-fefb-4461-9603-40d24534abe8",
           "description": "Our production environment (https://api.bgl360.com.au) is used to access BGL's client's data for Simple Fund 360 and CAS 360. To get access to our Production Environment you must have done the following: \n\n1. Developed and tested your integration on our staging environment\n2. Email api@bglcorp.com.au to get access to receive Production environment credentials.  \n3. You must agree to [BGL's Terms and Conditions](https://api.bgl360.com.au/home/termsAndConditions) \n4. You must sign and return our [BGL API agreement](https://blog.api.bgl360.com.au/assets/Files/BGLStandardAPIAgreement.docx) \n5. You must complete [BGL's security questionnaire ](https://www.formpl.us/form/1340596004)\n6. You must demonstrate your integration to BGL unless you are only accessing data owned by your firm.\n\nOnce all these steps have been completed you will receive your Authentication details for BGL's Production API and BGL will update your scope. \n\n**Marketing of your application/integration**\n\nFor commercial products, BGL offers the following opportunities for your company:\n\n1. BGL include references to our integration partners in our software Knowledge Base (Help Files). This includes details of the integration and instructions on how to set it up.\n\n2. BGL offers an opportunity to do a live webinar jointly with our new integration partners where we show our clients how the integration works. We record the webinar and add it to our BGL Community and Youtube channel so it is available to clients at any time.\n\n3. BGL do media releases with new integration partners who are happy to put their name to a media release. Media releases need to be approved by both parties.\n\n4. BGL are happy for you to list us as an integration partner on your website or in your documentation. We do the same for all our integration partners. Check out our marketplace (https://www.bglcorp.com/marketplace/).\n\n5. BGL are happy to run a training session for your team explaining how the integration works and encourage you to run a similar session for our team so they better understand what is available.\n\n\n\n",
           "auth": {
             "type": "noauth"
@@ -66,12 +67,13 @@
                 ]
               }
             }
-          ]
+          ],
+          "_postman_isSubFolder": true
         },
         {
           "name": "BGL Logo Kit and Colour Guide",
           "item": [],
-          "id": "bf22117b-8db3-4a19-8e74-e5543035648e",
+          "_postman_id": "bf22117b-8db3-4a19-8e74-e5543035648e",
           "description": "On the [BGL Media Kit](https://www.bglcorp.com/media-kit/) page, you’ll find our logo assets and brand colour information for anyone to use. Make sure you download our [BGL Branding guide](https://www.bglcorp.com/wp-content/uploads/2019/07/BGL-Branding-Jan-2019.pdf) for more information about our branding style and restrictions.",
           "event": [
             {
@@ -94,10 +96,11 @@
                 ]
               }
             }
-          ]
+          ],
+          "_postman_isSubFolder": true
         }
       ],
-      "id": "f58a44b9-09bf-4f0f-8782-df52787ee962",
+      "_postman_id": "f58a44b9-09bf-4f0f-8782-df52787ee962",
       "description": "For updates, news and guides for BGL's ecosystem please see [BGL's Ecosystem Blog](https://blog.api.bgl360.com.au/)\n",
       "event": [
         {
@@ -128,7 +131,7 @@
         {
           "name": "Prerequisites",
           "item": [],
-          "id": "0b37159b-48fc-4907-9c06-2641f189e8cd",
+          "_postman_id": "0b37159b-48fc-4907-9c06-2641f189e8cd",
           "description": "In order to consume the BGL API:\n\n**1. Register a BGL Application**\nYou need to register your API application with BGL first. See [Add Application](https://documenter.getpostman.com/view/1087993/SVYjVNnn?version=latest#9776acf7-4623-436a-b3c8-feb5cdcd825f)\n\nYou will either need to login using your BGL Credentials. If you do not have a BGL Account BGL can create a demo account for you. \n\nThe consuming application can be registered with BGL by using My Application section.\n\n2.**Certificate Policy**\n\nEnsure the Amazon Root CA Certificate bundles should be installed in your applications/operating systems.\n\nCertificates provided by Amazon Certificate Manager are verified by Amazon’s certificate authority (CA). Any browser, application, or OS that includes the Amazon Root CA 1, Starfield Services Root Certificate Authority - G2, or Starfield Class 2 Certification Authority trusts certificates provided by ACM.\n\nLink to access CA Certs issued by Amazon: https://www.amazontrust.com/repository/",
           "event": [
             {
@@ -151,14 +154,15 @@
                 ]
               }
             }
-          ]
+          ],
+          "_postman_isSubFolder": true
         },
         {
           "name": "Authorization Code Grant",
           "item": [
             {
               "name": "Obtain an Authorization Code",
-              "id": "e880a300-1dca-44d3-8369-e450113774cc",
+              "_postman_id": "e880a300-1dca-44d3-8369-e450113774cc",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -269,7 +273,7 @@
             },
             {
               "name": "Obtain an Access Token",
-              "id": "0f01acc6-6c85-4cf6-86a1-97fc3366e316",
+              "_postman_id": "0f01acc6-6c85-4cf6-86a1-97fc3366e316",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -384,7 +388,7 @@
               ]
             }
           ],
-          "id": "c9677878-b304-42c1-be0f-dea86196d142",
+          "_postman_id": "c9677878-b304-42c1-be0f-dea86196d142",
           "description": "The authorization code is a temporary code that the client will exchange for an access token. The code itself is obtained from the authorization server where the user gets a chance to see what the information the client is requesting, and approve or deny the request. The Access Token's purpose is to inform the API that the bearer of the token has been authorized to access the API and perform a predetermined set of actions (which is specified by the scopes granted).\n\n## Step 1. Initiate request\n\nYour app/website initiates the flow by directing the user to the **Authorize URL** . The URL can put inserted into an `<a href=\"\">` tag or attached to a button.\nExample:\n```javascript\n<a href=\"https://api.bgl360.com.au/oauth/authorize?response_type=code&client_id=0ce526e5-1475-4eda-b272-2c45455171&scope=developer&redirect_uri=https://exampleapp.com/bglcallback\">\n    Connect Your BGL Account</a>\n```\n  <a href=\"https://api.bgl360.com.au/oauth/authorize?response_type=code&client_id=0ce526e5-1475-4eda-b272-2c45455171&scope=developer&redirect_uri=https://exampleapp.com/bglcallback\">\n    Connect Your BGL Account</a>\n\n## Step 2. The user approves the request\n\nUpon being directed to the BGL auth server, the user sees the authorization request shown in the illustration below. \n\n**2.1 Login page**\n\nIf the user has not logged in to any BGL system prior to requesting an Authorization Code, the user will be redirected to the BGL Login Page. The user needs to input a username and password and select Sign In.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/login.png)\n\n**2.2 Authorization Page**\nThe Authorization Page will show what access you will have to their accounts. \n\nIf the user has not previously accepted the application's permission request, the grant has expired or been manually revoked by the user, the system will be redirected to the API's authorisation screen as displayed below.\n\nTas shown below.\n\n*Switch Firm*\nIf the user has accees to multiple Firms (Businesses), this screen also allows you to switch firm if required by clicking on the Switch Firm button. You will be redirected to the Please choose a firm page where you can select a different firm from the drop-down list.\n\n**Choose Firm**\n\nIf access has already been granted to entities(s) for the selected firm, the number of entities will be displayed on-screen. If you are performing Authorisation for the first time the count displays the total number of entity avialable for the given firm. Please see Entity Selection on changing the accessible entities.\n\n\n## Step 3. API redirects the user back to your app/website.\n\nThe service sends a redirect header redirecting the user’s browser back to the app that made the request. The redirect will include a “code” in the URL (and the original “state” if used).\n\n    https://exampleapp.com/bglcallback?code=Yzk5ZDczMzRlNDEwY&state=5ca75bd30\n\n## Step 4. You exchange the auth code for an access token\n\nThe app uses the auth code to get an access token by making a POST request to the authorization server. You will need to pass Basic Authorization header for authorization.\n\n    curl -i -X POST \\\n       -H \"Accept:application/json\" \\\n     'https://api.staging.bgl360.com.au/oauth/token?grant_type=authorization_code&code=xxxxxx&scope=audit&redirect_uri=https%3A%2F%2Fexampleapp.com%2Fbglcallback'\n\n The authorization server will validate the request and respond with an access token and optional refresh token if the access token will expire.\n\nResponse:\n\n    { access_token: \"df2f0e40-606f-4311-8066-590732fd126b\" token_type: \"bearer\" refresh_token: \"c50a429f-9a6d-449d-8d82-4899998fe27b\" expires_in: 581977 scope: “audit” }\n",
           "event": [
             {
@@ -407,12 +411,13 @@
                 ]
               }
             }
-          ]
+          ],
+          "_postman_isSubFolder": true
         },
         {
           "name": "Access Token",
           "item": [],
-          "id": "fcf6f95d-158e-42b2-a913-2f69f31aba8a",
+          "_postman_id": "fcf6f95d-158e-42b2-a913-2f69f31aba8a",
           "description": "Your application receives an access token after a user successfully authenticates and authorizes access.\nThe access token will contain the following data: \n\n| Key |Type  | Description |\n|--|--|--|\n|access_token | String | Your application passes the access token as a credential when it calls the target endpoint. | \n|token_type  | String | usually equal to \"bearer\" | \n|refresh_token | String | A refresh token is a special kind of token used to obtain a renewed access token. Applications must store refresh tokens securely because they essentially allow a user to remain authenticated forever. | \n| expires_in | Number | Number of seconds until Access Token expires.  |\n| scope | String | The scope determines what endpoints are accessible. |\n| access_token_expires_at | Number | UNIX time when access token will expire |\n| refresh_token_expires_at | Number |UNIX time when refresh token will expire |\n| bgl_firm_id | String |UUID for BGL Licence Owner (firm) |\n| username | String | email address of user who authorized the token |",
           "event": [
             {
@@ -435,14 +440,15 @@
                 ]
               }
             }
-          ]
+          ],
+          "_postman_isSubFolder": true
         },
         {
           "name": "Refresh Token",
           "item": [
             {
               "name": "Refresh an Access Token",
-              "id": "df2059a8-ff31-408b-ac34-be48fcf8f915",
+              "_postman_id": "df2059a8-ff31-408b-ac34-be48fcf8f915",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -588,11 +594,12 @@
               ]
             }
           ],
-          "id": "9d36b7ba-609d-418b-8664-d34a462d6100",
-          "description": "The Refresh Token grant type is used by API clients to exchange a refresh token for an access token when the access token has expired or about to expire. This allows clients to continue to have a valid access token without further interaction with the user.\n\nThe grant_type parameter must be set to “refresh_token”.\n\nBGL checks whether the refresh token is valid, and has not expired.\nIf everything checks out, the service can generate an access token and issue a new refresh token in the response. "
+          "_postman_id": "9d36b7ba-609d-418b-8664-d34a462d6100",
+          "description": "The Refresh Token grant type is used by API clients to exchange a refresh token for an access token when the access token has expired or about to expire. This allows clients to continue to have a valid access token without further interaction with the user.\n\nThe grant_type parameter must be set to “refresh_token”.\n\nBGL checks whether the refresh token is valid, and has not expired.\nIf everything checks out, the service can generate an access token and issue a new refresh token in the response. ",
+          "_postman_isSubFolder": true
         }
       ],
-      "id": "f7221efd-d6bf-4475-a5c5-e68cd905eacf",
+      "_postman_id": "f7221efd-d6bf-4475-a5c5-e68cd905eacf",
       "description": "**What is Oauth 2.0?**\n\nOAuth 2.0 is the industry standard developed by IETF for providing client applications with “secure delegated access”. \n\nIf you are new to using OAuth 2.0 please see [BGL's OAuth2 Guide](https://blog.api.bgl360.com.au/oauth2-guide/). This includes a step by step process of how to test using Postman. \n",
       "event": [
         {
@@ -623,7 +630,7 @@
         {
           "name": "Security",
           "item": [],
-          "id": "1f8b5874-b89d-418b-ba18-107ea1b45ef2",
+          "_postman_id": "1f8b5874-b89d-418b-ba18-107ea1b45ef2",
           "description": "Apps connecting to BGL's API must meet these requirements: \n\n## Encryption key management\nPlease ensure that your app meets these requirements for OAuth token management: \n\n - OAuth tokens or customer-identifying information must not be exposed within your app or shared with other parties. \n - Encrypt and store the refresh token in persistent memory. \n - Encrypt the refresh token with a symmetric algorithm (3DES or AES). AES-128 or greater is preferred. \n - Store your AES key in your app, in a separate configuration file.\n\n## Encryption in transit\nSSL must be configured to support only TLS version 1.2 or higher. \n- BGL does not support 1.1 or lower. \n- TLS version 1.2 using AES 256 or higher with SHA-256 is recommended.\n\n\n## SSO Certificates\nPlease include the Amazon Root CA to your CA Certificate bundle for your application/OS.\nCertificates provided by Amazon Certificate Manager are verified by Amazon’s certificate authority (CA). Any browser, application, or OS that includes the Amazon Root CA 1, Starfield Services Root Certificate Authority - G2, or Starfield Class 2 Certification Authority trusts certificates provided by ACM.\nTo access CA Certs issued by Amazon, refer to the following webpage:\nhttps://www.amazontrust.com/repository/\n\n",
           "event": [
             {
@@ -646,12 +653,13 @@
                 ]
               }
             }
-          ]
+          ],
+          "_postman_isSubFolder": true
         },
         {
           "name": "Add My Application",
           "item": [],
-          "id": "9776acf7-4623-436a-b3c8-feb5cdcd825f",
+          "_postman_id": "9776acf7-4623-436a-b3c8-feb5cdcd825f",
           "description": "This section explains how an Organisation or a User can register to receive access to the BGL 360 API.\n\nBefore you can use My Application, you will need a BGL Product (Simple Fund 360 or CAS 360) username and password.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/addApplication.png)\n\n1. Go to the [API website (Production)](https://api.bgl360.com.au) or [API website (Staging)](https://api.staging.bgl360.com.au)and select DEVELOPER from the main menu. \n\n2. Input your the BGL Product Username and Password. \n\nAlternatively,you can access the API Management by navigating to the BGL API application on the App Switcher in either Simple Fund 360 or CAS 360.  \n![](https://sf360.zendesk.com/hc/article_attachments/360028553531/image2018-3-5_11_32_5.png)\n\n## Add Application\n1. Select **Add Application** on the Application List page. This will redirect the user to the 'Setup New Application' Page\n2. Following are the details that needs to be added to create an API Application/Client.\n\n\n| Field | Description | Required |\n| -------- | -------- | -------- |\n| Name     | your API Application/Client Name.     | Yes     |\n| Redirect URLs    | The URL that will be used to redirect after Authorisation. The first URL entered in the list will be used as the Default Redirect URL (which will be displayed in a different colour in the list). However, if you wish to use any other Redirect URL in the list that you have added, then you will need to provide this in the Request for Authorisation Code. At least one Redirect URL should be added to this field. You can add upto 5 Redicrect URLs. Only valid URLs can be entered into this field.  We restrict localhost as it causes our API to loop back to itself. You can use IPv4 localhost address such as http://127.0.0.1:80 or a URL redirection such as https://goo.gl/vRtUkM | Yes     |\n| Scope     | The API Application/Client Scope. Please see API Scopes for more details. Currently the supported type is 'Developer'.      | Yes     |\n\n3. Once you have entered the necessary information, ensure you have read and agreed to the the Terms and Conditions\n\n## Why can't I enter Local Host as a redirect URL ? \nWe restrict localhost as it causes our API to loop back to itself. You can use IPv4 localhost address such as http://127.0.0.1:80 or a URL redirection such as https://goo.gl/vRtUkM\n## Do I need to create more than one application?\nIn most cases you will oncly need one application. One application can access unlimited user accounts from unlimited firms. \n",
           "event": [
             {
@@ -674,12 +682,13 @@
                 ]
               }
             }
-          ]
+          ],
+          "_postman_isSubFolder": true
         },
         {
           "name": "Edit Application",
           "item": [],
-          "id": "54a9e62f-26c9-4fa3-b2e0-b232575e9748",
+          "_postman_id": "54a9e62f-26c9-4fa3-b2e0-b232575e9748",
           "description": "The Edit Application Details page, as displayed below, allows you to make changes to the application information you have previously entered.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/editApplication.png)\n\n\n\n| Field | Description | Required |\n| -------- | -------- | -------- |\n| Name     | The API Application/Client Name.    | Yes     |\n| Owner     | Username who owns/created the application. This is a read-only field.    | Yes     |\n| Website     | The Web Site URL of the Organization using this Application/Client. The entered URL should be a valid, well formed URL.    | No     |\n| Logo in Authorization Page   | The Logo that will be displayed in the Authorization Page. Enter a valid url that points to the Organization Logo. Select 'Preview' to preview the entered logo URL    | No     |\n| Authorize URL     | This is an auto generated URL that could be used to obtain the Authorization Code. This is a read-only field. Select the copy button next to this URL to copy this URL to the clipboard, as shown below.    | No     |\n| Access Token URL     | This is an auto generated URL that could be used to obtain the Access Token Code. This is a read-only field. Select the copy button next to this URL to copy this URL to the clipboard, as shown below. | No     |\n| Application/Client Id     | This is a read-only field, displaying the unique Client Id. Select the copy button next to this, to copy this URL to the clipboard, as shown below.    | Yes     |\n| Application/Client Secret     | This is a read-only field. When the Application/Client is loaded into the Edit Application screen, the Client Secret is displayed in the encrypted format. Select **Regenerate Secret** , to regenerate the Application/Client Secret. Once the Application/Client Secret is regenerated it will be displayed in 'Raw Format'. **This should be copied and safeguarded**. When the Application/Client Secret is regenerated, a copy button will display next to the generated. Once the Application is saved, this secret will be encrypted. BGL does not store the Raw Format and there is no way of retrieving the Raw Format.     | Yes    |\n| Authorization Header    | This displays the Basic Authorization header which should be used to obtain the access token. This is a read only field. The value displayed in this field is Base 64 encoded. This field is visible and populated only when the secret is generated. The BGL API application will not store this field. This field is not retrivable once the application is saved. You can select the copy button to copy the Basic Authorization Header to the clipboard. Please copy and safe guard this information.    | Yes     |\n| Redirect URLs     | The URL that will be used to redirect after Authorization. The first URL entered in the list will be taken as the default redirect url (which will be displayed in a different colour in the list). However, if you wish to use any other call back url in the list that you have added, then you will need to provide this in the Request for Authorization Code. At least one Redicrect URL should be added to this field. You can add up to 5 Redicrect URLs. Only valid URLs can be entered into this field.    | Yes     |\n| Scope     | The API Application/Client Scope. Please see API Scopes for more details. The defaulty scope issued is 'Developer'.    | Yes     |\n\n\nSelect 'Save' as shown below, to update the API Application/client. The Application will be updated and you will be redirected to the Application List page.",
           "event": [
             {
@@ -702,18 +711,20 @@
                 ]
               }
             }
-          ]
+          ],
+          "_postman_isSubFolder": true
         },
         {
           "name": "Delete Application",
           "item": [],
-          "id": "d787bef7-935d-49c8-bd52-682c8b9b680c",
-          "description": "To delete the Application(s)/Client(s):\n\n* Navigate to the Application List page\n* Tick the check box next to the Application(s)/Client(s) to delete\n* Select the Delete button, as shown below.\n\nThis will delete the selected Application(s)/Client(s). If the deletion is succesful, the Application List page will refresh to display the currently available Application(s)/Client(s).\n\n\n\n| Message | Description | \n| -------- | -------- | \n| Removed <Application Name/Client> Successfully     | If deleting the Application/Client was successful.     |"
+          "_postman_id": "d787bef7-935d-49c8-bd52-682c8b9b680c",
+          "description": "To delete the Application(s)/Client(s):\n\n* Navigate to the Application List page\n* Tick the check box next to the Application(s)/Client(s) to delete\n* Select the Delete button, as shown below.\n\nThis will delete the selected Application(s)/Client(s). If the deletion is succesful, the Application List page will refresh to display the currently available Application(s)/Client(s).\n\n\n\n| Message | Description | \n| -------- | -------- | \n| Removed <Application Name/Client> Successfully     | If deleting the Application/Client was successful.     |",
+          "_postman_isSubFolder": true
         },
         {
           "name": "API Scope",
           "item": [],
-          "id": "9ef9e817-5fba-4a36-908c-eeee71c2a357",
+          "_postman_id": "9ef9e817-5fba-4a36-908c-eeee71c2a357",
           "description": "The API Scope defines what end points are accessible for a given scope. The below table illustrates the available scopes and what end points are accessible by each of them.\n\nTo change your scope, please contact api@bglcorp.com.au. An API Client can have access to multiple scopes. \n\n## Warning\n* To use the BGL_partner scope the user will need access to both SF360 and CAS360. \n* If the user only has access to one product then one of the other scopes need to be used. \n\n\n|Scope/Resource  | [General Resources](https://docs.api.bgl360.com.au/?version=latest#4626b7eb-a252-44aa-b871-003d4f3aaf0c) | [Entity Lists](https://docs.api.bgl360.com.au/?version=latest#ac84353f-b900-4413-a0db-c7588faf211c), [Entity General](https://docs.api.bgl360.com.au/?version=latest#528d0628-fbbb-4ad2-92ba-267b77f41fab) and  [Entity Reports](https://docs.api.bgl360.com.au/?version=latest#275f9cc9-3bf8-403d-b7ed-7b3e098726d5) | [Entity Documents](https://docs.api.bgl360.com.au/?version=latest#8600d850-798b-46b3-b26c-01f762bbd557) | [SMSF Establishment](https://docs.api.bgl360.com.au/?version=latest#08fb5238-e13d-46db-8d13-1229b901515e) | [All CAS 360 Resources](https://docs.api.bgl360.com.au/?version=latest#4b0acc02-01c4-4c93-9aa7-cde7f8d759c7) | \n|--|--|--|--|--|--|\n|developer  | **YES** | no | no | no |no | no |\n|investment|**YES** | **YES** | no | no |no | no |\n|audit|**YES** | **YES** | **YES** | no |no | no |\n|smsf_partner|**YES** | **YES** | **YES** | **YES** | no |\n|cas_incorporator|**YES** | no | no | no | **YES** |\n\n",
           "event": [
             {
@@ -736,14 +747,15 @@
                 ]
               }
             }
-          ]
+          ],
+          "_postman_isSubFolder": true
         },
         {
           "name": "API Rate Limits",
           "item": [
             {
               "name": "Rate Limit Status",
-              "id": "0fd9709a-f8b6-4844-8938-e0ec5f55b1ae",
+              "_postman_id": "0fd9709a-f8b6-4844-8938-e0ec5f55b1ae",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -792,7 +804,7 @@
               ]
             }
           ],
-          "id": "072a1b4c-d402-4d08-8650-2c65c70b0507",
+          "_postman_id": "072a1b4c-d402-4d08-8650-2c65c70b0507",
           "description": "To prevent BGL's API from being overwhelmed and protect against DOS attacks, BGL enforce a limit on the number of requests which can either be made on a 10 min or daily basis.\n\nCurrently most applications will have a default 10 min limit set to 100 requests per 10 minutes period. If you would like this set higher please dicusss with the BGL API Team. \n\nThe returned HTTP Headers will show your Rate Limit Status. \n\n|Header Name|Description  |\n|--|--|\n| X-Rate Daily Limit |This value indicates the number of requests a client can make on a given day.  |\n|X-Rate-Daily-Limit-Remaining | indicates the remaining number of requests available. For every valid request made, this indicator will reduce its count by one. Zero means the available daily limit has been reached.|\n|X-Rate Limit | This value indicates the number of requests that can be made within a given time frame.   |\n\n\n**Error - 429 Too Many Requests**\nIf the daily limit has been exceeded, the following error will display with status - 429 Too Many Requests.\n```\n{\n\"message\": \"Too Many Requests\",\n\"errors\": [\n\"You had too many requests today, the rate limit ceiling per day is 1000\"\n],\n\"status\": 429\n}\n```\nPlease note that any request returned with http code(status) 401 or 429 will not reduce the daily limit threshold.\n\nIf the number of requests a client makes exceeds the specified X limit, the BGL API will return an error response as follows:\n```\n{\n\"message\": \"Too Many Requests\",\n\"errors\": [\n\"You had too many requests in last 10 mins, the rate limit ceiling for every 10 mins is 100\"\n],\n\"status\": 429\n}\n```\n",
           "event": [
             {
@@ -815,18 +827,20 @@
                 ]
               }
             }
-          ]
+          ],
+          "_postman_isSubFolder": true
         },
         {
           "name": "Grant Types and Expiry",
           "item": [],
-          "id": "1567e41a-4683-4f69-84d4-c389b1955fd9",
-          "description": "# Grant Types\nCurrently the BGL API only supportes the [Authorization Code grant type](https://tools.ietf.org/html/rfc6749#section-1.3.1)\n\n# Expiry Times\n\n\n| Grant/Token Type | Expiration | \n| -------- | -------- | \n| Authorization Code     | 10 mins     | \n| Access Token     | 7 Days     | \n| Refresh Token  | 30 days     | "
+          "_postman_id": "1567e41a-4683-4f69-84d4-c389b1955fd9",
+          "description": "# Grant Types\nCurrently the BGL API only supportes the [Authorization Code grant type](https://tools.ietf.org/html/rfc6749#section-1.3.1)\n\n# Expiry Times\n\n\n| Grant/Token Type | Expiration | \n| -------- | -------- | \n| Authorization Code     | 10 mins     | \n| Access Token     | 7 Days     | \n| Refresh Token  | 30 days     | ",
+          "_postman_isSubFolder": true
         },
         {
           "name": "API Paginataion",
           "item": [],
-          "id": "aa2c3853-08e5-4380-a51a-4d270172c960",
+          "_postman_id": "aa2c3853-08e5-4380-a51a-4d270172c960",
           "description": "For performance reasons, some of our APIs  use offset-based paging use the `offset` and `limit/max` query parameters to paginate through items in a collection.\n\n\n## Paging\n\nTo fetch the first page of entries in a collection the API needs to be called with the  **offset**  set to  **0** and **limit/max**  field equal to the maximum value e.g **500**. \n\n    GET https://api.staging.bgl360.com.au/contacts?offset=0&limit=500\n</br>\n\nTo fetch the next page of entries the API needs to be called with an **offset** parameter that equals the sum of the previous **offset** value and limit returned in the previous result, **previous_offset + previous_limit**.\n\n    GET https://api.staging.bgl360.com.au/contacts?offset=501&limit=500\n</br>\n\nThe final page of items has been requested when the next **offset** value exceeds the **total** value in the response object or no entries are returned. At this point there are no more items to fetch.\n</br>\n\n```javascript\n\"limit\": 500,\n\"offset\": 0,\n\"total\": 698\n```\n\n",
           "event": [
             {
@@ -849,12 +863,13 @@
                 ]
               }
             }
-          ]
+          ],
+          "_postman_isSubFolder": true
         },
         {
           "name": "Error Codes",
           "item": [],
-          "id": "786384a4-9a10-483d-b5ee-5583db7786cd",
+          "_postman_id": "786384a4-9a10-483d-b5ee-5583db7786cd",
           "description": "For API response, the BGL API will use conventional HTTP response codes to indicate the success or failure of an API request. The body of reponse will ususally provide more detailed information\ne.g \n\n\n`{\n    \"error\": \"unauthorized\",\n    \"error_description\": \"Full authentication is required to access this resource\"\n}\n`\n\n|HTTP Code|  Status Message |Description | \n|--|--|--|\n| 200 | OK | Indicates that the request has succeeded.\n| 201 | Created | Indicates that the POST request has been fulfilled and has resulted in one or more new resources being created |\n| 302 | Found | Indicates that the target resourceresides temporarily under a different URI. e.g Access Code |\n| 400 |Bad Request|Usually Caused by a missing or incorect Query Parameter |\n|401 | Unauthorized | You are not authorized or do not have permission to access the resource |\n| 403 | Forbidden | Indicates that the server understood the request but refuses to authorize it. Check Payload for more information |\n| 404 | not found | Indicates that the BGL API did not find the target resource or is not willing to disclose that one exists. |\n| 429 |Too Many Requests  | You’ve exceeded your 10 min or daily rate limit. |\n| 500 |Internal Server Error | The request was unable to be processed due to an error with our servers.  |\n|503 | Service Unavailable | BGL API is currently unable to handle the request due to a service outage or scheduled maintenance |",
           "event": [
             {
@@ -877,16 +892,18 @@
                 ]
               }
             }
-          ]
+          ],
+          "_postman_isSubFolder": true
         },
         {
           "name": "API Status",
           "item": [],
-          "id": "017b2456-3f0f-4eca-b1d1-29e63b7396f3",
-          "description": "The status of the BGL API and all of BGL's online services can be found at [https://status.bgl360.com.au](https://status.bgl360.com.au)"
+          "_postman_id": "017b2456-3f0f-4eca-b1d1-29e63b7396f3",
+          "description": "The status of the BGL API and all of BGL's online services can be found at [https://status.bgl360.com.au](https://status.bgl360.com.au)",
+          "_postman_isSubFolder": true
         }
       ],
-      "id": "d733d478-ed34-4c59-ad76-49cef7ea168b",
+      "_postman_id": "d733d478-ed34-4c59-ad76-49cef7ea168b",
       "auth": {
         "type": "noauth"
       },
@@ -919,13 +936,14 @@
         {
           "name": "View Token(s)",
           "item": [],
-          "id": "cb8e39df-29d9-4fad-a564-a2d1adf5173a",
-          "description": "lick on **TOKEN MANAGER** from the menu. This will take the user to the **Token Manager** page, as shown below.\n\nView Token(s) can be used to list tokens based on:\n\n* Application Token(s) - Please see View Application Token(s)\n* My Token(s) - Please see View My Token(s)\n\n\n## View Application Token(s)\n**Token Detail**\n\nSelect Token Manager from the main menu. This will take the user to the Token Manager page, as shown below.\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/tokenManager.png)\n\nSelect an application from the drop-down list next to Token Manager. If the selected application has valid (not expired) access token(s), the Token Detail for that token will show on-screen. The details displayed are as follows:\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/tokenManagerDetail.png)\n\n\n\n## My Token(s)\n**Token Detail**\n\nFrom the Select Application menu, select My Tokens. This will list all the tokens that are owned by the current user, as displayed in the image below.\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/tokenManagerDetails2.png)\n"
+          "_postman_id": "cb8e39df-29d9-4fad-a564-a2d1adf5173a",
+          "description": "lick on **TOKEN MANAGER** from the menu. This will take the user to the **Token Manager** page, as shown below.\n\nView Token(s) can be used to list tokens based on:\n\n* Application Token(s) - Please see View Application Token(s)\n* My Token(s) - Please see View My Token(s)\n\n\n## View Application Token(s)\n**Token Detail**\n\nSelect Token Manager from the main menu. This will take the user to the Token Manager page, as shown below.\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/tokenManager.png)\n\nSelect an application from the drop-down list next to Token Manager. If the selected application has valid (not expired) access token(s), the Token Detail for that token will show on-screen. The details displayed are as follows:\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/tokenManagerDetail.png)\n\n\n\n## My Token(s)\n**Token Detail**\n\nFrom the Select Application menu, select My Tokens. This will list all the tokens that are owned by the current user, as displayed in the image below.\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/tokenManagerDetails2.png)\n",
+          "_postman_isSubFolder": true
         },
         {
           "name": "View Accessible Entities by Token (Simple Fund 360)",
           "item": [],
-          "id": "78ae3462-fec4-4bdd-9d99-af56fc56f3a8",
+          "_postman_id": "78ae3462-fec4-4bdd-9d99-af56fc56f3a8",
           "description": "**Entity Listing**\n\nIn order to view entities related to a token, the tokens should be loaded in the Token Manager first. Please see View Tokens on how to load the tokens.\n\nOnce the tokens are loaded, click on a Token, that has entities attached to it, as displayed in the image below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/tokenManagerfunds.png)\n\nOnce the user clicks on the token, the Token listing will slide to the left. The entities will be loaded and displayed for the highlighted or selected token\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/tokenManager3.png)\n\n**Back to Token View**\n\nIn order to go back to the Tokens View, click the Arrow located in the right boundary of the token box as displayed in the image below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/tokenManagerArrow.png)",
           "event": [
             {
@@ -948,12 +966,13 @@
                 ]
               }
             }
-          ]
+          ],
+          "_postman_isSubFolder": true
         },
         {
           "name": "Enable and Disable Entities Accessible by a Token (Simple Fund 360)",
           "item": [],
-          "id": "35dcceda-9074-4fc0-aff4-6fd95bbcb204",
+          "_postman_id": "35dcceda-9074-4fc0-aff4-6fd95bbcb204",
           "description": "This section goes through how you can enable and disable entities accessible by a token.\n\nFrom the Select Application menu, select My Tokens from the drop-down list. This will list all the tokens that are owned by the logged in user, as displayed in the image below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/myTokensDropDown.png)\n\nNote: You cannot enable/disable entities from the View Application Token(s) page.\n\nClick on the token for which to enable/disable entities.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/myTokensDropDowndetail.png)\n\nThis will list all the entities accessible by the token.\n\n**Enable/Disable entity by entity**\n\nTo disable access to entities, click on the green tick icon, as shown below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/disableFund.png)\n\nTo enable access to one entity, click on the green circle icon, as illustrated below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/selectFund.png)\n\nAn Unsaved label will also appear next to those entities. To confirm the changes, click on the counter. The icon will change to a SAVE CHANGES icon, as illustrated below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/tokenSaveChanges.png)\n\nThe Change Confirmation screen will display all the changes made by the user. Select **Confirm** to process all the changes made.\n\nAlternatively, Select the Reverse icon to undo a change, as shown below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/tokenReverse.png)\n\nYou can then select Close to exit out of that box.\n**\nEnable/Disable All entities\n**\nYou can enable/disable all entities by selecting on the ... icon, as shown below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/tokenSelectAll.png)\n\nYou can then select Enable All or Disable All to enable or disable access to all entities previously authorised for that token.\n\nA confirmation message will display depending on which option the user has selected.\n\nSelect Enable All/Disable All to process the changes.",
           "event": [
             {
@@ -976,16 +995,18 @@
                 ]
               }
             }
-          ]
+          ],
+          "_postman_isSubFolder": true
         },
         {
           "name": "Delete Token",
           "item": [],
-          "id": "9c14e1eb-c4bf-43b3-91e5-e2238e116dc4",
-          "description": "A Token can be deleted from **Application Token(s**) or from **My Token(s)** screens. In order to delete a token, the tokens should be loaded in Token Manager first. Please see View Tokens on how to load tokens.\n\nOnce the token is loaded, click on the Delete icon of the token that needs to be deleted, as displayed in the image below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/tokenDelete.png)\n\nThe Application will display a confirmation dialog window, requesting the user to confirm the deletion of the token. \n\nIf the user clicks \"OK\", the token will be deleted. If the user clicks \"Cancel\", the deletion will be aborted.\n\nFurther, there is a \"checkbox\" in the delete confirmation dialog window, as displayed in the image below.\n\nBy default, this checkbox will be ticked. This indicates that every time a deletion is performed, the confirmation will pop up. If the user unticks the \"Keep this warning\" checkbox and clicks \"OK\", the subsequent deletions will be performed without first displaying the delete confirmation dialog window.\n\nIf the deletion is successful, the user will be displayed with a success message and the token will be removed from the Token listing, displayed to the user."
+          "_postman_id": "9c14e1eb-c4bf-43b3-91e5-e2238e116dc4",
+          "description": "A Token can be deleted from **Application Token(s**) or from **My Token(s)** screens. In order to delete a token, the tokens should be loaded in Token Manager first. Please see View Tokens on how to load tokens.\n\nOnce the token is loaded, click on the Delete icon of the token that needs to be deleted, as displayed in the image below.\n\n![](https://s3-ap-southeast-2.amazonaws.com/sf360.com.au/api_images/tokenDelete.png)\n\nThe Application will display a confirmation dialog window, requesting the user to confirm the deletion of the token. \n\nIf the user clicks \"OK\", the token will be deleted. If the user clicks \"Cancel\", the deletion will be aborted.\n\nFurther, there is a \"checkbox\" in the delete confirmation dialog window, as displayed in the image below.\n\nBy default, this checkbox will be ticked. This indicates that every time a deletion is performed, the confirmation will pop up. If the user unticks the \"Keep this warning\" checkbox and clicks \"OK\", the subsequent deletions will be performed without first displaying the delete confirmation dialog window.\n\nIf the deletion is successful, the user will be displayed with a success message and the token will be removed from the Token listing, displayed to the user.",
+          "_postman_isSubFolder": true
         }
       ],
-      "id": "0c0b2a45-4f6c-455b-a942-38f792b5198d",
+      "_postman_id": "0c0b2a45-4f6c-455b-a942-38f792b5198d",
       "description": "The following describes how a BGL user can edit and revoke access given to Third Parties. ",
       "event": [
         {
@@ -1015,7 +1036,7 @@
       "item": [
         {
           "name": "Account  Details",
-          "id": "8195b5d6-e6d1-4f1d-a695-d7ad41d5ea8a",
+          "_postman_id": "8195b5d6-e6d1-4f1d-a695-d7ad41d5ea8a",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1098,7 +1119,7 @@
         },
         {
           "name": "User Details",
-          "id": "df174699-32fd-4133-95d7-44dc01c4bc62",
+          "_postman_id": "df174699-32fd-4133-95d7-44dc01c4bc62",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1183,7 +1204,7 @@
         },
         {
           "name": "Rate Limit Status",
-          "id": "c5416dba-9813-4d95-9255-af1f4df75773",
+          "_postman_id": "c5416dba-9813-4d95-9255-af1f4df75773",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1233,7 +1254,7 @@
           ]
         }
       ],
-      "id": "4626b7eb-a252-44aa-b871-003d4f3aaf0c",
+      "_postman_id": "4626b7eb-a252-44aa-b871-003d4f3aaf0c",
       "description": "This section will resources which are used by both CAS 360 and Simple Fund 360"
     },
     {
@@ -1283,7 +1304,7 @@
                   }
                 }
               ],
-              "id": "f03eca1f-8daf-4eed-8752-465057169c21",
+              "_postman_id": "f03eca1f-8daf-4eed-8752-465057169c21",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1413,7 +1434,7 @@
                   }
                 }
               ],
-              "id": "fdb73f97-3769-46d1-ac8b-4f0a5d2ffef4",
+              "_postman_id": "fdb73f97-3769-46d1-ac8b-4f0a5d2ffef4",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1515,7 +1536,7 @@
               ]
             }
           ],
-          "id": "ac84353f-b900-4413-a0db-c7588faf211c",
+          "_postman_id": "ac84353f-b900-4413-a0db-c7588faf211c",
           "event": [
             {
               "listen": "prerequest",
@@ -1537,14 +1558,15 @@
                 ]
               }
             }
-          ]
+          ],
+          "_postman_isSubFolder": true
         },
         {
           "name": "Entity - General",
           "item": [
             {
               "name": "Entity Details",
-              "id": "ecad8545-e4bb-4722-9c64-ab6a619b0165",
+              "_postman_id": "ecad8545-e4bb-4722-9c64-ab6a619b0165",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1595,7 +1617,7 @@
             },
             {
               "name": "Chart of Accounts",
-              "id": "7f29ab49-fb29-4eab-b239-e17a6af4a290",
+              "_postman_id": "7f29ab49-fb29-4eab-b239-e17a6af4a290",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1686,7 +1708,7 @@
             },
             {
               "name": "Feed Providers",
-              "id": "bf68b918-6e16-4e32-b61f-b7c8c2281d17",
+              "_postman_id": "bf68b918-6e16-4e32-b61f-b7c8c2281d17",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1768,7 +1790,7 @@
             },
             {
               "name": "Ledger Transactions",
-              "id": "b4a85a65-6f2c-4409-90c1-72f9bf9b7ab4",
+              "_postman_id": "b4a85a65-6f2c-4409-90c1-72f9bf9b7ab4",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1865,7 +1887,7 @@
               ]
             }
           ],
-          "id": "528d0628-fbbb-4ad2-92ba-267b77f41fab",
+          "_postman_id": "528d0628-fbbb-4ad2-92ba-267b77f41fab",
           "event": [
             {
               "listen": "prerequest",
@@ -1887,14 +1909,15 @@
                 ]
               }
             }
-          ]
+          ],
+          "_postman_isSubFolder": true
         },
         {
           "name": "SMSF Only - General",
           "item": [
             {
               "name": "Member Details",
-              "id": "dbb00921-9cb7-41a2-a5b9-ca6979752981",
+              "_postman_id": "dbb00921-9cb7-41a2-a5b9-ca6979752981",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1989,7 +2012,7 @@
             },
             {
               "name": "Fund Trustees",
-              "id": "550ad851-ec39-4fc6-b312-317a18ca81da",
+              "_postman_id": "550ad851-ec39-4fc6-b312-317a18ca81da",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2060,7 +2083,7 @@
             },
             {
               "name": "ATO Lodgements (Fund)",
-              "id": "0df79f48-cac0-4174-971e-4b9db56d4978",
+              "_postman_id": "0df79f48-cac0-4174-971e-4b9db56d4978",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2166,7 +2189,7 @@
               ]
             }
           ],
-          "id": "f2da8441-5e07-4833-a8c2-f6a7e551e9dd",
+          "_postman_id": "f2da8441-5e07-4833-a8c2-f6a7e551e9dd",
           "description": "The following entityTypes are supported:\n- SMSF\n",
           "event": [
             {
@@ -2189,14 +2212,15 @@
                 ]
               }
             }
-          ]
+          ],
+          "_postman_isSubFolder": true
         },
         {
           "name": "Reports - SMSF Only",
           "item": [
             {
               "name": "Report - Contribution Breakdown",
-              "id": "327c3bd1-05c6-4261-8385-a9d5d3332c68",
+              "_postman_id": "327c3bd1-05c6-4261-8385-a9d5d3332c68",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2292,7 +2316,7 @@
             },
             {
               "name": "Reports - Contribution Summary",
-              "id": "fca2e985-8b5f-40c8-b49b-1f84b03e7f5a",
+              "_postman_id": "fca2e985-8b5f-40c8-b49b-1f84b03e7f5a",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2452,7 +2476,7 @@
             },
             {
               "name": "Report - Member's Statement",
-              "id": "7ab143a3-98a2-4073-b7c2-01725d0f9284",
+              "_postman_id": "7ab143a3-98a2-4073-b7c2-01725d0f9284",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2607,7 +2631,7 @@
             },
             {
               "name": "Report - Pension Summary",
-              "id": "d5bf5916-9325-4e99-b338-a2304443717d",
+              "_postman_id": "d5bf5916-9325-4e99-b338-a2304443717d",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2751,14 +2775,15 @@
               ]
             }
           ],
-          "id": "321f36db-5a8c-4eee-b3d3-7d6bb9d4361c"
+          "_postman_id": "321f36db-5a8c-4eee-b3d3-7d6bb9d4361c",
+          "_postman_isSubFolder": true
         },
         {
           "name": "Reports - All Entities",
           "item": [
             {
               "name": "Report - Detailed Balance Sheet",
-              "id": "22444d34-d0d2-442b-b687-5b57c469dcb0",
+              "_postman_id": "22444d34-d0d2-442b-b687-5b57c469dcb0",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2904,7 +2929,7 @@
             },
             {
               "name": "Report - Detailed Operating Statement",
-              "id": "b0f9a1ca-5f01-447c-b444-99984d9fe476",
+              "_postman_id": "b0f9a1ca-5f01-447c-b444-99984d9fe476",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3000,7 +3025,7 @@
             },
             {
               "name": "Report - General Ledger",
-              "id": "93bce28e-642e-4f4c-a9fb-4773e3a9d803",
+              "_postman_id": "93bce28e-642e-4f4c-a9fb-4773e3a9d803",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3110,7 +3135,7 @@
             },
             {
               "name": "Report - Investment Income Comparison",
-              "id": "ba5c5118-fa08-42ce-afa4-56506a61fdcc",
+              "_postman_id": "ba5c5118-fa08-42ce-afa4-56506a61fdcc",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3160,7 +3185,7 @@
             },
             {
               "name": "Report - Investment Movement",
-              "id": "b3090efd-7237-4da9-b8d2-3477c61f8485",
+              "_postman_id": "b3090efd-7237-4da9-b8d2-3477c61f8485",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3256,7 +3281,7 @@
             },
             {
               "name": "Report - Investment Summary",
-              "id": "e21b635c-38b4-4a5b-b6f2-07ea492ab5f4",
+              "_postman_id": "e21b635c-38b4-4a5b-b6f2-07ea492ab5f4",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3384,7 +3409,7 @@
             },
             {
               "name": "Report - Investment Summary with Data Source",
-              "id": "5b030a5c-c404-4b97-8007-53f847ce19bc",
+              "_postman_id": "5b030a5c-c404-4b97-8007-53f847ce19bc",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3494,7 +3519,7 @@
             },
             {
               "name": "Report - Trial Balance",
-              "id": "5e6693c6-f056-42f2-9996-4f9a44454c57",
+              "_postman_id": "5e6693c6-f056-42f2-9996-4f9a44454c57",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3605,7 +3630,7 @@
               ]
             }
           ],
-          "id": "275f9cc9-3bf8-403d-b7ed-7b3e098726d5",
+          "_postman_id": "275f9cc9-3bf8-403d-b7ed-7b3e098726d5",
           "event": [
             {
               "listen": "prerequest",
@@ -3627,14 +3652,15 @@
                 ]
               }
             }
-          ]
+          ],
+          "_postman_isSubFolder": true
         },
         {
           "name": "SMSF Establishment",
           "item": [
             {
               "name": "Create Fund",
-              "id": "5a1896dc-7bd5-4ddc-8de5-c230672447e7",
+              "_postman_id": "5a1896dc-7bd5-4ddc-8de5-c230672447e7",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3706,7 +3732,7 @@
             },
             {
               "name": "Update Fund Details",
-              "id": "78544ec2-7bd4-42b5-aa8d-a11d4d50fae9",
+              "_postman_id": "78544ec2-7bd4-42b5-aa8d-a11d4d50fae9",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3794,7 +3820,7 @@
             },
             {
               "name": "Create Contacts",
-              "id": "0ecda1a1-f883-4cea-ac1d-a63c63c46bf6",
+              "_postman_id": "0ecda1a1-f883-4cea-ac1d-a63c63c46bf6",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3819,7 +3845,10 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n    \"contactType\": \"{{contactType}}\",\n    \"fundId\": \"{{fundId}}\",\n    \"firstName\": \"{{firstName}}\",\n    \"lastName\": \"{{lastName}}\",\n    \"address\": {\n        \"streetLine1\": \"{{streetLine1}}\",\n        \"suburb\": \"{{suburb}}\",\n        \"state\": \"{{state}}\",\n        \"postCode\": \"{{postCode}}\",\n        \"country\": \"{{country}}\"\n    },\n    \"title\": \"{{title}}\",\n    \"sex\": \"{{sex}}\",\n    \"email\": \"{{email}}\",\n    \"mobile\": \"{{mobile}}\",\n    \"phone1\": \"{{phone1}}\",\n    \"birthday\": \"{{birthday}}\",\n    \"birthPlace\": \"{{birthPlace}}\",\n    \"birthState\": \"{{birthState}}\",\n    \"birthCountry\": \"birthCountry\",\n    \"entityRelationships\": [\n        \"{{entityRelationships}}\"\n    ]\n}"
+                  "raw": "{\n    \"contactType\": \"{{contactType}}\",\n    \"fundId\": \"{{fundId}}\",\n    \"firstName\": \"{{firstName}}\",\n    \"lastName\": \"{{lastName}}\",\n    \"address\": {\n        \"streetLine1\": \"{{streetLine1}}\",\n        \"suburb\": \"{{suburb}}\",\n        \"state\": \"{{state}}\",\n        \"postCode\": \"{{postCode}}\",\n        \"country\": \"{{country}}\"\n    },\n    \"title\": \"{{title}}\",\n    \"sex\": \"{{sex}}\",\n    \"email\": \"{{email}}\",\n    \"mobile\": \"{{mobile}}\",\n    \"phone1\": \"{{phone1}}\",\n    \"birthday\": \"{{birthday}}\",\n    \"birthPlace\": \"{{birthPlace}}\",\n    \"birthState\": \"{{birthState}}\",\n    \"birthCountry\": \"birthCountry\",\n    \"entityRelationships\": [\n        \"{{entityRelationships}}\"\n    ]\n}",
+                  "options": {
+                    "raw": {}
+                  }
                 },
                 "url": "{{baseUrl}}/sf/funds/contacts",
                 "description": "### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- smsf_partner\n\n### Request Body\n\n| Key | Type | Mandatory | Constraints/Comments | \n| -------- | -------- | -------- | -------- |\n| contactType     | String     | Yes     | Must be one of ‘People’/‘Company’/OtherEntity’/’Trust’ |\n| title     | String     | No     | Only allowed if contactType is ‘People’. must be one of (Mr, Ms, Mrs, Mstr, Dr, Miss)|\n| firstName     | String     | Yes*     | Only mandatory if the contactType is ‘People’ |\n| lastName     | String     | Yes*     | Only mandatory if the contactType is ‘People’ |\n| otherName     | String     | No     | Only allowed if contactType is ‘People’ |\n| preferredName     | String     | No     | Only allowed if contactType is ‘People’. |\n| name     | String     | Yes*     | Only mandatory if the contactType is ‘Company’/‘Other Entity’/'Trust'. Only allowed if the contactType is ‘Company’/‘Other Entity’/'Trust' |\n| sex     | String     | No     | Only allowed if contactType is ‘People’. Must be one of ‘Male’/‘Female’|\n| birthday     | date     | Yes*     | Only allowed if contactType is ‘People’. Must be informat yyyy-MM-dd. Must be added if person is Member or Trustee ( |\n| birthPlace     | String     | No     | Only allowed if contactType is ‘People’ |\n| birthState     | String     | No     | Only allowed if contactType is ‘People’.. Must be one of (‘ACT’/‘NSW’/‘VIC’/‘QLD’/‘SA’/‘WA’/‘TAS’/‘NT’/‘Foreign’) |\n| birthCountry     | String     | No     | Only allowed if contactType is ‘People’. Must be ISO 3166 country code/name https://en.wikipedia.org/wiki/ISO_3166 |\n| dateOfDeath     | date     | No     | Only allowed if contactType is ‘People’. Must in format yyyy-MM-dd |\n| tfn     | Number     | No     | No | Only allowed if the contactType is 'People'/‘Other Entity’/'Trust' |\n| abn     | Number     | No     | Allowed for all ContactTypes |\n| acn     | Number     | Yes     | Only mandatory if contactType is ‘Company'. Only allowed if contactType is ‘Company'. |\n| email     | String     | No     | No | Only allowed if contactType is ‘People’. |\n| telephone     | String     | No     | Only allowed if contactType is ‘People’/'Company'.|\n| mobile     | String     | No     | Only allowed if contactType is ‘People’. |\n| smsfAuditorNumber     | Number     | No     | Only allowed if contactType is ‘People’ |\n| professionalBody     | String     | No     | Only allowed if contactType is ‘People’ |\n| professionalBodyNumber     | String     | No     | Only allowed if contactType is ‘People’ |\n| usi     | String     |  No | Only allowed if the contactType is ‘Other Entity’|\n| memberAccountNumber     | String     | No     | Only allowed if the contactType is ‘Other Entity’. Used for RBS forms when transfeering from SMSF to another fund. |\n| spin     | String     | No     | Only allowed if the contactType is ‘Other Entity’ |\n| establishmentDate     | Date     | No     | must be format yyyy/MM/dd. Only allowed if the contactType is ‘Trust’ |\n| address     | Object     | No     | (see Address Array below)  |\n| representativeIds     | Array     | Yes     | See RepresentativeIds Array Below. Only allowed if the contactType is 'People'/‘Other Entity’/'Trust' |\n| fundId| String |Yes | Required to attach entityRelationships |\n| entityRelationships     | Array     | No     | Array of strings. See List Below |\n\n**Address Object**\n\n| Key | Type | Mandatory | Constraints/Comments |\n| -------- | -------- | -------- | -------- |\n| streetLine1     | String     | Yes     | Mandatory if any other address fields are not empty\t  |\n| streetLine2     | String     | No     | \t  |\n| city     | String     | Yes     | Mandatory if any other address fields are not empty\t  |\n| state     | String     | Yes     | Mandatory if any other address fields are not empty. Must be one of (ACT’/‘NSW’/‘VIC’/‘QLD’/‘SA’/‘WA’/‘TAS’/‘NT)\t  |\n| postCode    | String     | Yes     | Mandatory if any other address fields are not empty\t  |\n| country     | String     | Yes     | Mandatory if any other address fields are not empty. Must be a country code as defined in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2\t  |\n\n**RepresentativeIds Array**\n\n| Key | Type | Mandatory | Constraints/Comments |\n| -------- | -------- | -------- | -------- |\n | contactId     | String     | Yes if representativeType is not empty     | where contactType is ‘Company’, the allowed value for the contactType of the contactId is 'People'. where contactType is ‘Trust’, the allowed values for the contactType of the contactId is 'People','Company'. Where contactType is ‘Other Entity’, the allowed value for the contactType of the contactId is 'People'  |\n  | representativeType     | String     |Yes if contactId is not empty | Must from list of 'Director'/'Secretary'/'Trustee'/'unitHolder'/'partner'. Where contactType is ‘Company’, the allowed values for representativeType are 'Director'/'Secretary' and where contactType is ‘Trust’, the allowed values for representativeType are 'Trustee'/'unitHolder'. Where contactType is ‘Other Entity’, the allowed values for representativeType are 'partner'|\n\t\t\t\t\n\n**entityRelationships List**\n\n* Actuary\n* Accountant\n* Account Manager\n* Administrator\n* Adviser\n* Auditor\n* Authorised Representative\n* Bookkeeper\n* Custodian\n* Director\n* External Administrator\n* Financial Planner\n* SMSF Expert\n* Firm Manager\n* Fund Contact\n* Investment Adviser\n* Lawyer\n* Partner\n* Personal Representative\n* Representative\n* Secretary\n* Tax Agent\n* Trustee\n* Other"
@@ -3863,7 +3892,7 @@
             },
             {
               "name": "Create Member",
-              "id": "a79062c6-6ea1-4778-96f0-e541e2557e19",
+              "_postman_id": "a79062c6-6ea1-4778-96f0-e541e2557e19",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3947,7 +3976,7 @@
               ]
             }
           ],
-          "id": "08fb5238-e13d-46db-8d13-1229b901515e",
+          "_postman_id": "08fb5238-e13d-46db-8d13-1229b901515e",
           "description": "\nTo create a new fund in Simple Fund 360, the following is the path is what an API consumer will need to follow:\n  \n1. Use [INSERT Fund](https://docs.api.bgl360.com.au/?version=latest#5a1896dc-7bd5-4ddc-8de5-c230672447e7) to create the Fund. This will return a FundId which can be used to insert or update any other necessary details\n2. Use [UPDATE Fund Details](https://docs.api.bgl360.com.au/?version=latest#78544ec2-7bd4-42b5-aa8d-a11d4d50fae9) (using the FundId created at Step 1) to check or update Fund Details.\n3. Use [CREATE Fund Contacts](https://docs.api.bgl360.com.au/?version=latest#0ecda1a1-f883-4cea-ac1d-a63c63c46bf6) (using the FundId created at Step 1) to create the Individuals who are part of the SMSF (e.g. Corporate Trustee, Corporate Trustee Directors or Individual Trustees.) If a contact already exists you will receive an error message \"Failed to create Contact: Contact already exists with contact id\". The Entity Relationship can be added as part of this API or using [CREATE Entity Relationships](https://docs.api.bgl360.com.au/?version=latest#aa94013c-6839-4086-a0b8-b15c0afab93b) below. \n4.  Use [CREATE Entity Relationships](https://docs.api.bgl360.com.au/?version=latest#aa94013c-6839-4086-a0b8-b15c0afab93b) to update a relationship for an existing contact. e.g Individual is a member for 2 SMSFs\n5. Use [CREATE Member](https://docs.api.bgl360.com.au/?version=latest#a79062c6-6ea1-4778-96f0-e541e2557e19) using FundId created at Step 1) to add members to the fund using the contacts added at Step 3 or an existing contact.\n  \nFor an API Consumer to check what they have created:\n\n- [GET Fund Details](https://docs.api.bgl360.com.au/?version=latest#ecad8545-e4bb-4722-9c64-ab6a619b0165)\n- [GET Fund Trustees](https://docs.api.bgl360.com.au/?version=latest#df029f2a-580f-4f53-8897-1ec108b2abab)\n- [GET Fund Members](https://docs.api.bgl360.com.au/?version=latest#d409fb0d-00ed-4317-b55e-27b392899de4)\n- [GET Fund Contacts](https://docs.api.bgl360.com.au/?version=latest#896c5876-11d3-4c36-b2cc-206bacb549ea)",
           "event": [
             {
@@ -3970,14 +3999,15 @@
                 ]
               }
             }
-          ]
+          ],
+          "_postman_isSubFolder": true
         },
         {
           "name": "Contacts",
           "item": [
             {
               "name": "List of Contacts (Firm)",
-              "id": "00edb6e2-9507-4f40-82a7-af8208d4adde",
+              "_postman_id": "00edb6e2-9507-4f40-82a7-af8208d4adde",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4065,7 +4095,7 @@
             },
             {
               "name": "List of Contacts by IDs",
-              "id": "b49327d9-84e3-4b57-bfe3-a010da9ad721",
+              "_postman_id": "b49327d9-84e3-4b57-bfe3-a010da9ad721",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4158,7 +4188,7 @@
                   }
                 }
               ],
-              "id": "896c5876-11d3-4c36-b2cc-206bacb549ea",
+              "_postman_id": "896c5876-11d3-4c36-b2cc-206bacb549ea",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4227,7 +4257,7 @@
             },
             {
               "name": "Update Contacts",
-              "id": "ea40ab7a-f5c8-40ae-b025-deb09ec31613",
+              "_postman_id": "ea40ab7a-f5c8-40ae-b025-deb09ec31613",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4251,7 +4281,10 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n    \"firstName\": \"{{firstName}}\",\n    \"lastName\": \"{{lastName}}\",\n    \"address\": {\n        \"streetLine1\": \"{{streetLine1}}\",\n        \"suburb\": \"{{suburb}}\",\n        \"state\": \"{{state}}\",\n        \"postCode\": \"{{postCode}}\",\n        \"country\": \"{{country}}\"\n    },\n    \"title\": \"{{title}}\",\n    \"sex\": \"{{sex}}\",\n    \"email\": \"{{email}}\",\n    \"mobile\": \"{{mobile}}\",\n    \"phone1\": \"{{phone1}}\",\n    \"birthday\": \"{{birthday}}\",\n    \"birthPlace\": \"{{birthPlace}}\",\n    \"birthState\": \"{{birthState}}\",\n    \"birthCountry\": \"birthCountry\",\n    \"entityRelationships\": [\n        \"{{entityRelationships}}\"\n    ]\n}"
+                  "raw": "{\n    \"firstName\": \"{{firstName}}\",\n    \"lastName\": \"{{lastName}}\",\n    \"address\": {\n        \"streetLine1\": \"{{streetLine1}}\",\n        \"suburb\": \"{{suburb}}\",\n        \"state\": \"{{state}}\",\n        \"postCode\": \"{{postCode}}\",\n        \"country\": \"{{country}}\"\n    },\n    \"title\": \"{{title}}\",\n    \"sex\": \"{{sex}}\",\n    \"email\": \"{{email}}\",\n    \"mobile\": \"{{mobile}}\",\n    \"phone1\": \"{{phone1}}\",\n    \"birthday\": \"{{birthday}}\",\n    \"birthPlace\": \"{{birthPlace}}\",\n    \"birthState\": \"{{birthState}}\",\n    \"birthCountry\": \"birthCountry\",\n    \"entityRelationships\": [\n        \"{{entityRelationships}}\"\n    ]\n}",
+                  "options": {
+                    "raw": {}
+                  }
                 },
                 "url": "{{baseUrl}}/sf/contacts/{{contactId}}",
                 "description": "Allows you to update details for a single contact. \n\n### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- smsf_partner\n\n### Request Body\n\n| Key | Type | Mandatory | Constraints/Comments | \n| -------- | -------- | -------- | -------- |\n| title     | String     | No     | Only allowed if contactType is ‘People’. must be one of (Mr, Ms, Mrs, Mstr, Dr, Miss)|\n| firstName     | String     | No*     | Only allowed if the contactType is ‘People’ |\n| lastName     | String     | No*     | Only allowed if the contactType is ‘People’ |\n| otherName     | String     | No     | Only allowed if contactType is ‘People’ |\n| preferredName     | String     | No     | Only allowed if contactType is ‘People’. |\n| name     | String     | Yes*     | Only allowed if the contactType is ‘Company’/‘Other Entity’/'Trust' |\n| sex     | String     | No     | Only allowed if contactType is ‘People’. Must be one of ‘Male’/‘Female’|\n| birthday     | date     | No*     | Only allowed if contactType is ‘People’. Must be informat yyyy-MM-dd. Must be added if person is Member or Trustee ( |\n| birthPlace     | String     | No     | Only allowed if contactType is ‘People’ |\n| birthState     | String     | No     | Only allowed if contactType is ‘People’.. Must be one of (‘ACT’/‘NSW’/‘VIC’/‘QLD’/‘SA’/‘WA’/‘TAS’/‘NT’/‘Foreign’) |\n| birthCountry     | String     | No     | Only allowed if contactType is ‘People’. Must be ISO 3166 country code/name https://en.wikipedia.org/wiki/ISO_3166 |\n| dateOfDeath     | date     | No     | Only allowed if contactType is ‘People’. Must in format yyyy-MM-dd |\n| tfn     | Number     | No     | No | Only allowed if the contactType is 'People'/‘Other Entity’/'Trust' |\n| abn     | Number     | No     | Allowed for all ContactTypes |\n| acn     | Number     | No     | Only allowed if contactType is ‘Company'. |\n| email     | String     | No     | No | Only allowed if contactType is ‘People’. |\n| telephone     | String     | No     | Only allowed if contactType is ‘People’/'Company'.|\n| mobile     | String     | No     | Only allowed if contactType is ‘People’. |\n| smsfAuditorNumber     | String     | No     | Only allowed if contactType is ‘People’ |\n| professionalBody     | String     | No     | Only allowed if contactType is ‘People’ |\n| professionalBodyNumber     | String     | No     | Only allowed if contactType is ‘People’ |\n| usi     | String     |  No | Only allowed if the contactType is ‘Other Entity’|\n| memberAccountNumber     | String     | No     | Only allowed if the contactType is ‘Other Entity’. Used for RBS forms when transfeering from SMSF to another fund. |\n| spin     | String     | No     | Only allowed if the contactType is ‘Other Entity’ |\n| establishmentDate     | Date     | No     | must be format yyyy/MM/dd. Only allowed if the contactType is ‘Trust’ |\n| address     | Object     | No     | (see Address Object below)  |\n\n\n**Address Object**\n\n| Key | Type | Mandatory | Constraints/Comments |\n| -------- | -------- | -------- | -------- |\n| streetLine1     | String     | No     | \t  |\n| streetLine2     | String     | No     | \t  |\n| city     | String     | No     | \t  |\n| state     | String     | No     |  Must be one of (ACT’/‘NSW’/‘VIC’/‘QLD’/‘SA’/‘WA’/‘TAS’/‘NT)\t  |\n| postCode    | String     | No     | \t  |\n| country     | String     | No     | Must be a country code as defined in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2\t  |"
@@ -4302,7 +4335,7 @@
             },
             {
               "name": "List of Entity Relationships",
-              "id": "6b8c59b4-7e04-426c-8adc-a82275261905",
+              "_postman_id": "6b8c59b4-7e04-426c-8adc-a82275261905",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4345,7 +4378,7 @@
             },
             {
               "name": "Create Entity Relationships",
-              "id": "aa94013c-6839-4086-a0b8-b15c0afab93b",
+              "_postman_id": "aa94013c-6839-4086-a0b8-b15c0afab93b",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4403,7 +4436,7 @@
             },
             {
               "name": "Delete Entity Relationship",
-              "id": "5546b2cc-90e4-4a52-b70e-652270c76148",
+              "_postman_id": "5546b2cc-90e4-4a52-b70e-652270c76148",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4445,14 +4478,15 @@
               ]
             }
           ],
-          "id": "70d0d580-5502-409c-8e50-d4feadc0a195"
+          "_postman_id": "70d0d580-5502-409c-8e50-d4feadc0a195",
+          "_postman_isSubFolder": true
         },
         {
           "name": "Workpapers",
           "item": [
             {
               "name": "Workpapers",
-              "id": "4601a12f-919e-466c-905c-d2c36b335662",
+              "_postman_id": "4601a12f-919e-466c-905c-d2c36b335662",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4596,7 +4630,7 @@
               ]
             }
           ],
-          "id": "0d90c34e-8302-4fc9-a556-c67be4469347",
+          "_postman_id": "0d90c34e-8302-4fc9-a556-c67be4469347",
           "event": [
             {
               "listen": "prerequest",
@@ -4618,14 +4652,15 @@
                 ]
               }
             }
-          ]
+          ],
+          "_postman_isSubFolder": true
         },
         {
           "name": "Entity Documents",
           "item": [
             {
               "name": "Entity Documents List",
-              "id": "0830ed87-f853-48c3-97ff-027ea4e882f3",
+              "_postman_id": "0830ed87-f853-48c3-97ff-027ea4e882f3",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4718,7 +4753,7 @@
             },
             {
               "name": "Upload Document",
-              "id": "33b8e60e-d324-4f43-898a-90bacff16a45",
+              "_postman_id": "33b8e60e-d324-4f43-898a-90bacff16a45",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4819,7 +4854,7 @@
             },
             {
               "name": "Document Tags List",
-              "id": "35d19aa4-1ecb-4bf7-8ad3-8cf33c37b625",
+              "_postman_id": "35d19aa4-1ecb-4bf7-8ad3-8cf33c37b625",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4888,7 +4923,7 @@
             },
             {
               "name": "Download Document",
-              "id": "cf51ff1e-8b5d-48cc-be66-cbf275996e1f",
+              "_postman_id": "cf51ff1e-8b5d-48cc-be66-cbf275996e1f",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4962,7 +4997,7 @@
               ]
             }
           ],
-          "id": "8600d850-798b-46b3-b26c-01f762bbd557",
+          "_postman_id": "8600d850-798b-46b3-b26c-01f762bbd557",
           "description": " 1. Entity Documents List - Use to obtain a list of documents for the\n    entity.     \n 2. Download Document - Use to download a document using the\n    document ID obtained from the Document List. \n 3. Document Tags List - Use to\n    obtain a list of tags for the Entity. \n 4. Upload Document - Use to upload a document to the Entity. Optionally you can attached a tag or  multiple tags from the Tags List",
           "event": [
             {
@@ -4985,14 +5020,15 @@
                 ]
               }
             }
-          ]
+          ],
+          "_postman_isSubFolder": true
         },
         {
           "name": "Labels",
           "item": [
             {
               "name": "List of Entity Labels",
-              "id": "6db2faa0-dd03-4a85-9643-d76e9fdb6ef7",
+              "_postman_id": "6db2faa0-dd03-4a85-9643-d76e9fdb6ef7",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5029,7 +5065,7 @@
             },
             {
               "name": "List of Entities by Label",
-              "id": "8b6e2250-04fb-49c3-8354-910bd67c53be",
+              "_postman_id": "8b6e2250-04fb-49c3-8354-910bd67c53be",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5049,7 +5085,7 @@
             },
             {
               "name": "Delete Entity Labels",
-              "id": "2af0f96f-bf8f-4665-aba5-071d3b82e755",
+              "_postman_id": "2af0f96f-bf8f-4665-aba5-071d3b82e755",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5069,7 +5105,7 @@
             },
             {
               "name": "Remove a Label from an Entity",
-              "id": "c0cb9612-bbba-4254-9da8-fda484d1d3ec",
+              "_postman_id": "c0cb9612-bbba-4254-9da8-fda484d1d3ec",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5089,7 +5125,7 @@
             },
             {
               "name": "Create Entity Label",
-              "id": "4fe4c81a-4eb8-40cb-b0ed-e0031132edbc",
+              "_postman_id": "4fe4c81a-4eb8-40cb-b0ed-e0031132edbc",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5118,7 +5154,7 @@
             },
             {
               "name": "Add a Label to an Entity",
-              "id": "d1f29cb2-cb04-41eb-b671-a1e2a33436c6",
+              "_postman_id": "d1f29cb2-cb04-41eb-b671-a1e2a33436c6",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5137,10 +5173,11 @@
               "response": []
             }
           ],
-          "id": "d65a18aa-0aec-4a96-84ea-857c54104241"
+          "_postman_id": "d65a18aa-0aec-4a96-84ea-857c54104241",
+          "_postman_isSubFolder": true
         }
       ],
-      "id": "c356baac-2307-4f3d-8e83-c9d8b236e0b0",
+      "_postman_id": "c356baac-2307-4f3d-8e83-c9d8b236e0b0",
       "description": "This section lists the currently available resources for Simple Fund 360  that can be used to obtain data through the BGL API.\n\nThe Simple Fund 360 API also includes support for Simple Invest 360. The Entity Types available are:\n- SMSF, \n- Company, \n- Trust\n- Individual",
       "event": [
         {
@@ -5173,7 +5210,7 @@
           "item": [
             {
               "name": "List of Companies",
-              "id": "58037d14-8aef-4f4b-a087-fa06b8081c14",
+              "_postman_id": "58037d14-8aef-4f4b-a087-fa06b8081c14",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5268,7 +5305,7 @@
             },
             {
               "name": "Company Debt (All Companies)",
-              "id": "8c3db652-35a2-4d2c-98fe-163c7b7a76de",
+              "_postman_id": "8c3db652-35a2-4d2c-98fe-163c7b7a76de",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5361,7 +5398,7 @@
             },
             {
               "name": "Create new company",
-              "id": "2c3acc97-803f-4fb8-8ebd-32296c55bf8e",
+              "_postman_id": "2c3acc97-803f-4fb8-8ebd-32296c55bf8e",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5428,7 +5465,7 @@
             },
             {
               "name": "Delete Company",
-              "id": "0476a5c2-f9d2-4af5-99f3-b10378e945f7",
+              "_postman_id": "0476a5c2-f9d2-4af5-99f3-b10378e945f7",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5496,7 +5533,7 @@
             },
             {
               "name": "Labels",
-              "id": "3f3733bb-6b2d-4fa8-ba43-0a048e4862df",
+              "_postman_id": "3f3733bb-6b2d-4fa8-ba43-0a048e4862df",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5575,7 +5612,7 @@
             },
             {
               "name": "List of Companies by Label ID",
-              "id": "0e212656-39da-45b1-b1e4-c9429e8e558e",
+              "_postman_id": "0e212656-39da-45b1-b1e4-c9429e8e558e",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5665,14 +5702,15 @@
               ]
             }
           ],
-          "id": "654a0cc1-fe3d-4947-b949-b7d963c14ed6"
+          "_postman_id": "654a0cc1-fe3d-4947-b949-b7d963c14ed6",
+          "_postman_isSubFolder": true
         },
         {
           "name": "Global Addresses",
           "item": [
             {
               "name": "List of Addresses",
-              "id": "f091139b-0887-4aa3-aa35-61ea95d3b926",
+              "_postman_id": "f091139b-0887-4aa3-aa35-61ea95d3b926",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5761,7 +5799,7 @@
             },
             {
               "name": "List of Addresses by IDs",
-              "id": "5a6af4c9-4849-4686-adb8-1285703c97d6",
+              "_postman_id": "5a6af4c9-4849-4686-adb8-1285703c97d6",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5829,7 +5867,7 @@
             },
             {
               "name": "Create Address",
-              "id": "c2a5a9b1-4f78-474a-8344-50c79a10e655",
+              "_postman_id": "c2a5a9b1-4f78-474a-8344-50c79a10e655",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5896,7 +5934,7 @@
             },
             {
               "name": "Delete Address",
-              "id": "b864c974-df1f-4764-9dc4-7de142ea9665",
+              "_postman_id": "b864c974-df1f-4764-9dc4-7de142ea9665",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5962,14 +6000,15 @@
               ]
             }
           ],
-          "id": "7eecaf82-74db-460a-96c1-c932dcc90b1b"
+          "_postman_id": "7eecaf82-74db-460a-96c1-c932dcc90b1b",
+          "_postman_isSubFolder": true
         },
         {
           "name": "Global Contacts",
           "item": [
             {
               "name": "List of Contacts",
-              "id": "2617afb1-833d-456c-82bf-831ca829b92c",
+              "_postman_id": "2617afb1-833d-456c-82bf-831ca829b92c",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -6056,7 +6095,7 @@
             },
             {
               "name": "List of contacts by IDs",
-              "id": "f199be74-ee73-4f21-8744-06622b92ffb3",
+              "_postman_id": "f199be74-ee73-4f21-8744-06622b92ffb3",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -6124,7 +6163,7 @@
             },
             {
               "name": "Update Contact",
-              "id": "c72d26d9-49db-4e9e-b8a8-0ae52acee94a",
+              "_postman_id": "c72d26d9-49db-4e9e-b8a8-0ae52acee94a",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -6207,7 +6246,7 @@
             },
             {
               "name": "Delete Contact",
-              "id": "0080823f-d8dd-4ef2-8c9f-1e926a3755d6",
+              "_postman_id": "0080823f-d8dd-4ef2-8c9f-1e926a3755d6",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -6274,7 +6313,7 @@
             },
             {
               "name": "Create Contact",
-              "id": "f36561e5-8286-458e-bf06-05e9411a004e",
+              "_postman_id": "f36561e5-8286-458e-bf06-05e9411a004e",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -6341,7 +6380,7 @@
             },
             {
               "name": "ASIC Agent List",
-              "id": "eb43c166-c725-426b-ae82-8f511b8ae535",
+              "_postman_id": "eb43c166-c725-426b-ae82-8f511b8ae535",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -6431,7 +6470,8 @@
               ]
             }
           ],
-          "id": "77d45625-f50b-4f3d-95bc-b32883b4b613"
+          "_postman_id": "77d45625-f50b-4f3d-95bc-b32883b4b613",
+          "_postman_isSubFolder": true
         },
         {
           "name": "Company Resources",
@@ -6441,7 +6481,7 @@
               "item": [
                 {
                   "name": "Company Details",
-                  "id": "d5ba6671-e5a5-4ff9-99ff-a90338a76922",
+                  "_postman_id": "d5ba6671-e5a5-4ff9-99ff-a90338a76922",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -6591,7 +6631,7 @@
                 },
                 {
                   "name": "Update Company Details",
-                  "id": "e6522cb9-97d7-4175-b150-e58e175a9ad1",
+                  "_postman_id": "e6522cb9-97d7-4175-b150-e58e175a9ad1",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -6613,7 +6653,10 @@
                     ],
                     "body": {
                       "mode": "raw",
-                      "raw": "{\n  \"name\": \"{{name}}\",\n  \"number\": \"{{number}}\",\n  \"incorporationDate\": \"{{incorporationDate}}\",\n  \"annualReviewDate\": \"{{annualReviewDate}}\",\n  \"registrationState\": \"{{registrationState}}\",\n  \"jurisdiction\": \"{{jurisdiction}}\",\n  \"registered\": true,\n   \"type\": {\n    \"companyClass\": \"{{companyClass}}\",\n    \"companySubClass\": \"{{companySubClass}}\",\n    \"companyType\": \"{{companyType}}\"\n  }\n}"
+                      "raw": "{\n  \"name\": \"{{name}}\",\n  \"number\": \"{{number}}\",\n  \"incorporationDate\": \"{{incorporationDate}}\",\n  \"annualReviewDate\": \"{{annualReviewDate}}\",\n  \"registrationState\": \"{{registrationState}}\",\n  \"jurisdiction\": \"{{jurisdiction}}\",\n  \"registered\": true,\n   \"type\": {\n    \"companyClass\": \"{{companyClass}}\",\n    \"companySubClass\": \"{{companySubClass}}\",\n    \"companyType\": \"{{companyType}}\"\n  }\n}",
+                      "options": {
+                        "raw": {}
+                      }
                     },
                     "url": "{{baseUrl}}/cas/companies/{{companyId}}",
                     "description": "Update details for an Individual Company. \n\nOnly keys which are being updated need to be supplied. \n\n### Request Body\n\n| Key               | Datatype | Mandatory | Constraints                                                 |\n| ----------------- | -------- | --------- | ----------------------------------------------------------- |\n| name              | String   | No       |                                                             |\n| number            | String   | No        | Must be a valid ACN if jurisdiction is 'Australia'                         |\n| incorporationDate | String   | No        | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601        |\n| annualReviewDate  | String   | No        | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601        |\n| registrationState | String   | No        | Must be one of 'ACT'/'NSW'/'VIC'/'QLD'/'SA'/'WA'/'TAS'/'NT' |\n| jurisdiction | String | No |  |\n| type              | Object   | No        | See table below                                             |\n| registered              | boolean   | No        | False will be an unregistered company, if not specified will default to true                                             |\n\n\n**type object**\n\nNote: Within Australia, only certain combinations of companyType, companyClass and companySubClass are valid\n\n| Key             | Datatype | Mandatory | Constraints                                                                                                                                                    |\n| --------------- | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| companyType     | String   | No       | Must be one of 'Small Proprietary'/'Large Proprietary'/'Public Company'                                                                                        |\n| companyClass    | String   | No       | Must be one of 'Limited by Shares'/'Limited by Guarantee'/'Limited by Shares and Guarantee'/'Unlimited'/'No Liability'                                         |\n| companySubClass | String   | No       | Must be one of 'None'/'Superannuation Trustee Company'/'Non Profit Company'/'Home Unit Company'/'Listed'/'Unlisted'/'Section 150 License'/'Unlisted Non Profit |"
@@ -6657,7 +6700,7 @@
                 },
                 {
                   "name": "Company Name History",
-                  "id": "87fc632d-df5e-46dd-8573-262c6d8d79d3",
+                  "_postman_id": "87fc632d-df5e-46dd-8573-262c6d8d79d3",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -6731,7 +6774,7 @@
                 },
                 {
                   "name": "Company Debt (Specific Company)",
-                  "id": "f49cdc2c-9507-4737-a8d6-37c89dbb3ff2",
+                  "_postman_id": "f49cdc2c-9507-4737-a8d6-37c89dbb3ff2",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -6800,14 +6843,15 @@
                   ]
                 }
               ],
-              "id": "d058779d-7863-4ca1-af8f-dbe658426be9"
+              "_postman_id": "d058779d-7863-4ca1-af8f-dbe658426be9",
+              "_postman_isSubFolder": true
             },
             {
               "name": "Company Officers",
               "item": [
                 {
                   "name": "List of officers",
-                  "id": "0ce40091-6da6-484e-98df-259e69149017",
+                  "_postman_id": "0ce40091-6da6-484e-98df-259e69149017",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -6962,7 +7006,7 @@
                 },
                 {
                   "name": "Create Company Officer",
-                  "id": "365630b5-5da2-43f9-acb6-87280f981d7a",
+                  "_postman_id": "365630b5-5da2-43f9-acb6-87280f981d7a",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -6985,7 +7029,10 @@
                     ],
                     "body": {
                       "mode": "raw",
-                      "raw": "{\n            \"alternateContactId\": null,\n            \"alternateTerms\": null,\n            \"appointDate\": \"2020-04-01\",\n            \"ceaseDate\": null,\n            \"contactId\": 11038,\n            \"nominatorContactId\": null,\n            \"notes\": null,\n            \"position\": \"Director\",\n            \"positionStatus\": \"Appointed\",\n            \"prepareForm\": true,\n            \"signatoryStatus\": \"Attendee\"\n        }"
+                      "raw": "{\n            \"alternateContactId\": null,\n            \"alternateTerms\": null,\n            \"appointDate\": \"2020-04-01\",\n            \"ceaseDate\": null,\n            \"contactId\": 11038,\n            \"nominatorContactId\": null,\n            \"notes\": null,\n            \"position\": \"Director\",\n            \"positionStatus\": \"Appointed\",\n            \"prepareForm\": true,\n            \"signatoryStatus\": \"Attendee\"\n        }",
+                      "options": {
+                        "raw": {}
+                      }
                     },
                     "url": {
                       "raw": "{{baseUrl}}/companies/:companyId/officers",
@@ -7046,7 +7093,7 @@
                 },
                 {
                   "name": "Update Company Officer",
-                  "id": "d1a0ad78-a662-43b2-8d78-675302274e06",
+                  "_postman_id": "d1a0ad78-a662-43b2-8d78-675302274e06",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -7068,7 +7115,10 @@
                     ],
                     "body": {
                       "mode": "raw",
-                      "raw": "{\n    \"contactId\": 123456,\n    \"position\": \"Director\",\n    \"positionStatus\": \"Appointed\",\n    \"appointDate\": \"2021-01-11\",\n    \"signatoryStatus\": \"Chairperson\",\n    \"notes\": \"\",\n    \"prepareDocuments\": \"N\"\n}"
+                      "raw": "{\n    \"contactId\": 123456,\n    \"position\": \"Director\",\n    \"positionStatus\": \"Appointed\",\n    \"appointDate\": \"2021-01-11\",\n    \"signatoryStatus\": \"Chairperson\",\n    \"notes\": \"\",\n    \"prepareDocuments\": \"N\"\n}",
+                      "options": {
+                        "raw": {}
+                      }
                     },
                     "url": {
                       "raw": "{{baseUrl}}/cas/companies/:companyId/officers/:officerId",
@@ -7101,7 +7151,7 @@
                 },
                 {
                   "name": "Delete an officer",
-                  "id": "3c191584-ab0f-4e67-a286-5ecedd8883b6",
+                  "_postman_id": "3c191584-ab0f-4e67-a286-5ecedd8883b6",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -7184,14 +7234,15 @@
                   ]
                 }
               ],
-              "id": "352e9ddb-f245-4aeb-8571-0c87e328020a"
+              "_postman_id": "352e9ddb-f245-4aeb-8571-0c87e328020a",
+              "_postman_isSubFolder": true
             },
             {
               "name": "Company Addresses",
               "item": [
                 {
                   "name": "List of company addresses",
-                  "id": "fedb404c-987e-4d33-a243-d945bcaac32c",
+                  "_postman_id": "fedb404c-987e-4d33-a243-d945bcaac32c",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -7238,7 +7289,7 @@
                         }
                       ]
                     },
-                    "description": "Returns a list of company addresses for a given firm\n \n ### Query Parameters\n\n| Form Parameter | type | Mandatory | Description |\n| -------- | -------- | -------- | -------- |\n| offset | number | Required | Example = 0 |\n| limit | number | Required | Example = 500 |\n\n### Response Body\n\n Returns a list containing objects as described below\n\n| Key         | Datatype | Constraints                                                                                                     |\n| ----------- | -------- | ---------------------------------------------------------------------------------------------------------------- |\n| addressId     | Number   |                                     |\n| effectiveDate      | String   |ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601.                                                                                                                 |\n| id | Number | Yes | |\n| officeOccupier      | String   | Only valid for Registered Office Address                      |\n| type     | String   | Must be one of 'Registered Office Address'/'Business Address'/'Postal Address'’/’Meeting Address’    |                                            |\n| prepareForm | Boolean |Change to be notified to ASIC within 28 days on a Form 484 Change to Company Details. |\n\n**Additional keys**\n\n| Key    | Datatype | Mandatory | Constraints |\n| ------ | -------- | --------- | ----------- |\n| offset | Number   | Yes       |             |\n| limit  | Number   | Yes       |             |\n| total  | Number   | Yes       |             |"
+                    "description": "Returns a list of company share transactions for a given company\n\n### Query Parameters\n\n| Form Parameter | type | Mandatory | Description |\n| -------- | -------- | -------- | -------- |\n| offset | number | Required | Example = 0 |\n| limit | number | Required | Example = 500 |\n\n### Response Body\n\n| Key               | Datatype | Mandatory | Constraints/Comments                                                                                              |\n| ----------------- | -------- | --------- | -------------------------------------------------------------------------------------------------------- |\n| beneficialOwnerId | Number   | No        | Must be an id of an existing contact|                                                                   | certificateNumber | String   | Yes       | Only mandatory if certificateType is no 'None'|                                                           \n| certificateType   | String   | Yes       | Must be one of 'Transaction'/'Balance'/'None'|\n| id | Number | Yes |Id of transaction |\n| numberOfShares    | Float    | Yes       | Can be an integer or floating point number. Example: 10, 255, 3.14159|\n| prepareForm | No | true or fals. True will reslt in change form (484) being prepared for ASIC|\n| shareType         | Object   | Yes       | See table below        |\n| shareholderId     | Number   | Yes       | Must be an id of an existing contact. Contact can only be of type 'People'/'Company'/'Joint Member'      |\n| transactionDate   | String   | Yes       | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601. Can not be before the company's incorporation Datatype |\n| type              | String   | Yes       | Must be one of 'Allotment'/'Balance'|                                                                     |\n\n\n**shareType object**\n\n| Key         | Datatype | Mandatory | Constraints                                                           |\n| ----------- | -------- | --------- | --------------------------------------------------------------------- |\n| paid        | Float    | Yes       | Can be an integer or floating point number. Example: 10, 255, 3.14159 |\n| unpaid      | Float    | Yes       | Can be an integer or floating point number. Example: 10, 255, 3.14159 |\n| currency    | String   | Yes       | an ISO currency code https://en.wikipedia.org/wiki/ISO_4217           |\n| description | String   | No        |                                                                       |\n| shareClass  | Object   | Yes       | See table below                                                       |\n\n**shareClass object**\n\n| Key          | Datatype | Mandatory | Constraints |\n| ------------ | -------- | --------- | ----------- |\n| descriptions | String   | Yes       |             |\n| cCode        | String   | Yes       |             |\n\n\n**Additional keys**\n\n| Key    | Datatype | Mandatory | Constraints |\n| ------ | -------- | --------- | ----------- |\n| offset | Number   | Yes       |             |\n| limit  | Number   | Yes       |             |\n| total  | Number   | Yes       |             |"
                   },
                   "response": [
                     {
@@ -7342,7 +7393,7 @@
                 },
                 {
                   "name": "Create Company Address",
-                  "id": "cca407dd-d840-4782-b837-7251cfd96062",
+                  "_postman_id": "cca407dd-d840-4782-b837-7251cfd96062",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -7365,7 +7416,10 @@
                     ],
                     "body": {
                       "mode": "raw",
-                      "raw": "{\n    \"addressId\": \"{{addressId}}\",\n    \"effectiveDate\": \"{{effectiveDate}}\",\n    \"officeOccupier\": \"{{officeOccupier}}\",\n    \"prepareForm\": {{prepareForm}},\n    \"type\": \"{{type}}\"\n}\n\n\n"
+                      "raw": "{\n    \"addressId\": \"{{addressId}}\",\n    \"effectiveDate\": \"{{effectiveDate}}\",\n    \"officeOccupier\": \"{{officeOccupier}}\",\n    \"prepareForm\": {{prepareForm}},\n    \"type\": \"{{type}}\"\n}\n\n\n",
+                      "options": {
+                        "raw": {}
+                      }
                     },
                     "url": {
                       "raw": "{{baseUrl}}/companies/:companyId/addresses",
@@ -7490,7 +7544,7 @@
                 },
                 {
                   "name": "Delete a company address",
-                  "id": "d6ca540e-bbce-46f7-85dc-e158f4008859",
+                  "_postman_id": "d6ca540e-bbce-46f7-85dc-e158f4008859",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -7565,14 +7619,15 @@
                   ]
                 }
               ],
-              "id": "bbbc9121-d34a-4926-ae6a-22167e179934"
+              "_postman_id": "bbbc9121-d34a-4926-ae6a-22167e179934",
+              "_postman_isSubFolder": true
             },
             {
               "name": "Share Transactions",
               "item": [
                 {
                   "name": "List of Share Transactions",
-                  "id": "3df056ea-f314-4b5e-891b-e1cc7081fba1",
+                  "_postman_id": "3df056ea-f314-4b5e-891b-e1cc7081fba1",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -7624,104 +7679,8 @@
                   },
                   "response": [
                     {
-                      "id": "8f17f210-faea-490d-9640-f8b2d07af2ba",
-                      "name": "200 - List of Share Transactions",
-                      "originalRequest": {
-                        "method": "GET",
-                        "header": [
-                          {
-                            "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
-                            "key": "Authorization",
-                            "value": "bearer {{token}}"
-                          }
-                        ],
-                        "url": {
-                          "raw": "{{baseUrl}}/companies/:companyId/shareTransactions?offset={{offset}}&limit={{limit}}",
-                          "host": [
-                            "{{baseUrl}}"
-                          ],
-                          "path": [
-                            "companies",
-                            ":companyId",
-                            "shareTransactions"
-                          ],
-                          "query": [
-                            {
-                              "key": "offset",
-                              "value": "{{offset}}",
-                              "description": "number | Required | Example = 0 |"
-                            },
-                            {
-                              "key": "limit",
-                              "value": "{{limit}}",
-                              "description": "number | Required | Example = 500 |"
-                            }
-                          ],
-                          "variable": [
-                            {
-                              "description": "[REQUIRED] - Unique Id of company",
-                              "key": "companyId",
-                              "value": "{{companyId}}"
-                            }
-                          ]
-                        }
-                      },
-                      "status": "OK",
-                      "code": 200,
-                      "_postman_previewlanguage": "json",
-                      "header": [
-                        {
-                          "key": "Date",
-                          "value": "Wed, 09 Sep 2020 05:46:25 GMT"
-                        },
-                        {
-                          "key": "Content-Type",
-                          "value": "application/json;charset=UTF-8"
-                        },
-                        {
-                          "key": "Transfer-Encoding",
-                          "value": "chunked"
-                        },
-                        {
-                          "key": "Connection",
-                          "value": "keep-alive"
-                        },
-                        {
-                          "key": "Server",
-                          "value": "nginx"
-                        },
-                        {
-                          "key": "X-Rate-Daily-Limit-Remaining",
-                          "value": "-1"
-                        },
-                        {
-                          "key": "vary",
-                          "value": "accept-encoding"
-                        },
-                        {
-                          "key": "Content-Encoding",
-                          "value": "gzip"
-                        },
-                        {
-                          "key": "X-Content-Type-Options",
-                          "value": "nosniff"
-                        },
-                        {
-                          "key": "Content-Security-Policy",
-                          "value": "frame-ancestors 'self' staging.sf360.com.au"
-                        },
-                        {
-                          "key": "X-Frame-Options",
-                          "value": "ALLOW-FROM https://staging.sf360.com.au"
-                        }
-                      ],
-                      "cookie": [],
-                      "responseTime": null,
-                      "body": "{\n    \"companyId\": \"39d9f511-6adf-45d2-844f-35e1e286fd44\",\n    \"limit\": 500,\n    \"offset\": 0,\n    \"shareTransactions\": [\n        {\n            \"beneficialOwnerId\": null,\n            \"certificateNumber\": \"1\",\n            \"certificateType\": \"Transaction\",\n            \"id\": 6409,\n            \"numberOfShares\": 1,\n            \"prepareForm\": false,\n            \"shareType\": {\n                \"currency\": \"AUD\",\n                \"description\": \"ORDINARY SHARES\",\n                \"paid\": 1,\n                \"shareClass\": {\n                    \"cCode\": \"ORD\",\n                    \"description\": \"ORDINARY SHARES\"\n                },\n                \"unpaid\": 0\n            },\n            \"shareholderId\": 2584,\n            \"transactionDate\": \"2019-03-19\",\n            \"type\": \"Subscription\"\n        }\n    ],\n    \"total\": 1\n}"
-                    },
-                    {
                       "id": "337145f8-e6f5-41bb-8d55-4ab4599d94fb",
-                      "name": "List of Share Transactions",
+                      "name": "200 List of Share Transactions",
                       "originalRequest": {
                         "method": "GET",
                         "header": [
@@ -7820,7 +7779,7 @@
                 },
                 {
                   "name": "Create new share transaction",
-                  "id": "6587aad4-0fe7-4bdb-9754-6afa40e6f113",
+                  "_postman_id": "6587aad4-0fe7-4bdb-9754-6afa40e6f113",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -7864,7 +7823,7 @@
                         }
                       ]
                     },
-                    "description": "Create new share transaction for a given company\n \n \n### Request Body\n\n| Key               | Datatype | Mandatory | Constraints                                                                                              |\n| ----------------- | -------- | --------- | -------------------------------------------------------------------------------------------------------- |\n| shareholderId     | Number   | Yes       | Must be an id of an existing contact. Contact can only be of type 'People'/'Company'/'Joint Member'      |\n| beneficialOwnerId | Number   | No        | Must be an id of an existing contact                                                                     |\n| type              | String   | Yes       | Must be one of 'Allotment'/'Balance'                                                                     |\n| transactionDate   | String   | Yes       | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601. Cannot be before the company's incorporation Datatype |\n| numberOfShares    | Float    | Yes       | Can be an integer or floating point number. Example: 10, 255, 3.14159                                    |\n| certificateType   | String   | Yes       | Must be one of 'Transaction'/'Balance'/'None'                                                            |\n| certificateNumber | String   | Yes       | Mandatory unless certificateType is ‘None’                                                          |\n| shareType         | Object   | Yes       | See table below                                                                                          |\n\n**shareType object**\n\n| Key         | Datatype | Mandatory | Constraints                                                           |\n| ----------- | -------- | --------- | --------------------------------------------------------------------- |\n| paid        | Float    | Yes       | Can be an integer or floating point number. Example: 10, 255, 3.14159 |\n| unpaid      | Float    | Yes       | Can be an integer or floating point number. Example: 10, 255, 3.14159 |\n| currency    | String   | Yes       | an ISO currency code https://en.wikipedia.org/wiki/ISO_4217           |\n| description | String   | No        | Maximum of 60 characters                                                                      |\n| shareClass  | Object   | Yes       | See table below                                                       |\n\n**shareClass object**\n\n| Key          | Datatype | Mandatory | Constraints |\n| ------------ | -------- | --------- | ----------- |\n| descriptions | String   | Yes       | Maximum of 60 characters            |\n| cCode        | String   | Yes       | Maximum of 4 characters            |"
+                    "description": "Create new share transaction for a given company\n \n \n### Request Body\n\n| Key               | Datatype | Mandatory | Constraints/Comments                                                                                              |\n| ----------------- | -------- | --------- | -------------------------------------------------------------------------------------------------------- |\n| beneficialOwnerId | Number   | No        | Must be an id of an existing contact|                                                                   | certificateNumber | String   | Yes       | Only mandatory if certificateType is no 'None'|                                                           \n| certificateType   | String   | Yes       | Must be one of 'Transaction'/'Balance'/'None'|\n| numberOfShares    | Float    | Yes       | Can be an integer or floating point number. Example: 10, 255, 3.14159|\n| prepareForm | No | true or fals. True will reslt in change form (484) being prepared for ASIC|\n| shareType         | Object   | Yes       | See table below        |\n| shareholderId     | Number   | Yes       | Must be an id of an existing contact. Contact can only be of type 'People'/'Company'/'Joint Member'      |\n| transactionDate   | String   | Yes       | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601. Can not be before the company's incorporation Datatype |\n| type              | String   | Yes       | Must be one of 'Allotment'/'Balance'|                                                                     |\n\n\n**shareType object**\n\n| Key         | Datatype | Mandatory | Constraints                                                           |\n| ----------- | -------- | --------- | --------------------------------------------------------------------- |\n| paid        | Float    | Yes       | Can be an integer or floating point number. Example: 10, 255, 3.14159 |\n| unpaid      | Float    | Yes       | Can be an integer or floating point number. Example: 10, 255, 3.14159 |\n| currency    | String   | Yes       | an ISO currency code https://en.wikipedia.org/wiki/ISO_4217           |\n| description | String   | No        |                                                                       |\n| shareClass  | Object   | Yes       | See table below                                                       |\n\n**shareClass object**\n\n| Key          | Datatype | Mandatory | Constraints |\n| ------------ | -------- | --------- | ----------- |\n| descriptions | String   | Yes       |             |\n| cCode        | String   | Yes       |             |\n\n\n**Additional keys**\n\n| Key    | Datatype | Mandatory | Constraints |\n| ------ | -------- | --------- | ----------- |\n| offset | Number   | Yes       |             |\n| limit  | Number   | Yes       |             |\n| total  | Number   | Yes       |             |"
                   },
                   "response": [
                     {
@@ -7905,7 +7864,7 @@
                 },
                 {
                   "name": "Delete a share transaction",
-                  "id": "803d6559-aace-4022-834c-b90a83991739",
+                  "_postman_id": "803d6559-aace-4022-834c-b90a83991739",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -7996,7 +7955,8 @@
                   ]
                 }
               ],
-              "id": "a186bab2-0fca-45c5-9a18-7294e45c419e"
+              "_postman_id": "a186bab2-0fca-45c5-9a18-7294e45c419e",
+              "_postman_isSubFolder": true
             },
             {
               "name": "Company Documents",
@@ -8006,7 +7966,7 @@
                   "item": [
                     {
                       "name": "Download a Document Attachment",
-                      "id": "21c6121a-71b5-445d-82c1-44068f0adab3",
+                      "_postman_id": "21c6121a-71b5-445d-82c1-44068f0adab3",
                       "protocolProfileBehavior": {
                         "disableBodyPruning": true
                       },
@@ -8090,7 +8050,7 @@
                     },
                     {
                       "name": "Delete a Document Attachment",
-                      "id": "c3e03629-2016-4a3e-ae51-47614b2a3fef",
+                      "_postman_id": "c3e03629-2016-4a3e-ae51-47614b2a3fef",
                       "protocolProfileBehavior": {
                         "disableBodyPruning": true
                       },
@@ -8172,7 +8132,7 @@
                     },
                     {
                       "name": "Upload a New Attachment to a Given Document",
-                      "id": "dd5c3d19-54e1-46cf-9583-013fe484cc50",
+                      "_postman_id": "dd5c3d19-54e1-46cf-9583-013fe484cc50",
                       "protocolProfileBehavior": {
                         "disableBodyPruning": true
                       },
@@ -8285,11 +8245,12 @@
                       ]
                     }
                   ],
-                  "id": "7968c05c-d59b-4b85-8d4c-e55a5436bb13"
+                  "_postman_id": "7968c05c-d59b-4b85-8d4c-e55a5436bb13",
+                  "_postman_isSubFolder": true
                 },
                 {
                   "name": "List of Unlodged Documents (Firm)",
-                  "id": "c51eeb57-8e06-4d58-8126-1ce9c30a13bb",
+                  "_postman_id": "c51eeb57-8e06-4d58-8126-1ce9c30a13bb",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -8386,7 +8347,7 @@
                 },
                 {
                   "name": "List of Unlodged Documents (Company)",
-                  "id": "10201fd5-4ba2-46b1-801a-c32939eda7d6",
+                  "_postman_id": "10201fd5-4ba2-46b1-801a-c32939eda7d6",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -8492,7 +8453,7 @@
                 },
                 {
                   "name": "List Documents",
-                  "id": "3617fade-a2e2-4389-9284-e9b7efe8ddea",
+                  "_postman_id": "3617fade-a2e2-4389-9284-e9b7efe8ddea",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -8597,7 +8558,7 @@
                 },
                 {
                   "name": "Document Details",
-                  "id": "d74c3a1e-4d32-48cc-9201-64511a144dd8",
+                  "_postman_id": "d74c3a1e-4d32-48cc-9201-64511a144dd8",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -8671,7 +8632,7 @@
                 },
                 {
                   "name": "Create New Document Record",
-                  "id": "98c32666-7433-486f-af0e-5bbf47e0a15a",
+                  "_postman_id": "98c32666-7433-486f-af0e-5bbf47e0a15a",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -8756,7 +8717,7 @@
                 },
                 {
                   "name": "Delete a document",
-                  "id": "8fcca7af-f40a-4317-9e60-d2b470545d2f",
+                  "_postman_id": "8fcca7af-f40a-4317-9e60-d2b470545d2f",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -8832,7 +8793,7 @@
                 },
                 {
                   "name": "List of Status Types",
-                  "id": "63b52ceb-c840-4882-8350-74e34590fa68",
+                  "_postman_id": "63b52ceb-c840-4882-8350-74e34590fa68",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -8883,7 +8844,7 @@
                 },
                 {
                   "name": "Assign a new Status for a Document",
-                  "id": "270ae27d-d5ed-4757-af05-787f39c2583e",
+                  "_postman_id": "270ae27d-d5ed-4757-af05-787f39c2583e",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -8908,7 +8869,10 @@
                     ],
                     "body": {
                       "mode": "raw",
-                      "raw": "{\n\t\"typeId\": 10,\n\t\"effectiveDate\": \"2018-01-15\"\n}"
+                      "raw": "{\n\t\"typeId\": 10,\n\t\"effectiveDate\": \"2018-01-15\"\n}",
+                      "options": {
+                        "raw": {}
+                      }
                     },
                     "url": "{{baseUrl}}/cas/companies/{{companyId}}/documents/{{documentId}}/statuses",
                     "description": "Allows you to alter the Status of a document in CAS360. The status helps users manage documents by indicating what stage the document is at.\n\nWhen documents are generated, the status will automatically be set to Document Prepared. Once a document is lodged, the status will automatically change to Lodged. When an Annual Company Statement is received, the status of Form 480 will automatically be set to Document Received and once the Annual Review is processed, the status will change to Document Processed.\n\n\n### Response Body \n\n| Key | Type | Comments |\n| -------- | -------- | -------- |\n| typeId     | number     | Unique identifier   |\n| effectiveDate     | String     | Effective Date of the new Status   |"
@@ -8958,7 +8922,7 @@
                   ]
                 }
               ],
-              "id": "3cea06c0-c348-43d9-b6d3-e415c61b75a4",
+              "_postman_id": "3cea06c0-c348-43d9-b6d3-e415c61b75a4",
               "event": [
                 {
                   "listen": "prerequest",
@@ -8980,10 +8944,12 @@
                     ]
                   }
                 }
-              ]
+              ],
+              "_postman_isSubFolder": true
             }
           ],
-          "id": "111c5910-1c5c-4691-a24e-1f98e78213e2"
+          "_postman_id": "111c5910-1c5c-4691-a24e-1f98e78213e2",
+          "_postman_isSubFolder": true
         },
         {
           "name": "Trusts",
@@ -8993,7 +8959,7 @@
               "item": [
                 {
                   "name": "List of Trusts",
-                  "id": "f4ad7b3f-1e5f-4c08-bc32-503306ff801b",
+                  "_postman_id": "f4ad7b3f-1e5f-4c08-bc32-503306ff801b",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -9127,7 +9093,7 @@
                 },
                 {
                   "name": "List of Trusts by Label ID",
-                  "id": "37c236ed-430b-48d7-ade0-f702144479db",
+                  "_postman_id": "37c236ed-430b-48d7-ade0-f702144479db",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -9222,7 +9188,7 @@
                 },
                 {
                   "name": "Create new trust",
-                  "id": "031876d7-97c1-4e06-b3dd-34b8a29504f2",
+                  "_postman_id": "031876d7-97c1-4e06-b3dd-34b8a29504f2",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -9244,7 +9210,10 @@
                     ],
                     "body": {
                       "mode": "raw",
-                      "raw": "{\n    \"jurisdiction\": \"{{jurisdiction}}\",\n    \"trustNameId\": {{trustNameId}},\n    \"type\": \"{{type}}\",\n    \"abn\": {{abn}},\n    \"formedDate\": \"{{formedDate}}\",\n    \"trusteeCompanyId\": {{trusteeCompanyId}},\n    \"trusteeContactId\": {{trusteeContactId}},\n    \"trusteeAppointedDate\": \"{{trusteeAppointedDate}}\",\n    \"meetingAddressId\": {{meetingAddressId}}\n}\n"
+                      "raw": "{\n    \"jurisdiction\": \"{{jurisdiction}}\",\n    \"trustNameId\": {{trustNameId}},\n    \"type\": \"{{type}}\",\n    \"abn\": {{abn}},\n    \"formedDate\": \"{{formedDate}}\",\n    \"trusteeCompanyId\": {{trusteeCompanyId}},\n    \"trusteeContactId\": {{trusteeContactId}},\n    \"trusteeAppointedDate\": \"{{trusteeAppointedDate}}\",\n    \"meetingAddressId\": {{meetingAddressId}}\n}\n",
+                      "options": {
+                        "raw": {}
+                      }
                     },
                     "url": "{{baseUrl}}/cas/trusts",
                     "description": "* This service will create a new trust. A trust is a fiduciary relationship in which one person (the trustee) holds assets for the benefit of another (the beneficiary).\n* In order to insert a Trust a Valid Contact with contact type \"Other Entity\" must be created first via Create Contact\n\n### Request Body\n\n| Key               | Datatype | Mandatory | Constraints                                                 |\n| ----------------- | -------- | --------- | ----------------------------------------------------------- |\n| ABN            | String   | No        | Must be a valid ABN. Only for Australian Trusts                        |\n| formedDate | String   | Yes        | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601        |\n| id              | String   | Yes       |  Trust Id |       \n| jurisdiction | String | Yes | The Jurisdiction the Trust was formed in. ISO 3166 country code/name https://en.wikipedia.org/wiki/ISO_3166 | \n|meetingAddressId              | String   | Yes       | existing Address Id |  \n| trustNameId              | String   | Yes       | existing Contact Id | \n| trusteeAppointedDate  | String   | No        | ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601. Cannot be before the formedDate of the trrust        |\n| trusteeContactId              | String   | Yes*       |  Must be an existing Contact Id. See note below.      \n|trusteeCompanyId              | String   | Yes*    |  Must be an existing Company Id. See note below.   |\n| type              | Object   | Yes        | see table below   |\n\n*Note for trusteeContactId and trusteeCompanyId*\n* Only one of 'trusteeContactId' or 'trusteeCompanyId' is required    \n* If you're adding a Trust which has a Corporate Trustee and the Company is managed using CAS 360 (on Companies List), 'trusteeCompanyId' should have a valid Company Id and 'trusteeContactId' should be null. \n* If the Trust has Individual Trustees  or the Corporate Trustee is not a company on the CAS360 Company list (this can be a Company or a individual FYI) then you will need to create a contact on the contact list first and then attach the 'trusteeContactId'. \n\n\n| Jurisdiction | Supported types |                                            \n| ----------------- | -------- |\n| Australia & All other Jurisdicstions | UNIT, DISCRETIONARY, HYBRID, BARE|\n|New Zealand | FAMILY, ESTATE ,CHARITABLE, INVESTMENT, TRADING, FARMING, UNIT, OTHER|\n\n\n\n\n\n\n\n---"
@@ -9329,7 +9298,7 @@
                 },
                 {
                   "name": "Delete (Deactivate) Trust",
-                  "id": "37799298-ee13-4c78-896e-fda2bfae6116",
+                  "_postman_id": "37799298-ee13-4c78-896e-fda2bfae6116",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -9453,14 +9422,15 @@
                   ]
                 }
               ],
-              "id": "d1db51f3-a16d-48e3-b19a-41d59d8270b2"
+              "_postman_id": "d1db51f3-a16d-48e3-b19a-41d59d8270b2",
+              "_postman_isSubFolder": true
             },
             {
               "name": "Trust - General",
               "item": [
                 {
                   "name": "Trust Details",
-                  "id": "b168f37c-40d4-412b-bb6a-1aa1f1227e52",
+                  "_postman_id": "b168f37c-40d4-412b-bb6a-1aa1f1227e52",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -9596,7 +9566,7 @@
                 },
                 {
                   "name": "List of Trust Relationships",
-                  "id": "4dcadc83-f0fa-4966-9055-93bea2a051d4",
+                  "_postman_id": "4dcadc83-f0fa-4966-9055-93bea2a051d4",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -9682,7 +9652,7 @@
                 },
                 {
                   "name": "Create Trust Relationship",
-                  "id": "a545af05-b5a2-4f6a-959a-fea4eac00195",
+                  "_postman_id": "a545af05-b5a2-4f6a-959a-fea4eac00195",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -9705,7 +9675,10 @@
                     ],
                     "body": {
                       "mode": "raw",
-                      "raw": "{\n  \"contactId\": \"{{contactId}}\",\n  \"companyId\": \"{{companyId}}\",\n  \"appointedDate\": \"{{appointedDate}}\",\n  \"relationshipType\": \"{{relationshipType}}\"\n}\n"
+                      "raw": "{\n  \"contactId\": \"{{contactId}}\",\n  \"companyId\": \"{{companyId}}\",\n  \"appointedDate\": \"{{appointedDate}}\",\n  \"relationshipType\": \"{{relationshipType}}\"\n}\n",
+                      "options": {
+                        "raw": {}
+                      }
                     },
                     "url": {
                       "raw": "{{baseUrl}}/cas/trusts/:trustId/relationships",
@@ -9827,7 +9800,7 @@
                 },
                 {
                   "name": "Delete Trust Relationship",
-                  "id": "13c306f7-8c3a-4f0e-8abc-a56cb83775ed",
+                  "_postman_id": "13c306f7-8c3a-4f0e-8abc-a56cb83775ed",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -9968,14 +9941,15 @@
                   ]
                 }
               ],
-              "id": "24041396-f0c0-4f9c-9045-609e19a51709"
+              "_postman_id": "24041396-f0c0-4f9c-9045-609e19a51709",
+              "_postman_isSubFolder": true
             },
             {
               "name": "Trust Beneficiaries",
               "item": [
                 {
                   "name": "List of Trust Beneficiaries",
-                  "id": "dec1aa0e-80c2-481e-8bcc-2eae80b31a3b",
+                  "_postman_id": "dec1aa0e-80c2-481e-8bcc-2eae80b31a3b",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -10118,7 +10092,7 @@
                 },
                 {
                   "name": "Create New Trust Beneficiaries",
-                  "id": "d45ebd54-6454-47dd-83d1-73e63c31b197",
+                  "_postman_id": "d45ebd54-6454-47dd-83d1-73e63c31b197",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -10204,7 +10178,7 @@
                 },
                 {
                   "name": "Delete Trust Beneficiaries",
-                  "id": "808ce2e0-ffec-4b43-a277-1a670d3da8ad",
+                  "_postman_id": "808ce2e0-ffec-4b43-a277-1a670d3da8ad",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -10280,14 +10254,15 @@
                   ]
                 }
               ],
-              "id": "b7c43647-ff90-4acd-a580-1b26a4a8ee8b"
+              "_postman_id": "b7c43647-ff90-4acd-a580-1b26a4a8ee8b",
+              "_postman_isSubFolder": true
             },
             {
               "name": "Unit Trusts",
               "item": [
                 {
                   "name": "List of Unit Transactions",
-                  "id": "77480d3d-dbf1-4491-9e09-00bc30895280",
+                  "_postman_id": "77480d3d-dbf1-4491-9e09-00bc30895280",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -10440,7 +10415,7 @@
                 },
                 {
                   "name": "Create new unit transaction",
-                  "id": "68027220-facd-41ec-8d7e-3349cac8ed5d",
+                  "_postman_id": "68027220-facd-41ec-8d7e-3349cac8ed5d",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -10463,7 +10438,10 @@
                     ],
                     "body": {
                       "mode": "raw",
-                      "raw": " { \n   \"unitholderId\": {{unitholderId}},\n   \"beneficialOwnerId\": {{beneficialOwnerId}},\n   \"certificateNumber\":\"{{certificateNumber}}\",\n   \"certificateType\":\"{{certificateType}}\",\n   \"numberOfUnits\": {{numberOfUnits}},\n   \"transactionDate\":\"{{transactionDate}}\",\n   \"type\":\"{{type}}\",\n   \"unitType\":{  \n      \"currency\":\"{{currency}}\",\n      \"description\":\"{{ORDINARY SHARES}}\",\n      \"paid\": {{paid}},\n      \"shareClass\":{  \n         \"cCode\":\"{{cCode}}\",\n         \"description\":\"{{description}}\"\n      },\n      \"unpaid\": {{unpaid}}\n   }\n}\n"
+                      "raw": " { \n   \"unitholderId\": {{unitholderId}},\n   \"beneficialOwnerId\": {{beneficialOwnerId}},\n   \"certificateNumber\":\"{{certificateNumber}}\",\n   \"certificateType\":\"{{certificateType}}\",\n   \"numberOfUnits\": {{numberOfUnits}},\n   \"transactionDate\":\"{{transactionDate}}\",\n   \"type\":\"{{type}}\",\n   \"unitType\":{  \n      \"currency\":\"{{currency}}\",\n      \"description\":\"{{ORDINARY SHARES}}\",\n      \"paid\": {{paid}},\n      \"shareClass\":{  \n         \"cCode\":\"{{cCode}}\",\n         \"description\":\"{{description}}\"\n      },\n      \"unpaid\": {{unpaid}}\n   }\n}\n",
+                      "options": {
+                        "raw": {}
+                      }
                     },
                     "url": {
                       "raw": "{{baseUrl}}/cas/trusts/:trustId/unitTransactions",
@@ -10567,7 +10545,7 @@
                 },
                 {
                   "name": "Delete a unit transaction",
-                  "id": "2647a045-82c5-476a-a829-8218bda30c21",
+                  "_postman_id": "2647a045-82c5-476a-a829-8218bda30c21",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -10642,14 +10620,15 @@
                   ]
                 }
               ],
-              "id": "58848fc8-6332-46a8-8c53-1fc79add4cfb"
+              "_postman_id": "58848fc8-6332-46a8-8c53-1fc79add4cfb",
+              "_postman_isSubFolder": true
             },
             {
               "name": "Trust Documents",
               "item": [
                 {
                   "name": "List of Status Types",
-                  "id": "3f248f85-520d-4fdd-a742-ad566ba49c80",
+                  "_postman_id": "3f248f85-520d-4fdd-a742-ad566ba49c80",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -10700,7 +10679,7 @@
                 },
                 {
                   "name": "Document Details (Trust)",
-                  "id": "39b070b1-0002-470c-9cad-18f965f0b5c2",
+                  "_postman_id": "39b070b1-0002-470c-9cad-18f965f0b5c2",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -10839,7 +10818,7 @@
                 },
                 {
                   "name": "List Documents (Trust)",
-                  "id": "8a51e7e3-48e6-47c0-a2b6-5cf4425a8a50",
+                  "_postman_id": "8a51e7e3-48e6-47c0-a2b6-5cf4425a8a50",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -10998,7 +10977,7 @@
                 },
                 {
                   "name": "Create New Document Record (Trust)",
-                  "id": "35f2e919-aa26-49ac-ae18-d5de86b8f17d",
+                  "_postman_id": "35f2e919-aa26-49ac-ae18-d5de86b8f17d",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -11021,7 +11000,10 @@
                     ],
                     "body": {
                       "mode": "raw",
-                      "raw": "{\n  \"asicDocNumber\": \"{{asicDocNumber}}\",\n  \"documentDate\": \"{{documentDate}}\",\n  \"name\": \"{{name}}\",\n  \"status\": {\n        \"typeId\": 3\n    }\n}"
+                      "raw": "{\n  \"asicDocNumber\": \"{{asicDocNumber}}\",\n  \"documentDate\": \"{{documentDate}}\",\n  \"name\": \"{{name}}\",\n  \"status\": {\n        \"typeId\": 3\n    }\n}",
+                      "options": {
+                        "raw": {}
+                      }
                     },
                     "url": {
                       "raw": "{{baseUrl}}/cas/trusts/:trustId/documents",
@@ -11141,7 +11123,7 @@
                 },
                 {
                   "name": "Delete a document (Trust)",
-                  "id": "3e703f6c-8155-4b6e-9a46-34dca494a8e2",
+                  "_postman_id": "3e703f6c-8155-4b6e-9a46-34dca494a8e2",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -11280,14 +11262,15 @@
                   ]
                 }
               ],
-              "id": "5d29cf47-4101-492e-adf1-2c1b9a25fde0"
+              "_postman_id": "5d29cf47-4101-492e-adf1-2c1b9a25fde0",
+              "_postman_isSubFolder": true
             },
             {
               "name": "Trust Attachments",
               "item": [
                 {
                   "name": "Download a Document Attachment",
-                  "id": "5cef3f02-c9b4-489c-a457-f79cfdddacdc",
+                  "_postman_id": "5cef3f02-c9b4-489c-a457-f79cfdddacdc",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -11371,7 +11354,7 @@
                 },
                 {
                   "name": "Delete a Document Attachment",
-                  "id": "420287b2-464b-425d-8653-09e11fc59235",
+                  "_postman_id": "420287b2-464b-425d-8653-09e11fc59235",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -11453,7 +11436,7 @@
                 },
                 {
                   "name": "Upload a New Attachment to a Given Document",
-                  "id": "1bcf7765-657b-4d41-ae11-c0685621e62e",
+                  "_postman_id": "1bcf7765-657b-4d41-ae11-c0685621e62e",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -11483,7 +11466,10 @@
                           "type": "file",
                           "value": null
                         }
-                      ]
+                      ],
+                      "options": {
+                        "formdata": {}
+                      }
                     },
                     "url": {
                       "raw": "{{baseUrl}}/cas/trusts/:trustId/documents/:documentId/attachments",
@@ -11562,13 +11548,15 @@
                   ]
                 }
               ],
-              "id": "fa2120c3-f783-44cc-94cb-b0ce285c8cf7"
+              "_postman_id": "fa2120c3-f783-44cc-94cb-b0ce285c8cf7",
+              "_postman_isSubFolder": true
             }
           ],
-          "id": "f32b53cd-3c10-46c4-8e1b-be9a79d00125"
+          "_postman_id": "f32b53cd-3c10-46c4-8e1b-be9a79d00125",
+          "_postman_isSubFolder": true
         }
       ],
-      "id": "4b0acc02-01c4-4c93-9aa7-cde7f8d759c7"
+      "_postman_id": "4b0acc02-01c4-4c93-9aa7-cde7f8d759c7"
     },
     {
       "name": "Webhooks ",
@@ -11600,7 +11588,7 @@
               }
             }
           ],
-          "id": "ba296632-134f-4e02-9a48-ff67ccaf453f",
+          "_postman_id": "ba296632-134f-4e02-9a48-ff67ccaf453f",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -11618,7 +11606,10 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\"entityId\":\"{{entityId}}\",\n\"eventId\":\"{{eventId}}\",\n\"eventType\":\"{{eventType}}\",\n\"firmId\":\"{{firmId}}\",\n\"tenants\":[{{tenants}}],\n\"userId\":\"i{{userId}}\"}"
+              "raw": "{\"entityId\":\"{{entityId}}\",\n\"eventId\":\"{{eventId}}\",\n\"eventType\":\"{{eventType}}\",\n\"firmId\":\"{{firmId}}\",\n\"tenants\":[{{tenants}}],\n\"userId\":\"i{{userId}}\"}",
+              "options": {
+                "raw": {}
+              }
             },
             "url": "{{messageUrl}}",
             "description": "## Encryption\n BGL will compute a Hash-based(SHA256) message authentication code (HMAC) using a secret key to protect the integrity and the authenticity of the message. The following logic will be used to generate a token which sends as an authorization header which can be decoded from provider's end with the same private key\n\n    Authorization : \"{clientCode} {UTC Date String} {Signature}\"\n    \n           client code = this is code in lowercase unique for the client\n           UTC Date String = timestamp in UTC format yyyy-MM-dd'T'HH:mm:ss.sssZ\n           Signature = This will contain following data which will generate HMAC using SHA256 hash, using configured secret. \n                               \"{UTC Date String}POST{URI String}{RequestBody}\"\n    \n          Calculating Signature,\n    \n          Signature = Base64Encoded(HMAC(\"{UTC Date String}POST{URI String}{RequestBody}\"))\n\n\n### Example\n\n```java\nprovider code: \"provider1\"\n\ntime stamp string (utcStr): \"2020-09-09T06:18:33.082Z\"\n\nthe request url (urlStr): \"https://provider-site.com/api/bgl/messages\"\n\nsecret key (secret): \"my-secrete-key\"\n\nrequestBody: '{\"entityId\":\"8ad08a066555bb32016555d9ebac0003\",\"eventId\":\"039403940\",\"eventType\":\"audit\",\"firmId\":\"bgltest\",\"tenants\":[{\"tenantId\":\"ASFAUDIT4550\",\"tenantType\":\"fundCode\"},{\"tenantId\":\"73124784265\",\"tenantType\":\"abn\"},{\"tenantId\":\"2015/2016\",\"tenantType\":\"financialYear\"}],\"userId\":\"info@bglcorp.com.au\"}'\n\nTo generate the signature:\n\n1. get the string to sign: utcStr + \"POST\" + urlStr + requestBody\nbased on the value above, the string should be:\n2020-09-09T06:18:33.082ZPOSThttps://provider-site.com/api/bgl/messages{\"entityId\":\"8ad08a066555bb32016555d9ebac0003\",\"eventId\":\"039403940\",\"eventType\":\"audit\",\"firmId\":\"bgltest\",\"tenants\":[{\"tenantId\":\"ASFAUDIT4550\",\"tenantType\":\"fundCode\"},{\"tenantId\":\"73124784265\",\"tenantType\":\"abn\"},{\"tenantId\":\"2015/2016\",\"tenantType\":\"financialYear\"}],\"userId\":\"info@bglcorp.com.au\"}\n\n2. use sha256 to generate the signature, sample codes:\n    Mac mac = Mac.getInstance(\"HmacSHA256\")\n    mac.init(new SecretKeySpec(secretKey.getBytes(\"UTF-8\"), mac.getAlgorithm()))\n\n    byte[] digest = mac.doFinal(stringToSign.getBytes())\n\n    return digest.encodeBase64().toString()\n\n3. The final sigature generated:\nfcCSdGwSgTXseS5eFWOphImuEM9LT6KjgHfuiPWB48A=\n\n4. The Authorization header value:\nprovider1 2020-09-09T06:18:33.082Z fcCSdGwSgTXseS5eFWOphImuEM9LT6KjgHfuiPWB48A=\n```\n\n\n \n    \n\n   ### Request Body\n\n| Key| Mandatory| Type |Description |\n| -------- | -------- | -------- | -------- |\n| userId     | Yes     | String | The email address of the user who has triggered the webhook     |\n| firmId     | Yes     | String |  The Short Name or Firm ID of the firm     |\n| entityId     | Yes     | String |  The ID of the resource that has changed. This could be with a companyId, trustId or fundId     |\n| eventId     | Yes     | String | The Unique Identifier of the event provided by Simple Fund 360 or CAS 360     |\n| eventType     | Yes     | String | The type of event of that occurred.  See list below    |\n| tenants | No | Array | see below |\n\n**Tenants Array**\n\n| Key| Mandatory| Type |Description |\n| -------- | -------- | -------- | -------- |\n| tenantId     | No     | String |  If applicable , the ID of the tenant that the event happened in relation to (e.g. ContactId or MemberId, Financial Year)     |\n| tenantType     | No     | String | The type of tenant (contact \\ member \\ financialYear     |\n\n\n**eventType**\n\nThe event type is used to identify what the user is trying to do. \n\n| eventType| Description |Products(s) |\n| -------- |  -------- |-------- | \n| audit | Fund is ready for audit | Simple Fund 360 |\n| newCompany | User wishes to register a new company. | CAS 360 | \n| newTrust | User wishes to register a new company. | CAS 360 | \n| newsmsf | User wishes to register a new SMSF. | CAS 360 | \n| constitution | User wishes to order a constitution for an existing company | CAS 360 |\n\n\n\n\n\n   ### Responses \n\nOutlined below and in the examples are what BGL expects for webhook responses. \n\n-   Success\n    \n    -   response code: 200\n        \n    -   response type: application/json\n        \n    -   response body\n        `{ message: \"request accepted.\" }`\n        `{ message: \"request accepted.\", resourceUrl: \"https://www.google.com/\" }`\n\n-  Validation Error\n    \n    -   response code: 400\n        \n    -   response type: application/json\n        \n    -   response body\n        `{ message: \"missing required parameters\", errors: [ \"fundId is missing\", \"financialYear is missing\" ] }`\n\n-   Other Runtime Errors\n    \n    -   response code: 500\n        \n    -   response type: application/json\n        \n    -   response body\n        `{ message: \"System maintenance.\" }`"
@@ -11721,7 +11712,7 @@
           ]
         }
       ],
-      "id": "50356a43-6a90-4aba-af41-523d7efeff98",
+      "_postman_id": "50356a43-6a90-4aba-af41-523d7efeff98",
       "description": "Webhooks are automated messages sent from BGL when an event happens. Webhooks are configured on a per-app basis and you need to have a HTTP callback registered with BGL. \n\n| Event Category | Product | Description |\n|--|----------------------------|------------------------------|\n| Ready for Audit  | Simple Fund 360 |User (e.g. Accountant) can notify your app that the fund is ready for audit. FundId, ABN and Financial Year are sent.   |\n\n",
       "event": [
         {
@@ -11751,7 +11742,7 @@
       "item": [
         {
           "name": "Add Contact",
-          "id": "c34fa793-6612-456d-ba10-91eeb38d16e3",
+          "_postman_id": "c34fa793-6612-456d-ba10-91eeb38d16e3",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -11936,7 +11927,7 @@
         },
         {
           "name": "Delete Contact",
-          "id": "9a34a08a-8538-4729-8e30-da322d2d9198",
+          "_postman_id": "9a34a08a-8538-4729-8e30-da322d2d9198",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -12048,7 +12039,7 @@
         },
         {
           "name": "Update Contact",
-          "id": "fabe3e2e-9c5b-4684-acfe-42c577403849",
+          "_postman_id": "fabe3e2e-9c5b-4684-acfe-42c577403849",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -12071,7 +12062,10 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"externalIdentifier\": \"{{externalIdentifier}}\",\n  \"firstName\": \"{{firstName}}\",\n  \"lastName\": \"{{lastName}}\",\n  \"name\": \"{{name}}\",\n  \"email\": \"{{email}}\",\n  \"title\": \"{{title}}\",\n  \"skypeId\": \"{{skypeId}}\",\n  \"phone\": \"{{phone}}\",\n  \"mobile\": \"{{mobile}}\",\n  \"address\": {\n    \"postalCode\": \"{{postalCode}}\",\n    \"addressLine1\": \"{{addressLine1}}\",\n    \"addressLine2\": \"{{addressLine2}}\",\n    \"city\": \"{{city}}\",\n    \"region\": \"{{region}}\",\n    \"country\": \"{{country}}\"\n  },\n  \"status\": \"{{status}}\",\n  \"businessStructure\": \"{{businessStructure}}\",\n  \"abn\": \"{{abn}}\",\n  \"acn\": \"{{acn}}\",\n  \"dateOfBirth\": \"{{dateOfBirth}}\"\n}"
+              "raw": "{\n  \"externalIdentifier\": \"{{externalIdentifier}}\",\n  \"firstName\": \"{{firstName}}\",\n  \"lastName\": \"{{lastName}}\",\n  \"name\": \"{{name}}\",\n  \"email\": \"{{email}}\",\n  \"title\": \"{{title}}\",\n  \"skypeId\": \"{{skypeId}}\",\n  \"phone\": \"{{phone}}\",\n  \"mobile\": \"{{mobile}}\",\n  \"address\": {\n    \"postalCode\": \"{{postalCode}}\",\n    \"addressLine1\": \"{{addressLine1}}\",\n    \"addressLine2\": \"{{addressLine2}}\",\n    \"city\": \"{{city}}\",\n    \"region\": \"{{region}}\",\n    \"country\": \"{{country}}\"\n  },\n  \"status\": \"{{status}}\",\n  \"businessStructure\": \"{{businessStructure}}\",\n  \"abn\": \"{{abn}}\",\n  \"acn\": \"{{acn}}\",\n  \"dateOfBirth\": \"{{dateOfBirth}}\"\n}",
+              "options": {
+                "raw": {}
+              }
             },
             "url": "{{baseUrl}}/integration/firms/{firmId}/contacts/{externalIdentifier}",
             "description": "The API is used by an external application,to update an existing contact in BGL. It is expected to be used by external partners to update contacts during the post-sync process.\n\n### Path Variables\n| Parameter              | Mandatory        | Datatype | Maximum Size | Description/Comments  |\n|--------------------|------------------|--------|--------|-----------------------|\n| firmId  | Yes              | String | 255 | The unique identifier of a firm in the external partner application                    |\n| externalIdentifier  | Yes              | String | 45 | Unique identifier of a contact in a firm of an external partner                   |\n\n### Request Body\n\n| Field              | Mandatory        | Datatype | Maximum Size | Description/Comments  |\n|--------------------|------------------|--------|--------|-----------------------|\n| externalIdentifier | Yes              | String | 45 | Unique identifier of a contact in a firm of an external partner                       |\n| firstName          | Yes/No*               | String | 255 | First name of the contact. For Individual entity type, this is mandatory field.                      |\n| lastName           | Yes/No*               | String |255 |Last name of the contact. For Individual entity type, this is mandatory field.                       |\n| name               | Yes/No*| String | 1000 | For Company, Trust, Partnership and SMSF entity types, this is mandatory.                      |\n| email              | No               | String |255 |Email address of the contact                       |\n| title              | No               | String |45 |Title of the contact                       |\n| phone              | No               | String |255 | Phone number of the contact                       |\n| mobile             | No               | String |45 | Mobile number of the contact                       |\n| address            | Yes              | Object |N/A |Address of the contact. See object details in AddressObject table below.|\n| businessStructure  | Yes              | String |45 |Business structure of the contact.                       |\n| abn                | Yes/No*               | String |45 |Australian Business Number of the contact. For SMSF entity type, this is mandatory                       |\n| acn                | Yes/No*                | String |45 |Australian Company Number of the contact. For Company entity type, this is mandatory field.                       |\n| dateOfBirth        | No               | Date |N/A |Date of Birth of the contact. Format: yyyy-mm-dd                       |\n\n*indicates may be mandatory depending on other data\n\n\n\n###  Address Object\n| Field              | Mandatory        | Datatype | Maximum Size | Description/Comments  |\n|--------------------|------------------|--------|--------|-----------------------|\n| postalCode | Yes              | String | 45 | Postal code of the address   |\n| addressLine1 | Yes              | String | 50 | First line of the address   |\n| addressLine2 | Yes              | String | 255 | Second line of the address   |\n| city | Yes              | String | 45 | City/Town of the address   |\n| region | Yes              | String | 45 | State of the address   |\n| country | Yes              | String | 45 | Country of the address   |"
@@ -12215,7 +12209,7 @@
           ]
         }
       ],
-      "id": "5b5ec853-5277-496b-84d5-173cfe3fee58",
+      "_postman_id": "5b5ec853-5277-496b-84d5-173cfe3fee58",
       "description": "BGL has developed a three-way integration that synchronises the contacts in CAS 360, Simple Fund 360 and a Third-Party. When a change is made to a contact, these details are updated for both BGL products.\n\nPlease see our [Practice Management Integration Guide](https://blog.api.bgl360.com.au/practice_management_guide/) for full details. ",
       "event": [
         {
@@ -12245,7 +12239,7 @@
       "item": [
         {
           "name": "ATO Lodgements (Firm)",
-          "id": "503d0939-d03f-4916-8abe-afa30d5dacd5",
+          "_postman_id": "503d0939-d03f-4916-8abe-afa30d5dacd5",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -12354,7 +12348,7 @@
           ]
         }
       ],
-      "id": "1c0f82ef-420a-4ccb-8b5a-48a59ea41fdb"
+      "_postman_id": "1c0f82ef-420a-4ccb-8b5a-48a59ea41fdb"
     }
   ],
   "event": [
