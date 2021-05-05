@@ -11823,13 +11823,13 @@
       ]
     },
     {
-      "name": "New Folder",
-      "item": [],
-      "id": "aafdbc5d-7439-45d3-9e7f-de25566767de"
-    },
-    {
       "name": "Practice Management ",
       "item": [
+        {
+          "name": "New Folder",
+          "item": [],
+          "id": "aafdbc5d-7439-45d3-9e7f-de25566767de"
+        },
         {
           "name": "Add Contact Copy",
           "id": "9e064fdb-a00b-4414-852f-05cef04ccad2",
