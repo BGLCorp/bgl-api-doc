@@ -11845,16 +11845,15 @@
               }
             ],
             "url": {
-              "raw": "{{baseUrl}}/sf/funds/:fundId/reports/balanceSheet?financialYear={{financialYear}}",
+              "raw": "{{baseUrl}}/sf/balanceReview/:fundId/?financialYear={{financialYear}}",
               "host": [
                 "{{baseUrl}}"
               ],
               "path": [
                 "sf",
-                "funds",
+                "balanceReview",
                 ":fundId",
-                "reports",
-                "balanceSheet"
+                ""
               ],
               "query": [
                 {
@@ -11865,7 +11864,6 @@
               ],
               "variable": [
                 {
-                  "id": "f7913246-b7ce-4b79-9617-29fc78966b02",
                   "key": "fundId",
                   "value": "{{fundId}}",
                   "type": "string",
