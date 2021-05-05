@@ -11826,7 +11826,7 @@
       "name": "Coming Soon",
       "item": [
         {
-          "name": "Report - Detailed Balance Sheet Copy",
+          "name": "Report - Balance Review",
           "id": "de7921bc-9ef8-4aa3-92d4-cda1339e1935",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
