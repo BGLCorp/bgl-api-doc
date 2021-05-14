@@ -12434,7 +12434,7 @@
                 "value": "bearer {{token}}"
               }
             ],
-            "url": "{{baseUrl}}/integration/firms/{firmId}/contacts/{externalIdentifier}",
+            "url": "{{baseUrl}}/integration/firms/{{firmId}}/contacts/{{externalIdentifier}}",
             "description": "Deletes a contact for a given contactId\n\n\n### Path Variables\n| Parameter              | Mandatory        | Datatype | Maximum Size | Description/Comments  |\n|--------------------|------------------|--------|--------|-----------------------|\n| firmId  | Yes              | String | 255 | The unique identifier of a firm in the external partner application                    |\n| externalIdentifier  | Yes              | String | 45 | Unique identifier of a contact in a firm of an external partner                   |"
           },
           "response": [
