@@ -69,11 +69,6 @@
           ]
         },
         {
-          "name": "New Folder",
-          "item": [],
-          "id": "000fac70-aa1b-441e-8f3d-e4d5219432ac"
-        },
-        {
           "name": "BGL Logo Kit and Colour Guide",
           "item": [],
           "id": "bf22117b-8db3-4a19-8e74-e5543035648e",
@@ -100,6 +95,11 @@
               }
             }
           ]
+        },
+        {
+          "name": "New Folder",
+          "item": [],
+          "id": "000fac70-aa1b-441e-8f3d-e4d5219432ac"
         }
       ],
       "id": "f58a44b9-09bf-4f0f-8782-df52787ee962",
