@@ -70,7 +70,13 @@
         },
         {
           "name": "BGL Logo Kit and Colour Guide",
-          "item": [],
+          "item": [
+            {
+              "name": "New Folder",
+              "item": [],
+              "id": "000fac70-aa1b-441e-8f3d-e4d5219432ac"
+            }
+          ],
           "id": "bf22117b-8db3-4a19-8e74-e5543035648e",
           "description": "On the [BGL Media Kit](https://www.bglcorp.com/media-kit/) page, you’ll find our logo assets and brand colour information for anyone to use. Make sure you download our [BGL Branding guide](https://www.bglcorp.com/wp-content/uploads/2019/07/BGL-Branding-Jan-2019.pdf) for more information about our branding style and restrictions.",
           "event": [
