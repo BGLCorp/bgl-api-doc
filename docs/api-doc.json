@@ -175,7 +175,7 @@
                 "method": "POST",
                 "header": [],
                 "url": {
-                  "raw": "{{baseUrl}}/oauth/authorize?response_type=code&client_id={{client_id}}&scope={{scope}}&redirect_uri={{redirect_uri}}",
+                  "raw": "{{baseUrl}}/oauth/authorize?response_type=code&state={{state}}&client_id={{client_id}}&scope={{scope}}&redirect_uri={{redirect_uri}}",
                   "host": [
                     "{{baseUrl}}"
                   ],
@@ -192,8 +192,7 @@
                     {
                       "key": "state",
                       "value": "{{state}}",
-                      "description": "[*Optional*] An opaque value, used for security purposes. If this request parameter is set in the request, then it is returned to the application as part of the redirect_uri.",
-                      "disabled": true
+                      "description": "[*Optional*] An opaque value, used for security purposes. If this request parameter is set in the request, then it is returned to the application as part of the redirect_uri."
                     },
                     {
                       "key": "client_id",
