@@ -1571,34 +1571,8 @@
               },
               "response": [
                 {
-                  "id": "4630e739-2389-412b-88a8-2b59b42d7c24",
-                  "name": "Status 200",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [
-                      {
-                        "key": "Authorization",
-                        "value": "Bearer {{token}}"
-                      }
-                    ],
-                    "url": "{{baseUrl}}/sf/funds/8ad08a3e6c829e03016c82ef9ab00008"
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "key": "Content-Type",
-                      "value": "application/json"
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{\n    \"abn\": \"12004045553\",\n    \"badgeId\": 4448,\n    \"dateFormed\": \"2018-12-18\",\n    \"enteringOpeningBalance\": false,\n    \"entityType\": \"SMSF\",\n    \"esa\": \"AUSTPOSTSMSF\",\n    \"financialYearEnd\": \"2019-06-30\",\n    \"financialYearFrom\": \"2018-12-18\",\n    \"fundCode\": \"SAM001\",\n    \"id\": \"8ad08a3e6c829e03016c82ef9ab00008\",\n    \"name\": \"The Sample Super Fund\",\n    \"physicalAddress\": {\n        \"city\": \"Brighton East\",\n        \"country\": \"AU\",\n        \"postCode\": \"3187\",\n        \"state\": \"VIC\",\n        \"streetLine1\": \"606 Hawthorn Rd\",\n        \"streetLine2\": \"\"\n    },\n    \"postalAddress\": {\n        \"city\": \"Brighton East\",\n        \"country\": \"AU\",\n        \"postCode\": \"3187\",\n        \"state\": \"VIC\",\n        \"streetLine1\": \"606 Hawthorn Rd\",\n        \"streetLine2\": \"\"\n    },\n    \"systemStartDate\": \"2018-12-18\",\n    \"tfn\": \"195144237\",\n    \"trustDeedLastModifiedDate\": \"2006-07-01\",\n    \"trustDeedRuleClauseDeathBenefit\": \"48D\",\n    \"trustDeedSource\": \"Top Docs \",\n    \"windUpDate\": \"2019-07-30\"\n}"
-                },
-                {
                   "id": "d4d722e7-8dcf-45e0-b0f7-5e32a02e0c8b",
-                  "name": "Entity Details",
+                  "name": "GET - Entity Details",
                   "originalRequest": {
                     "method": "GET",
                     "header": [
@@ -1661,7 +1635,7 @@
                   ],
                   "cookie": [],
                   "responseTime": null,
-                  "body": "{\n    \"abn\": \"28206936498\",\n    \"badgeId\": 1322,\n    \"billableCompanyType\": null,\n    \"billableTrustType\": null,\n    \"dateFormed\": \"2013-07-08\",\n    \"enteringOpeningBalance\": false,\n    \"entityType\": \"SMSF\",\n    \"esa\": \"AUSPOSTSMSF\",\n    \"financialYearEnd\": \"2021-06-30\",\n    \"financialYearFrom\": \"2020-07-01\",\n    \"fundCode\": \"JEEVAN101832\",\n    \"id\": \"000000004636a30601463728ef9a0036\",\n    \"name\": \"The Tokhi Super Fund\",\n    \"physicalAddress\": {\n        \"city\": \"Berwick\",\n        \"country\": \"AU\",\n        \"postCode\": \"3806\",\n        \"state\": \"VIC\",\n        \"streetLine1\": \"2 Angelique Street\",\n        \"streetLine2\": \"\"\n    },\n    \"postalAddress\": {\n        \"city\": \"Berwick\",\n        \"country\": \"AU\",\n        \"postCode\": \"3806\",\n        \"state\": \"VIC\",\n        \"streetLine1\": \"2 Angelique Street\",\n        \"streetLine2\": \"\"\n    },\n    \"systemStartDate\": null,\n    \"tfn\": \"******297\",\n    \"trustDeedLastModifiedDate\": \"2013-07-08\",\n    \"trustDeedRuleClauseDeathBenefit\": \"\",\n    \"trustDeedSource\": \"Top Docs             \",\n    \"windUpDate\": null\n}"
+                  "body": "{\n    \"abn\": \"84111122223\",\n    \"badgeId\": 1322,\n    \"billableCompanyType\": null,\n    \"billableTrustType\": null,\n    \"dateFormed\": \"2013-07-08\",\n    \"enteringOpeningBalance\": false,\n    \"entityType\": \"SMSF\",\n    \"esa\": \"AUSPOSTSMSF\",\n    \"financialYearEnd\": \"2021-06-30\",\n    \"financialYearFrom\": \"2020-07-01\",\n    \"fundCode\": \"JEEVAN101832\",\n    \"id\": \"000000004636a3060146372123456789\",\n    \"name\": \"The Sample Super Fund\",\n    \"physicalAddress\": {\n        \"city\": \"Melbourne\",\n        \"country\": \"AU\",\n        \"postCode\": \"3000\",\n        \"state\": \"VIC\",\n        \"streetLine1\": \"123 Fake Street\",\n        \"streetLine2\": \"\"\n    },\n    \"postalAddress\": {\n        \"city\": \"Melbourne\",\n        \"country\": \"AU\",\n        \"postCode\": \"3000\",\n        \"state\": \"VIC\",\n        \"streetLine1\": \"123 Fake Street\",\n        \"streetLine2\": \"\"\n    },\n    \"systemStartDate\": null,\n    \"tfn\": \"******123\",\n    \"trustDeedLastModifiedDate\": \"2013-07-08\",\n    \"trustDeedRuleClauseDeathBenefit\": \"\",\n    \"trustDeedSource\": \"Top Docs             \",\n    \"windUpDate\": null\n}"
                 }
               ]
             },
