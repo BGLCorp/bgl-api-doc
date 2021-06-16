@@ -889,6 +889,11 @@
           "item": [],
           "id": "017b2456-3f0f-4eca-b1d1-29e63b7396f3",
           "description": "The status of the BGL API and all of BGL's online services can be found at [https://status.bgl360.com.au](https://status.bgl360.com.au)"
+        },
+        {
+          "name": "New Folder",
+          "item": [],
+          "id": "afa68c06-697a-4ba3-a747-26e97b07616e"
         }
       ],
       "id": "d733d478-ed34-4c59-ad76-49cef7ea168b",
