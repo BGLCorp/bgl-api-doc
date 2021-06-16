@@ -135,7 +135,7 @@
           "name": "Prerequisites",
           "item": [],
           "id": "0b37159b-48fc-4907-9c06-2641f189e8cd",
-          "description": "In order to consume the BGL API:\n\n**1. Register a BGL Application**\nYou need to register your API application with BGL first. See [Add Application](https://documenter.getpostman.com/view/1087993/SVYjVNnn?version=latest#9776acf7-4623-436a-b3c8-feb5cdcd825f)\n\nYou will either need to login using your BGL Credentials. If you do not have a BGL Account BGL can create a demo account for you. \n\nThe consuming application can be registered with BGL by using My Application section.\n\n2.**Certificate Policy**\n\nEnsure the Amazon Root CA Certificate bundles should be installed in your applications/operating systems.\n\nCertificates provided by Amazon Certificate Manager are verified by Amazon’s certificate authority (CA). Any browser, application, or OS that includes the Amazon Root CA 1, Starfield Services Root Certificate Authority - G2, or Starfield Class 2 Certification Authority trusts certificates provided by ACM.\n\nLink to access CA Certs issued by Amazon: https://www.amazontrust.com/repository/",
+          "description": "In order to consume the BGL API:\n\n**1. Register a BGL Application**\nYou need to register your API application with BGL first. See [Add Application](https://documenter.getpostman.com/view/1087993/SVYjVNnn?version=latest#9776acf7-4623-436a-b3c8-feb5cdcd825f)\n\nYou will either need to login using your BGL Credentials. If you do not have a BGL Account BGL can create a demo account for you. \n\nThe consuming application can be registered with BGL by using My Application section.",
           "event": [
             {
               "listen": "prerequest",
