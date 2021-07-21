@@ -719,7 +719,7 @@
           "name": "Delete Application",
           "item": [],
           "id": "d787bef7-935d-49c8-bd52-682c8b9b680c",
-          "description": "To delete the Application(s)/Client(s):\n\n* Navigate to the Application List page\n* Tick the check box next to the Application(s)/Client(s) to delete\n* Select the Delete button, as shown below.\n\nThis will delete the selected Application(s)/Client(s). If the deletion is succesful, the Application List page will refresh to display the currently available Application(s)/Client(s).\n\n\n\n| Message | Description | \n| -------- | -------- | \n| Removed <Application Name/Client> Successfully     | If deleting the Application/Client was successful.     |"
+          "description": "To delete the API Application(s)/Client(s):\n\n* Navigate to My Apps\n* Click on the Delete Button on the API Client (Trash Can)\n\nThis will delete the selected Application(s)/Client(s). If the deletion is successful, the Application List page will refresh to display the currently available Application(s)/Client(s)."
         },
         {
           "name": "API Scope",
