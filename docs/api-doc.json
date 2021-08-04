@@ -12332,7 +12332,7 @@
           ]
         },
         {
-          "name": "Patch Contact (Beta)",
+          "name": "Patch Contact",
           "id": "c34fa793-6612-456d-ba10-91eeb38d16e3",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
