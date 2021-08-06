@@ -11974,7 +11974,7 @@
       "name": "Coming Soon",
       "item": [
         {
-          "name": "List of contacts by IDs Copy",
+          "name": "GET Contact for Indentity Verification",
           "id": "69816bb6-4069-4f3b-aa93-e3ea0b678930",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
