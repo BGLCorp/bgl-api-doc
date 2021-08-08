@@ -12008,7 +12008,75 @@
             "url": "{{baseUrl}}/cas/contactsVerification/{{contactId}}",
             "description": "Returns a contact by the given contact ID\n### Scopes Required\n- identity_provider \n\n\n\n### Response Body\n\nReturns a list of objects that will contain a combination of the below keys\n\n| Key                  | Datatype        | Mandatory | Constraints                                                                                                                           |\n| -------------------- | --------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------- |\n| contactType          | String          | Yes       | Must be one of 'People'/'Company'/Other Entity’/’Joint Member’                                                                        |\n| firstName            | String          | Yes       | Only mandatory if the contactType is 'People'                                                                                         |\n| middleName           | String          | No        | Only allowed if contactType is 'People'                                                                                         |\n| lastName             | String          | Yes       | Only mandatory if the contactType is 'People'                                                                                         |\n| name                 | String          | Yes       | Only mandatory if the contactType is 'Company'/'Other Entity'                                                                         |\n| addressId            | Number          | Yes       | Will be ignored if the contactType is 'Joint Member'. Must be a valid existing addressId                                                     |\n| representativeIds    | List of Numbers | Yes       | Only mandatory if the contactType is 'Joint Member'. Can only contain contactIds of non Joint Members                                 |\n| title                | String          | No        | Only allowed if contactType is 'People'                                                                                           |\n| sex                  | String          | No        | Only allowed if contactType is 'People'. Must be one of 'Male'/'Female'                                                           |\n| email                | String          | No        |                                                                                                                                       |\n| mobile               | String          | No        |                                                                                                                                       |\n| phone1               | String          | No        |                                                                                                                                       |\n| phone2               | String          | No        |                                                                                                                                       |\n| taxNumber            | String          | No        |                                                                                                                                       |\n| birthday             | String          | No        | Only allowed if contactType is 'People'. ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601                                         |\n| birthPlace           | String          | No        | Only allowed if contactType is 'People'                                                                                               |\n| birthState           | String          | No        | Only allowed if contactType is 'People'. Must be one of 'ACT'/'NSW'/'VIC'/'QLD'/'SA'/'WA'/'TAS'/'NT'/'Foreign'                        |\n| birthCountry         | String          | No        | Only allowed if contactType is 'People'. ISO 3166 country code/name https://en.wikipedia.org/wiki/ISO_3166                            |\n| skype                | String          | No        | Only allowed if contactType is 'People'                                                                                               |\n| companyNumber        | String          | No        | Only allowed if the contactType is one of 'Company'/'Other Entity'                                                                    |\n| businessNumber       | String          | No        | Only allowed if the contactType is one of 'Company'/'Other Entity'                                                                    |\n| placeOfIncorportaion | String          | No        | Only allowed if the contactType is one of 'Company'/'Other Entity'. ISO 3166 country code/name https://en.wikipedia.org/wiki/ISO_3166 |\n| incorporationDate    | String          | No        | Only allowed if the contactType is one of 'Company'/'Other Entity'. ISO 8601 date https://en.wikipedia.org/wiki/ISO_8601              |\n| type    | String          | No        | Only allowed if the contactType is 'Other Entity'. Must be one of ‘OTHER', 'SMSF', 'PARTNERSHIP' and 'TRUST' Wll only appear for Other Entity contacts"
           },
-          "response": []
+          "response": [
+            {
+              "id": "c4545051-c649-46fd-bf8c-e44d99f034bb",
+              "name": "GET Contact for Indentity Verification",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "bearer {{token}}",
+                    "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
+                  }
+                ],
+                "url": "{{baseUrl}}/cas/contactsVerification/{{contactId}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 08 Aug 2021 23:57:16 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json;charset=UTF-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Server",
+                  "value": "nginx"
+                },
+                {
+                  "key": "X-Rate-Daily-Limit-Remaining",
+                  "value": "-1"
+                },
+                {
+                  "key": "vary",
+                  "value": "accept-encoding"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "frame-ancestors 'self' uat.sf360.com.au"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "ALLOW-FROM https://uat.sf360.com.au"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"contact\": {\n        \"address\": {\n            \"block\": null,\n            \"buildingEstate\": null,\n            \"careOf\": \"\",\n            \"country\": null,\n            \"levelFloor\": null,\n            \"postcode\": \"3187\",\n            \"state\": \"VIC\",\n            \"streetLine1\": \"606 Hawthorn Road\",\n            \"streetLine2\": \"\",\n            \"suburb\": \"BRIGHTON EAST\",\n            \"townCity\": \"BRIGHTON EAST\",\n            \"unitFlat\": null\n        },\n        \"birthDetails\": {\n            \"birthCountry\": \"AU\",\n            \"birthDate\": \"1987-12-25\",\n            \"birthPlace\": \"Macdeon\",\n            \"birthState\": \"VIC\"\n        },\n        \"citizenship\": {\n            \"acquisitionDate\": \"1990-07-06\",\n            \"country\": \"JM\",\n            \"firstName\": \"John\",\n            \"lastName\": \"Doe\",\n            \"middleName\": null,\n            \"number\": \"88454525545654584\"\n        },\n        \"driversLicence\": {\n            \"country\": \"AU\",\n            \"expiryDate\": \"2024-07-22\",\n            \"firstName\": \"John\",\n            \"issueLocation\": \"ViC\",\n            \"lastName\": \"Doe\",\n            \"middleName\": null,\n            \"number\": \"4448882521\"\n        },\n        \"firstName\": \"John\",\n        \"id\": 1178270,\n        \"lastName\": \"Doe\",\n        \"middleName\": null,\n        \"passport\": {\n            \"country\": \"AUSTRALIA\",\n            \"expiryDate\": \"2028-08-06\",\n            \"firstName\": \"John\",\n            \"gender\": \"M\",\n            \"issueDate\": \"2021-08-06\",\n            \"lastName\": \"Doe\",\n            \"middleName\": null,\n            \"number\": \"444555222\"\n        },\n        \"pepCheckComplete\": true,\n        \"type\": \"People\"\n    },\n    \"requestFirm\": \"apitesting\",\n    \"requestUser\": null\n}"
+            }
+          ]
         }
       ],
       "id": "aafdbc5d-7439-45d3-9e7f-de25566767de"
