@@ -12065,7 +12065,7 @@
           ]
         },
         {
-          "name": "Completed Indentity Verification for a Contact",
+          "name": "Completed Identity Verification for a Contact",
           "id": "9d7cd748-e548-4209-a62d-1162018cc28b",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
