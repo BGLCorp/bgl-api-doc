@@ -11981,21 +11981,7 @@
           },
           "request": {
             "auth": {
-              "type": "oauth2",
-              "oauth2": {
-                "tokenName": "identuty-UAT",
-                "accessTokenUrl": "{{access-token-URL}}?scope={{scopes}}",
-                "challengeAlgorithm": "S256",
-                "useBrowser": true,
-                "scope": "{{scopes}}",
-                "grant_type": "authorization_code",
-                "clientSecret": "{{client_secret}}",
-                "clientId": "{{client_id}}",
-                "authUrl": "{{auth-URL}}",
-                "addTokenTo": "header",
-                "client_authentication": "header",
-                "tokenType": "bearer"
-              }
+              "type": "noauth"
             },
             "method": "GET",
             "header": [
