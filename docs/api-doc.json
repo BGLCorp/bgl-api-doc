@@ -11974,7 +11974,7 @@
       "name": "AML / Identity Verification",
       "item": [
         {
-          "name": "Contact for Indentity Verification",
+          "name": "Contact for Identity Verification",
           "id": "69816bb6-4069-4f3b-aa93-e3ea0b678930",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
