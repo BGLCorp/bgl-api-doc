@@ -3150,14 +3150,14 @@
                   }
                 ],
                 "url": {
-                  "raw": "{{baseUrl}}/sf/funds/{{fundId}}/reports/detailedOperatingStatement?financialYear={{financialYear}}",
+                  "raw": "{{baseUrl}}/sf/funds/:fundId/reports/detailedOperatingStatement?financialYear={{financialYear}}",
                   "host": [
                     "{{baseUrl}}"
                   ],
                   "path": [
                     "sf",
                     "funds",
-                    "{{fundId}}",
+                    ":fundId",
                     "reports",
                     "detailedOperatingStatement"
                   ],
@@ -3166,6 +3166,12 @@
                       "key": "financialYear",
                       "value": "{{financialYear}}",
                       "description": "[REQUIRED] Financial Year of Report. Expected format : YYYY"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "key": "fundId",
+                      "value": "{{fundId}}"
                     }
                   ]
                 },
