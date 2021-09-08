@@ -69,6 +69,11 @@
           ]
         },
         {
+          "name": "New Folder",
+          "item": [],
+          "id": "871900ed-f4c2-4f75-92b0-a8b3731d21ac"
+        },
+        {
           "name": "BGL Logo Kit and Colour Guide",
           "item": [],
           "id": "bf22117b-8db3-4a19-8e74-e5543035648e",
@@ -101,11 +106,6 @@
           "item": [],
           "id": "000fac70-aa1b-441e-8f3d-e4d5219432ac",
           "description": "To register for updates on the BGL API please and yourself to our mailing list please [Click Here](http://eepurl.com/gKb9-X). \n\nA list of all changes can be found on  [BGL's Ecosystem Blog](https://blog.api.bgl360.com.au/categories#Update)."
-        },
-        {
-          "name": "New Folder",
-          "item": [],
-          "id": "871900ed-f4c2-4f75-92b0-a8b3731d21ac"
         }
       ],
       "id": "f58a44b9-09bf-4f0f-8782-df52787ee962",
