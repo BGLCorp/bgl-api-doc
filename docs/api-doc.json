@@ -12099,7 +12099,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"requestId\": {{requestId}},\n    \"contactId\": {{contactId}},\n    \"responseSuccess\": {{responseSuccess}},\n    \"responseSuccessNotes\": \"{{responseSuccessNotes}}\",\n    \"verifications\": {\n        \"name\": {{ver-name}},\n        \"address\": {{ver-address}},\n        \"birthDetails\": {{ver-birthDetails}},\n        \"driversLicense\": {{ver-driversLicense}},\n        \"passport\": {{ver-passport}},\n        \"citizenshipCertificate\": {{ver-citizenshipCertificate}},\n        \"pepCheck\": {{ver-pepCheck}}\n    },\n    \"responseFiles\": []\n}",
+              "raw": "{\n    \"contactId\": {{contactId}},\n    \"responseSuccess\": {{responseSuccess}},\n    \"responseSuccessNotes\": \"{{responseSuccessNotes}}\",\n    \"verifications\": {\n        \"name\": {{ver-name}},\n        \"address\": {{ver-address}},\n        \"birthDetails\": {{ver-birthDetails}},\n        \"driversLicense\": {{ver-driversLicense}},\n        \"passport\": {{ver-passport}},\n        \"citizenshipCertificate\": {{ver-citizenshipCertificate}},\n        \"pepCheck\": {{ver-pepCheck}}\n    },\n    \"responseFiles\": []\n}",
               "options": {
                 "raw": {
                   "language": "json"
