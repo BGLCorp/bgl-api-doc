@@ -1158,7 +1158,7 @@
       "description": "This section will resources which are used by both CAS 360 and Simple Fund 360"
     },
     {
-      "name": "Simple Fund 360 & Simple Invest 360Resources",
+      "name": "Simple Fund 360 & Simple Invest 360 Resources",
       "item": [
         {
           "name": "Entity/Fund Lists",
