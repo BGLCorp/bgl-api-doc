@@ -12089,7 +12089,7 @@
             "auth": {
               "type": "noauth"
             },
-            "method": "PUT",
+            "method": "POST",
             "header": [
               {
                 "key": "Authorization",
