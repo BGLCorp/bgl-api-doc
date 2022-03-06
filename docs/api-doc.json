@@ -4378,6 +4378,48 @@
               },
               "response": [
                 {
+                  "id": "6d57451a-4ff6-4a78-8093-9c391faf4e66",
+                  "name": "Status 200",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Authorization",
+                        "value": "bearer {{token}}",
+                        "type": "text"
+                      }
+                    ],
+                    "url": {
+                      "raw": "https://api.staging.bgl360.com.au/sf/contactsByIds?ids=8ad08a2c74e222f30174e26862330023,2c918082685ea3b801686d82e99b0107,2c918082685ea3b801686d82e9bb0109",
+                      "protocol": "https",
+                      "host": [
+                        "api",
+                        "staging",
+                        "bgl360",
+                        "com",
+                        "au"
+                      ],
+                      "path": [
+                        "sf",
+                        "contactsByIds"
+                      ],
+                      "query": [
+                        {
+                          "key": "ids",
+                          "value": "8ad08a2c74e222f30174e26862330023,2c918082685ea3b801686d82e99b0107,2c918082685ea3b801686d82e9bb0109"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": null,
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "[\n    {\n        \"abn\": null,\n        \"acn\": null,\n        \"address\": null,\n        \"birthCountry\": null,\n        \"birthPlace\": null,\n        \"birthState\": null,\n        \"birthday\": null,\n        \"contactId\": \"8ad08a2c74e222f30174e26862330023\",\n        \"contactType\": \"Trust\",\n        \"dateOfDeath\": null,\n        \"email\": null,\n        \"entityRelationships\": [\n            {\n                \"entityContactChildId\": \"2c91808661d09ca00161e4dcf9d90008\",\n                \"entityContactChildType\": \"People\",\n                \"entityContactParentId\": \"8ad08a2c74e222f30174e26862330023\",\n                \"entityContactParentType\": \"Trust\",\n                \"entityContactPosition\": \"Trustee\",\n                \"entityRelationshipId\": 260436\n            },\n            {\n                \"entityContactChildId\": \"8ad08a8b74fb078a0174fb0bf5e30000\",\n                \"entityContactChildType\": \"People\",\n                \"entityContactParentId\": \"8ad08a2c74e222f30174e26862330023\",\n                \"entityContactParentType\": \"Trust\",\n                \"entityContactPosition\": \"Beneficiary\",\n                \"entityRelationshipId\": 277447\n            }\n        ],\n        \"establishmentDate\": \"2020-10-01\",\n        \"firstName\": null,\n        \"lastName\": null,\n        \"memberAccountNumber\": null,\n        \"mobile\": null,\n        \"name\": \"Trust1\",\n        \"otherName\": null,\n        \"preferredName\": null,\n        \"professionalBody\": null,\n        \"professionalBodyNumber\": null,\n        \"sex\": null,\n        \"smsfAuditorNumber\": null,\n        \"solePurposeSMSFCorpTrustee\": null,\n        \"spin\": null,\n        \"telephone\": null,\n        \"tfn\": \"Not Provided\",\n        \"title\": null,\n        \"usi\": null\n    },\n    {\n        \"abn\": \"99159300464\",\n        \"acn\": null,\n        \"address\": {\n            \"addressId\": 2260063,\n            \"city\": \"Brighton East\",\n            \"country\": \"AU\",\n            \"postCode\": \"3178\",\n            \"state\": \"VICTORIA\",\n            \"streetLine1\": \"Suite 2, 606 Hawthorn Rd\",\n            \"streetLine2\": null\n        },\n        \"birthCountry\": \"AU\",\n        \"birthPlace\": null,\n        \"birthState\": null,\n        \"birthday\": \"1947-08-02\",\n        \"contactId\": \"2c918082685ea3b801686d82e99b0107\",\n        \"contactType\": \"People\",\n        \"dateOfDeath\": null,\n        \"email\": \"test@test.com.au\",\n        \"entityRelationships\": [\n            {\n                \"entityContactChildId\": \"2c918082685ea3b801686d82e99b0107\",\n                \"entityContactChildType\": \"People\",\n                \"entityContactParentId\": \"8ad08a29686d750701686d8182ef0002\",\n                \"entityContactParentType\": \"SMSF\",\n                \"entityContactPosition\": \"Trustee\",\n                \"entityRelationshipId\": 161826\n            },\n            {\n                \"entityContactChildId\": \"2c918082685ea3b801686d82e99b0107\",\n                \"entityContactChildType\": \"People\",\n                \"entityContactParentId\": \"8ad08a29686d750701686d8182ef0002\",\n                \"entityContactParentType\": \"SMSF\",\n                \"entityContactPosition\": \"Member\",\n                \"entityRelationshipId\": 161828\n            },\n            {\n                \"entityContactChildId\": \"2c918082685ea3b801686d82e99b0107\",\n                \"entityContactChildType\": \"People\",\n                \"entityContactParentId\": \"8ad08ad568742d950168744aa0380022\",\n                \"entityContactParentType\": \"SMSF\",\n                \"entityContactPosition\": \"Member\",\n                \"entityRelationshipId\": 169054\n            }\n        ],\n        \"establishmentDate\": null,\n        \"firstName\": \"John\",\n        \"lastName\": \"Jones\",\n        \"memberAccountNumber\": null,\n        \"mobile\": \"61426277777\",\n        \"name\": null,\n        \"otherName\": null,\n        \"preferredName\": null,\n        \"professionalBody\": null,\n        \"professionalBodyNumber\": null,\n        \"sex\": \"MALE\",\n        \"smsfAuditorNumber\": null,\n        \"solePurposeSMSFCorpTrustee\": null,\n        \"spin\": null,\n        \"telephone\": \"1300111111\",\n        \"tfn\": \"Not Provided\",\n        \"title\": \"Mr\",\n        \"usi\": null\n    },\n    {\n        \"abn\": null,\n        \"acn\": null,\n        \"address\": {\n            \"addressId\": 2103348,\n            \"city\": \"Brighton East\",\n            \"country\": \"AU\",\n            \"postCode\": \"5475\",\n            \"state\": \"VICTORIA\",\n            \"streetLine1\": \"Suite 2, 606-608 Hawthorn Rd\",\n            \"streetLine2\": \"\"\n        },\n        \"birthCountry\": \"AU\",\n        \"birthPlace\": null,\n        \"birthState\": null,\n        \"birthday\": \"1947-08-02\",\n        \"contactId\": \"2c918082685ea3b801686d82e9bb0109\",\n        \"contactType\": \"People\",\n        \"dateOfDeath\": null,\n        \"email\": \"sandy4812@hand.com\",\n        \"entityRelationships\": [\n            {\n                \"entityContactChildId\": \"2c918082685ea3b801686d82e9bb0109\",\n                \"entityContactChildType\": \"People\",\n                \"entityContactParentId\": \"8ad08a29686d750701686d8182ef0002\",\n                \"entityContactParentType\": \"SMSF\",\n                \"entityContactPosition\": \"Member\",\n                \"entityRelationshipId\": 161827\n            }\n        ],\n        \"establishmentDate\": null,\n        \"firstName\": \"Mary\",\n        \"lastName\": \"Jones\",\n        \"memberAccountNumber\": null,\n        \"mobile\": null,\n        \"name\": null,\n        \"otherName\": null,\n        \"preferredName\": null,\n        \"professionalBody\": null,\n        \"professionalBodyNumber\": null,\n        \"sex\": \"FEMALE\",\n        \"smsfAuditorNumber\": null,\n        \"solePurposeSMSFCorpTrustee\": null,\n        \"spin\": null,\n        \"telephone\": \"01-76970987\",\n        \"tfn\": \"Provided\",\n        \"title\": null,\n        \"usi\": null\n    }\n]"
+                },
+                {
                   "id": "fd3d2b7c-99a3-44b7-82ec-8014864f03ba",
                   "name": "List of Contacts by IDs",
                   "originalRequest": {
