@@ -2868,29 +2868,20 @@
                   }
                 ],
                 "url": {
-                  "raw": "{{baseUrl}}/sf/balanceReview/:fundId/?reportDate={{reportDate}}",
+                  "raw": "{{baseUrl}}/sf/balanceReview/{{fundId}}/?financialYear={{financialYear}}",
                   "host": [
                     "{{baseUrl}}"
                   ],
                   "path": [
                     "sf",
                     "balanceReview",
-                    ":fundId",
+                    "{{fundId}}",
                     ""
                   ],
                   "query": [
                     {
-                      "key": "reportDate",
-                      "value": "{{reportDate}}",
-                      "description": "Format = yyyy-MM-dd"
-                    }
-                  ],
-                  "variable": [
-                    {
-                      "key": "fundId",
-                      "value": "{{fundId}}",
-                      "type": "string",
-                      "description": "[REQUIRED] Unique ID for the fund. "
+                      "key": "financialYear",
+                      "value": "{{financialYear}}"
                     }
                   ]
                 },
