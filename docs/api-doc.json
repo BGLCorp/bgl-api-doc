@@ -3910,7 +3910,7 @@
           "name": "SMSF Establishment",
           "item": [
             {
-              "name": "Create Fund Copy",
+              "name": "Create Fund",
               "id": "05838245-1062-4ac5-a945-055c63124162",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
