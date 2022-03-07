@@ -6845,7 +6845,7 @@
                       }
                     ],
                     "url": {
-                      "raw": "{{baseUrl}}/cas/companies/:companyId?details={details}",
+                      "raw": "{{baseUrl}}/cas/companies/:companyId?details=true",
                       "host": [
                         "{{baseUrl}}"
                       ],
@@ -6857,20 +6857,15 @@
                       "query": [
                         {
                           "key": "details",
-                          "value": "{details}",
+                          "value": "true",
                           "description": "[example = 'true']Enabling this option will display Annual Review Date, Annual Review Status, Annual Review Status Date, ASIC agent number and labels for the company."
                         }
                       ],
                       "variable": [
                         {
-                          "id": "a8ff9489-7a02-43eb-8e0d-494ed80eb6ee",
                           "key": "companyId",
                           "value": "{{companyId}}",
-                          "type": "string",
-                          "description": {
-                            "content": "",
-                            "type": "text/plain"
-                          }
+                          "type": "string"
                         }
                       ]
                     },
