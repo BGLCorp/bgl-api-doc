@@ -12209,11 +12209,6 @@
       "name": "Practice Management ",
       "item": [
         {
-          "name": "Coming Soon",
-          "item": [],
-          "id": "cdd0d14d-c173-4a28-801e-3eaa63d8e45f"
-        },
-        {
           "name": "Add Contact",
           "id": "9e064fdb-a00b-4414-852f-05cef04ccad2",
           "protocolProfileBehavior": {
@@ -12884,6 +12879,11 @@
           }
         }
       ]
+    },
+    {
+      "name": "Coming Soon",
+      "item": [],
+      "id": "cdd0d14d-c173-4a28-801e-3eaa63d8e45f"
     }
   ],
   "event": [
