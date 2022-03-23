@@ -12206,6 +12206,11 @@
       "id": "aafdbc5d-7439-45d3-9e7f-de25566767de"
     },
     {
+      "name": "Coming Soon",
+      "item": [],
+      "id": "cdd0d14d-c173-4a28-801e-3eaa63d8e45f"
+    },
+    {
       "name": "Practice Management ",
       "item": [
         {
@@ -12879,11 +12884,6 @@
           }
         }
       ]
-    },
-    {
-      "name": "Coming Soon",
-      "item": [],
-      "id": "cdd0d14d-c173-4a28-801e-3eaa63d8e45f"
     }
   ],
   "event": [
