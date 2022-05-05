@@ -176,9 +176,21 @@
               },
               "request": {
                 "auth": {
-                  "type": "noauth"
+                  "type": "oauth2",
+                  "oauth2": {
+                    "state": "{{state}}",
+                    "tokenName": "UAT_Vince_developer",
+                    "accessTokenUrl": "{{baseUrl}}/oauth/token?scope={{scope}}",
+                    "authUrl": "{{integrationsUrl}}/u/oauth/authorize",
+                    "scope": "{{scope}}",
+                    "clientSecret": "{{client_secret}}",
+                    "clientId": "{{client_id}}",
+                    "useBrowser": true,
+                    "redirect_uri": "https://app.getpostman.com/oauth2/callback ",
+                    "addTokenTo": "header"
+                  }
                 },
-                "method": "GET",
+                "method": "POST",
                 "header": [],
                 "url": {
                   "raw": "{{baseUrl}}/oauth/authorize?response_type=code&state={{state}}&client_id={{client_id}}&scope={{scope}}&redirect_uri={{redirect_uri}}",
