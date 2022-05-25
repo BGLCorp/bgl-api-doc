@@ -12915,7 +12915,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/sf/funds/:fundId/reports/balanceSheet?financialYear={{financialYear}}",
+							"raw": "{{baseUrl}}/sf/funds/:fundId/reports/distributionRecTaxComponents?financialYear={{financialYear}}",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -12924,7 +12924,7 @@
 								"funds",
 								":fundId",
 								"reports",
-								"balanceSheet"
+								"distributionRecTaxComponents"
 							],
 							"query": [
 								{
