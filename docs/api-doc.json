@@ -10960,7 +10960,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": " { \n   \"unitholderId\": {{unitholderId}},\n   \"beneficialOwnerId\": {{beneficialOwnerId}},\n   \"certificateNumber\":\"{{certificateNumber}}\",\n   \"certificateType\":\"{{certificateType}}\",\n   \"numberOfUnits\": {{numberOfUnits}},\n   \"transactionDate\":\"{{transactionDate}}\",\n   \"type\":\"{{type}}\",\n   \"unitType\":{  \n      \"currency\":\"{{currency}}\",\n      \"description\":\"{{ORDINARY SHARES}}\",\n      \"paid\": {{paid}},\n      \"shareClass\":{  \n         \"cCode\":\"{{cCode}}\",\n         \"description\":\"{{description}}\"\n      },\n      \"unpaid\": {{unpaid}}\n   }\n}\n"
+											"raw": " { \n   \"unitholderId\": {{unitholderId}},\n   \"beneficialOwnerId\": {{beneficialOwnerId}},\n   \"certificateNumber\":\"{{certificateNumber}}\",\n   \"certificateType\":\"{{certificateType}}\",\n   \"numberOfUnits\": {{numberOfUnits}},\n   \"transactionDate\":\"{{transactionDate}}\",\n   \"type\":\"{{type}}\",\n   \"unitType\":{  \n      \"currency\":\"{{currency}}\",\n      \"description\":\"{{ORDINARY SHARES}}\",\n      \"paid\": {{paid}},\n      \"unitClass\":{  \n         \"cCode\":\"{{cCode}}\",\n         \"description\":\"{{description}}\"\n      },\n      \"unpaid\": {{unpaid}}\n   }\n}\n"
 										},
 										"url": {
 											"raw": "{{baseUrl}}/cas/trusts/:trustId/unitTransactions",
