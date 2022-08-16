@@ -7132,7 +7132,7 @@
 											],
 											"cookie": [],
 											"responseTime": null,
-											"body": "{\n    \"agentId\": null,\n    \"annualReviewDate\": \"2020-06-29\",\n    \"details\": {\n        \"annualReviewStatus\": \"UPCOMING\",\n        \"annualReviewStatusDate\": \"2020-06-29\",\n        \"asicAgentNumber\": null,\n        \"labels\": [],\n        \"superFundContactIds\": [\n            1062973\n        ]\n    },\n    \"id\": \"889ff4b7-766f-4b30-b33e-c2cdce97ff03\",\n    \"incorporationDate\": \"2007-06-29\",\n    \"jurisdiction\": \"Australia\",\n    \"name\": \"My Super Trustee\",\n    \"number\": \"002999993\",\n    \"registered\": true,\n    \"registrationState\": \"ACT\",\n    \"type\": {\n        \"companyClass\": \"Limited by Shares\",\n        \"companySubClass\": \"None\",\n        \"companyType\": \"Small Proprietary\"\n    }\n}"
+											"body": "{\n    \"agentId\": null,\n    \"annualReviewDate\": \"2020-06-29\",\n    \"businessNumber\": null,\n    \"details\": {\n        \"abn\": null,\n        \"annualReviewStatus\": \"UPCOMING\",\n        \"annualReviewStatusDate\": \"2020-06-29\",\n        \"asicAgentNumber\": null,\n        \"clientNumber\": null,\n        \"labels\": [],\n        \"superFundContactIds\": [\n            1062973\n        ]\n    },\n    \"id\": \"889ff4b7-766f-4b30-b33e-c2cdce97ff03\",\n    \"incorporationDate\": \"2007-06-29\",\n    \"jurisdiction\": \"Australia\",\n    \"name\": \"My Super Trustee\",\n    \"number\": \"002999993\",\n    \"registered\": true,\n    \"registrationState\": \"ACT\",\n    \"type\": {\n        \"companyClass\": \"Limited by Shares\",\n        \"companySubClass\": \"None\",\n        \"companyType\": \"Small Proprietary\"\n    }\n}"
 										}
 									]
 								},
