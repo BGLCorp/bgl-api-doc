@@ -6539,7 +6539,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{baseUrl}}/contacts?offset={{offset}}&limit={{limit}}&relationships=true",
+									"raw": "{{baseUrl}}/contacts?offset={{offset}}&limit={{limit}}&relationships=false",
 									"host": [
 										"{{baseUrl}}"
 									],
@@ -6557,8 +6557,8 @@
 										},
 										{
 											"key": "relationships",
-											"value": "true",
-											"type": "text"
+											"value": "false",
+											"description": "[optional] response will not include relationships if parameter not used"
 										}
 									]
 								},
