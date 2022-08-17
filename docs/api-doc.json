@@ -6539,7 +6539,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{baseUrl}}/contacts?offset={{offset}}&limit={{limit}}",
+									"raw": "{{baseUrl}}/contacts?offset={{offset}}&limit={{limit}}&relationships=true",
 									"host": [
 										"{{baseUrl}}"
 									],
@@ -6554,6 +6554,11 @@
 										{
 											"key": "limit",
 											"value": "{{limit}}"
+										},
+										{
+											"key": "relationships",
+											"value": "true",
+											"type": "text"
 										}
 									]
 								},
