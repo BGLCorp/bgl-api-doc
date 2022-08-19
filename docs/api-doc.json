@@ -7510,7 +7510,7 @@
 												],
 												"body": {
 													"mode": "raw",
-													"raw": "{\n    \"name\": \"Test company ABC Pty Ltd\",\n    \"number\": \"550593336\",\n    \"incorporationDate\": \"2016-12-18\",\n    \"annualReviewDate\": \"2017-12-03\",\n    \"registrationState\": \"VIC\",\n    \"jurisdiction\": \"Australia\",\n    \"registered\": true,\n    \"type\": {\n        \"companyClass\": \"Limited by Shares\",\n        \"companySubClass\": \"None\",\n        \"companyType\": \"Small Proprietary\"\n    }\n}"
+													"raw": "{\n    \"name\": \"Test company ABC Pty Ltd\",\n    \"number\": \"550593336\",\n    \"incorporationDate\": \"2016-12-18\",\n    \"annualReviewDate\": \"2017-12-03\",\n    \"businessNumber\": \"123\",\n    \"registrationState\": \"VIC\",\n    \"jurisdiction\": \"Australia\",\n    \"registered\": true,\n    \"type\": {\n        \"companyClass\": \"Limited by Shares\",\n        \"companySubClass\": \"None\",\n        \"companyType\": \"Small Proprietary\"\n    }\n}"
 												},
 												"url": "{{baseUrl}}/cas/companies/{{companyId}}"
 											},
@@ -7525,7 +7525,7 @@
 											],
 											"cookie": [],
 											"responseTime": null,
-											"body": "{\n    \"agentId\": null,\n    \"annualReviewDate\": \"2017-12-03\",\n    \"id\": \"ef921aa4-b0f8-4ddd-a5b2-fb97fc9255f8\",\n    \"incorporationDate\": \"2016-12-18\",\n    \"jurisdiction\": \"Australia\",\n    \"name\": \"Test company ABC Pty Ltd\",\n    \"number\": \"550593336\",\n    \"registrationState\": \"VIC\",\n    \"registered\": true,\n    \"type\": {\n        \"companyClass\": \"Limited by Shares\",\n        \"companySubClass\": \"None\",\n        \"companyType\": \"Small Proprietary\"\n    }\n}"
+											"body": "{\n    \"agentId\": null,\n    \"annualReviewDate\": \"2017-12-03\",\n    \"businessNumber\": \"123\",\n    \"id\": \"ef921aa4-b0f8-4ddd-a5b2-fb97fc9255f8\",\n    \"incorporationDate\": \"2016-12-18\",\n    \"jurisdiction\": \"Australia\",\n    \"name\": \"Test company ABC Pty Ltd\",\n    \"number\": \"550593336\",\n    \"registrationState\": \"VIC\",\n    \"registered\": true,\n    \"type\": {\n        \"companyClass\": \"Limited by Shares\",\n        \"companySubClass\": \"None\",\n        \"companyType\": \"Small Proprietary\"\n    }\n}"
 										}
 									]
 								},
