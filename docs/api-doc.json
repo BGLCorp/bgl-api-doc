@@ -7258,7 +7258,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "\n{\n    \"directorId\": \"4421\",\n    \"status\": \"DELETED\"\n}"
+											"raw": ""
 										},
 										"url": "{{baseUrl}}/contacts/{{contactId}}/ids"
 									},
