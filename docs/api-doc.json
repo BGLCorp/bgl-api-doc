@@ -5701,7 +5701,7 @@
 											}
 										],
 										"url": {
-											"raw": "{{baseUrl}}/cas/companies?offset={{offset}}&limit={{limit}}&details={{details}}",
+											"raw": "{{baseUrl}}/cas/companies?offset=0&limit=500",
 											"host": [
 												"{{baseUrl}}"
 											],
@@ -5712,15 +5712,11 @@
 											"query": [
 												{
 													"key": "offset",
-													"value": "{{offset}}"
+													"value": "0"
 												},
 												{
 													"key": "limit",
-													"value": "{{limit}}"
-												},
-												{
-													"key": "details",
-													"value": "{{details}}"
+													"value": "500"
 												}
 											]
 										}
