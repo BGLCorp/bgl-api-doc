@@ -7047,7 +7047,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": " {\n    \"ids\": [\n        {\n            \"id\": 3436,\n            \"type\": \"AUSTRALIAN_DIRECTOR_ID\",\n            \"value\": \"000000000000000\"\n        },\n        {\n            \"id\": 3732,\n            \"type\": \"OTHER\",\n            \"value\": \"000000000000000\"\n        }\n    ]\n}\n"
+											"raw": ""
 										},
 										"url": "{{baseUrl}}/contacts/{{contactId}}/ids"
 									},
