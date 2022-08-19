@@ -7252,10 +7252,6 @@
 												"value": "application/json"
 											}
 										],
-										"body": {
-											"mode": "raw",
-											"raw": ""
-										},
 										"url": "{{baseUrl}}/contacts/{{contactId}}/ids/{{id}}"
 									},
 									"status": "OK",
