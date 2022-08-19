@@ -7124,7 +7124,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\"id\": 1869520,\r\n\"type\": \"AUSTRALIAN_DIRECTOR_ID\",\r\n\"value\": \"000000000000000\"\r\n}"
+									"raw": "{\r\n\"type\": \"AUSTRALIAN_DIRECTOR_ID\",\r\n\"value\": \"000000000000000\"\r\n}"
 								},
 								"url": "{{baseUrl}}/contacts/{{contactId}}/ids",
 								"description": "Creates one individual contact id (e.g. Director ID).\n\nREQUEST BODY\n\n| Key | Datatype | Comments |\n| --- | --- | --- |\n| id | Number |  |\n| type | string | See ID TYPE list below |\n| value | string |  |\n\nStartFragment\n\n### **ID TYPES:**\n\n*   AUSTRALIAN_DIRECTOR_ID\n*   CHINA_ID\n*   EMPLOYMENT_PASS\n*   HONG_KONG_ID\n*   MACAU_ID\n*   MALAY_IC\n*   OTHER\n*   SINGAPORE_FIN\n*   SINGAPORE_NRIC_CITIZEN\n*   SINGAPORE_NRIC_PR\n    \n\nEndFragment"
