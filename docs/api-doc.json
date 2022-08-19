@@ -7212,7 +7212,7 @@
 							]
 						},
 						{
-							"name": "Director ID & Other Jurisdiction ID",
+							"name": "Delete Director ID & Other Jurisdiction ID",
 							"id": "392869f2-b500-481f-a4a7-f15663f08424",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
