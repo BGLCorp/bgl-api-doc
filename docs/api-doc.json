@@ -7152,7 +7152,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"id\": 4421,\n    \"type\": \"AUSTRALIAN_DIRECTOR_ID\",\n    \"value\": \"000000000000000\"\n}\n"
+											"raw": "{\n    \"type\": \"AUSTRALIAN_DIRECTOR_ID\",\n    \"value\": \"000000000000000\"\n}\n"
 										},
 										"url": "{{baseUrl}}/contacts/{{contactId}}/ids"
 									},
