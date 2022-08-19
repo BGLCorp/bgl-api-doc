@@ -5701,7 +5701,7 @@
 											}
 										],
 										"url": {
-											"raw": "{{baseUrl}}/cas/companies?offset=0&limit=500",
+											"raw": "{{baseUrl}}/cas/companies?offset={{offset}}&limit={{limit}}&details={{details}}",
 											"host": [
 												"{{baseUrl}}"
 											],
@@ -5712,11 +5712,15 @@
 											"query": [
 												{
 													"key": "offset",
-													"value": "0"
+													"value": "{{offset}}"
 												},
 												{
 													"key": "limit",
-													"value": "500"
+													"value": "{{limit}}"
+												},
+												{
+													"key": "details",
+													"value": "{{details}}"
 												}
 											]
 										}
@@ -5732,7 +5736,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n  \"companies\": [\n    {\n      \"agentId\": 9,\n      \"annualReviewDate\": \"2018-10-03\",\n      \"details\": {\n        \"annualReviewStatus\": \"PROCESSED\",\n        \"annualReviewStatusDate\": null,\n        \"businessNumber\": null,\n        \"asicAgentNumber\": null,\n        \"labels\": []\n      },\n      \"id\": \"1f2ccd6c-7c24-42ca-8cf2-496d7b112cea\",\n      \"incorporationDate\": \"2017-10-02\",\n      \"jurisdiction\": \"Australia\",\n      \"name\": \"Jasmine's Sour Ale Proprietary Limited\",\n      \"number\": \"000000113\",\n      \"registrationState\": \"VIC\",\n      \"registered\": true,\n      \"type\": {\n        \"companyClass\": \"Limited by Shares\",\n        \"companySubClass\": \"None\",\n        \"companyType\": \"Small Proprietary\"\n      }\n    },\n    {\n      \"agentId\": 9,\n      \"annualReviewDate\": \"2018-10-04\",\n      \"details\": {\n        \"annualReviewStatus\": \"PROCESSED\",\n        \"annualReviewStatusDate\": null,\n        \"asicAgentNumber\": null,\n        \"labels\": []\n      },\n      \"id\": \"26568029-fb4c-4ade-ad5b-ce6508c0329f\",\n      \"incorporationDate\": \"2017-10-04\",\n      \"jurisdiction\": \"Australia\",\n      \"name\": \"Menoetius - Hestia Group Pty. Limited.\",\n      \"number\": \"000000019\",\n      \"registrationState\": \"ACT\",\n      \"registered\": true,\n      \"type\": {\n        \"companyClass\": \"Limited by Shares\",\n        \"companySubClass\": \"None\",\n        \"companyType\": \"Small Proprietary\"\n      }\n    }\n  ],\n  \"limit\": 500,\n  \"offset\": 0,\n  \"total\": 2\n}"
+									"body": "{\n  \"companies\": [\n    {\n      \"agentId\": 9,\n      \"annualReviewDate\": \"2018-10-03\",\n      \"businessNumber\": null,\n      \"details\": {\n        \"annualReviewStatus\": \"PROCESSED\",\n        \"annualReviewStatusDate\": null,\n        \"asicAgentNumber\": null,\n        \"labels\": []\n      },\n      \"id\": \"1f2ccd6c-7c24-42ca-8cf2-496d7b112cea\",\n      \"incorporationDate\": \"2017-10-02\",\n      \"jurisdiction\": \"Australia\",\n      \"name\": \"Jasmine's Sour Ale Proprietary Limited\",\n      \"number\": \"000000113\",\n      \"registrationState\": \"VIC\",\n      \"registered\": true,\n      \"type\": {\n        \"companyClass\": \"Limited by Shares\",\n        \"companySubClass\": \"None\",\n        \"companyType\": \"Small Proprietary\"\n      }\n    },\n    {\n      \"agentId\": 9,\n      \"annualReviewDate\": \"2018-10-04\",\n      \"businessNumber\": null,\n      \"details\": {\n        \"annualReviewStatus\": \"PROCESSED\",\n        \"annualReviewStatusDate\": null,\n        \"asicAgentNumber\": null,\n        \"labels\": []\n      },\n      \"id\": \"26568029-fb4c-4ade-ad5b-ce6508c0329f\",\n      \"incorporationDate\": \"2017-10-04\",\n      \"jurisdiction\": \"Australia\",\n      \"name\": \"Menoetius - Hestia Group Pty. Limited.\",\n      \"number\": \"000000019\",\n      \"registrationState\": \"ACT\",\n      \"registered\": true,\n      \"type\": {\n        \"companyClass\": \"Limited by Shares\",\n        \"companySubClass\": \"None\",\n        \"companyType\": \"Small Proprietary\"\n      }\n    }\n  ],\n  \"limit\": 500,\n  \"offset\": 0,\n  \"total\": 2\n}"
 								}
 							]
 						},
