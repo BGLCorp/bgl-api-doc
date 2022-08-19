@@ -7152,7 +7152,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": " { \n   \"unitholderId\": 963075,\n   \"beneficialOwnerId\": null,\n   \"certificateNumber\":\"2\",\n   \"certificateType\": \"Transaction\",\n   \"numberOfUnits\": 1,\n   \"transactionDate\":\"2020-01-02\",\n   \"type\":\"Allotment\",\n   \"unitType\": {\n                \"currency\": \"AUD\",\n                \"description\": \"ORDINARY UNITS\",\n                \"paid\": 1.000000000000000000000000000000,\n                \"unitClass\": {\n                    \"cCode\": \"ORD\",\n                    \"description\": \"ORDINARY UNITS\"\n                },\n                \"unpaid\": 0E-30\n   }\n}\n\n"
+											"raw": "{\n    \"id\": 4421,\n    \"type\": \"AUSTRALIAN_DIRECTOR_ID\",\n    \"value\": \"000000000000000\"\n}\n"
 										},
 										"url": "{{baseUrl}}/contacts/{{contactId}}/ids"
 									},
