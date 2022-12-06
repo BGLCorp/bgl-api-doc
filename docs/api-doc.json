@@ -3216,12 +3216,12 @@
 								"auth": {
 									"type": "oauth2",
 									"oauth2": {
+										"clientSecret": "",
+										"clientId": "",
 										"accessTokenUrl": "https://api.uat.bgl360.com.au/oauth/token?scope=developer",
 										"authUrl": "https://integrations.uat.bgl360.com.au/u/oauth/authorize",
-										"clientSecret": "076feaed-b554-463f-bb34-7635dc6cfade",
 										"scope": "developer",
-										"useBrowser": true,
-										"clientId": "f7894539-a473-42f7-8635-fa35d4ba6555"
+										"useBrowser": true
 									}
 								},
 								"method": "GET",
