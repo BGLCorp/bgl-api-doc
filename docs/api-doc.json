@@ -2518,12 +2518,12 @@
 										{
 											"key": "start",
 											"value": "{{start}}",
-											"description": "[REQUIRED] Start Date of Report. Expected format : dd/MM/yyyy"
+											"description": "[REQUIRED] Start Date of Report. Expected format : YYYY/MM/DD"
 										},
 										{
 											"key": "end",
 											"value": "{{end}}",
-											"description": "[REQUIRED] End Date of Report. Expected format : dd/MM/yyyy"
+											"description": "[REQUIRED] End Date of Report. Expected format : YYYY/MM/DD"
 										}
 									],
 									"variable": [
