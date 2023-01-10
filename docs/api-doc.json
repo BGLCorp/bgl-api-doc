@@ -135,6 +135,308 @@
 			]
 		},
 		{
+			"name": "Developer - API Management",
+			"item": [
+				{
+					"name": "Terms and Conditions",
+					"item": [],
+					"id": "afa68c06-697a-4ba3-a747-26e97b07616e",
+					"description": "**BGL Terms of Use**\n\nThis API Platform Agreement explains BGL’s obligations as a service provider and your obligations as a customer and/or developer.\n\nThis Agreement along with the [BGL Group Cloud Products Software Subscription Agreement](https://www.sf360.com.au/s/terms/TermsAndConditions.pdf \"https://www.sf360.com.au/s/terms/TermsAndConditions.pdf\") and BGL’s Privacy Policy (which can be found on BGL’s Website at [www.bglcorp.com.au](http://www.bglcorp.com.au/ \"http://www.bglcorp.com.au/\")) is binding on any use of the BGL's API and software and apply to you from when BGL provides you with access to the API. BGL reserves the right to change these Agreements at any time. The latest Agreements are available on the BGL Website.\n\n**Access Conditions**\n\nYou will ensure that all usernames, passwords and keys required to access the API are kept secure and confidential. You must at all times ensure that any BGL data held in your systems is stored in a secure way.\n\nYou will immediately notify BGL of any unauthorised use of your passwords, any other breach of security or possible breach of security which has the potential to expose information such as BGL customer data, API certificates, tokens or other sensitive details, and BGL will reset your password and security details.\n\nYou will complete the BGL Security Questionnaire and remedy any deficiencies in your systems highlighted in by your completion of the Questionnaire.\n\n**Accrued Rights**\n\nTermination of the Agreement is without prejudice to the rights and obligations of the parties accrued up to and including the date of termination. On termination of this Agreement you will:\n\n-   remain liable for any accrued charges and amounts which were due for payment before or after termination; and\n    \n-   immediately cease to use the Software and the Website.\n    \n\nA person who is not a party to these Agreement has no right to benefit under or to enforce any term of this Agreement.\n\n**Breach of Agreement**\n\nAny breach by you of the terms and conditions of this Agreement shall mean that your right to use the Software, API and the Website is immediately revoked.\n\n**Content**\n\nYou understand that all information (such as data, text, documents, audio, photographs or videos) which you may have access to as part of, or through your use of, the Software are the sole responsibility of the person who originated the Content. Content presented to you as part of the Software, including but not limited to advertisements and/or sponsored Content may be protected by intellectual property rights which are owned by the others.\n\nYou may not modify, rent, lease, loan, sell, distribute or create derivative works based on this Content (either in whole or in part) unless you receive permission to do so. You are responsible for your Content. BGL adheres to its best practice policies and procedures to prevent data loss, including a regular system data back-up, but does not make any guarantees that there will be no loss of Content. BGL expressly excludes liability for any loss of Content no matter how caused.\n\n**Copyright**\n\nYou acknowledge that any and all trademarks, trade names, copyrights, patents and other intellectual property rights used or embodied in or in connection with the Software shall remain the sole property of BGL or the Owner(s).\n\n**Definitions**\n\n-   \"API Platform\" or \"API\" refers to the collective access to and use of BGL's APIs, SDKs, app keys and access tokens, and developer webpages and documentation.\n    \n-   \"BGL\" means BGL Corporate Solutions Pty Ltd, BGL Client Services Pty Ltd and BGL Data Services Pty Ltd.\n    \n-   Data means any data input or maintained in the Software.\n    \n-   Data Services means BGL's ASX/Unlisted Unit Trust (UUT) Data Service, BGL's Bank Data Service and BGL's Share Data Service. I\n    \n-   \"Intellectual Property\" means any patent, trademark, service mark, copyright, moral right, right in a design, know-how and any other intellectual or industrial property rights, anywhere in the world whether or not\n    \n-   registered.\n    \n-   \"Share Data Services\" means BGL's Contract Note Service and BGL's Registry Data Service.\n    \n-   \"Software\" means CAS 360, Simple Fund 360 and Simple Invest 360.\n    \n-   \"Subscription Fee\" means the monthly or annual fee (excluding taxes and duties) payable by you in accordance with the price list as set out on our website (which BGL may change from time to time).\n    \n-   \"Website\" means any Internet site running the Software.\n    \n-   \"You\" or \"Developer\" means you (an entity or a person) and includes your employees, consultants, representatives and agents.\n    \n\n**Further Information**\n\nFor further information on this Agreement, contact BGL at Suite 2, 606-608 Hawthorn Road (PO Box 8063), East Brighton, Victoria, 3187, Australia or through our Website at [www.bglcorp.com.au](http://www.bglcorp.com.au/ \"http://www.bglcorp.com.au\") ([http://www.bglcorp.com.au](http://www.bglcorp.com.au/ \"http://www.bglcorp.com.au\")).\n\n**Intellectual Property**\n\nTitle to, and all Intellectual Property Rights in the Software, the Website and any documentation relating to the Software and API remain the property of BGL (or its licensors).\n\n**Legal Use**\n\nYou must not use this API to assist in any endeavour that breaks local or international laws or treaties.\n\n**Limitation of Liability**\n\nTo the maximum extent permitted by law, BGL excludes all liability and responsibility to you (or any other person) in contract, tort (including negligence), or otherwise, for any loss (including loss of data, profits and savings) or damage resulting, directly or indirectly, from the use of, or reliance on, the API. If you suffer loss or damage as a result of BGL's negligence or failure to comply with this Agreement any claim by you against BGL arising from BGL's negligence or failure will be limited in respect of any one incident, or series of connected incidents to the Subscription Fee paid by you in the previous 12 months. If you are not satisfied with the API, your sole and exclusive remedy is to terminate this Agreement.\n\n**No Assignment**\n\nYou may not assign or transfer any rights to any other person without BGL's prior written consent.\n\n**No Warranties**\n\nBGL gives no warranty about the API. Without limiting the foregoing, BGL does not warrant that the API will meet your requirements or that it will be suitable for your purposes. To avoid doubt, all implied conditions or warranties are excluded in so far as is permitted by law, including (without limitation) warranties of merchantability, fitness for purpose, title and non-infringement.\n\n**Registration**\n\nAll Software and API access must be properly registered with BGL. You must follow the registration process established by BGL. BGL may approve or deny access to its API Platform at its sole discretion\n\n**Restrictions**\n\nYou may not reverse engineer, decompile, or disassemble the Software or API, except and only to the extent that such activity is expressly permitted by applicable law notwithstanding this limitation. As a condition of these Terms, when accessing and using the Software or API, you must:\n\n-   not attempt to undermine the security or integrity of the Software's computing systems or networks or, where the Software is hosted by a third party, that third party's computing systems and networks;\n    \n-   not use, or misuse, the Software in any way which may impair the functionality of the Software or Website, or impair the ability of any other user to use the Software or Website;\n    \n-   not attempt to gain unauthorised access to any materials other than those to which you have been given express permission to access or to the computer system on which the Software is hosted; and\n    \n-   not transmit, or input into the Software, any: files that may damage any other person's computing devices or software, content that may be offensive, or material or Data in violation of any law (including Data or other material protected by copyright or trade secrets which you do not have the right to use); and\n    \n-   not allow any third party to use BGL's User Data for any purpose not directly related to your advertised service offering; and\n    \n-   not access BGL's API for competitive purposes including to connect to a competitive product or to create your own competitive product that competes with any of BGL's Products.\n    \n\n**Service Availability**\n\nWhilst BGL intends that the Software and API will be available 24 hours a day, seven days a week, it is possible that on occasion it may be unavailable to permit maintenance or other development activity to take place. BGL may interrupt the use of the Software and API. BGL will use reasonable endeavours to notify you in advance.\n\n**Waiver**\n\nIf either party waives any breach of this Agreement, this will not constitute a waiver of any other breach. No waiver will be effective unless made in writing.\n\n**Withdrawal of Access**\n\nBGL reserves the right to withdraw your access to the API. BGL will, in most circumstances, provide 30 days notice of this withdrawal Immediate withdrawal may be required where your access to the API is deemed necessary by BGL.\n\n**Use**\n\nBGL grants you the right to access and use the API. This right is non-exclusive and non-transferable and limited by this Agreement.\n\n**Your Use Rights**\n\nBGL warrants to you that it is duly authorised to grant you the right to use the API\n\nYour use must be as permitted in our Documentation and is subject to call, usage and other limits as described at [https://docs.api.bgl360.com.au/](https://docs.api.bgl360.com.au/ \"https://docs.api.bgl360.com.au/\") or as we otherwise notify you. All of your rights are non-assignable, non-transferable, and non-sublicensable.\n\nYour use within these Use Rights are permitted “free-of-charge” up to, but not to exceed, the BGL API limits set forth above and in associated documentation. BGL reserves the rights to modify or amend this policy, in its sole discretion, at any time\n\nAccess to the API is only permitted by a third party application approved by BGL. Granting of access rights to a non-approved third-party application may mean your access to the API is denied.\n\n**Last updated**\n\n16 Jun 2021"
+				},
+				{
+					"name": "Security",
+					"item": [],
+					"id": "1f8b5874-b89d-418b-ba18-107ea1b45ef2",
+					"description": "Apps connecting to BGL's API must meet these requirements: \n\n## Encryption key management\nPlease ensure that your app meets these requirements for OAuth token management: \n\n - OAuth tokens or customer-identifying information must not be exposed within your app or shared with other parties. \n - Encrypt and store the refresh token in persistent memory. \n - Encrypt the refresh token with a symmetric algorithm (3DES or AES). AES-128 or greater is preferred. \n - Store your AES key in your app, in a separate configuration file.\n\n## Encryption in transit\nSSL must be configured to support only TLS version 1.2 or higher. \n- BGL does not support 1.1 or lower. \n- TLS version 1.2 using AES 256 or higher with SHA-256 is recommended.\n\n## User Authentication\nEnsure that users who access to your app are authenticated. 2FA/MFA is recommended.  \n\n## Indirect access to data\nThird party access to customer data must be clearly stated within applicable policies and/or terms and conditions, and have a justifiable business need. \nNote: \n- Third party access may include access via an external API, or through data that is stored. \n- Justifiable business need may include (but not limited to) the utilisation of third party services, which is functionally required. For example, the use of third party biometric services.\n\n## App server configuration\nEnsure your server’s configuration follows industry accepted hardening practice for example: \n- [National Institute of Standards and Technology – Guide to General Server Security](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-123.pdf)\n\n## Vulnerability management\nFollow an industry accepted standard for secure code development such as OWASP Top 10 to protect against vulnerabilities such as: \n\n - Cross Site Request Forgery  \n - Cross Site Scripting (including reflected and stored cross site scripting)  \n - SQL Injection  \n - XML Injection\n - Authentication, Sessions Management and Functional level access control (if any)\n - Forwards or Redirects in use have been validated  \n - All app session cookies have the following attributes set: Secure and HTTPOnly\n\n## Encryption at rest\nEnsure that sensitive client data in your app is protected while at rest.\nEncryption at rest using NIST Cryptographic Mechanisms is mandatory for data repositories that hold or manage sensitive commercial or personal information. Examples may include; full-disk, container, application or database level encryption techniques. We define sensitive commercial or personal information as information which if disclosed could cause harm to the individual or organisation. Examples include:\n- Personal - date of birth, tax file number, address, income, biometric, credit history etc. \n-  Commercial - financial, transactions, accounts, trade secrets etc.\n\n## Audit logging\nEnsure appropriate audit logging functionality is implemented and maintained.\nAudit logging should include both application level (access logs) and event based actions. You should consider your environment and what logging should be implemented and ensure that the logging records include the following where applicable: \n- Date and time of the event\n- Relevant user or process\n- Event description\n- Success or failure of the event\n- Event source e.g. application name\n- ICT equipment location and identification Audit logs must be retained for as long as appropriate to enable future investigation. \n\nIn most cases logs should be kept for a minimum of one year. Logs must be immutable and secure.\n\n## Data hosting\nEnsure client data is not hosted in high risk areas. Consideration needs to be given to country, legal, contractual, access, sovereignty and counter-party risks.\n\n## Security monitoring practices and breach reporting\nEnsure you have security monitoring practices in place to detect and manage threats. You need to be able to demonstrate that you scan your environment for threats and that you take appropriate action where you detect anomalies. Monitoring can be at the: network / infrastructure, application or transaction (data) layer. Where anomalies are detected you must report these to the DSP, providing enough information to enable further monitoring and/or preventative actio\n\n## SSO Certificates\nIf required,  include the Amazon Root CA to your CA Certificate bundle for your application/OS.Certificates provided by Amazon Certificate Manager are verified by Amazon’s certificate authority (CA). Any browser, application, or OS that includes the Amazon Root CA 1, Starfield Services Root Certificate Authority - G2, or Starfield Class 2 Certification Authority trusts certificates provided by ACM.\nTo access CA Certs issued by Amazon, refer to the following webpage:\nhttps://www.amazontrust.com/repository/",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "752373c6-dcab-4c05-89f6-2c203637e4b4",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "046c41a9-c752-4f61-87c9-8234c1123734",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Add My Application",
+					"item": [],
+					"id": "9776acf7-4623-436a-b3c8-feb5cdcd825f",
+					"description": "This section explains how your can register to receive access to the BGL 360 API.\n\nBefore you can use My Application, you will need a BGL Product (Simple Fund 360 or CAS 360) username and password.\n\n1. Go to the [API website (Production)](https://developer.bgl360.com.au/d/) or [API website (Staging)](https://developer.staging.bgl360.com.au/d/)and select MY APPS from the left-hand side menu. \n![](https://blog.api.bgl360.com.au/assets/images/Developer_Portal.png)\n\n2. If you are not already logged in you will need to input your BGL  Username and Password. \n\nAlternatively, you can access the Developer Portal by navigating to the BGL Developer application on the App Switcher in either Simple Fund 360 or CAS 360.  \n![](https://blog.api.bgl360.com.au/assets/images/app-switcher.png)\n\n## Add Application\n1. Select **Create a New App** on the App List page. \n2. Following are the details that needs to be added to create an API Application/Client.\n\n\n| Field | Description | Mandatory |\n| -------- | -------- | -------- |\n| App Name     | Enter your API Application/Client Name. This will be the name which will be displayed to BGL Users when Authorizing your application.      | Yes     |\n| App Icon URL     | Enter the URL for the image which will diaply to BGL Users.       | No     |\n| Redirect URLs    | The URL that will be used to redirect after Authorisation. The first URL entered in the list will be used as the Default Redirect URL (which will be displayed in a different colour in the list). However, if you wish to use any other Redirect URL in the list that you have added, then you will need to provide this in the Request for Authorisation Code. At least one Redirect URL should be added to this field. You can add upto 5 Redicrect URLs. Only valid URLs can be entered into this field.  We restrict localhost as it causes our API to loop back to itself. You can use IPv4 localhost address such as http://127.0.0.1:80 or a URL redirection such as https://goo.gl/vRtUkM | Yes     |\n\n3. Once you have entered the necessary information, ensure you have read and agreed to the the Terms and Conditions\n4. Click Save \n![enter image description here](https://blog.api.bgl360.com.au/assets/images/app1.png)\n\n\n## Why can't I enter Local Host as a redirect URL ? \nWe restrict localhost as it causes our API to loop back to itself. You can use IPv4 localhost address such as http://127.0.0.1:80 or a URL redirection such as https://goo.gl/vRtUkM\n## Do I need to create more than one application?\nIn most cases you will oncly need one application. One application can access unlimited user accounts from unlimited firms.",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "6b079048-5f2e-4482-a823-5718c6c34ae9",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "6ccdd948-73bc-4afc-bf93-8b2f191eaf2f",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Edit Application",
+					"item": [],
+					"id": "54a9e62f-26c9-4fa3-b2e0-b232575e9748",
+					"description": "The Edit Application Details page, as displayed below, allows you to make changes to the application information you have previously entered.\n\n![](https://blog.api.bgl360.com.au/assets/images/app2.png)\n\n\n| Field | Description | Required |\n| -------- | -------- | -------- |\n| App Name     | The API Application/Client Name. This will be displayed to BGL Users.    | Yes     |\n| App Icon URL   | The Logo that will be displayed in the Authorization Page. Enter a valid url that points to the Organization Logo.   | No     |\n| Client Id     | This is a read-only field, displaying the unique Client Id. Select the copy button next to this, to copy this URL to the clipboard, as shown below.    | Yes     |\n| Client Secret     | This is a read-only field. When the Application/Client is loaded into the Edit Application screen, the Client Secret is displayed in the encrypted format. Select **Regenerate Secret** , to regenerate the Client Secret again. Once the Application/Client Secret is regenerated it will be displayed in 'Raw Format'. **This should be copied and safeguarded**. When the Application/Client Secret is regenerated, a copy button will display next to the generated. Once the Application is saved, this secret will be encrypted. BGL does not store the Raw Format and there is no way of retrieving the Raw Format.    | Yes    |\n| Basic Authorization Header    | This displays the Basic Authorization header which should be used to obtain the access token. This is a read only field. The value displayed in this field is Base 64 encoded. This field is visible and populated only when the secret is generated. The BGL API application will not store this field. This field is not retrivable once the application is saved. You can select the copy button to copy the Basic Authorization Header to the clipboard. Please copy and safe guard this information.    | Yes     |\n| Redirect URLs     | The URL that will be used to redirect after Authorization. The first URL entered in the list will be taken as the default redirect url (which will be displayed in a different colour in the list). However, if you wish to use any other call back url in the list that you have added, then you will need to provide this in the Request for Authorization Code. At least one Redirect URL should be added to this field. You can add up to 5 Redicrect URLs. Only valid URLs can be entered into this field.    | Yes     |\n\n**Scopes, Categories and Limits**\nThe following details can only be edited by the BGL API Team. Please contact api@bglcorp.com.au to have these changed.\n|Field|Details  |\n|--|--|\n| Scopes | Scopes determine which endpoints your API client can access. [See scopes for further details](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357)  |\n|Categories | This will represent how your App Client is categorised to BGL Clients. | \n| Rate Limit (per 10 mins | [See Rate Limits](https://docs.api.bgl360.com.au/?version=latest#072a1b4c-d402-4d08-8650-2c65c70b0507)|\n| Rate Limit (per day | [See Rate Limits](https://docs.api.bgl360.com.au/?version=latest#072a1b4c-d402-4d08-8650-2c65c70b0507)|\n\nThe following can be used for initial testing. \n|Field|Details  |\n|--|--|\n| Authorize URL     | This is an auto generated URL that could be used to obtain the Authorization Code. This is a read-only field. Select the copy button next to this URL to copy this URL to the clipboard, as shown below.    | \n| Access Token URL     | This is an auto generated URL that could be used to obtain the Access Token Code. This is a read-only field. Select the copy button next to this URL to copy this URL to the clipboard, as shown below. | \n\n**Webhooks**\nSee [Webhooks Documentation](https://docs.api.bgl360.com.au/?version=latest#50356a43-6a90-4aba-af41-523d7efeff98) for further details on what is available.",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "52fa2882-da92-4566-bb81-98540c733af3",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "1de45662-e0d4-4b49-9178-58dcf51c4217",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Delete Application",
+					"item": [],
+					"id": "d787bef7-935d-49c8-bd52-682c8b9b680c",
+					"description": "To delete the API Application(s)/Client(s):\n\n* Navigate to My Apps\n* Click on the Delete Button on the API Client (Trash Can)\n\nThis will delete the selected Application(s)/Client(s). If the deletion is successful, the Application List page will refresh to display the currently available Application(s)/Client(s)."
+				},
+				{
+					"name": "API Scopes",
+					"item": [],
+					"id": "9ef9e817-5fba-4a36-908c-eeee71c2a357",
+					"description": "The API Scope defines what end points are accessible for a given scope. The below table illustrates the available scopes and what end points are accessible by each of them.\n\nTo change your scope, please contact api@bglcorp.com.au. An API Client can have access to multiple scopes. \n\n## Warning\n* To use the BGL_partner scope the user will need access to both SF360 and CAS360. \n* If the user only has access to one product then one of the other scopes need to be used. \n\n\n|Scope/Resource  | [General Resources](https://docs.api.bgl360.com.au/?version=latest#4626b7eb-a252-44aa-b871-003d4f3aaf0c) | Entity - [Lists](https://docs.api.bgl360.com.au/?version=latest#ac84353f-b900-4413-a0db-c7588faf211c), [General](https://docs.api.bgl360.com.au/?version=latest#528d0628-fbbb-4ad2-92ba-267b77f41fab) and  [Reports](https://docs.api.bgl360.com.au/?version=latest#275f9cc9-3bf8-403d-b7ed-7b3e098726d5) | [Entity Documents](https://docs.api.bgl360.com.au/?version=latest#8600d850-798b-46b3-b26c-01f762bbd557) | [SMSF Establishment](https://docs.api.bgl360.com.au/?version=latest#08fb5238-e13d-46db-8d13-1229b901515e) | [All CAS 360 Resources](https://docs.api.bgl360.com.au/?version=latest#4b0acc02-01c4-4c93-9aa7-cde7f8d759c7) | [AML/identity Verification](https://docs.api.bgl360.com.au/?version=latest#aafdbc5d-7439-45d3-9e7f-de25566767de)\n|--|--|--|--|--|--|--|\n|developer  | **YES** | no | no | no |no | no |no |\n|investment|**YES** | **YES** | no | no |no | no |no |\n|audit|**YES** | **YES** | **YES** | no |no | no |no |\n|smsf_partner|**YES** | **YES** | **YES** | **YES** | no |no |\n|cas_incorporator|**YES** | no | no | no | **YES** |no |\n|bgl_partner | **YES** | **YES** | **YES** | **YES** | **YES** |no |\n|identity_provider | no | no| no| no | no | **YES** |",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "2d91214a-e16e-4ed8-9e1a-f56f323dac4b",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "ebc4fea4-cafa-4d9a-815e-94b155b0844b",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "API Rate Limits",
+					"item": [
+						{
+							"name": "Rate Limit Status",
+							"id": "0fd9709a-f8b6-4844-8938-e0ec5f55b1ae",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer {{token}}",
+										"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
+									}
+								],
+								"url": "{{baseUrl}}/client/rateLimitStatus",
+								"description": "Returns the current rate limits for the application. This resource does not count towards your rate limit. \nThe min-reset is in Unix time. "
+							},
+							"response": [
+								{
+									"id": "627cd903-f2ed-4b49-ac62-0bd1940448e8",
+									"name": "Status 200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}"
+											}
+										],
+										"url": "{{baseUrl}}/client/rateLimitStatus"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"clientName\": \"TestClient\",\n    \"x-rate-10min-limit-limit\": 100,\n    \"x-rate-10min-limit-remaining\": 97,\n    \"x-rate-10min-limit-reset\": \"2017-10-03T06:11:01Z\",\n    \"x-rate-daily-limit-limit\": \"Unlimited\",\n    \"x-rate-daily-limit-remaining\": -1,\n    \"x-rate-daily-limit-reset\": null\n}"
+								}
+							]
+						}
+					],
+					"id": "072a1b4c-d402-4d08-8650-2c65c70b0507",
+					"description": "To prevent BGL's API from being overwhelmed and protect against DOS attacks, BGL enforce a limit on the number of requests which can either be made on a 10 min or daily basis.\n\nCurrently most applications will have a default 10 min limit set to 100 requests per 10 minutes period. If you would like this set higher please dicusss with the BGL API Team. \n\nThe returned HTTP Headers will show your Rate Limit Status. \n\n|Header Name|Description  |\n|--|--|\n| X-Rate Daily Limit |This value indicates the number of requests a client can make on a given day.  |\n|X-Rate-Daily-Limit-Remaining | indicates the remaining number of requests available. For every valid request made, this indicator will reduce its count by one. Zero means the available daily limit has been reached.|\n|X-Rate Limit | This value indicates the number of requests that can be made within a given time frame.   |\n\n\n**Error - 429 Too Many Requests**\nIf the daily limit has been exceeded, the following error will display with status - 429 Too Many Requests.\n```\n{\n\"message\": \"Too Many Requests\",\n\"errors\": [\n\"You had too many requests today, the rate limit ceiling per day is 1000\"\n],\n\"status\": 429\n}\n```\nPlease note that any request returned with http code(status) 401 or 429 will not reduce the daily limit threshold.\n\nIf the number of requests a client makes exceeds the specified X limit, the BGL API will return an error response as follows:\n```\n{\n\"message\": \"Too Many Requests\",\n\"errors\": [\n\"You had too many requests in last 10 mins, the rate limit ceiling for every 10 mins is 100\"\n],\n\"status\": 429\n}\n```\n",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "887b28fa-e322-49d1-8512-76da84d04bc2",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "e2f0837e-0dd6-42c8-96cd-ce45e6a64e35",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Grant Types and Expiry",
+					"item": [],
+					"id": "1567e41a-4683-4f69-84d4-c389b1955fd9",
+					"description": "# Grant Types\nCurrently the BGL API only supportes the [Authorization Code grant type](https://tools.ietf.org/html/rfc6749#section-1.3.1)\n\n# Expiry Times\n\n\n| Grant/Token Type | Expiration | \n| -------- | -------- | \n| Authorization Code     | 10 mins     | \n| Access Token     | 7 Days     | \n| Refresh Token  | 30 days     | "
+				},
+				{
+					"name": "API Paginataion",
+					"item": [],
+					"id": "aa2c3853-08e5-4380-a51a-4d270172c960",
+					"description": "For performance reasons, some of our APIs  use offset-based paging use the `offset` and `limit/max` query parameters to paginate through items in a collection.\n\n\n## Paging\n\nTo fetch the first page of entries in a collection the API needs to be called with the  **offset**  set to  **0** and **limit/max**  field equal to the maximum value e.g **500**. \n\n    GET https://api.staging.bgl360.com.au/contacts?offset=0&limit=500\n</br>\n\nTo fetch the next page of entries the API needs to be called with an **offset** parameter that equals the sum of the previous **offset** value and limit returned in the previous result, **previous_offset + previous_limit**.\n\n    GET https://api.staging.bgl360.com.au/contacts?offset=501&limit=500\n</br>\n\nThe final page of items has been requested when the next **offset** value exceeds the **total** value in the response object or no entries are returned. At this point there are no more items to fetch.\n</br>\n\n```javascript\n\"limit\": 500,\n\"offset\": 0,\n\"total\": 698\n```\n\n",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "b511d0ab-ec84-4bfa-a567-3fefc60e909f",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "377159ac-6716-4845-9ce5-13caae4e1d72",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Error Codes",
+					"item": [],
+					"id": "786384a4-9a10-483d-b5ee-5583db7786cd",
+					"description": "For API response, the BGL API will use conventional HTTP response codes to indicate the success or failure of an API request. The body of reponse will ususally provide more detailed information\ne.g \n\n\n`{\n    \"error\": \"unauthorized\",\n    \"error_description\": \"Full authentication is required to access this resource\"\n}\n`\n\n|HTTP Code|  Status Message |Description | \n|--|--|--|\n| 200 | OK | Indicates that the request has succeeded.\n| 201 | Created | Indicates that the POST request has been fulfilled and has resulted in one or more new resources being created |\n| 302 | Found | Indicates that the target resourceresides temporarily under a different URI. e.g Access Code |\n| 400 |Bad Request|Usually Caused by a missing or incorect Query Parameter |\n|401 | Unauthorized | You are not authorized or do not have permission to access the resource |\n| 403 | Forbidden | Indicates that the server understood the request but refuses to authorize it. Check Payload for more information |\n| 404 | not found | Indicates that the BGL API did not find the target resource or is not willing to disclose that one exists. |\n| 429 |Too Many Requests  | You’ve exceeded your 10 min or daily rate limit. |\n| 500 |Internal Server Error | The request was unable to be processed due to an error with our servers.  |\n|503 | Service Unavailable | BGL API is currently unable to handle the request due to a service outage or scheduled maintenance |",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "ad2fedb0-fad3-411d-8239-2d673c132bc8",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "e8e1212e-f0a8-45fc-bf51-87b3e7533763",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "API Status",
+					"item": [],
+					"id": "017b2456-3f0f-4eca-b1d1-29e63b7396f3",
+					"description": "The status of the BGL API and all of BGL's online services can be found at [https://status.bgl360.com.au](https://status.bgl360.com.au)"
+				}
+			],
+			"id": "d733d478-ed34-4c59-ad76-49cef7ea168b",
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "b6d7cae5-06a1-4680-9129-00703171b6fd",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "f5980f2e-c4df-44ab-9776-a1d0c18c17c2",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
 			"name": "Authorization (OAuth2)",
 			"item": [
 				{
@@ -617,7 +919,7 @@
 				}
 			],
 			"id": "f7221efd-d6bf-4475-a5c5-e68cd905eacf",
-			"description": "**What is Oauth 2.0?**\n\nOAuth 2.0 is the industry standard developed by IETF for providing client applications with “secure delegated access”. \n\nIf you are new to using OAuth 2.0 please see [BGL's OAuth2 Guide](https://blog.api.bgl360.com.au/oauth2-guide/). This includes a step by step process of how to test using Postman. \n",
+			"description": "**What is Oauth 2.0?**\n\nOAuth 2.0 is the industry standard developed by IETF for providing client applications with “secure delegated access”.\n\nIf you are new to using OAuth 2.0 please see [BGL's OAuth2 Guide](https://blog.api.bgl360.com.au/oauth2-guide/). This includes a step by step process of how to test using Postman.",
 			"event": [
 				{
 					"listen": "prerequest",
@@ -633,308 +935,6 @@
 					"listen": "test",
 					"script": {
 						"id": "2f8f2d59-d17a-46a5-a52e-13e08775b732",
-						"type": "text/javascript",
-						"exec": [
-							""
-						]
-					}
-				}
-			]
-		},
-		{
-			"name": "Developer - API Management",
-			"item": [
-				{
-					"name": "Terms and Conditions",
-					"item": [],
-					"id": "afa68c06-697a-4ba3-a747-26e97b07616e",
-					"description": "**BGL Terms of Use**\n\nThis API Platform Agreement explains BGL’s obligations as a service provider and your obligations as a customer and/or developer.\n\nThis Agreement along with the [BGL Group Cloud Products Software Subscription Agreement](https://www.sf360.com.au/s/terms/TermsAndConditions.pdf \"https://www.sf360.com.au/s/terms/TermsAndConditions.pdf\") and BGL’s Privacy Policy (which can be found on BGL’s Website at [www.bglcorp.com.au](http://www.bglcorp.com.au/ \"http://www.bglcorp.com.au/\")) is binding on any use of the BGL's API and software and apply to you from when BGL provides you with access to the API. BGL reserves the right to change these Agreements at any time. The latest Agreements are available on the BGL Website.\n\n**Access Conditions**\n\nYou will ensure that all usernames, passwords and keys required to access the API are kept secure and confidential. You must at all times ensure that any BGL data held in your systems is stored in a secure way.\n\nYou will immediately notify BGL of any unauthorised use of your passwords, any other breach of security or possible breach of security which has the potential to expose information such as BGL customer data, API certificates, tokens or other sensitive details, and BGL will reset your password and security details.\n\nYou will complete the BGL Security Questionnaire and remedy any deficiencies in your systems highlighted in by your completion of the Questionnaire.\n\n**Accrued Rights**\n\nTermination of the Agreement is without prejudice to the rights and obligations of the parties accrued up to and including the date of termination. On termination of this Agreement you will:\n\n-   remain liable for any accrued charges and amounts which were due for payment before or after termination; and\n    \n-   immediately cease to use the Software and the Website.\n    \n\nA person who is not a party to these Agreement has no right to benefit under or to enforce any term of this Agreement.\n\n**Breach of Agreement**\n\nAny breach by you of the terms and conditions of this Agreement shall mean that your right to use the Software, API and the Website is immediately revoked.\n\n**Content**\n\nYou understand that all information (such as data, text, documents, audio, photographs or videos) which you may have access to as part of, or through your use of, the Software are the sole responsibility of the person who originated the Content. Content presented to you as part of the Software, including but not limited to advertisements and/or sponsored Content may be protected by intellectual property rights which are owned by the others.\n\nYou may not modify, rent, lease, loan, sell, distribute or create derivative works based on this Content (either in whole or in part) unless you receive permission to do so. You are responsible for your Content. BGL adheres to its best practice policies and procedures to prevent data loss, including a regular system data back-up, but does not make any guarantees that there will be no loss of Content. BGL expressly excludes liability for any loss of Content no matter how caused.\n\n**Copyright**\n\nYou acknowledge that any and all trademarks, trade names, copyrights, patents and other intellectual property rights used or embodied in or in connection with the Software shall remain the sole property of BGL or the Owner(s).\n\n**Definitions**\n\n-   \"API Platform\" or \"API\" refers to the collective access to and use of BGL's APIs, SDKs, app keys and access tokens, and developer webpages and documentation.\n    \n-   \"BGL\" means BGL Corporate Solutions Pty Ltd, BGL Client Services Pty Ltd and BGL Data Services Pty Ltd.\n    \n-   Data means any data input or maintained in the Software.\n    \n-   Data Services means BGL's ASX/Unlisted Unit Trust (UUT) Data Service, BGL's Bank Data Service and BGL's Share Data Service. I\n    \n-   \"Intellectual Property\" means any patent, trademark, service mark, copyright, moral right, right in a design, know-how and any other intellectual or industrial property rights, anywhere in the world whether or not\n    \n-   registered.\n    \n-   \"Share Data Services\" means BGL's Contract Note Service and BGL's Registry Data Service.\n    \n-   \"Software\" means CAS 360, Simple Fund 360 and Simple Invest 360.\n    \n-   \"Subscription Fee\" means the monthly or annual fee (excluding taxes and duties) payable by you in accordance with the price list as set out on our website (which BGL may change from time to time).\n    \n-   \"Website\" means any Internet site running the Software.\n    \n-   \"You\" or \"Developer\" means you (an entity or a person) and includes your employees, consultants, representatives and agents.\n    \n\n**Further Information**\n\nFor further information on this Agreement, contact BGL at Suite 2, 606-608 Hawthorn Road (PO Box 8063), East Brighton, Victoria, 3187, Australia or through our Website at [www.bglcorp.com.au](http://www.bglcorp.com.au/ \"http://www.bglcorp.com.au\") ([http://www.bglcorp.com.au](http://www.bglcorp.com.au/ \"http://www.bglcorp.com.au\")).\n\n**Intellectual Property**\n\nTitle to, and all Intellectual Property Rights in the Software, the Website and any documentation relating to the Software and API remain the property of BGL (or its licensors).\n\n**Legal Use**\n\nYou must not use this API to assist in any endeavour that breaks local or international laws or treaties.\n\n**Limitation of Liability**\n\nTo the maximum extent permitted by law, BGL excludes all liability and responsibility to you (or any other person) in contract, tort (including negligence), or otherwise, for any loss (including loss of data, profits and savings) or damage resulting, directly or indirectly, from the use of, or reliance on, the API. If you suffer loss or damage as a result of BGL's negligence or failure to comply with this Agreement any claim by you against BGL arising from BGL's negligence or failure will be limited in respect of any one incident, or series of connected incidents to the Subscription Fee paid by you in the previous 12 months. If you are not satisfied with the API, your sole and exclusive remedy is to terminate this Agreement.\n\n**No Assignment**\n\nYou may not assign or transfer any rights to any other person without BGL's prior written consent.\n\n**No Warranties**\n\nBGL gives no warranty about the API. Without limiting the foregoing, BGL does not warrant that the API will meet your requirements or that it will be suitable for your purposes. To avoid doubt, all implied conditions or warranties are excluded in so far as is permitted by law, including (without limitation) warranties of merchantability, fitness for purpose, title and non-infringement.\n\n**Registration**\n\nAll Software and API access must be properly registered with BGL. You must follow the registration process established by BGL. BGL may approve or deny access to its API Platform at its sole discretion\n\n**Restrictions**\n\nYou may not reverse engineer, decompile, or disassemble the Software or API, except and only to the extent that such activity is expressly permitted by applicable law notwithstanding this limitation. As a condition of these Terms, when accessing and using the Software or API, you must:\n\n-   not attempt to undermine the security or integrity of the Software's computing systems or networks or, where the Software is hosted by a third party, that third party's computing systems and networks;\n    \n-   not use, or misuse, the Software in any way which may impair the functionality of the Software or Website, or impair the ability of any other user to use the Software or Website;\n    \n-   not attempt to gain unauthorised access to any materials other than those to which you have been given express permission to access or to the computer system on which the Software is hosted; and\n    \n-   not transmit, or input into the Software, any: files that may damage any other person's computing devices or software, content that may be offensive, or material or Data in violation of any law (including Data or other material protected by copyright or trade secrets which you do not have the right to use); and\n    \n-   not allow any third party to use BGL's User Data for any purpose not directly related to your advertised service offering; and\n    \n-   not access BGL's API for competitive purposes including to connect to a competitive product or to create your own competitive product that competes with any of BGL's Products.\n    \n\n**Service Availability**\n\nWhilst BGL intends that the Software and API will be available 24 hours a day, seven days a week, it is possible that on occasion it may be unavailable to permit maintenance or other development activity to take place. BGL may interrupt the use of the Software and API. BGL will use reasonable endeavours to notify you in advance.\n\n**Waiver**\n\nIf either party waives any breach of this Agreement, this will not constitute a waiver of any other breach. No waiver will be effective unless made in writing.\n\n**Withdrawal of Access**\n\nBGL reserves the right to withdraw your access to the API. BGL will, in most circumstances, provide 30 days notice of this withdrawal Immediate withdrawal may be required where your access to the API is deemed necessary by BGL.\n\n**Use**\n\nBGL grants you the right to access and use the API. This right is non-exclusive and non-transferable and limited by this Agreement.\n\n**Your Use Rights**\n\nBGL warrants to you that it is duly authorised to grant you the right to use the API\n\nYour use must be as permitted in our Documentation and is subject to call, usage and other limits as described at [https://docs.api.bgl360.com.au/](https://docs.api.bgl360.com.au/ \"https://docs.api.bgl360.com.au/\") or as we otherwise notify you. All of your rights are non-assignable, non-transferable, and non-sublicensable.\n\nYour use within these Use Rights are permitted “free-of-charge” up to, but not to exceed, the BGL API limits set forth above and in associated documentation. BGL reserves the rights to modify or amend this policy, in its sole discretion, at any time\n\nAccess to the API is only permitted by a third party application approved by BGL. Granting of access rights to a non-approved third-party application may mean your access to the API is denied.\n\n**Last updated**\n\n16 Jun 2021"
-				},
-				{
-					"name": "Security",
-					"item": [],
-					"id": "1f8b5874-b89d-418b-ba18-107ea1b45ef2",
-					"description": "Apps connecting to BGL's API must meet these requirements: \n\n## Encryption key management\nPlease ensure that your app meets these requirements for OAuth token management: \n\n - OAuth tokens or customer-identifying information must not be exposed within your app or shared with other parties. \n - Encrypt and store the refresh token in persistent memory. \n - Encrypt the refresh token with a symmetric algorithm (3DES or AES). AES-128 or greater is preferred. \n - Store your AES key in your app, in a separate configuration file.\n\n## Encryption in transit\nSSL must be configured to support only TLS version 1.2 or higher. \n- BGL does not support 1.1 or lower. \n- TLS version 1.2 using AES 256 or higher with SHA-256 is recommended.\n\n## User Authentication\nEnsure that users who access to your app are authenticated. 2FA/MFA is recommended.  \n\n## Indirect access to data\nThird party access to customer data must be clearly stated within applicable policies and/or terms and conditions, and have a justifiable business need. \nNote: \n- Third party access may include access via an external API, or through data that is stored. \n- Justifiable business need may include (but not limited to) the utilisation of third party services, which is functionally required. For example, the use of third party biometric services.\n\n## App server configuration\nEnsure your server’s configuration follows industry accepted hardening practice for example: \n- [National Institute of Standards and Technology – Guide to General Server Security](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-123.pdf)\n\n## Vulnerability management\nFollow an industry accepted standard for secure code development such as OWASP Top 10 to protect against vulnerabilities such as: \n\n - Cross Site Request Forgery  \n - Cross Site Scripting (including reflected and stored cross site scripting)  \n - SQL Injection  \n - XML Injection\n - Authentication, Sessions Management and Functional level access control (if any)\n - Forwards or Redirects in use have been validated  \n - All app session cookies have the following attributes set: Secure and HTTPOnly\n\n## Encryption at rest\nEnsure that sensitive client data in your app is protected while at rest.\nEncryption at rest using NIST Cryptographic Mechanisms is mandatory for data repositories that hold or manage sensitive commercial or personal information. Examples may include; full-disk, container, application or database level encryption techniques. We define sensitive commercial or personal information as information which if disclosed could cause harm to the individual or organisation. Examples include:\n- Personal - date of birth, tax file number, address, income, biometric, credit history etc. \n-  Commercial - financial, transactions, accounts, trade secrets etc.\n\n## Audit logging\nEnsure appropriate audit logging functionality is implemented and maintained.\nAudit logging should include both application level (access logs) and event based actions. You should consider your environment and what logging should be implemented and ensure that the logging records include the following where applicable: \n- Date and time of the event\n- Relevant user or process\n- Event description\n- Success or failure of the event\n- Event source e.g. application name\n- ICT equipment location and identification Audit logs must be retained for as long as appropriate to enable future investigation. \n\nIn most cases logs should be kept for a minimum of one year. Logs must be immutable and secure.\n\n## Data hosting\nEnsure client data is not hosted in high risk areas. Consideration needs to be given to country, legal, contractual, access, sovereignty and counter-party risks.\n\n## Security monitoring practices and breach reporting\nEnsure you have security monitoring practices in place to detect and manage threats. You need to be able to demonstrate that you scan your environment for threats and that you take appropriate action where you detect anomalies. Monitoring can be at the: network / infrastructure, application or transaction (data) layer. Where anomalies are detected you must report these to the DSP, providing enough information to enable further monitoring and/or preventative actio\n\n## SSO Certificates\nIf required,  include the Amazon Root CA to your CA Certificate bundle for your application/OS.Certificates provided by Amazon Certificate Manager are verified by Amazon’s certificate authority (CA). Any browser, application, or OS that includes the Amazon Root CA 1, Starfield Services Root Certificate Authority - G2, or Starfield Class 2 Certification Authority trusts certificates provided by ACM.\nTo access CA Certs issued by Amazon, refer to the following webpage:\nhttps://www.amazontrust.com/repository/",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "752373c6-dcab-4c05-89f6-2c203637e4b4",
-								"type": "text/javascript",
-								"exec": [
-									""
-								]
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "046c41a9-c752-4f61-87c9-8234c1123734",
-								"type": "text/javascript",
-								"exec": [
-									""
-								]
-							}
-						}
-					]
-				},
-				{
-					"name": "Add My Application",
-					"item": [],
-					"id": "9776acf7-4623-436a-b3c8-feb5cdcd825f",
-					"description": "This section explains how your can register to receive access to the BGL 360 API.\n\nBefore you can use My Application, you will need a BGL Product (Simple Fund 360 or CAS 360) username and password.\n\n1. Go to the [API website (Production)](https://developer.bgl360.com.au/d/) or [API website (Staging)](https://developer.staging.bgl360.com.au/d/)and select MY APPS from the left-hand side menu. \n![](https://blog.api.bgl360.com.au/assets/images/Developer_Portal.png)\n\n2. If you are not already logged in you will need to input your BGL  Username and Password. \n\nAlternatively, you can access the Developer Portal by navigating to the BGL Developer application on the App Switcher in either Simple Fund 360 or CAS 360.  \n![](https://blog.api.bgl360.com.au/assets/images/app-switcher.png)\n\n## Add Application\n1. Select **Create a New App** on the App List page. \n2. Following are the details that needs to be added to create an API Application/Client.\n\n\n| Field | Description | Mandatory |\n| -------- | -------- | -------- |\n| App Name     | Enter your API Application/Client Name. This will be the name which will be displayed to BGL Users when Authorizing your application.      | Yes     |\n| App Icon URL     | Enter the URL for the image which will diaply to BGL Users.       | No     |\n| Redirect URLs    | The URL that will be used to redirect after Authorisation. The first URL entered in the list will be used as the Default Redirect URL (which will be displayed in a different colour in the list). However, if you wish to use any other Redirect URL in the list that you have added, then you will need to provide this in the Request for Authorisation Code. At least one Redirect URL should be added to this field. You can add upto 5 Redicrect URLs. Only valid URLs can be entered into this field.  We restrict localhost as it causes our API to loop back to itself. You can use IPv4 localhost address such as http://127.0.0.1:80 or a URL redirection such as https://goo.gl/vRtUkM | Yes     |\n\n3. Once you have entered the necessary information, ensure you have read and agreed to the the Terms and Conditions\n4. Click Save \n![enter image description here](https://blog.api.bgl360.com.au/assets/images/app1.png)\n\n\n## Why can't I enter Local Host as a redirect URL ? \nWe restrict localhost as it causes our API to loop back to itself. You can use IPv4 localhost address such as http://127.0.0.1:80 or a URL redirection such as https://goo.gl/vRtUkM\n## Do I need to create more than one application?\nIn most cases you will oncly need one application. One application can access unlimited user accounts from unlimited firms.",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "6b079048-5f2e-4482-a823-5718c6c34ae9",
-								"type": "text/javascript",
-								"exec": [
-									""
-								]
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "6ccdd948-73bc-4afc-bf93-8b2f191eaf2f",
-								"type": "text/javascript",
-								"exec": [
-									""
-								]
-							}
-						}
-					]
-				},
-				{
-					"name": "Edit Application",
-					"item": [],
-					"id": "54a9e62f-26c9-4fa3-b2e0-b232575e9748",
-					"description": "The Edit Application Details page, as displayed below, allows you to make changes to the application information you have previously entered.\n\n![](https://blog.api.bgl360.com.au/assets/images/app2.png)\n\n\n| Field | Description | Required |\n| -------- | -------- | -------- |\n| App Name     | The API Application/Client Name. This will be displayed to BGL Users.    | Yes     |\n| App Icon URL   | The Logo that will be displayed in the Authorization Page. Enter a valid url that points to the Organization Logo.   | No     |\n| Client Id     | This is a read-only field, displaying the unique Client Id. Select the copy button next to this, to copy this URL to the clipboard, as shown below.    | Yes     |\n| Client Secret     | This is a read-only field. When the Application/Client is loaded into the Edit Application screen, the Client Secret is displayed in the encrypted format. Select **Regenerate Secret** , to regenerate the Client Secret again. Once the Application/Client Secret is regenerated it will be displayed in 'Raw Format'. **This should be copied and safeguarded**. When the Application/Client Secret is regenerated, a copy button will display next to the generated. Once the Application is saved, this secret will be encrypted. BGL does not store the Raw Format and there is no way of retrieving the Raw Format.    | Yes    |\n| Basic Authorization Header    | This displays the Basic Authorization header which should be used to obtain the access token. This is a read only field. The value displayed in this field is Base 64 encoded. This field is visible and populated only when the secret is generated. The BGL API application will not store this field. This field is not retrivable once the application is saved. You can select the copy button to copy the Basic Authorization Header to the clipboard. Please copy and safe guard this information.    | Yes     |\n| Redirect URLs     | The URL that will be used to redirect after Authorization. The first URL entered in the list will be taken as the default redirect url (which will be displayed in a different colour in the list). However, if you wish to use any other call back url in the list that you have added, then you will need to provide this in the Request for Authorization Code. At least one Redirect URL should be added to this field. You can add up to 5 Redicrect URLs. Only valid URLs can be entered into this field.    | Yes     |\n\n**Scopes, Categories and Limits**\nThe following details can only be edited by the BGL API Team. Please contact api@bglcorp.com.au to have these changed.\n|Field|Details  |\n|--|--|\n| Scopes | Scopes determine which endpoints your API client can access. [See scopes for further details](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357)  |\n|Categories | This will represent how your App Client is categorised to BGL Clients. | \n| Rate Limit (per 10 mins | [See Rate Limits](https://docs.api.bgl360.com.au/?version=latest#072a1b4c-d402-4d08-8650-2c65c70b0507)|\n| Rate Limit (per day | [See Rate Limits](https://docs.api.bgl360.com.au/?version=latest#072a1b4c-d402-4d08-8650-2c65c70b0507)|\n\nThe following can be used for initial testing. \n|Field|Details  |\n|--|--|\n| Authorize URL     | This is an auto generated URL that could be used to obtain the Authorization Code. This is a read-only field. Select the copy button next to this URL to copy this URL to the clipboard, as shown below.    | \n| Access Token URL     | This is an auto generated URL that could be used to obtain the Access Token Code. This is a read-only field. Select the copy button next to this URL to copy this URL to the clipboard, as shown below. | \n\n**Webhooks**\nSee [Webhooks Documentation](https://docs.api.bgl360.com.au/?version=latest#50356a43-6a90-4aba-af41-523d7efeff98) for further details on what is available.",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "52fa2882-da92-4566-bb81-98540c733af3",
-								"type": "text/javascript",
-								"exec": [
-									""
-								]
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "1de45662-e0d4-4b49-9178-58dcf51c4217",
-								"type": "text/javascript",
-								"exec": [
-									""
-								]
-							}
-						}
-					]
-				},
-				{
-					"name": "Delete Application",
-					"item": [],
-					"id": "d787bef7-935d-49c8-bd52-682c8b9b680c",
-					"description": "To delete the API Application(s)/Client(s):\n\n* Navigate to My Apps\n* Click on the Delete Button on the API Client (Trash Can)\n\nThis will delete the selected Application(s)/Client(s). If the deletion is successful, the Application List page will refresh to display the currently available Application(s)/Client(s)."
-				},
-				{
-					"name": "API Scopes",
-					"item": [],
-					"id": "9ef9e817-5fba-4a36-908c-eeee71c2a357",
-					"description": "The API Scope defines what end points are accessible for a given scope. The below table illustrates the available scopes and what end points are accessible by each of them.\n\nTo change your scope, please contact api@bglcorp.com.au. An API Client can have access to multiple scopes. \n\n## Warning\n* To use the BGL_partner scope the user will need access to both SF360 and CAS360. \n* If the user only has access to one product then one of the other scopes need to be used. \n\n\n|Scope/Resource  | [General Resources](https://docs.api.bgl360.com.au/?version=latest#4626b7eb-a252-44aa-b871-003d4f3aaf0c) | Entity - [Lists](https://docs.api.bgl360.com.au/?version=latest#ac84353f-b900-4413-a0db-c7588faf211c), [General](https://docs.api.bgl360.com.au/?version=latest#528d0628-fbbb-4ad2-92ba-267b77f41fab) and  [Reports](https://docs.api.bgl360.com.au/?version=latest#275f9cc9-3bf8-403d-b7ed-7b3e098726d5) | [Entity Documents](https://docs.api.bgl360.com.au/?version=latest#8600d850-798b-46b3-b26c-01f762bbd557) | [SMSF Establishment](https://docs.api.bgl360.com.au/?version=latest#08fb5238-e13d-46db-8d13-1229b901515e) | [All CAS 360 Resources](https://docs.api.bgl360.com.au/?version=latest#4b0acc02-01c4-4c93-9aa7-cde7f8d759c7) | [AML/identity Verification](https://docs.api.bgl360.com.au/?version=latest#aafdbc5d-7439-45d3-9e7f-de25566767de)\n|--|--|--|--|--|--|--|\n|developer  | **YES** | no | no | no |no | no |no |\n|investment|**YES** | **YES** | no | no |no | no |no |\n|audit|**YES** | **YES** | **YES** | no |no | no |no |\n|smsf_partner|**YES** | **YES** | **YES** | **YES** | no |no |\n|cas_incorporator|**YES** | no | no | no | **YES** |no |\n|bgl_partner | **YES** | **YES** | **YES** | **YES** | **YES** |no |\n|identity_provider | no | no| no| no | no | **YES** |",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "2d91214a-e16e-4ed8-9e1a-f56f323dac4b",
-								"type": "text/javascript",
-								"exec": [
-									""
-								]
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "ebc4fea4-cafa-4d9a-815e-94b155b0844b",
-								"type": "text/javascript",
-								"exec": [
-									""
-								]
-							}
-						}
-					]
-				},
-				{
-					"name": "API Rate Limits",
-					"item": [
-						{
-							"name": "Rate Limit Status",
-							"id": "0fd9709a-f8b6-4844-8938-e0ec5f55b1ae",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"auth": {
-									"type": "noauth"
-								},
-								"method": "GET",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "bearer {{token}}",
-										"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
-									}
-								],
-								"url": "{{baseUrl}}/client/rateLimitStatus",
-								"description": "Returns the current rate limits for the application. This resource does not count towards your rate limit. \nThe min-reset is in Unix time. "
-							},
-							"response": [
-								{
-									"id": "627cd903-f2ed-4b49-ac62-0bd1940448e8",
-									"name": "Status 200",
-									"originalRequest": {
-										"method": "GET",
-										"header": [
-											{
-												"key": "Authorization",
-												"value": "bearer {{token}}"
-											}
-										],
-										"url": "{{baseUrl}}/client/rateLimitStatus"
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"clientName\": \"TestClient\",\n    \"x-rate-10min-limit-limit\": 100,\n    \"x-rate-10min-limit-remaining\": 97,\n    \"x-rate-10min-limit-reset\": \"2017-10-03T06:11:01Z\",\n    \"x-rate-daily-limit-limit\": \"Unlimited\",\n    \"x-rate-daily-limit-remaining\": -1,\n    \"x-rate-daily-limit-reset\": null\n}"
-								}
-							]
-						}
-					],
-					"id": "072a1b4c-d402-4d08-8650-2c65c70b0507",
-					"description": "To prevent BGL's API from being overwhelmed and protect against DOS attacks, BGL enforce a limit on the number of requests which can either be made on a 10 min or daily basis.\n\nCurrently most applications will have a default 10 min limit set to 100 requests per 10 minutes period. If you would like this set higher please dicusss with the BGL API Team. \n\nThe returned HTTP Headers will show your Rate Limit Status. \n\n|Header Name|Description  |\n|--|--|\n| X-Rate Daily Limit |This value indicates the number of requests a client can make on a given day.  |\n|X-Rate-Daily-Limit-Remaining | indicates the remaining number of requests available. For every valid request made, this indicator will reduce its count by one. Zero means the available daily limit has been reached.|\n|X-Rate Limit | This value indicates the number of requests that can be made within a given time frame.   |\n\n\n**Error - 429 Too Many Requests**\nIf the daily limit has been exceeded, the following error will display with status - 429 Too Many Requests.\n```\n{\n\"message\": \"Too Many Requests\",\n\"errors\": [\n\"You had too many requests today, the rate limit ceiling per day is 1000\"\n],\n\"status\": 429\n}\n```\nPlease note that any request returned with http code(status) 401 or 429 will not reduce the daily limit threshold.\n\nIf the number of requests a client makes exceeds the specified X limit, the BGL API will return an error response as follows:\n```\n{\n\"message\": \"Too Many Requests\",\n\"errors\": [\n\"You had too many requests in last 10 mins, the rate limit ceiling for every 10 mins is 100\"\n],\n\"status\": 429\n}\n```\n",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "887b28fa-e322-49d1-8512-76da84d04bc2",
-								"type": "text/javascript",
-								"exec": [
-									""
-								]
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "e2f0837e-0dd6-42c8-96cd-ce45e6a64e35",
-								"type": "text/javascript",
-								"exec": [
-									""
-								]
-							}
-						}
-					]
-				},
-				{
-					"name": "Grant Types and Expiry",
-					"item": [],
-					"id": "1567e41a-4683-4f69-84d4-c389b1955fd9",
-					"description": "# Grant Types\nCurrently the BGL API only supportes the [Authorization Code grant type](https://tools.ietf.org/html/rfc6749#section-1.3.1)\n\n# Expiry Times\n\n\n| Grant/Token Type | Expiration | \n| -------- | -------- | \n| Authorization Code     | 10 mins     | \n| Access Token     | 7 Days     | \n| Refresh Token  | 30 days     | "
-				},
-				{
-					"name": "API Paginataion",
-					"item": [],
-					"id": "aa2c3853-08e5-4380-a51a-4d270172c960",
-					"description": "For performance reasons, some of our APIs  use offset-based paging use the `offset` and `limit/max` query parameters to paginate through items in a collection.\n\n\n## Paging\n\nTo fetch the first page of entries in a collection the API needs to be called with the  **offset**  set to  **0** and **limit/max**  field equal to the maximum value e.g **500**. \n\n    GET https://api.staging.bgl360.com.au/contacts?offset=0&limit=500\n</br>\n\nTo fetch the next page of entries the API needs to be called with an **offset** parameter that equals the sum of the previous **offset** value and limit returned in the previous result, **previous_offset + previous_limit**.\n\n    GET https://api.staging.bgl360.com.au/contacts?offset=501&limit=500\n</br>\n\nThe final page of items has been requested when the next **offset** value exceeds the **total** value in the response object or no entries are returned. At this point there are no more items to fetch.\n</br>\n\n```javascript\n\"limit\": 500,\n\"offset\": 0,\n\"total\": 698\n```\n\n",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "b511d0ab-ec84-4bfa-a567-3fefc60e909f",
-								"type": "text/javascript",
-								"exec": [
-									""
-								]
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "377159ac-6716-4845-9ce5-13caae4e1d72",
-								"type": "text/javascript",
-								"exec": [
-									""
-								]
-							}
-						}
-					]
-				},
-				{
-					"name": "Error Codes",
-					"item": [],
-					"id": "786384a4-9a10-483d-b5ee-5583db7786cd",
-					"description": "For API response, the BGL API will use conventional HTTP response codes to indicate the success or failure of an API request. The body of reponse will ususally provide more detailed information\ne.g \n\n\n`{\n    \"error\": \"unauthorized\",\n    \"error_description\": \"Full authentication is required to access this resource\"\n}\n`\n\n|HTTP Code|  Status Message |Description | \n|--|--|--|\n| 200 | OK | Indicates that the request has succeeded.\n| 201 | Created | Indicates that the POST request has been fulfilled and has resulted in one or more new resources being created |\n| 302 | Found | Indicates that the target resourceresides temporarily under a different URI. e.g Access Code |\n| 400 |Bad Request|Usually Caused by a missing or incorect Query Parameter |\n|401 | Unauthorized | You are not authorized or do not have permission to access the resource |\n| 403 | Forbidden | Indicates that the server understood the request but refuses to authorize it. Check Payload for more information |\n| 404 | not found | Indicates that the BGL API did not find the target resource or is not willing to disclose that one exists. |\n| 429 |Too Many Requests  | You’ve exceeded your 10 min or daily rate limit. |\n| 500 |Internal Server Error | The request was unable to be processed due to an error with our servers.  |\n|503 | Service Unavailable | BGL API is currently unable to handle the request due to a service outage or scheduled maintenance |",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "ad2fedb0-fad3-411d-8239-2d673c132bc8",
-								"type": "text/javascript",
-								"exec": [
-									""
-								]
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "e8e1212e-f0a8-45fc-bf51-87b3e7533763",
-								"type": "text/javascript",
-								"exec": [
-									""
-								]
-							}
-						}
-					]
-				},
-				{
-					"name": "API Status",
-					"item": [],
-					"id": "017b2456-3f0f-4eca-b1d1-29e63b7396f3",
-					"description": "The status of the BGL API and all of BGL's online services can be found at [https://status.bgl360.com.au](https://status.bgl360.com.au)"
-				}
-			],
-			"id": "d733d478-ed34-4c59-ad76-49cef7ea168b",
-			"auth": {
-				"type": "noauth"
-			},
-			"event": [
-				{
-					"listen": "prerequest",
-					"script": {
-						"id": "b6d7cae5-06a1-4680-9129-00703171b6fd",
-						"type": "text/javascript",
-						"exec": [
-							""
-						]
-					}
-				},
-				{
-					"listen": "test",
-					"script": {
-						"id": "f5980f2e-c4df-44ab-9776-a1d0c18c17c2",
 						"type": "text/javascript",
 						"exec": [
 							""
