@@ -807,7 +807,7 @@
 										{
 											"key": "redirect_uri",
 											"value": "{{redirect_uri}}",
-											"description": "[**REQUIRED**] The URI that will be used to redirect after authorisation. This value must match one of the defined OAuth 2.0 Redirect URLs in your application configuration. See Obtaining BGL API Credentials on how to set redirect uri.",
+											"description": "[**NOT REQUIRED**] The URI that will be used to redirect after authorisation. This value must match one of the defined OAuth 2.0 Redirect URLs in your application configuration. See Obtaining BGL API Credentials on how to set redirect uri.",
 											"disabled": true
 										},
 										{
