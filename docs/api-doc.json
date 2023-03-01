@@ -7053,8 +7053,7 @@
 									{
 										"key": "Content-Type",
 										"value": "application/json",
-										"type": "text",
-										"disabled": true
+										"type": "text"
 									}
 								],
 								"body": {
@@ -7164,8 +7163,7 @@
 									{
 										"key": "Cookie",
 										"value": "XSRF-TOKEN=e2b65e10-fa1f-43a1-8974-f7a37103a940; api_uat_bgl360_session_id=65F3F440F921E57B59B7F493BAF2B022-n2",
-										"type": "text",
-										"disabled": true
+										"type": "text"
 									}
 								],
 								"url": "{{baseUrl}}/contacts/{{contactId}}/ids/{{id}}",
