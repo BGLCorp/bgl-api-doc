@@ -7163,7 +7163,8 @@
 									{
 										"key": "Cookie",
 										"value": "XSRF-TOKEN=e2b65e10-fa1f-43a1-8974-f7a37103a940; api_uat_bgl360_session_id=65F3F440F921E57B59B7F493BAF2B022-n2",
-										"type": "text"
+										"type": "text",
+										"disabled": true
 									}
 								],
 								"url": "{{baseUrl}}/contacts/{{contactId}}/ids/{{id}}",
@@ -13456,7 +13457,8 @@
 							},
 							{
 								"key": "Content-Type",
-								"value": "application/json"
+								"value": "application/json",
+								"disabled": true
 							},
 							{
 								"key": "Cookie",
