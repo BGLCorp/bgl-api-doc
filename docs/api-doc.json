@@ -1223,11 +1223,7 @@
 							},
 							"request": {
 								"auth": {
-									"type": "oauth2",
-									"oauth2": {
-										"accessToken": "917d4d0e-06ff-4cec-9406-197b9c4e0f20",
-										"tokenType": "bearer"
-									}
+									"type": "noauth"
 								},
 								"method": "GET",
 								"header": [
