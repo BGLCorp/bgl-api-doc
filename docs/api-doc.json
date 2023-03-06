@@ -6555,7 +6555,13 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer {{token}}",
+										"type": "text"
+									}
+								],
 								"url": {
 									"raw": "{{baseUrl}}/contacts/:contactId?relationships=false",
 									"host": [
@@ -6569,15 +6575,13 @@
 										{
 											"key": "relationships",
 											"value": "false",
-											"description": "[optional] response will not include relationships if parameter not used",
-											"type": "text"
+											"description": "[optional] response will not include relationships if parameter not used"
 										}
 									],
 									"variable": [
 										{
-											"id": "4350ab34-f9e9-4320-8572-b8079cf7e765",
 											"key": "contactId",
-											"value": null
+											"value": "{{contactId}}"
 										}
 									]
 								},
