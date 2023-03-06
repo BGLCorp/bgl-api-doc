@@ -6695,7 +6695,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"firstName\": \"John\",\n    \"lastName\": \"Doe\",\n    \"contactType\": \"People\",\n    \"addressId\": \"172843\",\n    \"title\": \"Mr\",\n    \"sex\": \"Male\",\n    \"email\": \"johndoe@mail.com\",\n    \"mobile\": \"0498111111\",\n    \"phone1\": \"51643726\",\n    \"phone2\": \"71726354\",\n    \"taxNumber\": \"49938271\",\n    \"birthday\": \"1987-12-25\",\n    \"birthPlace\": \"Macdeon\",\n    \"birthState\": \"VIC\",\n    \"birthCountry\": \"Australia\"\n}"
+									"body": "{\n    \"firstName\": \"John\",\n    \"lastName\": \"Doe\",\n    \"contactType\": \"People\",\n    \"addressId\": \"172843\",\n    \"title\": \"Mr\",\n    \"sex\": \"Male\",\n    \"email\": \"johndoe@mail.com\",\n    \"mobile\": \"0498111111\",\n    \"phone1\": \"51643726\",\n    \"phone2\": \"71726354\",\n    \"taxNumber\": \"49938271\",\n    \"birthday\": \"1987-12-25\",\n    \"birthPlace\": \"Macdeon\",\n    \"birthState\": \"VIC\",\n    \"birthCountry\": \"Australia\",\n    \"nationality\": null\n}"
 								}
 							]
 						},
