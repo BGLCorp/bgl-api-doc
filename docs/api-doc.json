@@ -3999,11 +3999,7 @@
 							},
 							"request": {
 								"auth": {
-									"type": "oauth2",
-									"oauth2": {
-										"accessToken": "fbcbcf19-54a7-4ddb-8416-f68eeb6f9b59",
-										"tokenType": "bearer"
-									}
+									"type": "noauth"
 								},
 								"method": "POST",
 								"header": [
@@ -6452,6 +6448,1087 @@
 					"name": "Global Contacts",
 					"item": [
 						{
+							"name": "Contacts - More Details",
+							"item": [
+								{
+									"name": "List Contact Addresses",
+									"id": "e455e7c8-4298-450f-93ab-f6d84f2485b1",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/cas/contacts/{{contactId}}/addresses",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"cas",
+												"contacts",
+												"{{contactId}}",
+												"addresses"
+											],
+											"query": [
+												{
+													"key": "",
+													"value": "",
+													"type": "text",
+													"disabled": true
+												}
+											]
+										},
+										"description": "Retrieves all addresses for a Contact.\n\nStartFragment\n\n**Response Body**\n\n|   <br>  <br>**Key**  <br>  <br> |   <br>  <br>**Datatype**  <br>  <br> |   <br>  <br>**Mandatory**  <br>  <br> |   <br>  <br>**Comments**  <br>  <br> |\n| --- | --- | --- | --- |\n|   <br>  <br>id  <br>  <br> |   <br>  <br>number  <br>  <br> |   <br>  <br> |   <br>  <br>This is the AddressTypeId |\n|   <br>  <br>addressType  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br>Address Types:  <br>  <br>\\- RESIDENTIAL_ADDRESS  <br>\\- ALTERNATE_ADDRESS  <br>\\- BUSINESS_ADDRESS  <br>\\- CORRESPONDENCE_ADDRESS  <br>\\- POSTAL_ADDRESS  <br>\\- SERVICE_ADDRESS  <br>\\- OTHER_ADDRESS  <br>  <br> |\n|   <br>  <br>effectiveDate  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br> |\n| inUse |  |  | True/False |\n|   <br>  <br>**addresses (object)**  <br>  <br> |   <br>  <br> |   <br>  <br> |   <br>  <br> |\n|   <br>  <br>id  <br>  <br> |   <br>  <br>number  <br>  <br> |   <br>  <br> |   <br>  <br> |\n|   <br>  <br>country  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br>[<u>ISO 3166 country code/name</u>](https://en.wikipedia.org/wiki/ISO_3166)  <br>  <br> |\n|   <br>  <br>block  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>No  <br>  <br> |   <br>  <br>Singapore only  <br>  <br> |\n|   <br>  <br>buildingEstate  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>No  <br>  <br> |   <br>  <br>Singapore only  <br>  <br> |\n|   <br>  <br>careOf  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>No  <br>  <br> |   <br>  <br> |\n|   <br>  <br>levelFloor  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>No  <br>  <br> |   <br>  <br>Singapore only  <br>  <br> |\n|   <br>  <br>unitFlat  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>No  <br>  <br> |   <br>  <br>Singapore Only  <br>  <br> |\n|   <br>  <br>streetLine1  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br> |\n|   <br>  <br>streetLine2  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>No  <br>  <br> |   <br>  <br> |\n|   <br>  <br>suburb  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>No  <br>  <br> |   <br>  <br> |\n|   <br>  <br>postCode  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br> |\n|   <br>  <br>state  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br>If country is Australia the value must be one of 'ACT'/'NSW'/'VIC'/'QLD'/'SA'/'WA'/'TAS'/'NT'. Can also be 'Foreign' if country is not 'Australia'  <br>  <br> |\n\n**Additional Keys**\n\n|   <br>  <br>**Key**  <br>  <br> |   <br>  <br>**Datatype**  <br>  <br> |   <br>  <br>**Mandatory**  <br>  <br> |\n| --- | --- | --- |\n|   <br>  <br>total  <br>  <br> |   <br>  <br>Number  <br>  <br> |   <br>  <br>Yes  <br>  <br> |\n\nEndFragment"
+									},
+									"response": [
+										{
+											"id": "41feb207-c1d3-4403-9ae8-8688a5dfb1e1",
+											"name": "List Contact Addresses",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}",
+														"type": "text"
+													}
+												],
+												"url": "{{baseUrl}}/cas/contacts/{{contactId}}/addresses"
+											},
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"name": "Content-Type",
+													"value": "application/json",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": " {\n        \"address\": {\n            \"block\": null,\n            \"buildingEstate\": null,\n            \"careOf\": \"\",\n            \"country\": \"AUSTRALIA\",\n            \"id\": 1675073,\n            \"levelFloor\": null,\n            \"postcode\": \"3204\",\n            \"state\": \"VIC\",\n            \"streetLine1\": \"7 Hall Street\",\n            \"streetLine2\": \"\",\n            \"suburb\": \"MCKINNON\",\n            \"unitFlat\": null\n        },\n        \"addressId\": 1675073,\n        \"addressType\": \"Residential Address\",\n        \"effectiveDate\": \"2022-08-25\",\n        \"id\": 1614192,\n        \"inUse\": true\n    },\n    {\n        \"address\": {\n            \"block\": null,\n            \"buildingEstate\": null,\n            \"careOf\": \"\",\n            \"country\": \"AUSTRALIA\",\n            \"id\": 1675110,\n            \"levelFloor\": null,\n            \"postcode\": \"3204\",\n            \"state\": \"VIC\",\n            \"streetLine1\": \"12 Maud St\",\n            \"streetLine2\": \"\",\n            \"suburb\": \"ORMOND\",\n            \"unitFlat\": null\n        },\n        \"addressId\": 1675110,\n        \"addressType\": \"Postal Address\",\n        \"effectiveDate\": \"2023-02-23\",\n        \"id\": 1677915,\n        \"inUse\": true\n    }"
+										}
+									]
+								},
+								{
+									"name": "Create Contact Address",
+									"id": "397737ce-f5fe-4712-a64e-6ad340e416c1",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "    {  \"addressType\": \"Postal Address\",\r\n        \"effectiveDate\": \"2022-08-25\",\r\n        \"addressId\": 1675110\r\n        }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/cas/contacts/{{contactId}}/addresses",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"cas",
+												"contacts",
+												"{{contactId}}",
+												"addresses"
+											],
+											"query": [
+												{
+													"key": "",
+													"value": "",
+													"type": "text",
+													"disabled": true
+												}
+											]
+										},
+										"description": "Create address for a Contact.\n\n**Request Body:**\n\n|   <br>  <br>**Key**  <br>  <br> |   <br>  <br>**Datatype**  <br>  <br> |   <br>  <br>**Mandatory**  <br>  <br> |   <br>  <br>**Comments**  <br>  <br> |\n| --- | --- | --- | --- |\n|   <br>  <br>addressType  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br>Address Types:  <br>  <br>\\- RESIDENTIAL_ADDRESS  <br>\\- ALTERNATE_ADDRESS  <br>\\- BUSINESS_ADDRESS  <br>\\- CORRESPONDENCE_ADDRESS  <br>\\- POSTAL_ADDRESS  <br>\\- SERVICE_ADDRESS  <br>\\- OTHER_ADDRESS  <br>  <br> |\n|   <br>  <br>effectiveDate  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br> |\n|   <br>  <br>addressId  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br>Needs to be an existing addressId  <br>  <br> |\n\n**Response Body:**\n\n|   <br>  <br>**Key**  <br>  <br> |   <br>  <br>**Datatype**  <br>  <br> |   <br>  <br>**Mandatory**  <br>  <br> |   <br>  <br>**Comments**  <br>  <br> |\n| --- | --- | --- | --- |\n|   <br>  <br>id  <br>  <br> |   <br>  <br>number  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br>This is the addressTypeId |\n|   <br>  <br>addressType  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br> |\n|   <br>  <br>effectiveDate  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br> |\n|   <br>  <br>addressId  <br>  <br> |   <br>  <br>number  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br> |"
+									},
+									"response": [
+										{
+											"id": "9ca09c19-cb9f-4622-9570-8f354b9a5fb8",
+											"name": "Create Contact Address",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}",
+														"type": "text"
+													}
+												],
+												"url": "{{baseUrl}}/cas/contacts/{{contactId}}/addresses"
+											},
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"name": "Content-Type",
+													"value": "application/json",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": " {\n    \"address\": null,\n    \"addressId\": 1675110,\n    \"addressType\": \"Postal Address\",\n    \"effectiveDate\": \"2022-08-25\",\n    \"id\": 1677919,\n    \"inUse\": false\n}"
+										}
+									]
+								},
+								{
+									"name": "Update Contact Address",
+									"id": "4c92364e-590e-4302-bd3a-267c0a1fc3bf",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "    {  \"addressType\": \"POSTAL_ADDRESS\",\r\n        \"effectiveDate\": \"2022-07-25\",\r\n        \"addressId\": 1675110\r\n        }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/cas/contacts/{{contactId}}/addresses/{{addressTypeId}}",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"cas",
+												"contacts",
+												"{{contactId}}",
+												"addresses",
+												"{{addressTypeId}}"
+											],
+											"query": [
+												{
+													"key": "",
+													"value": "",
+													"type": "text",
+													"disabled": true
+												}
+											]
+										},
+										"description": "Create address for a Contact.\n\n**Request Body:**\n\n|   <br>  <br>**Key**  <br>  <br> |   <br>  <br>**Datatype**  <br>  <br> |   <br>  <br>**Mandatory**  <br>  <br> |   <br>  <br>**Comments**  <br>  <br> |\n| --- | --- | --- | --- |\n|   <br>  <br>addressType  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br>Address Types:  <br>  <br>\\- RESIDENTIAL_ADDRESS  <br>\\- ALTERNATE_ADDRESS  <br>\\- BUSINESS_ADDRESS  <br>\\- CORRESPONDENCE_ADDRESS  <br>\\- POSTAL_ADDRESS  <br>\\- SERVICE_ADDRESS  <br>\\- OTHER_ADDRESS  <br>  <br> |\n|   <br>  <br>effectiveDate  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br> |\n|   <br>  <br>addressId  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br>Needs to be an existing addressId  <br>  <br> |\n\n**Response Body:**\n\n|   <br>  <br>**Key**  <br>  <br> |   <br>  <br>**Datatype**  <br>  <br> |   <br>  <br>**Mandatory**  <br>  <br> |   <br>  <br>**Comments**  <br>  <br> |\n| --- | --- | --- | --- |\n|   <br>  <br>id  <br>  <br> |   <br>  <br>number  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br>This is the addressTypeId |\n|   <br>  <br>addressType  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br> |\n|   <br>  <br>effectiveDate  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br> |\n|   <br>  <br>addressId  <br>  <br> |   <br>  <br>number  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br> |\n| inUse |  |  | true/false |"
+									},
+									"response": [
+										{
+											"id": "4abb579c-f300-44fe-a734-f7b7166fc574",
+											"name": "Update Contact Address",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}",
+														"type": "text"
+													}
+												],
+												"url": "{{baseUrl}}/cas/contacts/{{contactId}}/addresses"
+											},
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"name": "Content-Type",
+													"value": "application/json",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": " {\n    \"address\": null,\n    \"addressId\": 1675110,\n    \"addressType\": \"Postal Address\",\n    \"effectiveDate\": \"2022-08-25\",\n    \"id\": 1677919,\n    \"inUse\": false\n}"
+										}
+									]
+								},
+								{
+									"name": "Delete Contact Address",
+									"id": "8ebe31af-57e9-40f1-aa50-d430d7177ebf",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "    {  \"addressType\": \"POSTAL_ADDRESS\",\r\n        \"effectiveDate\": \"2022-07-25\",\r\n        \"addressId\": 1675110\r\n        }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/cas/contacts/{{contactId}}/addresses/{{addressTypeId}}",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"cas",
+												"contacts",
+												"{{contactId}}",
+												"addresses",
+												"{{addressTypeId}}"
+											],
+											"query": [
+												{
+													"key": "",
+													"value": "",
+													"type": "text",
+													"disabled": true
+												}
+											]
+										},
+										"description": "Delete an address for a Contact.\n\nNote, this does not delete the underlying address from the Address List, but simply removes the address from the Contact record."
+									},
+									"response": [
+										{
+											"id": "65f487cb-77cb-43a8-94fc-418ce47c50f3",
+											"name": "Update Contact Address",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}",
+														"type": "text"
+													}
+												],
+												"url": "{{baseUrl}}/cas/contacts/{{contactId}}/addresses"
+											},
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"name": "Content-Type",
+													"value": "application/json",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": \"DELETED\"\n}"
+										}
+									]
+								},
+								{
+									"name": "List Contact Communication Details",
+									"id": "3723cc5b-f7f8-4812-9bad-47e87c94f23c",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"url": "{{baseUrl}}/cas/contacts/{{contactId}}/communications",
+										"description": "Retrieves communication details for specified Contact.\n\n### **Response Body**\n\n|   <br>  <br>**Key**  <br>  <br> |   <br>  <br>**Type**  <br>  <br> |   <br>  <br>**Comments**  <br>  <br> |\n| --- | --- | --- |\n|   <br>  <br>id  <br>  <br> |   <br>  <br>number  <br>  <br> |   <br>  <br> |\n| communicationType | String | Supported types: EMAIL  <br>  <br>FAX  <br>  <br>PHONE  <br>  <br>MOBILE  <br>  <br>SKYPE |\n|   <br>  <br>label  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |\n|   <br>  <br>value  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |"
+									},
+									"response": [
+										{
+											"id": "ab1dc73e-1f8b-4320-81aa-2d0c33af0f59",
+											"name": "List Contact Communication Details",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}",
+														"type": "text"
+													}
+												],
+												"url": "{{baseUrl}}/cas/contacts/{{contactId}}/passports"
+											},
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"name": "Content-Type",
+													"value": "application/json",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "[\n    {\n        \"communicationType\": \"EMAIL\",\n        \"id\": 628548,\n        \"label\": \"Primary Email\",\n        \"value\": \"c@v.com\"\n    },\n    {\n        \"communicationType\": \"MOBILE\",\n        \"id\": 717911,\n        \"label\": \"Mobile\",\n        \"value\": \"0411789456\"\n    }\n]"
+										}
+									]
+								},
+								{
+									"name": "Create Contact Communication Detail",
+									"id": "b4b9c8cf-afe8-4062-bf86-053a7829d2c9",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "\r\n  {\r\n        \"communicationType\": \"MOBILE\",\r\n        \"label\": \"Mobile\",\r\n        \"value\": \"0411789456\"\r\n    }\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{baseUrl}}/cas/contacts/{{contactId}}/communications",
+										"description": "Create a set of communication details for specified Contact.\n\n### **Request Body**\n\n|   <br>  <br>**Key**  <br>  <br> |   <br>  <br>**Type**  <br>  <br> |   <br>  <br>**Comments**  <br>  <br> |\n| --- | --- | --- |\n|   <br>  <br>communicationType  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Supported types: EMAIL  <br>  <br>FAX  <br>  <br>PHONE  <br>  <br>MOBILE  <br>  <br>SKYPE |\n|   <br>  <br>label  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |\n|   <br>  <br>value  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |"
+									},
+									"response": [
+										{
+											"id": "6c30bf5e-6d0d-42db-8035-f26a3500de44",
+											"name": "Create Contact Communication Detail",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}",
+														"type": "text"
+													}
+												],
+												"url": "{{baseUrl}}/cas/contacts/{{contactId}}/communications"
+											},
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"name": "Content-Type",
+													"value": "application/json",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "\n[\n    {\n        \"communicationType\": \"EMAIL\",\n        \"id\": 628548,\n        \"label\": \"Primary Email\",\n        \"value\": \"c@v.com\"\n    },\n    {\n        \"communicationType\": \"MOBILE\",\n        \"id\": 717911,\n        \"label\": \"Mobile\",\n        \"value\": \"0411789456\"\n    }\n]"
+										}
+									]
+								},
+								{
+									"name": "Update Contact Communication Details",
+									"id": "c4fc2fd8-8042-4d4b-bd80-5be06a3deb55",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "\r\n {\r\n        \"communicationType\": \"MOBILE\",\r\n        \"id\": 717911,\r\n        \"label\": \"Mobile\",\r\n        \"value\": \"0411789456\"\r\n    }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{baseUrl}}/cas/contacts/{{contactId}}/communications/{{communicationId}}",
+										"description": "Allows you to update communication details for a contact.\n\n### **Request Body**\n\n|   <br>  <br>**Key**  <br>  <br> |   <br>  <br>**Type**  <br>  <br> |   <br>  <br>**Comments**  <br>  <br> |\n| --- | --- | --- |\n|   <br>  <br>communicationType  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Supported types: EMAIL  <br>  <br>FAX  <br>  <br>PHONE  <br>  <br>MOBILE  <br>  <br>SKYPE |\n|   <br>  <br>label  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |\n|   <br>  <br>value  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |"
+									},
+									"response": [
+										{
+											"id": "650c0e45-c8ca-4460-8e5d-baa66f21b8c9",
+											"name": "Update Contact Communication Detail",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}",
+														"type": "text"
+													}
+												],
+												"url": "{{baseUrl}}/cas/contacts/{{contactId}}/passports"
+											},
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"name": "Content-Type",
+													"value": "application/json",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "    {\n        \"communicationType\": \"MOBILE\",\n        \"id\": 717911,\n        \"label\": \"Mobile\",\n        \"value\": \"0411789456\"\n    }"
+										}
+									]
+								},
+								{
+									"name": "Delete Contact Communication Detail",
+									"id": "a5f058df-c6ec-4dda-95a8-1378b5ee5bdd",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{baseUrl}}/cas/contacts/{{contactId}}/communications/{{communicationId}}",
+										"description": "Delete a communication record for specified Contact."
+									},
+									"response": [
+										{
+											"id": "bdfaf6e0-6733-465d-8aff-fd9fa74c0fd5",
+											"name": "Delete Contact Communication Detail",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}",
+														"type": "text"
+													}
+												],
+												"url": "{{baseUrl}}/cas/contacts/{{contactId}}/passports"
+											},
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"name": "Content-Type",
+													"value": "application/json",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": \"DELETED\"\n}"
+										}
+									]
+								},
+								{
+									"name": "List of Director ID & Other Jurisdiction ID",
+									"id": "1ddaccb5-a7bb-4dff-b135-409af258fe1e",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "",
+												"value": "",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/contacts/{{contactId}}/ids",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"contacts",
+												"{{contactId}}",
+												"ids"
+											],
+											"query": [
+												{
+													"key": "addresses",
+													"value": "true",
+													"disabled": true
+												}
+											]
+										},
+										"description": "Allows you to retrieve all IDs (e.g. Director ID) for an individual contact.\n\n### **API SCOPES**\n\nThe following [API scopes](https://desktop.postman.com/?desktopVersion=9.19.0&userId=2943975&teamId=449037) can access this resource\n\n*   cas_incorporator\n*   bgl_partner\n    \n\n### **RESPONSE ID TYPES:**\n\n*   AUSTRALIAN_DIRECTOR_ID\n*   CHINA_ID\n*   EMPLOYMENT_PASS\n*   HONG_KONG_ID\n*   MACAU_ID\n*   MALAY_IC\n*   OTHER\n*   SINGAPORE_FIN\n*   SINGAPORE_NRIC_CITIZEN\n*   SINGAPORE_NRIC_PR\n    \n\n### RESPONSE\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| id | number | id |\n| type | String | id type.  <br>See list of id types above. |\n| value | String | id value |"
+									},
+									"response": [
+										{
+											"id": "f1833812-4877-4c26-8188-9749fe2dab09",
+											"name": "200 - Get IDs",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}",
+														"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
+													},
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"url": "{{baseUrl}}/contacts/{{contactId}}/ids"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Date",
+													"value": "Mon, 27 Apr 2020 23:54:02 GMT"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json;charset=UTF-8"
+												},
+												{
+													"key": "Transfer-Encoding",
+													"value": "chunked"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Server",
+													"value": "nginx"
+												},
+												{
+													"key": "X-Rate-Daily-Limit-Remaining",
+													"value": "-1"
+												},
+												{
+													"key": "vary",
+													"value": "accept-encoding"
+												},
+												{
+													"key": "Content-Encoding",
+													"value": "gzip"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "Content-Security-Policy",
+													"value": "frame-ancestors 'self' uat.sf360.com.au"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "ALLOW-FROM https://uat.sf360.com.au"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"ids\": [\n        {\n            \"id\": 3436,\n            \"type\": \"AUSTRALIAN_DIRECTOR_ID\",\n            \"value\": \"000000000000000\"\n        },\n        {\n            \"id\": 3732,\n            \"type\": \"OTHER\",\n            \"value\": \"000000000000000\"\n        }\n    ]\n}"
+										}
+									]
+								},
+								{
+									"name": "Create Director ID & Other Jurisdiction ID",
+									"id": "82c0f4ef-4124-4aa5-8116-f95209ac1c31",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\"type\": \"AUSTRALIAN_DIRECTOR_ID\",\r\n\"value\": \"000000000000000\"\r\n}"
+										},
+										"url": "{{baseUrl}}/contacts/{{contactId}}/ids",
+										"description": "Creates one individual contact id (e.g. Director ID).\n\nREQUEST BODY\n\n| Key | Datatype | Comments |\n| --- | --- | --- |\n| id | Number |  |\n| type | string | See ID TYPE list below |\n| value | string |  |\n\nStartFragment\n\n### **ID TYPES:**\n\n*   AUSTRALIAN_DIRECTOR_ID\n*   CHINA_ID\n*   EMPLOYMENT_PASS\n*   HONG_KONG_ID\n*   MACAU_ID\n*   MALAY_IC\n*   OTHER\n*   SINGAPORE_FIN\n*   SINGAPORE_NRIC_CITIZEN\n*   SINGAPORE_NRIC_PR\n    \n\nEndFragment"
+									},
+									"response": [
+										{
+											"id": "31dd3594-de03-44a5-94e6-1c9c6965bdca",
+											"name": "201 - Create new ID",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}",
+														"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
+													},
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"type\": \"AUSTRALIAN_DIRECTOR_ID\",\n    \"value\": \"000000000000000\"\n}\n"
+												},
+												"url": "{{baseUrl}}/contacts/{{contactId}}/ids"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Date",
+													"value": "Mon, 27 Apr 2020 23:54:02 GMT"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json;charset=UTF-8"
+												},
+												{
+													"key": "Transfer-Encoding",
+													"value": "chunked"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Server",
+													"value": "nginx"
+												},
+												{
+													"key": "X-Rate-Daily-Limit-Remaining",
+													"value": "-1"
+												},
+												{
+													"key": "vary",
+													"value": "accept-encoding"
+												},
+												{
+													"key": "Content-Encoding",
+													"value": "gzip"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "Content-Security-Policy",
+													"value": "frame-ancestors 'self' uat.sf360.com.au"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "ALLOW-FROM https://uat.sf360.com.au"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"id\": 4421,\n    \"type\": \"AUSTRALIAN_DIRECTOR_ID\",\n    \"value\": \"000000000000000\"\n}"
+										}
+									]
+								},
+								{
+									"name": "Delete Director ID & Other Jurisdiction ID",
+									"id": "181c8ac4-cba5-4955-b326-fb120b6fd883",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Cookie",
+												"value": "XSRF-TOKEN=e2b65e10-fa1f-43a1-8974-f7a37103a940; api_uat_bgl360_session_id=65F3F440F921E57B59B7F493BAF2B022-n2",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"url": "{{baseUrl}}/contacts/{{contactId}}/ids/{{id}}",
+										"description": "StartFragment\n\nDelete one individual contact id (e.g. Director ID).\n\nEndFragment"
+									},
+									"response": [
+										{
+											"id": "0d451932-4cbf-46cf-9dfe-73f5856afc8a",
+											"name": "200 - Delete ID",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}",
+														"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
+													},
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"url": "{{baseUrl}}/contacts/{{contactId}}/ids/{{id}}"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Date",
+													"value": "Mon, 27 Apr 2020 23:54:02 GMT"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json;charset=UTF-8"
+												},
+												{
+													"key": "Transfer-Encoding",
+													"value": "chunked"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Server",
+													"value": "nginx"
+												},
+												{
+													"key": "X-Rate-Daily-Limit-Remaining",
+													"value": "-1"
+												},
+												{
+													"key": "vary",
+													"value": "accept-encoding"
+												},
+												{
+													"key": "Content-Encoding",
+													"value": "gzip"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "Content-Security-Policy",
+													"value": "frame-ancestors 'self' uat.sf360.com.au"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "ALLOW-FROM https://uat.sf360.com.au"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"directorId\": \"4421\",\n    \"status\": \"DELETED\"\n}"
+										}
+									]
+								},
+								{
+									"name": "List of Contact Passports",
+									"id": "211fa0fa-a5d1-4e04-9efa-93ed7c7d0ee9",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"url": "{{baseUrl}}/cas/contacts/{{contactId}}/passports",
+										"description": "Retrieves passport details for specified Contact.\n\n### **Response Body**\n\n|   <br>  <br>**Key**  <br>  <br> |   <br>  <br>**Type**  <br>  <br> |   <br>  <br>**Comments**  <br>  <br> |\n| --- | --- | --- |\n|   <br>  <br>id  <br>  <br> |   <br>  <br>number  <br>  <br> |   <br>  <br> |\n|   <br>  <br>value  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |\n|   <br>  <br>country  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |\n|   <br>  <br>issueDate  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |\n|   <br>  <br>expiryDate  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |"
+									},
+									"response": [
+										{
+											"id": "ec33d50f-6d5a-4bdc-a94f-a6848ddd894e",
+											"name": "List of Contact Passports",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}",
+														"type": "text"
+													}
+												],
+												"url": "{{baseUrl}}/cas/contacts/{{contactId}}/passports"
+											},
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"name": "Content-Type",
+													"value": "application/json",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "[\n    {\n        \"country\": \"AUSTRALIA\",\n        \"expiryDate\": \"2030-01-01\",\n        \"id\": 3890,\n        \"issueDate\": \"2020-01-01\",\n        \"value\": \"M1234567789\"\n    },\n    {\n        \"country\": \"AUSTRALIA\",\n        \"expiryDate\": \"2020-01-01\",\n        \"id\": 3892,\n        \"issueDate\": \"2010-01-01\",\n        \"value\": \"P999333555\"\n    }\n]"
+										}
+									]
+								},
+								{
+									"name": "Create Contact Passport",
+									"id": "4376616b-6590-487c-afa3-793dae1de621",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "\r\n    {\r\n        \"country\": \"AUSTRALIA\",\r\n        \"expiryDate\": \"2030-01-01\",\r\n        \"issueDate\": \"2020-01-01\",\r\n        \"value\": \"M123456789\"\r\n    }\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{baseUrl}}/cas/contacts/{{contactId}}/passports",
+										"description": "Create a set of passport details for specified Contact.\n\n### **Request Body**\n\n|   <br>  <br>**Key**  <br>  <br> |   <br>  <br>**Type**  <br>  <br> |   <br>  <br>**Comments**  <br>  <br> |\n| --- | --- | --- |\n|   <br>  <br>value  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |\n|   <br>  <br>country  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |\n|   <br>  <br>issueDate  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |\n|   <br>  <br>expiryDate  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |"
+									},
+									"response": [
+										{
+											"id": "b7a474e5-5492-4c92-823a-cd4fdd5bf86e",
+											"name": "Create Contact Passport",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}",
+														"type": "text"
+													}
+												],
+												"url": "{{baseUrl}}/cas/contacts/{{contactId}}/passports"
+											},
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"name": "Content-Type",
+													"value": "application/json",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "[\n    {\n        \"country\": \"AUSTRALIA\",\n        \"expiryDate\": \"2030-01-01\",\n        \"id\": 3890,\n        \"issueDate\": \"2020-01-01\",\n        \"value\": \"M1234567789\"\n    }\n]"
+										}
+									]
+								},
+								{
+									"name": "Update Contact Passport",
+									"id": "6134f8bf-a2e5-4ac3-b164-8d2862998982",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "\r\n    {\r\n         \"id\": 3892,\r\n        \"country\": \"AUSTRALIA\",\r\n        \"expiryDate\": \"2020-01-01\",\r\n        \"issueDate\": \"2010-01-01\",\r\n        \"value\": \"P999333555\"\r\n    }\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{baseUrl}}/cas/contacts/{{contactId}}/passports/{{passportId}}",
+										"description": "Allows you to update passport details for a contact.\n\n### **Request Body**\n\n|   <br>  <br>**Key**  <br>  <br> |   <br>  <br>**Type**  <br>  <br> |   <br>  <br>**Comments**  <br>  <br> |\n| --- | --- | --- |\n|   <br>  <br>id  <br>  <br> |   <br>  <br>number  <br>  <br> |   <br>  <br> |\n|   <br>  <br>value  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |\n|   <br>  <br>country  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |\n|   <br>  <br>issueDate  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |\n|   <br>  <br>expiryDate  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |"
+									},
+									"response": [
+										{
+											"id": "d44872ba-a287-4a65-94cf-c2be42d631d7",
+											"name": "Update Contact Passport",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}",
+														"type": "text"
+													}
+												],
+												"url": "{{baseUrl}}/cas/contacts/{{contactId}}/passports"
+											},
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"name": "Content-Type",
+													"value": "application/json",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"country\": \"AUSTRALIA\",\n    \"expiryDate\": \"2020-01-01\",\n    \"id\": 3891,\n    \"issueDate\": \"2010-01-01\",\n    \"value\": \"P999333555\"\n}"
+										}
+									]
+								},
+								{
+									"name": "Delete Contact Passport",
+									"id": "3ddc6d0d-0e8f-483f-b40d-95f7af790661",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{baseUrl}}/cas/contacts/{{contactId}}/passports/{{passportId}}",
+										"description": "Delete a passport record for specified Contact."
+									},
+									"response": [
+										{
+											"id": "050395db-51c1-43ed-9645-a2a8d10cbe2d",
+											"name": "Delete Contact Passport",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}",
+														"type": "text"
+													}
+												],
+												"url": "{{baseUrl}}/cas/contacts/{{contactId}}/passports"
+											},
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"name": "Content-Type",
+													"value": "application/json",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": \"DELETED\"\n}"
+										}
+									]
+								}
+							],
+							"id": "fbb0bfd8-a72e-490b-b443-1dbe8156373d"
+						},
+						{
 							"name": "List of Contacts",
 							"id": "a20941d6-9187-4a42-b2fc-4f812f6f5da7",
 							"protocolProfileBehavior": {
@@ -6700,6 +7777,90 @@
 							]
 						},
 						{
+							"name": "Update Contact",
+							"id": "3c548c43-fed7-402b-904a-4bc95c155237",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": {}
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+										"key": "Authorization",
+										"value": "bearer {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"addressId\": 1675073,\r\n    \"birthCountry\": \"AUSTRALIA\",\r\n    \"birthPlace\": \"CLAYTON\",\r\n    \"birthState\": \"VIC\",\r\n    \"birthday\": \"2001-08-01\",\r\n    \"businessNumber\": \"\",\r\n    \"companyNumber\": null,\r\n    \"contactType\": \"People\",\r\n    \"email\": \"c@v.com\",\r\n    \"firstName\": \"Christian\",\r\n    \"id\": 1941877,\r\n    \"incorporationDate\": null,\r\n    \"lastName\": \"Vieri\",\r\n    \"middleName\": \"\",\r\n    \"mobile\": null,\r\n    \"name\": \"Christian Vieri\",\r\n    \"nationality\": null,\r\n    \"phone1\": null,\r\n    \"phone2\": null,\r\n    \"placeOfIncorporation\": null,\r\n    \"representativeIds\": null,\r\n    \"sex\": null,\r\n    \"skype\": null,\r\n    \"taxNumber\": \"\",\r\n    \"title\": null\r\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/contacts/:contactId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"contacts",
+										":contactId"
+									],
+									"variable": [
+										{
+											"id": "76cc8928-0ab8-4155-879d-e91dfd7c6e9d",
+											"key": "contactId",
+											"value": "{{contactId}}",
+											"type": "string"
+										}
+									]
+								},
+								"description": "Updates contact details (non Joint-member)\n\nWill update all of the details of the contact represented by its id. Any missing details will NOT be updated.\n\nConstraint: contactType cannot be ‘Joint Member’\n\n### Request Body\n\n| Key | Datatype | Mandatory | Constraints |\n| --- | --- | --- | --- |\n| firstName | String | No | Only allowed if the contactType is 'People' |\n| middleName | String | No | Only allowed if contactType is 'People' |\n| lastName | String | No | Only allowed if the contactType is 'People' |\n| name | String | No | Only allowed if the contactType is 'Company'/'Other Entity' |\n| addressId | Number | No | Only allowed if the contactType is 'People'. Must be a valid existing addressId |\n| title | String | No | Only allowed if the contactType is 'People' |\n| sex | String | No | Only allowed if the contactType is 'People'. Must be one of 'Male'/'Female' |\n| email | String | No |  |\n| mobile | String | No |  |\n| phone1 | String | No |  |\n| phone2 | String | No |  |\n| taxNumber | String | No |  |\n| birthday | String | No | Only allowed if contactType is 'People'. ISO 8601 date [https://en.wikipedia.org/wiki/ISO_8601](https://en.wikipedia.org/wiki/ISO_8601) |\n| birthPlace | String | No | Only allowed if contactType is 'People' |\n| birthState | String | No | Only allowed if contactType is 'People'. Must be one of 'ACT'/'NSW'/'VIC'/'QLD'/'SA'/'WA'/'TAS'/'NT'/'Foreign' |\n| birthCountry | String | No | Only allowed if contactType is 'People'. ISO 3166 country code/name [https://en.wikipedia.org/wiki/ISO_3166](https://en.wikipedia.org/wiki/ISO_3166) |\n| skype | String | No | Only allowed if contactType is 'People' |\n| businessNumber | String | No | Only allowed if the contactType is 'Company' |\n| placeOfIncorportaion | String | No | Only allowed if the contactType is 'Company'. ISO 3166 country code/name [https://en.wikipedia.org/wiki/ISO_3166](https://en.wikipedia.org/wiki/ISO_3166) |\n| incorporationDate | String | No | Only allowed if the contactType is 'Company'. ISO 8601 date [https://en.wikipedia.org/wiki/ISO_8601](https://en.wikipedia.org/wiki/ISO_8601) |"
+							},
+							"response": [
+								{
+									"id": "8171eb1c-146f-4d43-bd4b-7e89cff42df6",
+									"name": "Status 200",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "\"<object>\""
+										},
+										"url": "{{baseUrl}}/contacts/<string>"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"addressId\": 1675073,\n    \"birthCountry\": \"AUSTRALIA\",\n    \"birthPlace\": \"CLAYTON\",\n    \"birthState\": \"VIC\",\n    \"birthday\": \"2001-08-01\",\n    \"businessNumber\": \"\",\n    \"companyNumber\": null,\n    \"contactType\": \"People\",\n    \"email\": \"c@v.com\",\n    \"firstName\": \"Christian\",\n    \"id\": 1941877,\n    \"incorporationDate\": null,\n    \"lastName\": \"Vieri\",\n    \"middleName\": \"\",\n    \"mobile\": null,\n    \"name\": \"Christian Vieri\",\n    \"nationality\": null,\n    \"phone1\": null,\n    \"phone2\": null,\n    \"placeOfIncorporation\": null,\n    \"representativeIds\": null,\n    \"sex\": null,\n    \"skype\": null,\n    \"taxNumber\": \"\",\n    \"title\": null\n}"
+								}
+							]
+						},
+						{
 							"name": "Delete Contact",
 							"id": "8a9d9e8c-c27d-44c8-83dc-eb4b851db023",
 							"protocolProfileBehavior": {
@@ -6917,334 +8078,6 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\n    \"agents\": [\n        {\n            \"agentName\": \"BGL INCORP COMPANY PTY LTD\",\n            \"agentNumber\": \"1234\",\n            \"id\": 1022\n        },\n        {\n            \"agentName\": \"Mark Flynn\",\n            \"agentNumber\": \"52352\",\n            \"id\": 1024\n        }\n    ],\n    \"limit\": 2,\n    \"offset\": 2,\n    \"total\": 2\n}"
-								}
-							]
-						},
-						{
-							"name": "List of Director ID & Other Jurisdiction ID",
-							"id": "1ddaccb5-a7bb-4dff-b135-409af258fe1e",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "bearer {{token}}",
-										"type": "text"
-									},
-									{
-										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									},
-									{
-										"key": "",
-										"value": "",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "{{baseUrl}}/contacts/{{contactId}}/ids",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"contacts",
-										"{{contactId}}",
-										"ids"
-									],
-									"query": [
-										{
-											"key": "addresses",
-											"value": "true",
-											"disabled": true
-										}
-									]
-								},
-								"description": "Allows you to retrieve all IDs (e.g. Director ID) for an individual contact.\n\n### **API SCOPES**\n\nThe following [API scopes](https://desktop.postman.com/?desktopVersion=9.19.0&userId=2943975&teamId=449037) can access this resource\n\n*   cas_incorporator\n*   bgl_partner\n    \n\n### **RESPONSE ID TYPES:**\n\n*   AUSTRALIAN_DIRECTOR_ID\n*   CHINA_ID\n*   EMPLOYMENT_PASS\n*   HONG_KONG_ID\n*   MACAU_ID\n*   MALAY_IC\n*   OTHER\n*   SINGAPORE_FIN\n*   SINGAPORE_NRIC_CITIZEN\n*   SINGAPORE_NRIC_PR\n    \n\n### RESPONSE\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| id | number | id |\n| type | String | id type.  <br>See list of id types above. |\n| value | String | id value |"
-							},
-							"response": [
-								{
-									"id": "f1833812-4877-4c26-8188-9749fe2dab09",
-									"name": "200 - Get IDs",
-									"originalRequest": {
-										"method": "GET",
-										"header": [
-											{
-												"key": "Authorization",
-												"value": "bearer {{token}}",
-												"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
-											},
-											{
-												"key": "Content-Type",
-												"value": "application/json"
-											}
-										],
-										"url": "{{baseUrl}}/contacts/{{contactId}}/ids"
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Date",
-											"value": "Mon, 27 Apr 2020 23:54:02 GMT"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json;charset=UTF-8"
-										},
-										{
-											"key": "Transfer-Encoding",
-											"value": "chunked"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Server",
-											"value": "nginx"
-										},
-										{
-											"key": "X-Rate-Daily-Limit-Remaining",
-											"value": "-1"
-										},
-										{
-											"key": "vary",
-											"value": "accept-encoding"
-										},
-										{
-											"key": "Content-Encoding",
-											"value": "gzip"
-										},
-										{
-											"key": "X-Content-Type-Options",
-											"value": "nosniff"
-										},
-										{
-											"key": "Content-Security-Policy",
-											"value": "frame-ancestors 'self' uat.sf360.com.au"
-										},
-										{
-											"key": "X-Frame-Options",
-											"value": "ALLOW-FROM https://uat.sf360.com.au"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"ids\": [\n        {\n            \"id\": 3436,\n            \"type\": \"AUSTRALIAN_DIRECTOR_ID\",\n            \"value\": \"000000000000000\"\n        },\n        {\n            \"id\": 3732,\n            \"type\": \"OTHER\",\n            \"value\": \"000000000000000\"\n        }\n    ]\n}"
-								}
-							]
-						},
-						{
-							"name": "Create Director ID & Other Jurisdiction ID",
-							"id": "82c0f4ef-4124-4aa5-8116-f95209ac1c31",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "bearer {{token}}",
-										"type": "text"
-									},
-									{
-										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text",
-										"disabled": true
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n\"type\": \"AUSTRALIAN_DIRECTOR_ID\",\r\n\"value\": \"000000000000000\"\r\n}"
-								},
-								"url": "{{baseUrl}}/contacts/{{contactId}}/ids",
-								"description": "Creates one individual contact id (e.g. Director ID).\n\nREQUEST BODY\n\n| Key | Datatype | Comments |\n| --- | --- | --- |\n| id | Number |  |\n| type | string | See ID TYPE list below |\n| value | string |  |\n\nStartFragment\n\n### **ID TYPES:**\n\n*   AUSTRALIAN_DIRECTOR_ID\n*   CHINA_ID\n*   EMPLOYMENT_PASS\n*   HONG_KONG_ID\n*   MACAU_ID\n*   MALAY_IC\n*   OTHER\n*   SINGAPORE_FIN\n*   SINGAPORE_NRIC_CITIZEN\n*   SINGAPORE_NRIC_PR\n    \n\nEndFragment"
-							},
-							"response": [
-								{
-									"id": "31dd3594-de03-44a5-94e6-1c9c6965bdca",
-									"name": "201 - Create new ID",
-									"originalRequest": {
-										"method": "POST",
-										"header": [
-											{
-												"key": "Authorization",
-												"value": "bearer {{token}}",
-												"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
-											},
-											{
-												"key": "Content-Type",
-												"value": "application/json"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n    \"type\": \"AUSTRALIAN_DIRECTOR_ID\",\n    \"value\": \"000000000000000\"\n}\n"
-										},
-										"url": "{{baseUrl}}/contacts/{{contactId}}/ids"
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Date",
-											"value": "Mon, 27 Apr 2020 23:54:02 GMT"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json;charset=UTF-8"
-										},
-										{
-											"key": "Transfer-Encoding",
-											"value": "chunked"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Server",
-											"value": "nginx"
-										},
-										{
-											"key": "X-Rate-Daily-Limit-Remaining",
-											"value": "-1"
-										},
-										{
-											"key": "vary",
-											"value": "accept-encoding"
-										},
-										{
-											"key": "Content-Encoding",
-											"value": "gzip"
-										},
-										{
-											"key": "X-Content-Type-Options",
-											"value": "nosniff"
-										},
-										{
-											"key": "Content-Security-Policy",
-											"value": "frame-ancestors 'self' uat.sf360.com.au"
-										},
-										{
-											"key": "X-Frame-Options",
-											"value": "ALLOW-FROM https://uat.sf360.com.au"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"id\": 4421,\n    \"type\": \"AUSTRALIAN_DIRECTOR_ID\",\n    \"value\": \"000000000000000\"\n}"
-								}
-							]
-						},
-						{
-							"name": "Delete Director ID & Other Jurisdiction ID",
-							"id": "181c8ac4-cba5-4955-b326-fb120b6fd883",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "DELETE",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "bearer {{token}}",
-										"type": "text"
-									},
-									{
-										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									},
-									{
-										"key": "Cookie",
-										"value": "XSRF-TOKEN=e2b65e10-fa1f-43a1-8974-f7a37103a940; api_uat_bgl360_session_id=65F3F440F921E57B59B7F493BAF2B022-n2",
-										"type": "text",
-										"disabled": true
-									}
-								],
-								"url": "{{baseUrl}}/contacts/{{contactId}}/ids/{{id}}",
-								"description": "StartFragment\n\nDelete one individual contact id (e.g. Director ID).\n\nEndFragment"
-							},
-							"response": [
-								{
-									"id": "0d451932-4cbf-46cf-9dfe-73f5856afc8a",
-									"name": "200 - Delete ID",
-									"originalRequest": {
-										"method": "DELETE",
-										"header": [
-											{
-												"key": "Authorization",
-												"value": "bearer {{token}}",
-												"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
-											},
-											{
-												"key": "Content-Type",
-												"value": "application/json"
-											}
-										],
-										"url": "{{baseUrl}}/contacts/{{contactId}}/ids/{{id}}"
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Date",
-											"value": "Mon, 27 Apr 2020 23:54:02 GMT"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json;charset=UTF-8"
-										},
-										{
-											"key": "Transfer-Encoding",
-											"value": "chunked"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Server",
-											"value": "nginx"
-										},
-										{
-											"key": "X-Rate-Daily-Limit-Remaining",
-											"value": "-1"
-										},
-										{
-											"key": "vary",
-											"value": "accept-encoding"
-										},
-										{
-											"key": "Content-Encoding",
-											"value": "gzip"
-										},
-										{
-											"key": "X-Content-Type-Options",
-											"value": "nosniff"
-										},
-										{
-											"key": "Content-Security-Policy",
-											"value": "frame-ancestors 'self' uat.sf360.com.au"
-										},
-										{
-											"key": "X-Frame-Options",
-											"value": "ALLOW-FROM https://uat.sf360.com.au"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"directorId\": \"4421\",\n    \"status\": \"DELETED\"\n}"
 								}
 							]
 						}
