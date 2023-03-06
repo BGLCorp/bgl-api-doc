@@ -4067,11 +4067,7 @@
 							},
 							"request": {
 								"auth": {
-									"type": "oauth2",
-									"oauth2": {
-										"accessToken": "fbcbcf19-54a7-4ddb-8416-f68eeb6f9b59",
-										"tokenType": "bearer"
-									}
+									"type": "noauth"
 								},
 								"method": "POST",
 								"header": [
