@@ -7636,7 +7636,7 @@
 											}
 										],
 										"url": {
-											"raw": "{{baseUrl}}/companies/:companyId/officers?offset={{offset}}&limit={{limit}}",
+											"raw": "{{baseUrl}}/companies/:companyId/officers?offset={{offset}}&limit={{limit}}&all={{showallofficers}}",
 											"host": [
 												"{{baseUrl}}"
 											],
@@ -7653,14 +7653,16 @@
 												{
 													"key": "limit",
 													"value": "{{limit}}"
+												},
+												{
+													"key": "all",
+													"value": "{{showallofficers}}"
 												}
 											],
 											"variable": [
 												{
-													"id": "303938d6-768e-4506-9dc8-e037f4b97a22",
 													"key": "companyId",
-													"value": "{{companyId}}",
-													"type": "string"
+													"value": "{{companyId}}"
 												}
 											]
 										},
