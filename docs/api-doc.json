@@ -6690,7 +6690,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "    {  \"addressType\": \"Postal Address\",\r\n        \"effectiveDate\": \"2022-08-25\",\r\n        \"addressId\": 1675110\r\n        }",
+											"raw": "    {  \"addressType\": \"POSTAL_ADDRESS\",\r\n        \"effectiveDate\": \"2022-08-25\",\r\n        \"addressId\": 1675110\r\n        }",
 											"options": {
 												"raw": {
 													"language": "json"
