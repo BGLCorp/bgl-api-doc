@@ -3962,6 +3962,165 @@
 									"body": "{\n    \"trialBalance\": {\n        \"fundId\": \"8a9c9e744ebc893a014ebd429dea000c\",\n        \"start\": \"2017-06-30T14:00:00Z\",\n        \"end\": \"2018-06-30T13:59:59Z\",\n        \"data\": [\n            {\n                \"accountClass\": \"N\",\n                \"accountCode\": \"24700\",\n                \"accountType\": {\n                    \"label\": \"Income\",\n                    \"minCode\": 20000,\n                    \"maxCode\": 29999,\n                    \"name\": \"Income\"\n                },\n                \"name\": \"Changes in Market Values of Investments\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 79759.59,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 79759.59\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"28000\",\n                \"accountType\": {\n                    \"label\": \"Income\",\n                    \"minCode\": 20000,\n                    \"maxCode\": 29999,\n                    \"name\": \"Income\"\n                },\n                \"name\": \"Property Income\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"28000/5smithst\",\n                \"accountType\": {\n                    \"label\": \"Income\",\n                    \"minCode\": 20000,\n                    \"maxCode\": 29999,\n                    \"name\": \"Income\"\n                },\n                \"name\": \"5 Smith Street, Collingwood\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 7765.75,\n                \"balancePrev\": -7765.75\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"33400\",\n                \"accountType\": {\n                    \"label\": \"Expense\",\n                    \"minCode\": 30000,\n                    \"maxCode\": 47999,\n                    \"name\": \"Expense\"\n                },\n                \"name\": \"Depreciation\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"33400/5smithst\",\n                \"accountType\": {\n                    \"label\": \"Expense\",\n                    \"minCode\": 30000,\n                    \"maxCode\": 47999,\n                    \"name\": \"Expense\"\n                },\n                \"name\": \"5 Smith Street, Collingwood\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 37500,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 37500\n            },\n            {\n                \"accountClass\": \"N\",\n                \"accountCode\": \"48500\",\n                \"accountType\": {\n                    \"label\": \"Allocation\",\n                    \"minCode\": 48000,\n                    \"maxCode\": 49999,\n                    \"name\": \"Allocation\"\n                },\n                \"name\": \"Income Tax Expense\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 7338.91,\n                \"balancePrev\": -7338.91\n            },\n            {\n                \"accountClass\": \"N\",\n                \"accountCode\": \"49000\",\n                \"accountType\": {\n                    \"label\": \"Allocation\",\n                    \"minCode\": 48000,\n                    \"maxCode\": 49999,\n                    \"name\": \"Allocation\"\n                },\n                \"name\": \"Profit/Loss Allocation Account\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 82527.32,\n                \"balancePrev\": -82527.32\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"50010\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"Opening Balance\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"50010/SIMHOM00003A\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Opening Balance) Simpson, Homer - Accumulation (Accumulation)\",\n                \"units\": null,\n                \"debits\": 0,\n                \"credits\": 717158.55,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 717158.55,\n                \"balancePrev\": -717158.55\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"50010/SIMMAR00002A\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Opening Balance) Simpson, Marge - Accumulation (Accumulation)\",\n                \"units\": null,\n                \"debits\": 0,\n                \"credits\": 478105.7,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 478105.7,\n                \"balancePrev\": -478105.7\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"52420\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"Contributions\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"52420/SIMHOM00003A\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Contributions) Simpson, Homer - Accumulation (Accumulation)\",\n                \"units\": null,\n                \"debits\": 0,\n                \"credits\": 501000,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 501000,\n                \"balancePrev\": -501000\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"53100\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"Share of Profit/(Loss)\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"53100/SIMHOM00003A\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Share of Profit/(Loss)) Simpson, Homer - Accumulation (Accumulation)\",\n                \"units\": null,\n                \"debits\": 28073.8,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 28073.8,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 28073.8\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"53100/SIMHOM00010P\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Share of Profit/(Loss)) Simpson, Homer - Pension (Market Linked)\",\n                \"units\": null,\n                \"debits\": 13652.52,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 13652.52,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 13652.52\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"53100/SIMHOM00013P\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Share of Profit/(Loss)) Simpson, Homer - Pension (Account Based Pension)\",\n                \"units\": null,\n                \"debits\": 55982.85,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 55982.85,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 55982.85\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"53100/SIMMAR00002A\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Share of Profit/(Loss)) Simpson, Marge - Accumulation (Accumulation)\",\n                \"units\": null,\n                \"debits\": 8758.73,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 8758.73,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 8758.73\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"53100/SIMMAR00010P\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Share of Profit/(Loss)) Simpson, Marge - Pension (Transition to Retirement Pension)\",\n                \"units\": null,\n                \"debits\": 15168.5,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 15168.5,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 15168.5\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"53330\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"Income Tax\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"53330/SIMHOM00003A\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Income Tax) Simpson, Homer - Accumulation (Accumulation)\",\n                \"units\": null,\n                \"debits\": 0,\n                \"credits\": 3863.14,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 3863.14,\n                \"balancePrev\": -3863.14\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"53330/SIMMAR00002A\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Income Tax) Simpson, Marge - Accumulation (Accumulation)\",\n                \"units\": null,\n                \"debits\": 0,\n                \"credits\": 1907.03,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 1907.03,\n                \"balancePrev\": -1907.03\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"53920\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"Life Insurance Premiums\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"53920/SIMHOM00003A\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Life Insurance Premiums) Simpson, Homer - Accumulation (Accumulation)\",\n                \"units\": null,\n                \"debits\": 750,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 750,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 750\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"54160\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"Pensions Paid\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"54160/SIMHOM00010P\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Pensions Paid) Simpson, Homer - Pension (Market Linked)\",\n                \"units\": null,\n                \"debits\": 7000,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 7000,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 7000\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"54500\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"Benefits Paid/Transfers Out\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"54500/SIMHOM00003A\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Benefits Paid/Transfers Out) Simpson, Homer - Accumulation (Accumulation)\",\n                \"units\": null,\n                \"debits\": 1500,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 1500,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 1500\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"54500/SIMMAR00002A\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Benefits Paid/Transfers Out) Simpson, Marge - Accumulation (Accumulation)\",\n                \"units\": null,\n                \"debits\": 2500,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 2500,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 2500\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"56100\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"Internal Transfers In\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"56100/SIMHOM00010P\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Internal Transfers In) Simpson, Homer - Pension (Market Linked)\",\n                \"units\": null,\n                \"debits\": 0,\n                \"credits\": 120000,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 120000,\n                \"balancePrev\": -120000\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"56100/SIMHOM00013P\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Internal Transfers In) Simpson, Homer - Pension (Account Based Pension)\",\n                \"units\": null,\n                \"debits\": 0,\n                \"credits\": 1145076.07,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 1145076.07,\n                \"balancePrev\": -1145076.07\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"56100/SIMMAR00010P\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Internal Transfers In) Simpson, Marge - Pension (Transition to Retirement Pension)\",\n                \"units\": null,\n                \"debits\": 0,\n                \"credits\": 300000,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 300000,\n                \"balancePrev\": -300000\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"57100\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"Internal Transfers Out\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"57100/SIMHOM00003A\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Internal Transfers Out) Simpson, Homer - Accumulation (Accumulation)\",\n                \"units\": null,\n                \"debits\": 1265076.07,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 1265076.07,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 1265076.07\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"57100/SIMMAR00002A\",\n                \"accountType\": {\n                    \"label\": \"Member\",\n                    \"minCode\": 50000,\n                    \"maxCode\": 59999,\n                    \"name\": \"Member\"\n                },\n                \"name\": \"(Internal Transfers Out) Simpson, Marge - Accumulation (Accumulation)\",\n                \"units\": null,\n                \"debits\": 300000,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 300000,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 300000\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"60400\",\n                \"accountType\": {\n                    \"label\": \"Asset - Bank\",\n                    \"minCode\": 60400,\n                    \"maxCode\": 60800,\n                    \"name\": \"AssetBank\"\n                },\n                \"name\": \"Bank Accounts\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"60400/bank\",\n                \"accountType\": {\n                    \"label\": \"Asset - Bank\",\n                    \"minCode\": 60400,\n                    \"maxCode\": 60800,\n                    \"name\": \"AssetBank\"\n                },\n                \"name\": \"CBA BANK\",\n                \"units\": null,\n                \"debits\": 271108.47,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 271108.47,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 271108.47\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"60800\",\n                \"accountType\": {\n                    \"label\": \"Asset - Bank\",\n                    \"minCode\": 60400,\n                    \"maxCode\": 60800,\n                    \"name\": \"AssetBank\"\n                },\n                \"name\": \"Term Deposits\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"60800/TD001\",\n                \"accountType\": {\n                    \"label\": \"Asset - Bank\",\n                    \"minCode\": 60400,\n                    \"maxCode\": 60800,\n                    \"name\": \"AssetBank\"\n                },\n                \"name\": \"TD Macquarie\",\n                \"units\": null,\n                \"debits\": 116000,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 116000,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 116000\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"77200\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"Real Estate Properties ( Australian - Residential)\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"77200/5smithst\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"5 Smith Street, Collingwood\",\n                \"units\": 1,\n                \"debits\": 600000,\n                \"credits\": 0,\n                \"unitsPrev\": 1,\n                \"debitsPrev\": 600000,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 600000\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"77600\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"Shares in Listed Companies (Australian)\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"77600/01OO.L\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"NORDIC INVESTMENT BANK 5.25% BDS 26/11/2019 GBP(VAR)\",\n                \"units\": 1000,\n                \"debits\": 10000,\n                \"credits\": 0,\n                \"unitsPrev\": 1000,\n                \"debitsPrev\": 10000,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 10000\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"77600/A2M.AX\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"The A2 Milk Company Limited\",\n                \"units\": 100000,\n                \"debits\": 175000,\n                \"credits\": 0,\n                \"unitsPrev\": 100000,\n                \"debitsPrev\": 175000,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 175000\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"77600/CBA.AX\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"Commonwealth Bank Of Australia.\",\n                \"units\": 3159,\n                \"debits\": 234934.83,\n                \"credits\": 0,\n                \"unitsPrev\": 3159,\n                \"debitsPrev\": 234934.83,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 234934.83\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"77600/CLH.AX\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"Collection House Limited\",\n                \"units\": 20818,\n                \"debits\": 22899.8,\n                \"credits\": 0,\n                \"unitsPrev\": 20818,\n                \"debitsPrev\": 22899.8,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 22899.8\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"77600/MQG.AX\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"Macquarie Group Limited\",\n                \"units\": 1589,\n                \"debits\": 109482.1,\n                \"credits\": 0,\n                \"unitsPrev\": 1589,\n                \"debitsPrev\": 109482.1,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 109482.1\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"77600/NAB.AX\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"National Australia Bank Limited\",\n                \"units\": 970,\n                \"debits\": 24667.1,\n                \"credits\": 0,\n                \"unitsPrev\": 970,\n                \"debitsPrev\": 24667.1,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 24667.1\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"77600/RRL.AX\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"Regis Resources Limited\",\n                \"units\": 40000,\n                \"debits\": 136800,\n                \"credits\": 0,\n                \"unitsPrev\": 40000,\n                \"debitsPrev\": 136800,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 136800\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"77600/TLS.AX\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"Telstra Corporation Limited.\",\n                \"units\": 10000,\n                \"debits\": 55600,\n                \"credits\": 0,\n                \"unitsPrev\": 10000,\n                \"debitsPrev\": 55600,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 55600\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"77600/TSE.AX\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"Transfield Services Limited\",\n                \"units\": 20000,\n                \"debits\": 21100,\n                \"credits\": 0,\n                \"unitsPrev\": 20000,\n                \"debitsPrev\": 21100,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 21100\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"77600/VOC.AX\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"Vocus Communications Limited\",\n                \"units\": 6667,\n                \"debits\": 56802.84,\n                \"credits\": 0,\n                \"unitsPrev\": 6667,\n                \"debitsPrev\": 56802.84,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 56802.84\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"77700\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"Shares in Listed Companies (Overseas)\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"77700/AAPL.NDQ2\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"Apple Inc.\",\n                \"units\": 100,\n                \"debits\": 12873.69,\n                \"credits\": 0,\n                \"unitsPrev\": 100,\n                \"debitsPrev\": 12873.69,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 12873.69\n            },\n            {\n                \"accountClass\": \"C\",\n                \"accountCode\": \"78200\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"Units in Listed Unit Trusts (Australian)\",\n                \"units\": 0,\n                \"debits\": 0,\n                \"credits\": 0,\n                \"unitsPrev\": 0,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 0\n            },\n            {\n                \"accountClass\": \"S\",\n                \"accountCode\": \"78200/CFM0404AU\",\n                \"accountType\": {\n                    \"label\": \"Investment\",\n                    \"minCode\": 70000,\n                    \"maxCode\": 79999,\n                    \"name\": \"Investment\"\n                },\n                \"name\": \"CFS WS Aust Share Fund Core\",\n                \"units\": 10000,\n                \"debits\": 13679,\n                \"credits\": 0,\n                \"unitsPrev\": 10000,\n                \"debitsPrev\": 13679,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 13679\n            },\n            {\n                \"accountClass\": \"N\",\n                \"accountCode\": \"84000\",\n                \"accountType\": {\n                    \"label\": \"Liability\",\n                    \"minCode\": 80000,\n                    \"maxCode\": 89999,\n                    \"name\": \"Liability\"\n                },\n                \"name\": \"GST Payable/Refundable\",\n                \"units\": null,\n                \"debits\": 0,\n                \"credits\": 617.85,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 617.85,\n                \"balancePrev\": -617.85\n            },\n            {\n                \"accountClass\": \"N\",\n                \"accountCode\": \"85000\",\n                \"accountType\": {\n                    \"label\": \"Liability\",\n                    \"minCode\": 80000,\n                    \"maxCode\": 89999,\n                    \"name\": \"Liability\"\n                },\n                \"name\": \"Income Tax Payable/Refundable\",\n                \"units\": null,\n                \"debits\": 0,\n                \"credits\": 3916.55,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 3916.55,\n                \"balancePrev\": -3916.55\n            },\n            {\n                \"accountClass\": \"N\",\n                \"accountCode\": \"89000\",\n                \"accountType\": {\n                    \"label\": \"Liability\",\n                    \"minCode\": 80000,\n                    \"maxCode\": 89999,\n                    \"name\": \"Liability\"\n                },\n                \"name\": \"Deferred Tax Liability/Asset\",\n                \"units\": null,\n                \"debits\": 8274.47,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 8274.47,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 8274.47\n            },\n            {\n                \"accountClass\": \"N\",\n                \"accountCode\": \"91000\",\n                \"accountType\": {\n                    \"label\": \"Unallocated\",\n                    \"minCode\": 90000,\n                    \"maxCode\": 99999,\n                    \"name\": \"Unallocated\"\n                },\n                \"name\": \"Bank Data Clearing Account\",\n                \"units\": null,\n                \"debits\": 0,\n                \"credits\": 25039.88,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 25039.88,\n                \"balancePrev\": -25039.88\n            },\n            {\n                \"accountClass\": \"N\",\n                \"accountCode\": \"94910\",\n                \"accountType\": {\n                    \"label\": \"Unallocated\",\n                    \"minCode\": 90000,\n                    \"maxCode\": 99999,\n                    \"name\": \"Unallocated\"\n                },\n                \"name\": \"Investment Movement Data Clearing Account\",\n                \"units\": null,\n                \"debits\": 61884,\n                \"credits\": 0,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 61884,\n                \"creditsPrev\": 0,\n                \"balancePrev\": 61884\n            },\n            {\n                \"accountClass\": \"N\",\n                \"accountCode\": \"99800\",\n                \"accountType\": {\n                    \"label\": \"Unallocated\",\n                    \"minCode\": 90000,\n                    \"maxCode\": 99999,\n                    \"name\": \"Unallocated\"\n                },\n                \"name\": \"Unspecified Data Clearing Account\",\n                \"units\": null,\n                \"debits\": 0,\n                \"credits\": 332884,\n                \"unitsPrev\": null,\n                \"debitsPrev\": 0,\n                \"creditsPrev\": 332884,\n                \"balancePrev\": -332884\n            }\n        ]\n    }\n}\n \n"
 								}
 							]
+						},
+						{
+							"name": "Report - Data Feed Reconciliation",
+							"id": "7936d7ae-76f6-4c27-bafc-1846c8fae9fb",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": true
+									},
+									{
+										"key": "Cookie",
+										"value": "XSRF-TOKEN=6c14cee7-a48f-4315-855b-06858fa1e559; api_uat_bgl360_session_id=322356DA97DD27E20696A053AFDB6C16-n1",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{baseUrl}}/sf/funds/:fundId/reports/dataFeedRec?start={{start}}&end={{end}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"sf",
+										"funds",
+										":fundId",
+										"reports",
+										"dataFeedRec"
+									],
+									"query": [
+										{
+											"key": "start",
+											"value": "{{start}}",
+											"description": "[REQUIRED] YYYY-MM-DD"
+										},
+										{
+											"key": "end",
+											"value": "{{end}}",
+											"description": "[REQUIRED] YYYY-MM-DD"
+										}
+									],
+									"variable": [
+										{
+											"key": "fundId",
+											"value": "{{fundId}}"
+										}
+									]
+								},
+								"description": "Allows you to retrieve all ledger transactions as well as raw data feed bank transactions to compare/reconcile/verify against the source.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- audit\n- smsf_partner\n    \n\n### Entities Supported\n\nThe following entityTypes are supported\n\n- SMSF\n- BillableTrust\n- BillableCompany\n- BillableIndividual\n    \n\nThe Data Feed Reconciliation report provides all ledger transactions and all raw data feed transactions for the specified date range.\n\nThis report allows the verification that the transactions on the ledger exist and reconcile with the transactions that were received directly from the data feed / bank.\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| fundId | Text | The Fund Identificaion Number. This is unique across all of Simple Fund 360. |\n| start | Date | yyyy-mm-dd |\n| end | Date | yyyy-mm-dd |\n| account | Array | see Account array below |\n\n**Account array**\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| tAccountId | String | The Account Code from the Chart of Accounts. Display Control Account code for Control Accounts. Display Sub-account code for sub-accounts. |\n| accountSummary | Object | See below |\n| ledgerSummary | Object | See below |\n| bankFeedSummary | Object | See below |\n| ledgerTransactions | Array | See below |\n| bankFeedTransactions | Array | See below |\n\n**accountSummary Object**\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| accountNumber | String | Bank account number |\n| accountType | String | AssetBank, LiabilityLRBA |\n| bsb | String | Bank, State, Branch |\n| code | String | Chart of Accounts sub code |\n| dataFeed | String | Data Feed - e.g. BGLBankDataService |\n| feedStartDate | Date | YYYY-MM-DD |\n| id | String | Chart of Accounts unique identifier |\n| name | String | Chart of Accounts name |\n| pcode | String | Chart of Accounts control code |\n\n**ledgerSummary Object**\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| closingBalance | Number | The Closing Balance in Simple Fund 360 based on the 'end' date parameter for the account.  <br>  <br>null indicates no value found in Simple Fund 360. |\n| closingBalanceCheck | Number | Calculated using openingBalance - totalCredits + totalDebits  <br>  <br>This field can be used to check against the returned closingBalance |\n| openingBalance | Number | The Opening Balance in Simple Fund 360 based on the 'start' date parameter for the account.  <br>  <br>null indicates no value found in Simple Fund 360. |\n| totalCredits | Number | The total of all Credit transactions in Simple Fund 360 based on the query parameters for the account |\n| totalDebits | Number | The total of all Debit transactions in Simple Fund 360 based on the query parameters for the account |\n\n**bankFeedSummary Object**\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| closingBalance | Number | The Closing Balance in Simple Fund 360 based on the 'end' date parameter for the account.  <br>  <br>null indicates no value found in bank feed database. |\n| closingBalanceCheck | Number | Calculated using openingBalance - totalCredits + totalDebits  <br>  <br>This field can be used to check against the returned closingBalance |\n| openingBalance | Number | The Opening Balance received directly from the bank based on the 'start' date parameter for the account.  <br>  <br>null indicates no value found in bank feed database. |\n| totalCredits | Number | The total of all Credit transactions in bank feed database based on the query parameters for the account |\n| totalDebits | Number | The total of all Debit transactions in bank feed database based on the query parameters for the account |\n\n**ledgerTransactions Array**\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| amount | Number | Amount of the transaction |\n| createdBy | String | User/System that created the transaction - e.g. \"bankFeedSaver\" is a system value |\n| description | String | Transaction description |\n| lastModifiedBy | String | User/System to last modify the transaction - e.g. \"bankFeedSaver\" is a system value |\n| source | String | How the transaction was created.  <br>  <br>SF360 - Manual entry  <br>  <br>BGLBank - Includes BGL Bank Data Feed and Macquarie Cash  <br>  <br>BANKSTATEMENTS - BankStatement.com.au  <br>  <br>CSVBank - Imported via CSV  <br>  <br>Banklink  <br>  <br>Xero |\n| transactionDate | Date | YYYY-MM-DD |\n| transactionId | String | Unique transaction identifier |\n\n**bankFeedTransactions Array**\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| amount | Number | Amount of the transaction |\n| createdBy | String | This will always return ‘BankFeedSystem’ as the data is created by the system and no manual intervention is allowed. |\n| description | String | Transaction description |\n| lastModifiedBy | String | This will always return ‘BankFeedSystem’ as the data is created by the system and no manual intervention is allowed. |\n| source | String | Where the transaction data came from  <br>  <br>ADL  <br>  <br>ANZ  <br>  <br>BBL  <br>  <br>BOQ  <br>  <br>BWAMI  <br>  <br>CBA  <br>  <br>DDH  <br>  <br>HUM  <br>  <br>MBL  <br>  <br>NAB  <br>  <br>SGB  <br>  <br>WBC |\n| transactionDate | Date | YYYY-MM-DD |\n| transactionId | String | Unique transaction identifier |"
+							},
+							"response": [
+								{
+									"id": "6550e1e5-2b2b-443a-bd4d-8359046456b9",
+									"name": "Data Feed Reconciliation",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/sf/funds/:fundId/reports/dataFeedRec?start={{start}}&end={{end}}",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"sf",
+												"funds",
+												":fundId",
+												"reports",
+												"dataFeedRec"
+											],
+											"query": [
+												{
+													"key": "start",
+													"value": "{{start}}"
+												},
+												{
+													"key": "end",
+													"value": "{{end}}"
+												}
+											],
+											"variable": [
+												{
+													"key": "fundId",
+													"value": null
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Wed, 18 Dec 2019 01:51:21 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json;charset=UTF-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Server",
+											"value": "nginx"
+										},
+										{
+											"key": "X-Rate-Daily-Limit-Remaining",
+											"value": "-1"
+										},
+										{
+											"key": "vary",
+											"value": "accept-encoding"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "frame-ancestors 'self' staging.sf360.com.au"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "ALLOW-FROM https://staging.sf360.com.au"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"dataFeedRec\": {\n        \"account\": [\n            {\n                \"accountSummary\": {\n                    \"accountNumber\": \"924012301\",\n                    \"accountType\": \"AssetBank\",\n                    \"bsb\": \"012012\",\n                    \"code\": \"ANZ924012301\",\n                    \"dataFeed\": \"BGLBankDataService\",\n                    \"feedStartDate\": \"2022-07-01\",\n                    \"id\": 222286977836,\n                    \"name\": \"ANZ\",\n                    \"pcode\": \"60400\"\n                },\n                \"bankFeedSummary\": {\n                    \"closingBalance\": null,\n                    \"closingBalanceCheck\": 458642.13,\n                    \"openingBalance\": -800,\n                    \"tAccountId\": null,\n                    \"totalCredits\": -40561.75,\n                    \"totalDebits\": 500003.88\n                },\n                \"bankFeedTransactions\": [\n                    {\n                        \"amount\": 500000,\n                        \"createdBy\": \"BankFeedSystem\",\n                        \"description\": \"TRANSFER\",\n                        \"lastModifiedBy\": \"BankFeedSystem\",\n                        \"source\": \"ANZ\",\n                        \"transactionDate\": \"2022-07-01\",\n                        \"transactionId\": \"2742222\"\n                    },\n                    {\n                        \"amount\": -40000,\n                        \"createdBy\": \"BankFeedSystem\",\n                        \"description\": \"TRANSFER COMMSEC WITHDRAWAL\",\n                        \"lastModifiedBy\": \"BankFeedSystem\",\n                        \"source\": \"ANZ\",\n                        \"transactionDate\": \"2022-07-12\",\n                        \"transactionId\": \"2899041\"\n                    },\n                    {\n                        \"amount\": -559.25,\n                        \"createdBy\": \"BankFeedSystem\",\n                        \"description\": \"ANZ INTERNET BANKING FUNDS TFER   ADVISOR FEE\",\n                        \"lastModifiedBy\": \"BankFeedSystem\",\n                        \"source\": \"ANZ\",\n                        \"transactionDate\": \"2022-07-15\",\n                        \"transactionId\": \"2899042\"\n                    },\n                    {\n                        \"amount\": 3.88,\n                        \"createdBy\": \"BankFeedSystem\",\n                        \"description\": \"CREDIT INTEREST\",\n                        \"lastModifiedBy\": \"BankFeedSystem\",\n                        \"source\": \"ANZ\",\n                        \"transactionDate\": \"2022-07-31\",\n                        \"transactionId\": \"2742223\"\n                    },\n                    {\n                        \"amount\": -2.5,\n                        \"createdBy\": \"BankFeedSystem\",\n                        \"description\": \"ACCOUNT SERVICING FEE\",\n                        \"lastModifiedBy\": \"BankFeedSystem\",\n                        \"source\": \"ANZ\",\n                        \"transactionDate\": \"2022-07-31\",\n                        \"transactionId\": \"2742224\"\n                    }\n                ],\n                \"ledgerSummary\": {\n                    \"closingBalance\": null,\n                    \"closingBalanceCheck\": 458642.13,\n                    \"openingBalance\": -800,\n                    \"tAccountId\": null,\n                    \"totalCredits\": -40561.75,\n                    \"totalDebits\": 500003.88\n                },\n                \"ledgerTransactions\": [\n                    {\n                        \"amount\": 500000,\n                        \"createdBy\": \"bankFeedSaver\",\n                        \"description\": \"TRANSFER\",\n                        \"lastModifiedBy\": \"bankFeedSaver\",\n                        \"source\": \"BGLBank\",\n                        \"transactionDate\": \"2022-07-01\",\n                        \"transactionId\": \"2742222\"\n                    },\n                    {\n                        \"amount\": -40000,\n                        \"createdBy\": \"bankFeedSaver\",\n                        \"description\": \"TRANSFER COMMSEC WITHDRAWAL\",\n                        \"lastModifiedBy\": \"bankFeedSaver\",\n                        \"source\": \"BGLBank\",\n                        \"transactionDate\": \"2022-07-12\",\n                        \"transactionId\": \"2899041\"\n                    },\n                    {\n                        \"amount\": -559.25,\n                        \"createdBy\": \"bankFeedSaver\",\n                        \"description\": \"ANZ INTERNET BANKING FUNDS TFER   ADVISOR FEE\",\n                        \"lastModifiedBy\": \"bankFeedSaver\",\n                        \"source\": \"BGLBank\",\n                        \"transactionDate\": \"2022-07-15\",\n                        \"transactionId\": \"2899042\"\n                    },\n                    {\n                        \"amount\": 3.88,\n                        \"createdBy\": \"bankFeedSaver\",\n                        \"description\": \"CREDIT INTEREST\",\n                        \"lastModifiedBy\": \"bankFeedSaver\",\n                        \"source\": \"BGLBank\",\n                        \"transactionDate\": \"2022-07-31\",\n                        \"transactionId\": \"2742223\"\n                    },\n                    {\n                        \"amount\": -2.5,\n                        \"createdBy\": \"bankFeedSaver\",\n                        \"description\": \"ACCOUNT SERVICING FEE\",\n                        \"lastModifiedBy\": \"bankFeedSaver\",\n                        \"source\": \"BGLBank\",\n                        \"transactionDate\": \"2022-07-31\",\n                        \"transactionId\": \"2742224\"\n                    }\n                ],\n                \"tAccountId\": 222286977836\n            }\n        ],\n        \"end\": \"2023-06-30T00:00:00Z\",\n        \"fundId\": \"8a8bd53685e14fb40185e15d1ce90000\",\n        \"start\": \"2022-07-01T00:00:00Z\"\n    }\n}"
+								}
+							]
 						}
 					],
 					"id": "275f9cc9-3bf8-403d-b7ed-7b3e098726d5",
@@ -6558,7 +6717,7 @@
 												}
 											]
 										},
-										"description": "Create address for a Contact.\n\n**Request Body:**\n\n|   <br>  <br>**Key**  <br>  <br> |   <br>  <br>**Datatype**  <br>  <br> |   <br>  <br>**Mandatory**  <br>  <br> |   <br>  <br>**Comments**  <br>  <br> |\n| --- | --- | --- | --- |\n|   <br>  <br>addressType  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br>Address Types:  <br>  <br>\\- RESIDENTIAL_ADDRESS  <br>\\- ALTERNATE_ADDRESS  <br>\\- BUSINESS_ADDRESS  <br>\\- CORRESPONDENCE_ADDRESS  <br>\\- POSTAL_ADDRESS  <br>\\- SERVICE_ADDRESS  <br>\\- OTHER_ADDRESS  <br>  <br> |\n|   <br>  <br>effectiveDate  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br> |\n|   <br>  <br>addressId  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br>Needs to be an existing addressId  <br>  <br> |\n\n**Response Body:**\n\n|   <br>  <br>**Key**  <br>  <br> |   <br>  <br>**Datatype**  <br>  <br> |   <br>  <br>**Mandatory**  <br>  <br> |   <br>  <br>**Comments**  <br>  <br> |\n| --- | --- | --- | --- |\n|   <br>  <br>id  <br>  <br> |   <br>  <br>number  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br>This is the addressTypeId |\n|   <br>  <br>addressType  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br> |\n|   <br>  <br>effectiveDate  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br> |\n|   <br>  <br>addressId  <br>  <br> |   <br>  <br>number  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br> |"
+										"description": "Create address for a Contact.\n\n**Request Body:**\n\n|   <br>  <br>**Key**  <br>  <br> |   <br>  <br>**Datatype**  <br>  <br> |   <br>  <br>**Mandatory**  <br>  <br> |   <br>  <br>**Comments**  <br>  <br> |\n| --- | --- | --- | --- |\n|   <br>  <br>addressType  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br>Address Types:  <br>  <br>\\- RESIDENTIAL_ADDRESS  <br>\\- ALTERNATE_ADDRESS  <br>\\- BUSINESS_ADDRESS  <br>\\- CORRESPONDENCE_ADDRESS  <br>\\- POSTAL_ADDRESS  <br>\\- SERVICE_ADDRESS  <br>\\- OTHER  <br>  <br> |\n|   <br>  <br>effectiveDate  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br> |\n|   <br>  <br>addressId  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br>Needs to be an existing addressId  <br>  <br> |\n\n**Response Body:**\n\n|   <br>  <br>**Key**  <br>  <br> |   <br>  <br>**Datatype**  <br>  <br> |   <br>  <br>**Mandatory**  <br>  <br> |   <br>  <br>**Comments**  <br>  <br> |\n| --- | --- | --- | --- |\n|   <br>  <br>id  <br>  <br> |   <br>  <br>number  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br>This is the addressTypeId |\n|   <br>  <br>addressType  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br> |\n|   <br>  <br>effectiveDate  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br> |\n|   <br>  <br>addressId  <br>  <br> |   <br>  <br>number  <br>  <br> |   <br>  <br>Yes  <br>  <br> |   <br>  <br> |"
 									},
 									"response": [
 										{
@@ -7295,229 +7454,6 @@
 											"cookie": [],
 											"responseTime": null,
 											"body": "{\n    \"directorId\": \"4421\",\n    \"status\": \"DELETED\"\n}"
-										}
-									]
-								},
-								{
-									"name": "List of Contact Passports",
-									"id": "211fa0fa-a5d1-4e04-9efa-93ed7c7d0ee9",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [
-											{
-												"key": "Authorization",
-												"value": "bearer {{token}}",
-												"type": "text"
-											}
-										],
-										"url": "{{baseUrl}}/cas/contacts/{{contactId}}/passports",
-										"description": "Retrieves passport details for specified Contact.\n\n### **Response Body**\n\n|   <br>  <br>**Key**  <br>  <br> |   <br>  <br>**Type**  <br>  <br> |   <br>  <br>**Comments**  <br>  <br> |\n| --- | --- | --- |\n|   <br>  <br>id  <br>  <br> |   <br>  <br>number  <br>  <br> |   <br>  <br> |\n|   <br>  <br>value  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |\n|   <br>  <br>country  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |\n|   <br>  <br>issueDate  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |\n|   <br>  <br>expiryDate  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |"
-									},
-									"response": [
-										{
-											"id": "ec33d50f-6d5a-4bdc-a94f-a6848ddd894e",
-											"name": "List of Contact Passports",
-											"originalRequest": {
-												"method": "GET",
-												"header": [
-													{
-														"key": "Authorization",
-														"value": "bearer {{token}}",
-														"type": "text"
-													}
-												],
-												"url": "{{baseUrl}}/cas/contacts/{{contactId}}/passports"
-											},
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"name": "Content-Type",
-													"value": "application/json",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"responseTime": null,
-											"body": "[\n    {\n        \"country\": \"AUSTRALIA\",\n        \"expiryDate\": \"2030-01-01\",\n        \"id\": 3890,\n        \"issueDate\": \"2020-01-01\",\n        \"value\": \"M1234567789\"\n    },\n    {\n        \"country\": \"AUSTRALIA\",\n        \"expiryDate\": \"2020-01-01\",\n        \"id\": 3892,\n        \"issueDate\": \"2010-01-01\",\n        \"value\": \"P999333555\"\n    }\n]"
-										}
-									]
-								},
-								{
-									"name": "Create Contact Passport",
-									"id": "4376616b-6590-487c-afa3-793dae1de621",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "POST",
-										"header": [
-											{
-												"key": "Authorization",
-												"value": "bearer {{token}}",
-												"type": "text"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "\r\n    {\r\n        \"country\": \"AUSTRALIA\",\r\n        \"expiryDate\": \"2030-01-01\",\r\n        \"issueDate\": \"2020-01-01\",\r\n        \"value\": \"M123456789\"\r\n    }\r\n",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": "{{baseUrl}}/cas/contacts/{{contactId}}/passports",
-										"description": "Create a set of passport details for specified Contact.\n\n### **Request Body**\n\n|   <br>  <br>**Key**  <br>  <br> |   <br>  <br>**Type**  <br>  <br> |   <br>  <br>**Comments**  <br>  <br> |\n| --- | --- | --- |\n|   <br>  <br>value  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |\n|   <br>  <br>country  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |\n|   <br>  <br>issueDate  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |\n|   <br>  <br>expiryDate  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |"
-									},
-									"response": [
-										{
-											"id": "b7a474e5-5492-4c92-823a-cd4fdd5bf86e",
-											"name": "Create Contact Passport",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Authorization",
-														"value": "bearer {{token}}",
-														"type": "text"
-													}
-												],
-												"url": "{{baseUrl}}/cas/contacts/{{contactId}}/passports"
-											},
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"name": "Content-Type",
-													"value": "application/json",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"responseTime": null,
-											"body": "[\n    {\n        \"country\": \"AUSTRALIA\",\n        \"expiryDate\": \"2030-01-01\",\n        \"id\": 3890,\n        \"issueDate\": \"2020-01-01\",\n        \"value\": \"M1234567789\"\n    }\n]"
-										}
-									]
-								},
-								{
-									"name": "Update Contact Passport",
-									"id": "6134f8bf-a2e5-4ac3-b164-8d2862998982",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "PUT",
-										"header": [
-											{
-												"key": "Authorization",
-												"value": "bearer {{token}}",
-												"type": "text"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "\r\n    {\r\n         \"id\": 3892,\r\n        \"country\": \"AUSTRALIA\",\r\n        \"expiryDate\": \"2020-01-01\",\r\n        \"issueDate\": \"2010-01-01\",\r\n        \"value\": \"P999333555\"\r\n    }\r\n",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": "{{baseUrl}}/cas/contacts/{{contactId}}/passports/{{passportId}}",
-										"description": "Allows you to update passport details for a contact.\n\n### **Request Body**\n\n|   <br>  <br>**Key**  <br>  <br> |   <br>  <br>**Type**  <br>  <br> |   <br>  <br>**Comments**  <br>  <br> |\n| --- | --- | --- |\n|   <br>  <br>id  <br>  <br> |   <br>  <br>number  <br>  <br> |   <br>  <br> |\n|   <br>  <br>value  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |\n|   <br>  <br>country  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |\n|   <br>  <br>issueDate  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |\n|   <br>  <br>expiryDate  <br>  <br> |   <br>  <br>string  <br>  <br> |   <br>  <br> |"
-									},
-									"response": [
-										{
-											"id": "d44872ba-a287-4a65-94cf-c2be42d631d7",
-											"name": "Update Contact Passport",
-											"originalRequest": {
-												"method": "PUT",
-												"header": [
-													{
-														"key": "Authorization",
-														"value": "bearer {{token}}",
-														"type": "text"
-													}
-												],
-												"url": "{{baseUrl}}/cas/contacts/{{contactId}}/passports"
-											},
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"name": "Content-Type",
-													"value": "application/json",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"responseTime": null,
-											"body": "{\n    \"country\": \"AUSTRALIA\",\n    \"expiryDate\": \"2020-01-01\",\n    \"id\": 3891,\n    \"issueDate\": \"2010-01-01\",\n    \"value\": \"P999333555\"\n}"
-										}
-									]
-								},
-								{
-									"name": "Delete Contact Passport",
-									"id": "3ddc6d0d-0e8f-483f-b40d-95f7af790661",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "DELETE",
-										"header": [
-											{
-												"key": "Authorization",
-												"value": "bearer {{token}}",
-												"type": "text"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": "{{baseUrl}}/cas/contacts/{{contactId}}/passports/{{passportId}}",
-										"description": "Delete a passport record for specified Contact."
-									},
-									"response": [
-										{
-											"id": "050395db-51c1-43ed-9645-a2a8d10cbe2d",
-											"name": "Delete Contact Passport",
-											"originalRequest": {
-												"method": "DELETE",
-												"header": [
-													{
-														"key": "Authorization",
-														"value": "bearer {{token}}",
-														"type": "text"
-													}
-												],
-												"url": "{{baseUrl}}/cas/contacts/{{contactId}}/passports"
-											},
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"name": "Content-Type",
-													"value": "application/json",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"responseTime": null,
-											"body": "{\n    \"status\": \"DELETED\"\n}"
 										}
 									]
 								}
@@ -14406,167 +14342,7 @@
 		},
 		{
 			"name": "Coming Soon",
-			"item": [
-				{
-					"name": "Report - Data Feed Reconciliation",
-					"id": "7936d7ae-76f6-4c27-bafc-1846c8fae9fb",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer {{token}}"
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"disabled": true
-							},
-							{
-								"key": "Cookie",
-								"value": "XSRF-TOKEN=6c14cee7-a48f-4315-855b-06858fa1e559; api_uat_bgl360_session_id=322356DA97DD27E20696A053AFDB6C16-n1",
-								"disabled": true
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "{{baseUrl}}/sf/funds/:fundId/reports/dataFeedRec?start={{start}}&end={{end}}",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"sf",
-								"funds",
-								":fundId",
-								"reports",
-								"dataFeedRec"
-							],
-							"query": [
-								{
-									"key": "start",
-									"value": "{{start}}",
-									"description": "[REQUIRED] YYYY-MM-DD"
-								},
-								{
-									"key": "end",
-									"value": "{{end}}",
-									"description": "[REQUIRED] YYYY-MM-DD"
-								}
-							],
-							"variable": [
-								{
-									"key": "fundId",
-									"value": "{{fundId}}"
-								}
-							]
-						},
-						"description": "Allows you to retrieve all ledger transactions as well as raw data feed bank transactions to compare/reconcile/verify against the source.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- audit\n- smsf_partner\n    \n\n### Entities Supported\n\nThe following entityTypes are supported\n\n- SMSF\n- BillableTrust\n- BillableCompany\n- BillableIndividual\n    \n\nThe Data Feed Reconciliation report provides all ledger transactions and all raw data feed transactions for the specified date range.\n\nThis report allows the verification that the transactions on the ledger exist and reconcile with the transactions that were received directly from the data feed / bank.\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| fundId | Text | The Fund Identificaion Number. This is unique across all of Simple Fund 360. |\n| start | Date | yyyy-mm-dd |\n| end | Date | yyyy-mm-dd |\n| account | Array | see Account array below |\n\n**Account array**\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| tAccountId | String | The Account Code from the Chart of Accounts. Display Control Account code for Control Accounts. Display Sub-account code for sub-accounts. |\n| accountSummary | Object | See below |\n| ledgerSummary | Object | See below |\n| bankFeedSummary | Object | See below |\n| ledgerTransactions | Array | See below |\n| bankFeedTransactions | Array | See below |\n\n**accountSummary Object**\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| accountNumber | String | Bank account number |\n| accountType | String | AssetBank, LiabilityLRBA |\n| bsb | String | Bank, State, Branch |\n| code | String | Chart of Accounts sub code |\n| dataFeed | String | Data Feed - e.g. BGLBankDataService |\n| feedStartDate | Date | YYYY-MM-DD |\n| id | String | Chart of Accounts unique identifier |\n| name | String | Chart of Accounts name |\n| pcode | String | Chart of Accounts control code |\n\n**ledgerSummary Object**\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| closingBalance | Number | The Closing Balance in Simple Fund 360 based on the 'end' date parameter for the account.  <br>  <br>null indicates no value found in Simple Fund 360. |\n| closingBalanceCheck | Number | Calculated using openingBalance - totalCredits + totalDebits  <br>  <br>This field can be used to check against the returned closingBalance |\n| openingBalance | Number | The Opening Balance in Simple Fund 360 based on the 'start' date parameter for the account.  <br>  <br>null indicates no value found in Simple Fund 360. |\n| totalCredits | Number | The total of all Credit transactions in Simple Fund 360 based on the query parameters for the account |\n| totalDebits | Number | The total of all Debit transactions in Simple Fund 360 based on the query parameters for the account |\n\n**bankFeedSummary Object**\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| closingBalance | Number | The Closing Balance in Simple Fund 360 based on the 'end' date parameter for the account.  <br>  <br>null indicates no value found in bank feed database. |\n| closingBalanceCheck | Number | Calculated using openingBalance - totalCredits + totalDebits  <br>  <br>This field can be used to check against the returned closingBalance |\n| openingBalance | Number | The Opening Balance received directly from the bank based on the 'start' date parameter for the account.  <br>  <br>null indicates no value found in bank feed database. |\n| totalCredits | Number | The total of all Credit transactions in bank feed database based on the query parameters for the account |\n| totalDebits | Number | The total of all Debit transactions in bank feed database based on the query parameters for the account |\n\n**ledgerTransactions Array**\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| amount | Number | Amount of the transaction |\n| createdBy | String | User/System that created the transaction - e.g. \"bankFeedSaver\" is a system value |\n| description | String | Transaction description |\n| lastModifiedBy | String | User/System to last modify the transaction - e.g. \"bankFeedSaver\" is a system value |\n| source | String | How the transaction was created.  <br>  <br>SF360 - Manual entry  <br>  <br>BGLBank - Includes BGL Bank Data Feed and Macquarie Cash  <br>  <br>BANKSTATEMENTS - BankStatement.com.au  <br>  <br>CSVBank - Imported via CSV  <br>  <br>Banklink  <br>  <br>Xero |\n| transactionDate | Date | YYYY-MM-DD |\n| transactionId | String | Unique transaction identifier |\n\n**bankFeedTransactions Array**\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| amount | Number | Amount of the transaction |\n| createdBy | String | This will always return ‘BankFeedSystem’ as the data is created by the system and no manual intervention is allowed. |\n| description | String | Transaction description |\n| lastModifiedBy | String | This will always return ‘BankFeedSystem’ as the data is created by the system and no manual intervention is allowed. |\n| source | String | Where the transaction data came from  <br>  <br>ADL  <br>  <br>ANZ  <br>  <br>BBL  <br>  <br>BOQ  <br>  <br>BWAMI  <br>  <br>CBA  <br>  <br>DDH  <br>  <br>HUM  <br>  <br>MBL  <br>  <br>NAB  <br>  <br>SGB  <br>  <br>WBC |\n| transactionDate | Date | YYYY-MM-DD |\n| transactionId | String | Unique transaction identifier |"
-					},
-					"response": [
-						{
-							"id": "6550e1e5-2b2b-443a-bd4d-8359046456b9",
-							"name": "Data Feed Reconciliation",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "bearer {{token}}",
-										"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
-									}
-								],
-								"url": {
-									"raw": "{{baseUrl}}/sf/funds/:fundId/reports/dataFeedRec?start={{start}}&end={{end}}",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"sf",
-										"funds",
-										":fundId",
-										"reports",
-										"dataFeedRec"
-									],
-									"query": [
-										{
-											"key": "start",
-											"value": "{{start}}"
-										},
-										{
-											"key": "end",
-											"value": "{{end}}"
-										}
-									],
-									"variable": [
-										{
-											"key": "fundId",
-											"value": null
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Date",
-									"value": "Wed, 18 Dec 2019 01:51:21 GMT"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json;charset=UTF-8"
-								},
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Server",
-									"value": "nginx"
-								},
-								{
-									"key": "X-Rate-Daily-Limit-Remaining",
-									"value": "-1"
-								},
-								{
-									"key": "vary",
-									"value": "accept-encoding"
-								},
-								{
-									"key": "Content-Encoding",
-									"value": "gzip"
-								},
-								{
-									"key": "X-Content-Type-Options",
-									"value": "nosniff"
-								},
-								{
-									"key": "Content-Security-Policy",
-									"value": "frame-ancestors 'self' staging.sf360.com.au"
-								},
-								{
-									"key": "X-Frame-Options",
-									"value": "ALLOW-FROM https://staging.sf360.com.au"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"dataFeedRec\": {\n        \"account\": [\n            {\n                \"accountSummary\": {\n                    \"accountNumber\": \"924012301\",\n                    \"accountType\": \"AssetBank\",\n                    \"bsb\": \"012012\",\n                    \"code\": \"ANZ924012301\",\n                    \"dataFeed\": \"BGLBankDataService\",\n                    \"feedStartDate\": \"2022-07-01\",\n                    \"id\": 222286977836,\n                    \"name\": \"ANZ\",\n                    \"pcode\": \"60400\"\n                },\n                \"bankFeedSummary\": {\n                    \"closingBalance\": null,\n                    \"closingBalanceCheck\": 458642.13,\n                    \"openingBalance\": -800,\n                    \"tAccountId\": null,\n                    \"totalCredits\": -40561.75,\n                    \"totalDebits\": 500003.88\n                },\n                \"bankFeedTransactions\": [\n                    {\n                        \"amount\": 500000,\n                        \"createdBy\": \"BankFeedSystem\",\n                        \"description\": \"TRANSFER\",\n                        \"lastModifiedBy\": \"BankFeedSystem\",\n                        \"source\": \"ANZ\",\n                        \"transactionDate\": \"2022-07-01\",\n                        \"transactionId\": \"2742222\"\n                    },\n                    {\n                        \"amount\": -40000,\n                        \"createdBy\": \"BankFeedSystem\",\n                        \"description\": \"TRANSFER COMMSEC WITHDRAWAL\",\n                        \"lastModifiedBy\": \"BankFeedSystem\",\n                        \"source\": \"ANZ\",\n                        \"transactionDate\": \"2022-07-12\",\n                        \"transactionId\": \"2899041\"\n                    },\n                    {\n                        \"amount\": -559.25,\n                        \"createdBy\": \"BankFeedSystem\",\n                        \"description\": \"ANZ INTERNET BANKING FUNDS TFER   ADVISOR FEE\",\n                        \"lastModifiedBy\": \"BankFeedSystem\",\n                        \"source\": \"ANZ\",\n                        \"transactionDate\": \"2022-07-15\",\n                        \"transactionId\": \"2899042\"\n                    },\n                    {\n                        \"amount\": 3.88,\n                        \"createdBy\": \"BankFeedSystem\",\n                        \"description\": \"CREDIT INTEREST\",\n                        \"lastModifiedBy\": \"BankFeedSystem\",\n                        \"source\": \"ANZ\",\n                        \"transactionDate\": \"2022-07-31\",\n                        \"transactionId\": \"2742223\"\n                    },\n                    {\n                        \"amount\": -2.5,\n                        \"createdBy\": \"BankFeedSystem\",\n                        \"description\": \"ACCOUNT SERVICING FEE\",\n                        \"lastModifiedBy\": \"BankFeedSystem\",\n                        \"source\": \"ANZ\",\n                        \"transactionDate\": \"2022-07-31\",\n                        \"transactionId\": \"2742224\"\n                    }\n                ],\n                \"ledgerSummary\": {\n                    \"closingBalance\": null,\n                    \"closingBalanceCheck\": 458642.13,\n                    \"openingBalance\": -800,\n                    \"tAccountId\": null,\n                    \"totalCredits\": -40561.75,\n                    \"totalDebits\": 500003.88\n                },\n                \"ledgerTransactions\": [\n                    {\n                        \"amount\": 500000,\n                        \"createdBy\": \"bankFeedSaver\",\n                        \"description\": \"TRANSFER\",\n                        \"lastModifiedBy\": \"bankFeedSaver\",\n                        \"source\": \"BGLBank\",\n                        \"transactionDate\": \"2022-07-01\",\n                        \"transactionId\": \"2742222\"\n                    },\n                    {\n                        \"amount\": -40000,\n                        \"createdBy\": \"bankFeedSaver\",\n                        \"description\": \"TRANSFER COMMSEC WITHDRAWAL\",\n                        \"lastModifiedBy\": \"bankFeedSaver\",\n                        \"source\": \"BGLBank\",\n                        \"transactionDate\": \"2022-07-12\",\n                        \"transactionId\": \"2899041\"\n                    },\n                    {\n                        \"amount\": -559.25,\n                        \"createdBy\": \"bankFeedSaver\",\n                        \"description\": \"ANZ INTERNET BANKING FUNDS TFER   ADVISOR FEE\",\n                        \"lastModifiedBy\": \"bankFeedSaver\",\n                        \"source\": \"BGLBank\",\n                        \"transactionDate\": \"2022-07-15\",\n                        \"transactionId\": \"2899042\"\n                    },\n                    {\n                        \"amount\": 3.88,\n                        \"createdBy\": \"bankFeedSaver\",\n                        \"description\": \"CREDIT INTEREST\",\n                        \"lastModifiedBy\": \"bankFeedSaver\",\n                        \"source\": \"BGLBank\",\n                        \"transactionDate\": \"2022-07-31\",\n                        \"transactionId\": \"2742223\"\n                    },\n                    {\n                        \"amount\": -2.5,\n                        \"createdBy\": \"bankFeedSaver\",\n                        \"description\": \"ACCOUNT SERVICING FEE\",\n                        \"lastModifiedBy\": \"bankFeedSaver\",\n                        \"source\": \"BGLBank\",\n                        \"transactionDate\": \"2022-07-31\",\n                        \"transactionId\": \"2742224\"\n                    }\n                ],\n                \"tAccountId\": 222286977836\n            }\n        ],\n        \"end\": \"2023-06-30T00:00:00Z\",\n        \"fundId\": \"8a8bd53685e14fb40185e15d1ce90000\",\n        \"start\": \"2022-07-01T00:00:00Z\"\n    }\n}"
-						}
-					]
-				}
-			],
+			"item": [],
 			"id": "b64f686b-0568-4c9a-b3ba-b4836c194a32"
 		}
 	],
