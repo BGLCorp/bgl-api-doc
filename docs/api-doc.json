@@ -9681,6 +9681,109 @@
 											"body": ""
 										}
 									]
+								},
+								{
+									"name": "Company Shareholders Current Balances",
+									"id": "a7e522bb-74cc-4bf9-985e-e7f0a94a7ab7",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/cas/companies/:companyId/shareholdings?groupBytypes={{groupByTypes}}&date={{date}}",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"cas",
+												"companies",
+												":companyId",
+												"shareholdings"
+											],
+											"query": [
+												{
+													"key": "groupBytypes",
+													"value": "{{groupByTypes}}",
+													"description": "Optional - True/False - False by default. If 'true', results will be grouped by shareholder and share types (currency, paid/unpaid, class). If 'false', will group by shareholder - see sample response as an example."
+												},
+												{
+													"key": "date",
+													"value": "{{date}}",
+													"description": "Optional - yyyy-mm-dd -  The response will calculate balances for all transactions on or before the ‘date'."
+												}
+											],
+											"variable": [
+												{
+													"id": "05fd16cc-3e28-448e-b153-875069d62d29",
+													"key": "companyId",
+													"value": "{{companyId}}"
+												}
+											]
+										},
+										"description": "### Query Parameters\n\n| Form Parameter | type | Mandatory | Description |\n| --- | --- | --- | --- |\n| companyId | String | Required |  |\n| groupBytypes | String | Optional | True or False |\n\n### Response Body\n\nReturns a list containing object as defined below\n\n| Key | Datatype | Mandatory | Constraints |\n| --- | --- | --- | --- |\n| beneficialOwnerId | String |  |  |\n| numberOfShares | number |  |  |\n| percentageOfClass | number |  |  |\n| shareType | Object |  |  |\n| shareholderId | number |  |  |\n\n**shareType object**\n\n| Key | Datatype | Mandatory | Constraints |\n| --- | --- | --- | --- |\n| currency | String |  |  |\n| description | String |  |  |\n| paid | number |  |  |\n| shareClass | Object |  |  |\n| shareSubClass | String |  |  |\n| unpaid | number |  |  |\n\n**shareClass object**\n\n| Key | Datatype | Mandatory | Constraints |\n| --- | --- | --- | --- |\n| cCode | String |  |  |\n| description | String |  |  |"
+									},
+									"response": [
+										{
+											"id": "5579bc1c-8846-40cb-b13a-06eb4c6186cb",
+											"name": "Status 200",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "Bearer {{token}}",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/cas/companies/:companyId/shareholdings?groupByTypes=true",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"cas",
+														"companies",
+														":companyId",
+														"shareholdings"
+													],
+													"query": [
+														{
+															"key": "groupByTypes",
+															"value": "true"
+														}
+													],
+													"variable": [
+														{
+															"id": "1164a0e1-f7b6-453e-b8b3-c69eeda6f187",
+															"key": "companyId",
+															"value": "{{companyId}}"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"name": "Content-Type",
+													"value": "application/json",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"shareholdings\": [\n        {\n            \"holdings\": [\n                {\n                    \"beneficialOwnerId\": null,\n                    \"numberOfShares\": 33.000000000000000000000000000000,\n                    \"percentageOfClass\": \"100.00%\",\n                    \"shareType\": {\n                        \"currency\": \"CAD\",\n                        \"description\": \"A CLASS ORDINARY SHARES\",\n                        \"paid\": 33.000000000000000000000000000000000000000000000000000000000000,\n                        \"shareClass\": {\n                            \"cCode\": \"A\",\n                            \"description\": \"A CLASS ORDINARY SHARES\"\n                        },\n                        \"shareSubClass\": null,\n                        \"unpaid\": 33.000000000000000000000000000000000000000000000000000000000000\n                    }\n                },\n                {\n                    \"beneficialOwnerId\": null,\n                    \"numberOfShares\": 22.000000000000000000000000000000,\n                    \"percentageOfClass\": \"100.00%\",\n                    \"shareType\": {\n                        \"currency\": \"AUD\",\n                        \"description\": \"A CLASS ORDINARY SHARES\",\n                        \"paid\": 22.000000000000000000000000000000000000000000000000000000000000,\n                        \"shareClass\": {\n                            \"cCode\": \"A\",\n                            \"description\": \"A CLASS ORDINARY SHARES\"\n                        },\n                        \"shareSubClass\": null,\n                        \"unpaid\": 22.000000000000000000000000000000000000000000000000000000000000\n                    }\n                }\n            ],\n            \"shareholderId\": 96031\n        },\n        {\n            \"holdings\": [\n                {\n                    \"beneficialOwnerId\": null,\n                    \"numberOfShares\": 25.000000000000000000000000000000,\n                    \"percentageOfClass\": \"100.00%\",\n                    \"shareType\": {\n                        \"currency\": \"AUD\",\n                        \"description\": \"ORDINARY SHARES\",\n                        \"paid\": 25.000000000000000000000000000000000000000000000000000000000000,\n                        \"shareClass\": {\n                            \"cCode\": \"ORD\",\n                            \"description\": \"ORDINARY SHARES\"\n                        },\n                        \"shareSubClass\": null,\n                        \"unpaid\": 0\n                    }\n                }\n            ],\n            \"shareholderId\": 96030\n        }\n    ]\n}"
+										}
+									]
 								}
 							],
 							"id": "ff010843-0abc-423e-a172-2d96e91f971f"
@@ -12447,6 +12550,108 @@
 											"cookie": [],
 											"responseTime": null,
 											"body": ""
+										}
+									]
+								},
+								{
+									"name": "Trust Unitholders Current Balances",
+									"id": "1a747230-c05b-4ed6-8033-e4a1fef77f39",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/cas/trusts/:trustId/unitholdings?groupByTypes={{groupByTypes}}&date={{date}}",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"cas",
+												"trusts",
+												":trustId",
+												"unitholdings"
+											],
+											"query": [
+												{
+													"key": "groupByTypes",
+													"value": "{{groupByTypes}}",
+													"description": "Optional - True/False - False by default. If 'true', results will be grouped by unitholder and unit types (currency, paid/unpaid, class). If 'false', will group by unitholder- see sample response as an example."
+												},
+												{
+													"key": "date",
+													"value": "{{date}}",
+													"description": "Optional - yyyy-mm-dd -  The response will calculate balances for all transactions on or before the ‘date'. "
+												}
+											],
+											"variable": [
+												{
+													"id": "54373477-1923-4ba8-b4ae-891fd6cbb650",
+													"key": "trustId",
+													"value": "{{trustId}}"
+												}
+											]
+										},
+										"description": "### Query Parameters\n\n| Form Parameter | type | Mandatory | Description |\n| --- | --- | --- | --- |\n| trustId | String | Required |  |\n| groupBytypes | String | Optional | True or False |\n\n### Response Body\n\nReturns a list containing object as defined below\n\n| Key | Datatype | Mandatory | Constraints |\n| --- | --- | --- | --- |\n| beneficialOwnerId | String |  |  |\n| numberOfUnits | number |  |  |\n| percentageOfClass | number |  |  |\n| unitType | Object |  |  |\n| unitholderId | number |  |  |\n\n**unitType object**\n\n| Key | Datatype | Mandatory | Constraints |\n| --- | --- | --- | --- |\n| currency | String |  |  |\n| description | String |  |  |\n| paid | number |  |  |\n| unitClass | Object |  |  |\n| shareSubClass | String |  |  |\n| unpaid | number |  |  |\n\n**unitClass object**\n\n| Key | Datatype | Mandatory | Constraints |\n| --- | --- | --- | --- |\n| cCode | String |  |  |\n| description | String |  |  |"
+									},
+									"response": [
+										{
+											"id": "c3da2830-45cb-4f28-b4bd-1ab606857039",
+											"name": "Status 200",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "Bearer {{token}}",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/cas/trusts/:trustId/unitholdings?groupByTypes=true",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"cas",
+														"trusts",
+														":trustId",
+														"unitholdings"
+													],
+													"query": [
+														{
+															"key": "groupByTypes",
+															"value": "true"
+														}
+													],
+													"variable": [
+														{
+															"key": "trustId",
+															"value": ""
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"name": "Content-Type",
+													"value": "application/json",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"unitholdings\": [\n        {\n            \"holdings\": [\n                {\n                    \"beneficialOwnerId\": null,\n                    \"numberOfUnits\": 1.000000000000000000000000000000,\n                    \"percentageOfClass\": \"100.00%\",\n                    \"unitType\": {\n                        \"currency\": \"AUD\",\n                        \"description\": \"ORDINARY UNITS\",\n                        \"paid\": 1.000000000000000000000000000000000000000000000000000000000000,\n                        \"unitClass\": {\n                            \"cCode\": \"ORD\",\n                            \"description\": \"ORDINARY UNITS\"\n                        },\n                        \"unpaid\": 0\n                    }\n                }\n            ],\n            \"unitholderId\": 96031\n        },\n        {\n            \"holdings\": [\n                {\n                    \"beneficialOwnerId\": null,\n                    \"numberOfUnits\": 2.000000000000000000000000000000,\n                    \"percentageOfClass\": \"100.00%\",\n                    \"unitType\": {\n                        \"currency\": \"EUR\",\n                        \"description\": \"A CLASS ORDINARY UNITS\",\n                        \"paid\": 2.000000000000000000000000000000000000000000000000000000000000,\n                        \"unitClass\": {\n                            \"cCode\": \"A\",\n                            \"description\": \"A CLASS ORDINARY UNITS\"\n                        },\n                        \"unpaid\": 2.000000000000000000000000000000000000000000000000000000000000\n                    }\n                },\n                {\n                    \"beneficialOwnerId\": null,\n                    \"numberOfUnits\": 1.000000000000000000000000000000,\n                    \"percentageOfClass\": \"100.00%\",\n                    \"unitType\": {\n                        \"currency\": \"AUD\",\n                        \"description\": \"A CLASS ORDINARY UNITS\",\n                        \"paid\": 1.000000000000000000000000000000000000000000000000000000000000,\n                        \"unitClass\": {\n                            \"cCode\": \"A\",\n                            \"description\": \"A CLASS ORDINARY UNITS\"\n                        },\n                        \"unpaid\": 1.000000000000000000000000000000000000000000000000000000000000\n                    }\n                }\n            ],\n            \"unitholderId\": 96030\n        }\n    ]\n}"
 										}
 									]
 								}
