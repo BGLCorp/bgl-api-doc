@@ -3074,6 +3074,90 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\n  \"financialYear\": \"2020\",\n  \"fundName\": \"000000004636a3060146372123456789\",\n  \"investmentList\": {\n    \"investmentList\": [\n      {\n        \"parentAccountCode\": \"60400\",\n        \"parentAccountName\": \"Bank Accounts\",\n        \"subAccounts\": [\n          {\n            \"accountNumber\": \"16253912\",\n            \"accountType\": \"AssetBank\",\n            \"balanceAmount360\": 50265.49,\n            \"balanceAmountLedger\": 50265.49,\n            \"balanceDate\": \"30/06/2020\",\n            \"bsb\": \"067167\",\n            \"hasVariance\": false,\n            \"holdingRef\": \"06716712345678\",\n            \"investmentCode\": \"CBA12345678\",\n            \"providerName\": \"BGL Bank Data Service\",\n            \"registeredName\": null,\n            \"subAccountName\": \"CBA CDIA\",\n            \"variance\": 0,\n            \"varianceValue\": \"0.00\"\n          },\n          {\n            \"accountNumber\": null,\n            \"accountType\": \"AssetBank\",\n            \"balanceAmount360\": 7879.29,\n            \"balanceAmountLedger\": \"\",\n            \"balanceDate\": \"\",\n            \"bsb\": null,\n            \"hasVariance\": true,\n            \"holdingRef\": null,\n            \"investmentCode\": \"Macquarie\",\n            \"providerName\": null,\n            \"registeredName\": null,\n            \"subAccountName\": \"Macquarie Cash Account\",\n            \"variance\": 7879.29,\n            \"varianceValue\": \"\"\n          }\n        ]\n      },\n      {\n        \"parentAccountCode\": \"77600\",\n        \"parentAccountName\": \"Shares in Listed Companies (Australian)\",\n        \"subAccounts\": [\n          {\n            \"accountNumber\": null,\n            \"accountType\": \"Investment\",\n            \"balanceAmount360\": 0,\n            \"balanceAmountLedger\": \"Setup\",\n            \"balanceDate\": \"\",\n            \"bsb\": null,\n            \"hasVariance\": false,\n            \"holdingRef\": null,\n            \"investmentCode\": \"APT.AX\",\n            \"providerName\": null,\n            \"registeredName\": null,\n            \"subAccountName\": \"Afterpay Touch Group Limited\",\n            \"variance\": 0,\n            \"varianceValue\": \"0.0000\"\n          },\n          {\n            \"accountNumber\": null,\n            \"accountType\": \"Investment\",\n            \"balanceAmount360\": 1427,\n            \"balanceAmountLedger\": \"1,427.0000\",\n            \"balanceDate\": \"30/06/2020\",\n            \"bsb\": null,\n            \"hasVariance\": false,\n            \"holdingRef\": \"X*****9889\",\n            \"investmentCode\": \"ALU.AX\",\n            \"providerName\": \"Registry Data - Computershare\",\n            \"registeredName\": \"TRUSTEE PTY LTD <THE SAMPLE SUPER FUND A/C>\",\n            \"subAccountName\": \"Altium Limited\",\n            \"variance\": 0,\n            \"varianceValue\": \"0.0000\"\n          }\n        ]\n      },\n      {\n        \"parentAccountCode\": \"77700\",\n        \"parentAccountName\": \"Shares in Listed Companies (Overseas)\",\n        \"subAccounts\": [\n          {\n            \"accountNumber\": null,\n            \"accountType\": \"Investment\",\n            \"balanceAmount360\": 0.8073,\n            \"balanceAmountLedger\": \"\",\n            \"balanceDate\": \"\",\n            \"bsb\": null,\n            \"hasVariance\": true,\n            \"holdingRef\": null,\n            \"investmentCode\": \"BABA.NYE\",\n            \"providerName\": null,\n            \"registeredName\": null,\n            \"subAccountName\": \"Alibaba Group Holding\",\n            \"variance\": 0.8073,\n            \"varianceValue\": \"\"\n          }\n        ]\n      },\n      {\n        \"parentAccountCode\": \"78200\",\n        \"parentAccountName\": \"Units in Listed Unit Trusts (Australian)\",\n        \"subAccounts\": [\n          {\n            \"accountNumber\": null,\n            \"accountType\": \"Investment\",\n            \"balanceAmount360\": 0,\n            \"balanceAmountLedger\": \"0.0000\",\n            \"balanceDate\": \"30/06/2019\",\n            \"bsb\": null,\n            \"hasVariance\": false,\n            \"holdingRef\": \"X*****9889\",\n            \"investmentCode\": \"HVST.AX\",\n            \"providerName\": \"Registry Data - Link\",\n            \"registeredName\": \"TRUSTEE PTY LTD <THE SAMPLE SUPER FUND A/C>\",\n            \"subAccountName\": \"Betashares Australian Dividend Harvester Fund (managed Fund)\",\n            \"variance\": 0,\n            \"varianceValue\": \"0.0000\"\n          }\n        ]\n      }\n    ]\n  }\n}"
+								},
+								{
+									"id": "1026fe7b-e1e2-48aa-be7c-cf6af0128d09",
+									"name": "Report - Balance Review",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/sf/balanceReview/{{fundId}}/?financialYear={{financialYear}}",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"sf",
+												"balanceReview",
+												"{{fundId}}",
+												""
+											],
+											"query": [
+												{
+													"key": "financialYear",
+													"value": "{{financialYear}}"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "x-rate-daily-limit-remaining",
+											"value": "998"
+										},
+										{
+											"key": "vary",
+											"value": "accept-encoding"
+										},
+										{
+											"key": "content-encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "content-type",
+											"value": "application/json;charset=UTF-8"
+										},
+										{
+											"key": "date",
+											"value": "Mon, 02 Oct 2023 04:07:58 GMT"
+										},
+										{
+											"key": "server",
+											"value": "BGL"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "frame-ancestors 'self' uat.sf360.com.au"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "ALLOW-FROM https://uat.sf360.com.au"
+										},
+										{
+											"key": "transfer-encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"financialYear\": \"2015\",\n    \"fundName\": \"BGL Training Fund\",\n    \"investmentList\": {\n        \"investmentList\": [\n            {\n                \"parentAccountCode\": \"60400\",\n                \"parentAccountName\": \"Bank Accounts\",\n                \"subAccounts\": [\n                    {\n                        \"accountNumber\": null,\n                        \"accountType\": \"AssetBank\",\n                        \"balanceAmount360\": 355040.5,\n                        \"balanceAmountLedger\": 0,\n                        \"balanceDate\": \"\",\n                        \"bsb\": null,\n                        \"hasVariance\": true,\n                        \"holdingRef\": null,\n                        \"investmentCode\": \"Cash at Bank\",\n                        \"providerName\": null,\n                        \"registeredName\": null,\n                        \"subAccountName\": \"Cash at Bank\",\n                        \"variance\": 355040.5\n                    }\n                ]\n            },\n            {\n                \"parentAccountCode\": \"72450\",\n                \"parentAccountName\": \"Fixed Interest Securities (Australian) - Unitised\",\n                \"subAccounts\": [\n                    {\n                        \"accountNumber\": null,\n                        \"accountType\": \"Investment\",\n                        \"balanceAmount360\": 1,\n                        \"balanceAmountLedger\": 0,\n                        \"balanceDate\": \"\",\n                        \"bsb\": null,\n                        \"hasVariance\": true,\n                        \"holdingRef\": null,\n                        \"investmentCode\": \"SFTRAIN_WESTPACTERMD\",\n                        \"providerName\": null,\n                        \"registeredName\": null,\n                        \"subAccountName\": \"Westpac Term Deposit\",\n                        \"variance\": 1\n                    }\n                ]\n            },\n            {\n                \"parentAccountCode\": \"77200\",\n                \"parentAccountName\": \"Real Estate Properties ( Australian - Residential)\",\n                \"subAccounts\": [\n                    {\n                        \"accountNumber\": null,\n                        \"accountType\": \"Investment\",\n                        \"balanceAmount360\": 1,\n                        \"balanceAmountLedger\": 0,\n                        \"balanceDate\": \"\",\n                        \"bsb\": null,\n                        \"hasVariance\": true,\n                        \"holdingRef\": null,\n                        \"investmentCode\": \"IPTRAIN\",\n                        \"providerName\": null,\n                        \"registeredName\": null,\n                        \"subAccountName\": \"2/606-608 Hawthorn Rd, Brighton East VIC 3187\",\n                        \"variance\": 1\n                    }\n                ]\n            },\n            {\n                \"parentAccountCode\": \"77600\",\n                \"parentAccountName\": \"Shares in Listed Companies (Australian)\",\n                \"subAccounts\": [\n                    {\n                        \"accountNumber\": null,\n                        \"accountType\": \"Investment\",\n                        \"balanceAmount360\": 1000,\n                        \"balanceAmountLedger\": 0,\n                        \"balanceDate\": \"\",\n                        \"bsb\": null,\n                        \"hasVariance\": true,\n                        \"holdingRef\": null,\n                        \"investmentCode\": \"BHP.AX\",\n                        \"providerName\": null,\n                        \"registeredName\": null,\n                        \"subAccountName\": \"Bhp Billiton Limited - Ordinary Fully Paid\",\n                        \"variance\": 1000\n                    },\n                    {\n                        \"accountNumber\": null,\n                        \"accountType\": \"Investment\",\n                        \"balanceAmount360\": 4270,\n                        \"balanceAmountLedger\": 0,\n                        \"balanceDate\": \"25/02/2015\",\n                        \"bsb\": null,\n                        \"hasVariance\": true,\n                        \"holdingRef\": null,\n                        \"investmentCode\": \"CRZ.AX\",\n                        \"providerName\": null,\n                        \"registeredName\": null,\n                        \"subAccountName\": \"Carsales.Com Limited - Ordinary Fully Paid\",\n                        \"variance\": 4270\n                    },\n                    {\n                        \"accountNumber\": null,\n                        \"accountType\": \"Investment\",\n                        \"balanceAmount360\": 4000,\n                        \"balanceAmountLedger\": 0,\n                        \"balanceDate\": \"\",\n                        \"bsb\": null,\n                        \"hasVariance\": true,\n                        \"holdingRef\": null,\n                        \"investmentCode\": \"CBA.AX\",\n                        \"providerName\": null,\n                        \"registeredName\": null,\n                        \"subAccountName\": \"Commonwealth Bank of Australia. - Ordinary Fully Paid\",\n                        \"variance\": 4000\n                    },\n                    {\n                        \"accountNumber\": null,\n                        \"accountType\": \"Investment\",\n                        \"balanceAmount360\": 200,\n                        \"balanceAmountLedger\": 0,\n                        \"balanceDate\": \"\",\n                        \"bsb\": null,\n                        \"hasVariance\": true,\n                        \"holdingRef\": null,\n                        \"investmentCode\": \"WES.AX\",\n                        \"providerName\": null,\n                        \"registeredName\": null,\n                        \"subAccountName\": \"Wesfarmers Limited - Ordinary Fully Paid\",\n                        \"variance\": 200\n                    }\n                ]\n            },\n            {\n                \"parentAccountCode\": \"78200\",\n                \"parentAccountName\": \"Units in Listed Unit Trusts (Australian)\",\n                \"subAccounts\": [\n                    {\n                        \"accountNumber\": null,\n                        \"accountType\": \"Investment\",\n                        \"balanceAmount360\": 12700,\n                        \"balanceAmountLedger\": 0,\n                        \"balanceDate\": \"\",\n                        \"bsb\": null,\n                        \"hasVariance\": true,\n                        \"holdingRef\": null,\n                        \"investmentCode\": \"GPT.AX\",\n                        \"providerName\": null,\n                        \"registeredName\": null,\n                        \"subAccountName\": \"Gpt Group - Stapled Securities Fully Paid\",\n                        \"variance\": 12700\n                    }\n                ]\n            }\n        ]\n    }\n}"
 								}
 							]
 						},
