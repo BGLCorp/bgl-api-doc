@@ -14020,7 +14020,212 @@
 		},
 		{
 			"name": "Coming Soon",
-			"item": [],
+			"item": [
+				{
+					"name": "BGLiD",
+					"item": [
+						{
+							"name": "Request Verification",
+							"id": "6becdb3e-f0b8-457a-b3e2-3fe1be8c8f47",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firmName\": \"ABC accounting PTY LTD\",\r\n  \"checkType\": \"GOVERNMENT_ID_CHECK\",\r\n  \"emailAddress\": \"aaron.jones@example.com\",\r\n  \"numberOfIdSources\": 2,\r\n  \"personalDetails\": {\r\n    \"fullName\": \"Aaron Jones\", \r\n    \"addressCountryAlpha3Code\": \"AUS\", \r\n    \"address\": \"606-608 Hawthorn Rd, Brighton East VIC 3187\",\r\n    \"firstName\": \"Aaron\",\r\n    \"birthCountry\": \"FRANCE\",\r\n    \"birthDate\": \"1960-10-22\"\r\n  },\r\n  \"sendRequestEmail\": true\r\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/bglid/recipients?demo={{demo}}&jurisdiction={{jurisdiction}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"bglid",
+										"recipients"
+									],
+									"query": [
+										{
+											"key": "demo",
+											"value": "{{demo}}"
+										},
+										{
+											"key": "jurisdiction",
+											"value": "{{jurisdiction}}"
+										}
+									]
+								},
+								"description": "### **Main request** object\n\n| **Key** | **Mandatory** | **Datatype** | **Constraints/Comments** | **Example** |\n| --- | --- | --- | --- | --- |\n| firmName | No | String | Used to present information to the client in the UI; also used in email templates and reports.  <br>  <br>If not present, the **integrationName** request parameter will be used instead. | “ABC accounting PTY LTD” |\n| checkType | Yes | String (Enum)  <br>  <br><u>Current supported values</u>:  <br>GOVERNMENT_ID_CHECK,  <br>GOVERNMENT_ID_ADVANCED_CHECK,  <br>PEP_CHECK,  <br>PEP_MEDIA_CHECK | The check type to perform |  |\n| emailAddress | Yes | String | Client’s email address | “aaron.jones@example.com” |\n| personalDetails | Yes | PersonalDetails object (see below) | Client personal details - name, address, birth details | (See below) |\n| sendRequestEmail | Yes | Boolean (true/false) | if **true**, BGLiD will send on the client’s behalf an email to their client with a direct link to the BGLiD UI.  <br>if **false**, BGLiD won’t send an email - it is then assumed the client will be responsible for inviting their client to use the BGLiD UI to complete the process. |  |\n| numberOfIdSources | Yes | Integer | How many ID sources the client’s client is required to provide.  <br>  <br>AU - supports 1-2.  <br>NZ/SG - currently support only 1. |  |\n\n### **PersonalDetails** object\n\n| **Key** | **Mandatory** | **Datatype** | **Constraints/Comments** | **Example** |\n| --- | --- | --- | --- | --- |\n| fullName | Yes | String | Used mainly in email correspondence, UI, reports | “Jonnie Goodboy Tyler” |\n| firstName | No | String | Allows quick prefilling of client data in the UI | “Jonnie” |\n| middleName | No | String | Allows quick prefilling of client data in the UI | “Goodboy” |\n| lastName | No | String | Allows quick prefilling of client data in the UI | “Tyler” |\n| addressCountryAlpha3Code | Yes | String | Alpha 3 country code  <br>A list can be found here: | “AUS”  <br>”SGP” |\n| address | Yes | String |  | “31/12 some street, Melbourne VIC 3100” |\n| birthCountry | No | String | Allows quick prefilling of client data in the UI | “Australia” |\n| birthDate | No | String | Allows quick prefilling of client data in the UI  <br>  <br>ISO date format “yyyy-MM-dd” | “1980-02-15” |\n| birthPlace | No | String | Allows quick prefilling of client data in the UI | “Melbourne” |\n\n## Response Body\n\n| **Key** | **Datatype** | **Constraints/Comments** | **Example** |\n| --- | --- | --- | --- |\n| recipientId | Integer | Recipient ID in the BGLiD DB. Used to uniquely identify each recipient; used also in the following requests. | 3112312 |\n| expiryDate | String | Last date the client’s client will be able to use the link to login into BGLiD and verify their identity.  <br>  <br>Currently set to be 21 days from the recipient-creation-date. | “2024-02-30” |\n| verificationUrl | String | Unique URL per recipient allowing the recipients to login into BGLiD’s UI and verify themselves.  <br>  <br>This link should be kept private and shared only with the client’s client. | “[http://localhost/verify-identity?r=qWmYwDRdFjkz3qOAyEriXQFeYSkrneDRyQ6BlAGzfGQ=&amp;t=986091c2-7041-4fd2-a85f-3bdd93ca8b3f”](http://localhost/verify-identity?r=qWmYwDRdFjkz3qOAyEriXQFeYSkrneDRyQ6BlAGzfGQ=&t=986091c2-7041-4fd2-a85f-3bdd93ca8b3f”) |"
+							},
+							"response": [
+								{
+									"id": "ee5d9404-1a40-4dd5-bcf5-c5b546751824",
+									"name": "Status 201",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"firmName\": \"ABC accounting PTY LTD\",\n  \"checkType\": \"GOVERNMENT_ID_CHECK\",\n  \"emailAddress\": \"aaron.jones@example.com\",\n  \"numberOfIdSources\": 2,\n  \"personalDetails\": {\n    \"fullName\": \"Aaron Jones\", \n    \"addressCountryAlpha3Code\": \"AUS\", \n    \"address\": \"606-608 Hawthorn Rd, Brighton East VIC 3187\",\n    \"firstName\": \"Aaron\",\n    \"birthCountry\": \"FRANCE\",\n    \"birthDate\": \"1960-10-22\"\n  },\n  \"sendRequestEmail\": true\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/bglid/recipients?demo={{demo}}&jurisdiction={{jurisdiction}}",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"bglid",
+												"recipients"
+											],
+											"query": [
+												{
+													"key": "demo",
+													"value": "{{demo}}"
+												},
+												{
+													"key": "jurisdiction",
+													"value": "{{jurisdiction}}"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"expiryDate\": \"2024-02-21\",\n    \"recipientId\": 1362,\n    \"verificationUrl\": \"https://uat.bgl-id.com/verify-identity?r=prapaYDhoTyLYLVyt%2Bf4763AXfVlDb%2FbOAl7dCJTGMI%3D&t=2a6bd783-8963-49a8-a50a-6263c4ffc03b\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Verification Status",
+							"id": "7e7bd1fe-0eff-4e8b-9dc1-e0c7505624ae",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/bglid/recipients/{{recipientId}}/status?demo={{demo}}&jurisdiction={{jurisdiction}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"bglid",
+										"recipients",
+										"{{recipientId}}",
+										"status"
+									],
+									"query": [
+										{
+											"key": "demo",
+											"value": "{{demo}}"
+										},
+										{
+											"key": "jurisdiction",
+											"value": "{{jurisdiction}}"
+										}
+									]
+								},
+								"description": "## Response Body \n\n| **Key** | **Datatype** | **Constraints/Comments** | **Example** |\n| --- | --- | --- | --- |\n\n| **Key** | **Datatype** | **Constraints/Comments** | **Example** |\n| --- | --- | --- | --- |\n| processState | String (Enum)  <br><u>Current supported values</u>:  <br>AWAITING_USER_INPUT,  <br>IN_PROGRESS,  <br>COMPLETE | The current processing state of this user verification.<br><br>- AWAITING_USER_INPUT - still waiting on the user to complete verification<br>    <br>- IN_PROGRESS - The user has provided their data; messages are currently in flight with remote systems and the verification is in progress<br>    <br>- COMPLETE - The verification process has finished. **Additional results are available** on the object **at this state only** |  |\n| status | String (Enum)  <br><u>Current supported values</u>:  <br>UNCHECKED,  <br>REFER,  <br>SUCCESS,  <br>MANUAL_SUCCESS,  <br>FAILURE,  <br>MANUAL_FAILURE,  <br>MIXED | The actual verification status for this recipient |  |\n| checkDateTime | String | ISO Timestamp of when the check took place in UTC time without timezone portion. | “2023-07-27T01:32:09.422” |\n| riskLevel | Integer (0-100) | Estimated risk level for this recipient |  |\n| base64PdfReport | String | BGLiD Generated PDF report of the results, in a BASE64 format. | “JVBERi0xLj...Cg==” (very long string) |\n| completedChecks | Object (TBD) | An object including all of the completed checks | See below |\n| potentialMatches | Array of objects (TBD) | An array of objects including all potential matches (if any) found for this recipient | See below |"
+							},
+							"response": [
+								{
+									"id": "2cf2c448-5bb6-4cbe-aa44-4234eadec54e",
+									"name": "Status 200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/bglid/recipients/{{recipientId}}/status?demo={{demo}}&jurisdiction={{jurisdiction}}",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"bglid",
+												"recipients",
+												"{{recipientId}}",
+												"status"
+											],
+											"query": [
+												{
+													"key": "demo",
+													"value": "{{demo}}"
+												},
+												{
+													"key": "jurisdiction",
+													"value": "{{jurisdiction}}"
+												},
+												{
+													"key": "tag",
+													"value": "<string>",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"processState\": \"AWAITING_USER_INPUT\"\r\n}"
+								}
+							]
+						}
+					],
+					"id": "cd4859fc-ddb0-49a4-a7a1-cc0d38818610",
+					"description": "This section contains the resources to request and verify identification via BGLiD.\n\nIf you are interested in utilising this service, please contact the BGL team at [api@bglcorp.com.au](https://mailto:api@bglcorp.com.au)"
+				}
+			],
 			"id": "b64f686b-0568-4c9a-b3ba-b4836c194a32"
 		}
 	],
