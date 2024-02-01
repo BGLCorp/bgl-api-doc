@@ -14058,11 +14058,13 @@
 									"query": [
 										{
 											"key": "demo",
-											"value": "{{demo}}"
+											"value": "{{demo}}",
+											"description": "If true, will use the demo-environment of our provider to test against (Airtable | https://airtable.com/app379qZK2sJMB3pu/shrrvIFezuGcuVNvW/tblzcpgpWahoNbHV5 for a list of available test data).\nIf false will perform a production flow.\nNote: Each Production request costs money"
 										},
 										{
 											"key": "jurisdiction",
-											"value": "{{jurisdiction}}"
+											"value": "{{jurisdiction}}",
+											"description": "Which jurisdiction (country) the client should verify against;\n\nEach jurisdiction allows specific checks only and the checks run against that country’s government databases (if applicable).\n\nFor example - Passing an Australian client to Singapore will allow the client to only check an NRIC (an SG ID) which is incorrect; Passing an SG client to Australia will allow the client to only validate a passport vs. the AU DB (might not exist) or an AU drivers licence (which they might not have)"
 										}
 									]
 								},
