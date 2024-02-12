@@ -14302,7 +14302,7 @@
 								}
 							]
 						},
-						"description": "### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- smsf_partner\n\n### Request\n\n|Key | Type | Mandatory | Description/Constraints |\n| -------- | -------- | -------- | -------- |\n| name     | String     | Yes     |  Name of the fund  |\n| dateFormed  | Date    | Yes     | Date format is yyyy-MM-dd   |\n\n\n### Response Body\n\n|Key | Type | Mandatory | Description/Constraints |\n| -------- | -------- | -------- | -------- |\n| name     | String     | Yes     |  The Name of the SMSF  |\n| fundCode     | String     | No     | If not supplied the field will be auto-created by Simple Fund 360   |\n| abn     | number     | No     | If supplied, the number must be valid ABN   |\n| tfn     | number     | No     | If supplied must be valid TFN   |\n| dateFormed     | date     | Yes     | Must in format yyyy-MM-dd   |\n| financialYearFrom     | date     | Yes     | If not supplied, system will default to dateFormed. Cannot be before dateFormed. Must in format yyyy-MM-dd   |\n| financialYearEnd     | date     | Yes     |  If not supplied, system will default to next 30 June date after dateFormed. Cannot be before dateFormed. Must in format yyyy-MM-dd   |"
+						"description": "### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- bgl_partner\n    \n- smsf_partner\n    \n- audit"
 					},
 					"response": [
 						{
@@ -14324,7 +14324,46 @@
 									"mode": "raw",
 									"raw": ""
 								},
-								"url": "{{baseUrl}}/sf/funds"
+								"url": {
+									"raw": "{{baseUrl}}/sf/auditStatusUpdate?fundId={{fundId}}&financialYear={{financialYear}}&auditStatus={{auditStatus}}&completionDate={{completionDate}}&qualificationB={{qualificationB}}&qualificationC={{qualificationC}}&qualificationD={{qualificationD}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"sf",
+										"auditStatusUpdate"
+									],
+									"query": [
+										{
+											"key": "fundId",
+											"value": "{{fundId}}"
+										},
+										{
+											"key": "financialYear",
+											"value": "{{financialYear}}"
+										},
+										{
+											"key": "auditStatus",
+											"value": "{{auditStatus}}"
+										},
+										{
+											"key": "completionDate",
+											"value": "{{completionDate}}"
+										},
+										{
+											"key": "qualificationB",
+											"value": "{{qualificationB}}"
+										},
+										{
+											"key": "qualificationC",
+											"value": "{{qualificationC}}"
+										},
+										{
+											"key": "qualificationD",
+											"value": "{{qualificationD}}"
+										}
+									]
+								}
 							},
 							"status": "Created",
 							"code": 201,
@@ -14392,7 +14431,7 @@
 								{
 									"key": "userName",
 									"value": "{{userName}}",
-									"description": "MANDATORY - Simple Fund 360 username. Use GET User Details endpoint for username",
+									"description": "TBC - MANDATORY - Simple Fund 360 username. Use GET User Details endpoint for username",
 									"disabled": true
 								},
 								{
@@ -14402,7 +14441,7 @@
 								}
 							]
 						},
-						"description": "### API Scopes \nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n- smsf_partner\n\n### Request\n\n|Key | Type | Mandatory | Description/Constraints |\n| -------- | -------- | -------- | -------- |\n| name     | String     | Yes     |  Name of the fund  |\n| dateFormed  | Date    | Yes     | Date format is yyyy-MM-dd   |\n\n\n### Response Body\n\n|Key | Type | Mandatory | Description/Constraints |\n| -------- | -------- | -------- | -------- |\n| name     | String     | Yes     |  The Name of the SMSF  |\n| fundCode     | String     | No     | If not supplied the field will be auto-created by Simple Fund 360   |\n| abn     | number     | No     | If supplied, the number must be valid ABN   |\n| tfn     | number     | No     | If supplied must be valid TFN   |\n| dateFormed     | date     | Yes     | Must in format yyyy-MM-dd   |\n| financialYearFrom     | date     | Yes     | If not supplied, system will default to dateFormed. Cannot be before dateFormed. Must in format yyyy-MM-dd   |\n| financialYearEnd     | date     | Yes     |  If not supplied, system will default to next 30 June date after dateFormed. Cannot be before dateFormed. Must in format yyyy-MM-dd   |"
+						"description": "### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- bgl_partner\n    \n- smsf_partner\n    \n- audit"
 					},
 					"response": [
 						{
@@ -14424,7 +14463,30 @@
 									"mode": "raw",
 									"raw": ""
 								},
-								"url": "{{baseUrl}}/sf/funds"
+								"url": {
+									"raw": "{{baseUrl}}/sf/auditStatusDocumentUpload?fundId={{fundId}}&file={{file}}&financialYear={{financialYear}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"sf",
+										"auditStatusDocumentUpload"
+									],
+									"query": [
+										{
+											"key": "fundId",
+											"value": "{{fundId}}"
+										},
+										{
+											"key": "file",
+											"value": "{{file}}"
+										},
+										{
+											"key": "financialYear",
+											"value": "{{financialYear}}"
+										}
+									]
+								}
 							},
 							"status": "Created",
 							"code": 201,
