@@ -14405,8 +14405,15 @@
 							}
 						],
 						"body": {
-							"mode": "raw",
-							"raw": ""
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "document",
+									"description": "File attached to Upload",
+									"type": "file",
+									"value": null
+								}
+							]
 						},
 						"url": {
 							"raw": "{{baseUrl}}/sf/auditStatusDocumentUpload?fundId={{fundId}}&file={{file}}&financialYear={{financialYear}}",
