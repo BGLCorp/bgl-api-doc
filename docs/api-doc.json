@@ -14411,6 +14411,10 @@
 									"key": "document",
 									"description": "File attached to Upload",
 									"type": "file",
+									"fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
+									"filesNotInWorkingDirectory": [
+										"/C:/Users/bwilkinson/Downloads/BHP confirmation.pdf"
+									],
 									"value": null
 								}
 							]
