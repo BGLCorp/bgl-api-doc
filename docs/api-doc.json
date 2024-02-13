@@ -14256,13 +14256,14 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{baseUrl}}/sf/auditStatusUpdate?fundId={{fundId}}&financialYear={{financialYear}}&auditStatus={{auditStatus}}&completionDate={{completionDate}}&qualificationB={{qualificationB}}&qualificationC={{qualificationC}}&qualificationD={{qualificationD}}",
+							"raw": "{{baseUrl}}/sf/audit/changeAuditStatus?fundId={{fundId}}&financialYear={{financialYear}}&auditStatus={{auditStatus}}&completionDate={{completionDate}}&qualificationB={{qualificationB}}&qualificationC={{qualificationC}}&qualificationD={{qualificationD}}",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"sf",
-								"auditStatusUpdate"
+								"audit",
+								"changeAuditStatus"
 							],
 							"query": [
 								{
