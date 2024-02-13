@@ -14326,13 +14326,19 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "{{baseUrl}}/sf/auditStatusUpdate?fundId={{fundId}}&financialYear={{financialYear}}&auditStatus={{auditStatus}}&completionDate={{completionDate}}&qualificationB={{qualificationB}}&qualificationC={{qualificationC}}&qualificationD={{qualificationD}}",
+									"raw": "https://api.staging.bgl360.com.au/sf/audit/changeAuditStatus?fundId={{fundId}}&financialYear={{financialYear}}&auditStatus={{auditStatus}}&completionDate={{completionDate}}&qualificationB={{qualificationB}}&qualificationC={{qualificationC}}&qualificationD={{qualificationD}}",
+									"protocol": "https",
 									"host": [
-										"{{baseUrl}}"
+										"api",
+										"staging",
+										"bgl360",
+										"com",
+										"au"
 									],
 									"path": [
 										"sf",
-										"auditStatusUpdate"
+										"audit",
+										"changeAuditStatus"
 									],
 									"query": [
 										{
@@ -14460,30 +14466,37 @@
 									}
 								],
 								"body": {
-									"mode": "raw",
-									"raw": ""
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "document",
+											"description": "[REQUIRED] - File attached to Upload",
+											"type": "file",
+											"value": null
+										},
+										{
+											"key": "financialYear",
+											"value": "",
+											"description": "[REQUIRED] - yyyy - e.g. \"2021\" for the 2021 Financial Year",
+											"type": "text"
+										}
+									]
 								},
 								"url": {
-									"raw": "{{baseUrl}}/sf/auditStatusDocumentUpload?fundId={{fundId}}&file={{file}}&financialYear={{financialYear}}",
+									"raw": "{{baseUrl}}/sf/audit/uploaddoc/:fundId",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
 										"sf",
-										"auditStatusDocumentUpload"
+										"audit",
+										"uploaddoc",
+										":fundId"
 									],
-									"query": [
+									"variable": [
 										{
 											"key": "fundId",
-											"value": "{{fundId}}"
-										},
-										{
-											"key": "file",
-											"value": "{{file}}"
-										},
-										{
-											"key": "financialYear",
-											"value": "{{financialYear}}"
+											"value": ""
 										}
 									]
 								}
