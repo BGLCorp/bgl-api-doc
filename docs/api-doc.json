@@ -14279,7 +14279,7 @@
 								{
 									"key": "auditStatus",
 									"value": "{{auditStatus}}",
-									"description": "[NOT REQUIRED] - \n3 ( which means IN_PROGRESS)\n5 ( which means PRELIMINARY_COMPLETE)\n6 (which means COMPLETED)"
+									"description": "[NOT REQUIRED] - (string) \n3 ( which means IN_PROGRESS).\n5 ( which means PRELIMINARY_COMPLETE).\n6 (which means COMPLETED)."
 								},
 								{
 									"key": "completionDate",
