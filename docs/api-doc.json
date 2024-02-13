@@ -14268,37 +14268,37 @@
 								{
 									"key": "fundId",
 									"value": "{{fundId}}",
-									"description": "MANDATORY"
+									"description": "[REQUIRED] - Unique ID of the Fund/Entity"
 								},
 								{
 									"key": "financialYear",
 									"value": "{{financialYear}}",
-									"description": "MANDATORY - yyyy - e.g. \"2021\" for the 2021 Financial Year"
+									"description": "[REQUIRED] - yyyy - e.g. \"2021\" for the 2021 Financial Year"
 								},
 								{
 									"key": "auditStatus",
 									"value": "{{auditStatus}}",
-									"description": "NON-MANDATORY - \n3 ( which means IN_PROGRESS)\n5 ( which means PRELIMINARY_COMPLETE)\n6 (which means COMPLETED)"
+									"description": "[NOT REQUIRED] - \n3 ( which means IN_PROGRESS)\n5 ( which means PRELIMINARY_COMPLETE)\n6 (which means COMPLETED)"
 								},
 								{
 									"key": "completionDate",
 									"value": "{{completionDate}}",
-									"description": "NON-MANDATORY - The date when the audit was completed, in the format \"yyyy-MM-dd\""
+									"description": "[NOT REQUIRED] - The date when the audit was completed, in the format \"yyyy-MM-dd\""
 								},
 								{
 									"key": "qualificationB",
 									"value": "{{qualificationB}}",
-									"description": "NON-MANDATORY -  \"true\" or \"false\""
+									"description": "[NOT REQUIRED] - \"true\" or \"false\""
 								},
 								{
 									"key": "qualificationC",
 									"value": "{{qualificationC}}",
-									"description": "NON-MANDATORY - \"true\" or \"false\". If set to true, qualificationD becomes mandatory."
+									"description": "[NOT REQUIRED] - \"true\" or \"false\". If set to true, qualificationD becomes mandatory."
 								},
 								{
 									"key": "qualificationD",
 									"value": "{{qualificationD}}",
-									"description": "NON-MANDATORY - \"true\" or \"false\". Required if qualificationC is true."
+									"description": "[NOT REQUIRED] - \"true\" or \"false\". Required if qualificationC is true."
 								}
 							]
 						},
@@ -14409,46 +14409,34 @@
 							"formdata": [
 								{
 									"key": "document",
-									"description": "File attached to Upload",
+									"description": "[REQUIRED] - File attached to Upload",
 									"type": "file",
-									"fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
-									"filesNotInWorkingDirectory": [
-										"/C:/Users/bwilkinson/Downloads/BHP confirmation.pdf"
-									],
 									"value": null
+								},
+								{
+									"key": "financialYear",
+									"value": "",
+									"description": "[REQUIRED] - yyyy - e.g. \"2021\" for the 2021 Financial Year",
+									"type": "text"
 								}
 							]
 						},
 						"url": {
-							"raw": "{{baseUrl}}/sf/auditStatusDocumentUpload?fundId={{fundId}}&file={{file}}&financialYear={{financialYear}}",
+							"raw": "{{baseUrl}}/sf/audit/uploaddoc/:fundId",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"sf",
-								"auditStatusDocumentUpload"
+								"audit",
+								"uploaddoc",
+								":fundId"
 							],
-							"query": [
+							"variable": [
 								{
 									"key": "fundId",
 									"value": "{{fundId}}",
-									"description": "MANDATORY - Unique ID for the fund/entity."
-								},
-								{
-									"key": "file",
-									"value": "{{file}}",
-									"description": "MANDATORY - File type : pdf, docx, xlsx or txt. File size limit 20MB"
-								},
-								{
-									"key": "userName",
-									"value": "{{userName}}",
-									"description": "TBC - MANDATORY - Simple Fund 360 username. Use GET User Details endpoint for username",
-									"disabled": true
-								},
-								{
-									"key": "financialYear",
-									"value": "{{financialYear}}",
-									"description": "MANDATORY - yyyy - e.g. \"2021\" for the 2021 Financial Year"
+									"description": "[REQUIRED] - Unique ID of the Fund/Entity"
 								}
 							]
 						},
