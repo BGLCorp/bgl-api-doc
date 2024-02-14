@@ -14416,7 +14416,7 @@
 							"formdata": [
 								{
 									"key": "document",
-									"description": "[REQUIRED] - File attached to Upload",
+									"description": "[REQUIRED] - File attached to Upload - pdf, docx, xlsx or txt. File size limit 20MB.",
 									"type": "file",
 									"value": null
 								},
