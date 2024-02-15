@@ -14418,11 +14418,7 @@
 									"key": "document",
 									"description": "[REQUIRED] - File attached to Upload - pdf, docx, xlsx or txt. File size limit 20MB.",
 									"type": "file",
-									"fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
-									"filesNotInWorkingDirectory": [
-										"/C:/Users/bwilkinson/Downloads/BHP confirmation.pdf"
-									],
-									"value": null
+									"src": "/C:/Users/bwilkinson/Downloads/Engagement Letter.pdf"
 								},
 								{
 									"key": "financialYear",
