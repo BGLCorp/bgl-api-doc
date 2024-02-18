@@ -14253,56 +14253,9 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": ""
+							"raw": "{\r\n\"fundId\":{{fundId}},\r\n\"financialYear\":{{financialYear}},\r\n\"auditStatus\":{{auditStatus}},\r\n\"completionDate\":{{completionDate}},\r\n\"qualificationB\":{{qualificationB}},\r\n\"qualificationC\":{{qualificationC}},\r\n\"qualificationD\":{{qualificationD}}\r\n}"
 						},
-						"url": {
-							"raw": "{{baseUrl}}/sf/audit/changeAuditStatus?fundId={{fundId}}&financialYear={{financialYear}}&auditStatus={{auditStatus}}&completionDate={{completionDate}}&qualificationB={{qualificationB}}&qualificationC={{qualificationC}}&qualificationD={{qualificationD}}",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"sf",
-								"audit",
-								"changeAuditStatus"
-							],
-							"query": [
-								{
-									"key": "fundId",
-									"value": "{{fundId}}",
-									"description": "[REQUIRED] - Unique ID of the Fund/Entity"
-								},
-								{
-									"key": "financialYear",
-									"value": "{{financialYear}}",
-									"description": "[REQUIRED] - yyyy - e.g. \"2021\" for the 2021 Financial Year"
-								},
-								{
-									"key": "auditStatus",
-									"value": "{{auditStatus}}",
-									"description": "[NOT REQUIRED] - (string) \n3 ( which means IN_PROGRESS).\n5 ( which means PRELIMINARY_COMPLETE).\n6 (which means COMPLETED)."
-								},
-								{
-									"key": "completionDate",
-									"value": "{{completionDate}}",
-									"description": "[NOT REQUIRED] - The date when the audit was completed, in the format \"yyyy-MM-dd\""
-								},
-								{
-									"key": "qualificationB",
-									"value": "{{qualificationB}}",
-									"description": "[NOT REQUIRED] - \"true\" or \"false\""
-								},
-								{
-									"key": "qualificationC",
-									"value": "{{qualificationC}}",
-									"description": "[NOT REQUIRED] - \"true\" or \"false\". If set to true, qualificationD becomes mandatory."
-								},
-								{
-									"key": "qualificationD",
-									"value": "{{qualificationD}}",
-									"description": "[NOT REQUIRED] - \"true\" or \"false\". Required if qualificationC is true."
-								}
-							]
-						},
+						"url": "{{baseUrl}}/sf/audit/changeAuditStatus",
 						"description": "### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- bgl_partner\n    \n- smsf_partner\n    \n- audit"
 					},
 					"response": [
