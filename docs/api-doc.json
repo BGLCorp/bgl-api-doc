@@ -14256,15 +14256,17 @@
 							"raw": "{\r\n    \"financialYear\":{{financialYear}},\r\n    \"auditStatus\": \"{{auditStatus}}\",\r\n    \"completionDate\": \"{{completionDate}}\",\r\n    \"qualificationB\": \"{{qualificationB}}\", \r\n    \"qualificationC\": \"{{qualificationC}}\",\r\n    \"qualificationD\": \"{{qualificationD}}\"\r\n}"
 						},
 						"url": {
-							"raw": "{{baseUrl}}/sf/audit/changeAuditStatus/:fundId",
+							"raw": "{{baseUrl}}/sf/funds/:fundId/audit/changeAuditStatus/",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"sf",
+								"funds",
+								":fundId",
 								"audit",
 								"changeAuditStatus",
-								":fundId"
+								""
 							],
 							"variable": [
 								{
@@ -14304,7 +14306,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://api.staging.bgl360.com.au/sf/audit/changeAuditStatus/:fundId",
+									"raw": "https://api.staging.bgl360.com.au/sf/funds/:fundId/audit/changeAuditStatus/",
 									"protocol": "https",
 									"host": [
 										"api",
@@ -14315,9 +14317,11 @@
 									],
 									"path": [
 										"sf",
+										"funds",
+										":fundId",
 										"audit",
 										"changeAuditStatus",
-										":fundId"
+										""
 									],
 									"variable": [
 										{
@@ -14389,15 +14393,17 @@
 							]
 						},
 						"url": {
-							"raw": "{{baseUrl}}/sf/audit/uploaddoc/:fundId",
+							"raw": "{{baseUrl}}/sf/funds/:fundId/audit/uploaddoc/",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"sf",
+								"funds",
+								":fundId",
 								"audit",
 								"uploaddoc",
-								":fundId"
+								""
 							],
 							"variable": [
 								{
@@ -14443,15 +14449,17 @@
 									]
 								},
 								"url": {
-									"raw": "{{baseUrl}}/sf/audit/uploaddoc/:fundId",
+									"raw": "{{baseUrl}}/sf/funds/:fundId/audit/uploaddoc/",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
 										"sf",
+										"funds",
+										":fundId",
 										"audit",
 										"uploaddoc",
-										":fundId"
+										""
 									],
 									"variable": [
 										{
