@@ -14253,7 +14253,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"fundId\": \"{{fundId}}\",\r\n    \"financialYear\":{{financialYear}},\r\n    \"auditStatus\": \"{{auditStatus}}\",\r\n    \"completionDate\": \"{{completionDate}}\",\r\n    \"qualificationB\": \"{{qualificationB}}\", \r\n    \"qualificationC\": \"{{qualificationC}}\",\r\n    \"qualificationD\": \"{{qualificationD}}\"\r\n}"
+							"raw": "{\r\n    \"financialYear\":{{financialYear}},\r\n    \"auditStatus\": \"{{auditStatus}}\",\r\n    \"completionDate\": \"{{completionDate}}\",\r\n    \"qualificationB\": \"{{qualificationB}}\", \r\n    \"qualificationC\": \"{{qualificationC}}\",\r\n    \"qualificationD\": \"{{qualificationD}}\"\r\n}"
 						},
 						"url": {
 							"raw": "{{baseUrl}}/sf/audit/changeAuditStatus/:fundId",
@@ -14296,14 +14296,37 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"fundId\": \"8ad08ae682d98f8c0182e71d66f60224\",\r\n    \"financialYear\":2024,\r\n    \"auditStatus\": \"3\",\r\n    \"completionDate\": \"2024-01-26\",\r\n    \"qualificationB\": \"true\", \r\n    \"qualificationC\": \"true\",\r\n    \"qualificationD\": \"false\"\r\n}",
+									"raw": "{\r\n    \"financialYear\":2024,\r\n    \"auditStatus\": \"3\",\r\n    \"completionDate\": \"2024-01-26\",\r\n    \"qualificationB\": \"true\", \r\n    \"qualificationC\": \"true\",\r\n    \"qualificationD\": \"false\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "https://api.staging.bgl360.com.au/sf/audit/changeAuditStatus"
+								"url": {
+									"raw": "https://api.staging.bgl360.com.au/sf/audit/changeAuditStatus/:fundId",
+									"protocol": "https",
+									"host": [
+										"api",
+										"staging",
+										"bgl360",
+										"com",
+										"au"
+									],
+									"path": [
+										"sf",
+										"audit",
+										"changeAuditStatus",
+										":fundId"
+									],
+									"variable": [
+										{
+											"key": "fundId",
+											"value": "{{fundId}}",
+											"description": "Unique ID for the fund"
+										}
+									]
+								}
 							},
 							"status": "Created",
 							"code": 201,
