@@ -14255,8 +14255,26 @@
 							"mode": "raw",
 							"raw": "{\r\n    \"fundId\": \"{{fundId}}\",\r\n    \"financialYear\":{{financialYear}},\r\n    \"auditStatus\": \"{{auditStatus}}\",\r\n    \"completionDate\": \"{{completionDate}}\",\r\n    \"qualificationB\": \"{{qualificationB}}\", \r\n    \"qualificationC\": \"{{qualificationC}}\",\r\n    \"qualificationD\": \"{{qualificationD}}\"\r\n}"
 						},
-						"url": "{{baseUrl}}/sf/audit/changeAuditStatus/",
-						"description": "### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- bgl_partner\n- smsf_partner\n- audit\n    \n\n### Request\n\n| **Key** | **Mandatory** | **Datatype** | **Constraints/Comments** |\n| --- | --- | --- | --- |\n| fundId | Yes | String | Unique ID for the fund |\n| financialYear | Yes | String | Year of Audit Record in the format \"yyyy\". For example, \"2021\" for the 2021 Financial Year |\n| auditStatus | Yes | Number | Current status of the audit.  <br>Valid values are:  <br>  <br>3 (this represents \"in progress\")  <br>  <br>5 (this represents \"preliminary complete\")  <br>  <br>6 (this represents \"completed\") |\n| completionDate | No | Date | The date when the audit was completed, in the format \"yyyy-MM-dd\". |\n| qualificationB | No | String | Accepts \"true\" or \"false\". |\n| qualificationC | No | String | Accepts \"true\" or \"false\".  <br>  <br>NOTE - if qualificationC is \"true\", then qualificationD must be included in the request body with true/false |\n| qualificationD | No | String | Accepts \"true\" or \"false\".  <br>  <br>NOTE - if qualificationC is \"true\", then qualificationD must be included in the request body with true/false  <br>  <br>If qualificationC is \"false\" or not provided in the request body, qualificationD must either be null or not included in the request body.  <br>e.g.  <br>\"qualificationC\": \"false\",  <br>\"qualificationD\": null  <br>  <br>or simply:  <br>\"qualificationC\": \"false\" |"
+						"url": {
+							"raw": "{{baseUrl}}/sf/audit/changeAuditStatus/:fundId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"sf",
+								"audit",
+								"changeAuditStatus",
+								":fundId"
+							],
+							"variable": [
+								{
+									"key": "fundId",
+									"value": "{{fundId}}",
+									"description": "Unique ID for the fund"
+								}
+							]
+						},
+						"description": "### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- bgl_partner\n- smsf_partner\n- audit\n    \n\n### Request\n\n| **Key** | **Mandatory** | **Datatype** | **Constraints/Comments** |\n| --- | --- | --- | --- |\n| financialYear | Yes | String | Year of Audit Record in the format \"yyyy\". For example, \"2021\" for the 2021 Financial Year |\n| auditStatus | Yes | Number | Current status of the audit.  <br>Valid values are:  <br>  <br>3 (this represents \"in progress\")  <br>  <br>5 (this represents \"preliminary complete\")  <br>  <br>6 (this represents \"completed\") |\n| completionDate | No | Date | The date when the audit was completed, in the format \"yyyy-MM-dd\". |\n| qualificationB | No | String | Accepts \"true\" or \"false\". |\n| qualificationC | No | String | Accepts \"true\" or \"false\".  <br>  <br>NOTE - if qualificationC is \"true\", then qualificationD must be included in the request body with true/false |\n| qualificationD | No | String | Accepts \"true\" or \"false\".  <br>  <br>NOTE - if qualificationC is \"true\", then qualificationD must be included in the request body with a value (\"true\" or \"false\")  <br>  <br>If qualificationC is \"false\" or not provided in the request body, qualificationD must either be null or not included in the request body.  <br>e.g.  <br>\"qualificationC\": \"false\",  <br>\"qualificationD\": null  <br>  <br>or simply:  <br>\"qualificationC\": \"false\" |"
 					},
 					"response": [
 						{
@@ -14330,14 +14348,18 @@
 							"mode": "formdata",
 							"formdata": [
 								{
-									"key": "document",
+									"key": "attachment",
 									"description": "[REQUIRED] - File attached to Upload - pdf, docx, xlsx or txt. File size limit 20MB.",
 									"type": "file",
+									"fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
+									"filesNotInWorkingDirectory": [
+										"/C:/Users/bwilkinson/Downloads/Engagement Letter.pdf"
+									],
 									"src": "/C:/Users/bwilkinson/Downloads/Engagement Letter.pdf"
 								},
 								{
 									"key": "financialYear",
-									"value": "",
+									"value": "{{financialYear}}",
 									"description": "[REQUIRED] - yyyy - e.g. \"2021\" for the 2021 Financial Year",
 									"type": "text"
 								}
