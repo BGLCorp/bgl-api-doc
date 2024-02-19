@@ -14256,7 +14256,7 @@
 							"raw": "{\r\n    \"fundId\": \"{{fundId}}\",\r\n    \"financialYear\":{{financialYear}},\r\n    \"auditStatus\": \"{{auditStatus}}\",\r\n    \"completionDate\": \"{{completionDate}}\",\r\n    \"qualificationB\": \"{{qualificationB}}\", \r\n    \"qualificationC\": \"{{qualificationC}}\",\r\n    \"qualificationD\": \"{{qualificationD}}\"\r\n}"
 						},
 						"url": "{{baseUrl}}/sf/audit/changeAuditStatus/",
-						"description": "### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- bgl_partner\n- smsf_partner\n- audit\n    \n\n### Request\n\n| **Key** | **Mandatory** | **Datatype** | **Constraints/Comments** |\n| --- | --- | --- | --- |\n| fundId | Yes | String | Unique ID for the fund |\n| financialYear | Yes | String | Year of Audit Record in the format \"yyyy\". For example, \"2021\" for the 2021 Financial Year |\n| auditStatus | Yes | Number | Current status of the audit.  <br>Valid values are:  <br>  <br>3 (this represents \"in progress\")  <br>  <br>5 (this represents \"preliminary complete\")  <br>  <br>6 (this represents \"completed\") |\n| completionDate | No | Date | The date when the audit was completed, in the format \"yyyy-MM-dd\". |\n| qualificationB | No | String | Accepts \"true\" or \"false\". |\n| qualificationC | No | String | Accepts \"true\" or \"false\".  <br>  <br>NOTE - if qualificationC is \"true\", then qualificationD must be included in the request body with true/false |\n| qualificationD | No | String | Accepts \"true\" or \"false\".  <br>  <br>NOTE - if qualificationC is \"true\", then qualificationD must be included in the request body with true/false  <br>  <br>If qualificationC is \"false\" or not provided in the request body, qualificationD must either be null or not included in the request body. |"
+						"description": "### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- bgl_partner\n- smsf_partner\n- audit\n    \n\n### Request\n\n| **Key** | **Mandatory** | **Datatype** | **Constraints/Comments** |\n| --- | --- | --- | --- |\n| fundId | Yes | String | Unique ID for the fund |\n| financialYear | Yes | String | Year of Audit Record in the format \"yyyy\". For example, \"2021\" for the 2021 Financial Year |\n| auditStatus | Yes | Number | Current status of the audit.  <br>Valid values are:  <br>  <br>3 (this represents \"in progress\")  <br>  <br>5 (this represents \"preliminary complete\")  <br>  <br>6 (this represents \"completed\") |\n| completionDate | No | Date | The date when the audit was completed, in the format \"yyyy-MM-dd\". |\n| qualificationB | No | String | Accepts \"true\" or \"false\". |\n| qualificationC | No | String | Accepts \"true\" or \"false\".  <br>  <br>NOTE - if qualificationC is \"true\", then qualificationD must be included in the request body with true/false |\n| qualificationD | No | String | Accepts \"true\" or \"false\".  <br>  <br>NOTE - if qualificationC is \"true\", then qualificationD must be included in the request body with true/false  <br>  <br>If qualificationC is \"false\" or not provided in the request body, qualificationD must either be null or not included in the request body.  <br>e.g.  <br>\"qualificationC\": \"false\",  <br>\"qualificationD\": null  <br>  <br>or simply:  <br>\"qualificationC\": \"false\" |"
 					},
 					"response": [
 						{
@@ -14271,12 +14271,19 @@
 									},
 									{
 										"key": "Content-Type",
-										"value": "application/json"
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": ""
+									"raw": "{\r\n    \"fundId\": \"8ad08ae682d98f8c0182e71d66f60224\",\r\n    \"financialYear\":2024,\r\n    \"auditStatus\": \"3\",\r\n    \"completionDate\": \"2024-01-26\",\r\n    \"qualificationB\": \"true\", \r\n    \"qualificationC\": \"true\",\r\n    \"qualificationD\": \"false\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
 								},
 								"url": "https://api.staging.bgl360.com.au/sf/audit/changeAuditStatus"
 							},
