@@ -14298,7 +14298,7 @@
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n  \"message\": \"Request accepted.\"\n}"
+							"body": "{\n    \"error\": [],\n    \"message\": \"request accepted.\"\n}"
 						}
 					]
 				},
@@ -14384,7 +14384,7 @@
 									"mode": "formdata",
 									"formdata": [
 										{
-											"key": "document",
+											"key": "attachment",
 											"description": "[REQUIRED] - File attached to Upload",
 											"type": "file",
 											"value": null
@@ -14427,7 +14427,7 @@
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n  \"message\":\"Document uploaded successfully\"\n}"
+							"body": "{\n    \"message\": \"Document uploaded successfully\"\n}"
 						}
 					]
 				}
