@@ -4390,7 +4390,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"name\": \"{{name}}\",\n  \"fundCode\": \"{{fundCode}}\",\n  \"abn\": \"{{abn}}\",\n  \"tfn\": \"{{tfn}}\",\n  \"esa\": \"{{esa}}\",\n  \"dateFormed\": \"{{dateFormed}}\",\n  \"windUpDate\": \"{{windUpDate}}\",\n  \"financialYearFrom\": \"{{financialYearFrom}}\",\n  \"financialYearEnd\": \"{{financialYearEnd}}\",\n  \"systemStartDate\": \"{{systemStartDate}}\",\n  \"enteringOpeningBalance\": \"False\",\n  \"gstregistered\": \"false/true\",\n  \"taxEffectAccount\": \"false/true\",\n  \"postalAddress\": {\n    \"streetLine1\": \"{{streetLine1}}\",\n    \"streetLine2\": \"{{streetLine2}}\",\n    \"city\": \"{{city}}\",\n    \"state\": \"{{state}}\",\n    \"country\": \"{{country}}\",\n    \"postCode\": \"{{postCode}}\"\n  },\n  \"physicalAddress\": {\n    \"streetLine1\": \"{{streetLine1}}\",\n    \"streetLine2\": \"{{streetLine2}}\",\n    \"city\": \"{{city}}\",\n    \"state\": \"{{state}}\",\n    \"country\": \"{{country}}\",\n    \"postCode\": \"{{postCode}}\"\n  },\n  \"trustDeedSource\": \"{{trustDeedSource}}\",\n  \"trustDeedLastModifiedDate\": \"{{trustDeedLastModifiedDate}}\",\n  \"trustDeedRuleClauseDeathBenefit\": \"{{trustDeedRuleClauseDeathBenefit}}\"\n}"
+									"raw": "{\n  \"name\": \"{{name}}\",\n  \"fundCode\": \"{{fundCode}}\",\n  \"abn\": \"{{abn}}\",\n  \"tfn\": \"{{tfn}}\",\n  \"esa\": \"{{esa}}\",\n  \"dateFormed\": \"{{dateFormed}}\",\n  \"windUpDate\": \"{{windUpDate}}\",\n  \"financialYearFrom\": \"{{financialYearFrom}}\",\n  \"financialYearEnd\": \"{{financialYearEnd}}\",\n  \"systemStartDate\": \"{{systemStartDate}}\",\n  \"enteringOpeningBalance\": \"False\",\n  \"gstregistered\": \"false\",\n  \"taxEffectAccount\": \"false\",\n  \"postalAddress\": {\n    \"streetLine1\": \"{{streetLine1}}\",\n    \"streetLine2\": \"{{streetLine2}}\",\n    \"city\": \"{{city}}\",\n    \"state\": \"{{state}}\",\n    \"country\": \"{{country}}\",\n    \"postCode\": \"{{postCode}}\"\n  },\n  \"physicalAddress\": {\n    \"streetLine1\": \"{{streetLine1}}\",\n    \"streetLine2\": \"{{streetLine2}}\",\n    \"city\": \"{{city}}\",\n    \"state\": \"{{state}}\",\n    \"country\": \"{{country}}\",\n    \"postCode\": \"{{postCode}}\"\n  },\n  \"trustDeedSource\": \"{{trustDeedSource}}\",\n  \"trustDeedLastModifiedDate\": \"{{trustDeedLastModifiedDate}}\",\n  \"trustDeedRuleClauseDeathBenefit\": \"{{trustDeedRuleClauseDeathBenefit}}\"\n}"
 								},
 								"url": {
 									"raw": "{{baseUrl}}/sf/funds/:fundId",
@@ -4426,12 +4426,19 @@
 											},
 											{
 												"key": "Content-Type",
-												"value": "application/json"
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
 											}
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"name\": \"The Sample Super Fund\",\n  \"badgeId\" : \"4378\",\n  \"fundCode\": \"SAM001\",\n  \"abn\": \"120 0404 5553\",\n  \"tfn\": \"195 144 237\",\n  \"esa\": \"AUSTPOSTSMSF\",\n  \"dateFormed\": \"2018-12-18\",\n  \"windUpDate\": \"2019-07-30\",\n  \"financialYearFrom\": \"2018-12-18\",\n  \"financialYearEnd\": \"2019-06-30\",\n  \"systemStartDate\": \"2018-12-18\",\n  \"enteringOpeningBalance\": \"False\",\n  \"postalAddress\": {\n    \"streetLine1\": \"606 Hawthorn Rd\",\n    \"streetLine2\": \"\",\n    \"city\": \"Brighton East\",\n    \"state\": \"VIC\",\n    \"country\": \"AU\",\n    \"postCode\": \"3187\"\n  },\n  \"physicalAddress\": {\n    \"streetLine1\": \"606 Hawthorn Rd\",\n    \"streetLine2\": \"\",\n    \"city\": \"Brighton East\",\n    \"state\": \"VIC\",\n    \"country\": \"AU\",\n    \"postCode\": \"3187\"\n  },\n  \"trustDeedSource\": \"Top Docs\",\n  \"trustDeedLastModifiedDate\": \"2006-07-01\",\n  \"trustDeedRuleClauseDeathBenefit\": \"48D\"\n}\n"
+											"raw": "{\n  \"name\": \"The Sample Super Fund\",\n  \"badgeId\" : \"4378\",\n  \"fundCode\": \"SAM001\",\n  \"abn\": \"120 0404 5553\",\n  \"tfn\": \"195 144 237\",\n  \"esa\": \"AUSTPOSTSMSF\",\n  \"dateFormed\": \"2018-12-18\",\n  \"windUpDate\": \"2019-07-30\",\n  \"financialYearFrom\": \"2018-12-18\",\n  \"financialYearEnd\": \"2019-06-30\",\n  \"systemStartDate\": \"2018-12-18\",\n  \"enteringOpeningBalance\": \"False\",\n    \"gstregistered\": \"false\",\n  \"taxEffectAccount\": \"false\",\n  \"postalAddress\": {\n    \"streetLine1\": \"606 Hawthorn Rd\",\n    \"streetLine2\": \"\",\n    \"city\": \"Brighton East\",\n    \"state\": \"VIC\",\n    \"country\": \"AU\",\n    \"postCode\": \"3187\"\n  },\n  \"physicalAddress\": {\n    \"streetLine1\": \"606 Hawthorn Rd\",\n    \"streetLine2\": \"\",\n    \"city\": \"Brighton East\",\n    \"state\": \"VIC\",\n    \"country\": \"AU\",\n    \"postCode\": \"3187\"\n  },\n  \"trustDeedSource\": \"Top Docs\",\n  \"trustDeedLastModifiedDate\": \"2006-07-01\",\n  \"trustDeedRuleClauseDeathBenefit\": \"48D\"\n}\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
 										},
 										"url": "{{baseUrl}}/sf/funds/<string>"
 									},
