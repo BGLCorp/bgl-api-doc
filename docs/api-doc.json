@@ -14483,6 +14483,544 @@
 							"body": "{\n    \"message\": \"Document uploaded successfully\"\n}"
 						}
 					]
+				},
+				{
+					"name": "List Trust Deed Details and Documents",
+					"id": "203da763-93b3-4090-9eb7-52d83baee231",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"sf",
+								"funds",
+								":fundId",
+								"trustDeeds",
+								""
+							],
+							"variable": [
+								{
+									"id": "67d22f92-d631-427d-9245-a28deba4607a",
+									"key": "fundId",
+									"value": "{{fundId}}"
+								}
+							]
+						},
+						"description": "This endpoint returns the trust deed and all previous versions of the trust deed.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- audit\n- smsf_partner\n- bgl_partner\n    \n\n### Response Body\n\n| Field | **Mandatory** | **Data Type** | **Comments** |\n| --- | --- | --- | --- |\n| deedType | Yes | String (enum) | \"Initial\" or \"Variation\" |\n| docKey | Yes | String |  |\n| deedDate | Yes | Date | \"2023-06-30T00:00:00.000+0000\" |\n| description | No | String |  |\n| deedSource | No | String |  |\n| clauseNumber | No | String |  |"
+					},
+					"response": [
+						{
+							"id": "db96d308-924f-4afc-ab32-9b0e107381d2",
+							"name": "Status 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"sf",
+										"funds",
+										":fundId",
+										"trustDeeds",
+										""
+									],
+									"variable": [
+										{
+											"key": "fundId",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "[\n    {\n        \"accountId\": 5919,\n        \"clauseNumber\": null,\n        \"createdDate\": \"2024-02-19T04:37:34.000+0000\",\n        \"deedDate\": \"2020-01-01T00:00:00.000+0000\",\n        \"deedSource\": null,\n        \"deedType\": \"Initial\",\n        \"description\": \"Trust Deed\",\n        \"docKey\": \"5919/8a8bda418cf15e32018cf1860ab2001a/b5b43571-8adb-4181-9468-83af3dd94f4c\",\n        \"fileName\": \"TrustDeed1.pdf\",\n        \"fundId\": \"8a8bda418cf15e32018cf1860ab2001a\",\n        \"id\": 12496\n    },\n    {\n        \"accountId\": 5919,\n        \"clauseNumber\": 2,\n        \"createdDate\": \"2024-02-19T04:40:26.000+0000\",\n        \"deedDate\": \"2021-01-01T00:00:00.000+0000\",\n        \"deedSource\": \"source value test\",\n        \"deedType\": \"Variation\",\n        \"description\": \"Trust Deed update\",\n        \"docKey\": \"5919/8a8bda418cf15e32018cf1860ab2001a/ee8c9f27-3eb0-42b1-bda7-4e1e3dd367e3\",\n        \"fileName\": \"TrustDeed2.pdf\",\n        \"fundId\": \"8a8bda418cf15e32018cf1860ab2001a\",\n        \"id\": 12497\n    },\n    {\n        \"accountId\": 5919,\n        \"clauseNumber\": null,\n        \"createdDate\": \"2024-02-19T05:13:03.000+0000\",\n        \"deedDate\": \"2023-06-30T00:00:00.000+0000\",\n        \"deedSource\": null,\n        \"deedType\": \"Variation\",\n        \"description\": \"Trust Deed three\",\n        \"docKey\": \"sf360$5919$8a8bda418cf15e32018cf1860ab2001a$a52d2d91-7861-48eb-bb5f-b64eaaccdf4e\",\n        \"fileName\": \"TrustDeed3.pdf\",\n        \"fundId\": \"8a8bda418cf15e32018cf1860ab2001a\",\n        \"id\": 12500\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Trust Deed Details and Document by ID",
+					"id": "7abc8326-c20e-4a70-9b4a-29e95a76412b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/:trustDeedId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"sf",
+								"funds",
+								":fundId",
+								"trustDeeds",
+								":trustDeedId"
+							],
+							"variable": [
+								{
+									"id": "7b0df111-8df6-406b-9598-9cff33b71f8d",
+									"key": "fundId",
+									"value": "{{fundId}}",
+									"description": "Unique ID for the fund/entity"
+								},
+								{
+									"id": "77646a73-c797-4ce0-a958-79fad7f5fb7b",
+									"key": "trustDeedId",
+									"value": "{{trustDeedId}}",
+									"description": "Unique ID for the trust deed"
+								}
+							]
+						},
+						"description": "This endpoint returns the specific trust deed for the ID provided.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- audit\n- smsf_partner\n- bgl_partner\n    \n\n### Response Body\n\n| Field | **Mandatory** | **Data Type** | **Comments** |\n| --- | --- | --- | --- |\n| deedType | Yes | String (enum) | \"Initial\" or \"Variation\" |\n| docKey | Yes | String |  |\n| deedDate | Yes | Date | \"2023-06-30T00:00:00.000+0000\" |\n| description | No | String |  |\n| deedSource | No | String |  |\n| clauseNumber | No | String |  |"
+					},
+					"response": [
+						{
+							"id": "8521a811-6b1c-42fa-b7fc-00df4716f4eb",
+							"name": "Status 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/:trustDeedId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"sf",
+										"funds",
+										":fundId",
+										"trustDeeds",
+										":trustDeedId"
+									],
+									"variable": [
+										{
+											"key": "fundId",
+											"value": ""
+										},
+										{
+											"key": "trustDeedId",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"accountId\": 5919,\n    \"clauseNumber\": null,\n    \"createdDate\": \"2024-02-19T05:13:03.000+0000\",\n    \"deedDate\": \"2023-06-30T00:00:00.000+0000\",\n    \"deedSource\": null,\n    \"deedType\": \"Variation\",\n    \"description\": \"Trust Deed three\",\n    \"docKey\": \"sf360$5919$8a8bda418cf15e32018cf1860ab2001a$a52d2d91-7861-48eb-bb5f-b64eaaccdf4e\",\n    \"fileName\": \"TrustDeed3.pdf\",\n    \"fundId\": \"8a8bda418cf15e32018cf1860ab2001a\",\n    \"id\": 12500\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Trust Deed Details and Document",
+					"id": "f28be0d2-1cb0-4cc4-b6ef-45b2333c5f0c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"deedType\": \"Initial\",\r\n    \"docKey\": \"sf360$5919$8a8bda418cf15e32018cf1860ab2001a$81b5e03b-2069-4cd3-8490-33897cb0ffa9\",\r\n    \"deedDate\": \"2023-06-30T00:00:00.000+0000\",\r\n    \"description\": \"Trust Deed\",\r\n    \"deedSource\": null,\r\n    \"clauseNumber\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"sf",
+								"funds",
+								":fundId",
+								"trustDeeds",
+								""
+							],
+							"variable": [
+								{
+									"id": "70c53f3a-fdcc-4a37-ace3-176076ad53b1",
+									"key": "fundId",
+									"value": "{{fundId}}",
+									"description": "Unique ID for the fund"
+								}
+							]
+						},
+						"description": "This endpoint allows you to create a trust deed.\n\nThere are two steps:\n\n1 - Use the [POST Upload Document endpoint](https://docs.api.bgl360.com.au/?version=latest#33b8e60e-d324-4f43-898a-90bacff16a45) to upload the Trust Deed\n\n2 - Use this POST Create Trust Deed Details endpoint to update and mark that document as a trust deed with relevant details.\n\nNote - if the document has previously been uploaded, then use the [GET Entity Documents List endpoint](https://docs.api.bgl360.com.au/?version=latest#0830ed87-f853-48c3-97ff-027ea4e882f3) to find the relevant doc key.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- audit\n- smsf_partner\n- bgl_partner\n    \n\n### Request Body\n\n| Field | **Mandatory** | **Data Type** | **Comments** |\n| --- | --- | --- | --- |\n| deedType | Yes | String (enum) | \"Initial\" or \"Variation\" |\n| docKey | Yes | String | When uploading a new document, obtain this value from the \\[POST Upload Document endpoint\\]([https://docs.api.bgl360.com.au/?version=latest#33b8e60e-d324-4f43-898a-90bacff16a45)](https://docs.api.bgl360.com.au/?version=latest#33b8e60e-d324-4f43-898a-90bacff16a45) response.  <br>  <br>If using an existing document, use the \\[GET Entity Documents List endpoint\\]([https://docs.api.bgl360.com.au/?version=latest#0830ed87-f853-48c3-97ff-027ea4e882f3)](https://docs.api.bgl360.com.au/?version=latest#0830ed87-f853-48c3-97ff-027ea4e882f3) to find the relevant doc key |\n| deedDate | Yes | Date | \"2023-06-30T00:00:00.000+0000\" |\n| description | No | String |  |\n| deedSource | No | String |  |\n| clauseNumber | No | String |  |"
+					},
+					"response": [
+						{
+							"id": "784d3372-646a-4f08-a41b-1d22486f1a5a",
+							"name": "Status 201",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"deedType\": \"Initial\",\r\n    \"docKey\": \"sf360$5919$8a8bda418cf15e32018cf1860ab2001a$81b5e03b-2069-4cd3-8490-33897cb0ffa9\",\r\n    \"deedDate\": \"2023-06-30T00:00:00.000+0000\",\r\n    \"description\": \"Trust Deed\",\r\n    \"deedSource\": null,\r\n    \"clauseNumber\": null\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"sf",
+										"funds",
+										":fundId",
+										"trustDeeds",
+										""
+									],
+									"variable": [
+										{
+											"key": "fundId",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"accountId\": 5919,\n    \"clauseNumber\": null,\n    \"createdDate\": \"2024-02-19T05:33:57.000+0000\",\n    \"deedDate\": \"2023-06-30T00:00:00.000+0000\",\n    \"deedSource\": null,\n    \"deedType\": \"Initial\",\n    \"description\": \"Trust Deed\",\n    \"docKey\": \"sf360$5919$8a8bda418cf15e32018cf1860ab2001a$81b5e03b-2069-4cd3-8490-33897cb0ffa9\",\n    \"fileName\": \"TrustDeed4.pdf\",\n    \"fundId\": \"8a8bda418cf15e32018cf1860ab2001a\",\n    \"id\": 12501\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Trust Deed Details",
+					"id": "62880473-57cd-4bb6-86fa-ec2ff6545c49",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"deedType\": \"Variation\",\r\n    \"docKey\": \"sf360$5919$8a8bda418cf15e32018cf1860ab2001a$81b5e03b-2069-4cd3-8490-33897cb0ffa9\",\r\n    \"deedDate\": \"2023-06-30T00:00:00.000+0000\",\r\n    \"description\": \"Trust Deed updating description\",\r\n    \"deedSource\": null,\r\n    \"clauseNumber\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/:trustDeedId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"sf",
+								"funds",
+								":fundId",
+								"trustDeeds",
+								":trustDeedId"
+							],
+							"variable": [
+								{
+									"id": "9cb36c1a-d6a8-4995-ab47-c1d5f406683f",
+									"key": "fundId",
+									"value": "{{fundId}}",
+									"description": "Unique ID for the fund"
+								},
+								{
+									"id": "805366a6-ddf8-4975-a307-9545ade2d0e4",
+									"key": "trustDeedId",
+									"value": "{{trustDeedId}}",
+									"description": "Unique ID for the trust deed"
+								}
+							]
+						},
+						"description": "This endpoint allows you to update the details of a trust deed.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- audit\n- smsf_partner\n- bgl_partner\n    \n\n### Request Body\n\n| **Field** | **Mandatory** | **Data Type** | **Comments** |\n| --- | --- | --- | --- |\n| deedType | Yes | String (enum) | \"Initial\" or \"Variation\" |\n| docKey | Yes | String | Obtain this value from the \\[GET List Trust Deed Details and Documents\\]([https://docs.api.bgl360.com.au/?version=latest#33b8e60e-d324-4f43-898a-90bacff16a45) ](https://docs.api.bgl360.com.au/?version=latest#33b8e60e-d324-4f43-898a-90bacff16a45) endpoint. |\n| deedDate | Yes | Date | \"2023-06-30T00:00:00.000+0000\" |\n| description | No | String |  |\n| deedSource | No | String |  |\n| clauseNumber | No | String |  |"
+					},
+					"response": [
+						{
+							"id": "4f978d1d-f887-4d02-a319-7c068635ff1c",
+							"name": "Status 200",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"deedType\": \"Initial\",\r\n    \"docKey\": \"sf360$5919$8a8bda418cf15e32018cf1860ab2001a$81b5e03b-2069-4cd3-8490-33897cb0ffa9\",\r\n    \"deedDate\": \"2023-06-30T00:00:00.000+0000\",\r\n    \"description\": \"Trust Deed update description\",\r\n    \"deedSource\": null,\r\n    \"clauseNumber\": null\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/:trustDeedId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"sf",
+										"funds",
+										":fundId",
+										"trustDeeds",
+										":trustDeedId"
+									],
+									"variable": [
+										{
+											"key": "fundId",
+											"value": ""
+										},
+										{
+											"key": "trustDeedId",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"accountId\": 5919,\n    \"clauseNumber\": null,\n    \"createdDate\": \"2024-02-19T05:33:57.000+0000\",\n    \"deedDate\": \"2023-06-30T00:00:00.000+0000\",\n    \"deedSource\": null,\n    \"deedType\": \"Initial\",\n    \"description\": \"Trust Deed update description\",\n    \"docKey\": \"sf360$5919$8a8bda418cf15e32018cf1860ab2001a$81b5e03b-2069-4cd3-8490-33897cb0ffa9\",\n    \"fileName\": \"TrustDeed4.pdf\",\n    \"fundId\": \"8a8bda418cf15e32018cf1860ab2001a\",\n    \"id\": 12501\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Trust Deed Details",
+					"id": "6ed6de95-9ac1-4eab-9733-0140c3b10172",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/:trustDeedId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"sf",
+								"funds",
+								":fundId",
+								"trustDeeds",
+								":trustDeedId"
+							],
+							"variable": [
+								{
+									"id": "20f913d5-7998-4e90-8c78-fbb8a9900fda",
+									"key": "fundId",
+									"value": "{{fundId}}",
+									"description": "Unique ID for the fund"
+								},
+								{
+									"id": "30543384-c900-4625-9d09-5be9599e14bc",
+									"key": "trustDeedId",
+									"value": "{{trustDeedId}}",
+									"description": "Unique ID for the trust deed"
+								}
+							]
+						},
+						"description": "This endpoint allows you to delete the trust deed.\n\nPlease note, this will remove the Trust Deed from the Trust Deed screen, however the underlying document will still be availble in the Document screen.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- audit\n- smsf_partner\n- bgl_partner"
+					},
+					"response": [
+						{
+							"id": "551d3418-f4b9-4bd0-a3f2-aeb35ead967c",
+							"name": "Status 200",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/:trustDeedId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"sf",
+										"funds",
+										":fundId",
+										"trustDeeds",
+										":trustDeedId"
+									],
+									"variable": [
+										{
+											"key": "fundId",
+											"value": ""
+										},
+										{
+											"key": "trustDeedId",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"status\": \"DELETED\"\n}"
+						}
+					]
 				}
 			],
 			"id": "b64f686b-0568-4c9a-b3ba-b4836c194a32"
