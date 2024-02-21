@@ -14279,7 +14279,7 @@
 										}
 									]
 								},
-								"description": "This resource returns a list of company activities.\n\n### **Response Body**\n\nLegend:\n\n✓ Field used in that jurisdiction\n\n\\[blank\\] Field not used in that jurisdiction\n\n| **Field** | **Data Type** | **Australia & NZ** | **Singapore** | **Comment** |\n| --- | --- | --- | --- | --- |\n| activity | String | MANDATORY | MANDATORY | Name of the activity |\n| activityCode | String | MANDATORY | MANDATORY | Code of the activity |\n| activityDate | String | MANDATORY | MANDATORY | \"yyyy-mm-dd\" |\n| activityType | String | ✓ | MANDATORY |  |\n| ceasedDate | String | ✓ | ✓ | \"yyyy-mm-dd\" |\n| otherDescription | String | ✓ | ✓ |  |"
+								"description": "This resource returns a list of company business activities.\n\n### **Response Body**\n\nLegend:\n\n✓ Field used in that jurisdiction\n\n\\[blank\\] Field not used in that jurisdiction\n\n| **Field** | **Data Type** | **Australia & NZ** | **Singapore** | **Comment** |\n| --- | --- | --- | --- | --- |\n| activity | String | MANDATORY | MANDATORY | Name of the activity |\n| activityCode | String | MANDATORY | MANDATORY | Code of the activity |\n| activityDate | String | MANDATORY | MANDATORY | \"yyyy-mm-dd\" |\n| activityType | String | ✓ | MANDATORY |  |\n| ceasedDate | String | ✓ | ✓ | \"yyyy-mm-dd\" |\n| otherDescription | String | ✓ | ✓ |  |"
 							},
 							"response": [
 								{
@@ -14378,7 +14378,7 @@
 										}
 									]
 								},
-								"description": "This resource returns a list of company activities.\n\n### **Request Body**\n\nLegend:\n\n✓ Field used in that jurisdiction\n\n\\[blank\\] Field not used in that jurisdiction\n\n| **Field** | **Data Type** | **Australia & NZ** | **Singapore** | **Comment** |\n| --- | --- | --- | --- | --- |\n| activity | String | MANDATORY | MANDATORY | Name of the activity |\n| activityCode | String | MANDATORY | MANDATORY | Code of the activity |\n| activityDate | String | MANDATORY | MANDATORY | \"yyyy-mm-dd\" |\n| activityType | String | ✓ | MANDATORY |  |\n| ceasedDate | String | ✓ | ✓ | \"yyyy-mm-dd\" |\n| otherDescription | String | ✓ | ✓ |  |"
+								"description": "This resource returns a list of Company Business Activities.\n\n### **Request Body**\n\nLegend:\n\n✓ Field used in that jurisdiction\n\n\\[blank\\] Field not used in that jurisdiction\n\n| **Field** | **Data Type** | **Australia & NZ** | **Singapore** | **Comment** |\n| --- | --- | --- | --- | --- |\n| activity | String | MANDATORY | MANDATORY | Name of the activity |\n| activityCode | String | MANDATORY | MANDATORY | Code of the activity |\n| activityDate | String | MANDATORY | MANDATORY | \"yyyy-mm-dd\" |\n| activityType | String | ✓ | MANDATORY |  |\n| ceasedDate | String | ✓ | ✓ | \"yyyy-mm-dd\" |\n| otherDescription | String | ✓ | ✓ |  |"
 							},
 							"response": [
 								{
@@ -14498,7 +14498,7 @@
 										}
 									]
 								},
-								"description": "This resource updates company activities.\n\nAs it is a PUT, any field NOT included will be set to NULL.\n\nThe recommended approach is to first send a GET to retrieve all fields, and then include that response in the PUT body, making the adjustments as needed.\n\n### **Request Body**\n\nLegend:\n\n✓ Field used in that jurisdiction\n\n\\[blank\\] Field not used in that jurisdiction\n\n| **Field** | **Data Type** | **Australia & NZ** | **Singapore** | **Comment** |\n| --- | --- | --- | --- | --- |\n| activity | String | MANDATORY | MANDATORY | Name of the activity |\n| activityCode | String | MANDATORY | MANDATORY | Code of the activity |\n| activityDate | String | MANDATORY | MANDATORY | \"yyyy-mm-dd\" |\n| activityType | String | ✓ | MANDATORY |  |\n| ceasedDate | String | ✓ | ✓ | \"yyyy-mm-dd\" |\n| otherDescription | String | ✓ | ✓ |  |"
+								"description": "This resource updates Company Business Activities.\n\nAs it is a PUT, any field NOT included will be set to NULL.\n\nThe recommended approach is to first send a GET to retrieve all fields, and then include that response in the PUT body, making the adjustments as needed.\n\n### **Request Body**\n\nLegend:\n\n✓ Field used in that jurisdiction\n\n\\[blank\\] Field not used in that jurisdiction\n\n| **Field** | **Data Type** | **Australia & NZ** | **Singapore** | **Comment** |\n| --- | --- | --- | --- | --- |\n| activity | String | MANDATORY | MANDATORY | Name of the activity |\n| activityCode | String | MANDATORY | MANDATORY | Code of the activity |\n| activityDate | String | MANDATORY | MANDATORY | \"yyyy-mm-dd\" |\n| activityType | String | ✓ | MANDATORY |  |\n| ceasedDate | String | ✓ | ✓ | \"yyyy-mm-dd\" |\n| otherDescription | String | ✓ | ✓ |  |"
 							},
 							"response": [
 								{
@@ -14623,7 +14623,7 @@
 										}
 									]
 								},
-								"description": "This resource is to update an existing company activity.\n\nAs it is a PATCH, not every field needs to be included.\n\n### **Request Body**\n\nLegend:\n\n✓ Field used in that jurisdiction\n\n\\[blank\\] Field not used in that jurisdiction\n\n| **Field** | **Data Type** | **Australia & NZ** | **Singapore** | **Comment** |\n| --- | --- | --- | --- | --- |\n| activity | String | MANDATORY | MANDATORY | Name of the activity |\n| activityCode | String | MANDATORY | MANDATORY | Code of the activity |\n| activityDate | String | MANDATORY | MANDATORY | \"yyyy-mm-dd\" |\n| activityType | String | MANDATORY | MANDATORY | Set \"OTHER\" for AU/NZ |\n| ceasedDate | String | ✓ | ✓ | \"yyyy-mm-dd\" |\n| otherDescription | String | ✓ | ✓ |  |"
+								"description": "This resource is to update an existing Company Business Activity.\n\nAs it is a PATCH, not every field needs to be included.\n\n### **Request Body**\n\nLegend:\n\n✓ Field used in that jurisdiction\n\n\\[blank\\] Field not used in that jurisdiction\n\n| **Field** | **Data Type** | **Australia & NZ** | **Singapore** | **Comment** |\n| --- | --- | --- | --- | --- |\n| activity | String | MANDATORY | MANDATORY | Name of the activity |\n| activityCode | String | MANDATORY | MANDATORY | Code of the activity |\n| activityDate | String | MANDATORY | MANDATORY | \"yyyy-mm-dd\" |\n| activityType | String | MANDATORY | MANDATORY | Set \"OTHER\" for AU/NZ |\n| ceasedDate | String | ✓ | ✓ | \"yyyy-mm-dd\" |\n| otherDescription | String | ✓ | ✓ |  |"
 							},
 							"response": [
 								{
@@ -14739,7 +14739,7 @@
 										}
 									]
 								},
-								"description": "This resource is used to delete a company activity."
+								"description": "This resource is used to delete a Company Business Activity."
 							},
 							"response": [
 								{
