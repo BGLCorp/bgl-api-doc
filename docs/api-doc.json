@@ -14235,6 +14235,11 @@
 					"description": "This section contains the resources to request and verify identification via BGLiD.\n\nIf you are interested in utilising this service, please contact the BGL team at [api@bglcorp.com.au](https://mailto:api@bglcorp.com.au)"
 				},
 				{
+					"name": "New Folder",
+					"item": [],
+					"id": "72f97ed6-e577-4b40-afa8-7d4f92ec7c7c"
+				},
+				{
 					"name": "Update Audit Status",
 					"id": "4de4e132-b80f-434f-9959-14b7ac5c5e09",
 					"protocolProfileBehavior": {
