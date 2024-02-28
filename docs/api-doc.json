@@ -9994,6 +9994,817 @@
 									]
 								},
 								{
+									"name": "Update Company Business Activities",
+									"id": "4eb9702c-7310-4615-b771-f65fbb1a203e",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "\r\n    {\r\n        \"activity\": \"June Conference\",\r\n        \"activityCode\": \"456\",\r\n        \"activityDate\": \"2023-06-22\",\r\n        \"activityType\": null,\r\n        \"ceasedDate\": null,\r\n        \"otherDescription\": null\r\n    }\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/cas/companies/:companyId/activities/:activityId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"cas",
+												"companies",
+												":companyId",
+												"activities",
+												":activityId"
+											],
+											"query": [
+												{
+													"key": "",
+													"value": null,
+													"type": "text",
+													"disabled": true
+												}
+											],
+											"variable": [
+												{
+													"id": "ff30b14e-c568-4649-b5fc-3a5f8900bde1",
+													"key": "companyId",
+													"value": "{{companyId}}"
+												},
+												{
+													"id": "213fdf96-419c-4715-8288-8692c1e6304e",
+													"key": "activityId",
+													"value": "{{activityId}}"
+												}
+											]
+										},
+										"description": "This resource updates Company Business Activities.\n\nAs it is a PUT, any field NOT included will be set to NULL.\n\nThe recommended approach is to first send a GET to retrieve all fields, and then include that response in the PUT body, making the adjustments as needed.\n\n### **Request Body**\n\nLegend:\n\n✓ Field used in that jurisdiction\n\n\\[blank\\] Field not used in that jurisdiction\n\n| **Field** | **Data Type** | **Australia & NZ** | **Singapore** | **Comment** |\n| --- | --- | --- | --- | --- |\n| activity | String | MANDATORY | MANDATORY | Name of the activity |\n| activityCode | String | MANDATORY | MANDATORY | Code of the activity |\n| activityDate | String | MANDATORY | MANDATORY | \"yyyy-mm-dd\" |\n| activityType | String | ✓ | MANDATORY |  |\n| ceasedDate | String | ✓ | ✓ | \"yyyy-mm-dd\" |\n| otherDescription | String | ✓ | ✓ |  |"
+									},
+									"response": [
+										{
+											"id": "830a2ca2-a35b-4b87-aa0f-570edda441b4",
+											"name": "Status 200",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}"
+													},
+													{
+														"key": "Content-Type",
+														"name": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "\r\n    {\r\n        \"activity\": \"June Conference\",\r\n        \"activityCode\": \"456\",\r\n        \"activityDate\": \"2023-06-22\",\r\n        \"activityType\": null,\r\n        \"ceasedDate\": null,\r\n        \"otherDescription\": null\r\n    }\r\n",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/cas/companies/:companyId/activities/:activityId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"cas",
+														"companies",
+														":companyId",
+														"activities",
+														":activityId"
+													],
+													"variable": [
+														{
+															"key": "companyId",
+															"value": "{{companyId}}"
+														},
+														{
+															"key": "activityId",
+															"value": "{{activityId}}"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\r\n    \"activity\": \"June Conference\",\r\n    \"activityCode\": \"456\",\r\n    \"activityDate\": \"2023-06-22\",\r\n    \"activityType\": null,\r\n    \"ceasedDate\": null,\r\n    \"id\": 485553,\r\n    \"otherDescription\": null\r\n}"
+										}
+									]
+								},
+								{
+									"name": "Update Company Business Activities",
+									"id": "aa57e271-06eb-45f5-b765-ee4e0bcf2142",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "\r\n    {\r\n        \"activity\": \"June Conference\",\r\n        \"activityCode\": \"456\",\r\n        \"activityDate\": \"2023-06-22\",\r\n        \"activityType\": \"OTHER\",\r\n        \"ceasedDate\": null,\r\n        \"otherDescription\": null\r\n    }\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/cas/companies/:companyId/activities/:activityId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"cas",
+												"companies",
+												":companyId",
+												"activities",
+												":activityId"
+											],
+											"query": [
+												{
+													"key": "",
+													"value": null,
+													"type": "text",
+													"disabled": true
+												}
+											],
+											"variable": [
+												{
+													"id": "8f420070-35a1-4d5f-b39a-90697a80a3ea",
+													"key": "companyId",
+													"value": "{{companyId}}"
+												},
+												{
+													"id": "abd66655-e055-4cd5-bb0d-0c84ec75d78f",
+													"key": "activityId",
+													"value": "{{activityId}}"
+												}
+											]
+										},
+										"description": "This resource is to update an existing Company Business Activity.\n\nAs it is a PATCH, not every field needs to be included.\n\n### **Request Body**\n\nLegend:\n\n✓ Field used in that jurisdiction\n\n\\[blank\\] Field not used in that jurisdiction\n\n| **Field** | **Data Type** | **Australia & NZ** | **Singapore** | **Comment** |\n| --- | --- | --- | --- | --- |\n| activity | String | MANDATORY | MANDATORY | Name of the activity |\n| activityCode | String | MANDATORY | MANDATORY | Code of the activity |\n| activityDate | String | MANDATORY | MANDATORY | \"yyyy-mm-dd\" |\n| activityType | String | MANDATORY | MANDATORY | Set \"OTHER\" for AU/NZ |\n| ceasedDate | String | ✓ | ✓ | \"yyyy-mm-dd\" |\n| otherDescription | String | ✓ | ✓ |  |"
+									},
+									"response": [
+										{
+											"id": "43b7aaa9-70fc-40bd-82ab-6c10f1bddf4e",
+											"name": "Status 200",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}"
+													},
+													{
+														"key": "Content-Type",
+														"name": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "\r\n    {\r\n        \"activity\": \"June Conference\",\r\n        \"activityCode\": \"456\",\r\n        \"activityDate\": \"2023-06-22\",\r\n        \"activityType\": \"OTHER\",\r\n        \"ceasedDate\": null,\r\n        \"otherDescription\": null\r\n    }\r\n",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/cas/companies/:companyId/activities/:activityId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"cas",
+														"companies",
+														":companyId",
+														"activities",
+														":activityId"
+													],
+													"variable": [
+														{
+															"key": "companyId",
+															"value": "{{companyId}}"
+														},
+														{
+															"key": "activityId",
+															"value": "{{activityId}}"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\r\n    \"activity\": \"June Conference\",\r\n    \"activityCode\": \"456\",\r\n    \"activityDate\": \"2023-06-22\",\r\n    \"activityType\": null,\r\n    \"ceasedDate\": null,\r\n    \"id\": 485553,\r\n    \"otherDescription\": null\r\n}"
+										}
+									]
+								},
+								{
+									"name": "Delete Company Business Activities",
+									"id": "88a0b90a-d9d0-4351-b281-888f6dd12697",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/cas/companies/:companyId/activities/:activityId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"cas",
+												"companies",
+												":companyId",
+												"activities",
+												":activityId"
+											],
+											"query": [
+												{
+													"key": "",
+													"value": null,
+													"type": "text",
+													"disabled": true
+												}
+											],
+											"variable": [
+												{
+													"id": "8f420070-35a1-4d5f-b39a-90697a80a3ea",
+													"key": "companyId",
+													"value": "{{companyId}}"
+												},
+												{
+													"id": "abd66655-e055-4cd5-bb0d-0c84ec75d78f",
+													"key": "activityId",
+													"value": "{{activityId}}"
+												}
+											]
+										},
+										"description": "This resource is used to delete a Company Business Activity."
+									},
+									"response": [
+										{
+											"id": "df7f4962-2864-4fa1-bde1-9b76a4c88999",
+											"name": "Status 200",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}"
+													},
+													{
+														"key": "Content-Type",
+														"name": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/cas/companies/:companyId/activities/:activityId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"cas",
+														"companies",
+														":companyId",
+														"activities",
+														":activityId"
+													],
+													"variable": [
+														{
+															"key": "companyId",
+															"value": "{{companyId}}"
+														},
+														{
+															"key": "activityId",
+															"value": "{{activityId}}"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\r\n    \"status\": \"DELETED\"\r\n}"
+										}
+									]
+								},
+								{
+									"name": "List Company Charges",
+									"id": "dfaa90ab-d895-45ce-a2c8-372bddfa75f2",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/cas/companies/:companyId/charges",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"cas",
+												"companies",
+												":companyId",
+												"charges"
+											],
+											"query": [
+												{
+													"key": "",
+													"value": null,
+													"type": "text",
+													"disabled": true
+												}
+											],
+											"variable": [
+												{
+													"id": "ff6dea5c-18b1-4535-a692-563fee25dd22",
+													"key": "companyId",
+													"value": "{{companyId}}"
+												}
+											]
+										},
+										"description": "This resource returns a list of charges attached to a company.\n\n### **Response Body**\n\nLegend:\n\n✓ Field used in that jurisdiction (optional)\n\n\\[blank\\] Field not used in that jurisdiction\n\n| **Field** | **AUSTRALIA** | **NZ & OTHERS** | **SINGAPORE** | **Validation message** |\n| --- | --- | --- | --- | --- |\n| instrumentTitle | MANDATORY | MANDATORY | MANDATORY (only for local SG companies, foreign SG companies is not mandatory) | \\- `Instrument title is mandatory` |\n| number | MANDATORY | MANDATORY | MANDATORY | \\- `Charge Number is mandatory` |\n| code |  |  |  |  |\n| description |  |  | ✓ |  |\n| dateCreated | MANDATORY | MANDATORY | MANDATORY | \\- `Date Created is mandatory`  <br>  <br>\\- `Date created is an invalid date` |\n| dateRegistered | ✓ | ✓ | ✓ | \\- `Date Registered is an invalid date` |\n| approvalDate |  |  | ✓ | \\- `Approval Date is an invalid date` |\n| type | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-FIXED`  <br>`-FLOATING`  <br>`-FIXED & FLOATING` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-FIXED`  <br>`-FLOATING`  <br>`-FIXED & FLOATING` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-FIXED`  <br>`-FLOATING`  <br>`-FIXED & FLOATING` | \\- `Type of Charge is mandatory`  <br>  <br>\\- `\" \" is an invalid Type of Charge` |\n| createdBy | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-INSTRUMENT`  <br>`-RESOLUTION`  <br>`-DEPOSIT`  <br>`-OTHER`  <br>`-CONDUCT` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-INSTRUMENT`  <br>`-RESOLUTION`  <br>`-DEPOSIT`  <br>`-OTHER CONDUCT` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-INSTRUMENT`  <br>`-RESOLUTION`  <br>`-DEPOSIT`  <br>`-OTHER`  <br>`-CONDUCT` | \\- `Created Method is mandatory`  <br>  <br>\\- `\" \" is an invalid Creation Method` |\n| state | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-AUSTRALIAN_CAPITAL_TERRITORY`  <br>`-FOREIGN`  <br>`-NEW_SOUTH_WALES`  <br>`-QUEENSLAND`  <br>`-SOUTH_AUSTRALIA`  <br>`-WESTERN_AUSTRALI`  <br>`-TASMANIA`  <br>`-NORTHERN-TERRITORY`  <br>`-VICTORIA` | Default to FOREIGN | Default to FOREIGN | \\- `State is mandatory`  <br>  <br>\\- `\" \" is an invalid State` |\n| chargeeDetails (object) |  |  |  |  |\n| chargeeId | MANDATORY | MANDATORY | MANDATORY | \\- `Chargee Id does not exist`  <br>  <br>\\- `Chargee is required` |\n| previousChargeeId | ✓ | ✓ | ✓ | \\- `Previous Chargee Id does not exist` |\n| propertyDetails (object) |  |  |  |  |\n| datePropertyAcquired | ✓ | ✓ | ✓ | \\- `Approval Date is an invalid date` |\n| amountCharged |  |  | ✓ |  |\n| amountChargedCurrency |  |  | ✓ |  |\n| propertyDetails | ✓ | ✓ | ✓ |  |\n| liabilityDetails (object) |  |  |  |  |\n| totalLiabilities | ✓ | ✓ | ✓ |  |\n| liabilityCurrency | ✓ | ✓ | ✓ | \\- `\" \" is an invalid currency` |\n| liabilityDetails | ✓ | ✓ | ✓ |  |\n| debentureDetails (object) |  |  |  |  |\n| financialBenefitTotalAmountSecured | ✓ | ✓ | ✓ |  |\n| totalAmountSecuredCurrency |  |  | ✓ | \\- `\" \" is an invalid currency` |\n| amountOfPresentIssueOfSeries |  |  | CONDITIONAL (if `Date of present issue of series` is entered, this is required) | \\- `Amount of Present issue of series is mandatory` |\n| amountOfPresentIssueCurrency |  |  | ✓ | \\- `\" \" is an invalid currency` |\n| dateOfPresentIssue |  |  | ✓ | \\- `Date of Present Issue of Series is an invalid Date` |\n| debentureDetails |  |  | ✓ |  |\n| totalDebentures | ✓ | ✓ |  |  |\n| variationDetails (object) |  |  |  |  |\n| dateOfLastChangeVariation | ✓ | ✓ | ✓ | \\- `Date of Last Change/Latest Variation is invalid` |\n| latestVariationDeclaration |  |  | CONDITIONAL (if `date of change` is entered, this is required)  <br>  <br>Valid enums:  <br>  <br>`-CONFIRMATION_OF_TRUE_COPY`  <br>`-CONFIRMATION_OF_EXECUTED_INSTRUMENT`  <br>`-NOT_APPLICABLE` | \\- `Declaration Type is mandatory`  <br>  <br>\\- `\" \" is an invalid Declaration Type` |\n| changeDetails | ✓ | ✓ | ✓ |  |\n| satisfactionDetails (object) |  |  |  |  |\n| extentOfReleaseNatureOfSatisfaction | Valid enums  <br>  <br>`-FULL_RELEASE`  <br>`-NO_RELEASE`  <br>`-PARTIAL_RELEASE_FOR_CASH`  <br>`-PARTIAL_RELEASE_FOR_PROPERTY`  <br>`-PARTIAL_RELEASE_FOR_CASH_AND_PROPERTY` | Valid enums  <br>  <br>`-FULL_RELEASE`  <br>`-NO_RELEASE`  <br>`-PARTIAL_RELEASE_FOR_CASH`  <br>`-PARTIAL_RELEASE_FOR_PROPERTY`  <br>`-PARTIAL_RELEASE_FOR_CASH_AND_PROPERTY` | Valid enums  <br>  <br>`-PARTIAL_DISCHARG`  <br>`-PARTIAL_SATISFACTION`  <br>`-TOTAL_SATISFACTION`  <br>`-TOTAL_DISCHARGE` | \\- `\" \" is not a valid Extent of Release/Nature of Satisfaction` |\n| dateOfReleaseSatisfaction | ✓ | ✓ | ✓ | \\- `Date of Release/Satisfaction is an invalid date`  <br>  <br>\\- `Date of Release/Satisfaction cannot be before the date of registration of Charge` |\n| releasePaidAmountSatisfied | ✓ | ✓ | ✓ |  |\n| releasePaidAmountCurrency |  |  | ✓ | \\- `\" \" is an invalid currency` |\n| propertyReleasedSatisfactionDetails | ✓ | ✓ | ✓ |  |"
+									},
+									"response": [
+										{
+											"id": "2010ace9-395b-4d55-96c2-9c5751f4d5ec",
+											"name": "Status 200",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/cas/companies/:companyId/charges",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"cas",
+														"companies",
+														":companyId",
+														"charges"
+													],
+													"variable": [
+														{
+															"key": "companyId",
+															"value": "{{companyId}}"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "[\r\n    {\r\n        \"approvalDate\": null,\r\n        \"chargeeDetails\": {\r\n            \"chargeeId\": 1941877,\r\n            \"previousChargeeId\": null\r\n        },\r\n        \"code\": null,\r\n        \"createdBy\": \"Instrument\",\r\n        \"dateCreated\": \"2023-02-21\",\r\n        \"dateRegistered\": \"1999-01-01\",\r\n        \"debentureDetails\": null,\r\n        \"description\": null,\r\n        \"id\": 3502,\r\n        \"instrumentTitle\": \"Charge1\",\r\n        \"liabilityDetails\": null,\r\n        \"number\": \"1\",\r\n        \"propertyDetails\": null,\r\n        \"satisfactionDetails\": null,\r\n        \"state\": \"VIC\",\r\n        \"type\": \"Fixed\",\r\n        \"variationDetails\": null\r\n    }\r\n]"
+										}
+									]
+								},
+								{
+									"name": "Create Company Charges",
+									"id": "abeab7dc-c424-4dfa-a6c6-49f77e994d97",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "\t\r\n{\r\n    \"instrumentTitle\": \"Title of Instrument Example\",\r\n    \"number\": \"2\",\r\n    \"code\": null,\r\n    \"description\": null,\r\n    \"dateCreated\": \"2023-04-05\",\r\n    \"dateRegistered\": \"2023-01-01\",\r\n    \"approvalDate\": \"2023-01-01\",\r\n    \"type\": \"Fixed\",\r\n    \"createdBy\": \"Resolution\",\r\n    \"state\": \"QLD\",\r\n    \"chargeeDetails\": {\r\n        \"chargeeId\": 1941877,\r\n        \"previousChargeeId\": 1934710\r\n    },\r\n    \"propertyDetails\": {\r\n        \"datePropertyAcquired\": \"2020-01-01\",\r\n        \"amountCharged\": null,\r\n        \"amountChargedCurrency\": null,\r\n        \"propertyDetails\": \"Testing this\"\r\n    },\r\n    \"liabilityDetails\": {\r\n        \"totalLiabilities\": 123123213.00,\r\n        \"liabilityCurrency\": \"AUD\",\r\n        \"liabilityDetails\": \"Note this\"\r\n    },\r\n    \"debentureDetails\": {\r\n        \"financialBenefitTotalAmountSecured\": 900000.00,\r\n        \"totalAmountSecuredCurrency\": null,\r\n        \"amountOfPresentIssueOfSeries\": null,\r\n        \"amountOfPresentIssueCurrency\": null,\r\n        \"dateOfPresentIssue\": null,\r\n        \"debentureDetails\": null,\r\n        \"totalDebentures\": 9000000\r\n    },\r\n    \"variationDetails\": {\r\n        \"dateOfLastChangeVariation\": \"2023-09-02\",\r\n        \"changeDetails\": \"to be changed\",\r\n        \"latestVariationDeclaration\": \"CONFIRMATION_OF_EXECUTED_INSTRUMENT\"\r\n    },\r\n    \"satisfactionDetails\": {\r\n        \"extentOfReleaseNatureOfSatisfaction\": \"Total Discharge\",\r\n        \"dateOfReleaseSatisfaction\": \"2024-01-01\",\r\n        \"releasePaidAmountSatisfied\": 23112.00,\r\n        \"releasePaidAmountCurrency\": \"BZD\",\r\n        \"propertyReleasedSatisfactionDetails\": \"Released Property\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/cas/companies/:companyId/charges",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"cas",
+												"companies",
+												":companyId",
+												"charges"
+											],
+											"query": [
+												{
+													"key": "",
+													"value": null,
+													"type": "text",
+													"disabled": true
+												}
+											],
+											"variable": [
+												{
+													"id": "4a1caaa1-ff39-4f4d-b3ba-6d5fdccc9c47",
+													"key": "companyId",
+													"value": "{{companyId}}"
+												}
+											]
+										},
+										"description": "This resource is to create a new charge for a company.\n\n### **Request Body**\n\nLegend:\n\n✓ Field used in that jurisdiction (optional)\n\n\\[blank\\] Field not used in that jurisdiction\n\n| **Field** | **AUSTRALIA** | **NZ & OTHERS** | **SINGAPORE** | **Validation message** |\n| --- | --- | --- | --- | --- |\n| instrumentTitle | MANDATORY | MANDATORY | MANDATORY (only for local SG companies, foreign SG companies is not mandatory) | \\- `Instrument title is mandatory` |\n| number | MANDATORY | MANDATORY | MANDATORY | \\- `Charge Number is mandatory` |\n| code |  |  |  |  |\n| description |  |  | ✓ |  |\n| dateCreated | MANDATORY | MANDATORY | MANDATORY | \\- `Date Created is mandatory`  <br>  <br>\\- `Date created is an invalid date` |\n| dateRegistered | ✓ | ✓ | ✓ | \\- `Date Registered is an invalid date` |\n| approvalDate |  |  | ✓ | \\- `Approval Date is an invalid date` |\n| type | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-FIXED`  <br>`-FLOATING`  <br>`-FIXED & FLOATING` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-FIXED`  <br>`-FLOATING`  <br>`-FIXED & FLOATING` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-FIXED`  <br>`-FLOATING`  <br>`-FIXED & FLOATING` | \\- `Type of Charge is mandatory`  <br>  <br>\\- `\" \" is an invalid Type of Charge` |\n| createdBy | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-INSTRUMENT`  <br>`-RESOLUTION`  <br>`-DEPOSIT`  <br>`-OTHER`  <br>`-CONDUCT` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-INSTRUMENT`  <br>`-RESOLUTION`  <br>`-DEPOSIT`  <br>`-OTHER CONDUCT` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-INSTRUMENT`  <br>`-RESOLUTION`  <br>`-DEPOSIT`  <br>`-OTHER`  <br>`-CONDUCT` | \\- `Created Method is mandatory`  <br>  <br>\\- `\" \" is an invalid Creation Method` |\n| state | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-AUSTRALIAN_CAPITAL_TERRITORY`  <br>`-FOREIGN`  <br>`-NEW_SOUTH_WALES`  <br>`-QUEENSLAND`  <br>`-SOUTH_AUSTRALIA`  <br>`-WESTERN_AUSTRALI`  <br>`-TASMANIA`  <br>`-NORTHERN-TERRITORY`  <br>`-VICTORIA` | Default to FOREIGN | Default to FOREIGN | \\- `State is mandatory`  <br>  <br>\\- `\" \" is an invalid State` |\n| chargeeDetails (object) |  |  |  |  |\n| chargeeId | MANDATORY | MANDATORY | MANDATORY | \\- `Chargee Id does not exist`  <br>  <br>\\- `Chargee is required` |\n| previousChargeeId | ✓ | ✓ | ✓ | \\- `Previous Chargee Id does not exist` |\n| propertyDetails (object) |  |  |  |  |\n| datePropertyAcquired | ✓ | ✓ | ✓ | \\- `Approval Date is an invalid date` |\n| amountCharged |  |  | ✓ |  |\n| amountChargedCurrency |  |  | ✓ |  |\n| propertyDetails | ✓ | ✓ | ✓ |  |\n| liabilityDetails (object) |  |  |  |  |\n| totalLiabilities | ✓ | ✓ | ✓ |  |\n| liabilityCurrency | ✓ | ✓ | ✓ | \\- `\" \" is an invalid currency` |\n| liabilityDetails | ✓ | ✓ | ✓ |  |\n| debentureDetails (object) |  |  |  |  |\n| financialBenefitTotalAmountSecured | ✓ | ✓ | ✓ |  |\n| totalAmountSecuredCurrency |  |  | ✓ | \\- `\" \" is an invalid currency` |\n| amountOfPresentIssueOfSeries |  |  | CONDITIONAL (if `Date of present issue of series` is entered, this is required) | \\- `Amount of Present issue of series is mandatory` |\n| amountOfPresentIssueCurrency |  |  | ✓ | \\- `\" \" is an invalid currency` |\n| dateOfPresentIssue |  |  | ✓ | \\- `Date of Present Issue of Series is an invalid Date` |\n| debentureDetails |  |  | ✓ |  |\n| totalDebentures | ✓ | ✓ |  |  |\n| variationDetails (object) |  |  |  |  |\n| dateOfLastChangeVariation | ✓ | ✓ | ✓ | \\- `Date of Last Change/Latest Variation is invalid` |\n| latestVariationDeclaration |  |  | CONDITIONAL (if `date of change` is entered, this is required)  <br>  <br>Valid enums:  <br>  <br>`-CONFIRMATION_OF_TRUE_COPY`  <br>`-CONFIRMATION_OF_EXECUTED_INSTRUMENT`  <br>`-NOT_APPLICABLE` | \\- `Declaration Type is mandatory`  <br>  <br>\\- `\" \" is an invalid Declaration Type` |\n| changeDetails | ✓ | ✓ | ✓ |  |\n| satisfactionDetails (object) |  |  |  |  |\n| extentOfReleaseNatureOfSatisfaction | Valid enums  <br>  <br>`-FULL_RELEASE`  <br>`-NO_RELEASE`  <br>`-PARTIAL_RELEASE_FOR_CASH`  <br>`-PARTIAL_RELEASE_FOR_PROPERTY`  <br>`-PARTIAL_RELEASE_FOR_CASH_AND_PROPERTY` | Valid enums  <br>  <br>`-FULL_RELEASE`  <br>`-NO_RELEASE`  <br>`-PARTIAL_RELEASE_FOR_CASH`  <br>`-PARTIAL_RELEASE_FOR_PROPERTY`  <br>`-PARTIAL_RELEASE_FOR_CASH_AND_PROPERTY` | Valid enums  <br>  <br>`-PARTIAL_DISCHARG`  <br>`-PARTIAL_SATISFACTION`  <br>`-TOTAL_SATISFACTION`  <br>`-TOTAL_DISCHARGE` | \\- `\" \" is not a valid Extent of Release/Nature of Satisfaction` |\n| dateOfReleaseSatisfaction | ✓ | ✓ | ✓ | \\- `Date of Release/Satisfaction is an invalid date`  <br>  <br>\\- `Date of Release/Satisfaction cannot be before the date of registration of Charge` |\n| releasePaidAmountSatisfied | ✓ | ✓ | ✓ |  |\n| releasePaidAmountCurrency |  |  | ✓ | \\- `\" \" is an invalid currency` |\n| propertyReleasedSatisfactionDetails | ✓ | ✓ | ✓ |  |"
+									},
+									"response": [
+										{
+											"id": "cd600612-d28f-4ad3-ade1-b935df647179",
+											"name": "Status 201",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}"
+													},
+													{
+														"key": "Content-Type",
+														"name": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "\t\r\n{\r\n    \"instrumentTitle\": \"Title of Instrument Example\",\r\n    \"number\": \"2\",\r\n    \"code\": null,\r\n    \"description\": null,\r\n    \"dateCreated\": \"2023-04-05\",\r\n    \"dateRegistered\": \"2023-01-01\",\r\n    \"approvalDate\": \"2023-01-01\",\r\n    \"type\": \"Fixed\",\r\n    \"createdBy\": \"Resolution\",\r\n    \"state\": \"QLD\",\r\n    \"chargeeDetails\": {\r\n        \"chargeeId\": 1941877,\r\n        \"previousChargeeId\": 1934710\r\n    },\r\n    \"propertyDetails\": {\r\n        \"datePropertyAcquired\": \"2020-01-01\",\r\n        \"amountCharged\": null,\r\n        \"amountChargedCurrency\": null,\r\n        \"propertyDetails\": \"Testing this\"\r\n    },\r\n    \"liabilityDetails\": {\r\n        \"totalLiabilities\": 123123213.00,\r\n        \"liabilityCurrency\": \"AUD\",\r\n        \"liabilityDetails\": \"Note this\"\r\n    },\r\n    \"debentureDetails\": {\r\n        \"financialBenefitTotalAmountSecured\": 900000.00,\r\n        \"totalAmountSecuredCurrency\": null,\r\n        \"amountOfPresentIssueOfSeries\": null,\r\n        \"amountOfPresentIssueCurrency\": null,\r\n        \"dateOfPresentIssue\": null,\r\n        \"debentureDetails\": null,\r\n        \"totalDebentures\": 9000000\r\n    },\r\n    \"variationDetails\": {\r\n        \"dateOfLastChangeVariation\": \"2023-09-02\",\r\n        \"changeDetails\": \"to be changed\",\r\n        \"latestVariationDeclaration\": \"CONFIRMATION_OF_EXECUTED_INSTRUMENT\"\r\n    },\r\n    \"satisfactionDetails\": {\r\n        \"extentOfReleaseNatureOfSatisfaction\": \"Total Discharge\",\r\n        \"dateOfReleaseSatisfaction\": \"2024-01-01\",\r\n        \"releasePaidAmountSatisfied\": 23112.00,\r\n        \"releasePaidAmountCurrency\": \"BZD\",\r\n        \"propertyReleasedSatisfactionDetails\": \"Released Property\"\r\n    }\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/cas/companies/:companyId/charges",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"cas",
+														"companies",
+														":companyId",
+														"charges"
+													],
+													"variable": [
+														{
+															"key": "companyId",
+															"value": "{{companyId}}"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\r\n    \"approvalDate\": null,\r\n    \"chargeeDetails\": {\r\n        \"chargeeId\": 1941877,\r\n        \"previousChargeeId\": 1934710\r\n    },\r\n    \"code\": null,\r\n    \"createdBy\": \"Resolution\",\r\n    \"dateCreated\": \"2023-04-05\",\r\n    \"dateRegistered\": \"2023-01-01\",\r\n    \"debentureDetails\": {\r\n        \"amountOfPresentIssueCurrency\": null,\r\n        \"amountOfPresentIssueOfSeries\": 0,\r\n        \"dateOfPresentIssue\": null,\r\n        \"debentureDetails\": null,\r\n        \"financialBenefitTotalAmountSecured\": 900000,\r\n        \"totalAmountSecuredCurrency\": null,\r\n        \"totalDebentures\": 0\r\n    },\r\n    \"description\": null,\r\n    \"id\": 3505,\r\n    \"instrumentTitle\": \"Title of Instrument Example\",\r\n    \"liabilityDetails\": {\r\n        \"liabilityCurrency\": \"AUD\",\r\n        \"liabilityDetails\": \"Note this\",\r\n        \"totalLiabilities\": 123123213\r\n    },\r\n    \"number\": \"4\",\r\n    \"propertyDetails\": {\r\n        \"amountCharged\": 0,\r\n        \"amountChargedCurrency\": null,\r\n        \"datePropertyAcquired\": \"2020-01-01\",\r\n        \"propertyDetails\": \"Testing this\"\r\n    },\r\n    \"satisfactionDetails\": {\r\n        \"dateOfReleaseSatisfaction\": \"2024-01-01\",\r\n        \"extentOfReleaseNatureOfSatisfaction\": \"Total Discharge\",\r\n        \"propertyReleasedSatisfactionDetails\": \"Released Property\",\r\n        \"releasePaidAmountCurrency\": null,\r\n        \"releasePaidAmountSatisfied\": 23112\r\n    },\r\n    \"state\": \"QLD\",\r\n    \"type\": \"Fixed\",\r\n    \"variationDetails\": {\r\n        \"changeDetails\": \"to be changed\",\r\n        \"dateOfLastChangeVariation\": \"2023-09-02\",\r\n        \"latestVariationDeclaration\": null,\r\n        \"latestVariationDeclarationDescription\": null\r\n    }\r\n}"
+										}
+									]
+								},
+								{
+									"name": "Update Company Charges",
+									"id": "1a1cbc16-7501-4c69-88f0-1c2214f81b23",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "\t\r\n{\r\n    \"instrumentTitle\": \"Title of Instrument Example\",\r\n    \"number\": \"3\",\r\n    \"code\": null,\r\n    \"description\": null,\r\n    \"dateCreated\": \"2023-04-05\",\r\n    \"dateRegistered\": \"2023-01-01\",\r\n    \"approvalDate\": \"2023-01-01\",\r\n    \"type\": \"Fixed\",\r\n    \"createdBy\": \"Resolution\",\r\n    \"state\": \"QLD\",\r\n    \"chargeeDetails\": {\r\n        \"chargeeId\": 1941877,\r\n        \"previousChargeeId\": 1934710\r\n    },\r\n    \"propertyDetails\": {\r\n        \"datePropertyAcquired\": \"2020-01-01\",\r\n        \"amountCharged\": null,\r\n        \"amountChargedCurrency\": null,\r\n        \"propertyDetails\": \"Testing this\"\r\n    },\r\n    \"liabilityDetails\": {\r\n        \"totalLiabilities\": 123123213.00,\r\n        \"liabilityCurrency\": \"AUD\",\r\n        \"liabilityDetails\": \"Note this\"\r\n    },\r\n    \"debentureDetails\": {\r\n        \"financialBenefitTotalAmountSecured\": 900000.00,\r\n        \"totalAmountSecuredCurrency\": null,\r\n        \"amountOfPresentIssueOfSeries\": null,\r\n        \"amountOfPresentIssueCurrency\": null,\r\n        \"dateOfPresentIssue\": null,\r\n        \"debentureDetails\": null,\r\n        \"totalDebentures\": 9000000\r\n    },\r\n    \"variationDetails\": {\r\n        \"dateOfLastChangeVariation\": \"2023-09-02\",\r\n        \"changeDetails\": \"to be changed\",\r\n        \"latestVariationDeclaration\": \"CONFIRMATION_OF_EXECUTED_INSTRUMENT\"\r\n    },\r\n    \"satisfactionDetails\": {\r\n        \"extentOfReleaseNatureOfSatisfaction\": \"Total Discharge\",\r\n        \"dateOfReleaseSatisfaction\": \"2024-01-01\",\r\n        \"releasePaidAmountSatisfied\": 23112.00,\r\n        \"releasePaidAmountCurrency\": \"BZD\",\r\n        \"propertyReleasedSatisfactionDetails\": \"Released Property\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/cas/companies/:companyId/charges/:chargeId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"cas",
+												"companies",
+												":companyId",
+												"charges",
+												":chargeId"
+											],
+											"query": [
+												{
+													"key": "",
+													"value": null,
+													"type": "text",
+													"disabled": true
+												}
+											],
+											"variable": [
+												{
+													"id": "a3d3a5a1-6654-4a1c-ab2c-a85d39d151b3",
+													"key": "companyId",
+													"value": "{{companyId}}"
+												},
+												{
+													"id": "11bd9e9b-bfb2-494c-82ce-dd73a696ecb4",
+													"key": "chargeId",
+													"value": "{{chargeId}}"
+												}
+											]
+										},
+										"description": "This resource is to update an existing charge.\n\nAs it is a PUT, any field NOT included will be set to NULL.\n\nThe recommended approach is to first send a GET to retrieve all fields, and then include that response in the PUT body, making the adjustments as needed.\n\n### **Request Body**\n\nLegend:\n\n✓ Field used in that jurisdiction (optional)\n\n\\[blank\\] Field not used in that jurisdiction\n\n| **Field** | **AUSTRALIA** | **NZ & OTHERS** | **SINGAPORE** | **Validation message** |\n| --- | --- | --- | --- | --- |\n| instrumentTitle | MANDATORY | MANDATORY | MANDATORY (only for local SG companies, foreign SG companies is not mandatory) | \\- `Instrument title is mandatory` |\n| number | MANDATORY | MANDATORY | MANDATORY | \\- `Charge Number is mandatory` |\n| code |  |  |  |  |\n| description |  |  | ✓ |  |\n| dateCreated | MANDATORY | MANDATORY | MANDATORY | \\- `Date Created is mandatory`  <br>  <br>\\- `Date created is an invalid date` |\n| dateRegistered | ✓ | ✓ | ✓ | \\- `Date Registered is an invalid date` |\n| approvalDate |  |  | ✓ | \\- `Approval Date is an invalid date` |\n| type | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-FIXED`  <br>`-FLOATING`  <br>`-FIXED & FLOATING` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-FIXED`  <br>`-FLOATING`  <br>`-FIXED & FLOATING` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-FIXED`  <br>`-FLOATING`  <br>`-FIXED & FLOATING` | \\- `Type of Charge is mandatory`  <br>  <br>\\- `\" \" is an invalid Type of Charge` |\n| createdBy | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-INSTRUMENT`  <br>`-RESOLUTION`  <br>`-DEPOSIT`  <br>`-OTHER`  <br>`-CONDUCT` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-INSTRUMENT`  <br>`-RESOLUTION`  <br>`-DEPOSIT`  <br>`-OTHER CONDUCT` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-INSTRUMENT`  <br>`-RESOLUTION`  <br>`-DEPOSIT`  <br>`-OTHER`  <br>`-CONDUCT` | \\- `Created Method is mandatory`  <br>  <br>\\- `\" \" is an invalid Creation Method` |\n| state | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-AUSTRALIAN_CAPITAL_TERRITORY`  <br>`-FOREIGN`  <br>`-NEW_SOUTH_WALES`  <br>`-QUEENSLAND`  <br>`-SOUTH_AUSTRALIA`  <br>`-WESTERN_AUSTRALI`  <br>`-TASMANIA`  <br>`-NORTHERN-TERRITORY`  <br>`-VICTORIA` | Default to FOREIGN | Default to FOREIGN | \\- `State is mandatory`  <br>  <br>\\- `\" \" is an invalid State` |\n| chargeeDetails (object) |  |  |  |  |\n| chargeeId | MANDATORY | MANDATORY | MANDATORY | \\- `Chargee Id does not exist`  <br>  <br>\\- `Chargee is required` |\n| previousChargeeId | ✓ | ✓ | ✓ | \\- `Previous Chargee Id does not exist` |\n| propertyDetails (object) |  |  |  |  |\n| datePropertyAcquired | ✓ | ✓ | ✓ | \\- `Approval Date is an invalid date` |\n| amountCharged |  |  | ✓ |  |\n| amountChargedCurrency |  |  | ✓ |  |\n| propertyDetails | ✓ | ✓ | ✓ |  |\n| liabilityDetails (object) |  |  |  |  |\n| totalLiabilities | ✓ | ✓ | ✓ |  |\n| liabilityCurrency | ✓ | ✓ | ✓ | \\- `\" \" is an invalid currency` |\n| liabilityDetails | ✓ | ✓ | ✓ |  |\n| debentureDetails (object) |  |  |  |  |\n| financialBenefitTotalAmountSecured | ✓ | ✓ | ✓ |  |\n| totalAmountSecuredCurrency |  |  | ✓ | \\- `\" \" is an invalid currency` |\n| amountOfPresentIssueOfSeries |  |  | CONDITIONAL (if `Date of present issue of series` is entered, this is required) | \\- `Amount of Present issue of series is mandatory` |\n| amountOfPresentIssueCurrency |  |  | ✓ | \\- `\" \" is an invalid currency` |\n| dateOfPresentIssue |  |  | ✓ | \\- `Date of Present Issue of Series is an invalid Date` |\n| debentureDetails |  |  | ✓ |  |\n| totalDebentures | ✓ | ✓ |  |  |\n| variationDetails (object) |  |  |  |  |\n| dateOfLastChangeVariation | ✓ | ✓ | ✓ | \\- `Date of Last Change/Latest Variation is invalid` |\n| latestVariationDeclaration |  |  | CONDITIONAL (if `date of change` is entered, this is required)  <br>  <br>Valid enums:  <br>  <br>`-CONFIRMATION_OF_TRUE_COPY`  <br>`-CONFIRMATION_OF_EXECUTED_INSTRUMENT`  <br>`-NOT_APPLICABLE` | \\- `Declaration Type is mandatory`  <br>  <br>\\- `\" \" is an invalid Declaration Type` |\n| changeDetails | ✓ | ✓ | ✓ |  |\n| satisfactionDetails (object) |  |  |  |  |\n| extentOfReleaseNatureOfSatisfaction | Valid enums  <br>  <br>`-FULL_RELEASE`  <br>`-NO_RELEASE`  <br>`-PARTIAL_RELEASE_FOR_CASH`  <br>`-PARTIAL_RELEASE_FOR_PROPERTY`  <br>`-PARTIAL_RELEASE_FOR_CASH_AND_PROPERTY` | Valid enums  <br>  <br>`-FULL_RELEASE`  <br>`-NO_RELEASE`  <br>`-PARTIAL_RELEASE_FOR_CASH`  <br>`-PARTIAL_RELEASE_FOR_PROPERTY`  <br>`-PARTIAL_RELEASE_FOR_CASH_AND_PROPERTY` | Valid enums  <br>  <br>`-PARTIAL_DISCHARG`  <br>`-PARTIAL_SATISFACTION`  <br>`-TOTAL_SATISFACTION`  <br>`-TOTAL_DISCHARGE` | \\- `\" \" is not a valid Extent of Release/Nature of Satisfaction` |\n| dateOfReleaseSatisfaction | ✓ | ✓ | ✓ | \\- `Date of Release/Satisfaction is an invalid date`  <br>  <br>\\- `Date of Release/Satisfaction cannot be before the date of registration of Charge` |\n| releasePaidAmountSatisfied | ✓ | ✓ | ✓ |  |\n| releasePaidAmountCurrency |  |  | ✓ | \\- `\" \" is an invalid currency` |\n| propertyReleasedSatisfactionDetails | ✓ | ✓ | ✓ |  |"
+									},
+									"response": [
+										{
+											"id": "330b5c8c-1fb9-428b-a13e-7b774c27d006",
+											"name": "Status 200",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}"
+													},
+													{
+														"key": "Content-Type",
+														"name": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "\t\r\n{\r\n    \"instrumentTitle\": \"Title of Instrument Example\",\r\n    \"number\": \"2\",\r\n    \"code\": null,\r\n    \"description\": null,\r\n    \"dateCreated\": \"2023-04-05\",\r\n    \"dateRegistered\": \"2023-01-01\",\r\n    \"approvalDate\": \"2023-01-01\",\r\n    \"type\": \"Fixed\",\r\n    \"createdBy\": \"Resolution\",\r\n    \"state\": \"QLD\",\r\n    \"chargeeDetails\": {\r\n        \"chargeeId\": 1941877,\r\n        \"previousChargeeId\": 1934710\r\n    },\r\n    \"propertyDetails\": {\r\n        \"datePropertyAcquired\": \"2020-01-01\",\r\n        \"amountCharged\": null,\r\n        \"amountChargedCurrency\": null,\r\n        \"propertyDetails\": \"Testing this\"\r\n    },\r\n    \"liabilityDetails\": {\r\n        \"totalLiabilities\": 123123213.00,\r\n        \"liabilityCurrency\": \"AUD\",\r\n        \"liabilityDetails\": \"Note this\"\r\n    },\r\n    \"debentureDetails\": {\r\n        \"financialBenefitTotalAmountSecured\": 900000.00,\r\n        \"totalAmountSecuredCurrency\": null,\r\n        \"amountOfPresentIssueOfSeries\": null,\r\n        \"amountOfPresentIssueCurrency\": null,\r\n        \"dateOfPresentIssue\": null,\r\n        \"debentureDetails\": null,\r\n        \"totalDebentures\": 9000000\r\n    },\r\n    \"variationDetails\": {\r\n        \"dateOfLastChangeVariation\": \"2023-09-02\",\r\n        \"changeDetails\": \"to be changed\",\r\n        \"latestVariationDeclaration\": \"CONFIRMATION_OF_EXECUTED_INSTRUMENT\"\r\n    },\r\n    \"satisfactionDetails\": {\r\n        \"extentOfReleaseNatureOfSatisfaction\": \"Total Discharge\",\r\n        \"dateOfReleaseSatisfaction\": \"2024-01-01\",\r\n        \"releasePaidAmountSatisfied\": 23112.00,\r\n        \"releasePaidAmountCurrency\": \"BZD\",\r\n        \"propertyReleasedSatisfactionDetails\": \"Released Property\"\r\n    }\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/cas/companies/:companyId/charges/:chargeId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"cas",
+														"companies",
+														":companyId",
+														"charges",
+														":chargeId"
+													],
+													"variable": [
+														{
+															"key": "companyId",
+															"value": "{{companyId}}"
+														},
+														{
+															"key": "chargeId",
+															"value": "{{chargeId}}"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\r\n    \"approvalDate\": null,\r\n    \"chargeeDetails\": {\r\n        \"chargeeId\": 1941877,\r\n        \"previousChargeeId\": 1934710\r\n    },\r\n    \"code\": null,\r\n    \"createdBy\": \"Resolution\",\r\n    \"dateCreated\": \"2023-04-05\",\r\n    \"dateRegistered\": \"2023-01-01\",\r\n    \"debentureDetails\": {\r\n        \"amountOfPresentIssueCurrency\": null,\r\n        \"amountOfPresentIssueOfSeries\": 0,\r\n        \"dateOfPresentIssue\": null,\r\n        \"debentureDetails\": null,\r\n        \"financialBenefitTotalAmountSecured\": 900000,\r\n        \"totalAmountSecuredCurrency\": null,\r\n        \"totalDebentures\": 0\r\n    },\r\n    \"description\": null,\r\n    \"id\": 3505,\r\n    \"instrumentTitle\": \"Title of Instrument Example\",\r\n    \"liabilityDetails\": {\r\n        \"liabilityCurrency\": \"AUD\",\r\n        \"liabilityDetails\": \"Note this\",\r\n        \"totalLiabilities\": 123123213\r\n    },\r\n    \"number\": \"4\",\r\n    \"propertyDetails\": {\r\n        \"amountCharged\": 0,\r\n        \"amountChargedCurrency\": null,\r\n        \"datePropertyAcquired\": \"2020-01-01\",\r\n        \"propertyDetails\": \"Testing this\"\r\n    },\r\n    \"satisfactionDetails\": {\r\n        \"dateOfReleaseSatisfaction\": \"2024-01-01\",\r\n        \"extentOfReleaseNatureOfSatisfaction\": \"Total Discharge\",\r\n        \"propertyReleasedSatisfactionDetails\": \"Released Property\",\r\n        \"releasePaidAmountCurrency\": null,\r\n        \"releasePaidAmountSatisfied\": 23112\r\n    },\r\n    \"state\": \"QLD\",\r\n    \"type\": \"Fixed\",\r\n    \"variationDetails\": {\r\n        \"changeDetails\": \"to be changed\",\r\n        \"dateOfLastChangeVariation\": \"2023-09-02\",\r\n        \"latestVariationDeclaration\": null,\r\n        \"latestVariationDeclarationDescription\": null\r\n    }\r\n}"
+										}
+									]
+								},
+								{
+									"name": "Update Company Charges",
+									"id": "4f7a13da-1de2-4905-9b0c-bbc56c717441",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "\t\r\n{\r\n    \"instrumentTitle\": \"Title of Instrument Example\",\r\n    \"number\": \"3\",\r\n    \"code\": null,\r\n    \"description\": null,\r\n    \"dateCreated\": \"2023-04-05\",\r\n    \"dateRegistered\": \"2023-01-01\",\r\n    \"approvalDate\": \"2023-01-01\",\r\n    \"type\": \"Fixed\",\r\n    \"createdBy\": \"Resolution\",\r\n    \"state\": \"QLD\",\r\n    \"chargeeDetails\": {\r\n        \"chargeeId\": 1934710\r\n    },\r\n    \"propertyDetails\": {\r\n        \"datePropertyAcquired\": \"2020-01-01\",\r\n        \"amountCharged\": null,\r\n        \"amountChargedCurrency\": null,\r\n        \"propertyDetails\": \"Testing this\"\r\n    },\r\n    \"liabilityDetails\": {\r\n        \"totalLiabilities\": 123123213.00,\r\n        \"liabilityCurrency\": \"AUD\",\r\n        \"liabilityDetails\": \"Note this\"\r\n    },\r\n    \"debentureDetails\": {\r\n        \"financialBenefitTotalAmountSecured\": 900000.00,\r\n        \"totalAmountSecuredCurrency\": null,\r\n        \"amountOfPresentIssueOfSeries\": null,\r\n        \"amountOfPresentIssueCurrency\": null,\r\n        \"dateOfPresentIssue\": null,\r\n        \"debentureDetails\": null,\r\n        \"totalDebentures\": 9000000\r\n    },\r\n    \"variationDetails\": {\r\n        \"dateOfLastChangeVariation\": \"2023-09-02\",\r\n        \"changeDetails\": \"to be changed\",\r\n        \"latestVariationDeclaration\": \"CONFIRMATION_OF_EXECUTED_INSTRUMENT\"\r\n    },\r\n    \"satisfactionDetails\": {\r\n        \"extentOfReleaseNatureOfSatisfaction\": \"Total Discharge\",\r\n        \"dateOfReleaseSatisfaction\": \"2024-01-01\",\r\n        \"releasePaidAmountSatisfied\": 23112.00,\r\n        \"releasePaidAmountCurrency\": \"BZD\",\r\n        \"propertyReleasedSatisfactionDetails\": \"Released Property\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/cas/companies/:companyId/charges/:chargeId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"cas",
+												"companies",
+												":companyId",
+												"charges",
+												":chargeId"
+											],
+											"query": [
+												{
+													"key": "",
+													"value": null,
+													"type": "text",
+													"disabled": true
+												}
+											],
+											"variable": [
+												{
+													"id": "38b2b2e1-5f92-4fdc-94a3-4f1d4fa01a4e",
+													"key": "companyId",
+													"value": "{{companyId}}"
+												},
+												{
+													"id": "71cb4bfa-56fc-4361-b43b-c89d23b8da9f",
+													"key": "chargeId",
+													"value": "{{chargeId}}"
+												}
+											]
+										},
+										"description": "This resource is to update an existing charge.\n\nAs it is a PATCH, not every field needs to be included.\n\n### **Request Body**\n\nLegend:\n\n✓ Field used in that jurisdiction (optional)\n\n\\[blank\\] Field not used in that jurisdiction\n\n| **Field** | **AUSTRALIA** | **NZ & OTHERS** | **SINGAPORE** | **Validation message** |\n| --- | --- | --- | --- | --- |\n| instrumentTitle | MANDATORY | MANDATORY | MANDATORY (only for local SG companies, foreign SG companies is not mandatory) | \\- `Instrument title is mandatory` |\n| number | MANDATORY | MANDATORY | MANDATORY | \\- `Charge Number is mandatory` |\n| code |  |  |  |  |\n| description |  |  | ✓ |  |\n| dateCreated | MANDATORY | MANDATORY | MANDATORY | \\- `Date Created is mandatory`  <br>  <br>\\- `Date created is an invalid date` |\n| dateRegistered | ✓ | ✓ | ✓ | \\- `Date Registered is an invalid date` |\n| approvalDate |  |  | ✓ | \\- `Approval Date is an invalid date` |\n| type | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-FIXED`  <br>`-FLOATING`  <br>`-FIXED & FLOATING` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-FIXED`  <br>`-FLOATING`  <br>`-FIXED & FLOATING` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-FIXED`  <br>`-FLOATING`  <br>`-FIXED & FLOATING` | \\- `Type of Charge is mandatory`  <br>  <br>\\- `\" \" is an invalid Type of Charge` |\n| createdBy | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-INSTRUMENT`  <br>`-RESOLUTION`  <br>`-DEPOSIT`  <br>`-OTHER`  <br>`-CONDUCT` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-INSTRUMENT`  <br>`-RESOLUTION`  <br>`-DEPOSIT`  <br>`-OTHER CONDUCT` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-INSTRUMENT`  <br>`-RESOLUTION`  <br>`-DEPOSIT`  <br>`-OTHER`  <br>`-CONDUCT` | \\- `Created Method is mandatory`  <br>  <br>\\- `\" \" is an invalid Creation Method` |\n| state | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-AUSTRALIAN_CAPITAL_TERRITORY`  <br>`-FOREIGN`  <br>`-NEW_SOUTH_WALES`  <br>`-QUEENSLAND`  <br>`-SOUTH_AUSTRALIA`  <br>`-WESTERN_AUSTRALI`  <br>`-TASMANIA`  <br>`-NORTHERN-TERRITORY`  <br>`-VICTORIA` | Default to FOREIGN | Default to FOREIGN | \\- `State is mandatory`  <br>  <br>\\- `\" \" is an invalid State` |\n| chargeeDetails (object) |  |  |  |  |\n| chargeeId | MANDATORY | MANDATORY | MANDATORY | \\- `Chargee Id does not exist`  <br>  <br>\\- `Chargee is required` |\n| previousChargeeId | ✓ | ✓ | ✓ | \\- `Previous Chargee Id does not exist` |\n| propertyDetails (object) |  |  |  |  |\n| datePropertyAcquired | ✓ | ✓ | ✓ | \\- `Approval Date is an invalid date` |\n| amountCharged |  |  | ✓ |  |\n| amountChargedCurrency |  |  | ✓ |  |\n| propertyDetails | ✓ | ✓ | ✓ |  |\n| liabilityDetails (object) |  |  |  |  |\n| totalLiabilities | ✓ | ✓ | ✓ |  |\n| liabilityCurrency | ✓ | ✓ | ✓ | \\- `\" \" is an invalid currency` |\n| liabilityDetails | ✓ | ✓ | ✓ |  |\n| debentureDetails (object) |  |  |  |  |\n| financialBenefitTotalAmountSecured | ✓ | ✓ | ✓ |  |\n| totalAmountSecuredCurrency |  |  | ✓ | \\- `\" \" is an invalid currency` |\n| amountOfPresentIssueOfSeries |  |  | CONDITIONAL (if `Date of present issue of series` is entered, this is required) | \\- `Amount of Present issue of series is mandatory` |\n| amountOfPresentIssueCurrency |  |  | ✓ | \\- `\" \" is an invalid currency` |\n| dateOfPresentIssue |  |  | ✓ | \\- `Date of Present Issue of Series is an invalid Date` |\n| debentureDetails |  |  | ✓ |  |\n| totalDebentures | ✓ | ✓ |  |  |\n| variationDetails (object) |  |  |  |  |\n| dateOfLastChangeVariation | ✓ | ✓ | ✓ | \\- `Date of Last Change/Latest Variation is invalid` |\n| latestVariationDeclaration |  |  | CONDITIONAL (if `date of change` is entered, this is required)  <br>  <br>Valid enums:  <br>  <br>`-CONFIRMATION_OF_TRUE_COPY`  <br>`-CONFIRMATION_OF_EXECUTED_INSTRUMENT`  <br>`-NOT_APPLICABLE` | \\- `Declaration Type is mandatory`  <br>  <br>\\- `\" \" is an invalid Declaration Type` |\n| changeDetails | ✓ | ✓ | ✓ |  |\n| satisfactionDetails (object) |  |  |  |  |\n| extentOfReleaseNatureOfSatisfaction | Valid enums  <br>  <br>`-FULL_RELEASE`  <br>`-NO_RELEASE`  <br>`-PARTIAL_RELEASE_FOR_CASH`  <br>`-PARTIAL_RELEASE_FOR_PROPERTY`  <br>`-PARTIAL_RELEASE_FOR_CASH_AND_PROPERTY` | Valid enums  <br>  <br>`-FULL_RELEASE`  <br>`-NO_RELEASE`  <br>`-PARTIAL_RELEASE_FOR_CASH`  <br>`-PARTIAL_RELEASE_FOR_PROPERTY`  <br>`-PARTIAL_RELEASE_FOR_CASH_AND_PROPERTY` | Valid enums  <br>  <br>`-PARTIAL_DISCHARG`  <br>`-PARTIAL_SATISFACTION`  <br>`-TOTAL_SATISFACTION`  <br>`-TOTAL_DISCHARGE` | \\- `\" \" is not a valid Extent of Release/Nature of Satisfaction` |\n| dateOfReleaseSatisfaction | ✓ | ✓ | ✓ | \\- `Date of Release/Satisfaction is an invalid date`  <br>  <br>\\- `Date of Release/Satisfaction cannot be before the date of registration of Charge` |\n| releasePaidAmountSatisfied | ✓ | ✓ | ✓ |  |\n| releasePaidAmountCurrency |  |  | ✓ | \\- `\" \" is an invalid currency` |\n| propertyReleasedSatisfactionDetails | ✓ | ✓ | ✓ |  |"
+									},
+									"response": [
+										{
+											"id": "83bf9cee-1a66-4bd3-b321-c219c9eaf04d",
+											"name": "Status 200",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}"
+													},
+													{
+														"key": "Content-Type",
+														"name": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "\t\r\n{\r\n    \"instrumentTitle\": \"Title of Instrument Example\",\r\n    \"number\": \"2\",\r\n    \"code\": null,\r\n    \"description\": null,\r\n    \"dateCreated\": \"2023-04-05\",\r\n    \"dateRegistered\": \"2023-01-01\",\r\n    \"approvalDate\": \"2023-01-01\",\r\n    \"type\": \"Fixed\",\r\n    \"createdBy\": \"Resolution\",\r\n    \"state\": \"QLD\",\r\n    \"chargeeDetails\": {\r\n        \"chargeeId\": 1941877,\r\n        \"previousChargeeId\": 1934710\r\n    },\r\n    \"propertyDetails\": {\r\n        \"datePropertyAcquired\": \"2020-01-01\",\r\n        \"amountCharged\": null,\r\n        \"amountChargedCurrency\": null,\r\n        \"propertyDetails\": \"Testing this\"\r\n    },\r\n    \"liabilityDetails\": {\r\n        \"totalLiabilities\": 123123213.00,\r\n        \"liabilityCurrency\": \"AUD\",\r\n        \"liabilityDetails\": \"Note this\"\r\n    },\r\n    \"debentureDetails\": {\r\n        \"financialBenefitTotalAmountSecured\": 900000.00,\r\n        \"totalAmountSecuredCurrency\": null,\r\n        \"amountOfPresentIssueOfSeries\": null,\r\n        \"amountOfPresentIssueCurrency\": null,\r\n        \"dateOfPresentIssue\": null,\r\n        \"debentureDetails\": null,\r\n        \"totalDebentures\": 9000000\r\n    },\r\n    \"variationDetails\": {\r\n        \"dateOfLastChangeVariation\": \"2023-09-02\",\r\n        \"changeDetails\": \"to be changed\",\r\n        \"latestVariationDeclaration\": \"CONFIRMATION_OF_EXECUTED_INSTRUMENT\"\r\n    },\r\n    \"satisfactionDetails\": {\r\n        \"extentOfReleaseNatureOfSatisfaction\": \"Total Discharge\",\r\n        \"dateOfReleaseSatisfaction\": \"2024-01-01\",\r\n        \"releasePaidAmountSatisfied\": 23112.00,\r\n        \"releasePaidAmountCurrency\": \"BZD\",\r\n        \"propertyReleasedSatisfactionDetails\": \"Released Property\"\r\n    }\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/cas/companies/:companyId/charges/:chargeId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"cas",
+														"companies",
+														":companyId",
+														"charges",
+														":chargeId"
+													],
+													"variable": [
+														{
+															"key": "companyId",
+															"value": "{{companyId}}"
+														},
+														{
+															"key": "chargeId",
+															"value": "{{chargeId}}"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\r\n    \"approvalDate\": null,\r\n    \"chargeeDetails\": {\r\n        \"chargeeId\": 1941877,\r\n        \"previousChargeeId\": 1934710\r\n    },\r\n    \"code\": null,\r\n    \"createdBy\": \"Resolution\",\r\n    \"dateCreated\": \"2023-04-05\",\r\n    \"dateRegistered\": \"2023-01-01\",\r\n    \"debentureDetails\": {\r\n        \"amountOfPresentIssueCurrency\": null,\r\n        \"amountOfPresentIssueOfSeries\": 0,\r\n        \"dateOfPresentIssue\": null,\r\n        \"debentureDetails\": null,\r\n        \"financialBenefitTotalAmountSecured\": 900000,\r\n        \"totalAmountSecuredCurrency\": null,\r\n        \"totalDebentures\": 0\r\n    },\r\n    \"description\": null,\r\n    \"id\": 3505,\r\n    \"instrumentTitle\": \"Title of Instrument Example\",\r\n    \"liabilityDetails\": {\r\n        \"liabilityCurrency\": \"AUD\",\r\n        \"liabilityDetails\": \"Note this\",\r\n        \"totalLiabilities\": 123123213\r\n    },\r\n    \"number\": \"4\",\r\n    \"propertyDetails\": {\r\n        \"amountCharged\": 0,\r\n        \"amountChargedCurrency\": null,\r\n        \"datePropertyAcquired\": \"2020-01-01\",\r\n        \"propertyDetails\": \"Testing this\"\r\n    },\r\n    \"satisfactionDetails\": {\r\n        \"dateOfReleaseSatisfaction\": \"2024-01-01\",\r\n        \"extentOfReleaseNatureOfSatisfaction\": \"Total Discharge\",\r\n        \"propertyReleasedSatisfactionDetails\": \"Released Property\",\r\n        \"releasePaidAmountCurrency\": null,\r\n        \"releasePaidAmountSatisfied\": 23112\r\n    },\r\n    \"state\": \"QLD\",\r\n    \"type\": \"Fixed\",\r\n    \"variationDetails\": {\r\n        \"changeDetails\": \"to be changed\",\r\n        \"dateOfLastChangeVariation\": \"2023-09-02\",\r\n        \"latestVariationDeclaration\": null,\r\n        \"latestVariationDeclarationDescription\": null\r\n    }\r\n}"
+										}
+									]
+								},
+								{
 									"name": "Delete Company Charges",
 									"id": "0ed72419-e276-431b-9274-bc8b9e838abe",
 									"protocolProfileBehavior": {
@@ -14550,823 +15361,6 @@
 					],
 					"id": "cd4859fc-ddb0-49a4-a7a1-cc0d38818610",
 					"description": "This section contains the resources to request and verify identification via BGLiD.\n\nIf you are interested in utilising this service, please contact the BGL team at [api@bglcorp.com.au](https://mailto:api@bglcorp.com.au)"
-				},
-				{
-					"name": "CAS360",
-					"item": [
-						{
-							"name": "Update Company Business Activities",
-							"id": "4eb9702c-7310-4615-b771-f65fbb1a203e",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PUT",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "bearer {{token}}",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "\r\n    {\r\n        \"activity\": \"June Conference\",\r\n        \"activityCode\": \"456\",\r\n        \"activityDate\": \"2023-06-22\",\r\n        \"activityType\": null,\r\n        \"ceasedDate\": null,\r\n        \"otherDescription\": null\r\n    }\r\n",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{baseUrl}}/cas/companies/:companyId/activities/:activityId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"cas",
-										"companies",
-										":companyId",
-										"activities",
-										":activityId"
-									],
-									"query": [
-										{
-											"key": "",
-											"value": null,
-											"type": "text",
-											"disabled": true
-										}
-									],
-									"variable": [
-										{
-											"id": "ff30b14e-c568-4649-b5fc-3a5f8900bde1",
-											"key": "companyId",
-											"value": "{{companyId}}"
-										},
-										{
-											"id": "213fdf96-419c-4715-8288-8692c1e6304e",
-											"key": "activityId",
-											"value": "{{activityId}}"
-										}
-									]
-								},
-								"description": "This resource updates Company Business Activities.\n\nAs it is a PUT, any field NOT included will be set to NULL.\n\nThe recommended approach is to first send a GET to retrieve all fields, and then include that response in the PUT body, making the adjustments as needed.\n\n### **Request Body**\n\nLegend:\n\n✓ Field used in that jurisdiction\n\n\\[blank\\] Field not used in that jurisdiction\n\n| **Field** | **Data Type** | **Australia & NZ** | **Singapore** | **Comment** |\n| --- | --- | --- | --- | --- |\n| activity | String | MANDATORY | MANDATORY | Name of the activity |\n| activityCode | String | MANDATORY | MANDATORY | Code of the activity |\n| activityDate | String | MANDATORY | MANDATORY | \"yyyy-mm-dd\" |\n| activityType | String | ✓ | MANDATORY |  |\n| ceasedDate | String | ✓ | ✓ | \"yyyy-mm-dd\" |\n| otherDescription | String | ✓ | ✓ |  |"
-							},
-							"response": [
-								{
-									"id": "830a2ca2-a35b-4b87-aa0f-570edda441b4",
-									"name": "Status 200",
-									"originalRequest": {
-										"method": "GET",
-										"header": [
-											{
-												"key": "Authorization",
-												"value": "bearer {{token}}"
-											},
-											{
-												"key": "Content-Type",
-												"name": "Content-Type",
-												"value": "application/json",
-												"type": "text"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "\r\n    {\r\n        \"activity\": \"June Conference\",\r\n        \"activityCode\": \"456\",\r\n        \"activityDate\": \"2023-06-22\",\r\n        \"activityType\": null,\r\n        \"ceasedDate\": null,\r\n        \"otherDescription\": null\r\n    }\r\n",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{baseUrl}}/cas/companies/:companyId/activities/:activityId",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"cas",
-												"companies",
-												":companyId",
-												"activities",
-												":activityId"
-											],
-											"variable": [
-												{
-													"key": "companyId",
-													"value": "{{companyId}}"
-												},
-												{
-													"key": "activityId",
-													"value": "{{activityId}}"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\r\n    \"activity\": \"June Conference\",\r\n    \"activityCode\": \"456\",\r\n    \"activityDate\": \"2023-06-22\",\r\n    \"activityType\": null,\r\n    \"ceasedDate\": null,\r\n    \"id\": 485553,\r\n    \"otherDescription\": null\r\n}"
-								}
-							]
-						},
-						{
-							"name": "Update Company Business Activities",
-							"id": "aa57e271-06eb-45f5-b765-ee4e0bcf2142",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "bearer {{token}}",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "\r\n    {\r\n        \"activity\": \"June Conference\",\r\n        \"activityCode\": \"456\",\r\n        \"activityDate\": \"2023-06-22\",\r\n        \"activityType\": \"OTHER\",\r\n        \"ceasedDate\": null,\r\n        \"otherDescription\": null\r\n    }\r\n",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{baseUrl}}/cas/companies/:companyId/activities/:activityId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"cas",
-										"companies",
-										":companyId",
-										"activities",
-										":activityId"
-									],
-									"query": [
-										{
-											"key": "",
-											"value": null,
-											"type": "text",
-											"disabled": true
-										}
-									],
-									"variable": [
-										{
-											"id": "8f420070-35a1-4d5f-b39a-90697a80a3ea",
-											"key": "companyId",
-											"value": "{{companyId}}"
-										},
-										{
-											"id": "abd66655-e055-4cd5-bb0d-0c84ec75d78f",
-											"key": "activityId",
-											"value": "{{activityId}}"
-										}
-									]
-								},
-								"description": "This resource is to update an existing Company Business Activity.\n\nAs it is a PATCH, not every field needs to be included.\n\n### **Request Body**\n\nLegend:\n\n✓ Field used in that jurisdiction\n\n\\[blank\\] Field not used in that jurisdiction\n\n| **Field** | **Data Type** | **Australia & NZ** | **Singapore** | **Comment** |\n| --- | --- | --- | --- | --- |\n| activity | String | MANDATORY | MANDATORY | Name of the activity |\n| activityCode | String | MANDATORY | MANDATORY | Code of the activity |\n| activityDate | String | MANDATORY | MANDATORY | \"yyyy-mm-dd\" |\n| activityType | String | MANDATORY | MANDATORY | Set \"OTHER\" for AU/NZ |\n| ceasedDate | String | ✓ | ✓ | \"yyyy-mm-dd\" |\n| otherDescription | String | ✓ | ✓ |  |"
-							},
-							"response": [
-								{
-									"id": "43b7aaa9-70fc-40bd-82ab-6c10f1bddf4e",
-									"name": "Status 200",
-									"originalRequest": {
-										"method": "GET",
-										"header": [
-											{
-												"key": "Authorization",
-												"value": "bearer {{token}}"
-											},
-											{
-												"key": "Content-Type",
-												"name": "Content-Type",
-												"value": "application/json",
-												"type": "text"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "\r\n    {\r\n        \"activity\": \"June Conference\",\r\n        \"activityCode\": \"456\",\r\n        \"activityDate\": \"2023-06-22\",\r\n        \"activityType\": \"OTHER\",\r\n        \"ceasedDate\": null,\r\n        \"otherDescription\": null\r\n    }\r\n",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{baseUrl}}/cas/companies/:companyId/activities/:activityId",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"cas",
-												"companies",
-												":companyId",
-												"activities",
-												":activityId"
-											],
-											"variable": [
-												{
-													"key": "companyId",
-													"value": "{{companyId}}"
-												},
-												{
-													"key": "activityId",
-													"value": "{{activityId}}"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\r\n    \"activity\": \"June Conference\",\r\n    \"activityCode\": \"456\",\r\n    \"activityDate\": \"2023-06-22\",\r\n    \"activityType\": null,\r\n    \"ceasedDate\": null,\r\n    \"id\": 485553,\r\n    \"otherDescription\": null\r\n}"
-								}
-							]
-						},
-						{
-							"name": "Delete Company Business Activities",
-							"id": "88a0b90a-d9d0-4351-b281-888f6dd12697",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "DELETE",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "bearer {{token}}",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "{{baseUrl}}/cas/companies/:companyId/activities/:activityId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"cas",
-										"companies",
-										":companyId",
-										"activities",
-										":activityId"
-									],
-									"query": [
-										{
-											"key": "",
-											"value": null,
-											"type": "text",
-											"disabled": true
-										}
-									],
-									"variable": [
-										{
-											"id": "8f420070-35a1-4d5f-b39a-90697a80a3ea",
-											"key": "companyId",
-											"value": "{{companyId}}"
-										},
-										{
-											"id": "abd66655-e055-4cd5-bb0d-0c84ec75d78f",
-											"key": "activityId",
-											"value": "{{activityId}}"
-										}
-									]
-								},
-								"description": "This resource is used to delete a Company Business Activity."
-							},
-							"response": [
-								{
-									"id": "df7f4962-2864-4fa1-bde1-9b76a4c88999",
-									"name": "Status 200",
-									"originalRequest": {
-										"method": "GET",
-										"header": [
-											{
-												"key": "Authorization",
-												"value": "bearer {{token}}"
-											},
-											{
-												"key": "Content-Type",
-												"name": "Content-Type",
-												"value": "application/json",
-												"type": "text"
-											}
-										],
-										"url": {
-											"raw": "{{baseUrl}}/cas/companies/:companyId/activities/:activityId",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"cas",
-												"companies",
-												":companyId",
-												"activities",
-												":activityId"
-											],
-											"variable": [
-												{
-													"key": "companyId",
-													"value": "{{companyId}}"
-												},
-												{
-													"key": "activityId",
-													"value": "{{activityId}}"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\r\n    \"status\": \"DELETED\"\r\n}"
-								}
-							]
-						},
-						{
-							"name": "List Company Charges",
-							"id": "dfaa90ab-d895-45ce-a2c8-372bddfa75f2",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "bearer {{token}}",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "{{baseUrl}}/cas/companies/:companyId/charges",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"cas",
-										"companies",
-										":companyId",
-										"charges"
-									],
-									"query": [
-										{
-											"key": "",
-											"value": null,
-											"type": "text",
-											"disabled": true
-										}
-									],
-									"variable": [
-										{
-											"id": "ff6dea5c-18b1-4535-a692-563fee25dd22",
-											"key": "companyId",
-											"value": "{{companyId}}"
-										}
-									]
-								},
-								"description": "This resource returns a list of charges attached to a company.\n\n### **Response Body**\n\nLegend:\n\n✓ Field used in that jurisdiction (optional)\n\n\\[blank\\] Field not used in that jurisdiction\n\n| **Field** | **AUSTRALIA** | **NZ & OTHERS** | **SINGAPORE** | **Validation message** |\n| --- | --- | --- | --- | --- |\n| instrumentTitle | MANDATORY | MANDATORY | MANDATORY (only for local SG companies, foreign SG companies is not mandatory) | \\- `Instrument title is mandatory` |\n| number | MANDATORY | MANDATORY | MANDATORY | \\- `Charge Number is mandatory` |\n| code |  |  |  |  |\n| description |  |  | ✓ |  |\n| dateCreated | MANDATORY | MANDATORY | MANDATORY | \\- `Date Created is mandatory`  <br>  <br>\\- `Date created is an invalid date` |\n| dateRegistered | ✓ | ✓ | ✓ | \\- `Date Registered is an invalid date` |\n| approvalDate |  |  | ✓ | \\- `Approval Date is an invalid date` |\n| type | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-FIXED`  <br>`-FLOATING`  <br>`-FIXED & FLOATING` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-FIXED`  <br>`-FLOATING`  <br>`-FIXED & FLOATING` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-FIXED`  <br>`-FLOATING`  <br>`-FIXED & FLOATING` | \\- `Type of Charge is mandatory`  <br>  <br>\\- `\" \" is an invalid Type of Charge` |\n| createdBy | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-INSTRUMENT`  <br>`-RESOLUTION`  <br>`-DEPOSIT`  <br>`-OTHER`  <br>`-CONDUCT` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-INSTRUMENT`  <br>`-RESOLUTION`  <br>`-DEPOSIT`  <br>`-OTHER CONDUCT` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-INSTRUMENT`  <br>`-RESOLUTION`  <br>`-DEPOSIT`  <br>`-OTHER`  <br>`-CONDUCT` | \\- `Created Method is mandatory`  <br>  <br>\\- `\" \" is an invalid Creation Method` |\n| state | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-AUSTRALIAN_CAPITAL_TERRITORY`  <br>`-FOREIGN`  <br>`-NEW_SOUTH_WALES`  <br>`-QUEENSLAND`  <br>`-SOUTH_AUSTRALIA`  <br>`-WESTERN_AUSTRALI`  <br>`-TASMANIA`  <br>`-NORTHERN-TERRITORY`  <br>`-VICTORIA` | Default to FOREIGN | Default to FOREIGN | \\- `State is mandatory`  <br>  <br>\\- `\" \" is an invalid State` |\n| chargeeDetails (object) |  |  |  |  |\n| chargeeId | MANDATORY | MANDATORY | MANDATORY | \\- `Chargee Id does not exist`  <br>  <br>\\- `Chargee is required` |\n| previousChargeeId | ✓ | ✓ | ✓ | \\- `Previous Chargee Id does not exist` |\n| propertyDetails (object) |  |  |  |  |\n| datePropertyAcquired | ✓ | ✓ | ✓ | \\- `Approval Date is an invalid date` |\n| amountCharged |  |  | ✓ |  |\n| amountChargedCurrency |  |  | ✓ |  |\n| propertyDetails | ✓ | ✓ | ✓ |  |\n| liabilityDetails (object) |  |  |  |  |\n| totalLiabilities | ✓ | ✓ | ✓ |  |\n| liabilityCurrency | ✓ | ✓ | ✓ | \\- `\" \" is an invalid currency` |\n| liabilityDetails | ✓ | ✓ | ✓ |  |\n| debentureDetails (object) |  |  |  |  |\n| financialBenefitTotalAmountSecured | ✓ | ✓ | ✓ |  |\n| totalAmountSecuredCurrency |  |  | ✓ | \\- `\" \" is an invalid currency` |\n| amountOfPresentIssueOfSeries |  |  | CONDITIONAL (if `Date of present issue of series` is entered, this is required) | \\- `Amount of Present issue of series is mandatory` |\n| amountOfPresentIssueCurrency |  |  | ✓ | \\- `\" \" is an invalid currency` |\n| dateOfPresentIssue |  |  | ✓ | \\- `Date of Present Issue of Series is an invalid Date` |\n| debentureDetails |  |  | ✓ |  |\n| totalDebentures | ✓ | ✓ |  |  |\n| variationDetails (object) |  |  |  |  |\n| dateOfLastChangeVariation | ✓ | ✓ | ✓ | \\- `Date of Last Change/Latest Variation is invalid` |\n| latestVariationDeclaration |  |  | CONDITIONAL (if `date of change` is entered, this is required)  <br>  <br>Valid enums:  <br>  <br>`-CONFIRMATION_OF_TRUE_COPY`  <br>`-CONFIRMATION_OF_EXECUTED_INSTRUMENT`  <br>`-NOT_APPLICABLE` | \\- `Declaration Type is mandatory`  <br>  <br>\\- `\" \" is an invalid Declaration Type` |\n| changeDetails | ✓ | ✓ | ✓ |  |\n| satisfactionDetails (object) |  |  |  |  |\n| extentOfReleaseNatureOfSatisfaction | Valid enums  <br>  <br>`-FULL_RELEASE`  <br>`-NO_RELEASE`  <br>`-PARTIAL_RELEASE_FOR_CASH`  <br>`-PARTIAL_RELEASE_FOR_PROPERTY`  <br>`-PARTIAL_RELEASE_FOR_CASH_AND_PROPERTY` | Valid enums  <br>  <br>`-FULL_RELEASE`  <br>`-NO_RELEASE`  <br>`-PARTIAL_RELEASE_FOR_CASH`  <br>`-PARTIAL_RELEASE_FOR_PROPERTY`  <br>`-PARTIAL_RELEASE_FOR_CASH_AND_PROPERTY` | Valid enums  <br>  <br>`-PARTIAL_DISCHARG`  <br>`-PARTIAL_SATISFACTION`  <br>`-TOTAL_SATISFACTION`  <br>`-TOTAL_DISCHARGE` | \\- `\" \" is not a valid Extent of Release/Nature of Satisfaction` |\n| dateOfReleaseSatisfaction | ✓ | ✓ | ✓ | \\- `Date of Release/Satisfaction is an invalid date`  <br>  <br>\\- `Date of Release/Satisfaction cannot be before the date of registration of Charge` |\n| releasePaidAmountSatisfied | ✓ | ✓ | ✓ |  |\n| releasePaidAmountCurrency |  |  | ✓ | \\- `\" \" is an invalid currency` |\n| propertyReleasedSatisfactionDetails | ✓ | ✓ | ✓ |  |"
-							},
-							"response": [
-								{
-									"id": "2010ace9-395b-4d55-96c2-9c5751f4d5ec",
-									"name": "Status 200",
-									"originalRequest": {
-										"method": "GET",
-										"header": [
-											{
-												"key": "Authorization",
-												"value": "bearer {{token}}"
-											}
-										],
-										"url": {
-											"raw": "{{baseUrl}}/cas/companies/:companyId/charges",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"cas",
-												"companies",
-												":companyId",
-												"charges"
-											],
-											"variable": [
-												{
-													"key": "companyId",
-													"value": "{{companyId}}"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "[\r\n    {\r\n        \"approvalDate\": null,\r\n        \"chargeeDetails\": {\r\n            \"chargeeId\": 1941877,\r\n            \"previousChargeeId\": null\r\n        },\r\n        \"code\": null,\r\n        \"createdBy\": \"Instrument\",\r\n        \"dateCreated\": \"2023-02-21\",\r\n        \"dateRegistered\": \"1999-01-01\",\r\n        \"debentureDetails\": null,\r\n        \"description\": null,\r\n        \"id\": 3502,\r\n        \"instrumentTitle\": \"Charge1\",\r\n        \"liabilityDetails\": null,\r\n        \"number\": \"1\",\r\n        \"propertyDetails\": null,\r\n        \"satisfactionDetails\": null,\r\n        \"state\": \"VIC\",\r\n        \"type\": \"Fixed\",\r\n        \"variationDetails\": null\r\n    }\r\n]"
-								}
-							]
-						},
-						{
-							"name": "Create Company Charges",
-							"id": "abeab7dc-c424-4dfa-a6c6-49f77e994d97",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "bearer {{token}}",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "\t\r\n{\r\n    \"instrumentTitle\": \"Title of Instrument Example\",\r\n    \"number\": \"2\",\r\n    \"code\": null,\r\n    \"description\": null,\r\n    \"dateCreated\": \"2023-04-05\",\r\n    \"dateRegistered\": \"2023-01-01\",\r\n    \"approvalDate\": \"2023-01-01\",\r\n    \"type\": \"Fixed\",\r\n    \"createdBy\": \"Resolution\",\r\n    \"state\": \"QLD\",\r\n    \"chargeeDetails\": {\r\n        \"chargeeId\": 1941877,\r\n        \"previousChargeeId\": 1934710\r\n    },\r\n    \"propertyDetails\": {\r\n        \"datePropertyAcquired\": \"2020-01-01\",\r\n        \"amountCharged\": null,\r\n        \"amountChargedCurrency\": null,\r\n        \"propertyDetails\": \"Testing this\"\r\n    },\r\n    \"liabilityDetails\": {\r\n        \"totalLiabilities\": 123123213.00,\r\n        \"liabilityCurrency\": \"AUD\",\r\n        \"liabilityDetails\": \"Note this\"\r\n    },\r\n    \"debentureDetails\": {\r\n        \"financialBenefitTotalAmountSecured\": 900000.00,\r\n        \"totalAmountSecuredCurrency\": null,\r\n        \"amountOfPresentIssueOfSeries\": null,\r\n        \"amountOfPresentIssueCurrency\": null,\r\n        \"dateOfPresentIssue\": null,\r\n        \"debentureDetails\": null,\r\n        \"totalDebentures\": 9000000\r\n    },\r\n    \"variationDetails\": {\r\n        \"dateOfLastChangeVariation\": \"2023-09-02\",\r\n        \"changeDetails\": \"to be changed\",\r\n        \"latestVariationDeclaration\": \"CONFIRMATION_OF_EXECUTED_INSTRUMENT\"\r\n    },\r\n    \"satisfactionDetails\": {\r\n        \"extentOfReleaseNatureOfSatisfaction\": \"Total Discharge\",\r\n        \"dateOfReleaseSatisfaction\": \"2024-01-01\",\r\n        \"releasePaidAmountSatisfied\": 23112.00,\r\n        \"releasePaidAmountCurrency\": \"BZD\",\r\n        \"propertyReleasedSatisfactionDetails\": \"Released Property\"\r\n    }\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{baseUrl}}/cas/companies/:companyId/charges",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"cas",
-										"companies",
-										":companyId",
-										"charges"
-									],
-									"query": [
-										{
-											"key": "",
-											"value": null,
-											"type": "text",
-											"disabled": true
-										}
-									],
-									"variable": [
-										{
-											"id": "4a1caaa1-ff39-4f4d-b3ba-6d5fdccc9c47",
-											"key": "companyId",
-											"value": "{{companyId}}"
-										}
-									]
-								},
-								"description": "This resource is to create a new charge for a company.\n\n### **Request Body**\n\nLegend:\n\n✓ Field used in that jurisdiction (optional)\n\n\\[blank\\] Field not used in that jurisdiction\n\n| **Field** | **AUSTRALIA** | **NZ & OTHERS** | **SINGAPORE** | **Validation message** |\n| --- | --- | --- | --- | --- |\n| instrumentTitle | MANDATORY | MANDATORY | MANDATORY (only for local SG companies, foreign SG companies is not mandatory) | \\- `Instrument title is mandatory` |\n| number | MANDATORY | MANDATORY | MANDATORY | \\- `Charge Number is mandatory` |\n| code |  |  |  |  |\n| description |  |  | ✓ |  |\n| dateCreated | MANDATORY | MANDATORY | MANDATORY | \\- `Date Created is mandatory`  <br>  <br>\\- `Date created is an invalid date` |\n| dateRegistered | ✓ | ✓ | ✓ | \\- `Date Registered is an invalid date` |\n| approvalDate |  |  | ✓ | \\- `Approval Date is an invalid date` |\n| type | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-FIXED`  <br>`-FLOATING`  <br>`-FIXED & FLOATING` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-FIXED`  <br>`-FLOATING`  <br>`-FIXED & FLOATING` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-FIXED`  <br>`-FLOATING`  <br>`-FIXED & FLOATING` | \\- `Type of Charge is mandatory`  <br>  <br>\\- `\" \" is an invalid Type of Charge` |\n| createdBy | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-INSTRUMENT`  <br>`-RESOLUTION`  <br>`-DEPOSIT`  <br>`-OTHER`  <br>`-CONDUCT` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-INSTRUMENT`  <br>`-RESOLUTION`  <br>`-DEPOSIT`  <br>`-OTHER CONDUCT` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-INSTRUMENT`  <br>`-RESOLUTION`  <br>`-DEPOSIT`  <br>`-OTHER`  <br>`-CONDUCT` | \\- `Created Method is mandatory`  <br>  <br>\\- `\" \" is an invalid Creation Method` |\n| state | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-AUSTRALIAN_CAPITAL_TERRITORY`  <br>`-FOREIGN`  <br>`-NEW_SOUTH_WALES`  <br>`-QUEENSLAND`  <br>`-SOUTH_AUSTRALIA`  <br>`-WESTERN_AUSTRALI`  <br>`-TASMANIA`  <br>`-NORTHERN-TERRITORY`  <br>`-VICTORIA` | Default to FOREIGN | Default to FOREIGN | \\- `State is mandatory`  <br>  <br>\\- `\" \" is an invalid State` |\n| chargeeDetails (object) |  |  |  |  |\n| chargeeId | MANDATORY | MANDATORY | MANDATORY | \\- `Chargee Id does not exist`  <br>  <br>\\- `Chargee is required` |\n| previousChargeeId | ✓ | ✓ | ✓ | \\- `Previous Chargee Id does not exist` |\n| propertyDetails (object) |  |  |  |  |\n| datePropertyAcquired | ✓ | ✓ | ✓ | \\- `Approval Date is an invalid date` |\n| amountCharged |  |  | ✓ |  |\n| amountChargedCurrency |  |  | ✓ |  |\n| propertyDetails | ✓ | ✓ | ✓ |  |\n| liabilityDetails (object) |  |  |  |  |\n| totalLiabilities | ✓ | ✓ | ✓ |  |\n| liabilityCurrency | ✓ | ✓ | ✓ | \\- `\" \" is an invalid currency` |\n| liabilityDetails | ✓ | ✓ | ✓ |  |\n| debentureDetails (object) |  |  |  |  |\n| financialBenefitTotalAmountSecured | ✓ | ✓ | ✓ |  |\n| totalAmountSecuredCurrency |  |  | ✓ | \\- `\" \" is an invalid currency` |\n| amountOfPresentIssueOfSeries |  |  | CONDITIONAL (if `Date of present issue of series` is entered, this is required) | \\- `Amount of Present issue of series is mandatory` |\n| amountOfPresentIssueCurrency |  |  | ✓ | \\- `\" \" is an invalid currency` |\n| dateOfPresentIssue |  |  | ✓ | \\- `Date of Present Issue of Series is an invalid Date` |\n| debentureDetails |  |  | ✓ |  |\n| totalDebentures | ✓ | ✓ |  |  |\n| variationDetails (object) |  |  |  |  |\n| dateOfLastChangeVariation | ✓ | ✓ | ✓ | \\- `Date of Last Change/Latest Variation is invalid` |\n| latestVariationDeclaration |  |  | CONDITIONAL (if `date of change` is entered, this is required)  <br>  <br>Valid enums:  <br>  <br>`-CONFIRMATION_OF_TRUE_COPY`  <br>`-CONFIRMATION_OF_EXECUTED_INSTRUMENT`  <br>`-NOT_APPLICABLE` | \\- `Declaration Type is mandatory`  <br>  <br>\\- `\" \" is an invalid Declaration Type` |\n| changeDetails | ✓ | ✓ | ✓ |  |\n| satisfactionDetails (object) |  |  |  |  |\n| extentOfReleaseNatureOfSatisfaction | Valid enums  <br>  <br>`-FULL_RELEASE`  <br>`-NO_RELEASE`  <br>`-PARTIAL_RELEASE_FOR_CASH`  <br>`-PARTIAL_RELEASE_FOR_PROPERTY`  <br>`-PARTIAL_RELEASE_FOR_CASH_AND_PROPERTY` | Valid enums  <br>  <br>`-FULL_RELEASE`  <br>`-NO_RELEASE`  <br>`-PARTIAL_RELEASE_FOR_CASH`  <br>`-PARTIAL_RELEASE_FOR_PROPERTY`  <br>`-PARTIAL_RELEASE_FOR_CASH_AND_PROPERTY` | Valid enums  <br>  <br>`-PARTIAL_DISCHARG`  <br>`-PARTIAL_SATISFACTION`  <br>`-TOTAL_SATISFACTION`  <br>`-TOTAL_DISCHARGE` | \\- `\" \" is not a valid Extent of Release/Nature of Satisfaction` |\n| dateOfReleaseSatisfaction | ✓ | ✓ | ✓ | \\- `Date of Release/Satisfaction is an invalid date`  <br>  <br>\\- `Date of Release/Satisfaction cannot be before the date of registration of Charge` |\n| releasePaidAmountSatisfied | ✓ | ✓ | ✓ |  |\n| releasePaidAmountCurrency |  |  | ✓ | \\- `\" \" is an invalid currency` |\n| propertyReleasedSatisfactionDetails | ✓ | ✓ | ✓ |  |"
-							},
-							"response": [
-								{
-									"id": "cd600612-d28f-4ad3-ade1-b935df647179",
-									"name": "Status 201",
-									"originalRequest": {
-										"method": "POST",
-										"header": [
-											{
-												"key": "Authorization",
-												"value": "bearer {{token}}"
-											},
-											{
-												"key": "Content-Type",
-												"name": "Content-Type",
-												"value": "application/json",
-												"type": "text"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "\t\r\n{\r\n    \"instrumentTitle\": \"Title of Instrument Example\",\r\n    \"number\": \"2\",\r\n    \"code\": null,\r\n    \"description\": null,\r\n    \"dateCreated\": \"2023-04-05\",\r\n    \"dateRegistered\": \"2023-01-01\",\r\n    \"approvalDate\": \"2023-01-01\",\r\n    \"type\": \"Fixed\",\r\n    \"createdBy\": \"Resolution\",\r\n    \"state\": \"QLD\",\r\n    \"chargeeDetails\": {\r\n        \"chargeeId\": 1941877,\r\n        \"previousChargeeId\": 1934710\r\n    },\r\n    \"propertyDetails\": {\r\n        \"datePropertyAcquired\": \"2020-01-01\",\r\n        \"amountCharged\": null,\r\n        \"amountChargedCurrency\": null,\r\n        \"propertyDetails\": \"Testing this\"\r\n    },\r\n    \"liabilityDetails\": {\r\n        \"totalLiabilities\": 123123213.00,\r\n        \"liabilityCurrency\": \"AUD\",\r\n        \"liabilityDetails\": \"Note this\"\r\n    },\r\n    \"debentureDetails\": {\r\n        \"financialBenefitTotalAmountSecured\": 900000.00,\r\n        \"totalAmountSecuredCurrency\": null,\r\n        \"amountOfPresentIssueOfSeries\": null,\r\n        \"amountOfPresentIssueCurrency\": null,\r\n        \"dateOfPresentIssue\": null,\r\n        \"debentureDetails\": null,\r\n        \"totalDebentures\": 9000000\r\n    },\r\n    \"variationDetails\": {\r\n        \"dateOfLastChangeVariation\": \"2023-09-02\",\r\n        \"changeDetails\": \"to be changed\",\r\n        \"latestVariationDeclaration\": \"CONFIRMATION_OF_EXECUTED_INSTRUMENT\"\r\n    },\r\n    \"satisfactionDetails\": {\r\n        \"extentOfReleaseNatureOfSatisfaction\": \"Total Discharge\",\r\n        \"dateOfReleaseSatisfaction\": \"2024-01-01\",\r\n        \"releasePaidAmountSatisfied\": 23112.00,\r\n        \"releasePaidAmountCurrency\": \"BZD\",\r\n        \"propertyReleasedSatisfactionDetails\": \"Released Property\"\r\n    }\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{baseUrl}}/cas/companies/:companyId/charges",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"cas",
-												"companies",
-												":companyId",
-												"charges"
-											],
-											"variable": [
-												{
-													"key": "companyId",
-													"value": "{{companyId}}"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\r\n    \"approvalDate\": null,\r\n    \"chargeeDetails\": {\r\n        \"chargeeId\": 1941877,\r\n        \"previousChargeeId\": 1934710\r\n    },\r\n    \"code\": null,\r\n    \"createdBy\": \"Resolution\",\r\n    \"dateCreated\": \"2023-04-05\",\r\n    \"dateRegistered\": \"2023-01-01\",\r\n    \"debentureDetails\": {\r\n        \"amountOfPresentIssueCurrency\": null,\r\n        \"amountOfPresentIssueOfSeries\": 0,\r\n        \"dateOfPresentIssue\": null,\r\n        \"debentureDetails\": null,\r\n        \"financialBenefitTotalAmountSecured\": 900000,\r\n        \"totalAmountSecuredCurrency\": null,\r\n        \"totalDebentures\": 0\r\n    },\r\n    \"description\": null,\r\n    \"id\": 3505,\r\n    \"instrumentTitle\": \"Title of Instrument Example\",\r\n    \"liabilityDetails\": {\r\n        \"liabilityCurrency\": \"AUD\",\r\n        \"liabilityDetails\": \"Note this\",\r\n        \"totalLiabilities\": 123123213\r\n    },\r\n    \"number\": \"4\",\r\n    \"propertyDetails\": {\r\n        \"amountCharged\": 0,\r\n        \"amountChargedCurrency\": null,\r\n        \"datePropertyAcquired\": \"2020-01-01\",\r\n        \"propertyDetails\": \"Testing this\"\r\n    },\r\n    \"satisfactionDetails\": {\r\n        \"dateOfReleaseSatisfaction\": \"2024-01-01\",\r\n        \"extentOfReleaseNatureOfSatisfaction\": \"Total Discharge\",\r\n        \"propertyReleasedSatisfactionDetails\": \"Released Property\",\r\n        \"releasePaidAmountCurrency\": null,\r\n        \"releasePaidAmountSatisfied\": 23112\r\n    },\r\n    \"state\": \"QLD\",\r\n    \"type\": \"Fixed\",\r\n    \"variationDetails\": {\r\n        \"changeDetails\": \"to be changed\",\r\n        \"dateOfLastChangeVariation\": \"2023-09-02\",\r\n        \"latestVariationDeclaration\": null,\r\n        \"latestVariationDeclarationDescription\": null\r\n    }\r\n}"
-								}
-							]
-						},
-						{
-							"name": "Update Company Charges",
-							"id": "1a1cbc16-7501-4c69-88f0-1c2214f81b23",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PUT",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "bearer {{token}}",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "\t\r\n{\r\n    \"instrumentTitle\": \"Title of Instrument Example\",\r\n    \"number\": \"3\",\r\n    \"code\": null,\r\n    \"description\": null,\r\n    \"dateCreated\": \"2023-04-05\",\r\n    \"dateRegistered\": \"2023-01-01\",\r\n    \"approvalDate\": \"2023-01-01\",\r\n    \"type\": \"Fixed\",\r\n    \"createdBy\": \"Resolution\",\r\n    \"state\": \"QLD\",\r\n    \"chargeeDetails\": {\r\n        \"chargeeId\": 1941877,\r\n        \"previousChargeeId\": 1934710\r\n    },\r\n    \"propertyDetails\": {\r\n        \"datePropertyAcquired\": \"2020-01-01\",\r\n        \"amountCharged\": null,\r\n        \"amountChargedCurrency\": null,\r\n        \"propertyDetails\": \"Testing this\"\r\n    },\r\n    \"liabilityDetails\": {\r\n        \"totalLiabilities\": 123123213.00,\r\n        \"liabilityCurrency\": \"AUD\",\r\n        \"liabilityDetails\": \"Note this\"\r\n    },\r\n    \"debentureDetails\": {\r\n        \"financialBenefitTotalAmountSecured\": 900000.00,\r\n        \"totalAmountSecuredCurrency\": null,\r\n        \"amountOfPresentIssueOfSeries\": null,\r\n        \"amountOfPresentIssueCurrency\": null,\r\n        \"dateOfPresentIssue\": null,\r\n        \"debentureDetails\": null,\r\n        \"totalDebentures\": 9000000\r\n    },\r\n    \"variationDetails\": {\r\n        \"dateOfLastChangeVariation\": \"2023-09-02\",\r\n        \"changeDetails\": \"to be changed\",\r\n        \"latestVariationDeclaration\": \"CONFIRMATION_OF_EXECUTED_INSTRUMENT\"\r\n    },\r\n    \"satisfactionDetails\": {\r\n        \"extentOfReleaseNatureOfSatisfaction\": \"Total Discharge\",\r\n        \"dateOfReleaseSatisfaction\": \"2024-01-01\",\r\n        \"releasePaidAmountSatisfied\": 23112.00,\r\n        \"releasePaidAmountCurrency\": \"BZD\",\r\n        \"propertyReleasedSatisfactionDetails\": \"Released Property\"\r\n    }\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{baseUrl}}/cas/companies/:companyId/charges/:chargeId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"cas",
-										"companies",
-										":companyId",
-										"charges",
-										":chargeId"
-									],
-									"query": [
-										{
-											"key": "",
-											"value": null,
-											"type": "text",
-											"disabled": true
-										}
-									],
-									"variable": [
-										{
-											"id": "a3d3a5a1-6654-4a1c-ab2c-a85d39d151b3",
-											"key": "companyId",
-											"value": "{{companyId}}"
-										},
-										{
-											"id": "11bd9e9b-bfb2-494c-82ce-dd73a696ecb4",
-											"key": "chargeId",
-											"value": "{{chargeId}}"
-										}
-									]
-								},
-								"description": "This resource is to update an existing charge.\n\nAs it is a PUT, any field NOT included will be set to NULL.\n\nThe recommended approach is to first send a GET to retrieve all fields, and then include that response in the PUT body, making the adjustments as needed.\n\n### **Request Body**\n\nLegend:\n\n✓ Field used in that jurisdiction (optional)\n\n\\[blank\\] Field not used in that jurisdiction\n\n| **Field** | **AUSTRALIA** | **NZ & OTHERS** | **SINGAPORE** | **Validation message** |\n| --- | --- | --- | --- | --- |\n| instrumentTitle | MANDATORY | MANDATORY | MANDATORY (only for local SG companies, foreign SG companies is not mandatory) | \\- `Instrument title is mandatory` |\n| number | MANDATORY | MANDATORY | MANDATORY | \\- `Charge Number is mandatory` |\n| code |  |  |  |  |\n| description |  |  | ✓ |  |\n| dateCreated | MANDATORY | MANDATORY | MANDATORY | \\- `Date Created is mandatory`  <br>  <br>\\- `Date created is an invalid date` |\n| dateRegistered | ✓ | ✓ | ✓ | \\- `Date Registered is an invalid date` |\n| approvalDate |  |  | ✓ | \\- `Approval Date is an invalid date` |\n| type | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-FIXED`  <br>`-FLOATING`  <br>`-FIXED & FLOATING` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-FIXED`  <br>`-FLOATING`  <br>`-FIXED & FLOATING` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-FIXED`  <br>`-FLOATING`  <br>`-FIXED & FLOATING` | \\- `Type of Charge is mandatory`  <br>  <br>\\- `\" \" is an invalid Type of Charge` |\n| createdBy | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-INSTRUMENT`  <br>`-RESOLUTION`  <br>`-DEPOSIT`  <br>`-OTHER`  <br>`-CONDUCT` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-INSTRUMENT`  <br>`-RESOLUTION`  <br>`-DEPOSIT`  <br>`-OTHER CONDUCT` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-INSTRUMENT`  <br>`-RESOLUTION`  <br>`-DEPOSIT`  <br>`-OTHER`  <br>`-CONDUCT` | \\- `Created Method is mandatory`  <br>  <br>\\- `\" \" is an invalid Creation Method` |\n| state | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-AUSTRALIAN_CAPITAL_TERRITORY`  <br>`-FOREIGN`  <br>`-NEW_SOUTH_WALES`  <br>`-QUEENSLAND`  <br>`-SOUTH_AUSTRALIA`  <br>`-WESTERN_AUSTRALI`  <br>`-TASMANIA`  <br>`-NORTHERN-TERRITORY`  <br>`-VICTORIA` | Default to FOREIGN | Default to FOREIGN | \\- `State is mandatory`  <br>  <br>\\- `\" \" is an invalid State` |\n| chargeeDetails (object) |  |  |  |  |\n| chargeeId | MANDATORY | MANDATORY | MANDATORY | \\- `Chargee Id does not exist`  <br>  <br>\\- `Chargee is required` |\n| previousChargeeId | ✓ | ✓ | ✓ | \\- `Previous Chargee Id does not exist` |\n| propertyDetails (object) |  |  |  |  |\n| datePropertyAcquired | ✓ | ✓ | ✓ | \\- `Approval Date is an invalid date` |\n| amountCharged |  |  | ✓ |  |\n| amountChargedCurrency |  |  | ✓ |  |\n| propertyDetails | ✓ | ✓ | ✓ |  |\n| liabilityDetails (object) |  |  |  |  |\n| totalLiabilities | ✓ | ✓ | ✓ |  |\n| liabilityCurrency | ✓ | ✓ | ✓ | \\- `\" \" is an invalid currency` |\n| liabilityDetails | ✓ | ✓ | ✓ |  |\n| debentureDetails (object) |  |  |  |  |\n| financialBenefitTotalAmountSecured | ✓ | ✓ | ✓ |  |\n| totalAmountSecuredCurrency |  |  | ✓ | \\- `\" \" is an invalid currency` |\n| amountOfPresentIssueOfSeries |  |  | CONDITIONAL (if `Date of present issue of series` is entered, this is required) | \\- `Amount of Present issue of series is mandatory` |\n| amountOfPresentIssueCurrency |  |  | ✓ | \\- `\" \" is an invalid currency` |\n| dateOfPresentIssue |  |  | ✓ | \\- `Date of Present Issue of Series is an invalid Date` |\n| debentureDetails |  |  | ✓ |  |\n| totalDebentures | ✓ | ✓ |  |  |\n| variationDetails (object) |  |  |  |  |\n| dateOfLastChangeVariation | ✓ | ✓ | ✓ | \\- `Date of Last Change/Latest Variation is invalid` |\n| latestVariationDeclaration |  |  | CONDITIONAL (if `date of change` is entered, this is required)  <br>  <br>Valid enums:  <br>  <br>`-CONFIRMATION_OF_TRUE_COPY`  <br>`-CONFIRMATION_OF_EXECUTED_INSTRUMENT`  <br>`-NOT_APPLICABLE` | \\- `Declaration Type is mandatory`  <br>  <br>\\- `\" \" is an invalid Declaration Type` |\n| changeDetails | ✓ | ✓ | ✓ |  |\n| satisfactionDetails (object) |  |  |  |  |\n| extentOfReleaseNatureOfSatisfaction | Valid enums  <br>  <br>`-FULL_RELEASE`  <br>`-NO_RELEASE`  <br>`-PARTIAL_RELEASE_FOR_CASH`  <br>`-PARTIAL_RELEASE_FOR_PROPERTY`  <br>`-PARTIAL_RELEASE_FOR_CASH_AND_PROPERTY` | Valid enums  <br>  <br>`-FULL_RELEASE`  <br>`-NO_RELEASE`  <br>`-PARTIAL_RELEASE_FOR_CASH`  <br>`-PARTIAL_RELEASE_FOR_PROPERTY`  <br>`-PARTIAL_RELEASE_FOR_CASH_AND_PROPERTY` | Valid enums  <br>  <br>`-PARTIAL_DISCHARG`  <br>`-PARTIAL_SATISFACTION`  <br>`-TOTAL_SATISFACTION`  <br>`-TOTAL_DISCHARGE` | \\- `\" \" is not a valid Extent of Release/Nature of Satisfaction` |\n| dateOfReleaseSatisfaction | ✓ | ✓ | ✓ | \\- `Date of Release/Satisfaction is an invalid date`  <br>  <br>\\- `Date of Release/Satisfaction cannot be before the date of registration of Charge` |\n| releasePaidAmountSatisfied | ✓ | ✓ | ✓ |  |\n| releasePaidAmountCurrency |  |  | ✓ | \\- `\" \" is an invalid currency` |\n| propertyReleasedSatisfactionDetails | ✓ | ✓ | ✓ |  |"
-							},
-							"response": [
-								{
-									"id": "330b5c8c-1fb9-428b-a13e-7b774c27d006",
-									"name": "Status 200",
-									"originalRequest": {
-										"method": "PUT",
-										"header": [
-											{
-												"key": "Authorization",
-												"value": "bearer {{token}}"
-											},
-											{
-												"key": "Content-Type",
-												"name": "Content-Type",
-												"value": "application/json",
-												"type": "text"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "\t\r\n{\r\n    \"instrumentTitle\": \"Title of Instrument Example\",\r\n    \"number\": \"2\",\r\n    \"code\": null,\r\n    \"description\": null,\r\n    \"dateCreated\": \"2023-04-05\",\r\n    \"dateRegistered\": \"2023-01-01\",\r\n    \"approvalDate\": \"2023-01-01\",\r\n    \"type\": \"Fixed\",\r\n    \"createdBy\": \"Resolution\",\r\n    \"state\": \"QLD\",\r\n    \"chargeeDetails\": {\r\n        \"chargeeId\": 1941877,\r\n        \"previousChargeeId\": 1934710\r\n    },\r\n    \"propertyDetails\": {\r\n        \"datePropertyAcquired\": \"2020-01-01\",\r\n        \"amountCharged\": null,\r\n        \"amountChargedCurrency\": null,\r\n        \"propertyDetails\": \"Testing this\"\r\n    },\r\n    \"liabilityDetails\": {\r\n        \"totalLiabilities\": 123123213.00,\r\n        \"liabilityCurrency\": \"AUD\",\r\n        \"liabilityDetails\": \"Note this\"\r\n    },\r\n    \"debentureDetails\": {\r\n        \"financialBenefitTotalAmountSecured\": 900000.00,\r\n        \"totalAmountSecuredCurrency\": null,\r\n        \"amountOfPresentIssueOfSeries\": null,\r\n        \"amountOfPresentIssueCurrency\": null,\r\n        \"dateOfPresentIssue\": null,\r\n        \"debentureDetails\": null,\r\n        \"totalDebentures\": 9000000\r\n    },\r\n    \"variationDetails\": {\r\n        \"dateOfLastChangeVariation\": \"2023-09-02\",\r\n        \"changeDetails\": \"to be changed\",\r\n        \"latestVariationDeclaration\": \"CONFIRMATION_OF_EXECUTED_INSTRUMENT\"\r\n    },\r\n    \"satisfactionDetails\": {\r\n        \"extentOfReleaseNatureOfSatisfaction\": \"Total Discharge\",\r\n        \"dateOfReleaseSatisfaction\": \"2024-01-01\",\r\n        \"releasePaidAmountSatisfied\": 23112.00,\r\n        \"releasePaidAmountCurrency\": \"BZD\",\r\n        \"propertyReleasedSatisfactionDetails\": \"Released Property\"\r\n    }\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{baseUrl}}/cas/companies/:companyId/charges/:chargeId",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"cas",
-												"companies",
-												":companyId",
-												"charges",
-												":chargeId"
-											],
-											"variable": [
-												{
-													"key": "companyId",
-													"value": "{{companyId}}"
-												},
-												{
-													"key": "chargeId",
-													"value": "{{chargeId}}"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\r\n    \"approvalDate\": null,\r\n    \"chargeeDetails\": {\r\n        \"chargeeId\": 1941877,\r\n        \"previousChargeeId\": 1934710\r\n    },\r\n    \"code\": null,\r\n    \"createdBy\": \"Resolution\",\r\n    \"dateCreated\": \"2023-04-05\",\r\n    \"dateRegistered\": \"2023-01-01\",\r\n    \"debentureDetails\": {\r\n        \"amountOfPresentIssueCurrency\": null,\r\n        \"amountOfPresentIssueOfSeries\": 0,\r\n        \"dateOfPresentIssue\": null,\r\n        \"debentureDetails\": null,\r\n        \"financialBenefitTotalAmountSecured\": 900000,\r\n        \"totalAmountSecuredCurrency\": null,\r\n        \"totalDebentures\": 0\r\n    },\r\n    \"description\": null,\r\n    \"id\": 3505,\r\n    \"instrumentTitle\": \"Title of Instrument Example\",\r\n    \"liabilityDetails\": {\r\n        \"liabilityCurrency\": \"AUD\",\r\n        \"liabilityDetails\": \"Note this\",\r\n        \"totalLiabilities\": 123123213\r\n    },\r\n    \"number\": \"4\",\r\n    \"propertyDetails\": {\r\n        \"amountCharged\": 0,\r\n        \"amountChargedCurrency\": null,\r\n        \"datePropertyAcquired\": \"2020-01-01\",\r\n        \"propertyDetails\": \"Testing this\"\r\n    },\r\n    \"satisfactionDetails\": {\r\n        \"dateOfReleaseSatisfaction\": \"2024-01-01\",\r\n        \"extentOfReleaseNatureOfSatisfaction\": \"Total Discharge\",\r\n        \"propertyReleasedSatisfactionDetails\": \"Released Property\",\r\n        \"releasePaidAmountCurrency\": null,\r\n        \"releasePaidAmountSatisfied\": 23112\r\n    },\r\n    \"state\": \"QLD\",\r\n    \"type\": \"Fixed\",\r\n    \"variationDetails\": {\r\n        \"changeDetails\": \"to be changed\",\r\n        \"dateOfLastChangeVariation\": \"2023-09-02\",\r\n        \"latestVariationDeclaration\": null,\r\n        \"latestVariationDeclarationDescription\": null\r\n    }\r\n}"
-								}
-							]
-						},
-						{
-							"name": "Update Company Charges",
-							"id": "4f7a13da-1de2-4905-9b0c-bbc56c717441",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "bearer {{token}}",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "\t\r\n{\r\n    \"instrumentTitle\": \"Title of Instrument Example\",\r\n    \"number\": \"3\",\r\n    \"code\": null,\r\n    \"description\": null,\r\n    \"dateCreated\": \"2023-04-05\",\r\n    \"dateRegistered\": \"2023-01-01\",\r\n    \"approvalDate\": \"2023-01-01\",\r\n    \"type\": \"Fixed\",\r\n    \"createdBy\": \"Resolution\",\r\n    \"state\": \"QLD\",\r\n    \"chargeeDetails\": {\r\n        \"chargeeId\": 1934710\r\n    },\r\n    \"propertyDetails\": {\r\n        \"datePropertyAcquired\": \"2020-01-01\",\r\n        \"amountCharged\": null,\r\n        \"amountChargedCurrency\": null,\r\n        \"propertyDetails\": \"Testing this\"\r\n    },\r\n    \"liabilityDetails\": {\r\n        \"totalLiabilities\": 123123213.00,\r\n        \"liabilityCurrency\": \"AUD\",\r\n        \"liabilityDetails\": \"Note this\"\r\n    },\r\n    \"debentureDetails\": {\r\n        \"financialBenefitTotalAmountSecured\": 900000.00,\r\n        \"totalAmountSecuredCurrency\": null,\r\n        \"amountOfPresentIssueOfSeries\": null,\r\n        \"amountOfPresentIssueCurrency\": null,\r\n        \"dateOfPresentIssue\": null,\r\n        \"debentureDetails\": null,\r\n        \"totalDebentures\": 9000000\r\n    },\r\n    \"variationDetails\": {\r\n        \"dateOfLastChangeVariation\": \"2023-09-02\",\r\n        \"changeDetails\": \"to be changed\",\r\n        \"latestVariationDeclaration\": \"CONFIRMATION_OF_EXECUTED_INSTRUMENT\"\r\n    },\r\n    \"satisfactionDetails\": {\r\n        \"extentOfReleaseNatureOfSatisfaction\": \"Total Discharge\",\r\n        \"dateOfReleaseSatisfaction\": \"2024-01-01\",\r\n        \"releasePaidAmountSatisfied\": 23112.00,\r\n        \"releasePaidAmountCurrency\": \"BZD\",\r\n        \"propertyReleasedSatisfactionDetails\": \"Released Property\"\r\n    }\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{baseUrl}}/cas/companies/:companyId/charges/:chargeId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"cas",
-										"companies",
-										":companyId",
-										"charges",
-										":chargeId"
-									],
-									"query": [
-										{
-											"key": "",
-											"value": null,
-											"type": "text",
-											"disabled": true
-										}
-									],
-									"variable": [
-										{
-											"id": "38b2b2e1-5f92-4fdc-94a3-4f1d4fa01a4e",
-											"key": "companyId",
-											"value": "{{companyId}}"
-										},
-										{
-											"id": "71cb4bfa-56fc-4361-b43b-c89d23b8da9f",
-											"key": "chargeId",
-											"value": "{{chargeId}}"
-										}
-									]
-								},
-								"description": "This resource is to update an existing charge.\n\nAs it is a PATCH, not every field needs to be included.\n\n### **Request Body**\n\nLegend:\n\n✓ Field used in that jurisdiction (optional)\n\n\\[blank\\] Field not used in that jurisdiction\n\n| **Field** | **AUSTRALIA** | **NZ & OTHERS** | **SINGAPORE** | **Validation message** |\n| --- | --- | --- | --- | --- |\n| instrumentTitle | MANDATORY | MANDATORY | MANDATORY (only for local SG companies, foreign SG companies is not mandatory) | \\- `Instrument title is mandatory` |\n| number | MANDATORY | MANDATORY | MANDATORY | \\- `Charge Number is mandatory` |\n| code |  |  |  |  |\n| description |  |  | ✓ |  |\n| dateCreated | MANDATORY | MANDATORY | MANDATORY | \\- `Date Created is mandatory`  <br>  <br>\\- `Date created is an invalid date` |\n| dateRegistered | ✓ | ✓ | ✓ | \\- `Date Registered is an invalid date` |\n| approvalDate |  |  | ✓ | \\- `Approval Date is an invalid date` |\n| type | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-FIXED`  <br>`-FLOATING`  <br>`-FIXED & FLOATING` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-FIXED`  <br>`-FLOATING`  <br>`-FIXED & FLOATING` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-FIXED`  <br>`-FLOATING`  <br>`-FIXED & FLOATING` | \\- `Type of Charge is mandatory`  <br>  <br>\\- `\" \" is an invalid Type of Charge` |\n| createdBy | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-INSTRUMENT`  <br>`-RESOLUTION`  <br>`-DEPOSIT`  <br>`-OTHER`  <br>`-CONDUCT` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-INSTRUMENT`  <br>`-RESOLUTION`  <br>`-DEPOSIT`  <br>`-OTHER CONDUCT` | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-INSTRUMENT`  <br>`-RESOLUTION`  <br>`-DEPOSIT`  <br>`-OTHER`  <br>`-CONDUCT` | \\- `Created Method is mandatory`  <br>  <br>\\- `\" \" is an invalid Creation Method` |\n| state | MANDATORY  <br>  <br>Valid enums:  <br>  <br>`-AUSTRALIAN_CAPITAL_TERRITORY`  <br>`-FOREIGN`  <br>`-NEW_SOUTH_WALES`  <br>`-QUEENSLAND`  <br>`-SOUTH_AUSTRALIA`  <br>`-WESTERN_AUSTRALI`  <br>`-TASMANIA`  <br>`-NORTHERN-TERRITORY`  <br>`-VICTORIA` | Default to FOREIGN | Default to FOREIGN | \\- `State is mandatory`  <br>  <br>\\- `\" \" is an invalid State` |\n| chargeeDetails (object) |  |  |  |  |\n| chargeeId | MANDATORY | MANDATORY | MANDATORY | \\- `Chargee Id does not exist`  <br>  <br>\\- `Chargee is required` |\n| previousChargeeId | ✓ | ✓ | ✓ | \\- `Previous Chargee Id does not exist` |\n| propertyDetails (object) |  |  |  |  |\n| datePropertyAcquired | ✓ | ✓ | ✓ | \\- `Approval Date is an invalid date` |\n| amountCharged |  |  | ✓ |  |\n| amountChargedCurrency |  |  | ✓ |  |\n| propertyDetails | ✓ | ✓ | ✓ |  |\n| liabilityDetails (object) |  |  |  |  |\n| totalLiabilities | ✓ | ✓ | ✓ |  |\n| liabilityCurrency | ✓ | ✓ | ✓ | \\- `\" \" is an invalid currency` |\n| liabilityDetails | ✓ | ✓ | ✓ |  |\n| debentureDetails (object) |  |  |  |  |\n| financialBenefitTotalAmountSecured | ✓ | ✓ | ✓ |  |\n| totalAmountSecuredCurrency |  |  | ✓ | \\- `\" \" is an invalid currency` |\n| amountOfPresentIssueOfSeries |  |  | CONDITIONAL (if `Date of present issue of series` is entered, this is required) | \\- `Amount of Present issue of series is mandatory` |\n| amountOfPresentIssueCurrency |  |  | ✓ | \\- `\" \" is an invalid currency` |\n| dateOfPresentIssue |  |  | ✓ | \\- `Date of Present Issue of Series is an invalid Date` |\n| debentureDetails |  |  | ✓ |  |\n| totalDebentures | ✓ | ✓ |  |  |\n| variationDetails (object) |  |  |  |  |\n| dateOfLastChangeVariation | ✓ | ✓ | ✓ | \\- `Date of Last Change/Latest Variation is invalid` |\n| latestVariationDeclaration |  |  | CONDITIONAL (if `date of change` is entered, this is required)  <br>  <br>Valid enums:  <br>  <br>`-CONFIRMATION_OF_TRUE_COPY`  <br>`-CONFIRMATION_OF_EXECUTED_INSTRUMENT`  <br>`-NOT_APPLICABLE` | \\- `Declaration Type is mandatory`  <br>  <br>\\- `\" \" is an invalid Declaration Type` |\n| changeDetails | ✓ | ✓ | ✓ |  |\n| satisfactionDetails (object) |  |  |  |  |\n| extentOfReleaseNatureOfSatisfaction | Valid enums  <br>  <br>`-FULL_RELEASE`  <br>`-NO_RELEASE`  <br>`-PARTIAL_RELEASE_FOR_CASH`  <br>`-PARTIAL_RELEASE_FOR_PROPERTY`  <br>`-PARTIAL_RELEASE_FOR_CASH_AND_PROPERTY` | Valid enums  <br>  <br>`-FULL_RELEASE`  <br>`-NO_RELEASE`  <br>`-PARTIAL_RELEASE_FOR_CASH`  <br>`-PARTIAL_RELEASE_FOR_PROPERTY`  <br>`-PARTIAL_RELEASE_FOR_CASH_AND_PROPERTY` | Valid enums  <br>  <br>`-PARTIAL_DISCHARG`  <br>`-PARTIAL_SATISFACTION`  <br>`-TOTAL_SATISFACTION`  <br>`-TOTAL_DISCHARGE` | \\- `\" \" is not a valid Extent of Release/Nature of Satisfaction` |\n| dateOfReleaseSatisfaction | ✓ | ✓ | ✓ | \\- `Date of Release/Satisfaction is an invalid date`  <br>  <br>\\- `Date of Release/Satisfaction cannot be before the date of registration of Charge` |\n| releasePaidAmountSatisfied | ✓ | ✓ | ✓ |  |\n| releasePaidAmountCurrency |  |  | ✓ | \\- `\" \" is an invalid currency` |\n| propertyReleasedSatisfactionDetails | ✓ | ✓ | ✓ |  |"
-							},
-							"response": [
-								{
-									"id": "83bf9cee-1a66-4bd3-b321-c219c9eaf04d",
-									"name": "Status 200",
-									"originalRequest": {
-										"method": "PUT",
-										"header": [
-											{
-												"key": "Authorization",
-												"value": "bearer {{token}}"
-											},
-											{
-												"key": "Content-Type",
-												"name": "Content-Type",
-												"value": "application/json",
-												"type": "text"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "\t\r\n{\r\n    \"instrumentTitle\": \"Title of Instrument Example\",\r\n    \"number\": \"2\",\r\n    \"code\": null,\r\n    \"description\": null,\r\n    \"dateCreated\": \"2023-04-05\",\r\n    \"dateRegistered\": \"2023-01-01\",\r\n    \"approvalDate\": \"2023-01-01\",\r\n    \"type\": \"Fixed\",\r\n    \"createdBy\": \"Resolution\",\r\n    \"state\": \"QLD\",\r\n    \"chargeeDetails\": {\r\n        \"chargeeId\": 1941877,\r\n        \"previousChargeeId\": 1934710\r\n    },\r\n    \"propertyDetails\": {\r\n        \"datePropertyAcquired\": \"2020-01-01\",\r\n        \"amountCharged\": null,\r\n        \"amountChargedCurrency\": null,\r\n        \"propertyDetails\": \"Testing this\"\r\n    },\r\n    \"liabilityDetails\": {\r\n        \"totalLiabilities\": 123123213.00,\r\n        \"liabilityCurrency\": \"AUD\",\r\n        \"liabilityDetails\": \"Note this\"\r\n    },\r\n    \"debentureDetails\": {\r\n        \"financialBenefitTotalAmountSecured\": 900000.00,\r\n        \"totalAmountSecuredCurrency\": null,\r\n        \"amountOfPresentIssueOfSeries\": null,\r\n        \"amountOfPresentIssueCurrency\": null,\r\n        \"dateOfPresentIssue\": null,\r\n        \"debentureDetails\": null,\r\n        \"totalDebentures\": 9000000\r\n    },\r\n    \"variationDetails\": {\r\n        \"dateOfLastChangeVariation\": \"2023-09-02\",\r\n        \"changeDetails\": \"to be changed\",\r\n        \"latestVariationDeclaration\": \"CONFIRMATION_OF_EXECUTED_INSTRUMENT\"\r\n    },\r\n    \"satisfactionDetails\": {\r\n        \"extentOfReleaseNatureOfSatisfaction\": \"Total Discharge\",\r\n        \"dateOfReleaseSatisfaction\": \"2024-01-01\",\r\n        \"releasePaidAmountSatisfied\": 23112.00,\r\n        \"releasePaidAmountCurrency\": \"BZD\",\r\n        \"propertyReleasedSatisfactionDetails\": \"Released Property\"\r\n    }\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{baseUrl}}/cas/companies/:companyId/charges/:chargeId",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"cas",
-												"companies",
-												":companyId",
-												"charges",
-												":chargeId"
-											],
-											"variable": [
-												{
-													"key": "companyId",
-													"value": "{{companyId}}"
-												},
-												{
-													"key": "chargeId",
-													"value": "{{chargeId}}"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\r\n    \"approvalDate\": null,\r\n    \"chargeeDetails\": {\r\n        \"chargeeId\": 1941877,\r\n        \"previousChargeeId\": 1934710\r\n    },\r\n    \"code\": null,\r\n    \"createdBy\": \"Resolution\",\r\n    \"dateCreated\": \"2023-04-05\",\r\n    \"dateRegistered\": \"2023-01-01\",\r\n    \"debentureDetails\": {\r\n        \"amountOfPresentIssueCurrency\": null,\r\n        \"amountOfPresentIssueOfSeries\": 0,\r\n        \"dateOfPresentIssue\": null,\r\n        \"debentureDetails\": null,\r\n        \"financialBenefitTotalAmountSecured\": 900000,\r\n        \"totalAmountSecuredCurrency\": null,\r\n        \"totalDebentures\": 0\r\n    },\r\n    \"description\": null,\r\n    \"id\": 3505,\r\n    \"instrumentTitle\": \"Title of Instrument Example\",\r\n    \"liabilityDetails\": {\r\n        \"liabilityCurrency\": \"AUD\",\r\n        \"liabilityDetails\": \"Note this\",\r\n        \"totalLiabilities\": 123123213\r\n    },\r\n    \"number\": \"4\",\r\n    \"propertyDetails\": {\r\n        \"amountCharged\": 0,\r\n        \"amountChargedCurrency\": null,\r\n        \"datePropertyAcquired\": \"2020-01-01\",\r\n        \"propertyDetails\": \"Testing this\"\r\n    },\r\n    \"satisfactionDetails\": {\r\n        \"dateOfReleaseSatisfaction\": \"2024-01-01\",\r\n        \"extentOfReleaseNatureOfSatisfaction\": \"Total Discharge\",\r\n        \"propertyReleasedSatisfactionDetails\": \"Released Property\",\r\n        \"releasePaidAmountCurrency\": null,\r\n        \"releasePaidAmountSatisfied\": 23112\r\n    },\r\n    \"state\": \"QLD\",\r\n    \"type\": \"Fixed\",\r\n    \"variationDetails\": {\r\n        \"changeDetails\": \"to be changed\",\r\n        \"dateOfLastChangeVariation\": \"2023-09-02\",\r\n        \"latestVariationDeclaration\": null,\r\n        \"latestVariationDeclarationDescription\": null\r\n    }\r\n}"
-								}
-							]
-						}
-					],
-					"id": "72f97ed6-e577-4b40-afa8-7d4f92ec7c7c"
 				},
 				{
 					"name": "SF360",
