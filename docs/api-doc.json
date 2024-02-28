@@ -5149,7 +5149,7 @@
 					"id": "70d0d580-5502-409c-8e50-d4feadc0a195"
 				},
 				{
-					"name": "Workpapers",
+					"name": "Workpapers & Audit",
 					"item": [
 						{
 							"name": "Workpapers",
@@ -5295,6 +5295,263 @@
 									"body": "[\n    {\n        \"amount\": -65193.88,\n        \"amountPrev\": -25381.75,\n        \"code\": \"23900\",\n        \"description\": \"Dividends Received\",\n        \"documents\": [\n            {\n                \"id\": 3657,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$4bd22630e49403b34dd0318c9a34c48a\",\n                \"lastModifiedDate\": \"2019-11-26\",\n                \"name\": \"dividend_reconciliation_report-wp-2019.pdf\"\n            },\n            {\n                \"id\": 29493,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$DCFB7044-E3EB-4B01-8870-047B2486F124\",\n                \"lastModifiedDate\": \"2020-01-20\",\n                \"name\": \"dummy.pdf\"\n            },\n            {\n                \"id\": 3656,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$ef542a46c45c3e4db4a0dc95a77cffe9\",\n                \"lastModifiedDate\": \"2019-11-26\",\n                \"name\": \"investment_income_comparison_report-wp-2019.pdf\"\n            }\n        ],\n        \"id\": 6193,\n        \"isInvestment\": false,\n        \"isMember\": false,\n        \"memberSubEntries\": [],\n        \"notes\": [\n            {\n                \"accountCode\": \"CBA.AX\",\n                \"createdBy\": \"bwilkinson@bglcorp.com.au\",\n                \"createdDate\": \"2023-07-06 23:36\",\n                \"id\": 5243409,\n                \"note\": \"Please take note of the late dividend due to cheque payment\",\n                \"parentNoteId\": null,\n                \"type\": \"MATTER_OF_ATTN_AUDITOR\"\n            },\n            {\n                \"accountCode\": \"CBA.AX\",\n                \"createdBy\": \"bwilkinson@bglcorp.com.au\",\n                \"createdDate\": \"2023-07-07 00:58\",\n                \"id\": 5243411,\n                \"note\": \"I have added the PDF for the CBA div\",\n                \"parentNoteId\": null,\n                \"type\": \"MATTER_OF_ATTN_AUDITOR\"\n            }\n        ],\n        \"preparer\": \"Sandapa Handakumbura\",\n        \"reviewer\": \"Jeevan Tokhi\",\n        \"status\": \"REWORK_REQUIRED\",\n        \"subEntries\": [\n            {\n                \"amount\": -6000,\n                \"amountPrev\": -2600,\n                \"code\": \"ALU.AX\",\n                \"description\": \"Altium Limited\",\n                \"documents\": [\n                    {\n                        \"id\": 29970,\n                        \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$64F28CA9-00E6-415A-ADBC-5F88674A1077\",\n                        \"lastModifiedDate\": \"2020-02-19\",\n                        \"name\": \"alu.pdf\"\n                    }\n                ],\n                \"id\": 8521,\n                \"units\": null,\n                \"unitsPrev\": null\n            },\n            {\n                \"amount\": -1614.88,\n                \"amountPrev\": -505.9,\n                \"code\": \"WPL.AX\",\n                \"description\": \"Woodside Petroleum Ltd\",\n                \"documents\": [\n                    {\n                        \"id\": 29971,\n                        \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$E5F0EFF9-1D60-4897-BEC2-3127BE87678B\",\n                        \"lastModifiedDate\": \"2020-02-19\",\n                        \"name\": \"wpl.pdf\"\n                    }\n                ],\n                \"id\": 8522,\n                \"units\": null,\n                \"unitsPrev\": null\n            },\n            {\n                \"amount\": -3079,\n                \"amountPrev\": -705.85,\n                \"code\": \"BHP.AX\",\n                \"description\": \"Bhp Billiton Limited - Ordinary Fully Paid\",\n                \"documents\": [\n                    {\n                        \"id\": 29972,\n                        \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$3C333F18-B32A-48BB-92C9-57AC77A11650\",\n                        \"lastModifiedDate\": \"2020-02-19\",\n                        \"name\": \"bhp.pdf\"\n                    }\n                ],\n                \"id\": 8523,\n                \"units\": null,\n                \"unitsPrev\": null\n            },\n            {\n                \"amount\": null,\n                \"amountPrev\": -320,\n                \"code\": \"ANZ.AX\",\n                \"description\": \"Australia And New Zealand Banking Group Limited\",\n                \"documents\": [\n                    {\n                        \"id\": 29973,\n                        \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$0FC8F179-1B75-4DD3-8111-B5B6585772AF\",\n                        \"lastModifiedDate\": \"2020-02-19\",\n                        \"name\": \"anz.pdf\"\n                    }\n                ],\n                \"id\": 8524,\n                \"units\": null,\n                \"unitsPrev\": null\n            },\n            {\n                \"amount\": -53500,\n                \"amountPrev\": -20500,\n                \"code\": \"MQG.AX\",\n                \"description\": \"Macquarie Group Limited\",\n                \"documents\": [\n                    {\n                        \"id\": 29974,\n                        \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$8DA6E5D9-91B8-40D9-A9B8-A05C810A2268\",\n                        \"lastModifiedDate\": \"2020-02-19\",\n                        \"name\": \"mcq.pdf\"\n                    }\n                ],\n                \"id\": 8525,\n                \"units\": null,\n                \"unitsPrev\": null\n            },\n            {\n                \"amount\": -1000,\n                \"amountPrev\": -750,\n                \"code\": \"CAM.AX\",\n                \"description\": \"Clime Capital Limited\",\n                \"documents\": [\n                    {\n                        \"id\": 29975,\n                        \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$D8DCF941-8292-4EDA-B18F-627FE6370BC3\",\n                        \"lastModifiedDate\": \"2020-02-19\",\n                        \"name\": \"dummy (3).pdf\"\n                    }\n                ],\n                \"id\": 8526,\n                \"units\": null,\n                \"unitsPrev\": null\n            }\n        ],\n        \"units\": null,\n        \"unitsPrev\": null\n    },\n    {\n        \"amount\": -25000,\n        \"amountPrev\": -50000,\n        \"code\": \"24200\",\n        \"description\": \"Contributions\",\n        \"documents\": [\n            {\n                \"id\": 29976,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$f1e1f0603eb8b1bcbe0c0f1cbb7f3ae0\",\n                \"lastModifiedDate\": \"2020-02-19\",\n                \"name\": \"contributions_breakdown_report-wp-2019.pdf\"\n            }\n        ],\n        \"id\": 6197,\n        \"isInvestment\": false,\n        \"isMember\": false,\n        \"memberSubEntries\": [],\n        \"preparer\": \"Sandapa Handakumbura\",\n        \"reviewer\": \"Jeevan Tokhi\",\n        \"status\": \"REWORK_REQUIRED\",\n        \"subEntries\": [\n            {\n                \"amount\": -25000,\n                \"amountPrev\": -50000,\n                \"code\": \"GRILOU00001A\",\n                \"description\": \"(Contributions) Griffin, Louis - Accumulation (Accumulation)\",\n                \"documents\": [],\n                \"id\": 8531,\n                \"units\": null,\n                \"unitsPrev\": null\n            }\n        ],\n        \"units\": null,\n        \"unitsPrev\": null\n    },\n    {\n        \"amount\": -368204.08,\n        \"amountPrev\": -1826324.68,\n        \"code\": \"24700\",\n        \"description\": \"Changes in Market Values of Investments\",\n        \"documents\": [\n            {\n                \"id\": 29618,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$7aa0de1ca60c0647cd38bdf8bf74d9ab\",\n                \"lastModifiedDate\": \"2020-01-29\",\n                \"name\": \"market_movement-wp-2019.pdf\"\n            },\n            {\n                \"id\": 29617,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$22763f01870c2f401f1c01a020fc8577\",\n                \"lastModifiedDate\": \"2020-01-29\",\n                \"name\": \"net_capital_gains_reconciliation-wp-2019.pdf\"\n            },\n            {\n                \"id\": 29616,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$64bdfa920d735f94ddf71d19395a380c\",\n                \"lastModifiedDate\": \"2020-01-29\",\n                \"name\": \"realised_capital_gain_report-wp-2019.pdf\"\n            }\n        ],\n        \"id\": 6198,\n        \"isInvestment\": false,\n        \"isMember\": false,\n        \"memberSubEntries\": [],\n        \"preparer\": \"Sandapa Handakumbura\",\n        \"reviewer\": \"Jeevan Tokhi\",\n        \"status\": \"COMPLETED\",\n        \"subEntries\": [\n            {\n                \"amount\": -368204.08,\n                \"amountPrev\": -1826324.68,\n                \"code\": \"24700\",\n                \"description\": \"Changes in Market Values of Investments\",\n                \"documents\": [],\n                \"id\": 8532,\n                \"units\": null,\n                \"unitsPrev\": null\n            }\n        ],\n        \"units\": null,\n        \"unitsPrev\": null\n    },\n    {\n        \"amount\": -14777.73,\n        \"amountPrev\": -18616.63,\n        \"code\": \"25000\",\n        \"description\": \"Interest Received\",\n        \"documents\": [\n            {\n                \"id\": 36019,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$0e5d46d8d68efaf766b30a33b10eeb44\",\n                \"lastModifiedDate\": \"2020-06-17\",\n                \"name\": \"interest_reconciliation_report-wp-2019.pdf\"\n            }\n        ],\n        \"id\": 6195,\n        \"isInvestment\": false,\n        \"isMember\": false,\n        \"memberSubEntries\": [],\n        \"preparer\": \"Sandapa Handakumbura\",\n        \"reviewer\": \"Jeevan Tokhi\",\n        \"status\": \"REWORK_REQUIRED\",\n        \"subEntries\": [\n            {\n                \"amount\": -14777.73,\n                \"amountPrev\": -14666.63,\n                \"code\": \"cbabank\",\n                \"description\": \"CBA bank\",\n                \"documents\": [],\n                \"id\": 8528,\n                \"units\": null,\n                \"unitsPrev\": null\n            },\n            {\n                \"amount\": null,\n                \"amountPrev\": -3950,\n                \"code\": \"UBANK\",\n                \"description\": \"UBANK\",\n                \"documents\": [],\n                \"id\": 8529,\n                \"units\": null,\n                \"unitsPrev\": null\n            }\n        ],\n        \"units\": null,\n        \"unitsPrev\": null\n    },\n    {\n        \"amount\": null,\n        \"amountPrev\": -808656,\n        \"code\": \"28500\",\n        \"description\": \"Transfers In\",\n        \"documents\": [\n            {\n                \"id\": 29977,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$7A5801EC-1BC4-4731-92F2-BD71C7CC3D86\",\n                \"lastModifiedDate\": \"2020-02-19\",\n                \"name\": \"LumpSumDocs (signed).pdf\"\n            }\n        ],\n        \"id\": 6191,\n        \"isInvestment\": false,\n        \"isMember\": false,\n        \"memberSubEntries\": [],\n        \"preparer\": \"Sandapa Handakumbura\",\n        \"reviewer\": \"Jeevan Tokhi\",\n        \"status\": \"COMPLETED\",\n        \"subEntries\": [\n            {\n                \"amount\": null,\n                \"amountPrev\": -246323,\n                \"code\": \"GRILOU00001A\",\n                \"description\": \"(Transfers In) Griffin, Louis - Accumulation (Accumulation)\",\n                \"documents\": [],\n                \"id\": 8518,\n                \"units\": null,\n                \"unitsPrev\": null\n            },\n            {\n                \"amount\": null,\n                \"amountPrev\": -562333,\n                \"code\": \"GRIPET00001A\",\n                \"description\": \"(Transfers In) Griffin, Peter - Accumulation (Accumulation)\",\n                \"documents\": [],\n                \"id\": 8519,\n                \"units\": null,\n                \"unitsPrev\": null\n            }\n        ],\n        \"units\": null,\n        \"unitsPrev\": null\n    },\n    {\n        \"amount\": 2100,\n        \"amountPrev\": null,\n        \"code\": \"30100\",\n        \"description\": \"Accountancy Fees\",\n        \"documents\": [\n            {\n                \"id\": 36020,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$aa265ec8eb85cafb2b128880a97d217a\",\n                \"lastModifiedDate\": \"2020-06-17\",\n                \"name\": \"general_ledger-30100-wp-2019.pdf\"\n            }\n        ],\n        \"id\": 6192,\n        \"isInvestment\": false,\n        \"isMember\": false,\n        \"memberSubEntries\": [],\n        \"preparer\": \"Sandapa Handakumbura\",\n        \"reviewer\": \"Jeevan Tokhi\",\n        \"status\": \"REWORK_REQUIRED\",\n        \"subEntries\": [\n            {\n                \"amount\": 2100,\n                \"amountPrev\": null,\n                \"code\": \"30100\",\n                \"description\": \"Accountancy Fees\",\n                \"documents\": [\n                    {\n                        \"id\": 29978,\n                        \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$97753441-6F11-4EE8-BD9B-508505B4E800\",\n                        \"lastModifiedDate\": \"2020-02-19\",\n                        \"name\": \"301invoice.pdf\"\n                    }\n                ],\n                \"id\": 8520,\n                \"units\": null,\n                \"unitsPrev\": null\n            }\n        ],\n        \"units\": null,\n        \"unitsPrev\": null\n    },\n    {\n        \"amount\": 700,\n        \"amountPrev\": null,\n        \"code\": \"30700\",\n        \"description\": \"Auditor's Remuneration\",\n        \"documents\": [\n            {\n                \"id\": 29979,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$9760A181-5E82-4897-97F5-5C6C713CE2FF\",\n                \"lastModifiedDate\": \"2020-02-19\",\n                \"name\": \"307invoice.pdf\"\n            },\n            {\n                \"id\": 36021,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$0471d59938c5d7ce32d5da9cf52def8f\",\n                \"lastModifiedDate\": \"2020-06-17\",\n                \"name\": \"general_ledger-30700-wp-2019.pdf\"\n            }\n        ],\n        \"id\": 6188,\n        \"isInvestment\": false,\n        \"isMember\": false,\n        \"memberSubEntries\": [],\n        \"preparer\": \"Sandapa Handakumbura\",\n        \"reviewer\": \"Jeevan Tokhi\",\n        \"status\": \"REWORK_REQUIRED\",\n        \"subEntries\": [\n            {\n                \"amount\": 700,\n                \"amountPrev\": null,\n                \"code\": \"30700\",\n                \"description\": \"Auditor's Remuneration\",\n                \"documents\": [],\n                \"id\": 8509,\n                \"units\": null,\n                \"unitsPrev\": null\n            }\n        ],\n        \"units\": null,\n        \"unitsPrev\": null\n    },\n    {\n        \"amount\": 1000,\n        \"amountPrev\": null,\n        \"code\": \"41600\",\n        \"description\": \"Pensions Paid\",\n        \"documents\": [\n            {\n                \"id\": 36022,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$898aabb25e29d2ea329a77b870c0a142\",\n                \"lastModifiedDate\": \"2020-06-17\",\n                \"name\": \"pension_summary_report-wp-2019.pdf\"\n            }\n        ],\n        \"id\": 21307,\n        \"isInvestment\": false,\n        \"isMember\": false,\n        \"memberSubEntries\": [],\n        \"preparer\": \"Sandapa Handakumbura\",\n        \"reviewer\": \"Jeevan Tokhi\",\n        \"status\": \"NOT_STARTED\",\n        \"subEntries\": [\n            {\n                \"amount\": 1000,\n                \"amountPrev\": null,\n                \"code\": \"GRIPET00002P\",\n                \"description\": \"(Pensions Paid) Griffin, Peter - Pension (Account Based Pension)\",\n                \"documents\": [],\n                \"id\": 28772,\n                \"units\": null,\n                \"unitsPrev\": null\n            }\n        ],\n        \"units\": null,\n        \"unitsPrev\": null\n    },\n    {\n        \"amount\": 7081.07,\n        \"amountPrev\": 3135.7,\n        \"code\": \"48500\",\n        \"description\": \"Income Tax Expense\",\n        \"documents\": [],\n        \"id\": 6189,\n        \"isInvestment\": false,\n        \"isMember\": false,\n        \"memberSubEntries\": [],\n        \"preparer\": \"Sandapa Handakumbura\",\n        \"reviewer\": \"Jeevan Tokhi\",\n        \"status\": \"COMPLETED\",\n        \"subEntries\": [\n            {\n                \"amount\": 7081.07,\n                \"amountPrev\": 3135.7,\n                \"code\": \"48500\",\n                \"description\": \"Income Tax Expense\",\n                \"documents\": [],\n                \"id\": 8510,\n                \"units\": null,\n                \"unitsPrev\": null\n            }\n        ],\n        \"units\": null,\n        \"unitsPrev\": null\n    },\n    {\n        \"amount\": 462294.62,\n        \"amountPrev\": 2725843.36,\n        \"code\": \"49000\",\n        \"description\": \"Profit/Loss Allocation Account\",\n        \"documents\": [],\n        \"id\": 6194,\n        \"isInvestment\": false,\n        \"isMember\": false,\n        \"memberSubEntries\": [],\n        \"preparer\": \"Sandapa Handakumbura\",\n        \"reviewer\": \"Jeevan Tokhi\",\n        \"status\": \"REWORK_REQUIRED\",\n        \"subEntries\": [\n            {\n                \"amount\": 462294.62,\n                \"amountPrev\": 2725843.36,\n                \"code\": \"49000\",\n                \"description\": \"Profit/Loss Allocation Account\",\n                \"documents\": [],\n                \"id\": 8527,\n                \"units\": null,\n                \"unitsPrev\": null\n            }\n        ],\n        \"units\": null,\n        \"unitsPrev\": null\n    },\n    {\n        \"amount\": -3188137.98,\n        \"amountPrev\": -2725843.36,\n        \"code\": \"50000\",\n        \"description\": \"Members\",\n        \"documents\": [],\n        \"id\": 6200,\n        \"isInvestment\": false,\n        \"isMember\": true,\n        \"memberSubEntries\": [\n            {\n                \"amountClosingBalance\": -975396.49,\n                \"amountContributionIncome\": -25000,\n                \"amountEarnings\": -137989.89,\n                \"amountMemberPayments\": null,\n                \"amountOpeningBalance\": -821002.65,\n                \"amountTaxFees\": 8596.05,\n                \"code\": \"GRILOU00001A\",\n                \"description\": \"Griffin, Louis - Accumulation (Accumulation)\",\n                \"documents\": [],\n                \"id\": 8538\n            },\n            {\n                \"amountClosingBalance\": -689868.92,\n                \"amountContributionIncome\": 0,\n                \"amountEarnings\": -320143.88,\n                \"amountMemberPayments\": 1523872.57,\n                \"amountOpeningBalance\": -1904840.71,\n                \"amountTaxFees\": 11243.1,\n                \"code\": \"GRIPET00001A\",\n                \"description\": \"Griffin, Peter - Accumulation (Accumulation)\",\n                \"documents\": [],\n                \"id\": 8535\n            },\n            {\n                \"amountClosingBalance\": -1522872.57,\n                \"amountContributionIncome\": -1523872.57,\n                \"amountEarnings\": null,\n                \"amountMemberPayments\": 1000,\n                \"amountOpeningBalance\": null,\n                \"amountTaxFees\": null,\n                \"code\": \"GRIPET00002P\",\n                \"description\": \"Griffin, Peter - Pension (Account Based Pension)\",\n                \"documents\": [],\n                \"id\": 28769\n            }\n        ],\n        \"preparer\": \"Sandapa Handakumbura\",\n        \"reviewer\": \"Jeevan Tokhi\",\n        \"status\": \"REWORK_REQUIRED\",\n        \"subEntries\": [],\n        \"units\": null,\n        \"unitsPrev\": null\n    },\n    {\n        \"amount\": 653263.29,\n        \"amountPrev\": 752017.38,\n        \"code\": \"60400\",\n        \"description\": \"Bank Accounts\",\n        \"documents\": [\n            {\n                \"id\": 29621,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$a15ed6138199ba8ca80d3ea6d51ad5d4\",\n                \"lastModifiedDate\": \"2020-01-29\",\n                \"name\": \"bank_statement_report-wp-2019.pdf\"\n            }\n        ],\n        \"id\": 6199,\n        \"isInvestment\": false,\n        \"isMember\": false,\n        \"memberSubEntries\": [],\n        \"preparer\": \"Sandapa Handakumbura\",\n        \"reviewer\": \"Jeevan Tokhi\",\n        \"status\": \"REWORK_REQUIRED\",\n        \"subEntries\": [\n            {\n                \"amount\": 550313.29,\n                \"amountPrev\": 648067.38,\n                \"code\": \"cbabank\",\n                \"description\": \"CBA bank\",\n                \"documents\": [\n                    {\n                        \"id\": 29980,\n                        \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$4746358B-77E7-4708-B4E0-65124BA9446C\",\n                        \"lastModifiedDate\": \"2020-02-19\",\n                        \"name\": \"BankStatement.pdf\"\n                    }\n                ],\n                \"id\": 8533,\n                \"units\": null,\n                \"unitsPrev\": null\n            },\n            {\n                \"amount\": 102950,\n                \"amountPrev\": 103950,\n                \"code\": \"UBANK\",\n                \"description\": \"UBANK\",\n                \"documents\": [\n                    {\n                        \"id\": 29981,\n                        \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$70E380E6-C4B9-4C03-AB72-CB04AA653C77\",\n                        \"lastModifiedDate\": \"2020-02-19\",\n                        \"name\": \"UBANKBankStatement.pdf\"\n                    }\n                ],\n                \"id\": 8534,\n                \"units\": null,\n                \"unitsPrev\": null\n            }\n        ],\n        \"units\": null,\n        \"unitsPrev\": null\n    },\n    {\n        \"amount\": 200000,\n        \"amountPrev\": null,\n        \"code\": \"77200\",\n        \"description\": \"Real Estate Properties ( Australian - Residential)\",\n        \"documents\": [\n            {\n                \"id\": 36184,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$023b0ccfab2fba2b800428f56460e664\",\n                \"lastModifiedDate\": \"2020-07-05\",\n                \"name\": \"investment_movement_report-wp-2019.pdf\"\n            }\n        ],\n        \"id\": 21456,\n        \"isInvestment\": true,\n        \"isMember\": false,\n        \"memberSubEntries\": [],\n        \"preparer\": \"Sandapa Handakumbura\",\n        \"reviewer\": \"Jeevan Tokhi\",\n        \"status\": \"NOT_STARTED\",\n        \"subEntries\": [\n            {\n                \"amount\": 200000,\n                \"amountPrev\": null,\n                \"code\": \"55smi\",\n                \"description\": \"55 Smith Street, Fitzroy VIC, Australia\",\n                \"documents\": [],\n                \"id\": 28997,\n                \"units\": 1,\n                \"unitsPrev\": null\n            }\n        ],\n        \"units\": 1,\n        \"unitsPrev\": null\n    },\n    {\n        \"amount\": 2341633.76,\n        \"amountPrev\": 1976961.68,\n        \"code\": \"77600\",\n        \"description\": \"Shares in Listed Companies (Australian)\",\n        \"documents\": [\n            {\n                \"id\": 29982,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$d32931ab323c50069e5045eb46a0b9cc\",\n                \"lastModifiedDate\": \"2020-02-19\",\n                \"name\": \"balance_review_report-wp-2019.pdf\"\n            },\n            {\n                \"id\": 29987,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$A508DC7E-230C-47D2-8012-53552C48AB77\",\n                \"lastModifiedDate\": \"2020-02-19\",\n                \"name\": \"contractNote1 copy 2.pdf\"\n            },\n            {\n                \"id\": 29988,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$56C68BE7-B6A2-4BCA-88F4-019CC668FE50\",\n                \"lastModifiedDate\": \"2020-02-19\",\n                \"name\": \"contractNote1 copy 3.pdf\"\n            },\n            {\n                \"id\": 29986,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$88EF24E1-31B1-47A7-9648-1E0E78DAC1A8\",\n                \"lastModifiedDate\": \"2020-02-19\",\n                \"name\": \"contractNote1 copy 4.pdf\"\n            },\n            {\n                \"id\": 29983,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$023b0ccfab2fba2b800428f56460e664\",\n                \"lastModifiedDate\": \"2020-02-19\",\n                \"name\": \"investment_movement_report-wp-2019.pdf\"\n            }\n        ],\n        \"id\": 6190,\n        \"isInvestment\": true,\n        \"isMember\": false,\n        \"memberSubEntries\": [],\n        \"preparer\": \"Sandapa Handakumbura\",\n        \"reviewer\": \"Jeevan Tokhi\",\n        \"status\": \"REWORK_REQUIRED\",\n        \"subEntries\": [\n            {\n                \"amount\": 0,\n                \"amountPrev\": 28651.68,\n                \"code\": \"WPL.AX\",\n                \"description\": \"Woodside Petroleum Ltd\",\n                \"documents\": [\n                    {\n                        \"id\": 29984,\n                        \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$CACAF896-4142-46A4-8741-7B1464C1A5FC\",\n                        \"lastModifiedDate\": \"2020-02-19\",\n                        \"name\": \"contractNote1.pdf\"\n                    }\n                ],\n                \"id\": 8511,\n                \"units\": 0,\n                \"unitsPrev\": 808\n            },\n            {\n                \"amount\": 19400,\n                \"amountPrev\": 17300,\n                \"code\": \"CAM.AX\",\n                \"description\": \"Clime Capital Limited\",\n                \"documents\": [],\n                \"id\": 8512,\n                \"units\": 20000,\n                \"unitsPrev\": 20000\n            },\n            {\n                \"amount\": 41160,\n                \"amountPrev\": 33910,\n                \"code\": \"BHP.AX\",\n                \"description\": \"Bhp Billiton Limited - Ordinary Fully Paid\",\n                \"documents\": [],\n                \"id\": 8513,\n                \"units\": 1000,\n                \"unitsPrev\": 1000\n            },\n            {\n                \"amount\": 684000,\n                \"amountPrev\": 450200,\n                \"code\": \"ALU.AX\",\n                \"description\": \"Altium Limited\",\n                \"documents\": [],\n                \"id\": 8514,\n                \"units\": 20000,\n                \"unitsPrev\": 20000\n            },\n            {\n                \"amount\": 1253900,\n                \"amountPrev\": 1236500,\n                \"code\": \"MQG.AX\",\n                \"description\": \"Macquarie Group Limited\",\n                \"documents\": [],\n                \"id\": 8515,\n                \"units\": 10000,\n                \"unitsPrev\": 10000\n            },\n            {\n                \"amount\": 66173.76,\n                \"amountPrev\": null,\n                \"code\": \"XRO.AX\",\n                \"description\": \"Xero Limited\",\n                \"documents\": [\n                    {\n                        \"id\": 29985,\n                        \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$6E1FE2C9-A1D3-4A36-B80D-B49C42C1AD2D\",\n                        \"lastModifiedDate\": \"2020-02-19\",\n                        \"name\": \"contractNote1 copy.pdf\"\n                    }\n                ],\n                \"id\": 8516,\n                \"units\": 1104,\n                \"unitsPrev\": null\n            },\n            {\n                \"amount\": 277000,\n                \"amountPrev\": 210400,\n                \"code\": \"A2M.AX\",\n                \"description\": \"The A2 Milk Company Limited\",\n                \"documents\": [],\n                \"id\": 8517,\n                \"units\": 20000,\n                \"unitsPrev\": 20000\n            }\n        ],\n        \"units\": 72104,\n        \"unitsPrev\": 71808\n    },\n    {\n        \"amount\": 322,\n        \"amountPrev\": null,\n        \"code\": \"77800\",\n        \"description\": \"Shares in Unlisted Private Companies (Australian)\",\n        \"documents\": [\n            {\n                \"id\": 36023,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$023b0ccfab2fba2b800428f56460e664\",\n                \"lastModifiedDate\": \"2020-06-17\",\n                \"name\": \"investment_movement_report-wp-2019.pdf\"\n            }\n        ],\n        \"id\": 21308,\n        \"isInvestment\": true,\n        \"isMember\": false,\n        \"memberSubEntries\": [],\n        \"preparer\": \"Sandapa Handakumbura\",\n        \"reviewer\": \"Jeevan Tokhi\",\n        \"status\": \"NOT_STARTED\",\n        \"subEntries\": [\n            {\n                \"amount\": 322,\n                \"amountPrev\": null,\n                \"code\": \"BHP.AX1\",\n                \"description\": \"BHP Group Limited\",\n                \"documents\": [],\n                \"id\": 28773,\n                \"units\": 12,\n                \"unitsPrev\": null\n            }\n        ],\n        \"units\": 12,\n        \"unitsPrev\": null\n    },\n    {\n        \"amount\": -7081.07,\n        \"amountPrev\": -3135.7,\n        \"code\": \"85000\",\n        \"description\": \"Income Tax Payable/Refundable\",\n        \"documents\": [\n            {\n                \"id\": 29989,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$a70b1ba8a9959da8b74967e081c5d523\",\n                \"lastModifiedDate\": \"2020-02-19\",\n                \"name\": \"exempt_pension_reconciliation-wp-2019.pdf\"\n            },\n            {\n                \"id\": 29992,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$91cbaa2e9c56e4b20df4f4ec856c3cbc\",\n                \"lastModifiedDate\": \"2020-02-19\",\n                \"name\": \"non_deductible_expense_reconciliation-wp-2019.pdf\"\n            },\n            {\n                \"id\": 29990,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$50916880728c556f48c82f7c734d83c5\",\n                \"lastModifiedDate\": \"2020-02-19\",\n                \"name\": \"statement_of_taxable_income-wp-2019.pdf\"\n            },\n            {\n                \"id\": 29991,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$867b0a842163e8c7bcfb111e7e4e9c88\",\n                \"lastModifiedDate\": \"2020-02-19\",\n                \"name\": \"tax_reconciliation_report-wp-2019.pdf\"\n            }\n        ],\n        \"id\": 6196,\n        \"isInvestment\": false,\n        \"isMember\": false,\n        \"memberSubEntries\": [],\n        \"preparer\": \"Sandapa Handakumbura\",\n        \"reviewer\": \"Jeevan Tokhi\",\n        \"status\": \"COMPLETED\",\n        \"subEntries\": [\n            {\n                \"amount\": -7081.07,\n                \"amountPrev\": -3135.7,\n                \"code\": \"85000\",\n                \"description\": \"Income Tax Payable/Refundable\",\n                \"documents\": [\n                    {\n                        \"id\": 29993,\n                        \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$747CE555-5509-4594-AC7D-550E17DBDBFA\",\n                        \"lastModifiedDate\": \"2020-02-19\",\n                        \"name\": \"atoportalsummary.pdf\"\n                    }\n                ],\n                \"id\": 8530,\n                \"units\": null,\n                \"unitsPrev\": null\n            }\n        ],\n        \"units\": null,\n        \"unitsPrev\": null\n    },\n    {\n        \"amount\": null,\n        \"amountPrev\": null,\n        \"code\": \"A\",\n        \"description\": \"Financial Statements\",\n        \"documents\": [\n            {\n                \"id\": 29994,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$52254ab2d56d8a6e440094715c65bebf\",\n                \"lastModifiedDate\": \"2020-02-19\",\n                \"name\": \"Financial Reports-01072018-30062019.pdf\"\n            },\n            {\n                \"id\": 36026,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$213fb8921a203eaee6d98279e897346d\",\n                \"lastModifiedDate\": \"2020-06-17\",\n                \"name\": \"investment_income-wp-2019.pdf\"\n            },\n            {\n                \"id\": 36028,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$05f6fce2db79bd1bba73f436301ba5f2\",\n                \"lastModifiedDate\": \"2020-06-17\",\n                \"name\": \"investment_summary-wp-2019.pdf\"\n            },\n            {\n                \"id\": 36024,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$b7693431bf76c113d7c28426666ab908\",\n                \"lastModifiedDate\": \"2020-06-17\",\n                \"name\": \"notes_to_the_financial_statements-wp-2019.pdf\"\n            },\n            {\n                \"id\": 36025,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$655e42f723d42cf02b414d1e87e2ce81\",\n                \"lastModifiedDate\": \"2020-06-17\",\n                \"name\": \"operating_statement-wp-2019.pdf\"\n            },\n            {\n                \"id\": 36029,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$414edd2a0cce88e5f8e6c56eeed5aae7\",\n                \"lastModifiedDate\": \"2020-06-17\",\n                \"name\": \"statement_of_financial_position-wp-2019.pdf\"\n            },\n            {\n                \"id\": 36027,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$2898e483eb05f17697ca9eef9b427069\",\n                \"lastModifiedDate\": \"2020-06-17\",\n                \"name\": \"trial_balance-wp-2019.pdf\"\n            }\n        ],\n        \"id\": 6201,\n        \"isInvestment\": false,\n        \"isMember\": false,\n        \"memberSubEntries\": [],\n        \"preparer\": \"Sandapa Handakumbura\",\n        \"reviewer\": \"Jeevan Tokhi\",\n        \"status\": \"COMPLETED\",\n        \"subEntries\": [],\n        \"units\": null,\n        \"unitsPrev\": null\n    },\n    {\n        \"amount\": null,\n        \"amountPrev\": null,\n        \"code\": \"B\",\n        \"description\": \"Permanent Documents\",\n        \"documents\": [\n            {\n                \"id\": 29996,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$85297A15-D82B-4C23-BBE9-FC36420AC5A9\",\n                \"lastModifiedDate\": \"2020-02-19\",\n                \"name\": \"asicDocuments.pdf\"\n            },\n            {\n                \"id\": 29995,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$e9ed030e5b8dc38041e99e5ea62be950\",\n                \"lastModifiedDate\": \"2020-02-19\",\n                \"name\": \"fund_summary_report-wp-2019.pdf\"\n            },\n            {\n                \"id\": 29997,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$9EB75ADF-804C-489B-89B5-8B1E140860B9\",\n                \"lastModifiedDate\": \"2020-02-19\",\n                \"name\": \"signeddeclarations.pdf\"\n            },\n            {\n                \"id\": 29998,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$57D1E48A-D688-4D8C-9F44-6EE0B5D721DF\",\n                \"lastModifiedDate\": \"2020-02-19\",\n                \"name\": \"trustdeed.pdf\"\n            }\n        ],\n        \"id\": 6202,\n        \"isInvestment\": false,\n        \"isMember\": false,\n        \"memberSubEntries\": [],\n        \"preparer\": \"Sandapa Handakumbura\",\n        \"reviewer\": \"Jeevan Tokhi\",\n        \"status\": \"COMPLETED\",\n        \"subEntries\": [],\n        \"units\": null,\n        \"unitsPrev\": null\n    },\n    {\n        \"amount\": null,\n        \"amountPrev\": null,\n        \"code\": \"C\",\n        \"description\": \"Other Documents\",\n        \"documents\": [\n            {\n                \"id\": 30001,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$1C328FDB-10BA-4C6F-BAB1-14E5E7E4F537\",\n                \"lastModifiedDate\": \"2020-02-19\",\n                \"name\": \"investmentStragey.pdf\"\n            },\n            {\n                \"id\": 30000,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$38536657-3CA6-49F5-A007-88D557C7BBD3\",\n                \"lastModifiedDate\": \"2020-02-19\",\n                \"name\": \"minuted.pdf\"\n            },\n            {\n                \"id\": 29999,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$04DE8BA1-DA6F-49BB-81BC-D12B20E7132D\",\n                \"lastModifiedDate\": \"2020-02-19\",\n                \"name\": \"soa.pdf\"\n            }\n        ],\n        \"id\": 6203,\n        \"isInvestment\": false,\n        \"isMember\": false,\n        \"memberSubEntries\": [],\n        \"preparer\": \"Sandapa Handakumbura\",\n        \"reviewer\": \"Jeevan Tokhi\",\n        \"status\": \"COMPLETED\",\n        \"subEntries\": [],\n        \"units\": null,\n        \"unitsPrev\": null\n    },\n    {\n        \"amount\": null,\n        \"amountPrev\": null,\n        \"code\": \"D\",\n        \"description\": \"Pension Documentation\",\n        \"documents\": [\n            {\n                \"id\": 30003,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$38536657-3CA6-49F5-A007-88D557C7BBD3\",\n                \"lastModifiedDate\": \"2020-02-19\",\n                \"name\": \"minuted.pdf\"\n            },\n            {\n                \"id\": 36030,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$898aabb25e29d2ea329a77b870c0a142\",\n                \"lastModifiedDate\": \"2020-06-17\",\n                \"name\": \"pension_summary_report-wp-2019.pdf\"\n            },\n            {\n                \"id\": 30002,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$f04dbcf2760e9f316a2fa6940f563387\",\n                \"lastModifiedDate\": \"2020-02-19\",\n                \"name\": \"transfer_balance_account_summary-wp-2019.pdf\"\n            },\n            {\n                \"id\": 30004,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$57D1E48A-D688-4D8C-9F44-6EE0B5D721DF\",\n                \"lastModifiedDate\": \"2020-02-19\",\n                \"name\": \"trustdeed.pdf\"\n            }\n        ],\n        \"id\": 6204,\n        \"isInvestment\": false,\n        \"isMember\": false,\n        \"memberSubEntries\": [],\n        \"preparer\": \"Sandapa Handakumbura\",\n        \"reviewer\": \"Jeevan Tokhi\",\n        \"status\": \"COMPLETED\",\n        \"subEntries\": [],\n        \"units\": null,\n        \"unitsPrev\": null\n    },\n    {\n        \"amount\": null,\n        \"amountPrev\": null,\n        \"code\": \"E\",\n        \"description\": \"Estate Planning\",\n        \"documents\": [\n            {\n                \"id\": 30005,\n                \"key\": \"4331$8ad08a046ab82c45016ab90821b2000b$A7BACD6B-1D9C-4814-A8F6-4A16C34FF149\",\n                \"lastModifiedDate\": \"2020-02-19\",\n                \"name\": \"BDN.pdf\"\n            }\n        ],\n        \"id\": 6205,\n        \"isInvestment\": false,\n        \"isMember\": false,\n        \"memberSubEntries\": [],\n        \"preparer\": \"Sandapa Handakumbura\",\n        \"reviewer\": \"Jeevan Tokhi\",\n        \"status\": \"COMPLETED\",\n        \"subEntries\": [],\n        \"units\": null,\n        \"unitsPrev\": null\n    }\n]"
 								}
 							]
+						},
+						{
+							"name": "Update Audit Status",
+							"id": "4de4e132-b80f-434f-9959-14b7ac5c5e09",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer {{token}}",
+										"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"financialYear\":{{financialYear}},\r\n    \"auditStatus\": \"{{auditStatus}}\",\r\n    \"completionDate\": \"{{completionDate}}\",\r\n    \"qualificationB\": \"{{qualificationB}}\", \r\n    \"qualificationC\": \"{{qualificationC}}\",\r\n    \"qualificationD\": \"{{qualificationD}}\"\r\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/sf/funds/:fundId/audit/changeAuditStatus/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"sf",
+										"funds",
+										":fundId",
+										"audit",
+										"changeAuditStatus",
+										""
+									],
+									"variable": [
+										{
+											"key": "fundId",
+											"value": "{{fundId}}",
+											"description": "Unique ID for the fund"
+										}
+									]
+								},
+								"description": "### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- bgl_partner\n- smsf_partner\n- audit\n    \n\n### Request\n\n| **Key** | **Mandatory** | **Datatype** | **Constraints/Comments** |\n| --- | --- | --- | --- |\n| financialYear | Yes | String | Year of Audit Record in the format \"yyyy\". For example, \"2021\" for the 2021 Financial Year |\n| auditStatus | Yes | Number | Current status of the audit.  <br>Valid values are:  <br>  <br>3 (this represents \"in progress\")  <br>  <br>5 (this represents \"preliminary complete\")  <br>  <br>6 (this represents \"completed\") |\n| completionDate | No | Date | The date when the audit was completed, in the format \"yyyy-MM-dd\". |\n| qualificationB | No | String | Accepts \"true\" or \"false\". |\n| qualificationC | No | String | Accepts \"true\" or \"false\".  <br>  <br>NOTE - if qualificationC is \"true\", then qualificationD must be included in the request body with true/false |\n| qualificationD | No | String | Accepts \"true\" or \"false\".  <br>  <br>NOTE - if qualificationC is \"true\", then qualificationD must be included in the request body with a value (\"true\" or \"false\")  <br>  <br>If qualificationC is \"false\" or not provided in the request body, qualificationD must either be null or not included in the request body.  <br>e.g.  <br>\"qualificationC\": \"false\",  <br>\"qualificationD\": null  <br>  <br>or simply:  <br>\"qualificationC\": \"false\" |"
+							},
+							"response": [
+								{
+									"id": "d3afcda1-33fd-4c81-b9b4-d153dcb7fd22",
+									"name": "Status 200",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}"
+											},
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"financialYear\":2024,\r\n    \"auditStatus\": \"3\",\r\n    \"completionDate\": \"2024-01-26\",\r\n    \"qualificationB\": \"true\", \r\n    \"qualificationC\": \"true\",\r\n    \"qualificationD\": \"false\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://api.staging.bgl360.com.au/sf/funds/:fundId/audit/changeAuditStatus/",
+											"protocol": "https",
+											"host": [
+												"api",
+												"staging",
+												"bgl360",
+												"com",
+												"au"
+											],
+											"path": [
+												"sf",
+												"funds",
+												":fundId",
+												"audit",
+												"changeAuditStatus",
+												""
+											],
+											"variable": [
+												{
+													"key": "fundId",
+													"value": "{{fundId}}",
+													"description": "Unique ID for the fund"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"error\": [],\n    \"message\": \"request accepted.\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Upload Audit Document",
+							"id": "426f992a-0e38-4a0d-86d1-704f290b3df2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer {{token}}",
+										"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "attachment",
+											"description": "[REQUIRED] - File attached to Upload - pdf, docx, xlsx or txt. File size limit 20MB.",
+											"type": "file",
+											"fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
+											"filesNotInWorkingDirectory": [
+												"/C:/Users/bwilkinson/Downloads/Engagement Letter.pdf"
+											],
+											"src": "/C:/Users/bwilkinson/Downloads/Engagement Letter.pdf"
+										},
+										{
+											"key": "financialYear",
+											"value": "{{financialYear}}",
+											"description": "[REQUIRED] - yyyy - e.g. \"2021\" for the 2021 Financial Year",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/sf/funds/:fundId/audit/uploaddoc/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"sf",
+										"funds",
+										":fundId",
+										"audit",
+										"uploaddoc",
+										""
+									],
+									"variable": [
+										{
+											"key": "fundId",
+											"value": "{{fundId}}",
+											"description": "[REQUIRED] - Unique ID of the Fund/Entity"
+										}
+									]
+								},
+								"description": "### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- bgl_partner\n    \n- smsf_partner\n    \n- audit"
+							},
+							"response": [
+								{
+									"id": "1404750f-a749-498b-ab61-c769fae6972e",
+									"name": "Status 201",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "attachment",
+													"description": "[REQUIRED] - File attached to Upload",
+													"type": "file",
+													"value": null
+												},
+												{
+													"key": "financialYear",
+													"value": "",
+													"description": "[REQUIRED] - yyyy - e.g. \"2021\" for the 2021 Financial Year",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{baseUrl}}/sf/funds/:fundId/audit/uploaddoc/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"sf",
+												"funds",
+												":fundId",
+												"audit",
+												"uploaddoc",
+												""
+											],
+											"variable": [
+												{
+													"key": "fundId",
+													"value": ""
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"message\": \"Document uploaded successfully\"\n}"
+								}
+							]
 						}
 					],
 					"id": "0d90c34e-8302-4fc9-a556-c67be4469347",
@@ -5324,6 +5581,550 @@
 				{
 					"name": "Entity Documents",
 					"item": [
+						{
+							"name": "Trust Deed",
+							"item": [
+								{
+									"name": "List Trust Deed Details and Documents",
+									"id": "203da763-93b3-4090-9eb7-52d83baee231",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"sf",
+												"funds",
+												":fundId",
+												"trustDeeds",
+												""
+											],
+											"variable": [
+												{
+													"id": "67d22f92-d631-427d-9245-a28deba4607a",
+													"key": "fundId",
+													"value": "{{fundId}}"
+												}
+											]
+										},
+										"description": "This endpoint returns the trust deed and all previous versions of the trust deed.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- audit\n- smsf_partner\n- bgl_partner\n    \n\n### Response Body\n\n| Field | **Mandatory** | **Data Type** | **Comments** |\n| --- | --- | --- | --- |\n| deedType | Yes | String (enum) | \"Initial\" or \"Variation\" |\n| docKey | Yes | String |  |\n| deedDate | Yes | Date | \"2023-06-30T00:00:00.000+0000\" |\n| description | No | String |  |\n| deedSource | No | String |  |\n| clauseNumber | No | String |  |"
+									},
+									"response": [
+										{
+											"id": "db96d308-924f-4afc-ab32-9b0e107381d2",
+											"name": "Status 200",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}"
+													},
+													{
+														"key": "Content-Type",
+														"name": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"sf",
+														"funds",
+														":fundId",
+														"trustDeeds",
+														""
+													],
+													"variable": [
+														{
+															"key": "fundId",
+															"value": ""
+														}
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "[\n    {\n        \"accountId\": 5919,\n        \"clauseNumber\": null,\n        \"createdDate\": \"2024-02-19T04:37:34.000+0000\",\n        \"deedDate\": \"2020-01-01T00:00:00.000+0000\",\n        \"deedSource\": null,\n        \"deedType\": \"Initial\",\n        \"description\": \"Trust Deed\",\n        \"docKey\": \"5919/8a8bda418cf15e32018cf1860ab2001a/b5b43571-8adb-4181-9468-83af3dd94f4c\",\n        \"fileName\": \"TrustDeed1.pdf\",\n        \"fundId\": \"8a8bda418cf15e32018cf1860ab2001a\",\n        \"id\": 12496\n    },\n    {\n        \"accountId\": 5919,\n        \"clauseNumber\": 2,\n        \"createdDate\": \"2024-02-19T04:40:26.000+0000\",\n        \"deedDate\": \"2021-01-01T00:00:00.000+0000\",\n        \"deedSource\": \"source value test\",\n        \"deedType\": \"Variation\",\n        \"description\": \"Trust Deed update\",\n        \"docKey\": \"5919/8a8bda418cf15e32018cf1860ab2001a/ee8c9f27-3eb0-42b1-bda7-4e1e3dd367e3\",\n        \"fileName\": \"TrustDeed2.pdf\",\n        \"fundId\": \"8a8bda418cf15e32018cf1860ab2001a\",\n        \"id\": 12497\n    },\n    {\n        \"accountId\": 5919,\n        \"clauseNumber\": null,\n        \"createdDate\": \"2024-02-19T05:13:03.000+0000\",\n        \"deedDate\": \"2023-06-30T00:00:00.000+0000\",\n        \"deedSource\": null,\n        \"deedType\": \"Variation\",\n        \"description\": \"Trust Deed three\",\n        \"docKey\": \"sf360$5919$8a8bda418cf15e32018cf1860ab2001a$a52d2d91-7861-48eb-bb5f-b64eaaccdf4e\",\n        \"fileName\": \"TrustDeed3.pdf\",\n        \"fundId\": \"8a8bda418cf15e32018cf1860ab2001a\",\n        \"id\": 12500\n    }\n]"
+										}
+									]
+								},
+								{
+									"name": "Trust Deed Details and Document by ID",
+									"id": "7abc8326-c20e-4a70-9b4a-29e95a76412b",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/:trustDeedId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"sf",
+												"funds",
+												":fundId",
+												"trustDeeds",
+												":trustDeedId"
+											],
+											"variable": [
+												{
+													"id": "7b0df111-8df6-406b-9598-9cff33b71f8d",
+													"key": "fundId",
+													"value": "{{fundId}}",
+													"description": "Unique ID for the fund/entity"
+												},
+												{
+													"id": "77646a73-c797-4ce0-a958-79fad7f5fb7b",
+													"key": "trustDeedId",
+													"value": "{{trustDeedId}}",
+													"description": "Unique ID for the trust deed"
+												}
+											]
+										},
+										"description": "This endpoint returns the specific trust deed for the ID provided.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- audit\n- smsf_partner\n- bgl_partner\n    \n\n### Response Body\n\n| Field | **Mandatory** | **Data Type** | **Comments** |\n| --- | --- | --- | --- |\n| deedType | Yes | String (enum) | \"Initial\" or \"Variation\" |\n| docKey | Yes | String |  |\n| deedDate | Yes | Date | \"2023-06-30T00:00:00.000+0000\" |\n| description | No | String |  |\n| deedSource | No | String |  |\n| clauseNumber | No | String |  |"
+									},
+									"response": [
+										{
+											"id": "8521a811-6b1c-42fa-b7fc-00df4716f4eb",
+											"name": "Status 200",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}"
+													},
+													{
+														"key": "Content-Type",
+														"name": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/:trustDeedId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"sf",
+														"funds",
+														":fundId",
+														"trustDeeds",
+														":trustDeedId"
+													],
+													"variable": [
+														{
+															"key": "fundId",
+															"value": ""
+														},
+														{
+															"key": "trustDeedId",
+															"value": ""
+														}
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"accountId\": 5919,\n    \"clauseNumber\": null,\n    \"createdDate\": \"2024-02-19T05:13:03.000+0000\",\n    \"deedDate\": \"2023-06-30T00:00:00.000+0000\",\n    \"deedSource\": null,\n    \"deedType\": \"Variation\",\n    \"description\": \"Trust Deed three\",\n    \"docKey\": \"sf360$5919$8a8bda418cf15e32018cf1860ab2001a$a52d2d91-7861-48eb-bb5f-b64eaaccdf4e\",\n    \"fileName\": \"TrustDeed3.pdf\",\n    \"fundId\": \"8a8bda418cf15e32018cf1860ab2001a\",\n    \"id\": 12500\n}"
+										}
+									]
+								},
+								{
+									"name": "Create Trust Deed Details and Document",
+									"id": "f28be0d2-1cb0-4cc4-b6ef-45b2333c5f0c",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"deedType\": \"Initial\",\r\n    \"docKey\": \"sf360$5919$8a8bda418cf15e32018cf1860ab2001a$81b5e03b-2069-4cd3-8490-33897cb0ffa9\",\r\n    \"deedDate\": \"2023-06-30T00:00:00.000+0000\",\r\n    \"description\": \"Trust Deed\",\r\n    \"deedSource\": null,\r\n    \"clauseNumber\": null\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"sf",
+												"funds",
+												":fundId",
+												"trustDeeds",
+												""
+											],
+											"variable": [
+												{
+													"id": "70c53f3a-fdcc-4a37-ace3-176076ad53b1",
+													"key": "fundId",
+													"value": "{{fundId}}",
+													"description": "Unique ID for the fund"
+												}
+											]
+										},
+										"description": "This endpoint allows you to create a trust deed.\n\nThere are two steps:\n\n1 - Use the [POST Upload Document endpoint](https://docs.api.bgl360.com.au/?version=latest#33b8e60e-d324-4f43-898a-90bacff16a45) to upload the Trust Deed. Retain the document key from the response.\n\n2 - Use this POST Create Trust Deed Details and Document endpoint to update and mark that document as a trust deed with relevant details.\n\nNote - if the document has previously been uploaded, then use the [GET Entity Documents List endpoint](https://docs.api.bgl360.com.au/?version=latest#0830ed87-f853-48c3-97ff-027ea4e882f3) to find the relevant doc key.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- audit\n- smsf_partner\n- bgl_partner\n    \n\n### Request Body\n\n| Field | **Mandatory** | **Data Type** | **Comments** |\n| --- | --- | --- | --- |\n| deedType | Yes | String (enum) | \"Initial\" or \"Variation\" |\n| docKey | Yes | String | When uploading a new document, obtain this value from the [POST Upload Document endpoint](https://docs.api.bgl360.com.au/?version=latest#33b8e60e-d324-4f43-898a-90bacff16a45) response.  <br>  <br>If using an existing document, use the [GET Entity Documents List endpoint](https://docs.api.bgl360.com.au/?version=latest#0830ed87-f853-48c3-97ff-027ea4e882f3) to find the relevant doc key |\n| deedDate | Yes | Date | \"2023-06-30T00:00:00.000+0000\" |\n| description | No | String |  |\n| deedSource | No | String |  |\n| clauseNumber | No | String |  |"
+									},
+									"response": [
+										{
+											"id": "784d3372-646a-4f08-a41b-1d22486f1a5a",
+											"name": "Status 201",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}"
+													},
+													{
+														"key": "Content-Type",
+														"name": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"deedType\": \"Initial\",\r\n    \"docKey\": \"sf360$5919$8a8bda418cf15e32018cf1860ab2001a$81b5e03b-2069-4cd3-8490-33897cb0ffa9\",\r\n    \"deedDate\": \"2023-06-30T00:00:00.000+0000\",\r\n    \"description\": \"Trust Deed\",\r\n    \"deedSource\": null,\r\n    \"clauseNumber\": null\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"sf",
+														"funds",
+														":fundId",
+														"trustDeeds",
+														""
+													],
+													"variable": [
+														{
+															"key": "fundId",
+															"value": ""
+														}
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"accountId\": 5919,\n    \"clauseNumber\": null,\n    \"createdDate\": \"2024-02-19T05:33:57.000+0000\",\n    \"deedDate\": \"2023-06-30T00:00:00.000+0000\",\n    \"deedSource\": null,\n    \"deedType\": \"Initial\",\n    \"description\": \"Trust Deed\",\n    \"docKey\": \"sf360$5919$8a8bda418cf15e32018cf1860ab2001a$81b5e03b-2069-4cd3-8490-33897cb0ffa9\",\n    \"fileName\": \"TrustDeed4.pdf\",\n    \"fundId\": \"8a8bda418cf15e32018cf1860ab2001a\",\n    \"id\": 12501\n}"
+										}
+									]
+								},
+								{
+									"name": "Update Trust Deed Details",
+									"id": "62880473-57cd-4bb6-86fa-ec2ff6545c49",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"deedType\": \"Variation\",\r\n    \"docKey\": \"sf360$5919$8a8bda418cf15e32018cf1860ab2001a$81b5e03b-2069-4cd3-8490-33897cb0ffa9\",\r\n    \"deedDate\": \"2023-06-30T00:00:00.000+0000\",\r\n    \"description\": \"Trust Deed updating description\",\r\n    \"deedSource\": null,\r\n    \"clauseNumber\": null\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/:trustDeedId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"sf",
+												"funds",
+												":fundId",
+												"trustDeeds",
+												":trustDeedId"
+											],
+											"variable": [
+												{
+													"id": "9cb36c1a-d6a8-4995-ab47-c1d5f406683f",
+													"key": "fundId",
+													"value": "{{fundId}}",
+													"description": "Unique ID for the fund"
+												},
+												{
+													"id": "805366a6-ddf8-4975-a307-9545ade2d0e4",
+													"key": "trustDeedId",
+													"value": "{{trustDeedId}}",
+													"description": "Unique ID for the trust deed"
+												}
+											]
+										},
+										"description": "This endpoint allows you to update the details of a trust deed.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- audit\n- smsf_partner\n- bgl_partner\n    \n\n### Request Body\n\n| **Field** | **Mandatory** | **Data Type** | **Comments** |\n| --- | --- | --- | --- |\n| deedType | Yes | String (enum) | \"Initial\" or \"Variation\" |\n| docKey | Yes | String | Obtain this value from the [GET List Trust Deed Details and Documents](https://docs.api.bgl360.com.au/?version=latest#33b8e60e-d324-4f43-898a-90bacff16a45) endpoint. |\n| deedDate | Yes | Date | \"2023-06-30T00:00:00.000+0000\" |\n| description | No | String |  |\n| deedSource | No | String |  |\n| clauseNumber | No | String |  |"
+									},
+									"response": [
+										{
+											"id": "4f978d1d-f887-4d02-a319-7c068635ff1c",
+											"name": "Status 200",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}"
+													},
+													{
+														"key": "Content-Type",
+														"name": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"deedType\": \"Initial\",\r\n    \"docKey\": \"sf360$5919$8a8bda418cf15e32018cf1860ab2001a$81b5e03b-2069-4cd3-8490-33897cb0ffa9\",\r\n    \"deedDate\": \"2023-06-30T00:00:00.000+0000\",\r\n    \"description\": \"Trust Deed update description\",\r\n    \"deedSource\": null,\r\n    \"clauseNumber\": null\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/:trustDeedId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"sf",
+														"funds",
+														":fundId",
+														"trustDeeds",
+														":trustDeedId"
+													],
+													"variable": [
+														{
+															"key": "fundId",
+															"value": ""
+														},
+														{
+															"key": "trustDeedId",
+															"value": ""
+														}
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"accountId\": 5919,\n    \"clauseNumber\": null,\n    \"createdDate\": \"2024-02-19T05:33:57.000+0000\",\n    \"deedDate\": \"2023-06-30T00:00:00.000+0000\",\n    \"deedSource\": null,\n    \"deedType\": \"Initial\",\n    \"description\": \"Trust Deed update description\",\n    \"docKey\": \"sf360$5919$8a8bda418cf15e32018cf1860ab2001a$81b5e03b-2069-4cd3-8490-33897cb0ffa9\",\n    \"fileName\": \"TrustDeed4.pdf\",\n    \"fundId\": \"8a8bda418cf15e32018cf1860ab2001a\",\n    \"id\": 12501\n}"
+										}
+									]
+								},
+								{
+									"name": "Delete Trust Deed Details",
+									"id": "6ed6de95-9ac1-4eab-9733-0140c3b10172",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/:trustDeedId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"sf",
+												"funds",
+												":fundId",
+												"trustDeeds",
+												":trustDeedId"
+											],
+											"variable": [
+												{
+													"id": "20f913d5-7998-4e90-8c78-fbb8a9900fda",
+													"key": "fundId",
+													"value": "{{fundId}}",
+													"description": "Unique ID for the fund"
+												},
+												{
+													"id": "30543384-c900-4625-9d09-5be9599e14bc",
+													"key": "trustDeedId",
+													"value": "{{trustDeedId}}",
+													"description": "Unique ID for the trust deed"
+												}
+											]
+										},
+										"description": "This endpoint allows you to delete the trust deed.\n\nPlease note, this will remove the Trust Deed from the Trust Deed screen, however the underlying document will still be availble in the Document screen.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- audit\n- smsf_partner\n- bgl_partner"
+									},
+									"response": [
+										{
+											"id": "551d3418-f4b9-4bd0-a3f2-aeb35ead967c",
+											"name": "Status 200",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "bearer {{token}}"
+													},
+													{
+														"key": "Content-Type",
+														"name": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/:trustDeedId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"sf",
+														"funds",
+														":fundId",
+														"trustDeeds",
+														":trustDeedId"
+													],
+													"variable": [
+														{
+															"key": "fundId",
+															"value": ""
+														},
+														{
+															"key": "trustDeedId",
+															"value": ""
+														}
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": \"DELETED\"\n}"
+										}
+									]
+								}
+							],
+							"id": "81fc5d2e-843f-464e-b747-39ce639cb052"
+						},
 						{
 							"name": "Entity Documents List",
 							"id": "0830ed87-f853-48c3-97ff-027ea4e882f3",
@@ -15361,807 +16162,6 @@
 					],
 					"id": "cd4859fc-ddb0-49a4-a7a1-cc0d38818610",
 					"description": "This section contains the resources to request and verify identification via BGLiD.\n\nIf you are interested in utilising this service, please contact the BGL team at [api@bglcorp.com.au](https://mailto:api@bglcorp.com.au)"
-				},
-				{
-					"name": "SF360",
-					"item": [
-						{
-							"name": "Update Audit Status",
-							"id": "4de4e132-b80f-434f-9959-14b7ac5c5e09",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"auth": {
-									"type": "noauth"
-								},
-								"method": "POST",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "bearer {{token}}",
-										"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
-									},
-									{
-										"key": "Content-Type",
-										"name": "Content-Type",
-										"type": "text",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"financialYear\":{{financialYear}},\r\n    \"auditStatus\": \"{{auditStatus}}\",\r\n    \"completionDate\": \"{{completionDate}}\",\r\n    \"qualificationB\": \"{{qualificationB}}\", \r\n    \"qualificationC\": \"{{qualificationC}}\",\r\n    \"qualificationD\": \"{{qualificationD}}\"\r\n}"
-								},
-								"url": {
-									"raw": "{{baseUrl}}/sf/funds/:fundId/audit/changeAuditStatus/",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"sf",
-										"funds",
-										":fundId",
-										"audit",
-										"changeAuditStatus",
-										""
-									],
-									"variable": [
-										{
-											"key": "fundId",
-											"value": "{{fundId}}",
-											"description": "Unique ID for the fund"
-										}
-									]
-								},
-								"description": "### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- bgl_partner\n- smsf_partner\n- audit\n    \n\n### Request\n\n| **Key** | **Mandatory** | **Datatype** | **Constraints/Comments** |\n| --- | --- | --- | --- |\n| financialYear | Yes | String | Year of Audit Record in the format \"yyyy\". For example, \"2021\" for the 2021 Financial Year |\n| auditStatus | Yes | Number | Current status of the audit.  <br>Valid values are:  <br>  <br>3 (this represents \"in progress\")  <br>  <br>5 (this represents \"preliminary complete\")  <br>  <br>6 (this represents \"completed\") |\n| completionDate | No | Date | The date when the audit was completed, in the format \"yyyy-MM-dd\". |\n| qualificationB | No | String | Accepts \"true\" or \"false\". |\n| qualificationC | No | String | Accepts \"true\" or \"false\".  <br>  <br>NOTE - if qualificationC is \"true\", then qualificationD must be included in the request body with true/false |\n| qualificationD | No | String | Accepts \"true\" or \"false\".  <br>  <br>NOTE - if qualificationC is \"true\", then qualificationD must be included in the request body with a value (\"true\" or \"false\")  <br>  <br>If qualificationC is \"false\" or not provided in the request body, qualificationD must either be null or not included in the request body.  <br>e.g.  <br>\"qualificationC\": \"false\",  <br>\"qualificationD\": null  <br>  <br>or simply:  <br>\"qualificationC\": \"false\" |"
-							},
-							"response": [
-								{
-									"id": "d3afcda1-33fd-4c81-b9b4-d153dcb7fd22",
-									"name": "Status 200",
-									"originalRequest": {
-										"method": "POST",
-										"header": [
-											{
-												"key": "Authorization",
-												"value": "bearer {{token}}"
-											},
-											{
-												"key": "Content-Type",
-												"name": "Content-Type",
-												"value": "application/json",
-												"type": "text"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n    \"financialYear\":2024,\r\n    \"auditStatus\": \"3\",\r\n    \"completionDate\": \"2024-01-26\",\r\n    \"qualificationB\": \"true\", \r\n    \"qualificationC\": \"true\",\r\n    \"qualificationD\": \"false\"\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "https://api.staging.bgl360.com.au/sf/funds/:fundId/audit/changeAuditStatus/",
-											"protocol": "https",
-											"host": [
-												"api",
-												"staging",
-												"bgl360",
-												"com",
-												"au"
-											],
-											"path": [
-												"sf",
-												"funds",
-												":fundId",
-												"audit",
-												"changeAuditStatus",
-												""
-											],
-											"variable": [
-												{
-													"key": "fundId",
-													"value": "{{fundId}}",
-													"description": "Unique ID for the fund"
-												}
-											]
-										}
-									},
-									"status": "Created",
-									"code": 201,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"error\": [],\n    \"message\": \"request accepted.\"\n}"
-								}
-							]
-						},
-						{
-							"name": "Upload Audit Document",
-							"id": "426f992a-0e38-4a0d-86d1-704f290b3df2",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"auth": {
-									"type": "noauth"
-								},
-								"method": "POST",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "bearer {{token}}",
-										"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
-									},
-									{
-										"key": "Content-Type",
-										"name": "Content-Type",
-										"type": "text",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "attachment",
-											"description": "[REQUIRED] - File attached to Upload - pdf, docx, xlsx or txt. File size limit 20MB.",
-											"type": "file",
-											"fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
-											"filesNotInWorkingDirectory": [
-												"/C:/Users/bwilkinson/Downloads/Engagement Letter.pdf"
-											],
-											"src": "/C:/Users/bwilkinson/Downloads/Engagement Letter.pdf"
-										},
-										{
-											"key": "financialYear",
-											"value": "{{financialYear}}",
-											"description": "[REQUIRED] - yyyy - e.g. \"2021\" for the 2021 Financial Year",
-											"type": "text"
-										}
-									]
-								},
-								"url": {
-									"raw": "{{baseUrl}}/sf/funds/:fundId/audit/uploaddoc/",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"sf",
-										"funds",
-										":fundId",
-										"audit",
-										"uploaddoc",
-										""
-									],
-									"variable": [
-										{
-											"key": "fundId",
-											"value": "{{fundId}}",
-											"description": "[REQUIRED] - Unique ID of the Fund/Entity"
-										}
-									]
-								},
-								"description": "### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- bgl_partner\n    \n- smsf_partner\n    \n- audit"
-							},
-							"response": [
-								{
-									"id": "1404750f-a749-498b-ab61-c769fae6972e",
-									"name": "Status 201",
-									"originalRequest": {
-										"method": "POST",
-										"header": [
-											{
-												"key": "Authorization",
-												"value": "bearer {{token}}"
-											},
-											{
-												"key": "Content-Type",
-												"value": "application/json"
-											}
-										],
-										"body": {
-											"mode": "formdata",
-											"formdata": [
-												{
-													"key": "attachment",
-													"description": "[REQUIRED] - File attached to Upload",
-													"type": "file",
-													"value": null
-												},
-												{
-													"key": "financialYear",
-													"value": "",
-													"description": "[REQUIRED] - yyyy - e.g. \"2021\" for the 2021 Financial Year",
-													"type": "text"
-												}
-											]
-										},
-										"url": {
-											"raw": "{{baseUrl}}/sf/funds/:fundId/audit/uploaddoc/",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"sf",
-												"funds",
-												":fundId",
-												"audit",
-												"uploaddoc",
-												""
-											],
-											"variable": [
-												{
-													"key": "fundId",
-													"value": ""
-												}
-											]
-										}
-									},
-									"status": "Created",
-									"code": 201,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"message\": \"Document uploaded successfully\"\n}"
-								}
-							]
-						},
-						{
-							"name": "List Trust Deed Details and Documents",
-							"id": "203da763-93b3-4090-9eb7-52d83baee231",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "bearer {{token}}",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"sf",
-										"funds",
-										":fundId",
-										"trustDeeds",
-										""
-									],
-									"variable": [
-										{
-											"id": "67d22f92-d631-427d-9245-a28deba4607a",
-											"key": "fundId",
-											"value": "{{fundId}}"
-										}
-									]
-								},
-								"description": "This endpoint returns the trust deed and all previous versions of the trust deed.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- audit\n- smsf_partner\n- bgl_partner\n    \n\n### Response Body\n\n| Field | **Mandatory** | **Data Type** | **Comments** |\n| --- | --- | --- | --- |\n| deedType | Yes | String (enum) | \"Initial\" or \"Variation\" |\n| docKey | Yes | String |  |\n| deedDate | Yes | Date | \"2023-06-30T00:00:00.000+0000\" |\n| description | No | String |  |\n| deedSource | No | String |  |\n| clauseNumber | No | String |  |"
-							},
-							"response": [
-								{
-									"id": "db96d308-924f-4afc-ab32-9b0e107381d2",
-									"name": "Status 200",
-									"originalRequest": {
-										"method": "GET",
-										"header": [
-											{
-												"key": "Authorization",
-												"value": "bearer {{token}}"
-											},
-											{
-												"key": "Content-Type",
-												"name": "Content-Type",
-												"value": "application/json",
-												"type": "text"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"sf",
-												"funds",
-												":fundId",
-												"trustDeeds",
-												""
-											],
-											"variable": [
-												{
-													"key": "fundId",
-													"value": ""
-												}
-											]
-										}
-									},
-									"status": "Created",
-									"code": 201,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "[\n    {\n        \"accountId\": 5919,\n        \"clauseNumber\": null,\n        \"createdDate\": \"2024-02-19T04:37:34.000+0000\",\n        \"deedDate\": \"2020-01-01T00:00:00.000+0000\",\n        \"deedSource\": null,\n        \"deedType\": \"Initial\",\n        \"description\": \"Trust Deed\",\n        \"docKey\": \"5919/8a8bda418cf15e32018cf1860ab2001a/b5b43571-8adb-4181-9468-83af3dd94f4c\",\n        \"fileName\": \"TrustDeed1.pdf\",\n        \"fundId\": \"8a8bda418cf15e32018cf1860ab2001a\",\n        \"id\": 12496\n    },\n    {\n        \"accountId\": 5919,\n        \"clauseNumber\": 2,\n        \"createdDate\": \"2024-02-19T04:40:26.000+0000\",\n        \"deedDate\": \"2021-01-01T00:00:00.000+0000\",\n        \"deedSource\": \"source value test\",\n        \"deedType\": \"Variation\",\n        \"description\": \"Trust Deed update\",\n        \"docKey\": \"5919/8a8bda418cf15e32018cf1860ab2001a/ee8c9f27-3eb0-42b1-bda7-4e1e3dd367e3\",\n        \"fileName\": \"TrustDeed2.pdf\",\n        \"fundId\": \"8a8bda418cf15e32018cf1860ab2001a\",\n        \"id\": 12497\n    },\n    {\n        \"accountId\": 5919,\n        \"clauseNumber\": null,\n        \"createdDate\": \"2024-02-19T05:13:03.000+0000\",\n        \"deedDate\": \"2023-06-30T00:00:00.000+0000\",\n        \"deedSource\": null,\n        \"deedType\": \"Variation\",\n        \"description\": \"Trust Deed three\",\n        \"docKey\": \"sf360$5919$8a8bda418cf15e32018cf1860ab2001a$a52d2d91-7861-48eb-bb5f-b64eaaccdf4e\",\n        \"fileName\": \"TrustDeed3.pdf\",\n        \"fundId\": \"8a8bda418cf15e32018cf1860ab2001a\",\n        \"id\": 12500\n    }\n]"
-								}
-							]
-						},
-						{
-							"name": "Trust Deed Details and Document by ID",
-							"id": "7abc8326-c20e-4a70-9b4a-29e95a76412b",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "bearer {{token}}",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/:trustDeedId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"sf",
-										"funds",
-										":fundId",
-										"trustDeeds",
-										":trustDeedId"
-									],
-									"variable": [
-										{
-											"id": "7b0df111-8df6-406b-9598-9cff33b71f8d",
-											"key": "fundId",
-											"value": "{{fundId}}",
-											"description": "Unique ID for the fund/entity"
-										},
-										{
-											"id": "77646a73-c797-4ce0-a958-79fad7f5fb7b",
-											"key": "trustDeedId",
-											"value": "{{trustDeedId}}",
-											"description": "Unique ID for the trust deed"
-										}
-									]
-								},
-								"description": "This endpoint returns the specific trust deed for the ID provided.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- audit\n- smsf_partner\n- bgl_partner\n    \n\n### Response Body\n\n| Field | **Mandatory** | **Data Type** | **Comments** |\n| --- | --- | --- | --- |\n| deedType | Yes | String (enum) | \"Initial\" or \"Variation\" |\n| docKey | Yes | String |  |\n| deedDate | Yes | Date | \"2023-06-30T00:00:00.000+0000\" |\n| description | No | String |  |\n| deedSource | No | String |  |\n| clauseNumber | No | String |  |"
-							},
-							"response": [
-								{
-									"id": "8521a811-6b1c-42fa-b7fc-00df4716f4eb",
-									"name": "Status 200",
-									"originalRequest": {
-										"method": "GET",
-										"header": [
-											{
-												"key": "Authorization",
-												"value": "bearer {{token}}"
-											},
-											{
-												"key": "Content-Type",
-												"name": "Content-Type",
-												"value": "application/json",
-												"type": "text"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/:trustDeedId",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"sf",
-												"funds",
-												":fundId",
-												"trustDeeds",
-												":trustDeedId"
-											],
-											"variable": [
-												{
-													"key": "fundId",
-													"value": ""
-												},
-												{
-													"key": "trustDeedId",
-													"value": ""
-												}
-											]
-										}
-									},
-									"status": "Created",
-									"code": 201,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"accountId\": 5919,\n    \"clauseNumber\": null,\n    \"createdDate\": \"2024-02-19T05:13:03.000+0000\",\n    \"deedDate\": \"2023-06-30T00:00:00.000+0000\",\n    \"deedSource\": null,\n    \"deedType\": \"Variation\",\n    \"description\": \"Trust Deed three\",\n    \"docKey\": \"sf360$5919$8a8bda418cf15e32018cf1860ab2001a$a52d2d91-7861-48eb-bb5f-b64eaaccdf4e\",\n    \"fileName\": \"TrustDeed3.pdf\",\n    \"fundId\": \"8a8bda418cf15e32018cf1860ab2001a\",\n    \"id\": 12500\n}"
-								}
-							]
-						},
-						{
-							"name": "Create Trust Deed Details and Document",
-							"id": "f28be0d2-1cb0-4cc4-b6ef-45b2333c5f0c",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "bearer {{token}}",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"deedType\": \"Initial\",\r\n    \"docKey\": \"sf360$5919$8a8bda418cf15e32018cf1860ab2001a$81b5e03b-2069-4cd3-8490-33897cb0ffa9\",\r\n    \"deedDate\": \"2023-06-30T00:00:00.000+0000\",\r\n    \"description\": \"Trust Deed\",\r\n    \"deedSource\": null,\r\n    \"clauseNumber\": null\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"sf",
-										"funds",
-										":fundId",
-										"trustDeeds",
-										""
-									],
-									"variable": [
-										{
-											"id": "70c53f3a-fdcc-4a37-ace3-176076ad53b1",
-											"key": "fundId",
-											"value": "{{fundId}}",
-											"description": "Unique ID for the fund"
-										}
-									]
-								},
-								"description": "This endpoint allows you to create a trust deed.\n\nThere are two steps:\n\n1 - Use the [POST Upload Document endpoint](https://docs.api.bgl360.com.au/?version=latest#33b8e60e-d324-4f43-898a-90bacff16a45) to upload the Trust Deed. Retain the document key from the response.\n\n2 - Use this POST Create Trust Deed Details and Document endpoint to update and mark that document as a trust deed with relevant details.\n\nNote - if the document has previously been uploaded, then use the [GET Entity Documents List endpoint](https://docs.api.bgl360.com.au/?version=latest#0830ed87-f853-48c3-97ff-027ea4e882f3) to find the relevant doc key.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- audit\n- smsf_partner\n- bgl_partner\n    \n\n### Request Body\n\n| Field | **Mandatory** | **Data Type** | **Comments** |\n| --- | --- | --- | --- |\n| deedType | Yes | String (enum) | \"Initial\" or \"Variation\" |\n| docKey | Yes | String | When uploading a new document, obtain this value from the [POST Upload Document endpoint](https://docs.api.bgl360.com.au/?version=latest#33b8e60e-d324-4f43-898a-90bacff16a45) response.  <br>  <br>If using an existing document, use the [GET Entity Documents List endpoint](https://docs.api.bgl360.com.au/?version=latest#0830ed87-f853-48c3-97ff-027ea4e882f3) to find the relevant doc key |\n| deedDate | Yes | Date | \"2023-06-30T00:00:00.000+0000\" |\n| description | No | String |  |\n| deedSource | No | String |  |\n| clauseNumber | No | String |  |"
-							},
-							"response": [
-								{
-									"id": "784d3372-646a-4f08-a41b-1d22486f1a5a",
-									"name": "Status 201",
-									"originalRequest": {
-										"method": "POST",
-										"header": [
-											{
-												"key": "Authorization",
-												"value": "bearer {{token}}"
-											},
-											{
-												"key": "Content-Type",
-												"name": "Content-Type",
-												"value": "application/json",
-												"type": "text"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n    \"deedType\": \"Initial\",\r\n    \"docKey\": \"sf360$5919$8a8bda418cf15e32018cf1860ab2001a$81b5e03b-2069-4cd3-8490-33897cb0ffa9\",\r\n    \"deedDate\": \"2023-06-30T00:00:00.000+0000\",\r\n    \"description\": \"Trust Deed\",\r\n    \"deedSource\": null,\r\n    \"clauseNumber\": null\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"sf",
-												"funds",
-												":fundId",
-												"trustDeeds",
-												""
-											],
-											"variable": [
-												{
-													"key": "fundId",
-													"value": ""
-												}
-											]
-										}
-									},
-									"status": "Created",
-									"code": 201,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"accountId\": 5919,\n    \"clauseNumber\": null,\n    \"createdDate\": \"2024-02-19T05:33:57.000+0000\",\n    \"deedDate\": \"2023-06-30T00:00:00.000+0000\",\n    \"deedSource\": null,\n    \"deedType\": \"Initial\",\n    \"description\": \"Trust Deed\",\n    \"docKey\": \"sf360$5919$8a8bda418cf15e32018cf1860ab2001a$81b5e03b-2069-4cd3-8490-33897cb0ffa9\",\n    \"fileName\": \"TrustDeed4.pdf\",\n    \"fundId\": \"8a8bda418cf15e32018cf1860ab2001a\",\n    \"id\": 12501\n}"
-								}
-							]
-						},
-						{
-							"name": "Update Trust Deed Details",
-							"id": "62880473-57cd-4bb6-86fa-ec2ff6545c49",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "bearer {{token}}",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"deedType\": \"Variation\",\r\n    \"docKey\": \"sf360$5919$8a8bda418cf15e32018cf1860ab2001a$81b5e03b-2069-4cd3-8490-33897cb0ffa9\",\r\n    \"deedDate\": \"2023-06-30T00:00:00.000+0000\",\r\n    \"description\": \"Trust Deed updating description\",\r\n    \"deedSource\": null,\r\n    \"clauseNumber\": null\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/:trustDeedId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"sf",
-										"funds",
-										":fundId",
-										"trustDeeds",
-										":trustDeedId"
-									],
-									"variable": [
-										{
-											"id": "9cb36c1a-d6a8-4995-ab47-c1d5f406683f",
-											"key": "fundId",
-											"value": "{{fundId}}",
-											"description": "Unique ID for the fund"
-										},
-										{
-											"id": "805366a6-ddf8-4975-a307-9545ade2d0e4",
-											"key": "trustDeedId",
-											"value": "{{trustDeedId}}",
-											"description": "Unique ID for the trust deed"
-										}
-									]
-								},
-								"description": "This endpoint allows you to update the details of a trust deed.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- audit\n- smsf_partner\n- bgl_partner\n    \n\n### Request Body\n\n| **Field** | **Mandatory** | **Data Type** | **Comments** |\n| --- | --- | --- | --- |\n| deedType | Yes | String (enum) | \"Initial\" or \"Variation\" |\n| docKey | Yes | String | Obtain this value from the [GET List Trust Deed Details and Documents](https://docs.api.bgl360.com.au/?version=latest#33b8e60e-d324-4f43-898a-90bacff16a45) endpoint. |\n| deedDate | Yes | Date | \"2023-06-30T00:00:00.000+0000\" |\n| description | No | String |  |\n| deedSource | No | String |  |\n| clauseNumber | No | String |  |"
-							},
-							"response": [
-								{
-									"id": "4f978d1d-f887-4d02-a319-7c068635ff1c",
-									"name": "Status 200",
-									"originalRequest": {
-										"method": "PATCH",
-										"header": [
-											{
-												"key": "Authorization",
-												"value": "bearer {{token}}"
-											},
-											{
-												"key": "Content-Type",
-												"name": "Content-Type",
-												"value": "application/json",
-												"type": "text"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n    \"deedType\": \"Initial\",\r\n    \"docKey\": \"sf360$5919$8a8bda418cf15e32018cf1860ab2001a$81b5e03b-2069-4cd3-8490-33897cb0ffa9\",\r\n    \"deedDate\": \"2023-06-30T00:00:00.000+0000\",\r\n    \"description\": \"Trust Deed update description\",\r\n    \"deedSource\": null,\r\n    \"clauseNumber\": null\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/:trustDeedId",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"sf",
-												"funds",
-												":fundId",
-												"trustDeeds",
-												":trustDeedId"
-											],
-											"variable": [
-												{
-													"key": "fundId",
-													"value": ""
-												},
-												{
-													"key": "trustDeedId",
-													"value": ""
-												}
-											]
-										}
-									},
-									"status": "Created",
-									"code": 201,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"accountId\": 5919,\n    \"clauseNumber\": null,\n    \"createdDate\": \"2024-02-19T05:33:57.000+0000\",\n    \"deedDate\": \"2023-06-30T00:00:00.000+0000\",\n    \"deedSource\": null,\n    \"deedType\": \"Initial\",\n    \"description\": \"Trust Deed update description\",\n    \"docKey\": \"sf360$5919$8a8bda418cf15e32018cf1860ab2001a$81b5e03b-2069-4cd3-8490-33897cb0ffa9\",\n    \"fileName\": \"TrustDeed4.pdf\",\n    \"fundId\": \"8a8bda418cf15e32018cf1860ab2001a\",\n    \"id\": 12501\n}"
-								}
-							]
-						},
-						{
-							"name": "Delete Trust Deed Details",
-							"id": "6ed6de95-9ac1-4eab-9733-0140c3b10172",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "DELETE",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "bearer {{token}}",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/:trustDeedId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"sf",
-										"funds",
-										":fundId",
-										"trustDeeds",
-										":trustDeedId"
-									],
-									"variable": [
-										{
-											"id": "20f913d5-7998-4e90-8c78-fbb8a9900fda",
-											"key": "fundId",
-											"value": "{{fundId}}",
-											"description": "Unique ID for the fund"
-										},
-										{
-											"id": "30543384-c900-4625-9d09-5be9599e14bc",
-											"key": "trustDeedId",
-											"value": "{{trustDeedId}}",
-											"description": "Unique ID for the trust deed"
-										}
-									]
-								},
-								"description": "This endpoint allows you to delete the trust deed.\n\nPlease note, this will remove the Trust Deed from the Trust Deed screen, however the underlying document will still be availble in the Document screen.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- audit\n- smsf_partner\n- bgl_partner"
-							},
-							"response": [
-								{
-									"id": "551d3418-f4b9-4bd0-a3f2-aeb35ead967c",
-									"name": "Status 200",
-									"originalRequest": {
-										"method": "DELETE",
-										"header": [
-											{
-												"key": "Authorization",
-												"value": "bearer {{token}}"
-											},
-											{
-												"key": "Content-Type",
-												"name": "Content-Type",
-												"value": "application/json",
-												"type": "text"
-											}
-										],
-										"url": {
-											"raw": "{{baseUrl}}/sf/funds/:fundId/trustDeeds/:trustDeedId",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"sf",
-												"funds",
-												":fundId",
-												"trustDeeds",
-												":trustDeedId"
-											],
-											"variable": [
-												{
-													"key": "fundId",
-													"value": ""
-												},
-												{
-													"key": "trustDeedId",
-													"value": ""
-												}
-											]
-										}
-									},
-									"status": "Created",
-									"code": 201,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"status\": \"DELETED\"\n}"
-								}
-							]
-						}
-					],
-					"id": "48766989-c3f3-496c-ab31-3b641d478339"
 				}
 			],
 			"id": "b64f686b-0568-4c9a-b3ba-b4836c194a32"
