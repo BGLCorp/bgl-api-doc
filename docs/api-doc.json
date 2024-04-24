@@ -16006,7 +16006,7 @@
 										{
 											"key": "jurisdiction",
 											"value": "{{jurisdiction}}",
-											"description": "Which jurisdiction (country) the client should verify against;\n\nEach jurisdiction allows specific checks only and the checks run against that country’s government databases (if applicable).\n\nFor example - Passing an Australian client to Singapore will allow the client to only check an NRIC (an SG ID) which is incorrect; Passing an SG client to Australia will allow the client to only validate a passport vs. the AU DB (might not exist) or an AU drivers licence (which they might not have)"
+											"description": "Which jurisdiction (country) the client should verify against;\n\nAllowed values: \"AUSTRALIA\" / \"NEW_ZEALAND\" / \"SINGAPORE\",\n\nEach jurisdiction allows specific checks only and the checks run against that country’s government databases (if applicable).\n\nFor example - Passing an Australian client to Singapore will allow the client to only check an NRIC (an SG ID) which is incorrect; Passing an SG client to Australia will allow the client to only validate a passport vs. the AU DB (might not exist) or an AU drivers licence (which they might not have)"
 										}
 									]
 								},
@@ -16104,7 +16104,8 @@
 										},
 										{
 											"key": "jurisdiction",
-											"value": "{{jurisdiction}}"
+											"value": "{{jurisdiction}}",
+											"description": "Allowed values \"AUSTRALIA\" / \"NEW_ZEALAND\" / \"SINGAPORE\""
 										}
 									]
 								},
