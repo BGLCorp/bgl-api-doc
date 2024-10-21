@@ -16169,6 +16169,614 @@
 					],
 					"id": "cd4859fc-ddb0-49a4-a7a1-cc0d38818610",
 					"description": "This section contains the resources to request and verify identification via BGLiD.\n\nIf you are interested in utilising this service, please contact the BGL team at [api@bglcorp.com.au](https://mailto:api@bglcorp.com.au)"
+				},
+				{
+					"name": "Global Documents",
+					"item": [
+						{
+							"name": "List all documents",
+							"id": "00a4c42f-de13-4506-9c20-22725c24f580",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/cas/documents?offset={{offset}}&limit={{limit}}&updatedAfter={{updatedAfter}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"cas",
+										"documents"
+									],
+									"query": [
+										{
+											"key": "offset",
+											"value": "{{offset}}",
+											"description": "number | Required | Example = 0 |"
+										},
+										{
+											"key": "limit",
+											"value": "{{limit}}",
+											"description": "number | Required | Example = 500 |"
+										},
+										{
+											"key": "updatedAfter",
+											"value": "{{updatedAfter}}",
+											"description": "Not Required | The date must be a UTC date in ISO format: yyyy-MM-dd’T’HH:mm:ss. Example: 2000-10-31T01:30:00Z"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"description": "This resource will return all documents within the firm.\n\nThis includes documents attached to entites (Companies/Trusts) and documents not attached to entities.\n\n### Response Body\n\nReturns a list of objects as described below\n\n| Key | Datatype | Mandatory | Constraints |\n| --- | --- | --- | --- |\n| id | Number | Yes |  |\n| traceNumber | Number | Yes |  |\n| name | String | Yes |  |\n| documentDate | String | Yes | ISO 8601 date [https://en.wikipedia.org/wiki/ISO_8601](https://en.wikipedia.org/wiki/ISO_8601) |\n| lastUpdatedTimestamp | Date | Yes | Date and time document was updated |\n\n**status objects**\n\n| Key | Datatype | Mandatory | Constraints |\n| --- | --- | --- | --- |\n| id | Number | Yes |  |\n| createdBy | String | Yes | The name of user who created the document |\n| type | String | Yes | Descriptive name of Status |\n| typeId | Number | Yes | Status Unique Identifier |\n| effectiveDate | String | Yes | Format will be ISO 8601 date. Equal to status change date |"
+							},
+							"response": [
+								{
+									"id": "bd5a6c4c-4bf0-4510-98ba-5c7155365455",
+									"name": "Status 200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/cas/documents?offset={{offset}}&limit={{limit}}&updatedAfter={{updatedAfter}}",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"cas",
+												"documents"
+											],
+											"query": [
+												{
+													"key": "offset",
+													"value": "{{offset}}"
+												},
+												{
+													"key": "limit",
+													"value": "{{limit}}"
+												},
+												{
+													"key": "updatedAfter",
+													"value": "{{updatedAfter}}"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"documents\": [\r\n        {\r\n            \"documentDate\": \"2024-10-07\",\r\n            \"id\": 2066399,\r\n            \"lastUpdatedTimestamp\": \"2024-10-07T03:09:49.032890642\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2024-10-07\",\r\n                \"id\": 1423512,\r\n                \"type\": \"DOCUSIGN SIGNED BY CLIENT\",\r\n                \"typeId\": 329\r\n            },\r\n            \"traceNumber\": \"141\"\r\n        },\r\n        {\r\n            \"asicDocNumber\": \"5EAC29978\",\r\n            \"documentDate\": \"2024-05-10\",\r\n            \"id\": 1935397,\r\n            \"lastUpdatedTimestamp\": \"2024-05-10T05:15:16.336182407\",\r\n            \"name\": \"Form - 201 INCORPORATION\",\r\n            \"status\": {\r\n                \"createdBy\": \"Megan Gyorosi\",\r\n                \"effectiveDate\": \"2024-05-10\",\r\n                \"id\": 1348414,\r\n                \"type\": \"LODGED\",\r\n                \"typeId\": 5\r\n            },\r\n            \"traceNumber\": \"140\"\r\n        },\r\n        {\r\n            \"asicDocNumber\": \"5EAC29977\",\r\n            \"documentDate\": \"2024-05-10\",\r\n            \"id\": 1935339,\r\n            \"lastUpdatedTimestamp\": \"2024-05-09T23:40:28.776017959\",\r\n            \"name\": \"Form - 201 INCORPORATION\",\r\n            \"status\": {\r\n                \"createdBy\": \"Megan Gyorosi\",\r\n                \"effectiveDate\": \"2024-05-10\",\r\n                \"id\": 1348401,\r\n                \"type\": \"LODGED\",\r\n                \"typeId\": 5\r\n            },\r\n            \"traceNumber\": \"139\"\r\n        },\r\n        {\r\n            \"asicDocNumber\": \"5EAC29866\",\r\n            \"documentDate\": \"2024-05-09\",\r\n            \"id\": 1934590,\r\n            \"lastUpdatedTimestamp\": \"2024-05-09T05:17:35.546357916\",\r\n            \"name\": \"Form - 201 INCORPORATION\",\r\n            \"status\": {\r\n                \"createdBy\": \"Megan Gyorosi\",\r\n                \"effectiveDate\": \"2024-05-09\",\r\n                \"id\": 1348142,\r\n                \"type\": \"LODGED\",\r\n                \"typeId\": 5\r\n            },\r\n            \"traceNumber\": \"138\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2024-05-09\",\r\n            \"id\": 1934576,\r\n            \"lastUpdatedTimestamp\": \"2024-05-09T05:15:35.31461371\",\r\n            \"name\": \"Form - 201 INCORPORATION\",\r\n            \"status\": {\r\n                \"createdBy\": \"Megan Gyorosi\",\r\n                \"effectiveDate\": \"2024-05-09\",\r\n                \"id\": 1348139,\r\n                \"type\": \"LODGEMENT REJECTED\",\r\n                \"typeId\": 20\r\n            },\r\n            \"traceNumber\": \"137\"\r\n        },\r\n        {\r\n            \"asicDocNumber\": \"5EAC29788\",\r\n            \"documentDate\": \"2024-05-08\",\r\n            \"id\": 1933807,\r\n            \"lastUpdatedTimestamp\": \"2024-05-08T06:07:07.387854959\",\r\n            \"name\": \"Form - 201 INCORPORATION\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2024-05-08\",\r\n                \"id\": 1347851,\r\n                \"type\": \"LODGED\",\r\n                \"typeId\": 5\r\n            },\r\n            \"traceNumber\": \"134\"\r\n        },\r\n        {\r\n            \"asicDocNumber\": \"5EAC29787\",\r\n            \"documentDate\": \"2024-05-08\",\r\n            \"id\": 1933803,\r\n            \"lastUpdatedTimestamp\": \"2024-05-08T06:00:28.52556437\",\r\n            \"name\": \"Form - 201 INCORPORATION\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2024-05-08\",\r\n                \"id\": 1347849,\r\n                \"type\": \"LODGED\",\r\n                \"typeId\": 5\r\n            },\r\n            \"traceNumber\": \"133\"\r\n        },\r\n        {\r\n            \"asicDocNumber\": \"5EAC29342\",\r\n            \"documentDate\": \"2024-05-03\",\r\n            \"id\": 1930867,\r\n            \"lastUpdatedTimestamp\": \"2024-05-03T04:05:05.544419212\",\r\n            \"name\": \"Form - 201 INCORPORATION\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2024-05-03\",\r\n                \"id\": 1346764,\r\n                \"type\": \"LODGED\",\r\n                \"typeId\": 5\r\n            },\r\n            \"traceNumber\": \"132\"\r\n        },\r\n        {\r\n            \"asicDocNumber\": \"5EAC29341\",\r\n            \"documentDate\": \"2024-05-03\",\r\n            \"id\": 1930863,\r\n            \"lastUpdatedTimestamp\": \"2024-05-03T04:00:38.421601841\",\r\n            \"name\": \"Form - 201 INCORPORATION\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2024-05-03\",\r\n                \"id\": 1346762,\r\n                \"type\": \"LODGED\",\r\n                \"typeId\": 5\r\n            },\r\n            \"traceNumber\": \"131\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2024-04-24\",\r\n            \"id\": 1924372,\r\n            \"lastUpdatedTimestamp\": \"2024-04-24T03:36:45.25253084\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2024-04-24\",\r\n                \"id\": 1344342,\r\n                \"type\": \"DOCUMENT VOIDED\",\r\n                \"typeId\": 1549\r\n            },\r\n            \"traceNumber\": \"127\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2024-04-24\",\r\n            \"id\": 1924371,\r\n            \"lastUpdatedTimestamp\": \"2024-04-24T03:22:12.933738657\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2024-04-24\",\r\n                \"id\": 1344338,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"126\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2024-03-19\",\r\n            \"id\": 1904027,\r\n            \"lastUpdatedTimestamp\": \"2024-03-18T22:36:27.175936196\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2024-03-19\",\r\n                \"id\": 1336167,\r\n                \"type\": \"FUSESIGN SIGNED BY CLIENT\",\r\n                \"typeId\": 568\r\n            },\r\n            \"traceNumber\": \"125\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2023-12-08\",\r\n            \"id\": 1807390,\r\n            \"lastUpdatedTimestamp\": \"2023-12-08T07:57:53.259355702\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2023-12-08\",\r\n                \"id\": 1300485,\r\n                \"type\": \"ADOBE SIGN SENT TO CLIENT\",\r\n                \"typeId\": 526\r\n            },\r\n            \"traceNumber\": \"124\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2023-11-14\",\r\n            \"id\": 1796471,\r\n            \"lastUpdatedTimestamp\": \"2023-11-14T02:47:26.367721308\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2023-11-14\",\r\n                \"id\": 1292706,\r\n                \"type\": \"DOCUMENT VOIDED\",\r\n                \"typeId\": 1549\r\n            },\r\n            \"traceNumber\": \"123\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2023-02-20\",\r\n            \"id\": 1599400,\r\n            \"lastUpdatedTimestamp\": \"2023-02-20T04:47:40.476150674\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2023-02-20\",\r\n                \"id\": 1176477,\r\n                \"type\": \"FUSESIGN SENT TO CLIENT\",\r\n                \"typeId\": 567\r\n            },\r\n            \"traceNumber\": \"122\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2023-02-07\",\r\n            \"id\": 1592963,\r\n            \"lastUpdatedTimestamp\": \"2023-02-06T22:47:49.051919628\",\r\n            \"name\": \"Directors Minutes or Resolutions\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2023-02-07\",\r\n                \"id\": 1173931,\r\n                \"type\": \"ADOBE SIGN SIGNED BY CLIENT\",\r\n                \"typeId\": 528\r\n            },\r\n            \"traceNumber\": \"121\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2023-02-07\",\r\n            \"id\": 1592960,\r\n            \"lastUpdatedTimestamp\": \"2023-02-06T22:40:29.494879407\",\r\n            \"name\": \"Directors Minutes or Resolutions\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2023-02-07\",\r\n                \"id\": 1173927,\r\n                \"type\": \"ADOBE SIGN SIGNED BY CLIENT\",\r\n                \"typeId\": 528\r\n            },\r\n            \"traceNumber\": \"120\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-11-29\",\r\n            \"id\": 1566765,\r\n            \"lastUpdatedTimestamp\": \"2022-11-29T05:48:47.514584234\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-11-29\",\r\n                \"id\": 1165006,\r\n                \"type\": \"FUSESIGN SIGNED BY CLIENT\",\r\n                \"typeId\": 568\r\n            },\r\n            \"traceNumber\": \"118\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-11-22\",\r\n            \"id\": 1561519,\r\n            \"lastUpdatedTimestamp\": \"2023-11-13T21:54:00.803164577\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2023-11-14\",\r\n                \"id\": 1292392,\r\n                \"type\": \"DOCUMENT VOIDED\",\r\n                \"typeId\": 1549\r\n            },\r\n            \"traceNumber\": \"117\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-11-22\",\r\n            \"id\": 1561515,\r\n            \"lastUpdatedTimestamp\": \"2022-11-22T03:11:07.708953677\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-11-22\",\r\n                \"id\": 1163287,\r\n                \"type\": \"ADOBE SIGN SENT TO CLIENT\",\r\n                \"typeId\": 526\r\n            },\r\n            \"traceNumber\": \"116\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-11-21\",\r\n            \"id\": 1560240,\r\n            \"lastUpdatedTimestamp\": \"2022-11-20T22:54:32.410913383\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-11-20\",\r\n                \"id\": 1162902,\r\n                \"type\": \"DOCUSIGN SENT TO CLIENT\",\r\n                \"typeId\": 327\r\n            },\r\n            \"traceNumber\": \"115\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2024-05-01\",\r\n            \"id\": 1935418,\r\n            \"lastUpdatedTimestamp\": \"2024-05-01T07:14:39\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Sankitha Samaraweera\",\r\n                \"effectiveDate\": \"2024-05-01\",\r\n                \"id\": 1348418,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"115\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-11-21\",\r\n            \"id\": 1560193,\r\n            \"lastUpdatedTimestamp\": \"2022-11-20T22:30:50.139737049\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-11-21\",\r\n                \"id\": 1162890,\r\n                \"type\": \"DOCUSIGN SIGNED BY CLIENT\",\r\n                \"typeId\": 329\r\n            },\r\n            \"traceNumber\": \"114\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2024-04-04\",\r\n            \"id\": 1935411,\r\n            \"lastUpdatedTimestamp\": \"2024-04-04T00:46:56\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Sankitha Samaraweera\",\r\n                \"effectiveDate\": \"2024-04-04\",\r\n                \"id\": 1348417,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"114\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-09-20\",\r\n            \"id\": 1533765,\r\n            \"lastUpdatedTimestamp\": \"2022-09-20T04:03:42.777999429\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-09-20\",\r\n                \"id\": 1152633,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"113\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-09-20\",\r\n            \"id\": 1533764,\r\n            \"lastUpdatedTimestamp\": \"2022-09-20T04:03:20.401998907\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-09-20\",\r\n                \"id\": 1152632,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"112\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-09-15\",\r\n            \"id\": 1531463,\r\n            \"lastUpdatedTimestamp\": \"2022-09-15T01:02:12.711269613\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-09-15\",\r\n                \"id\": 1151904,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"111\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-09-15\",\r\n            \"id\": 1531462,\r\n            \"lastUpdatedTimestamp\": \"2022-09-15T01:01:58.715288133\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-09-15\",\r\n                \"id\": 1151903,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"110\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-09-09\",\r\n            \"id\": 1529384,\r\n            \"lastUpdatedTimestamp\": \"2022-09-09T06:41:30.921866582\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-09-09\",\r\n                \"id\": 1151307,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"109\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2024-04-04\",\r\n            \"id\": 1935419,\r\n            \"lastUpdatedTimestamp\": \"2024-04-03T22:43:19\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Sankitha Samaraweera\",\r\n                \"effectiveDate\": \"2024-04-04\",\r\n                \"id\": 1348416,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"109\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-09-09\",\r\n            \"id\": 1529383,\r\n            \"lastUpdatedTimestamp\": \"2022-09-09T06:41:15.449912251\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-09-09\",\r\n                \"id\": 1151306,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"108\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2024-04-04\",\r\n            \"id\": 1935410,\r\n            \"lastUpdatedTimestamp\": \"2024-04-03T22:41:59\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Sankitha Samaraweera\",\r\n                \"effectiveDate\": \"2024-04-04\",\r\n                \"id\": 1348415,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"108\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-09-09\",\r\n            \"id\": 1529352,\r\n            \"lastUpdatedTimestamp\": \"2022-09-09T05:28:52.842574434\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-09-09\",\r\n                \"id\": 1151287,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"107\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-09-09\",\r\n            \"id\": 1529349,\r\n            \"lastUpdatedTimestamp\": \"2022-09-09T05:28:24.295985078\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-09-09\",\r\n                \"id\": 1151285,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"106\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-09-09\",\r\n            \"id\": 1529348,\r\n            \"lastUpdatedTimestamp\": \"2022-09-09T05:26:01.104274821\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-09-09\",\r\n                \"id\": 1151284,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"105\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-08-26\",\r\n            \"id\": 1525010,\r\n            \"lastUpdatedTimestamp\": \"2022-08-26T02:54:02.400286347\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-08-26\",\r\n                \"id\": 1149950,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"104\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-08-26\",\r\n            \"id\": 1524976,\r\n            \"lastUpdatedTimestamp\": \"2022-08-26T01:39:16.786441987\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-08-26\",\r\n                \"id\": 1149943,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"103\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-08-26\",\r\n            \"id\": 1524975,\r\n            \"lastUpdatedTimestamp\": \"2022-08-26T01:33:12.993611196\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-08-26\",\r\n                \"id\": 1149942,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"102\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-08-15\",\r\n            \"id\": 1518489,\r\n            \"lastUpdatedTimestamp\": \"2022-08-15T04:56:37.509651222\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-08-15\",\r\n                \"id\": 1147832,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"101\"\r\n        }\r\n    ],\r\n    \"limit\": 100,\r\n    \"offset\": 0,\r\n    \"total\": 39\r\n}"
+								}
+							]
+						},
+						{
+							"name": "List all documents (standalone)",
+							"id": "bbe2e5da-873c-4ac9-a0cc-3379410b0097",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/cas/documents/standalone?offset={{offset}}&limit={{limit}}&updatedAfter={{updatedAfter}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"cas",
+										"documents",
+										"standalone"
+									],
+									"query": [
+										{
+											"key": "offset",
+											"value": "{{offset}}",
+											"description": "number | Required | Example = 0 |"
+										},
+										{
+											"key": "limit",
+											"value": "{{limit}}",
+											"description": "number | Required | Example = 500 |"
+										},
+										{
+											"key": "updatedAfter",
+											"value": "{{updatedAfter}}",
+											"description": "Not Required | The date must be a UTC date in ISO format: yyyy-MM-dd’T’HH:mm:ss. Example: 2000-10-31T01:30:00Z"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"description": "This resource will return all **unattached** documents within the firm.\n\nThis is documents that are **not** attached to entities (companies/trusts).\n\ne.g. Document form 361.\n\n### Response Body\n\nReturns a list of objects as described below\n\n| Key | Datatype | Mandatory | Constraints |\n| --- | --- | --- | --- |\n| id | Number | Yes |  |\n| traceNumber | Number | Yes |  |\n| name | String | Yes |  |\n| documentDate | String | Yes | ISO 8601 date [https://en.wikipedia.org/wiki/ISO_8601](https://en.wikipedia.org/wiki/ISO_8601) |\n| lastUpdatedTimestamp | Date | Yes | Date and time document was updated |\n\n**status objects**\n\n| Key | Datatype | Mandatory | Constraints |\n| --- | --- | --- | --- |\n| id | Number | Yes |  |\n| createdBy | String | Yes | The name of user who created the document |\n| type | String | Yes | Descriptive name of Status |\n| typeId | Number | Yes | Status Unique Identifier |\n| effectiveDate | String | Yes | Format will be ISO 8601 date. Equal to status change date |"
+							},
+							"response": [
+								{
+									"id": "609ae412-997e-4cdc-97e6-0f6bb824355f",
+									"name": "Status 200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/cas/documents?offset={{offset}}&limit={{limit}}&updatedAfter={{updatedAfter}}",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"cas",
+												"documents"
+											],
+											"query": [
+												{
+													"key": "offset",
+													"value": "{{offset}}"
+												},
+												{
+													"key": "limit",
+													"value": "{{limit}}"
+												},
+												{
+													"key": "updatedAfter",
+													"value": "{{updatedAfter}}"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"documents\": [\r\n        {\r\n            \"documentDate\": \"2024-10-07\",\r\n            \"id\": 2066399,\r\n            \"lastUpdatedTimestamp\": \"2024-10-07T03:09:49.032890642\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2024-10-07\",\r\n                \"id\": 1423512,\r\n                \"type\": \"DOCUSIGN SIGNED BY CLIENT\",\r\n                \"typeId\": 329\r\n            },\r\n            \"traceNumber\": \"141\"\r\n        },\r\n        {\r\n            \"asicDocNumber\": \"5EAC29978\",\r\n            \"documentDate\": \"2024-05-10\",\r\n            \"id\": 1935397,\r\n            \"lastUpdatedTimestamp\": \"2024-05-10T05:15:16.336182407\",\r\n            \"name\": \"Form - 201 INCORPORATION\",\r\n            \"status\": {\r\n                \"createdBy\": \"Megan Gyorosi\",\r\n                \"effectiveDate\": \"2024-05-10\",\r\n                \"id\": 1348414,\r\n                \"type\": \"LODGED\",\r\n                \"typeId\": 5\r\n            },\r\n            \"traceNumber\": \"140\"\r\n        },\r\n        {\r\n            \"asicDocNumber\": \"5EAC29977\",\r\n            \"documentDate\": \"2024-05-10\",\r\n            \"id\": 1935339,\r\n            \"lastUpdatedTimestamp\": \"2024-05-09T23:40:28.776017959\",\r\n            \"name\": \"Form - 201 INCORPORATION\",\r\n            \"status\": {\r\n                \"createdBy\": \"Megan Gyorosi\",\r\n                \"effectiveDate\": \"2024-05-10\",\r\n                \"id\": 1348401,\r\n                \"type\": \"LODGED\",\r\n                \"typeId\": 5\r\n            },\r\n            \"traceNumber\": \"139\"\r\n        },\r\n        {\r\n            \"asicDocNumber\": \"5EAC29866\",\r\n            \"documentDate\": \"2024-05-09\",\r\n            \"id\": 1934590,\r\n            \"lastUpdatedTimestamp\": \"2024-05-09T05:17:35.546357916\",\r\n            \"name\": \"Form - 201 INCORPORATION\",\r\n            \"status\": {\r\n                \"createdBy\": \"Megan Gyorosi\",\r\n                \"effectiveDate\": \"2024-05-09\",\r\n                \"id\": 1348142,\r\n                \"type\": \"LODGED\",\r\n                \"typeId\": 5\r\n            },\r\n            \"traceNumber\": \"138\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2024-05-09\",\r\n            \"id\": 1934576,\r\n            \"lastUpdatedTimestamp\": \"2024-05-09T05:15:35.31461371\",\r\n            \"name\": \"Form - 201 INCORPORATION\",\r\n            \"status\": {\r\n                \"createdBy\": \"Megan Gyorosi\",\r\n                \"effectiveDate\": \"2024-05-09\",\r\n                \"id\": 1348139,\r\n                \"type\": \"LODGEMENT REJECTED\",\r\n                \"typeId\": 20\r\n            },\r\n            \"traceNumber\": \"137\"\r\n        },\r\n        {\r\n            \"asicDocNumber\": \"5EAC29788\",\r\n            \"documentDate\": \"2024-05-08\",\r\n            \"id\": 1933807,\r\n            \"lastUpdatedTimestamp\": \"2024-05-08T06:07:07.387854959\",\r\n            \"name\": \"Form - 201 INCORPORATION\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2024-05-08\",\r\n                \"id\": 1347851,\r\n                \"type\": \"LODGED\",\r\n                \"typeId\": 5\r\n            },\r\n            \"traceNumber\": \"134\"\r\n        },\r\n        {\r\n            \"asicDocNumber\": \"5EAC29787\",\r\n            \"documentDate\": \"2024-05-08\",\r\n            \"id\": 1933803,\r\n            \"lastUpdatedTimestamp\": \"2024-05-08T06:00:28.52556437\",\r\n            \"name\": \"Form - 201 INCORPORATION\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2024-05-08\",\r\n                \"id\": 1347849,\r\n                \"type\": \"LODGED\",\r\n                \"typeId\": 5\r\n            },\r\n            \"traceNumber\": \"133\"\r\n        },\r\n        {\r\n            \"asicDocNumber\": \"5EAC29342\",\r\n            \"documentDate\": \"2024-05-03\",\r\n            \"id\": 1930867,\r\n            \"lastUpdatedTimestamp\": \"2024-05-03T04:05:05.544419212\",\r\n            \"name\": \"Form - 201 INCORPORATION\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2024-05-03\",\r\n                \"id\": 1346764,\r\n                \"type\": \"LODGED\",\r\n                \"typeId\": 5\r\n            },\r\n            \"traceNumber\": \"132\"\r\n        },\r\n        {\r\n            \"asicDocNumber\": \"5EAC29341\",\r\n            \"documentDate\": \"2024-05-03\",\r\n            \"id\": 1930863,\r\n            \"lastUpdatedTimestamp\": \"2024-05-03T04:00:38.421601841\",\r\n            \"name\": \"Form - 201 INCORPORATION\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2024-05-03\",\r\n                \"id\": 1346762,\r\n                \"type\": \"LODGED\",\r\n                \"typeId\": 5\r\n            },\r\n            \"traceNumber\": \"131\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2024-04-24\",\r\n            \"id\": 1924372,\r\n            \"lastUpdatedTimestamp\": \"2024-04-24T03:36:45.25253084\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2024-04-24\",\r\n                \"id\": 1344342,\r\n                \"type\": \"DOCUMENT VOIDED\",\r\n                \"typeId\": 1549\r\n            },\r\n            \"traceNumber\": \"127\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2024-04-24\",\r\n            \"id\": 1924371,\r\n            \"lastUpdatedTimestamp\": \"2024-04-24T03:22:12.933738657\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2024-04-24\",\r\n                \"id\": 1344338,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"126\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2024-03-19\",\r\n            \"id\": 1904027,\r\n            \"lastUpdatedTimestamp\": \"2024-03-18T22:36:27.175936196\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2024-03-19\",\r\n                \"id\": 1336167,\r\n                \"type\": \"FUSESIGN SIGNED BY CLIENT\",\r\n                \"typeId\": 568\r\n            },\r\n            \"traceNumber\": \"125\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2023-12-08\",\r\n            \"id\": 1807390,\r\n            \"lastUpdatedTimestamp\": \"2023-12-08T07:57:53.259355702\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2023-12-08\",\r\n                \"id\": 1300485,\r\n                \"type\": \"ADOBE SIGN SENT TO CLIENT\",\r\n                \"typeId\": 526\r\n            },\r\n            \"traceNumber\": \"124\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2023-11-14\",\r\n            \"id\": 1796471,\r\n            \"lastUpdatedTimestamp\": \"2023-11-14T02:47:26.367721308\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2023-11-14\",\r\n                \"id\": 1292706,\r\n                \"type\": \"DOCUMENT VOIDED\",\r\n                \"typeId\": 1549\r\n            },\r\n            \"traceNumber\": \"123\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2023-02-20\",\r\n            \"id\": 1599400,\r\n            \"lastUpdatedTimestamp\": \"2023-02-20T04:47:40.476150674\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2023-02-20\",\r\n                \"id\": 1176477,\r\n                \"type\": \"FUSESIGN SENT TO CLIENT\",\r\n                \"typeId\": 567\r\n            },\r\n            \"traceNumber\": \"122\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2023-02-07\",\r\n            \"id\": 1592963,\r\n            \"lastUpdatedTimestamp\": \"2023-02-06T22:47:49.051919628\",\r\n            \"name\": \"Directors Minutes or Resolutions\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2023-02-07\",\r\n                \"id\": 1173931,\r\n                \"type\": \"ADOBE SIGN SIGNED BY CLIENT\",\r\n                \"typeId\": 528\r\n            },\r\n            \"traceNumber\": \"121\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2023-02-07\",\r\n            \"id\": 1592960,\r\n            \"lastUpdatedTimestamp\": \"2023-02-06T22:40:29.494879407\",\r\n            \"name\": \"Directors Minutes or Resolutions\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2023-02-07\",\r\n                \"id\": 1173927,\r\n                \"type\": \"ADOBE SIGN SIGNED BY CLIENT\",\r\n                \"typeId\": 528\r\n            },\r\n            \"traceNumber\": \"120\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-11-29\",\r\n            \"id\": 1566765,\r\n            \"lastUpdatedTimestamp\": \"2022-11-29T05:48:47.514584234\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-11-29\",\r\n                \"id\": 1165006,\r\n                \"type\": \"FUSESIGN SIGNED BY CLIENT\",\r\n                \"typeId\": 568\r\n            },\r\n            \"traceNumber\": \"118\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-11-22\",\r\n            \"id\": 1561519,\r\n            \"lastUpdatedTimestamp\": \"2023-11-13T21:54:00.803164577\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2023-11-14\",\r\n                \"id\": 1292392,\r\n                \"type\": \"DOCUMENT VOIDED\",\r\n                \"typeId\": 1549\r\n            },\r\n            \"traceNumber\": \"117\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-11-22\",\r\n            \"id\": 1561515,\r\n            \"lastUpdatedTimestamp\": \"2022-11-22T03:11:07.708953677\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-11-22\",\r\n                \"id\": 1163287,\r\n                \"type\": \"ADOBE SIGN SENT TO CLIENT\",\r\n                \"typeId\": 526\r\n            },\r\n            \"traceNumber\": \"116\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-11-21\",\r\n            \"id\": 1560240,\r\n            \"lastUpdatedTimestamp\": \"2022-11-20T22:54:32.410913383\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-11-20\",\r\n                \"id\": 1162902,\r\n                \"type\": \"DOCUSIGN SENT TO CLIENT\",\r\n                \"typeId\": 327\r\n            },\r\n            \"traceNumber\": \"115\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2024-05-01\",\r\n            \"id\": 1935418,\r\n            \"lastUpdatedTimestamp\": \"2024-05-01T07:14:39\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Sankitha Samaraweera\",\r\n                \"effectiveDate\": \"2024-05-01\",\r\n                \"id\": 1348418,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"115\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-11-21\",\r\n            \"id\": 1560193,\r\n            \"lastUpdatedTimestamp\": \"2022-11-20T22:30:50.139737049\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-11-21\",\r\n                \"id\": 1162890,\r\n                \"type\": \"DOCUSIGN SIGNED BY CLIENT\",\r\n                \"typeId\": 329\r\n            },\r\n            \"traceNumber\": \"114\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2024-04-04\",\r\n            \"id\": 1935411,\r\n            \"lastUpdatedTimestamp\": \"2024-04-04T00:46:56\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Sankitha Samaraweera\",\r\n                \"effectiveDate\": \"2024-04-04\",\r\n                \"id\": 1348417,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"114\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-09-20\",\r\n            \"id\": 1533765,\r\n            \"lastUpdatedTimestamp\": \"2022-09-20T04:03:42.777999429\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-09-20\",\r\n                \"id\": 1152633,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"113\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-09-20\",\r\n            \"id\": 1533764,\r\n            \"lastUpdatedTimestamp\": \"2022-09-20T04:03:20.401998907\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-09-20\",\r\n                \"id\": 1152632,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"112\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-09-15\",\r\n            \"id\": 1531463,\r\n            \"lastUpdatedTimestamp\": \"2022-09-15T01:02:12.711269613\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-09-15\",\r\n                \"id\": 1151904,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"111\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-09-15\",\r\n            \"id\": 1531462,\r\n            \"lastUpdatedTimestamp\": \"2022-09-15T01:01:58.715288133\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-09-15\",\r\n                \"id\": 1151903,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"110\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-09-09\",\r\n            \"id\": 1529384,\r\n            \"lastUpdatedTimestamp\": \"2022-09-09T06:41:30.921866582\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-09-09\",\r\n                \"id\": 1151307,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"109\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2024-04-04\",\r\n            \"id\": 1935419,\r\n            \"lastUpdatedTimestamp\": \"2024-04-03T22:43:19\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Sankitha Samaraweera\",\r\n                \"effectiveDate\": \"2024-04-04\",\r\n                \"id\": 1348416,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"109\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-09-09\",\r\n            \"id\": 1529383,\r\n            \"lastUpdatedTimestamp\": \"2022-09-09T06:41:15.449912251\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-09-09\",\r\n                \"id\": 1151306,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"108\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2024-04-04\",\r\n            \"id\": 1935410,\r\n            \"lastUpdatedTimestamp\": \"2024-04-03T22:41:59\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Sankitha Samaraweera\",\r\n                \"effectiveDate\": \"2024-04-04\",\r\n                \"id\": 1348415,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"108\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-09-09\",\r\n            \"id\": 1529352,\r\n            \"lastUpdatedTimestamp\": \"2022-09-09T05:28:52.842574434\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-09-09\",\r\n                \"id\": 1151287,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"107\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-09-09\",\r\n            \"id\": 1529349,\r\n            \"lastUpdatedTimestamp\": \"2022-09-09T05:28:24.295985078\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-09-09\",\r\n                \"id\": 1151285,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"106\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-09-09\",\r\n            \"id\": 1529348,\r\n            \"lastUpdatedTimestamp\": \"2022-09-09T05:26:01.104274821\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-09-09\",\r\n                \"id\": 1151284,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"105\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-08-26\",\r\n            \"id\": 1525010,\r\n            \"lastUpdatedTimestamp\": \"2022-08-26T02:54:02.400286347\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-08-26\",\r\n                \"id\": 1149950,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"104\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-08-26\",\r\n            \"id\": 1524976,\r\n            \"lastUpdatedTimestamp\": \"2022-08-26T01:39:16.786441987\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-08-26\",\r\n                \"id\": 1149943,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"103\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-08-26\",\r\n            \"id\": 1524975,\r\n            \"lastUpdatedTimestamp\": \"2022-08-26T01:33:12.993611196\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-08-26\",\r\n                \"id\": 1149942,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"102\"\r\n        },\r\n        {\r\n            \"documentDate\": \"2022-08-15\",\r\n            \"id\": 1518489,\r\n            \"lastUpdatedTimestamp\": \"2022-08-15T04:56:37.509651222\",\r\n            \"name\": \"Form - 484 CHANGE TO COMPANY DETAILS\",\r\n            \"status\": {\r\n                \"createdBy\": \"Brad Wilkinson\",\r\n                \"effectiveDate\": \"2022-08-15\",\r\n                \"id\": 1147832,\r\n                \"type\": \"DOCUMENT PREPARED\",\r\n                \"typeId\": 2\r\n            },\r\n            \"traceNumber\": \"101\"\r\n        }\r\n    ],\r\n    \"limit\": 100,\r\n    \"offset\": 0,\r\n    \"total\": 39\r\n}"
+								}
+							]
+						},
+						{
+							"name": "Download a Document Attachment (standalone)",
+							"id": "48ede2a6-ca75-468b-8f95-cfd670a310ff",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/cas/documents/:documentId/attachments/:attachmentId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"cas",
+										"documents",
+										":documentId",
+										"attachments",
+										":attachmentId"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"type": "text",
+											"disabled": true
+										}
+									],
+									"variable": [
+										{
+											"id": "3c4fbccc-2f5a-4f05-85c2-021417113659",
+											"key": "documentId",
+											"value": "{{documentId}}"
+										},
+										{
+											"id": "a9dde06d-ed0a-4e5e-8ea0-0bc784a9e191",
+											"key": "attachmentId",
+											"value": "{{attachmentId}}"
+										}
+									]
+								},
+								"description": "StartFragmentThis resource will return a URL link which can be used to download a Document Attachment. Both User and System attachments can be downloadedEndFragment  \n  \n\n### **Path Variables**\n\n| **Key** | **Datatype** | **Mandatory** | **Description** |\n| --- | --- | --- | --- |\n| documentId | number | Yes | Id of the document |\n| attachmentId | number | Yes | Id of the attachment |\n\n### Response Body\n\n| Key | Datatype | Mandatory | Constraints |\n| --- | --- | --- | --- |\n| expiresMillis | number | Yes |  |\n| url | String | Yes |  |\n\nThe url returned in the response can be used to download the attachment. It is valid for 5 minutes."
+							},
+							"response": [
+								{
+									"id": "b2703c25-50f4-4b55-86ad-7c47e7d49bac",
+									"name": "Status 200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}"
+											}
+										],
+										"url": "{{baseUrl}}/cas/documents/123456789/attachments/84572536"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"expiresMillis\": 300000,\r\n    \"url\": \"https://staging.cas360.com.au/accessFiles?token=HbdDdbvcesGpPXyeXYDmFBDOcG9AJmQUxIbnJ00UHJo%3D\"\r\n}"
+								}
+							]
+						},
+						{
+							"name": "Upload a new Attachment (standalone)",
+							"id": "d6c4a5e4-e721-44ff-a6c1-3b506a8a3959",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": {}
+								},
+								"method": "POST",
+								"header": [
+									{
+										"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+										"key": "Authorization",
+										"value": "bearer {{token}}"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "attachment",
+											"value": "Send the file as form-data with the key “attachment”",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/cas/documents/:documentId/attachments",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"cas",
+										"documents",
+										":documentId",
+										"attachments"
+									],
+									"variable": [
+										{
+											"id": "b2ce8701-b60a-4396-ae1f-d85ed17e87a9",
+											"key": "documentId",
+											"value": "{{documentId}}"
+										}
+									]
+								},
+								"description": "Upload a New Attachment to a Given Document"
+							},
+							"response": [
+								{
+									"id": "11faa2c4-7d87-4b73-a4a7-fb3dbff879f4",
+									"name": "Status 200",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}"
+											}
+										],
+										"url": "{{baseUrl}}/cas/documents123456789/attachments"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"attachmentId\": \"UA2477\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Add a status to a Document (standalone)",
+							"id": "4088cd4e-0945-49ca-b024-f2da77054846",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": {}
+								},
+								"method": "POST",
+								"header": [
+									{
+										"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+										"key": "Authorization",
+										"value": "bearer {{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"effectiveDate\": \"2023-08-18\",\r\n    \"id\": 17671,\r\n    \"type\": \"SIGNED BY CLIENT\",\r\n    \"typeId\": 4\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/cas/documents/:documentId/statuses",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"cas",
+										"documents",
+										":documentId",
+										"statuses"
+									],
+									"variable": [
+										{
+											"id": "269f0d21-165e-4346-b446-0f1e4a6223bc",
+											"key": "documentId",
+											"value": "{{documentId}}"
+										}
+									]
+								},
+								"description": "Allows you to alter the Status of a document in CAS360. The status helps users manage documents by indicating what stage the document is at.\n\n### Response Body\n\n| Key | Datatype | Mandatory | Comments |\n| --- | --- | --- | --- |\n| effectiveDate | String | Yes | Effective Date of the new Status |\n| id | number | Yes |  |\n| type | String | Yes |  |\n| typeId | number | Yes |  |"
+							},
+							"response": [
+								{
+									"id": "fe9a9131-a3d9-4ba7-9ee4-069166c20f18",
+									"name": "Status 200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/cas/documents/:documentId/statuses",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"cas",
+												"documents",
+												":documentId",
+												"statuses"
+											],
+											"variable": [
+												{
+													"key": "documentId",
+													"value": ""
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"createdBy\": \"CAS360 API\",\r\n    \"effectiveDate\": \"2023-08-15\",\r\n    \"id\": 17668,\r\n    \"type\": \"DOCUMENT PREPARED\",\r\n    \"typeId\": 2\r\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete a Document (standalone)",
+							"id": "bab7f3f9-d449-4d18-b809-d30e617de4b2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": {}
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+										"key": "Authorization",
+										"value": "bearer {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/cas/documents/:documentId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"cas",
+										"documents",
+										":documentId"
+									],
+									"variable": [
+										{
+											"id": "4276002d-0b08-460b-8656-8806634e52fc",
+											"key": "documentId",
+											"value": "{{documentId}}"
+										}
+									]
+								},
+								"description": "Delete a document.\n\nProvide documentId in the path to use this endpoint."
+							},
+							"response": [
+								{
+									"id": "5cc16937-918d-4ba2-86bd-5aa21e6263c7",
+									"name": "Status 200",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}"
+											}
+										],
+										"url": "{{baseUrl}}/cas/documents/123456789"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"status\": \"DELETED\"\r\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete an Attachment (standalone)",
+							"id": "7d8fd3cd-c239-4a83-8c00-8760007e68d6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": {}
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+										"key": "Authorization",
+										"value": "bearer {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/cas/documents/:documentId/attachments/:attachmentId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"cas",
+										"documents",
+										":documentId",
+										"attachments",
+										":attachmentId"
+									],
+									"variable": [
+										{
+											"id": "f0ceac8f-a270-41e8-a0f2-8f610c1b66b8",
+											"key": "documentId",
+											"value": "{{documentId}}"
+										},
+										{
+											"id": "91232279-bc24-4f75-85ce-d2ac0935eaef",
+											"key": "attachmentId",
+											"value": "{{attachmentId}}"
+										}
+									]
+								},
+								"description": "Delete a Document Attachment\n\nThis resource can only be used to delete user attachments. System generated attachments/forms cannot be deleted  \n  \nProvide documentId and attachmentId in the path to use this endpoint."
+							},
+							"response": [
+								{
+									"id": "c779a923-28c5-48b9-8a1b-276f0bce5aba",
+									"name": "Status 200",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}"
+											}
+										],
+										"url": "{{baseUrl}}/cas/documents/1234/attachments/U1234"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"status\": \"DELETED\"\r\n}"
+								}
+							]
+						}
+					],
+					"id": "aa1804a8-02e9-4785-b1bc-c38ff747cd77",
+					"description": "Global Document endpoints allow the retrieval and uploading of docuements/attachments that are not attached directly to a Company or Trust.\n\nNote - for Company or Trust Documents, please refer to the following sections:\n\n- [Company Documents](https://docs.api.bgl360.com.au/?version=latest#87713b4c-9a5b-49ae-842b-7e01e9fba4e4)\n    \n- [Trust Documents](https://docs.api.bgl360.com.au/?version=latest#034e8062-bb75-442e-b3a3-6a7462aea7a0)"
 				}
 			],
 			"id": "b64f686b-0568-4c9a-b3ba-b4836c194a32"
