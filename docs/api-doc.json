@@ -701,11 +701,18 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
-									"header": null,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{ access_token: \"df2f0e40-606f-4311-8066-590732fd126b\" token_type: \"bearer\" refresh_token: \"c50a429f-9a6d-449d-8d82-4817798fe27b\" expires_in: 581977 scope: “audit” }\n"
+									"body": "{\n    \"access_token\": \"ffae26ab-51fe-48be-8a91-58c69699e8a8\",\n    \"token_type\": \"bearer\",\n    \"refresh_token\": \"025e1bc2-4ff3-4379-be9d-d559a7583c8f\",\n    \"expires_in\": 604798,\n    \"scope\": \"bgl_partner\",\n    \"access_token_expires_at\": 1730153404,\n    \"refresh_token_expires_at\": 1732140604,\n    \"bgl_firm_id\": \"27de42a4-d72a-11ec-b5de-0050569a5c83\",\n    \"username\": \"bwilkinson@bglcorp.com.au\",\n    \"is_new_token\": true\n}"
 								}
 							]
 						}
