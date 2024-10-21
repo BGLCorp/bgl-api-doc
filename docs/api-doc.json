@@ -16174,7 +16174,7 @@
 					"name": "Global Documents",
 					"item": [
 						{
-							"name": "List all documents",
+							"name": "List All Documents",
 							"id": "00a4c42f-de13-4506-9c20-22725c24f580",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -16276,7 +16276,7 @@
 							]
 						},
 						{
-							"name": "List all documents (standalone)",
+							"name": "List All Documents (Standalone)",
 							"id": "bbe2e5da-873c-4ac9-a0cc-3379410b0097",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -16379,7 +16379,7 @@
 							]
 						},
 						{
-							"name": "Document Details (standalone)",
+							"name": "Document Details (Standalone)",
 							"id": "4f6da3a5-12aa-4311-a61d-c2b247fc8330",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -16466,7 +16466,7 @@
 							]
 						},
 						{
-							"name": "Download a Document Attachment (standalone)",
+							"name": "Download a Document Attachment (Standalone)",
 							"id": "48ede2a6-ca75-468b-8f95-cfd670a310ff",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -16545,7 +16545,7 @@
 							]
 						},
 						{
-							"name": "Upload a new Attachment (standalone)",
+							"name": "Upload a new Attachment (Standalone)",
 							"id": "d6c4a5e4-e721-44ff-a6c1-3b506a8a3959",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -16624,7 +16624,7 @@
 							]
 						},
 						{
-							"name": "Add a status to a Document (standalone)",
+							"name": "Add a Status to a Document (Standalone)",
 							"id": "4088cd4e-0945-49ca-b024-f2da77054846",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -16719,7 +16719,7 @@
 							]
 						},
 						{
-							"name": "Delete a Document (standalone)",
+							"name": "Delete a Document (Standalone)",
 							"id": "bab7f3f9-d449-4d18-b809-d30e617de4b2",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -16787,7 +16787,7 @@
 							]
 						},
 						{
-							"name": "Delete an Attachment (standalone)",
+							"name": "Delete an Attachment (Standalone)",
 							"id": "7d8fd3cd-c239-4a83-8c00-8760007e68d6",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
