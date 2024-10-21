@@ -16863,7 +16863,7 @@
 						}
 					],
 					"id": "aa1804a8-02e9-4785-b1bc-c38ff747cd77",
-					"description": "Global Document endpoints allow the retrieval and uploading of docuements/attachments that are not attached directly to a Company or Trust.\n\nNote - for Company or Trust Documents, please refer to the following sections:\n\n- [Company Documents](https://docs.api.bgl360.com.au/?version=latest#87713b4c-9a5b-49ae-842b-7e01e9fba4e4)\n    \n- [Trust Documents](https://docs.api.bgl360.com.au/?version=latest#034e8062-bb75-442e-b3a3-6a7462aea7a0)"
+					"description": "Global Document endpoints allow the retrieval and uploading of docuements/attachments that are not attached directly to a Company or Trust.\n\nAgent documents such as ASIC form 361 can be downloaded to complete your document set.\n\nNote - for Company or Trust Documents, please refer to the following sections:\n\n- [Company Documents](https://docs.api.bgl360.com.au/?version=latest#87713b4c-9a5b-49ae-842b-7e01e9fba4e4)\n    \n- [Trust Documents](https://docs.api.bgl360.com.au/?version=latest#034e8062-bb75-442e-b3a3-6a7462aea7a0)"
 				}
 			],
 			"id": "b64f686b-0568-4c9a-b3ba-b4836c194a32"
