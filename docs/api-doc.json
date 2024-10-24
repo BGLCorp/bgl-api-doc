@@ -6601,7 +6601,7 @@
 									}
 								],
 								"url": "{{baseUrl}}/sf/workflow/jobTemplates",
-								"description": "This endpoint to list down all the Job Templates.\n\n##### Response Body Datatype: JobTemplateDTO\\[\\]\n\n| Key | Datatype | Constraints/Notes |\n| --- | --- | --- |\n| allowCompany | Boolean | True or False |\n| allowIndividual | Boolean | True or False |\n| allowSMSF | Boolean | True or False |\n| allowTrust | Boolean | True or False |\n| assignee | object | Refer to Assignee |\n| autoAssignToNewEntities | Boolean | True or False |\n| description | String |  |\n| dueDate | String | “yyyy-mm-dd” |\n| id | Number |  |\n| name | String |  |\n| repeatPeriod | String |  |\n| role | String |  |\n| sequentialTasks | Boolean | True or False |\n| startDate | String | “yyyy-mm-dd” |\n| systemJobName | String |  |\n| taskTemplates | Object | Refer to TaskTemplates \\[\\] |\n\n##### Response Body Datatype: TaskTemplates\\[\\]\n\n| Key | Datatype | Constraints/Notes |\n| --- | --- | --- |\n| assignee | object | Refer to Assignee |\n| description | String |  |\n| dueDate | String |  |\n| dueDatePeriod | String |  |\n| firmId | Number |  |\n| id | Number |  |\n| name | String |  |\n| orderNum | String |  |\n| role | String |  |\n| startDate | String |  |\n| systemTaskName | String |  |"
+								"description": "This endpoint to list down all the Job Templates.\n\n##### Response Body\n\n| Key | Datatype | Constraints/Notes |\n| --- | --- | --- |\n| allowCompany | Boolean | True or False |\n| allowIndividual | Boolean | True or False |\n| allowSMSF | Boolean | True or False |\n| allowTrust | Boolean | True or False |\n| assignee | object | Refer to Assignee Object |\n| autoAssignToNewEntities | Boolean | True or False |\n| description | String |  |\n| dueDate | String | “yyyy-mm-dd” |\n| id | Number |  |\n| name | String |  |\n| repeatPeriod | String |  |\n| role | String |  |\n| sequentialTasks | Boolean | True or False |\n| startDate | String | “yyyy-mm-dd” |\n| systemJobName | String |  |\n| taskTemplates | Array | Refer to Task Templates array below |\n\n##### Task Templates Array\n\n| Key | Datatype | Constraints/Notes |\n| --- | --- | --- |\n| assignee | object | Refer to Assignee |\n| description | String |  |\n| dueDate | String |  |\n| dueDatePeriod | String |  |\n| firmId | Number |  |\n| id | Number |  |\n| name | String |  |\n| orderNum | String |  |\n| role | String |  |\n| startDate | String |  |\n| systemTaskName | String |  |"
 							},
 							"response": [
 								{
@@ -6709,7 +6709,7 @@
 										}
 									]
 								},
-								"description": "This endpoint to list down all the users for the fund by passing the fundId.\n\n##### Response Body Datatype: Assignee object\n\n| Key | Datatype | Mandatory | Constraints/Notes |\n| --- | --- | --- | --- |\n| id | Long | Yes |  |\n| username | String | No | This is the users email |\n| name | String | No | This is the users full name |"
+								"description": "This endpoint to list down all the users for the fund by passing the fundId.\n\n##### Response Body\n\n| Key | Datatype | Mandatory | Constraints/Notes |\n| --- | --- | --- | --- |\n| id | Long | Yes |  |\n| username | String | No | This is the users email |\n| name | String | No | This is the users full name |"
 							},
 							"response": [
 								{
@@ -6816,7 +6816,7 @@
 									}
 								],
 								"url": "{{baseUrl}}/sf/users",
-								"description": "This endpoint to list down all the users for the firm.\n\n##### Response Body Datatype: Assignee object\n\n| Key | Datatype | Mandatory | Constraints/Notes |\n| --- | --- | --- | --- |\n| id | Long | Yes |  |\n| username | String | No | This is the users email |\n| name | String | No | This is the users full name |"
+								"description": "This endpoint to list down all the users for the firm.\n\n##### Response Body\n\n| Key | Datatype | Mandatory | Constraints/Notes |\n| --- | --- | --- | --- |\n| id | Long | Yes |  |\n| username | String | No | This is the users email |\n| name | String | No | This is the users full name |"
 							},
 							"response": [
 								{
