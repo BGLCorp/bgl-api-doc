@@ -18178,6 +18178,65 @@
 				}
 			],
 			"id": "b64f686b-0568-4c9a-b3ba-b4836c194a32"
+		},
+		{
+			"name": "https://uat.sf360.com.au//api/security/price/async/daterange?requestId=ed097d32-88f7-4fe1-b089-b916feec5657",
+			"id": "cb308149-389b-4ef3-b9aa-390c1e9f92a0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "6171781e74bb304507a5c6f11940e118233b9a9ec6ebecbe"
+					},
+					{
+						"key": "Content-Type",
+						"value": "text/plain"
+					},
+					{
+						"key": "Cookie",
+						"value": "__zlcmid=166kKowYha4jEQH; _ga=GA1.1.107723361.1713101223; _ga_1YYVBY0BK1=GS1.1.1715667368.83.1.1715673041.59.0.0; _ga_3PH6FBG2PQ=GS1.1.1715063342.1.0.1715063348.0.0.0; _ga_7N7W30GSKP=GS1.3.1715052893.7.0.1715052893.0.0.0; _ga_HZTNRRCGMT=GS1.1.1715052156.7.1.1715052169.0.0.0; _ga_LF3G6J6V1W=GS1.1.1715312062.1.1.1715312138.0.0.0; _ga_P5R42P78LS=GS1.1.1715653332.20.1.1715653352.40.0.0; mf_0e781a09-d281-4e33-ac80-2e884360a7b2=||1715653354630||0||||0|0|99.77256; JSESSIONID=08C566A0956FE9DFC3C14638FEF2B38A-n1; firm=sf360test; memberlistView=false; sid=08C566A0956FE9DFC3C14638FEF2B38A-n1; uid=9192"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fundId\": \"8a8bce148f0dc14f018f0de3f33f0016\",\n    \"securityIds\": [678743],\n    \"startDate\": \"2024-05-01\",\n    \"endDate\": \"2024-05-14\"\n}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uat.sf360.com.au//api/security/price/async/daterange?requestId=ed097d32-88f7-4fe1-b089-b916feec5657",
+					"protocol": "https",
+					"host": [
+						"uat",
+						"sf360",
+						"com",
+						"au"
+					],
+					"path": [
+						"",
+						"api",
+						"security",
+						"price",
+						"async",
+						"daterange"
+					],
+					"query": [
+						{
+							"key": "requestId",
+							"value": "ed097d32-88f7-4fe1-b089-b916feec5657"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://uat.sf360.com.au//api/security/price/async/daterange?requestId=ed097d32-88f7-4fe1-b089-b916feec5657' \\\n--header 'Authorization: 6171781e74bb304507a5c6f11940e118233b9a9ec6ebecbe' \\\n--header 'Content-Type: text/plain' \\\n--header 'Cookie: __zlcmid=166kKowYha4jEQH; _ga=GA1.1.107723361.1713101223; _ga_1YYVBY0BK1=GS1.1.1715667368.83.1.1715673041.59.0.0; _ga_3PH6FBG2PQ=GS1.1.1715063342.1.0.1715063348.0.0.0; _ga_7N7W30GSKP=GS1.3.1715052893.7.0.1715052893.0.0.0; _ga_HZTNRRCGMT=GS1.1.1715052156.7.1.1715052169.0.0.0; _ga_LF3G6J6V1W=GS1.1.1715312062.1.1.1715312138.0.0.0; _ga_P5R42P78LS=GS1.1.1715653332.20.1.1715653352.40.0.0; mf_0e781a09-d281-4e33-ac80-2e884360a7b2=||1715653354630||0||||0|0|99.77256; JSESSIONID=08C566A0956FE9DFC3C14638FEF2B38A-n1; firm=sf360test; memberlistView=false; sid=08C566A0956FE9DFC3C14638FEF2B38A-n1; uid=9192' \\\n--data '{\n    \"fundId\": \"8a8bce148f0dc14f018f0de3f33f0016\",\n    \"securityIds\": [678743],\n    \"startDate\": \"2024-05-01\",\n    \"endDate\": \"2024-05-14\"\n}'"
+			},
+			"response": []
 		}
 	],
 	"event": [
