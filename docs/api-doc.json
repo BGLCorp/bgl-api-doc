@@ -4860,7 +4860,7 @@
 							]
 						},
 						{
-							"name": "List of Contacts (Entity )",
+							"name": "List of Contacts (Entity)",
 							"event": [
 								{
 									"listen": "prerequest",
