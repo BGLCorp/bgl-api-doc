@@ -4283,6 +4283,342 @@
 									"body": "{\n    \"dataFeedRec\": {\n        \"account\": [\n            {\n                \"accountSummary\": {\n                    \"accountNumber\": \"924012301\",\n                    \"accountType\": \"AssetBank\",\n                    \"bsb\": \"012012\",\n                    \"code\": \"ANZ924012301\",\n                    \"dataFeed\": \"BGLBankDataService\",\n                    \"feedStartDate\": \"2022-07-01\",\n                    \"id\": 222286977836,\n                    \"name\": \"ANZ\",\n                    \"pcode\": \"60400\"\n                },\n                \"bankFeedSummary\": {\n                    \"closingBalance\": null,\n                    \"closingBalanceCheck\": 458642.13,\n                    \"openingBalance\": -800,\n                    \"tAccountId\": null,\n                    \"totalCredits\": -40561.75,\n                    \"totalDebits\": 500003.88\n                },\n                \"bankFeedTransactions\": [\n                    {\n                        \"amount\": 500000,\n                        \"createdBy\": \"BankFeedSystem\",\n                        \"description\": \"TRANSFER\",\n                        \"lastModifiedBy\": \"BankFeedSystem\",\n                        \"source\": \"ANZ\",\n                        \"transactionDate\": \"2022-07-01\",\n                        \"transactionId\": \"2742222\"\n                    },\n                    {\n                        \"amount\": -40000,\n                        \"createdBy\": \"BankFeedSystem\",\n                        \"description\": \"TRANSFER COMMSEC WITHDRAWAL\",\n                        \"lastModifiedBy\": \"BankFeedSystem\",\n                        \"source\": \"ANZ\",\n                        \"transactionDate\": \"2022-07-12\",\n                        \"transactionId\": \"2899041\"\n                    },\n                    {\n                        \"amount\": -559.25,\n                        \"createdBy\": \"BankFeedSystem\",\n                        \"description\": \"ANZ INTERNET BANKING FUNDS TFER   ADVISOR FEE\",\n                        \"lastModifiedBy\": \"BankFeedSystem\",\n                        \"source\": \"ANZ\",\n                        \"transactionDate\": \"2022-07-15\",\n                        \"transactionId\": \"2899042\"\n                    },\n                    {\n                        \"amount\": 3.88,\n                        \"createdBy\": \"BankFeedSystem\",\n                        \"description\": \"CREDIT INTEREST\",\n                        \"lastModifiedBy\": \"BankFeedSystem\",\n                        \"source\": \"ANZ\",\n                        \"transactionDate\": \"2022-07-31\",\n                        \"transactionId\": \"2742223\"\n                    },\n                    {\n                        \"amount\": -2.5,\n                        \"createdBy\": \"BankFeedSystem\",\n                        \"description\": \"ACCOUNT SERVICING FEE\",\n                        \"lastModifiedBy\": \"BankFeedSystem\",\n                        \"source\": \"ANZ\",\n                        \"transactionDate\": \"2022-07-31\",\n                        \"transactionId\": \"2742224\"\n                    }\n                ],\n                \"ledgerSummary\": {\n                    \"closingBalance\": null,\n                    \"closingBalanceCheck\": 458642.13,\n                    \"openingBalance\": -800,\n                    \"tAccountId\": null,\n                    \"totalCredits\": -40561.75,\n                    \"totalDebits\": 500003.88\n                },\n                \"ledgerTransactions\": [\n                    {\n                        \"amount\": 500000,\n                        \"createdBy\": \"bankFeedSaver\",\n                        \"description\": \"TRANSFER\",\n                        \"lastModifiedBy\": \"bankFeedSaver\",\n                        \"source\": \"BGLBank\",\n                        \"transactionDate\": \"2022-07-01\",\n                        \"transactionId\": \"2742222\"\n                    },\n                    {\n                        \"amount\": -40000,\n                        \"createdBy\": \"bankFeedSaver\",\n                        \"description\": \"TRANSFER COMMSEC WITHDRAWAL\",\n                        \"lastModifiedBy\": \"bankFeedSaver\",\n                        \"source\": \"BGLBank\",\n                        \"transactionDate\": \"2022-07-12\",\n                        \"transactionId\": \"2899041\"\n                    },\n                    {\n                        \"amount\": -559.25,\n                        \"createdBy\": \"bankFeedSaver\",\n                        \"description\": \"ANZ INTERNET BANKING FUNDS TFER   ADVISOR FEE\",\n                        \"lastModifiedBy\": \"bankFeedSaver\",\n                        \"source\": \"BGLBank\",\n                        \"transactionDate\": \"2022-07-15\",\n                        \"transactionId\": \"2899042\"\n                    },\n                    {\n                        \"amount\": 3.88,\n                        \"createdBy\": \"bankFeedSaver\",\n                        \"description\": \"CREDIT INTEREST\",\n                        \"lastModifiedBy\": \"bankFeedSaver\",\n                        \"source\": \"BGLBank\",\n                        \"transactionDate\": \"2022-07-31\",\n                        \"transactionId\": \"2742223\"\n                    },\n                    {\n                        \"amount\": -2.5,\n                        \"createdBy\": \"bankFeedSaver\",\n                        \"description\": \"ACCOUNT SERVICING FEE\",\n                        \"lastModifiedBy\": \"bankFeedSaver\",\n                        \"source\": \"BGLBank\",\n                        \"transactionDate\": \"2022-07-31\",\n                        \"transactionId\": \"2742224\"\n                    }\n                ],\n                \"tAccountId\": 222286977836\n            }\n        ],\n        \"end\": \"2023-06-30T00:00:00Z\",\n        \"fundId\": \"8a8bd53685e14fb40185e15d1ce90000\",\n        \"start\": \"2022-07-01T00:00:00Z\"\n    }\n}"
 								}
 							]
+						},
+						{
+							"name": "Report - Time Weighted Return",
+							"id": "5305ac42-7887-4d96-84cd-ab600e3fa9d3",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": {
+										"clientSecret": "",
+										"clientId": "",
+										"accessTokenUrl": "https://api.uat.bgl360.com.au/oauth/token?scope=developer",
+										"authUrl": "https://integrations.uat.bgl360.com.au/u/oauth/authorize",
+										"scope": "developer",
+										"useBrowser": true
+									}
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer {{token}}"
+									},
+									{
+										"key": "Cookie",
+										"value": "XSRF-TOKEN=201bcd10-afe1-4090-a6c6-d19796ffeb90; api_uat_bgl360_session_id=89A05AAE1F4E2054BD25A83CE5D12B2D-n1",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/sf/funds/:fundid/timeWeightedReturn?level=Fund",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"sf",
+										"funds",
+										":fundid",
+										"timeWeightedReturn"
+									],
+									"query": [
+										{
+											"key": "level",
+											"value": "Fund",
+											"description": "String value \"Fund\""
+										}
+									],
+									"variable": [
+										{
+											"id": "2e3d16c6-3158-43d4-bda8-e47fff979094",
+											"key": "fundid",
+											"value": "{{fundId}}",
+											"description": "Fund/entity id"
+										}
+									]
+								},
+								"description": "### API Endpoint: Get Time Weighted Return for a Fund\n\nThis endpoint retrieves the time-weighted return data for a specified fund/entity identified by `fundid`. The data includes daily returns and the date range for which the returns are calculated.\n\n#### Request\n\n- **Method:** GET\n    \n- **URL:** `{{baseUrl}}/sf/funds/:fundid/timeWeightedReturn?level=Fund`\n    \n- **Path Parameter:**\n    \n    - `fundid` (string): The unique identifier for the fund whose time-weighted return is being requested.\n        \n- **Query Parameter:**\n    \n    - `level` (string): Specifies the level of detail for the return data. In this case, it should be set to `Fund`.\n        \n\n#### Response\n\n### Fund Daily Returns Response\n\n#### Top-Level Fields\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| fundId | String | Unique identifier for the fund |\n| fundName | String | Name of the fund |\n| fundStartDate | String (Date) | Date the fund started |\n| fundMigrationEndDate | String or Null | End date of fund migration, if applicable |\n| dateRange | Object | Contains the start and end dates of the return period |\n| dailyReturns | Array of Objects | Array containing the daily return details for the fund |\n\n#### dateRange Object\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| from | String (Date) | Start date of the range |\n| to | String (Date) | End date of the range |\n\n#### dailyReturns Array\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| date | String (Date) | The date of the return entry |\n| incomeAndGain | Number | Total income and capital gains for that day |\n| marketValue | Number | Market value of the fund on that specific date |\n| rate | Number | Rate of return (e.g., 0.025 = 2.5%) for the given date |\n\n- **Status Code:** 200 OK\n    \n- **Content-Type:** application/json\n    \n- {\"dailyReturns\": \\[ { \"date\": \"string\", \"incomeAndGain\": \"number\", \"marketValue\": \"number\", \"rate\": \"number\" }\\],\"dateRange\": { \"from\": \"string\", \"to\": \"string\"},\"fundId\": \"string\",\"fundMigrationEndDate\": \"null or string\",\"fundName\": \"string\",\"fundStartDate\": \"string\"}\n    \n\n#### Example Responses\n\n1. {\"dailyReturns\": \\[ { \"date\": \"2023-01-01\", \"incomeAndGain\": 100, \"marketValue\": 1000, \"rate\": 0.1 }\\],\"dateRange\": { \"from\": \"2023-01-01\", \"to\": \"2023-12-31\"},\"fundId\": \"12345\",\"fundMigrationEndDate\": null,\"fundName\": \"Sample Fund\",\"fundStartDate\": \"2020-01-01\"}\n    \n2. {\"status\": 0,\"message\": \"Error message\",\"errors\": \\[\"Error details\"\\]}\n    \n\nThis endpoint is essential for obtaining detailed performance metrics of a fund over a specified period, allowing users to analyse the fund's returns effectively."
+							},
+							"response": [
+								{
+									"id": "4aed58a4-e741-4475-9ed3-f5039508e15d",
+									"name": "Status 200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/sf/funds/:fundid/timeWeightedReturn?level=Fund",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"sf",
+												"funds",
+												":fundid",
+												"timeWeightedReturn"
+											],
+											"query": [
+												{
+													"key": "level",
+													"value": "Fund",
+													"description": "String value \"Fund\""
+												}
+											],
+											"variable": [
+												{
+													"key": "fundid",
+													"value": "{{fundId}}",
+													"description": "Fund/entity id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Wed, 18 Dec 2019 01:51:21 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json;charset=UTF-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Server",
+											"value": "nginx"
+										},
+										{
+											"key": "X-Rate-Daily-Limit-Remaining",
+											"value": "-1"
+										},
+										{
+											"key": "vary",
+											"value": "accept-encoding"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "frame-ancestors 'self' staging.sf360.com.au"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "ALLOW-FROM https://staging.sf360.com.au"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"dailyReturns\": [\n    {\n      \"date\": \"2019-07-01\",\n      \"incomeAndGain\": 12000,\n      \"marketValue\": 88420,\n      \"rate\": 1.1304\n    },\n    {\n      \"date\": \"2021-04-25\",\n      \"incomeAndGain\": 0,\n      \"marketValue\": 88420,\n      \"rate\": 1\n    },\n    {\n      \"date\": \"2021-04-26\",\n      \"incomeAndGain\": 0,\n      \"marketValue\": 88420,\n      \"rate\": 1\n    },\n    {\n      \"date\": \"2021-04-27\",\n      \"incomeAndGain\": 0,\n      \"marketValue\": 88420,\n      \"rate\": 1\n    },\n   \n    {\n      \"date\": \"2021-05-17\",\n      \"incomeAndGain\": 0,\n      \"marketValue\": 88420,\n      \"rate\": 1\n    },\n    {\n      \"date\": \"2021-05-18\",\n      \"incomeAndGain\": 0,\n      \"marketValue\": 88420,\n      \"rate\": 1\n    },\n    {\n      \"date\": \"2021-05-19\",\n      \"incomeAndGain\": 0,\n      \"marketValue\": 88420,\n      \"rate\": 1\n    },\n   \n    {\n      \"date\": \"2021-05-25\",\n      \"incomeAndGain\": 0,\n      \"marketValue\": 88420,\n      \"rate\": 1\n    },\n    {\n      \"date\": \"2021-05-26\",\n      \"incomeAndGain\": 0,\n      \"marketValue\": 88420,\n      \"rate\": 1\n    },\n    \n    {\n      \"date\": \"2021-06-30\",\n      \"incomeAndGain\": 0,\n      \"marketValue\": 88420,\n      \"rate\": 1\n    }\n  ],\n  \"dateRange\": {\n    \"from\": \"2019-07-01\",\n    \"to\": \"2021-06-30\"\n  },\n  \"fundId\": \"8a8bdd468c318afa018c31f4d6b700c0\",\n  \"fundMigrationEndDate\": null,\n  \"fundName\": \"Jims WP Regression 12 May\",\n  \"fundStartDate\": \"2019-07-01\"\n}"
+								},
+								{
+									"id": "638f79a5-3da3-44a6-9b1f-9a773d64eb0d",
+									"name": "Status 400",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/sf/funds/:fundid/timeWeightedReturn?level=Fund",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"sf",
+												"funds",
+												":fundid",
+												"timeWeightedReturn"
+											],
+											"query": [
+												{
+													"key": "level",
+													"value": "Fund",
+													"description": "String value \"Fund\""
+												}
+											],
+											"variable": [
+												{
+													"key": "fundid",
+													"value": "{{fundId}}",
+													"description": "Fund/entity id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Wed, 18 Dec 2019 01:51:21 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json;charset=UTF-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Server",
+											"value": "nginx"
+										},
+										{
+											"key": "X-Rate-Daily-Limit-Remaining",
+											"value": "-1"
+										},
+										{
+											"key": "vary",
+											"value": "accept-encoding"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "frame-ancestors 'self' staging.sf360.com.au"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "ALLOW-FROM https://staging.sf360.com.au"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"status\": 400,\n  \"message\": \"missing mandatory parameters\",\n  \"errors\": [\n    \"missing one of the parameters: [level]\"\n  ]\n}"
+								},
+								{
+									"id": "2b01cfad-7bcb-4a5f-9ac2-45f4c34c240b",
+									"name": "Status 401",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "bearer {{token}}"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/sf/funds/:fundid/timeWeightedReturn?level=Fund",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"sf",
+												"funds",
+												":fundid",
+												"timeWeightedReturn"
+											],
+											"query": [
+												{
+													"key": "level",
+													"value": "Fund",
+													"description": "String value \"Fund\""
+												}
+											],
+											"variable": [
+												{
+													"key": "fundid",
+													"value": "{{fundId}}",
+													"description": "Fund/entity id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Wed, 18 Dec 2019 01:51:21 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json;charset=UTF-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Server",
+											"value": "nginx"
+										},
+										{
+											"key": "X-Rate-Daily-Limit-Remaining",
+											"value": "-1"
+										},
+										{
+											"key": "vary",
+											"value": "accept-encoding"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "frame-ancestors 'self' staging.sf360.com.au"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "ALLOW-FROM https://staging.sf360.com.au"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"status\": 401,\n  \"message\": \"Authentication failed\",\n  \"errors\": [\n    \"cannot find required url resources or you are not authorized to access the resource\"\n  ]\n}"
+								}
+							]
 						}
 					],
 					"id": "275f9cc9-3bf8-403d-b7ed-7b3e098726d5",
@@ -18175,342 +18511,6 @@
 					],
 					"id": "cd4859fc-ddb0-49a4-a7a1-cc0d38818610",
 					"description": "This section contains the resources to request and verify identification via BGLiD.\n\nIf you are interested in utilising this service, please contact the BGL team at [api@bglcorp.com.au](https://mailto:api@bglcorp.com.au)"
-				},
-				{
-					"name": "Report - Time Weighted Return",
-					"id": "5305ac42-7887-4d96-84cd-ab600e3fa9d3",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "oauth2",
-							"oauth2": {
-								"clientSecret": "",
-								"clientId": "",
-								"accessTokenUrl": "https://api.uat.bgl360.com.au/oauth/token?scope=developer",
-								"authUrl": "https://integrations.uat.bgl360.com.au/u/oauth/authorize",
-								"scope": "developer",
-								"useBrowser": true
-							}
-						},
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "bearer {{token}}"
-							},
-							{
-								"key": "Cookie",
-								"value": "XSRF-TOKEN=201bcd10-afe1-4090-a6c6-d19796ffeb90; api_uat_bgl360_session_id=89A05AAE1F4E2054BD25A83CE5D12B2D-n1",
-								"type": "text",
-								"disabled": true
-							}
-						],
-						"url": {
-							"raw": "{{baseUrl}}/sf/funds/:fundid/timeWeightedReturn?level=Fund",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"sf",
-								"funds",
-								":fundid",
-								"timeWeightedReturn"
-							],
-							"query": [
-								{
-									"key": "level",
-									"value": "Fund",
-									"description": "String value \"Fund\""
-								}
-							],
-							"variable": [
-								{
-									"id": "2e3d16c6-3158-43d4-bda8-e47fff979094",
-									"key": "fundid",
-									"value": "{{fundId}}",
-									"description": "Fund/entity id"
-								}
-							]
-						},
-						"description": "### API Endpoint: Get Time Weighted Return for a Fund\n\nThis endpoint retrieves the time-weighted return data for a specified fund/entity identified by `fundid`. The data includes daily returns and the date range for which the returns are calculated.\n\n#### Request\n\n- **Method:** GET\n    \n- **URL:** `{{baseUrl}}/sf/funds/:fundid/timeWeightedReturn?level=Fund`\n    \n- **Path Parameter:**\n    \n    - `fundid` (string): The unique identifier for the fund whose time-weighted return is being requested.\n        \n- **Query Parameter:**\n    \n    - `level` (string): Specifies the level of detail for the return data. In this case, it should be set to `Fund`.\n        \n\n#### Response\n\n### Fund Daily Returns Response\n\n#### Top-Level Fields\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| fundId | String | Unique identifier for the fund |\n| fundName | String | Name of the fund |\n| fundStartDate | String (Date) | Date the fund started |\n| fundMigrationEndDate | String or Null | End date of fund migration, if applicable |\n| dateRange | Object | Contains the start and end dates of the return period |\n| dailyReturns | Array of Objects | Array containing the daily return details for the fund |\n\n#### dateRange Object\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| from | String (Date) | Start date of the range |\n| to | String (Date) | End date of the range |\n\n#### dailyReturns Array\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| date | String (Date) | The date of the return entry |\n| incomeAndGain | Number | Total income and capital gains for that day |\n| marketValue | Number | Market value of the fund on that specific date |\n| rate | Number | Rate of return (e.g., 0.025 = 2.5%) for the given date |\n\n- **Status Code:** 200 OK\n    \n- **Content-Type:** application/json\n    \n- {\"dailyReturns\": \\[ { \"date\": \"string\", \"incomeAndGain\": \"number\", \"marketValue\": \"number\", \"rate\": \"number\" }\\],\"dateRange\": { \"from\": \"string\", \"to\": \"string\"},\"fundId\": \"string\",\"fundMigrationEndDate\": \"null or string\",\"fundName\": \"string\",\"fundStartDate\": \"string\"}\n    \n\n#### Example Responses\n\n1. {\"dailyReturns\": \\[ { \"date\": \"2023-01-01\", \"incomeAndGain\": 100, \"marketValue\": 1000, \"rate\": 0.1 }\\],\"dateRange\": { \"from\": \"2023-01-01\", \"to\": \"2023-12-31\"},\"fundId\": \"12345\",\"fundMigrationEndDate\": null,\"fundName\": \"Sample Fund\",\"fundStartDate\": \"2020-01-01\"}\n    \n2. {\"status\": 0,\"message\": \"Error message\",\"errors\": \\[\"Error details\"\\]}\n    \n\nThis endpoint is essential for obtaining detailed performance metrics of a fund over a specified period, allowing users to analyse the fund's returns effectively."
-					},
-					"response": [
-						{
-							"id": "4aed58a4-e741-4475-9ed3-f5039508e15d",
-							"name": "Status 200",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "bearer {{token}}"
-									}
-								],
-								"url": {
-									"raw": "{{baseUrl}}/sf/funds/:fundid/timeWeightedReturn?level=Fund",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"sf",
-										"funds",
-										":fundid",
-										"timeWeightedReturn"
-									],
-									"query": [
-										{
-											"key": "level",
-											"value": "Fund",
-											"description": "String value \"Fund\""
-										}
-									],
-									"variable": [
-										{
-											"key": "fundid",
-											"value": "{{fundId}}",
-											"description": "Fund/entity id"
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Date",
-									"value": "Wed, 18 Dec 2019 01:51:21 GMT"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json;charset=UTF-8"
-								},
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Server",
-									"value": "nginx"
-								},
-								{
-									"key": "X-Rate-Daily-Limit-Remaining",
-									"value": "-1"
-								},
-								{
-									"key": "vary",
-									"value": "accept-encoding"
-								},
-								{
-									"key": "Content-Encoding",
-									"value": "gzip"
-								},
-								{
-									"key": "X-Content-Type-Options",
-									"value": "nosniff"
-								},
-								{
-									"key": "Content-Security-Policy",
-									"value": "frame-ancestors 'self' staging.sf360.com.au"
-								},
-								{
-									"key": "X-Frame-Options",
-									"value": "ALLOW-FROM https://staging.sf360.com.au"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n  \"dailyReturns\": [\n    {\n      \"date\": \"2019-07-01\",\n      \"incomeAndGain\": 12000,\n      \"marketValue\": 88420,\n      \"rate\": 1.1304\n    },\n    {\n      \"date\": \"2021-04-25\",\n      \"incomeAndGain\": 0,\n      \"marketValue\": 88420,\n      \"rate\": 1\n    },\n    {\n      \"date\": \"2021-04-26\",\n      \"incomeAndGain\": 0,\n      \"marketValue\": 88420,\n      \"rate\": 1\n    },\n    {\n      \"date\": \"2021-04-27\",\n      \"incomeAndGain\": 0,\n      \"marketValue\": 88420,\n      \"rate\": 1\n    },\n   \n    {\n      \"date\": \"2021-05-17\",\n      \"incomeAndGain\": 0,\n      \"marketValue\": 88420,\n      \"rate\": 1\n    },\n    {\n      \"date\": \"2021-05-18\",\n      \"incomeAndGain\": 0,\n      \"marketValue\": 88420,\n      \"rate\": 1\n    },\n    {\n      \"date\": \"2021-05-19\",\n      \"incomeAndGain\": 0,\n      \"marketValue\": 88420,\n      \"rate\": 1\n    },\n   \n    {\n      \"date\": \"2021-05-25\",\n      \"incomeAndGain\": 0,\n      \"marketValue\": 88420,\n      \"rate\": 1\n    },\n    {\n      \"date\": \"2021-05-26\",\n      \"incomeAndGain\": 0,\n      \"marketValue\": 88420,\n      \"rate\": 1\n    },\n    \n    {\n      \"date\": \"2021-06-30\",\n      \"incomeAndGain\": 0,\n      \"marketValue\": 88420,\n      \"rate\": 1\n    }\n  ],\n  \"dateRange\": {\n    \"from\": \"2019-07-01\",\n    \"to\": \"2021-06-30\"\n  },\n  \"fundId\": \"8a8bdd468c318afa018c31f4d6b700c0\",\n  \"fundMigrationEndDate\": null,\n  \"fundName\": \"Jims WP Regression 12 May\",\n  \"fundStartDate\": \"2019-07-01\"\n}"
-						},
-						{
-							"id": "638f79a5-3da3-44a6-9b1f-9a773d64eb0d",
-							"name": "Status 400",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "bearer {{token}}"
-									}
-								],
-								"url": {
-									"raw": "{{baseUrl}}/sf/funds/:fundid/timeWeightedReturn?level=Fund",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"sf",
-										"funds",
-										":fundid",
-										"timeWeightedReturn"
-									],
-									"query": [
-										{
-											"key": "level",
-											"value": "Fund",
-											"description": "String value \"Fund\""
-										}
-									],
-									"variable": [
-										{
-											"key": "fundid",
-											"value": "{{fundId}}",
-											"description": "Fund/entity id"
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Date",
-									"value": "Wed, 18 Dec 2019 01:51:21 GMT"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json;charset=UTF-8"
-								},
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Server",
-									"value": "nginx"
-								},
-								{
-									"key": "X-Rate-Daily-Limit-Remaining",
-									"value": "-1"
-								},
-								{
-									"key": "vary",
-									"value": "accept-encoding"
-								},
-								{
-									"key": "Content-Encoding",
-									"value": "gzip"
-								},
-								{
-									"key": "X-Content-Type-Options",
-									"value": "nosniff"
-								},
-								{
-									"key": "Content-Security-Policy",
-									"value": "frame-ancestors 'self' staging.sf360.com.au"
-								},
-								{
-									"key": "X-Frame-Options",
-									"value": "ALLOW-FROM https://staging.sf360.com.au"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n  \"status\": 400,\n  \"message\": \"missing mandatory parameters\",\n  \"errors\": [\n    \"missing one of the parameters: [level]\"\n  ]\n}"
-						},
-						{
-							"id": "2b01cfad-7bcb-4a5f-9ac2-45f4c34c240b",
-							"name": "Status 401",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "bearer {{token}}"
-									}
-								],
-								"url": {
-									"raw": "{{baseUrl}}/sf/funds/:fundid/timeWeightedReturn?level=Fund",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"sf",
-										"funds",
-										":fundid",
-										"timeWeightedReturn"
-									],
-									"query": [
-										{
-											"key": "level",
-											"value": "Fund",
-											"description": "String value \"Fund\""
-										}
-									],
-									"variable": [
-										{
-											"key": "fundid",
-											"value": "{{fundId}}",
-											"description": "Fund/entity id"
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Date",
-									"value": "Wed, 18 Dec 2019 01:51:21 GMT"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json;charset=UTF-8"
-								},
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Server",
-									"value": "nginx"
-								},
-								{
-									"key": "X-Rate-Daily-Limit-Remaining",
-									"value": "-1"
-								},
-								{
-									"key": "vary",
-									"value": "accept-encoding"
-								},
-								{
-									"key": "Content-Encoding",
-									"value": "gzip"
-								},
-								{
-									"key": "X-Content-Type-Options",
-									"value": "nosniff"
-								},
-								{
-									"key": "Content-Security-Policy",
-									"value": "frame-ancestors 'self' staging.sf360.com.au"
-								},
-								{
-									"key": "X-Frame-Options",
-									"value": "ALLOW-FROM https://staging.sf360.com.au"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n  \"status\": 401,\n  \"message\": \"Authentication failed\",\n  \"errors\": [\n    \"cannot find required url resources or you are not authorized to access the resource\"\n  ]\n}"
-						}
-					]
 				}
 			],
 			"id": "b64f686b-0568-4c9a-b3ba-b4836c194a32"
