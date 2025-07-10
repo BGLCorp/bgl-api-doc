@@ -18502,6 +18502,221 @@
 					],
 					"id": "cd4859fc-ddb0-49a4-a7a1-cc0d38818610",
 					"description": "This section contains the resources to request and verify identification via BGLiD.\n\nIf you are interested in utilising this service, please contact the BGL team at [api@bglcorp.com.au](https://mailto:api@bglcorp.com.au)"
+				},
+				{
+					"name": "Properties",
+					"id": "5229b6eb-cf9b-4ac0-af1b-14edcf0cfc4f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer {{token}}"
+							},
+							{
+								"key": "Cookie",
+								"value": "XSRF-TOKEN=201bcd10-afe1-4090-a6c6-d19796ffeb90; api_uat_bgl360_session_id=89A05AAE1F4E2054BD25A83CE5D12B2D-n1",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/sf/funds/:fundid/properties",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"sf",
+								"funds",
+								":fundid",
+								"properties"
+							],
+							"variable": [
+								{
+									"id": "7930b6f3-ad7a-4706-a619-f9ab18857d9c",
+									"key": "fundid",
+									"value": "{{fundId}}"
+								}
+							]
+						},
+						"description": "# GET /sf/funds/:fundid/properties\n\n**Scopes:**  \n`investment`, `smsf_partner`, `smsf_plus`, `bgl_partner`\n\n---\n\n## Response: Array of Property Objects\n\n### Top-Level Fields\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| address | Object | Property address details |\n| bareTrustName | String or null | Bare trust name, if any |\n| cgtList | Array of Objects | Capital Gains Tax (CGT) entries |\n| derivedPropertyName | String | Full formatted property name |\n| derivedPropertyType | String | Property type (e.g., Australian - Residential) |\n| disposalManualAmount | Number or null | Manual disposal amount |\n| disposalStatus | String or null | Disposal status |\n| documents | Array of Objects | Related documents |\n| id | Number | Unique property ID |\n| ignored | Boolean | Whether the property is ignored in reports |\n| insurancePremium | Number or null | Insurance premium amount |\n| insuranceProvider | String or null | Insurance provider |\n| lastRentalAppraisalDate | String (Date) or null | Date of last rental appraisal |\n| leases | Array of Objects | Lease records |\n| noAddressName | String or null | Name used if no address |\n| purchaseDate | String (Date) or null | Property purchase date |\n| purchasePrice | Number or null | Property purchase price |\n| taccount | Object | Related chart of account info - see object details in table below |\n| titleFolioNumber | String or null | Title folio number |\n| titleLinkedToRelatedParty | String or null | Related party linkage |\n| titleTotalReference | String or null | Title total reference |\n| titleVolumeNumber | String or null | Title volume number |\n| valuations | Array of Objects | Property valuations |\n\n---\n\n### Address Object\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| country | String | Country name |\n| id | Number | Address ID |\n| postCode | String | Postal code |\n| state | String | State or region |\n| streetLine1 | String | Street line 1 |\n| streetLine2 | String or null | Street line 2 (optional) |\n| suburb | String | Suburb |\n\n---\n\n### CGTList Array\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| amount | Number | CGT amount |\n| costBase | Number | Cost base |\n| costElement | Number or null | Cost element (optional) |\n| date | String (Date) | Relevant date |\n| description | String | Description |\n| id | Number or null | CGT record ID (optional) |\n| reducedCostBase | Number or null | Reduced cost base (optional) |\n\n---\n\n### Documents Array\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| attachedFileLink | String | Link to attached file |\n| category | String | Document category |\n| id | Number | Document ID |\n| investValueId | Number | Investment value ID |\n\n---\n\n### Leases Array\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| id | Number | Lease ID |\n| startDate | String (Date) | Lease start date |\n| endDate | String (Date) | Lease end date |\n| leaseOptionExpiry | String or null | Lease option expiry (optional) |\n\n---\n\n### TAccount Object\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| code | String | Account code |\n| id | Number | Account ID |\n| name | String | Account name |\n| parentAccount | Object or null | Parent account info (if any) |\n\n---\n\n### TAccount.parentAccount Object\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| code | String | Parent account code |\n| id | Number | Parent account ID |\n| name | String | Parent account name |\n| parentAccount | null | Always null (top level) |\n\n---\n\n### Valuations Array\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| id | Number | Valuation record ID |\n| readOnly | Boolean | Is valuation read-only |\n| source | String | Valuation source |\n| updateDate | String (Date) | Last update date |\n| value | Number | Valuation amount |"
+					},
+					"response": [
+						{
+							"id": "d6992d1b-084b-4014-b459-dd1f5d7817da",
+							"name": "Status 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/sf/funds/:fundid/properties",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"sf",
+										"funds",
+										":fundid",
+										"properties"
+									],
+									"variable": [
+										{
+											"key": "fundid",
+											"value": "{{fundId}}",
+											"description": "Fund/entity id"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Dec 2019 01:51:21 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Server",
+									"value": "nginx"
+								},
+								{
+									"key": "X-Rate-Daily-Limit-Remaining",
+									"value": "-1"
+								},
+								{
+									"key": "vary",
+									"value": "accept-encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "frame-ancestors 'self' staging.sf360.com.au"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "ALLOW-FROM https://staging.sf360.com.au"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "[\n    {\n        \"address\": {\n            \"country\": \"AUSTRALIA\",\n            \"id\": 3532905,\n            \"postCode\": \"3076\",\n            \"state\": \"VICTORIA\",\n            \"streetLine1\": \"60 Deveny Rd\",\n            \"streetLine2\": null,\n            \"suburb\": \"Epping\"\n        },\n        \"bareTrustName\": null,\n        \"cgtList\": [\n            {\n                \"amount\": 10000000,\n                \"costBase\": 10000000,\n                \"costElement\": null,\n                \"date\": \"2024-04-01\",\n                \"description\": \"\",\n                \"id\": null,\n                \"reducedCostBase\": null\n            }\n        ],\n        \"derivedPropertyName\": \"60 Deveny Rd, Epping, VIC 3076 AU\",\n        \"derivedPropertyType\": \"Australian - Residential\",\n        \"disposalManualAmount\": null,\n        \"disposalStatus\": null,\n        \"documents\": [],\n        \"id\": 31640,\n        \"ignored\": false,\n        \"insurancePremium\": null,\n        \"insuranceProvider\": null,\n        \"lastRentalAppraisalDate\": null,\n        \"leases\": [],\n        \"noAddressName\": null,\n        \"purchaseDate\": null,\n        \"purchasePrice\": null,\n        \"taccount\": {\n            \"code\": \"COSTCO_EPPING\",\n            \"id\": 222338415825,\n            \"name\": \"60 Deveny Rd, Epping VIC 3076, Australia\",\n            \"parentAccount\": {\n                \"code\": \"77200\",\n                \"id\": 156,\n                \"name\": \"Real Estate Properties (Australian - Residential)\",\n                \"parentAccount\": null\n            }\n        },\n        \"titleFolioNumber\": null,\n        \"titleLinkedToRelatedParty\": null,\n        \"titleTotalReference\": null,\n        \"titleVolumeNumber\": null,\n        \"valuations\": []\n    },\n    {\n        \"address\": {\n            \"country\": \"AUSTRALIA\",\n            \"id\": 3532906,\n            \"postCode\": \"3194\",\n            \"state\": \"VICTORIA\",\n            \"streetLine1\": \"8 Chifley Dr\",\n            \"streetLine2\": null,\n            \"suburb\": \"Moorabbin Airport\"\n        },\n        \"bareTrustName\": null,\n        \"cgtList\": [\n            {\n                \"amount\": 1000000,\n                \"costBase\": 1000000,\n                \"costElement\": null,\n                \"date\": \"2023-07-01\",\n                \"description\": \"\",\n                \"id\": null,\n                \"reducedCostBase\": null\n            }\n        ],\n        \"derivedPropertyName\": \"8 Chifley Dr, Moorabbin Airport, VIC 3194 AU\",\n        \"derivedPropertyType\": \"Australian - Non Residential\",\n        \"disposalManualAmount\": null,\n        \"disposalStatus\": null,\n        \"documents\": [],\n        \"id\": 31641,\n        \"ignored\": false,\n        \"insurancePremium\": null,\n        \"insuranceProvider\": null,\n        \"lastRentalAppraisalDate\": null,\n        \"leases\": [],\n        \"noAddressName\": null,\n        \"purchaseDate\": null,\n        \"purchasePrice\": null,\n        \"taccount\": {\n            \"code\": \"COSTCO_MOORABBIN\",\n            \"id\": 222338384707,\n            \"name\": \"8 Chifley Dr, Moorabbin Airport VIC 3194, Australia\",\n            \"parentAccount\": {\n                \"code\": \"77250\",\n                \"id\": 157,\n                \"name\": \"Real Estate Properties (Australian - Non Residential)\",\n                \"parentAccount\": null\n            }\n        },\n        \"titleFolioNumber\": null,\n        \"titleLinkedToRelatedParty\": null,\n        \"titleTotalReference\": null,\n        \"titleVolumeNumber\": null,\n        \"valuations\": []\n    },\n    {\n        \"address\": {\n            \"country\": \"AUSTRALIA\",\n            \"id\": 3532907,\n            \"postCode\": \"3134\",\n            \"state\": \"VICTORIA\",\n            \"streetLine1\": \"29 Bond St\",\n            \"streetLine2\": null,\n            \"suburb\": \"Ringwood\"\n        },\n        \"bareTrustName\": null,\n        \"cgtList\": [],\n        \"derivedPropertyName\": \"29 Bond St, Ringwood, VIC 3134 AU\",\n        \"derivedPropertyType\": \"Australian - Residential\",\n        \"disposalManualAmount\": null,\n        \"disposalStatus\": null,\n        \"documents\": [],\n        \"id\": 31642,\n        \"ignored\": false,\n        \"insurancePremium\": null,\n        \"insuranceProvider\": null,\n        \"lastRentalAppraisalDate\": null,\n        \"leases\": [],\n        \"noAddressName\": null,\n        \"purchaseDate\": null,\n        \"purchasePrice\": null,\n        \"taccount\": {\n            \"code\": \"COSTCO_RINGWOOD\",\n            \"id\": 222338415750,\n            \"name\": \"29 Bond St, Ringwood VIC 3134, Australia\",\n            \"parentAccount\": {\n                \"code\": \"77200\",\n                \"id\": 156,\n                \"name\": \"Real Estate Properties (Australian - Residential)\",\n                \"parentAccount\": null\n            }\n        },\n        \"titleFolioNumber\": null,\n        \"titleLinkedToRelatedParty\": null,\n        \"titleTotalReference\": null,\n        \"titleVolumeNumber\": null,\n        \"valuations\": []\n    },\n    {\n        \"address\": {\n            \"country\": \"AUSTRALIA\",\n            \"id\": 3656532,\n            \"postCode\": \"4000\",\n            \"state\": \"QUEENSLAND\",\n            \"streetLine1\": \"123 Eagle Street\",\n            \"streetLine2\": \"\",\n            \"suburb\": \"Brisbane City\"\n        },\n        \"bareTrustName\": null,\n        \"cgtList\": [],\n        \"derivedPropertyName\": \"123 Eagle Street, Brisbane City, QLD 4000 AU\",\n        \"derivedPropertyType\": \"Farming Property\",\n        \"disposalManualAmount\": null,\n        \"disposalStatus\": null,\n        \"documents\": [\n            {\n                \"attachedFileLink\": \"e282e276-0f85-4f3c-af7e-64132f03db27\",\n                \"category\": \"Valuations\",\n                \"id\": 1288,\n                \"investValueId\": 57296759\n            }\n        ],\n        \"id\": 35137,\n        \"ignored\": false,\n        \"insurancePremium\": null,\n        \"insuranceProvider\": null,\n        \"lastRentalAppraisalDate\": null,\n        \"leases\": [],\n        \"noAddressName\": null,\n        \"purchaseDate\": null,\n        \"purchasePrice\": null,\n        \"taccount\": {\n            \"code\": \"123EagleStreet1\",\n            \"id\": 222355190127,\n            \"name\": \"123 Eagle Street, Brisbane City, QLD 4000 AU\",\n            \"parentAccount\": {\n                \"code\": \"72350\",\n                \"id\": 133,\n                \"name\": \"Farming Property\",\n                \"parentAccount\": null\n            }\n        },\n        \"titleFolioNumber\": null,\n        \"titleLinkedToRelatedParty\": null,\n        \"titleTotalReference\": null,\n        \"titleVolumeNumber\": null,\n        \"valuations\": [\n            {\n                \"id\": 57296759,\n                \"readOnly\": false,\n                \"source\": \"None\",\n                \"updateDate\": \"2025-06-30\",\n                \"value\": 123000\n            }\n        ]\n    },\n    {\n        \"address\": {\n            \"country\": \"AUSTRALIA\",\n            \"id\": 3656533,\n            \"postCode\": \"6111\",\n            \"state\": \"WESTERN_AUSTRALIA\",\n            \"streetLine1\": \"1311 Brookton Highway\",\n            \"streetLine2\": \"\",\n            \"suburb\": \"Karragullen\"\n        },\n        \"bareTrustName\": null,\n        \"cgtList\": [],\n        \"derivedPropertyName\": \"1311 Brookton Highway, Karragullen, WA 6111 AU\",\n        \"derivedPropertyType\": \"Overseas - Non Residential\",\n        \"disposalManualAmount\": null,\n        \"disposalStatus\": null,\n        \"documents\": [],\n        \"id\": 35138,\n        \"ignored\": false,\n        \"insurancePremium\": null,\n        \"insuranceProvider\": null,\n        \"lastRentalAppraisalDate\": \"2025-06-11\",\n        \"leases\": [\n            {\n                \"endDate\": \"2023-01-01\",\n                \"id\": 3173,\n                \"leaseOptionExpiry\": null,\n                \"startDate\": \"2000-01-01\"\n            }\n        ],\n        \"noAddressName\": null,\n        \"purchaseDate\": null,\n        \"purchasePrice\": null,\n        \"taccount\": {\n            \"code\": \"1311BrooktonHighway\",\n            \"id\": 222355190186,\n            \"name\": \"1311 Brookton Highway, Karragullen, WA 6111 AU\",\n            \"parentAccount\": {\n                \"code\": \"77350\",\n                \"id\": 159,\n                \"name\": \"Real Estate Properties (Overseas - Non Residential)\",\n                \"parentAccount\": null\n            }\n        },\n        \"titleFolioNumber\": null,\n        \"titleLinkedToRelatedParty\": null,\n        \"titleTotalReference\": null,\n        \"titleVolumeNumber\": null,\n        \"valuations\": []\n    }\n]"
+						},
+						{
+							"id": "82603cb0-553f-44da-a24f-da1c5efc75c3",
+							"name": "Status 401",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/sf/funds/:fundid/properties",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"sf",
+										"funds",
+										":fundid",
+										"properties"
+									],
+									"variable": [
+										{
+											"key": "fundid",
+											"value": "{{fundId}}",
+											"description": "Fund/entity id"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Dec 2019 01:51:21 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Server",
+									"value": "nginx"
+								},
+								{
+									"key": "X-Rate-Daily-Limit-Remaining",
+									"value": "-1"
+								},
+								{
+									"key": "vary",
+									"value": "accept-encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "frame-ancestors 'self' staging.sf360.com.au"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "ALLOW-FROM https://staging.sf360.com.au"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"status\": 401,\n    \"message\": \"Authentication failed\",\n    \"errors\": [\n        \"cannot find required url resources or you are not authorized to access the resource\"\n    ]\n}"
+						}
+					]
 				}
 			],
 			"id": "b64f686b-0568-4c9a-b3ba-b4836c194a32"
