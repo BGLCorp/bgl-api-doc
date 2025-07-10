@@ -4292,15 +4292,7 @@
 							},
 							"request": {
 								"auth": {
-									"type": "oauth2",
-									"oauth2": {
-										"clientSecret": "",
-										"clientId": "",
-										"accessTokenUrl": "https://api.uat.bgl360.com.au/oauth/token?scope=developer",
-										"authUrl": "https://integrations.uat.bgl360.com.au/u/oauth/authorize",
-										"scope": "developer",
-										"useBrowser": true
-									}
+									"type": "noauth"
 								},
 								"method": "GET",
 								"header": [
@@ -4335,7 +4327,6 @@
 									],
 									"variable": [
 										{
-											"id": "2e3d16c6-3158-43d4-bda8-e47fff979094",
 											"key": "fundid",
 											"value": "{{fundId}}",
 											"description": "Fund/entity id"
