@@ -7263,7 +7263,7 @@
 												}
 											]
 										},
-										"description": "This endpoint returns the trust deed and all previous versions of the trust deed.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- audit\n- smsf_partner\n- bgl_partner\n    \n\n### Response Body\n\n| Field | **Mandatory** | **Data Type** | **Comments** |\n| --- | --- | --- | --- |\n| deedType | Yes | String (enum) | \"Initial\" or \"Variation\" |\n| docKey | Yes | String |  |\n| deedDate | Yes | Date | \"2023-06-30T00:00:00.000+0000\" |\n| description | No | String |  |\n| deedSource | No | String |  |\n| clauseNumber | No | String |  |"
+										"description": "This endpoint returns the trust deed and all previous versions of the trust deed.\n\n### API Scopes\n\nThe following [API scopes](https://docs.api.bgl360.com.au/?version=latest#9ef9e817-5fba-4a36-908c-eeee71c2a357) can access this resouce\n\n- audit\n    \n- smsf_partner\n    \n- bgl_partner\n    \n\n### Response Body\n\n| Field | **Mandatory** | **Data Type** | **Comments** |\n| --- | --- | --- | --- |\n| deedType | Yes | String (enum) | \"Initial\" or \"Variation\" |\n| docKey | Yes | String |  |\n| deedDate | Yes | Date | \"2023-06-30T00:00:00.000+0000\" |\n| description | No | String |  |\n| deedSource | No | String |  |\n| clauseNumber | No | String |  |"
 									},
 									"response": [
 										{
