@@ -237,7 +237,7 @@
 					"name": "API Scopes",
 					"item": [],
 					"id": "9ef9e817-5fba-4a36-908c-eeee71c2a357",
-					"description": "The API Scope defines what end points are accessible for a given scope. The below table illustrates the available scopes and what end points are accessible by each of them.\n\nTo change your scope, please contact [api@bglcorp.com.au](https://mailto:api@bglcorp.com.au). An API Client can have access to multiple scopes.\n\n## Warning\n\n- To use the BGL_partner scope the user will need access to both SF360 and CAS360.\n- If the user only has access to one product then one of the other scopes need to be used.\n    \n\n| Scope/Resource | [General Resources](https://docs.api.bgl360.com.au/?version=latest#4626b7eb-a252-44aa-b871-003d4f3aaf0c) | SF/SI Entity - [Lists](https://docs.api.bgl360.com.au/?version=latest#ac84353f-b900-4413-a0db-c7588faf211c), [General](https://docs.api.bgl360.com.au/?version=latest#528d0628-fbbb-4ad2-92ba-267b77f41fab) and [Reports](https://docs.api.bgl360.com.au/?version=latest#275f9cc9-3bf8-403d-b7ed-7b3e098726d5) | SF/SI [Entity Documents](https://docs.api.bgl360.com.au/?version=latest#8600d850-798b-46b3-b26c-01f762bbd557) | [SMSF Establishment](https://docs.api.bgl360.com.au/?version=latest#08fb5238-e13d-46db-8d13-1229b901515e) | [All CAS 360 Resources](https://docs.api.bgl360.com.au/?version=latest#4b0acc02-01c4-4c93-9aa7-cde7f8d759c7) | [AML/identity Verification](https://docs.api.bgl360.com.au/?version=latest#aafdbc5d-7439-45d3-9e7f-de25566767de) | [AML/identity Screening](https://docs.api.bgl360.com.au/#fbd06fdd-7866-41d9-9322-a9b1fda97488) |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| developer | **YES** | no | no | no | no | no | no |\n| investment | **YES** | **YES** | no | no | no | no | no |\n| audit | **YES** | **YES** | **YES** | no | no | no | no |\n| smsf_partner | **YES** | **YES** | **YES** | **YES** | no | no | no |\n| cas_incorporator | **YES** | no | no | no | **YES** | no | no |\n| bgl_partner | **YES** | **YES** | **YES** | **YES** | **YES** | no | no |\n| identity_provider | no | no | no | no | no | **YES** | no |\n| screening_provider | no | no | no | no | no | no | **YES** |",
+					"description": "The API Scope defines what end points are accessible for a given scope. The below table illustrates the available scopes and what end points are accessible by each of them.\n\nTo change your scope, please contact [api@bglcorp.com.au](https://mailto:api@bglcorp.com.au). An API Client can have access to multiple scopes. See below for more information on multiple scopes.\n\n## Warning\n\n- To use the BGL_partner scope the user will need access to both SF360 and CAS360.\n    \n- If the user only has access to one product then one of the other scopes need to be used.\n    \n\n| Scope/Resource | [General Resources](https://docs.api.bgl360.com.au/?version=latest#4626b7eb-a252-44aa-b871-003d4f3aaf0c) | SF/SI Entity - [Lists](https://docs.api.bgl360.com.au/?version=latest#ac84353f-b900-4413-a0db-c7588faf211c), [General](https://docs.api.bgl360.com.au/?version=latest#528d0628-fbbb-4ad2-92ba-267b77f41fab) and [Reports](https://docs.api.bgl360.com.au/?version=latest#275f9cc9-3bf8-403d-b7ed-7b3e098726d5) | SF/SI [Entity Documents](https://docs.api.bgl360.com.au/?version=latest#8600d850-798b-46b3-b26c-01f762bbd557) | [SMSF Establishment](https://docs.api.bgl360.com.au/?version=latest#08fb5238-e13d-46db-8d13-1229b901515e) | [All CAS 360 Resources](https://docs.api.bgl360.com.au/?version=latest#4b0acc02-01c4-4c93-9aa7-cde7f8d759c7) | [AML/identity Verification](https://docs.api.bgl360.com.au/?version=latest#aafdbc5d-7439-45d3-9e7f-de25566767de) | [AML/identity Screening](https://docs.api.bgl360.com.au/#fbd06fdd-7866-41d9-9322-a9b1fda97488) |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| developer | **YES** | no | no | no | no | no | no |\n| investment | **YES** | **YES** | no | no | no | no | no |\n| audit | **YES** | **YES** | **YES** | no | no | no | no |\n| smsf_partner | **YES** | **YES** | **YES** | **YES** | no | no | no |\n| cas_incorporator | **YES** | no | no | no | **YES** | no | no |\n| bgl_partner | **YES** | **YES** | **YES** | **YES** | **YES** | no | no |\n| identity_provider | no | no | no | no | no | **YES** | no |\n| screening_provider | no | no | no | no | no | no | **YES** |\n\n## Multiple Scopes\n\nStartFragmentTo configure multiple scopes for an API client, ensure that all required scopes are included in both the Authorize URL and the Access Token URL, separated by a \"+\" symbol.  \n  \nExample:  \n[https://integrations.bgl360.com.au/u/oauth/authorize?response_type=code&amp;client_id={client_Id}&amp;scope=cas_incorporator+smsf_partner&amp;redirect_uri={uri}](https://integrations.bgl360.com.au/u/oauth/authorize?response_type=code&client_id={client_Id}&scope=cas_incorporator+smsf_partner&redirect_uri={uri})",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -18135,68 +18135,6 @@
 					},
 					"response": [
 						{
-							"id": "1b61de7b-6394-46ce-bcd9-1fb607f3d46d",
-							"name": "500 - Other Runtime Errors",
-							"originalRequest": {
-								"method": "POST",
-								"header": [],
-								"url": "bgl-will-send-to-your-registered-url"
-							},
-							"status": "Internal Server Error",
-							"code": 500,
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n  message: \"System maintenance.\"\n}"
-						},
-						{
-							"id": "2117b6f7-c21a-4777-8374-7270ae268a7b",
-							"name": "Constitution",
-							"originalRequest": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Content-Type",
-										"name": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{ \n    “userId”:“dluo@bglcorp.com.au”,\n    “firmId”:“sf360test”,\n    “entityId”:“8ad08a296873fe9901687414c34e0009\",\n    “eventId”: \"12345678\",\n    “eventType”:“constitution”\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "bgl-will-send-to-your-registered-url"
-							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": null
-						},
-						{
-							"id": "d184360b-c292-4e15-b3c9-012b15b05469",
-							"name": "400 - Error Reponse ",
-							"originalRequest": {
-								"method": "POST",
-								"header": [],
-								"url": "bgl-will-send-to-your-registered-url"
-							},
-							"status": "Bad Request",
-							"code": 400,
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n  message: \"missing required parameters\",\n  errors: [\n    \"fundId is missing\",\n    \"financialYear is missing\"\n  ]\n}"
-						},
-						{
 							"id": "f2ca0a84-1b06-4a1d-a865-9ef03855bb3f",
 							"name": "200 - Send to Audit accepted",
 							"originalRequest": {
@@ -18227,6 +18165,68 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n  message: \"request accepted.\"\n}"
+						},
+						{
+							"id": "1b61de7b-6394-46ce-bcd9-1fb607f3d46d",
+							"name": "500 - Other Runtime Errors",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": "bgl-will-send-to-your-registered-url"
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n  message: \"System maintenance.\"\n}"
+						},
+						{
+							"id": "d184360b-c292-4e15-b3c9-012b15b05469",
+							"name": "400 - Error Reponse ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": "bgl-will-send-to-your-registered-url"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n  message: \"missing required parameters\",\n  errors: [\n    \"fundId is missing\",\n    \"financialYear is missing\"\n  ]\n}"
+						},
+						{
+							"id": "2117b6f7-c21a-4777-8374-7270ae268a7b",
+							"name": "Constitution",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \n    “userId”:“dluo@bglcorp.com.au”,\n    “firmId”:“sf360test”,\n    “entityId”:“8ad08a296873fe9901687414c34e0009\",\n    “eventId”: \"12345678\",\n    “eventType”:“constitution”\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "bgl-will-send-to-your-registered-url"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
 						}
 					]
 				}
