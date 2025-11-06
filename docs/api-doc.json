@@ -18135,38 +18135,6 @@
 					},
 					"response": [
 						{
-							"id": "f2ca0a84-1b06-4a1d-a865-9ef03855bb3f",
-							"name": "200 - Send to Audit accepted",
-							"originalRequest": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Content-Type",
-										"name": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n        \"entityId\": \"8ad08a066555bb32016555d9ebac0003\",\n        \"eventId\": \"039403940\",\n        \"eventType\": \"audit\",\n        \"firmId\": \"bgltest\",\n        \"tenants\": [\n          {\"tenantId\": \"ASFAUDIT4550\",\n           \"tenantType\": \"fundCode\"\n          },\n          {\"tenantId\": \"73124784265\",\n           \"tenantType\": \"abn\"\n          },\n          {\"tenantId\": \"2015/2016\",\n           \"tenantType\": \"financialYear\"\n          }\n          ],\n        \"userId\": \"info@bglcorp.com.au\"\n    }",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "ilovebgl.com.au/bgl_listener"
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n  message: \"request accepted.\"\n}"
-						},
-						{
 							"id": "1b61de7b-6394-46ce-bcd9-1fb607f3d46d",
 							"name": "500 - Other Runtime Errors",
 							"originalRequest": {
@@ -18181,22 +18149,6 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n  message: \"System maintenance.\"\n}"
-						},
-						{
-							"id": "d184360b-c292-4e15-b3c9-012b15b05469",
-							"name": "400 - Error Reponse ",
-							"originalRequest": {
-								"method": "POST",
-								"header": [],
-								"url": "bgl-will-send-to-your-registered-url"
-							},
-							"status": "Bad Request",
-							"code": 400,
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n  message: \"missing required parameters\",\n  errors: [\n    \"fundId is missing\",\n    \"financialYear is missing\"\n  ]\n}"
 						},
 						{
 							"id": "2117b6f7-c21a-4777-8374-7270ae268a7b",
@@ -18227,6 +18179,54 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": null
+						},
+						{
+							"id": "d184360b-c292-4e15-b3c9-012b15b05469",
+							"name": "400 - Error Reponse ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": "bgl-will-send-to-your-registered-url"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n  message: \"missing required parameters\",\n  errors: [\n    \"fundId is missing\",\n    \"financialYear is missing\"\n  ]\n}"
+						},
+						{
+							"id": "f2ca0a84-1b06-4a1d-a865-9ef03855bb3f",
+							"name": "200 - Send to Audit accepted",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"entityId\": \"8ad08a066555bb32016555d9ebac0003\",\n        \"eventId\": \"039403940\",\n        \"eventType\": \"audit\",\n        \"firmId\": \"bgltest\",\n        \"tenants\": [\n          {\"tenantId\": \"ASFAUDIT4550\",\n           \"tenantType\": \"fundCode\"\n          },\n          {\"tenantId\": \"73124784265\",\n           \"tenantType\": \"abn\"\n          },\n          {\"tenantId\": \"2015/2016\",\n           \"tenantType\": \"financialYear\"\n          }\n          ],\n        \"userId\": \"info@bglcorp.com.au\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "ilovebgl.com.au/bgl_listener"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n  message: \"request accepted.\"\n}"
 						}
 					]
 				}
