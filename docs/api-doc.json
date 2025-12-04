@@ -18725,108 +18725,6 @@
 					"description": "This section contains the resources to request and verify identification via BGLiD.\n\nIf you are interested in utilising this service, please contact the BGL team at [api@bglcorp.com.au](https://mailto:api@bglcorp.com.au)"
 				},
 				{
-					"name": "Upload Property Valuation",
-					"id": "50a85287-3712-41f2-b056-87fbc95b51d5",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "bearer 432b41dc-0850-4e91-b34b-e860bd04acb7"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"type": "file",
-									"key": "valuationDocumentBase64",
-									"src": "postman-cloud:///1f05c8ec-b4da-4460-8fb0-cd91de048abb"
-								},
-								{
-									"type": "text",
-									"key": "valuationDate",
-									"value": "2025-06-30"
-								},
-								{
-									"type": "text",
-									"key": "valuationAmount",
-									"value": "1600000.00"
-								},
-								{
-									"type": "text",
-									"key": "valuationDocumentName",
-									"value": "test-property.pdf"
-								}
-							]
-						},
-						"url": "https://api.staging.bgl360.com.au/sf/properties/{{callback_id}}",
-						"description": "This resource allows property valuation partners to upload a property value and valuation file to Simple Fund 360 and Simple Invest 360.\n\nThis requires a separate API client configuration.\nPlease reach out to the BGL team at api@bglcorp.com.au if you have any questions.\n\n## Request Body\n\n|  | Type | Comments |\n| --- | --- | --- |\n| valuationAmount | Number | Property valuation amount.  <br>e.g. 1200000.00 |\n| valuationDate | String (Date) | Valuation date in format `YYYY-MM-DD` |\n| valuationDocumentName | String | Filename including extension (e.g., `value.pdf`) |\n| valuationDocumentBase64 | String (Base64) | Base64-encoded file content |"
-					},
-					"response": [
-						{
-							"id": "db9ab70a-34ec-4e95-8f9c-44a2a6dd8b1c",
-							"name": "Status 200",
-							"originalRequest": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "bearer 432b41dc-0850-4e91-b34b-e860bd04acb7"
-									}
-								],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"type": "file",
-											"key": "valuationDocumentBase64",
-											"src": "postman-cloud:///1f05c8ec-b4da-4460-8fb0-cd91de048abb"
-										},
-										{
-											"type": "text",
-											"key": "valuationDate",
-											"value": "2025-06-30"
-										},
-										{
-											"type": "text",
-											"key": "valuationAmount",
-											"value": "1600000.00"
-										},
-										{
-											"type": "text",
-											"key": "valuationDocumentName",
-											"value": "test-property.pdf"
-										}
-									]
-								},
-								"url": "https://api.staging.bgl360.com.au/sf/properties/{{callback_id}}"
-							},
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json",
-									"description": "",
-									"type": "text"
-								}
-							],
-							"cookie": [
-								{
-									"expires": "Invalid Date",
-									"domain": "",
-									"path": ""
-								}
-							],
-							"responseTime": null,
-							"body": "{\n    \"data\": null,\n    \"message\": null,\n    \"success\": true\n}"
-						}
-					]
-				},
-				{
 					"name": "Create Company Client Data",
 					"id": "88b91a52-1c95-4128-b148-35016cecf22a",
 					"protocolProfileBehavior": {
@@ -19026,6 +18924,109 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\r\n    \"billingDate\": null,\r\n    \"bpayReference\": null,\r\n    \"clientNumber\": \"A123\",\r\n    \"companyId\": \"97f143c9-7ede-4543-bebc-c2f04bea2870\",\r\n    \"currentClient\": true,\r\n    \"postBillPay\": null,\r\n    \"reference\": \"B456\",\r\n    \"transferFromContactId\": 96031,\r\n    \"transferFromDate\": \"2025-08-01\",\r\n    \"transferToContactId\": 96030,\r\n    \"transferToDate\": \"2025-08-02\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Upload Property Valuation",
+					"id": "50a85287-3712-41f2-b056-87fbc95b51d5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"type": "file",
+									"key": "valuationDocumentBase64",
+									"src": "postman-cloud:///1f05c8ec-b4da-4460-8fb0-cd91de048abb"
+								},
+								{
+									"type": "text",
+									"key": "valuationDate",
+									"value": "2025-06-30"
+								},
+								{
+									"type": "text",
+									"key": "valuationAmount",
+									"value": "1600000.00"
+								},
+								{
+									"type": "text",
+									"key": "valuationDocumentName",
+									"value": "test-property.pdf"
+								}
+							]
+						},
+						"url": "https://api.staging.bgl360.com.au/sf/properties/{{callback_id}}",
+						"description": "This resource allows property valuation partners to upload a property value and valuation file to Simple Fund 360 and Simple Invest 360.\n\nThis requires a separate API client configuration.  \nPlease reach out to the BGL team at [api@bglcorp.com.au](https://mailto:api@bglcorp.com.au) if you have any questions.\n\n\n## Scope Required\nproperty\n\n## Request Body\n\n|  | Type | Comments |\n| --- | --- | --- |\n| valuationAmount | Number | Property valuation amount.  <br>e.g. 1200000.00 |\n| valuationDate | String (Date) | Valuation date in format `YYYY-MM-DD` |\n| valuationDocumentName | String | Filename including extension (e.g., `value.pdf`) |\n| valuationDocumentBase64 | String (Base64) | Base64-encoded file content |"
+					},
+					"response": [
+						{
+							"id": "db9ab70a-34ec-4e95-8f9c-44a2a6dd8b1c",
+							"name": "Status 200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer 432b41dc-0850-4e91-b34b-e860bd04acb7"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"type": "file",
+											"key": "valuationDocumentBase64",
+											"src": "postman-cloud:///1f05c8ec-b4da-4460-8fb0-cd91de048abb"
+										},
+										{
+											"type": "text",
+											"key": "valuationDate",
+											"value": "2025-06-30"
+										},
+										{
+											"type": "text",
+											"key": "valuationAmount",
+											"value": "1600000.00"
+										},
+										{
+											"type": "text",
+											"key": "valuationDocumentName",
+											"value": "test-property.pdf"
+										}
+									]
+								},
+								"url": "https://api.staging.bgl360.com.au/sf/properties/{{callback_id}}"
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Invalid Date",
+									"domain": "",
+									"path": ""
+								}
+							],
+							"responseTime": null,
+							"body": "{\n    \"data\": null,\n    \"message\": null,\n    \"success\": true\n}"
 						}
 					]
 				}
