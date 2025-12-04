@@ -18723,6 +18723,311 @@
 					],
 					"id": "cd4859fc-ddb0-49a4-a7a1-cc0d38818610",
 					"description": "This section contains the resources to request and verify identification via BGLiD.\n\nIf you are interested in utilising this service, please contact the BGL team at [api@bglcorp.com.au](https://mailto:api@bglcorp.com.au)"
+				},
+				{
+					"name": "Upload Property Valuation",
+					"id": "50a85287-3712-41f2-b056-87fbc95b51d5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer 432b41dc-0850-4e91-b34b-e860bd04acb7"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"type": "file",
+									"key": "valuationDocumentBase64",
+									"src": "postman-cloud:///1f05c8ec-b4da-4460-8fb0-cd91de048abb"
+								},
+								{
+									"type": "text",
+									"key": "valuationDate",
+									"value": "2025-06-30"
+								},
+								{
+									"type": "text",
+									"key": "valuationAmount",
+									"value": "1600000.00"
+								},
+								{
+									"type": "text",
+									"key": "valuationDocumentName",
+									"value": "test-property.pdf"
+								}
+							]
+						},
+						"url": "https://api.staging.bgl360.com.au/sf/properties/{{callback_id}}",
+						"description": "This resource allows property valuation partners to upload a property value and valuation file to Simple Fund 360 and Simple Invest 360.\n\nThis requires a separate API client configuration.\nPlease reach out to the BGL team at api@bglcorp.com.au if you have any questions.\n\n## Request Body\n\n|  | Type | Comments |\n| --- | --- | --- |\n| valuationAmount | Number | Property valuation amount.  <br>e.g. 1200000.00 |\n| valuationDate | String (Date) | Valuation date in format `YYYY-MM-DD` |\n| valuationDocumentName | String | Filename including extension (e.g., `value.pdf`) |\n| valuationDocumentBase64 | String (Base64) | Base64-encoded file content |"
+					},
+					"response": [
+						{
+							"id": "db9ab70a-34ec-4e95-8f9c-44a2a6dd8b1c",
+							"name": "Status 200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer 432b41dc-0850-4e91-b34b-e860bd04acb7"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"type": "file",
+											"key": "valuationDocumentBase64",
+											"src": "postman-cloud:///1f05c8ec-b4da-4460-8fb0-cd91de048abb"
+										},
+										{
+											"type": "text",
+											"key": "valuationDate",
+											"value": "2025-06-30"
+										},
+										{
+											"type": "text",
+											"key": "valuationAmount",
+											"value": "1600000.00"
+										},
+										{
+											"type": "text",
+											"key": "valuationDocumentName",
+											"value": "test-property.pdf"
+										}
+									]
+								},
+								"url": "https://api.staging.bgl360.com.au/sf/properties/{{callback_id}}"
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Invalid Date",
+									"domain": "",
+									"path": ""
+								}
+							],
+							"responseTime": null,
+							"body": "{\n    \"data\": null,\n    \"message\": null,\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Company Client Data",
+					"id": "88b91a52-1c95-4128-b148-35016cecf22a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"billingDate\": null,\r\n    \"bpayReference\": null,\r\n    \"clientNumber\": \"A123\",\r\n    \"companyId\": \"97f143c9-7ede-4543-bebc-c2f04bea2870\",\r\n    \"currentClient\": true,\r\n    \"postBillPay\": null,\r\n    \"reference\": \"B456\",\r\n    \"transferFromContactId\": 96031,\r\n    \"transferFromDate\": \"2025-08-01\",\r\n    \"transferToContactId\": 96030,\r\n    \"transferToDate\": \"2025-08-02\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/cas/companies/:companyId/clientData",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cas",
+								"companies",
+								":companyId",
+								"clientData"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"type": "text",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"id": "ab3dbd03-ce3e-4386-b107-df428bd95624",
+									"key": "companyId",
+									"value": "{{companyId}}"
+								}
+							]
+						},
+						"description": "This resource creates company client data.\n\n### **Request Body**\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| billingDate | String (Date) or null | Billing date for the client, if applicable |\n| bpayReference | String or null | BPAY reference number |\n| clientNumber | String | Internal client reference number |\n| companyId | String (UUID) | Company identifier |\n| currentClient | Boolean | Whether the company is currently a client |\n| postBillPay | String or null | Post BillPay reference (if applicable) |\n| reference | String | Additional reference identifier |\n| transferFromContactId | Number | Contact ID the company was transferred **from** |\n| transferFromDate | String (Date) | Date the company transferred from previous agent |\n| transferToContactId | Number | Contact ID the company was transferred **to** |\n| transferToDate | String (Date) | Date the company transferred to new agent |"
+					},
+					"response": [
+						{
+							"id": "a1696af8-9f89-48d4-86d6-750b3f1294a4",
+							"name": "Status 201",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n    {\r\n        \"activity\": \"Conference\",\r\n        \"activityCode\": \"456\",\r\n        \"activityDate\": \"2023-06-22\",\r\n        \"activityType\": null,\r\n        \"ceasedDate\": null,\r\n        \"otherDescription\": null\r\n    }\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/cas/companies/:companyId/clientData",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"cas",
+										"companies",
+										":companyId",
+										"clientData"
+									],
+									"variable": [
+										{
+											"key": "companyId",
+											"value": "{{companyId}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\r\n    \"billingDate\": null,\r\n    \"bpayReference\": null,\r\n    \"clientNumber\": \"A123\",\r\n    \"companyId\": \"97f143c9-7ede-4543-bebc-c2f04bea2870\",\r\n    \"currentClient\": true,\r\n    \"postBillPay\": null,\r\n    \"reference\": \"B456\",\r\n    \"transferFromContactId\": 96031,\r\n    \"transferFromDate\": \"2025-08-01\",\r\n    \"transferToContactId\": 96030,\r\n    \"transferToDate\": \"2025-08-02\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "List Company Client Data",
+					"id": "daecc79f-fb6e-4bc8-abad-72543dfe548d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/cas/companies/:companyId/clientData",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cas",
+								"companies",
+								":companyId",
+								"clientData"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"type": "text",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"id": "15735cb0-04d0-439e-b3f6-baaa690863fe",
+									"key": "companyId",
+									"value": "{{companyId}}"
+								}
+							]
+						},
+						"description": "This resource returns a list of company client data.\n\n### **Response Body**\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| billingDate | String (Date) or null | Billing date for the client, if applicable |\n| bpayReference | String or null | BPAY reference number |\n| clientNumber | String | Internal client reference number |\n| companyId | String (UUID) | Company identifier |\n| currentClient | Boolean | Whether the company is currently a client |\n| postBillPay | String or null | Post BillPay reference (if applicable) |\n| reference | String | Additional reference identifier |\n| transferFromContactId | Number | Contact ID the company was transferred **from** |\n| transferFromDate | String (Date) | Date the company transferred from previous agent |\n| transferToContactId | Number | Contact ID the company was transferred **to** |\n| transferToDate | String (Date) | Date the company transferred to new agent |"
+					},
+					"response": [
+						{
+							"id": "dc0f522c-ee1d-4829-b33e-5d64b3fe0ccf",
+							"name": "Status 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/cas/companies/:companyId/clientData",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"cas",
+										"companies",
+										":companyId",
+										"clientData"
+									],
+									"variable": [
+										{
+											"key": "companyId",
+											"value": "{{companyId}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\r\n    \"billingDate\": null,\r\n    \"bpayReference\": null,\r\n    \"clientNumber\": \"A123\",\r\n    \"companyId\": \"97f143c9-7ede-4543-bebc-c2f04bea2870\",\r\n    \"currentClient\": true,\r\n    \"postBillPay\": null,\r\n    \"reference\": \"B456\",\r\n    \"transferFromContactId\": 96031,\r\n    \"transferFromDate\": \"2025-08-01\",\r\n    \"transferToContactId\": 96030,\r\n    \"transferToDate\": \"2025-08-02\"\r\n}"
+						}
+					]
 				}
 			],
 			"id": "b64f686b-0568-4c9a-b3ba-b4836c194a32"
