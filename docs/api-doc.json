@@ -8289,7 +8289,7 @@
 					"name": "Properties",
 					"item": [
 						{
-							"name": "Properties",
+							"name": "List Properties for an Entity",
 							"id": "5229b6eb-cf9b-4ac0-af1b-14edcf0cfc4f",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
