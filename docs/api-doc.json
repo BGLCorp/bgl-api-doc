@@ -18846,7 +18846,7 @@
 				"method": "GET",
 				"header": [],
 				"url": "https://api.uat.bgl360.com.au/cas/companies/9062223c-7a64-4ba5-80d6-91071854d970/contacts",
-				"description": "Generated from cURL: curl --location 'https://api.uat.bgl360.com.au/cas/companies/9062223c-7a64-4ba5-80d6-91071854d970/contacts' \\ --header 'Authorization: {{vault:bearer-token}}' \\ --header 'Content-Type: application/json' \\ --header 'Cookie: api_uat_bgl360_session_id=406E52BE6D4D46CED02316E8CE0E09A0-n1' \\ --data '{ \"contactId\": 98736526, \"contactType\": \"Billing contact\" }'"
+				"description": "Generated from cURL: curl --location '[https://api.uat.bgl360.com.au/cas/companies/9062223c-7a64-4ba5-80d6-91071854d970/contacts'](https://api.uat.bgl360.com.au/cas/companies/9062223c-7a64-4ba5-80d6-91071854d970/contacts') \\\\ --header 'Authorization: {{vault:bearer-token}}' \\\\ --header 'Content-Type: application/json' \\\\ --header 'Cookie: api_uat_bgl360_session_id=406E52BE6D4D46CED02316E8CE0E09A0-n1' \\\\ --data '{ \"contactId\": 98736526, \"contactType\": \"Billing contact\" }'"
 			},
 			"response": []
 		},
