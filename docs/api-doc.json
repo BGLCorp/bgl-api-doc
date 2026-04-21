@@ -11925,97 +11925,6 @@
 							"name": "Company Contacts",
 							"item": [
 								{
-									"name": "PUT Company Contact",
-									"id": "bbe94161-b6e8-464c-95b4-ff950c2accbb",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"auth": {
-											"type": "noauth"
-										},
-										"method": "PUT",
-										"header": [],
-										"url": {
-											"raw": "{{baseUrl}}/cas/companies/:companyId/contacts/:contactId",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"cas",
-												"companies",
-												":companyId",
-												"contacts",
-												":contactId"
-											],
-											"variable": [
-												{
-													"id": "5fd7ef1d-8f55-486b-b313-701bc77bdeb5",
-													"key": "companyId",
-													"value": ""
-												},
-												{
-													"id": "09a4fa2b-3356-478d-9e9b-22da51edaf1f",
-													"key": "contactId",
-													"value": ""
-												}
-											]
-										},
-										"description": "# PUT Company Contacts\n\n**Scopes:**  \n`cas_incorporator`, `bgl_partner`, `cas_plus`\n\n**URL:**  \n`{{baseUrl}}/cas/companies/:companyId/contacts/:contactId`\n\n---\n\n## Path Parameters\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| companyId | String (UUID) | Identifier of the company |\n| contactId | Number | Identifier of the contact record |\n\n---\n\n## Headers\n\n| Header Name | Value | Comments |\n| --- | --- | --- |\n| Authorization | Bearer {{ACCESS_TOKEN}} | Required OAuth2 token |\n| Content-Type | application/json | Request body is JSON |\n\n---\n\n## Request Body\n\n### Top-Level Fields\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| contactId | Number | Identifier of the contact to associate with the company |\n| contactType | String | Type of contact (e.g., Company Contact, Billing contact) |\n\n---\n\n## Response: Company Contact Object\n\n### Top-Level Fields\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| id | Number | Unique identifier for the contact record |\n| contactId | Number | Identifier of the related contact |\n| contactType | String | Contact type (as returned by the API) |\n\n---\n\n## Example cURL\n\n\\`\\`\\`bash  \ncurl --location --request PUT '[https://api.uat.bgl360.com.au/cas/companies/9062223c-7a64-4ba5-80d6-91071854d970/contacts/106751'](https://api.uat.bgl360.com.au/cas/companies/9062223c-7a64-4ba5-80d6-91071854d970/contacts/106751')  \n\\--header 'Authorization: Bearer {{ACCESS_TOKEN}}'  \n\\--header 'Content-Type: application/json'  \n\\--data '{  \n\"contactId\": 98736526,  \n\"contactType\": \"Company Contact\"  \n}'"
-									},
-									"response": [
-										{
-											"id": "03cedae8-1f1d-41ad-84ed-fd2c5d40f836",
-											"name": "PUT Company Contact",
-											"originalRequest": {
-												"method": "PUT",
-												"header": [],
-												"url": {
-													"raw": "{{baseUrl}}/cas/companies/:companyId/contacts/:contactId",
-													"host": [
-														"{{baseUrl}}"
-													],
-													"path": [
-														"cas",
-														"companies",
-														":companyId",
-														"contacts",
-														":contactId"
-													],
-													"variable": [
-														{
-															"key": "companyId",
-															"value": ""
-														},
-														{
-															"key": "contactId",
-															"value": ""
-														}
-													]
-												}
-											},
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [
-												{
-													"expires": "Invalid Date",
-													"domain": "",
-													"path": ""
-												}
-											],
-											"responseTime": null,
-											"body": "{\n    \"contactId\": 98736526,\n    \"contactType\": \"Company contact\",\n    \"id\": 106751\n}"
-										}
-									]
-								},
-								{
 									"name": "GET Company Contacts",
 									"id": "8b45d081-87bd-4b43-b826-e29ad86085cf",
 									"protocolProfileBehavior": {
@@ -12116,84 +12025,6 @@
 									]
 								},
 								{
-									"name": "DELETE Company Contacts",
-									"id": "71532854-66c6-4736-8db0-1ea01d320e34",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"auth": {
-											"type": "noauth"
-										},
-										"method": "DELETE",
-										"header": [],
-										"url": {
-											"raw": "{{baseUrl}}/cas/companies/:companyId/contacts/:contactId",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"cas",
-												"companies",
-												":companyId",
-												"contacts",
-												":contactId"
-											],
-											"variable": [
-												{
-													"id": "284f1a39-a7b1-4cec-bc85-0abcf74c119e",
-													"key": "companyId",
-													"value": ""
-												},
-												{
-													"id": "5712d8af-52bc-4aab-ba8c-4460eae9f042",
-													"key": "contactId",
-													"value": ""
-												}
-											]
-										},
-										"description": "# DELETE Company Contact\n\n**Scopes:**  \n`cas_incorporator`, `bgl_partner`, `cas_plus`\n\n**URL:**  \n`{{baseUrl}}/cas/companies/:companyId/contacts/:contactId`\n\n---\n\n## Path Parameters\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| companyId | String (UUID) | Identifier of the company |\n| contactId | Number | Identifier of the contact record |\n\n---\n\n## Headers\n\n| Header Name | Value | Comments |\n| --- | --- | --- |\n| Authorization | Bearer {{ACCESS_TOKEN}} | Required OAuth2 token |\n\n---\n\n## Response: Status Object\n\n### Top-Level Fields\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| status | String | Result of the operation (e.g., DELETED) |\n\n---\n\n## Example cURL\n\n\\`\\`\\`bash  \ncurl --location --request DELETE '[https://api.uat.bgl360.com.au/cas/companies/9062223c-7a64-4ba5-80d6-91071854d970/contacts/106751'](https://api.uat.bgl360.com.au/cas/companies/9062223c-7a64-4ba5-80d6-91071854d970/contacts/106751')  \n\\--header 'Authorization: Bearer {{ACCESS_TOKEN}}'"
-									},
-									"response": [
-										{
-											"id": "583d6dd6-97bd-423a-b1b8-8f94e614bc3a",
-											"name": "DELETE Company Contacts",
-											"originalRequest": {
-												"method": "DELETE",
-												"header": [],
-												"url": {
-													"raw": "{{baseUrl}}/cas/companies/:companyId/contacts/:contactId",
-													"host": [
-														"{{baseUrl}}"
-													],
-													"path": [
-														"cas",
-														"companies",
-														":companyId",
-														"contacts",
-														":contactId"
-													],
-													"variable": [
-														{
-															"key": "companyId",
-															"value": ""
-														},
-														{
-															"key": "contactId",
-															"value": ""
-														}
-													]
-												}
-											},
-											"_postman_previewlanguage": null,
-											"header": null,
-											"cookie": [],
-											"responseTime": null,
-											"body": "{ \"status\": \"DELETED\" }"
-										}
-									]
-								},
-								{
 									"name": "POST Company Contacts",
 									"id": "6c655c24-56f5-4775-8ad0-2fa00f10bb99",
 									"protocolProfileBehavior": {
@@ -12270,6 +12101,175 @@
 											],
 											"responseTime": null,
 											"body": "{\n    \"contactId\": 98736526,\n    \"contactType\": \"Billing contact\",\n    \"id\": 106751\n}"
+										}
+									]
+								},
+								{
+									"name": "PUT Company Contact",
+									"id": "bbe94161-b6e8-464c-95b4-ff950c2accbb",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/cas/companies/:companyId/contacts/:contactId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"cas",
+												"companies",
+												":companyId",
+												"contacts",
+												":contactId"
+											],
+											"variable": [
+												{
+													"id": "5fd7ef1d-8f55-486b-b313-701bc77bdeb5",
+													"key": "companyId",
+													"value": ""
+												},
+												{
+													"id": "09a4fa2b-3356-478d-9e9b-22da51edaf1f",
+													"key": "contactId",
+													"value": ""
+												}
+											]
+										},
+										"description": "# PUT Company Contacts\n\n**Scopes:**  \n`cas_incorporator`, `bgl_partner`, `cas_plus`\n\n**URL:**  \n`{{baseUrl}}/cas/companies/:companyId/contacts/:contactId`\n\n---\n\n## Path Parameters\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| companyId | String (UUID) | Identifier of the company |\n| contactId | Number | Identifier of the contact record |\n\n---\n\n## Headers\n\n| Header Name | Value | Comments |\n| --- | --- | --- |\n| Authorization | Bearer {{ACCESS_TOKEN}} | Required OAuth2 token |\n| Content-Type | application/json | Request body is JSON |\n\n---\n\n## Request Body\n\n### Top-Level Fields\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| contactId | Number | Identifier of the contact to associate with the company |\n| contactType | String | Type of contact (e.g., Company Contact, Billing contact) |\n\n---\n\n## Response: Company Contact Object\n\n### Top-Level Fields\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| id | Number | Unique identifier for the contact record |\n| contactId | Number | Identifier of the related contact |\n| contactType | String | Contact type (as returned by the API) |\n\n---\n\n## Example cURL\n\n\\`\\`\\`bash  \ncurl --location --request PUT '[https://api.uat.bgl360.com.au/cas/companies/9062223c-7a64-4ba5-80d6-91071854d970/contacts/106751'](https://api.uat.bgl360.com.au/cas/companies/9062223c-7a64-4ba5-80d6-91071854d970/contacts/106751')  \n\\--header 'Authorization: Bearer {{ACCESS_TOKEN}}'  \n\\--header 'Content-Type: application/json'  \n\\--data '{  \n\"contactId\": 98736526,  \n\"contactType\": \"Company Contact\"  \n}'"
+									},
+									"response": [
+										{
+											"id": "03cedae8-1f1d-41ad-84ed-fd2c5d40f836",
+											"name": "PUT Company Contact",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/cas/companies/:companyId/contacts/:contactId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"cas",
+														"companies",
+														":companyId",
+														"contacts",
+														":contactId"
+													],
+													"variable": [
+														{
+															"key": "companyId",
+															"value": ""
+														},
+														{
+															"key": "contactId",
+															"value": ""
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [
+												{
+													"expires": "Invalid Date",
+													"domain": "",
+													"path": ""
+												}
+											],
+											"responseTime": null,
+											"body": "{\n    \"contactId\": 98736526,\n    \"contactType\": \"Company contact\",\n    \"id\": 106751\n}"
+										}
+									]
+								},
+								{
+									"name": "DELETE Company Contacts",
+									"id": "71532854-66c6-4736-8db0-1ea01d320e34",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/cas/companies/:companyId/contacts/:contactId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"cas",
+												"companies",
+												":companyId",
+												"contacts",
+												":contactId"
+											],
+											"variable": [
+												{
+													"id": "284f1a39-a7b1-4cec-bc85-0abcf74c119e",
+													"key": "companyId",
+													"value": ""
+												},
+												{
+													"id": "5712d8af-52bc-4aab-ba8c-4460eae9f042",
+													"key": "contactId",
+													"value": ""
+												}
+											]
+										},
+										"description": "# DELETE Company Contact\n\n**Scopes:**  \n`cas_incorporator`, `bgl_partner`, `cas_plus`\n\n**URL:**  \n`{{baseUrl}}/cas/companies/:companyId/contacts/:contactId`\n\n---\n\n## Path Parameters\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| companyId | String (UUID) | Identifier of the company |\n| contactId | Number | Identifier of the contact record |\n\n---\n\n## Headers\n\n| Header Name | Value | Comments |\n| --- | --- | --- |\n| Authorization | Bearer {{ACCESS_TOKEN}} | Required OAuth2 token |\n\n---\n\n## Response: Status Object\n\n### Top-Level Fields\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| status | String | Result of the operation (e.g., DELETED) |\n\n---\n\n## Example cURL\n\n\\`\\`\\`bash  \ncurl --location --request DELETE '[https://api.uat.bgl360.com.au/cas/companies/9062223c-7a64-4ba5-80d6-91071854d970/contacts/106751'](https://api.uat.bgl360.com.au/cas/companies/9062223c-7a64-4ba5-80d6-91071854d970/contacts/106751')  \n\\--header 'Authorization: Bearer {{ACCESS_TOKEN}}'"
+									},
+									"response": [
+										{
+											"id": "583d6dd6-97bd-423a-b1b8-8f94e614bc3a",
+											"name": "DELETE Company Contacts",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/cas/companies/:companyId/contacts/:contactId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"cas",
+														"companies",
+														":companyId",
+														"contacts",
+														":contactId"
+													],
+													"variable": [
+														{
+															"key": "companyId",
+															"value": ""
+														},
+														{
+															"key": "contactId",
+															"value": ""
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": "{ \"status\": \"DELETED\" }"
 										}
 									]
 								}
@@ -19162,6 +19162,20 @@
 				}
 			],
 			"id": "b64f686b-0568-4c9a-b3ba-b4836c194a32"
+		},
+		{
+			"name": "DELETE Trust Contacts",
+			"id": "d5cf094e-95db-4eb6-ae48-f72aa4f33191",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "https://api.uat.bgl360.com.au/cas/trusts/24478221/contacts/537",
+				"description": "Generated from cURL: curl --location --request DELETE 'https://api.uat.bgl360.com.au/cas/trusts/24478221/contacts/537' \\ --header 'Authorization: Bearer 6521449e-41ba-4828-8caf-ca9154b2bf72' \\ --header 'Cookie: api_uat_bgl360_session_id=3543DD8713B4A8297D3066D87D91B2BE-n1'"
+			},
+			"response": []
 		}
 	],
 	"event": [
