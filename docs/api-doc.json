@@ -19170,6 +19170,42 @@
 				"description": "Generated from cURL: curl --location --request DELETE 'https://api.uat.bgl360.com.au/cas/trusts/24478221/contacts/537' \\ --header 'Authorization: {{vault:bearer-token}}' \\ --header 'Cookie: api_uat_bgl360_session_id=3543DD8713B4A8297D3066D87D91B2BE-n1'"
 			},
 			"response": []
+		},
+		{
+			"name": "PUT Trust Contacts",
+			"id": "02f66a83-3475-4781-96b1-7f2bc3c0ade7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/cas/trusts/:trustId/contacts/:contactId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"cas",
+						"trusts",
+						":trustId",
+						"contacts",
+						":contactId"
+					],
+					"variable": [
+						{
+							"key": "trustId",
+							"value": ""
+						},
+						{
+							"key": "contactId",
+							"value": ""
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location --request PUT 'https://api.uat.bgl360.com.au/cas/trusts/24478221/contacts/536?=null' \\ --header 'Authorization: {{vault:bearer-token}}' \\ --header 'Content-Type: application/json' \\ --header 'Cookie: api_uat_bgl360_session_id=3543DD8713B4A8297D3066D87D91B2BE-n1' \\ --data '{ \"contactId\": 98725126, \"contactType\": \"Billing Contact\" }'"
+			},
+			"response": []
 		}
 	],
 	"event": [
