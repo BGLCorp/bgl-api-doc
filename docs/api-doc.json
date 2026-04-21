@@ -18821,6 +18821,20 @@
 				"description": "Generated from cURL: curl --location --request DELETE 'https://api.uat.bgl360.com.au/cas/companies/9062223c-7a64-4ba5-80d6-91071854d970/contacts/106751' \\ --header 'Authorization: {{vault:bearer-token}}' \\ --header 'Cookie: api_uat_bgl360_session_id=406E52BE6D4D46CED02316E8CE0E09A0-n1'"
 			},
 			"response": []
+		},
+		{
+			"name": "https://api.uat.bgl360.com.au/cas/companies/9062223c-7a64-4ba5-80d6-91071854d970/contacts/106751",
+			"id": "b056abde-7a7f-4e8b-8a60-076afa1d94fc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "https://api.uat.bgl360.com.au/cas/companies/9062223c-7a64-4ba5-80d6-91071854d970/contacts/106751",
+				"description": "Generated from cURL: curl --location --request PUT 'https://api.uat.bgl360.com.au/cas/companies/9062223c-7a64-4ba5-80d6-91071854d970/contacts/106751' \\ --header 'Authorization: Bearer e7009269-22e4-46e6-927c-3f406ace2952' \\ --header 'Content-Type: application/json' \\ --header 'Cookie: api_uat_bgl360_session_id=406E52BE6D4D46CED02316E8CE0E09A0-n1' \\ --data '{ \"contactId\": 98736526, \"contactType\": \"Company Contact\" }'"
+			},
+			"response": []
 		}
 	],
 	"event": [
