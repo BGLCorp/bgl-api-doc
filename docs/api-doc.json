@@ -11959,7 +11959,6 @@
 											],
 											"variable": [
 												{
-													"id": "fdadea6c-874c-4681-b5f2-e28c316df5f7",
 													"key": "companyId",
 													"value": ""
 												}
@@ -12049,7 +12048,6 @@
 											],
 											"variable": [
 												{
-													"id": "afe8ae78-194e-486f-a52b-b9c17d64b3ad",
 													"key": "companyId",
 													"value": ""
 												}
@@ -12130,12 +12128,10 @@
 											],
 											"variable": [
 												{
-													"id": "5fd7ef1d-8f55-486b-b313-701bc77bdeb5",
 													"key": "companyId",
 													"value": ""
 												},
 												{
-													"id": "09a4fa2b-3356-478d-9e9b-22da51edaf1f",
 													"key": "contactId",
 													"value": ""
 												}
@@ -12221,12 +12217,10 @@
 											],
 											"variable": [
 												{
-													"id": "284f1a39-a7b1-4cec-bc85-0abcf74c119e",
 													"key": "companyId",
 													"value": ""
 												},
 												{
-													"id": "5712d8af-52bc-4aab-ba8c-4460eae9f042",
 													"key": "contactId",
 													"value": ""
 												}
@@ -12265,7 +12259,7 @@
 													]
 												}
 											},
-											"_postman_previewlanguage": null,
+											"_postman_previewlanguage": "Text",
 											"header": null,
 											"cookie": [],
 											"responseTime": null,
@@ -19173,7 +19167,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": "https://api.uat.bgl360.com.au/cas/trusts/24478221/contacts/537",
-				"description": "Generated from cURL: curl --location --request DELETE 'https://api.uat.bgl360.com.au/cas/trusts/24478221/contacts/537' \\ --header 'Authorization: Bearer 6521449e-41ba-4828-8caf-ca9154b2bf72' \\ --header 'Cookie: api_uat_bgl360_session_id=3543DD8713B4A8297D3066D87D91B2BE-n1'"
+				"description": "Generated from cURL: curl --location --request DELETE 'https://api.uat.bgl360.com.au/cas/trusts/24478221/contacts/537' \\ --header 'Authorization: {{vault:bearer-token}}' \\ --header 'Cookie: api_uat_bgl360_session_id=3543DD8713B4A8297D3066D87D91B2BE-n1'"
 			},
 			"response": []
 		}
