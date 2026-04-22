@@ -19220,6 +19220,46 @@
 				"description": "Generated from cURL: curl --location 'https://api.uat.bgl360.com.au/cas/trusts/24478221/contacts' \\ --header 'Authorization: {{vault:bearer-token}}' \\ --header 'Content-Type: application/json' \\ --header 'Cookie: api_uat_bgl360_session_id=3543DD8713B4A8297D3066D87D91B2BE-n1' \\ --data '{ \"contactId\": 98726201, \"contactType\": \"Partner\" }'"
 			},
 			"response": []
+		},
+		{
+			"name": "https://api.uat.bgl360.com.au/cas/trusts/24478221/contacts?offset=0&limit=50",
+			"id": "623bd13e-9ab0-42a5-bb4f-6ea85af0ebcf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.uat.bgl360.com.au/cas/trusts/24478221/contacts?offset=0&limit=50",
+					"protocol": "https",
+					"host": [
+						"api",
+						"uat",
+						"bgl360",
+						"com",
+						"au"
+					],
+					"path": [
+						"cas",
+						"trusts",
+						"24478221",
+						"contacts"
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "50"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api.uat.bgl360.com.au/cas/trusts/24478221/contacts?offset=0&limit=50' \\ --header 'Authorization: Bearer 6521449e-41ba-4828-8caf-ca9154b2bf72' \\ --header 'Cookie: api_uat_bgl360_session_id=3543DD8713B4A8297D3066D87D91B2BE-n1; api_uat_bgl360_session_id=3543DD8713B4A8297D3066D87D91B2BE-n1'"
+			},
+			"response": []
 		}
 	],
 	"event": [
