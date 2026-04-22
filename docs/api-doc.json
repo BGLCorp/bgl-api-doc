@@ -16838,6 +16838,360 @@
 							"id": "f89b11f3-bc79-43b5-9c30-548baf311441"
 						},
 						{
+							"name": "Trust Contacts",
+							"item": [
+								{
+									"name": "GET Trust Contacts",
+									"id": "0f386bf0-4aa1-4594-bedb-9fcbc463c6eb",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/cas/trusts/:trustId/contacts?offset=0&limit=50",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"cas",
+												"trusts",
+												":trustId",
+												"contacts"
+											],
+											"query": [
+												{
+													"key": "offset",
+													"value": "0"
+												},
+												{
+													"key": "limit",
+													"value": "50"
+												}
+											],
+											"variable": [
+												{
+													"id": "66f03be4-97ee-4eff-83fa-fa513300b336",
+													"key": "trustId",
+													"value": ""
+												}
+											]
+										},
+										"description": "**Scopes:**  \n`cas_incorporator`, `bgl_partner`, `cas_plus`\n\n**URL:**  \n`{{baseUrl}}/cas/trusts/:trustId/contacts`\n\n---\n\n## Query Parameters\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| offset | Number | Record offset for pagination |\n| limit | Number | Number of records to return |\n\n---\n\n## Headers\n\n| Header Name | Value | Comments |\n| --- | --- | --- |\n| Authorization | Bearer {{ACCESS_TOKEN}} | Required OAuth2 token |\n\n---\n\n## Response: Trust Contacts Object\n\n### Top-Level Fields\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| limit | Number | Number of records returned per page |\n| offset | Number | Starting position of returned records |\n| total | Number | Total number of records available |\n| trustContacts | Array | List of trust contact records |\n\n---\n\n### trustContacts Array (Each Item)\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| id | Number | Unique identifier for the trust contact record |\n| contactId | Number | Identifier of the related contact |\n| contactType | String | Type of contact (e.g., PARTNER, MANAGER, BILLING_CONTACT) |\n\n---\n\n## Example cURL\n\n\\`\\`\\`bash  \ncurl --location '[https://api.uat.bgl360.com.au/cas/trusts/24478221/contacts?offset=0&amp;limit=50'](https://api.uat.bgl360.com.au/cas/trusts/24478221/contacts?offset=0&limit=50')  \n\\--header 'Authorization: Bearer {{ACCESS_TOKEN}}'"
+									},
+									"response": [
+										{
+											"id": "5dfe4fd4-0cbe-4ef1-b3fc-3a9df9f5c605",
+											"name": "GET Trust Contacts",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/cas/trusts/:trustId/contacts?offset=0&limit=50",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"cas",
+														"trusts",
+														":trustId",
+														"contacts"
+													],
+													"query": [
+														{
+															"key": "offset",
+															"value": "0"
+														},
+														{
+															"key": "limit",
+															"value": "50"
+														}
+													],
+													"variable": [
+														{
+															"key": "trustId",
+															"value": ""
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [
+												{
+													"expires": "Invalid Date",
+													"domain": "",
+													"path": ""
+												}
+											],
+											"responseTime": null,
+											"body": "{\n    \"limit\": 50,\n    \"offset\": 0,\n    \"total\": 3,\n    \"trustContacts\": [\n        {\n            \"contactId\": 98736526,\n            \"contactType\": \"PARTNER\",\n            \"id\": 531\n        },\n        {\n            \"contactId\": 98726607,\n            \"contactType\": \"MANAGER\",\n            \"id\": 532\n        },\n        {\n            \"contactId\": 98731123,\n            \"contactType\": \"BILLING_CONTACT\",\n            \"id\": 533\n        }\n    ]\n}"
+										}
+									]
+								},
+								{
+									"name": "POST Trust Contacts",
+									"id": "b04022a1-d376-4223-bec9-9fc8bed7929c",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/cas/trusts/:trustId/contacts",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"cas",
+												"trusts",
+												":trustId",
+												"contacts"
+											],
+											"variable": [
+												{
+													"id": "9b8b3a69-7a51-4634-b8ee-accf4b9f2521",
+													"key": "trustId",
+													"value": ""
+												}
+											]
+										},
+										"description": "**Scopes:**  \n`cas_incorporator`, `bgl_partner`, `cas_plus`\n\n**URL:**  \n`{{baseUrl}}/cas/trusts/:trustId/contacts`\n\n---\n\n## Headers\n\n| Header Name | Value | Comments |\n| --- | --- | --- |\n| Authorization | Bearer {{ACCESS_TOKEN}} | Required OAuth2 token |\n| Content-Type | application/json | Request body is JSON |\n\n---\n\n## Request Body\n\n### Top-Level Fields\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| contactId | Number | Identifier of the contact to link to the trust |\n| contactType | String | Type of contact (e.g., Partner, Manager, Billing) |\n\n---\n\n## Response: Trust Contact Object\n\n### Top-Level Fields\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| id | Number | Unique identifier for the trust contact record |\n| contactId | Number | Identifier of the related contact |\n| contactType | String | Normalised contact type (e.g., PARTNER, MANAGER) |\n\n---\n\n## Example cURL\n\n\\`\\`\\`bash  \ncurl --location '[https://api.uat.bgl360.com.au/cas/trusts/24478221/contacts'](https://api.uat.bgl360.com.au/cas/trusts/24478221/contacts')  \n\\--header 'Authorization: Bearer {{ACCESS_TOKEN}}'  \n\\--header 'Content-Type: application/json'  \n\\--data '{  \n\"contactId\": 98726201,  \n\"contactType\": \"Partner\"  \n}'"
+									},
+									"response": [
+										{
+											"id": "5530de37-efb7-4743-93ed-419b872f5e67",
+											"name": "POST Trust Contacts",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/cas/trusts/:trustId/contacts",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"cas",
+														"trusts",
+														":trustId",
+														"contacts"
+													],
+													"variable": [
+														{
+															"key": "trustId",
+															"value": ""
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [
+												{
+													"expires": "Invalid Date",
+													"domain": "",
+													"path": ""
+												}
+											],
+											"responseTime": null,
+											"body": "{\n    \"contactId\": 98726201,\n    \"contactType\": \"PARTNER\",\n    \"id\": 537\n}"
+										}
+									]
+								},
+								{
+									"name": "PUT Trust Contacts",
+									"id": "8057a404-6a03-42e2-850b-04651dd35faf",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/cas/trusts/:trustId/contacts/:contactId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"cas",
+												"trusts",
+												":trustId",
+												"contacts",
+												":contactId"
+											],
+											"variable": [
+												{
+													"id": "0e7b45d1-07c3-4a13-98a2-415150d6b128",
+													"key": "trustId",
+													"value": ""
+												},
+												{
+													"id": "95b783fe-5167-479a-81f4-495a8a3a2626",
+													"key": "contactId",
+													"value": ""
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "35cfac43-40ec-4f48-aca4-81c3e8e19111",
+											"name": "PUT Trust Contacts",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/cas/trusts/:trustId/contacts/:contactId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"cas",
+														"trusts",
+														":trustId",
+														"contacts",
+														":contactId"
+													],
+													"variable": [
+														{
+															"key": "trustId",
+															"value": ""
+														},
+														{
+															"key": "contactId",
+															"value": ""
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										}
+									]
+								},
+								{
+									"name": "DELETE Trust Contacts",
+									"id": "058f97a0-5ce2-4115-8599-7fc048c75600",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/cas/trusts/:trustId/contacts/:contactId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"cas",
+												"trusts",
+												":trustId",
+												"contacts",
+												":contactId"
+											],
+											"variable": [
+												{
+													"id": "f324d73d-ab4d-4526-a420-7446bf8975c9",
+													"key": "trustId",
+													"value": ""
+												},
+												{
+													"id": "c70fe72e-d9d4-4d9f-8806-9416233a802a",
+													"key": "contactId",
+													"value": ""
+												}
+											]
+										},
+										"description": "**Scopes:**  \n`cas_incorporator`, `bgl_partner`, `cas_plus`\n\n**URL:**  \n`{{baseUrl}}/cas/trusts/:trustId/contacts/:contactId`\n\n---\n\n## Path Parameters\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| trustId | Number | Identifier of the trust |\n| contactId | Number | Identifier of the trust contact record |\n\n---\n\n## Headers\n\n| Header Name | Value | Comments |\n| --- | --- | --- |\n| Authorization | Bearer {{ACCESS_TOKEN}} | Required OAuth2 token |\n\n---\n\n## Response: Status Object\n\n### Top-Level Fields\n\n| Key | Type | Comments |\n| --- | --- | --- |\n| status | String | Result of the operation (e.g., DELETED) |\n\n---\n\n## Example cURL\n\n\\`\\`\\`bash  \ncurl --location --request DELETE '[https://api.uat.bgl360.com.au/cas/trusts/24478221/contacts/537'](https://api.uat.bgl360.com.au/cas/trusts/24478221/contacts/537')  \n\\--header 'Authorization: Bearer {{ACCESS_TOKEN}}'"
+									},
+									"response": [
+										{
+											"id": "7e6513b8-adbd-4e12-a284-075829f49a3e",
+											"name": "DELETE Trust Contacts",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/cas/trusts/:trustId/contacts/:contactId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"cas",
+														"trusts",
+														":trustId",
+														"contacts",
+														":contactId"
+													],
+													"variable": [
+														{
+															"key": "trustId",
+															"value": ""
+														},
+														{
+															"key": "contactId",
+															"value": ""
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [
+												{
+													"expires": "Invalid Date",
+													"domain": "",
+													"path": ""
+												}
+											],
+											"responseTime": null,
+											"body": "{\n    \"status\": \"DELETED\"\n}"
+										}
+									]
+								}
+							],
+							"id": "5716c99a-7c04-46d0-ba69-31ead909e8cc"
+						},
+						{
 							"name": "Trust Beneficiaries",
 							"item": [
 								{
